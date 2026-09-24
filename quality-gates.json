@@ -1,0 +1,14 @@
+{
+  "max_css_conflict_chains": 0,
+  "max_css_file_bytes": 85000,
+  "max_js_file_bytes": 70000,
+  "forbidden_js_patterns": [
+    "debugger",
+    "console.log(",
+    "console.debug(",
+    "console.trace(",
+    "eval(",
+    "new Function(",
+    "document.write("
+  ]
+}

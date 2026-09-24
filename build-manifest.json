@@ -1,0 +1,98 @@
+{
+  "html": {
+    "index.html": [
+      "00-shell-header-banner.html",
+      "01-trending.html",
+      "02-share-transition.html",
+      "03-comments.html",
+      "04-main-left.html",
+      "05-main-center.html",
+      "06-main-right.html",
+      "07-chronology.html",
+      "08-entertainment-shell-open.html",
+      "09-carousel-live-action.html",
+      "10-carousel-movies-series.html",
+      "11-carousel-books.html",
+      "12-entertainment-shell-close.html",
+      "13-footer-scripts-close.html"
+    ]
+  },
+  "css_bundles": {
+    "main.css": [
+      "main/01-foundation.css",
+      "main/02-hall-of-fame.css",
+      "main/03-navigation.css",
+      "main/04-sidebar-layout.css",
+      "main/05-sidebar-effects.css",
+      "main/06-favorites.css",
+      "main/07-layout-adjustments.css",
+      "main/08-news-and-effects.css",
+      "main/09-top-suggestions.css",
+      "main/10-responsive-final.css"
+    ],
+    "com.css": [
+      "com/01-comments-core.css",
+      "com/02-comments-layout.css",
+      "com/03-comments-refinement.css",
+      "com/04-comments-header.css",
+      "com/05-comments-symbols.css",
+      "com/06-comments-art.css",
+      "com/07-comments-final.css"
+    ],
+    "trending.css": [
+      "trending/01-trending-core.css",
+      "trending/02-trending-popup.css",
+      "trending/03-trending-responsive.css",
+      "trending/04-trending-refinements.css",
+      "trending/05-trending-effects.css",
+      "trending/06-trending-final.css"
+    ],
+    "banner.css": [
+      "banner/01-banner-core.css",
+      "banner/02-banner-layout.css",
+      "banner/03-banner-transition.css",
+      "banner/04-banner-color-merge.css",
+      "banner/05-banner-final.css"
+    ]
+  },
+  "js_bundles": {
+    "main.js": [
+      "main/01-favorites.js",
+      "main/02-core-widgets.js",
+      "main/04-text-and-counters.js",
+      "main/05-episode-popup.js",
+      "main/06-anime-navigation.js",
+      "main/07-top-suggestions.js",
+      "main/08-hall-of-fame.js",
+      "main/09-share.js",
+      "main/10-profile.js"
+    ]
+  },
+  "css_files": [
+    "tokens.css",
+    "UPC.css",
+    "body.css",
+    "chrono.css",
+    "footer.css",
+    "hardening.css",
+    "header.css",
+    "hot-news-new.css"
+  ],
+  "js_files": [
+    "perf.js",
+    "popup-manager.js",
+    "carousel-manager.js",
+    "entertainment-data.js",
+    "UPC.js",
+    "banner.js",
+    "chrono.js",
+    "com.js",
+    "footer.js",
+    "hardening.js",
+    "header.js",
+    "hot-news-data.js",
+    "hot-news-new.js",
+    "trending.js"
+  ],
+  "asset_version": "20260920.10"
+}
