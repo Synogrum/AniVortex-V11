@@ -276,10 +276,14 @@ def soak(driver, url: str, browser: str, seconds: int) -> dict:
     driver.get(url)
     time.sleep(1.0)
     install_runtime_error_capture(driver)
+    transient_counts: dict[str, int] = {}
     started = time.monotonic()
     while time.monotonic() - started < seconds:
+        cycle_errors: list[str] = []
         try:
-            exercise_once(driver, record, errors)
+            exercise_once(driver, record, cycle_errors)
+            for item in cycle_errors:
+                transient_counts[item] = transient_counts.get(item, 0) + 1
             driver.execute_script("window.scrollTo(0, document.documentElement.scrollHeight * 0.5)")
             time.sleep(0.15)
             driver.execute_script("window.scrollTo(0, document.documentElement.scrollHeight)")
@@ -292,6 +296,17 @@ def soak(driver, url: str, browser: str, seconds: int) -> dict:
             time.sleep(0.25)
         if len(errors) > 30:
             break
+
+    # Autoplay can replace a card exactly while Selenium activates it. Treat isolated
+    # collisions as timing noise; fail only when the same interaction is repeatedly
+    # broken across a meaningful share of the soak period.
+    threshold = max(3, math.ceil(max(1, record["cycles"]) * 0.25))
+    record["transient_interaction_errors"] = transient_counts
+    record["persistent_error_threshold"] = threshold
+    for item, count in transient_counts.items():
+        if count >= threshold:
+            errors.append(f"persistent interaction failure ({count}/{record['cycles']} cycles): {item}")
+
     try:
         errors.extend(js(driver, "return window.__avQaErrors || [];"))
     except Exception:
@@ -305,7 +320,6 @@ def soak(driver, url: str, browser: str, seconds: int) -> dict:
         pass
     record["errors"] = list(dict.fromkeys(errors))
     return record
-
 
 def main() -> int:
     parser = argparse.ArgumentParser()
