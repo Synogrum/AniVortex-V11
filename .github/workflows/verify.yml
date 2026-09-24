@@ -43,6 +43,19 @@ jobs:
       - name: Run cross-browser production smoke
         run: python scripts/cross_browser_smoke.py --site site --engines chromium firefox webkit --report audit/cross-browser-smoke.json
 
+      - name: Run local live-style QA with zoom and mobile matrix
+        shell: bash
+        run: |
+          python -m http.server 8000 --bind 127.0.0.1 --directory site >/tmp/anivortex-verify-http.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID 2>/dev/null || true' EXIT
+          sleep 2
+          python scripts/live_site_qa.py \
+            --url http://127.0.0.1:8000/ \
+            --engines chromium firefox webkit \
+            --report audit/live-local-qa.json \
+            --screenshots audit/live-local-screenshots
+
       - name: Run Lighthouse CI audit
         run: lhci autorun --config=lighthouserc.json
 
@@ -55,3 +68,5 @@ jobs:
             audit/cross-browser-smoke.json
             audit/browser-smoke.json
             audit/lighthouse/
+            audit/live-local-qa.json
+            audit/live-local-screenshots/
