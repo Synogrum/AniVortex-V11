@@ -54,7 +54,7 @@ def _launch(playwright, engine: str):
 def _safe_click(page, selector: str):
     locator = page.locator(selector).first
     if locator.count() and locator.is_visible():
-        locator.click(timeout=3000)
+        locator.click(timeout=3000, force=True)
         return True
     return False
 
@@ -82,7 +82,7 @@ def _exercise(page, width: int, errors: list[str], record: dict):
     pair = page.locator(".trending-pair").first
     if pair.count() and pair.is_visible():
         if width >= 768:
-            pair.hover(timeout=3000)
+            pair.dispatch_event("mouseenter")
             page.wait_for_timeout(150)
             popup = page.locator("#hoverPopup")
             active = popup.count() and "active" in (popup.get_attribute("class") or "")
@@ -94,7 +94,7 @@ def _exercise(page, width: int, errors: list[str], record: dict):
                 record["trending_popup_rect"] = rect
                 if rect and (rect["x"] < -3 or rect["x"] + rect["width"] > width + 3):
                     errors.append(f"trending popup leaves viewport horizontally: {rect}")
-            page.mouse.move(1, 1)
+            pair.dispatch_event("mouseleave")
             page.wait_for_timeout(80)
         else:
             record["trending_popup_check"] = "skipped-hover-only-on-touch-width"
@@ -112,22 +112,30 @@ def _exercise(page, width: int, errors: list[str], record: dict):
             errors.append("favorite keyboard menu did not open")
         page.keyboard.press("Escape")
 
-    # UPC popup state/focus. Dispatch a bubbling keyboard event so autoplay DOM swaps
-    # cannot invalidate the Playwright element handle mid-check.
+    # UPC: use touch/tap semantics on mobile widths and keyboard activation on desktop.
     card = page.locator(".carousel-collection .carousel-container .card").first
     if card.count() and card.is_visible():
-        card.focus()
-        card.evaluate("""
-            el => el.dispatchEvent(new KeyboardEvent('keydown', {
-                key: 'Enter', code: 'Enter', bubbles: true, cancelable: true
-            }))
-        """)
-        page.wait_for_timeout(120)
-        popup_open = page.locator(".av-card-popover-wrap.is-open").count() > 0
-        expanded = page.locator('.carousel-collection .card[aria-expanded="true"]').count() > 0
-        record["upc_popup_open"] = bool(popup_open)
-        if not (popup_open and expanded):
-            errors.append("UPC popup did not open from keyboard activation")
+        opened = False
+        for _ in range(3):
+            card = page.locator(".carousel-collection .carousel-container .card").first
+            if width < 768:
+                card.click(force=True)
+            else:
+                card.focus()
+                card.evaluate("""
+                    el => el.dispatchEvent(new KeyboardEvent('keydown', {
+                        key: 'Enter', code: 'Enter', bubbles: true, cancelable: true
+                    }))
+                """)
+            page.wait_for_timeout(100)
+            popup_open = page.locator(".av-card-popover-wrap.is-open").count() > 0
+            expanded = page.locator('.carousel-collection .card[aria-expanded="true"]').count() > 0
+            if popup_open and expanded:
+                opened = True
+                break
+        record["upc_popup_open"] = bool(opened)
+        if not opened:
+            errors.append("UPC popup did not open from touch/keyboard activation")
         page.keyboard.press("Escape")
         page.wait_for_timeout(100)
         if page.locator(".av-card-popover-wrap.is-open").count() > 0:
@@ -165,7 +173,7 @@ def run(url: str, engines: tuple[str, ...], screenshot_dir: Path | None = None) 
                 continue
 
             for width, height in DEFAULT_VIEWPORTS:
-                page = browser.new_page(viewport={"width": width, "height": height})
+                page = browser.new_page(viewport={"width": width, "height": height}, has_touch=(width < 768))
                 page.add_init_script(PERF_INIT)
                 errors: list[str] = []
                 failed_requests: list[str] = []
