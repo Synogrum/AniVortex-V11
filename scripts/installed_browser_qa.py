@@ -124,7 +124,11 @@ def exercise_once(driver, record: dict, errors: list[str]):
             errors.append(f"sidebar check failed:{exc}")
         safe_click(driver, "#sidebarClose")
         try:
-            for _ in range(20):
+            ActionChains(driver).send_keys(Keys.ESCAPE).perform()
+        except Exception:
+            pass
+        try:
+            for _ in range(30):
                 sidebar = driver.find_element(By.CSS_SELECTOR, "#sidebar")
                 overlay = driver.find_elements(By.CSS_SELECTOR, "#sidebarOverlay")
                 sidebar_closed = sidebar.get_attribute("aria-hidden") != "false"
@@ -146,18 +150,28 @@ def exercise_once(driver, record: dict, errors: list[str]):
 
     pair = visible(driver, ".trending-pair")
     if pair:
-        try:
-            driver.execute_script("arguments[0].scrollIntoView({block:'center'});", pair)
-            time.sleep(0.08)
-            ActionChains(driver).move_to_element(pair).perform()
-            time.sleep(0.15)
-            popup = visible(driver, "#hoverPopup")
-            active = bool(popup and "active" in (popup.get_attribute("class") or ""))
-            record["trending_popup_active"] = active
-            if not active:
-                errors.append("trending hover popup did not open")
-        except Exception as exc:
-            errors.append(f"trending popup interaction failed:{exc}")
+        last_exc = None
+        for _ in range(3):
+            try:
+                pair = visible(driver, ".trending-pair")
+                if not pair:
+                    break
+                driver.execute_script("arguments[0].scrollIntoView({block:'center'});", pair)
+                time.sleep(0.08)
+                ActionChains(driver).move_to_element(pair).perform()
+                time.sleep(0.15)
+                popup = visible(driver, "#hoverPopup")
+                active = bool(popup and "active" in (popup.get_attribute("class") or ""))
+                record["trending_popup_active"] = active
+                if active:
+                    last_exc = None
+                    break
+                last_exc = RuntimeError("trending hover popup did not open")
+            except Exception as exc:
+                last_exc = exc
+                time.sleep(0.06)
+        if last_exc is not None:
+            errors.append(f"trending popup interaction failed:{last_exc}")
 
     favorite = visible(driver, ".serii-favorite-refresh .fav-action")
     if favorite:
