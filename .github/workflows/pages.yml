@@ -65,6 +65,8 @@ jobs:
           python -m playwright install --with-deps chromium firefox webkit
 
       - name: Run live browser QA
+        id: live_browser_qa
+        continue-on-error: true
         env:
           SITE_URL: ${{ needs.deploy.outputs.page_url }}
         run: |
@@ -75,9 +77,13 @@ jobs:
             --screenshots audit/live-site-screenshots
 
       - name: Install Lighthouse CI
+        if: always()
         run: npm install -g @lhci/cli@0.15.x
 
       - name: Run Lighthouse against public Pages URL
+        id: lighthouse
+        if: always()
+        continue-on-error: true
         env:
           SITE_URL: ${{ needs.deploy.outputs.page_url }}
         run: |
@@ -120,3 +126,15 @@ jobs:
             audit/live-site-qa.json
             audit/live-site-screenshots/
             audit/lighthouse-live/
+
+      - name: Enforce live QA gate
+        if: always()
+        run: |
+          if [ "${{ steps.live_browser_qa.outcome }}" = "failure" ]; then
+            echo "Live browser QA failed"
+            exit 1
+          fi
+          if [ "${{ steps.lighthouse.outcome }}" = "failure" ]; then
+            echo "Lighthouse execution failed"
+            exit 1
+          fi
