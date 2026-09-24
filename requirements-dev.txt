@@ -3,3 +3,4 @@ tinycss2>=1.2
 cssselect2>=0.7
 
 playwright>=1.55,<2
+Pillow>=10,<12
