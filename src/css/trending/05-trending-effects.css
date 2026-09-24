@@ -320,7 +320,7 @@
   z-index: 2;
   width: 100%;
   max-width: 1920px;
-  min-width: 1808px;
+  min-width: min(1808px, 100%);
   height: clamp(52px, 3.75vw, 72px);
   margin: -1px auto 0;
   overflow: hidden;
@@ -383,7 +383,7 @@
 body .trending-share-join + .share-banner-container:not(#__av_prio_a#__av_prio_b) {
   width: 100%;
   max-width: 1920px;
-  min-width: 1808px;
+  min-width: min(1808px, 100%);
   margin-top: 0;
 }
 
