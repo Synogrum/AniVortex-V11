@@ -402,7 +402,7 @@
 .main-container {
   width: 100%;
   max-width: 1920px;
-  min-width: 1808px;
+  min-width: min(1808px, 100%);
   margin-inline: auto;
   padding: 20px 24px;
 
@@ -499,10 +499,21 @@
 
 /* La ecrane mai înguste se păstrează structura, fără ca panourile să intre
    unul peste altul; pagina poate fi derulată orizontal. */
-@media (max-width: 1807px) {
+@media (min-width: 1181px) and (max-width: 1807px) {
   html,
   body {
-    overflow-x: auto;
+    overflow-x: hidden;
+  }
+
+  .main-container {
+    min-width: 0;
+    width: 100%;
+    grid-template-columns:
+      clamp(300px, 21.5vw, 370px)
+      minmax(0, 1fr)
+      clamp(300px, 21.5vw, 370px);
+    column-gap: clamp(12px, 1.25vw, 20px);
+    padding-inline: clamp(12px, 1.5vw, 24px);
   }
 }
 
