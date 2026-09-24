@@ -72,17 +72,9 @@ jobs:
       - name: Enable Safari WebDriver
         run: sudo safaridriver --enable
 
-      - name: Run Safari QA with local server
+      - name: Run Safari QA against public Pages HTTPS
         run: |
-          python3 -m http.server 8000 --bind 127.0.0.1 --directory "$GITHUB_WORKSPACE/site" >/tmp/anivortex-http.log 2>&1 &
-          SERVER_PID=$!
-          trap 'kill $SERVER_PID 2>/dev/null || true' EXIT
-          sleep 3
-          if ! kill -0 $SERVER_PID 2>/dev/null; then
-            cat /tmp/anivortex-http.log
-            exit 1
-          fi
-          python scripts/installed_browser_qa.py --url http://127.0.0.1:8000/ --browser safari --soak-seconds 120 --report audit/real-browser-safari.json --screenshots audit/real-browser-safari-screenshots
+          python scripts/installed_browser_qa.py --url https://synogrum.github.io/AniVortex-V11/ --browser safari --soak-seconds 120 --report audit/real-browser-safari.json --screenshots audit/real-browser-safari-screenshots
 
       - name: Upload Safari report
         if: always()
