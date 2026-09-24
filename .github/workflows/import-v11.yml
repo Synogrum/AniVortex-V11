@@ -30,13 +30,13 @@ jobs:
           rm -rf /tmp/anivortex-v11
           mkdir -p /tmp/anivortex-v11
           unzip -q /tmp/anivortex-v11.zip -d /tmp/anivortex-v11
-          test -f "/tmp/anivortex-v11/AniVortex_FINAL_OPTIMIZED_V11/site/index.html"
-          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
-          cp -a /tmp/anivortex-v11/AniVortex_FINAL_OPTIMIZED_V11/. .
+          SRC="/tmp/anivortex-v11/AniVortex_FINAL_OPTIMIZED_V11"
+          test -f "$SRC/site/index.html"
+          find . -mindepth 1 -maxdepth 1 ! -name .git ! -name .github -exec rm -rf {} +
+          rsync -a --exclude='.github/workflows/' "$SRC/" ./
           test -f site/index.html
-          test -f .github/workflows/pages.yml
 
-      - name: Commit complete V11
+      - name: Commit complete V11 except workflows
         run: |
           git config user.name "AniVortex Deploy Bot"
           git config user.email "actions@users.noreply.github.com"
