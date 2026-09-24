@@ -72,15 +72,14 @@ jobs:
       - name: Enable Safari WebDriver
         run: sudo safaridriver --enable
 
-      - name: Start local production server
+      - name: Run Safari QA with local server
         run: |
           python -m http.server 8000 --directory site >/tmp/anivortex-http.log 2>&1 &
-          echo $! > /tmp/anivortex-http.pid
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID 2>/dev/null || true' EXIT
           sleep 2
           curl -f http://127.0.0.1:8000/ >/dev/null
-
-      - name: Run Safari QA
-        run: python scripts/installed_browser_qa.py --url http://127.0.0.1:8000/ --browser safari --soak-seconds 120 --report audit/real-browser-safari.json --screenshots audit/real-browser-safari-screenshots
+          python scripts/installed_browser_qa.py --url http://127.0.0.1:8000/ --browser safari --soak-seconds 120 --report audit/real-browser-safari.json --screenshots audit/real-browser-safari-screenshots
 
       - name: Upload Safari report
         if: always()
