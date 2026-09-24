@@ -1,0 +1,120 @@
+name: Deploy AniVortex V11 to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  live-qa:
+    needs: deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install browser QA dependencies
+        run: |
+          python -m pip install -r requirements-dev.txt
+          python -m playwright install --with-deps chromium firefox webkit
+
+      - name: Run live browser QA
+        env:
+          SITE_URL: ${{ needs.deploy.outputs.page_url }}
+        run: |
+          python scripts/live_site_qa.py \
+            --url "$SITE_URL" \
+            --engines chromium firefox webkit \
+            --report audit/live-site-qa.json \
+            --screenshots audit/live-site-screenshots
+
+      - name: Install Lighthouse CI
+        run: npm install -g @lhci/cli@0.15.x
+
+      - name: Run Lighthouse against public Pages URL
+        env:
+          SITE_URL: ${{ needs.deploy.outputs.page_url }}
+        run: |
+          cat > /tmp/lhci-live.json <<EOF
+          {
+            "ci": {
+              "collect": {
+                "url": ["$SITE_URL"],
+                "numberOfRuns": 3,
+                "settings": {
+                  "onlyCategories": ["performance", "accessibility", "best-practices", "seo"]
+                }
+              },
+              "assert": {
+                "assertions": {
+                  "categories:performance": ["warn", {"minScore": 0.85}],
+                  "categories:accessibility": ["warn", {"minScore": 0.90}],
+                  "categories:best-practices": ["warn", {"minScore": 0.90}],
+                  "categories:seo": ["warn", {"minScore": 0.90}],
+                  "largest-contentful-paint": ["warn", {"maxNumericValue": 2500}],
+                  "cumulative-layout-shift": ["warn", {"maxNumericValue": 0.10}],
+                  "total-blocking-time": ["warn", {"maxNumericValue": 300}]
+                }
+              },
+              "upload": {
+                "target": "filesystem",
+                "outputDir": "./audit/lighthouse-live"
+              }
+            }
+          }
+          EOF
+          lhci autorun --config=/tmp/lhci-live.json
+
+      - name: Upload live QA reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: anivortex-v11-live-qa
+          path: |
+            audit/live-site-qa.json
+            audit/live-site-screenshots/
+            audit/lighthouse-live/
