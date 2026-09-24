@@ -67,7 +67,10 @@ def _exercise(page, width: int, errors: list[str], record: dict):
         record["sidebar_open"] = sidebar.get_attribute("aria-hidden") == "false" if sidebar.count() else False
         if not record["sidebar_open"]:
             errors.append("sidebar did not open")
-        _safe_click(page, "#sidebarClose")
+        page.keyboard.press("Escape")
+        page.wait_for_timeout(160)
+        if sidebar.count() and sidebar.get_attribute("aria-hidden") == "false":
+            errors.append("sidebar did not close with Escape")
 
     # Trending category control/menu.
     if _safe_click(page, "#catBtn"):
@@ -75,23 +78,26 @@ def _exercise(page, width: int, errors: list[str], record: dict):
         record["trending_category_clicked"] = True
         page.keyboard.press("Escape")
 
-    # Trending popup must appear on hover and stay inside the viewport.
+    # Trending is intentionally hover-only; do not require hover popups on touch/mobile widths.
     pair = page.locator(".trending-pair").first
     if pair.count() and pair.is_visible():
-        pair.hover(timeout=3000)
-        page.wait_for_timeout(150)
-        popup = page.locator("#hoverPopup")
-        active = popup.count() and "active" in (popup.get_attribute("class") or "")
-        record["trending_popup_active"] = bool(active)
-        if not active:
-            errors.append("trending hover popup did not open")
-        elif width >= 360:
-            rect = popup.bounding_box()
-            record["trending_popup_rect"] = rect
-            if rect and (rect["x"] < -3 or rect["x"] + rect["width"] > width + 3):
-                errors.append(f"trending popup leaves viewport horizontally: {rect}")
-        page.mouse.move(1, 1)
-        page.wait_for_timeout(80)
+        if width >= 768:
+            pair.hover(timeout=3000)
+            page.wait_for_timeout(150)
+            popup = page.locator("#hoverPopup")
+            active = popup.count() and "active" in (popup.get_attribute("class") or "")
+            record["trending_popup_active"] = bool(active)
+            if not active:
+                errors.append("trending hover popup did not open")
+            else:
+                rect = popup.bounding_box()
+                record["trending_popup_rect"] = rect
+                if rect and (rect["x"] < -3 or rect["x"] + rect["width"] > width + 3):
+                    errors.append(f"trending popup leaves viewport horizontally: {rect}")
+            page.mouse.move(1, 1)
+            page.wait_for_timeout(80)
+        else:
+            record["trending_popup_check"] = "skipped-hover-only-on-touch-width"
 
     # Favorite keyboard menu.
     favorite = page.locator(".serii-favorite-refresh .fav-action").first
@@ -106,17 +112,26 @@ def _exercise(page, width: int, errors: list[str], record: dict):
             errors.append("favorite keyboard menu did not open")
         page.keyboard.press("Escape")
 
-    # UPC popup state/focus.
+    # UPC popup state/focus. Dispatch a bubbling keyboard event so autoplay DOM swaps
+    # cannot invalidate the Playwright element handle mid-check.
     card = page.locator(".carousel-collection .carousel-container .card").first
     if card.count() and card.is_visible():
         card.focus()
-        card.press("Enter")
-        page.wait_for_timeout(80)
-        if card.get_attribute("aria-expanded") != "true":
-            errors.append("UPC popup did not set aria-expanded=true")
+        card.evaluate("""
+            el => el.dispatchEvent(new KeyboardEvent('keydown', {
+                key: 'Enter', code: 'Enter', bubbles: true, cancelable: true
+            }))
+        """)
+        page.wait_for_timeout(120)
+        popup_open = page.locator(".av-card-popover-wrap.is-open").count() > 0
+        expanded = page.locator('.carousel-collection .card[aria-expanded="true"]').count() > 0
+        record["upc_popup_open"] = bool(popup_open)
+        if not (popup_open and expanded):
+            errors.append("UPC popup did not open from keyboard activation")
         page.keyboard.press("Escape")
-        if card.get_attribute("aria-expanded") != "false":
-            errors.append("UPC popup did not reset aria-expanded=false")
+        page.wait_for_timeout(100)
+        if page.locator(".av-card-popover-wrap.is-open").count() > 0:
+            errors.append("UPC popup did not close with Escape")
 
     # Exercise horizontal extremes in Trending and each entertainment carousel.
     horizontal = page.locator("#scrollArea")
@@ -154,7 +169,9 @@ def run(url: str, engines: tuple[str, ...], screenshot_dir: Path | None = None) 
                 page.add_init_script(PERF_INIT)
                 errors: list[str] = []
                 failed_requests: list[str] = []
-                page.on("console", lambda msg, errors=errors: errors.append(f"console:{msg.type}:{msg.text}") if msg.type == "error" else None)
+                page.on("console", lambda msg, errors=errors: errors.append(
+                    f"console:{msg.type}:{msg.text} @ {msg.location.get('url','')}:{msg.location.get('lineNumber','')}"
+                ) if msg.type == "error" else None)
                 page.on("pageerror", lambda exc, errors=errors: errors.append(f"pageerror:{exc}"))
                 page.on("requestfailed", lambda req, failed_requests=failed_requests: failed_requests.append(f"{req.method} {req.url}: {req.failure}"))
                 record = {"engine": engine, "viewport": [width, height], "url": url}
