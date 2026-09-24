@@ -5250,6 +5250,31 @@ main video
   }
 }
 
+@media (max-width: 1180px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .main-container {
+    min-width: 0;
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+    column-gap: 0;
+    row-gap: 20px;
+    padding-inline: clamp(10px, 2.5vw, 20px);
+    overflow: hidden;
+  }
+
+  .main-container > .left-sidebar,
+  .main-container > .view-video,
+  .main-container > .right-sidebar {
+    grid-column: 1;
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
 /* =====================================================================
    FIX SPAȚIERE VERTICALĂ — DISTANȚE EGALE ÎNTRE PANOURILE LATERALE
    ===================================================================== */
