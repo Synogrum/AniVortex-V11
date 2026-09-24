@@ -1,0 +1,1426 @@
+/* ===== HALL OF FAME / LIGA BAGABONȚILOR ===== */
+
+/* MAIN CONTAINER */
+.hof-container{
+  width:100%;
+  min-height:830px;
+  position:relative;
+  padding:14px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+
+  /* aceeași fereastră premium ca login-user */
+  
+  border:3px solid rgba(255,255,255,0.829);
+  background:rgba(8,8,8,0.18);
+  isolation:isolate;
+
+  box-shadow:
+    0 28px 80px rgba(0,0,0,0.58),
+    0 0 24px rgba(39,39,39,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.06);
+}
+
+/* Vechiul glow este înlocuit de fundalul lichid și straturile de fum. */
+.hof-container::before{
+  content:none;
+}
+
+/* Straturile animate sunt limitate strict la Hall of Fame. */
+.hof-container > .liquid-bg{
+  position:absolute;
+  inset:-25%;
+  z-index:0;
+}
+
+.hof-container > .smoke{
+  position:absolute;
+  inset:-10%;
+  z-index:1;
+}
+
+.hof-container > .smoke.smoke-2{
+  position:absolute;
+  inset:-5%;
+  z-index:2;
+}
+
+.hof-container > .inner-haze{
+  position:absolute;
+  inset:0;
+  z-index:3;
+}
+
+/* Tot conținutul Hall of Fame rămâne deasupra efectelor. */
+.hof-container > .hof-content{
+  position:relative;
+  z-index:30;
+  width:100%;
+  min-width:0;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  border-radius:16px;
+}
+
+/* HEADER */
+.hof-header{text-align:center;margin-bottom:20px;position:relative;z-index:2;}
+.hof-title{
+  font-size:20px;font-weight:900;letter-spacing:1.5px;
+  background:linear-gradient(to right,var(--av-gold-dark),var(--av-gold));
+  -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent;
+  text-transform:uppercase;
+  margin-bottom:8px;
+}
+.hof-counter{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:5px 14px;border-radius:50px;
+  background:rgba(184,146,94,.1);
+  border:1px solid rgba(212,183,122,0.3);
+  font-weight:700;font-size:11px;
+  color:var(--av-gold);
+}
+.hof-counter .dot{
+  width:8px;height:8px;border-radius:50%;background:var(--av-gold);
+  animation:pulse 2s infinite;
+}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+
+/* PODIUM AREA */
+.podium-area{
+  display:flex;justify-content:center;align-items:flex-end;
+  gap:4px;margin-bottom:30px;padding-top:20px;
+  position:relative;z-index:2;
+}
+.podium-glow{
+  position:absolute;bottom:0;left:50%;transform:translateX(-50%);
+  width:80%;height:100px;border-radius:50%;
+  background:radial-gradient(circle,rgba(184,146,94,.3),transparent 65%);
+  filter:blur(30px);pointer-events:none;z-index:0;
+  animation:glowPulse 4s ease-in-out infinite;
+}
+@keyframes glowPulse{0%,100%{opacity:.7;transform:translateX(-50%) scale(1)}50%{opacity:1;transform:translateX(-50%) scale(1.05)}}
+/* Subtle side glow accents */
+.podium-area::before{
+  content:"";position:absolute;bottom:10px;left:50%;transform:translateX(-50%);
+  width:70%;height:60px;border-radius:50%;
+  background:radial-gradient(ellipse,rgba(212,183,122,.06),transparent 70%);
+  pointer-events:none;z-index:0;
+}
+/* Bottom gradient floor */
+.podium-area::after{
+  content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);
+  width:90%;height:40px;
+  background:linear-gradient(180deg,transparent,rgba(212,183,122,.06));
+  border-radius:0 0 10px 10px;
+  pointer-events:none;z-index:0;
+}
+
+/* PODIUM PERSON */
+.podium-person{display:flex;flex-direction:column;align-items:center;position:relative;z-index:2;}
+.podium-person .avatar-wrap{position:relative;margin-bottom:10px;}
+.podium-person .avatar{
+  width:46px;height:46px;border-radius:50%;object-fit:cover;
+  border:2px solid;transition:transform .3s;
+}
+.podium-person:hover .avatar{transform:scale(1.08);}
+.podium-person.p1 .avatar{width:58px;height:58px;border-width:3px;}
+.podium-person .rank-badge{
+  position:absolute;bottom:-3px;right:-2px;
+  width:18px;height:18px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:9px;
+  border:2px solid #44272b;
+}
+.podium-person .username{font-weight:700;font-size:11px;margin-bottom:10px;color:#eee;}
+.podium-person .amount{
+  font-weight:800;font-size:11px;padding:3px 10px;border-radius:20px;
+  margin-bottom:8px;
+}
+
+/* PODIUM BLOCKS */
+.podium-block{
+  width:70px;display:flex;align-items:center;justify-content:center;
+  font-weight:900;font-size:16px;border-radius:6px 6px 0 0;
+  position:relative;overflow:hidden;
+  border-top:2px solid rgba(212,183,122,0.2);
+}
+.podium-person.p1 .podium-block{height:80px;width:86px;}
+.podium-person.p2 .podium-block{height:56px;width:76px;}
+.podium-person.p3 .podium-block{height:40px;width:76px;}
+@keyframes podiumShine{0%{left:-100%}100%{left:200%}}
+.podium-block::after{
+  content:"";position:absolute;top:0;left:-100%;width:50%;height:100%;
+  background:linear-gradient(90deg,transparent,rgba(212,183,122,.08),transparent);
+  animation:podiumShine 4s infinite;
+}
+
+/* 1ST PLACE COLORS & EFFECTS */
+.p1 .avatar{border-color:var(--av-gold);box-shadow:0 0 30px rgba(212,183,122,.5),0 0 60px rgba(184,146,94,.2);}
+.p1 .rank-badge{background:linear-gradient(to right,var(--av-gold-dark),var(--av-gold));color:#1a1a1a;}
+.p1 .amount{background:rgba(212,183,122,.12);color:var(--av-gold);border:1px solid rgba(212,183,122,.2);}
+.p1 .podium-block{
+  background:linear-gradient(180deg,rgba(212,183,122,.2),rgba(184,146,94,.06));
+  color:rgba(212,183,122,.3);
+  box-shadow:inset 0 1px 0 rgba(212,183,122,.15);
+}
+/* 1st place ring glow animation */
+.p1 .avatar-wrap::before{
+  content:"";position:absolute;inset:-6px;border-radius:50%;
+  background:conic-gradient(from 0deg,var(--av-gold),var(--av-gold-dark),transparent,var(--av-gold));
+  animation:ringRotate 3s linear infinite;opacity:.5;z-index:-1;
+}
+@keyframes ringRotate{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+/* 1st place floating particles */
+.p1 .avatar-wrap::after{
+  content:"✦";position:absolute;top:-12px;right:-8px;
+  font-size:14px;color:var(--av-gold);
+  animation:starFloat 2s ease-in-out infinite;
+}
+@keyframes starFloat{0%,100%{transform:translateY(0) rotate(0deg);opacity:.8}50%{transform:translateY(-8px) rotate(180deg);opacity:1}}
+
+/* 2ND PLACE */
+.p2 .avatar{border-color:#a8a8b0;box-shadow:0 0 18px rgba(168,168,176,.3);}
+.p2 .rank-badge{background:#a8a8b0;color:#1a1a1a;}
+.p2 .amount{background:rgba(168,168,176,.08);color:#a8a8b0;border:1px solid rgba(168,168,176,.15);}
+.p2 .podium-block{background:linear-gradient(180deg,rgba(168,168,176,.13),rgba(168,168,176,.03));color:rgba(168,168,176,.25);}
+
+/* 3RD PLACE */
+.p3 .avatar{border-color:#cd7f32;box-shadow:0 0 18px rgba(205,127,50,.3);}
+.p3 .rank-badge{background:#cd7f32;color:#fff;}
+.p3 .amount{background:rgba(205,127,50,.08);color:#cd7f32;border:1px solid rgba(205,127,50,.15);}
+.p3 .podium-block{background:linear-gradient(180deg,rgba(205,127,50,.13),rgba(205,127,50,.03));color:rgba(205,127,50,.25);}
+
+/* SPARKLE PARTICLES for 1st place */
+.sparkle{
+  position:absolute;width:4px;height:4px;background:var(--av-gold);border-radius:50%;
+  animation:sparkle 2.5s infinite;pointer-events:none;
+}
+@keyframes sparkle{0%,100%{opacity:0;transform:translateY(0) scale(0)}50%{opacity:1;transform:translateY(-18px) scale(1)}}
+.sparkle:nth-child(2){animation-delay:.5s;width:3px;height:3px;}
+.sparkle:nth-child(3){animation-delay:1s;}
+.sparkle:nth-child(4){animation-delay:1.5s;width:5px;height:5px;}
+.sparkle:nth-child(5){animation-delay:2s;width:3px;height:3px;}
+
+/* SEPARATOR */
+.separator{
+  height:1px;margin:0 6px 20px;
+  background:linear-gradient(to right,transparent,rgba(212,183,122,.2),transparent);
+}
+
+/* DONOR LIST */
+.donor-list{
+  display:flex;flex-direction:column;gap:3px;margin-bottom:20px;position:relative;z-index:2;
+  max-height:380px;overflow-y:auto;padding-right:3px;
+  scrollbar-width:none; /* Firefox */
+  -ms-overflow-style:none; /* IE/Edge */
+}
+.donor-list::-webkit-scrollbar{display:none;} /* Chrome, Safari, etc. */
+.donor-list::-webkit-scrollbar-track{background:transparent;}
+.donor-list::-webkit-scrollbar-thumb{background:rgba(212,183,122,.2);border-radius:4px;}
+.donor-row{
+  display:flex;align-items:center;padding:5px 8px;
+  border-radius:6px;background:rgba(184,146,94,.04);
+  border:1px solid rgba(212,183,122,.06);
+  transition:background-color, border-color, transform .3s;cursor:default;
+}
+.donor-row:hover{
+  background:rgba(184,146,94,.1);
+  border-color:rgba(212,183,122,.15);
+  transform:translateX(3px);
+}
+.donor-row .rank{font-weight:800;font-size:11px;min-width:26px;color:#888;}
+.donor-row .d-avatar{
+  width:24px;height:24px;border-radius:50%;object-fit:cover;
+  margin:0 8px;border:1.5px solid rgba(212,183,122,.15);
+}
+.donor-row .d-name{flex:1;font-weight:600;font-size:11px;color:#ddd;}
+.donor-row .d-amount{font-weight:700;font-size:11px;color:var(--av-gold);}
+
+/* SUPPORT BUTTON */
+.support-btn{
+  display:block;width:100%;padding:10px;border:none;
+  border-radius:8px;cursor:pointer;
+  margin-top:auto;
+  font-family:"Inter",sans-serif;font-weight:800;font-size:12px;
+  background:linear-gradient(to right,var(--av-gold-dark),var(--av-gold));
+  color:#1c1015;text-transform:uppercase;letter-spacing:1px;
+  transition:transform, filter, box-shadow .3s;position:relative;z-index:2;
+  box-shadow:0 3px 16px rgba(184,146,94,.2);
+}
+.support-btn:hover{transform:translateY(-2px);filter:brightness(1.1);box-shadow:0 5px 20px rgba(184,146,94,.3);}
+
+/* MODAL */
+.modal-overlay{
+  position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(12px);
+  display:none;align-items:center;justify-content:center;z-index:200;
+}
+.modal-overlay.show{display:flex;}
+.modal{
+  width:420px;max-width:92vw;padding:36px;border-radius:20px;
+  text-align:center;position:relative;
+  background:linear-gradient(135deg,#44272b,#3a2025);
+  border:2px solid rgba(212,183,122,0.35);
+  animation:modalIn .3s ease;
+}
+@keyframes modalIn{from{opacity:0;transform:scale(.92) translateY(16px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.modal .close-modal{
+  position:absolute;top:14px;right:14px;
+  background:rgba(212,183,122,.1);border:1px solid rgba(212,183,122,.2);
+  color:var(--av-gold);width:32px;height:32px;border-radius:50%;
+  cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;
+  transition:background-color, border-color, color, transform .2s;
+}
+.modal .close-modal:hover{background:rgba(212,183,122,.2);}
+.modal h2{
+  font-size:22px;font-weight:800;margin-bottom:8px;
+  background:linear-gradient(to right,var(--av-gold-dark),var(--av-gold));
+  -webkit-background-clip:text; background-clip:text;-webkit-text-fill-color:transparent;
+}
+.modal p{font-size:13px;color:#b0a090;line-height:1.7;margin-bottom:28px;}
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+/*
+/*
+/*
+/*
+/*
+/*
+/* 
+main video
+/*
+/*
+/*
+/*
+/*
+/*
+/*
+/**/
+/* =========================================================
+   VIEW CONTAINER
+   ========================================================= */
+.view-video{
+  width: 100%;
+  min-height: 2950px;
+  position: relative;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  overflow: visible; /* ✅ popup-urile pot ieși în afară */
+  background: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1;
+  isolation: auto; /* ✅ IMPORTANT: NU isolate */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000;
+}
+
+.view-video::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:#272727;
+  filter: blur(20px);
+  border-radius: 10px;
+  z-index: -1;
+  pointer-events: none;
+  clip-path: inset(0 round 10px);
+}
+
+/* =========================================================
+   HOT NEWS SECTION (COMUN)
+   ========================================================= */
+.hot-news-section{
+  padding: 40px 5%;
+  
+  z-index: 1;
+}
+
+
+
+/* =========================================================
+   TITLURI SECTIUNI (COMUN ca stil, dar CLASE SEPARATE)
+   ========================================================= */
+
+/* ANIME TITLE */
+.anime-tt-clasa{
+  width: calc(100% - 24px);
+  margin: 25px auto 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 0; /* sub popup */
+}
+.anime-tt-clasa span{
+  position: relative;
+  z-index: 0;
+  font-size: 26px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  padding: 8px 22px;
+  margin: 0 14px 0 0;
+}
+.anime-tt-clasa span::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+  border-radius: 50px;
+  z-index: -1;
+}
+.anime-tt-clasa::before{
+  content: "";
+  width: 70px;
+  height: 10px;
+  margin-right: 14px;
+  background:
+    linear-gradient(#ffcc00, #ffcc00) top,
+    linear-gradient(#ffcc00, #ffcc00) bottom;
+  background-size: 100% 3px, 100% 3px;
+  background-repeat: no-repeat;
+  border-radius: 999px;
+  box-shadow: 0 0 8px rgba(200, 169, 107, 0.4);
+}
+.anime-tt-clasa::after{
+  content: "";
+  flex: 1;
+  height: 10px;
+  background:
+    linear-gradient(90deg, #ffcc00, rgba(255, 204, 0, 0)) top,
+    linear-gradient(90deg, #ffcc00, rgba(255, 204, 0, 0)) bottom;
+  background-size: 100% 3px, 100% 3px;
+  background-repeat: no-repeat;
+  border-radius: 999px;
+  box-shadow: 0 0 8px rgba(200, 169, 107, 0.4);
+}
+
+/* MANGA TITLE */
+.manga-tt-clasa{
+  width: calc(100% - 24px);
+  margin: 40px auto 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 0;
+}
+.manga-tt-clasa span{
+  position: relative;
+  z-index: 0;
+  font-size: 26px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  padding: 8px 22px;
+  margin: 0 14px 0 0;
+}
+.manga-tt-clasa span::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(6px);
+  border-radius: 50px;
+  z-index: -1;
+}
+.manga-tt-clasa::before{
+  content: "";
+  width: 70px;
+  height: 10px;
+  margin-right: 14px;
+  background:
+    linear-gradient(#ffcc00, #ffcc00) top,
+    linear-gradient(#ffcc00, #ffcc00) bottom;
+  background-size: 100% 3px, 100% 3px;
+  background-repeat: no-repeat;
+  border-radius: 999px;
+  box-shadow: 0 0 8px rgba(200, 169, 107, 0.4);
+}
+.manga-tt-clasa::after{
+  content: "";
+  flex: 1;
+  height: 10px;
+  background:
+    linear-gradient(90deg, #ffcc00, rgba(255, 204, 0, 0)) top,
+    linear-gradient(90deg, #ffcc00, rgba(255, 204, 0, 0)) bottom;
+  background-size: 100% 3px, 100% 3px;
+  background-repeat: no-repeat;
+  border-radius: 999px;
+  box-shadow: 0 0 8px rgba(200, 169, 107, 0.4);
+}
+
+/* DESENE TITLE */
+
+
+
+
+
+
+/* =========================================================
+   GRID (SEPARAT: ANIME / MANGA / DESENE)
+   ========================================================= */
+.anime-wrap{
+  display: grid;
+  grid-template-columns: repeat(5, 180px);
+  gap: 14px;
+  padding: 0 12px;
+  justify-content: start;
+  justify-items: start;
+  align-items: start;
+  position: relative;
+  overflow: visible;
+  z-index: 50; /* anime peste */
+}
+
+.manga-wrap{
+  display: grid;
+  grid-template-columns: repeat(5, 180px);
+  gap: 14px;
+  padding: 0 12px;
+  justify-content: start;
+  justify-items: start;
+  align-items: start;
+  position: relative;
+  overflow: visible;
+  z-index: 60; /* ✅ manga peste desene */
+}
+
+.desene-wrap{
+  display: grid;
+  grid-template-columns: repeat(5, 180px);
+  gap: 14px;
+  padding: 0 12px;
+  justify-content: start;
+  justify-items: start;
+  align-items: start;
+  position: relative;
+  overflow: visible;
+  z-index: 20; /* sub manga, peste rest */
+}
+
+/* =========================================================
+   ANIME — CARD + POPUP
+   ========================================================= */
+
+/* CARD ANIME */
+.anime-wrap .a-card{
+  width: 180px;
+  height: 250px;
+  display: flex;
+  align-items: stretch;
+  overflow: visible;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 10px;
+
+  --gap-color: #ffffff;
+  --gap-h: 4px;
+  --bottom-h: 85px;
+  --overlap: 6px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  position: relative;
+  z-index: 1;
+  isolation: auto;
+}
+.anime-wrap .a-card:hover{ z-index: 9999999; }
+
+/* SIDE ANIME */
+.anime-wrap .a-card > .a-side{
+  width: 44px;
+  height: 100%;
+  background: linear-gradient(135deg, #686565,  #c0cadd);
+  color: #24170F;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  margin-right: 2px;
+  position: relative;
+  z-index: 10;
+  box-shadow: inset -2px 0 4px rgba(0,0,0,0.15), 0 8px 18px rgba(0,0,0,0.25);
+}
+.anime-wrap .a-card > .a-side::after{
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: 0;
+  width: 1px;
+  background: rgba(255,255,255,0.25);
+}
+
+/* BADGE ANIME */
+.anime-wrap .a-card > .a-side .bad{
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-shadow: 0 0 4px rgba(255,255,255,0.75), 0 0 8px rgba(255,255,255,0.55), 0 2px 6px rgba(0,0,0,0.25);
+}
+.anime-wrap .a-card > .a-side.type-ona .bad,
+.anime-wrap .a-card > .a-side.type-ova .bad{ font-size: 14px; }
+
+.anime-wrap .a-card > .a-side .bad::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 6px auto 8px;
+  background: linear-gradient(90deg, rgba(255,230,170,0.95), rgba(255,200,90,0.95));
+  box-shadow: 0 0 6px rgba(255,200,90,0.5);
+}
+
+/* TITLU VERTICAL ANIME */
+.anime-wrap .a-card > .a-side .a-vertical{
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -10px;
+  font-weight: 900;
+  opacity: 0.95;
+  text-shadow: 0 0 4px rgba(255,255,255,0.70), 0 0 9px rgba(255,255,255,0.45), 0 3px 8px rgba(0,0,0,0.35);
+}
+
+/* POSTER ANIME */
+
+
+
+
+
+
+
+
+
+/* Popup-ul Anime folosește componenta comună de mai jos. */
+
+/* =========================================================
+   MANGA — CARD + POPUP
+   ========================================================= */
+
+/* CARD MANGA */
+.manga-wrap .a-card-manga{
+  width: 180px;
+  height: 250px;
+  display: flex;
+  align-items: stretch;
+  overflow: visible;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 10px;
+
+  --gap-color: #ffffff;
+  --gap-h: 4px;
+  --bottom-h: 85px;
+  --overlap: 6px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  position: relative;
+  z-index: 1;
+  isolation: auto;
+}
+.manga-wrap .a-card-manga:hover{ z-index: 9999999; }
+
+/* SIDE MANGA */
+.manga-wrap .a-card-manga > .a-side{
+  width: 44px;
+  height: 100%;
+  background: linear-gradient(to right, var(--av-gold-dark), var(--av-gold));
+  color: #24170F;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  margin-right: 2px;
+  position: relative;
+  z-index: 10;
+  box-shadow: inset -2px 0 4px rgba(0,0,0,0.15), 0 8px 18px rgba(0,0,0,0.25);
+}
+.manga-wrap .a-card-manga > .a-side::after{
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: 0;
+  width: 1px;
+  background: rgba(255,255,255,0.25);
+}
+
+/* BADGE MANGA */
+.manga-wrap .a-card-manga > .a-side .bad{
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-shadow: 0 0 4px rgba(255,255,255,0.75), 0 0 8px rgba(255,255,255,0.55), 0 2px 6px rgba(0,0,0,0.25);
+}
+.manga-wrap .a-card-manga > .a-side.type-ona .bad,
+.manga-wrap .a-card-manga > .a-side.type-ova .bad{ font-size: 14px; }
+
+.manga-wrap .a-card-manga > .a-side .bad::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 6px auto 8px;
+  background: linear-gradient(90deg, rgba(255,230,170,0.95), rgba(255,200,90,0.95));
+  box-shadow: 0 0 6px rgba(255,200,90,0.5);
+}
+
+/* MANGA: badge Vol. (în SIDE) */
+.manga-wrap .a-card-manga > .a-side .bad.manga{
+  text-transform: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 44px;
+  padding: 0;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.4px;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+}
+
+/* TITLU VERTICAL MANGA */
+.manga-wrap .a-card-manga > .a-side .a-vertical{
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -10px;
+  font-weight: 900;
+  opacity: 0.95;
+  text-shadow: 0 0 4px rgba(255,255,255,0.70), 0 0 9px rgba(255,255,255,0.45), 0 3px 8px rgba(0,0,0,0.35);
+}
+
+/* POSTER MANGA */
+
+
+
+
+
+
+
+
+/* MANGA chap pill mai mare */
+.manga-wrap .a-pill.manga.chap{
+  height: 28px;
+  padding: 0 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+
+/* Popup-ul Manga folosește componenta comună de mai jos. */
+
+/* =========================================================
+   DESENE — CARD + POPUP
+   ========================================================= */
+
+/* CARD DESENE */
+.desene-wrap .a-card{
+  width: 180px;
+  height: 250px;
+  display: flex;
+  align-items: stretch;
+  overflow: visible;
+  cursor: pointer;
+  background: #ffffff;
+  border-radius: 10px;
+
+  --gap-color: #ffffff;
+  --gap-h: 4px;
+  --bottom-h: 85px;
+  --overlap: 6px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  position: relative;
+  z-index: 1;
+  isolation: auto;
+}
+.desene-wrap .a-card:hover{ z-index: 9999999; }
+
+/* SIDE DESENE */
+.desene-wrap .a-card > .a-side{
+  width: 44px;
+  height: 100%;
+  background: linear-gradient(to right, var(--av-gold-dark), var(--av-gold));
+  color: #24170F;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  margin-right: 2px;
+  position: relative;
+  z-index: 10;
+  box-shadow: inset -2px 0 4px rgba(0,0,0,0.15), 0 8px 18px rgba(0,0,0,0.25);
+}
+.desene-wrap .a-card > .a-side::after{
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: 0;
+  width: 1px;
+  background: rgba(255,255,255,0.25);
+}
+
+/* BADGE DESENE */
+.desene-wrap .a-card > .a-side .bad{
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.desene-wrap .a-card > .a-side .bad::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 6px auto 8px;
+  background: linear-gradient(90deg, rgba(255,230,170,0.95), rgba(255,200,90,0.95));
+  box-shadow: 0 0 6px rgba(255,200,90,0.5);
+}
+
+/* DESENE: Special / Mini (doar la desene) */
+.desene-wrap .a-card .a-side .bad.bad-special{
+  font-size: 9px;
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+.desene-wrap .a-card .a-side .bad.bad-mini{
+  
+       /* 🔹 modifici aici */
+  
+  font-size: 13px;
+   /* pentru linie */
+}
+
+/* DESENE: mută LINIA doar la MINI SERIES */
+.desene-wrap .a-card .a-side .bad.bad-mini::after{
+  
+  
+
+  /* ✅ AICI O MUȚI CUM VREI */
+  
+  
+ top: 25px;
+
+  /* ✅ LUNGIMEA LINIEI */
+  
+  
+
+  
+  
+  
+}
+
+/* Linie mai compactă doar la special (opțional) */
+.desene-wrap .bad.bad-special::after{
+  margin: 4px auto 6px;
+  height: 2px;
+}
+
+/* TITLU VERTICAL DESENE */
+.desene-wrap .a-card > .a-side .a-vertical{
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -10px;
+  font-weight: 900;
+  opacity: 0.95;
+  text-shadow: 0 0 4px rgba(255,255,255,0.70), 0 0 9px rgba(255,255,255,0.45), 0 3px 8px rgba(0,0,0,0.35);
+}
+
+/* POSTER DESENE */
+
+
+
+
+
+
+
+
+
+/* Popup-ul Desene folosește componenta comună de mai jos. */
+
+/* =========================================================
+   POPUP UI (COMUN pentru toate: anime/manga/desene)
+   ========================================================= */
+.anime-wrap .anime-popup,
+.manga-wrap .manga-popup,
+.desene-wrap .anime-popup {
+  --episode-popup-gold: var(--gold-2, var(--av-gold));
+  --episode-popup-gold-deep: var(--gold-1, var(--av-gold-dark));
+  --episode-popup-gold-hover: #e0c58e;
+  --episode-popup-ink: #24170f;
+  --episode-popup-surface: rgba(12, 7, 9, 0.985);
+  --episode-popup-surface-soft: rgba(68, 39, 43, 0.72);
+  --episode-popup-text: #f8f1ed;
+  --episode-popup-muted: rgba(248, 241, 237, 0.66);
+  --episode-popup-border: rgba(212, 183, 122, 0.27);
+  --episode-popup-art: linear-gradient(transparent, transparent);
+
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: 7px;
+  padding: 10px;
+  overflow: hidden;
+  color: var(--episode-popup-text);
+  border: 1px solid rgba(212, 183, 122, 0.62);
+  border-radius: inherit;
+  background:
+    linear-gradient(180deg, rgba(12, 7, 9, 0.82), rgba(12, 7, 9, 0.97) 48%, rgba(12, 7, 9, 0.995)),
+    radial-gradient(circle at 86% 6%, rgba(212, 183, 122, 0.23), transparent 31%),
+    radial-gradient(circle at 8% 94%, rgba(73, 39, 43, 0.72), transparent 44%),
+    var(--episode-popup-art) center / cover no-repeat,
+    linear-gradient(155deg, var(--episode-popup-surface-soft), var(--episode-popup-surface));
+  box-shadow:
+    0 20px 42px rgba(0, 0, 0, 0.56),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    inset 0 0 28px rgba(0, 0, 0, 0.16);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(0.965);
+  transform-origin: center;
+  transition:
+    opacity 180ms ease,
+    transform 240ms cubic-bezier(0.22, 1, 0.36, 1),
+    visibility 0s linear 240ms;
+}
+
+.anime-wrap .a-card.is-popup-open > .anime-popup,
+.manga-wrap .a-card-manga.is-popup-open > .manga-popup,
+.desene-wrap .a-card.is-popup-open > .anime-popup {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: scale(1);
+  transition-delay: 0s;
+}
+
+.anime-wrap .anime-popup::before,
+.manga-wrap .manga-popup::before,
+.desene-wrap .anime-popup::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--episode-popup-gold) 34%,
+    rgba(212, 183, 122, 0.08)
+  );
+  opacity: 0.85;
+}
+
+.popup-header {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-rows: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 5px 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--episode-popup-border);
+}
+
+/* Badge TV / ONA / OVA / MINI etc (comun) */
+.popup-tv,
+.popup-vol {
+  position: static;
+  grid-column: 1;
+  grid-row: 1;
+  width: auto;
+  min-width: 0;
+  min-height: 0;
+  height: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 6px 3px;
+  color: var(--episode-popup-ink);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background: linear-gradient(
+    135deg,
+    var(--episode-popup-gold),
+    var(--episode-popup-gold-deep)
+  );
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.22);
+  font-size: 7.25px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.25px;
+  white-space: nowrap;
+}
+
+.popup-category {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+  color: var(--episode-popup-muted);
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: 0.65px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.popup-vol {
+  flex-direction: row;
+  gap: 2px;
+  text-transform: none;
+}
+
+.popup-vol.popup-voltype {
+  width: auto;
+}
+
+.popup-vol .vol-no {
+  display: inline;
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+  font-variant-numeric: tabular-nums;
+}
+
+.popup-title {
+  position: static;
+  grid-column: 1 / -1;
+  grid-row: 2;
+  min-width: 0;
+  width: auto;
+  display: block;
+}
+
+.popup-title .jp {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--episode-popup-text);
+  font-family: Inter, "Segoe UI", sans-serif;
+  font-size: 11.5px;
+  font-weight: 800;
+  line-height: 1.12;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+  overflow-wrap: anywhere;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.popup-title .en {
+  display: none;
+}
+
+.popup-rating {
+  position: static;
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: end;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--episode-popup-gold);
+  font-size: 8.25px;
+  font-weight: 850;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.popup-rating i {
+  font-size: 7px;
+}
+
+.popup-content {
+  position: static;
+  min-width: 0;
+  min-height: 0;
+  width: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-content: start;
+  gap: 6px 8px;
+  font-size: 8px;
+  line-height: 1.2;
+}
+
+.popup-posted,
+.popup-status,
+.popup-genres {
+  position: static;
+  min-width: 0;
+  margin: 0;
+  display: grid;
+  align-content: start;
+  gap: 2px;
+  color: var(--episode-popup-muted);
+  overflow-wrap: anywhere;
+}
+
+.popup-meta-label {
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--episode-popup-muted);
+  font-size: 6.75px;
+  font-weight: 800;
+  letter-spacing: 0.45px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.popup-meta-label i {
+  color: var(--episode-popup-gold);
+  font-size: 7px;
+}
+
+.popup-meta-value {
+  min-width: 0;
+  color: var(--episode-popup-text);
+  font-size: 8px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+.popup-genres {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  white-space: normal;
+}
+
+.popup-genres .popup-meta-label {
+  display: none;
+}
+
+.popup-genres .popup-meta-value {
+  color: var(--episode-popup-gold);
+  font-size: 7.5px;
+  font-weight: 800;
+  letter-spacing: 0.18px;
+}
+
+.popup-posted,
+.popup-status {
+  grid-row: 2;
+}
+
+.popup-episodes {
+  position: static;
+  grid-column: 1 / -1;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding-block: 6px;
+  border-block: 1px solid var(--episode-popup-border);
+}
+
+.popup-ep {
+  min-width: 0;
+  min-height: 32px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  align-content: center;
+  justify-items: start;
+  gap: 2px 5px;
+  padding: 0;
+  color: var(--episode-popup-text);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  font-size: 10.5px;
+  font-weight: 850;
+  font-variant-numeric: tabular-nums;
+}
+
+.popup-ep + .popup-ep {
+  padding-inline-start: 8px;
+  border-inline-start: 1px solid var(--episode-popup-border);
+}
+
+.popup-ep-label {
+  grid-column: 1 / -1;
+  color: var(--episode-popup-muted);
+  font-size: 6.75px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.popup-ep > i {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: center;
+  color: var(--episode-popup-gold);
+  font-size: 9px;
+}
+
+.popup-ep-value {
+  grid-column: 2;
+  grid-row: 2;
+  min-width: 0;
+  color: var(--episode-popup-text);
+  font-size: 10.5px;
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.popup-desc {
+  position: static;
+  grid-column: 1 / -1;
+  width: auto;
+  margin: 0;
+  grid-row: 4;
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--episode-popup-muted);
+  font-size: 8.25px;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+
+
+.watch-btn,
+.add-btn {
+  min-width: 0;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 0 8px;
+  color: var(--episode-popup-text);
+  border: 1px solid var(--episode-popup-border);
+  border-radius: 7px;
+  background: rgba(68, 39, 43, 0.38);
+  font-family: Inter, "Segoe UI", sans-serif;
+  font-size: 7.75px;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition:
+    color 150ms ease,
+    border-color 150ms ease,
+    background 150ms ease,
+    transform 150ms ease;
+}
+
+.watch-btn i,
+.add-btn i {
+  font-size: 8px;
+}
+
+.watch-btn {
+  width: 100%;
+  color: var(--episode-popup-ink);
+  border-color: rgba(212, 183, 122, 0.76);
+  background: linear-gradient(
+    135deg,
+    var(--episode-popup-gold),
+    var(--episode-popup-gold-deep)
+  );
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.24);
+}
+
+.add-btn {
+  width: auto;
+  min-width: 56px;
+  color: var(--episode-popup-gold);
+  background: rgba(68, 39, 43, 0.5);
+}
+
+.watch-btn:hover,
+.add-btn:hover {
+  border-color: var(--episode-popup-gold);
+  transform: translateY(-1px);
+}
+
+.watch-btn:hover {
+  color: var(--episode-popup-ink);
+  background: linear-gradient(
+    135deg,
+    var(--episode-popup-gold-hover),
+    var(--episode-popup-gold)
+  );
+}
+
+.add-btn:hover,
+.add-btn.is-added {
+  color: var(--episode-popup-text);
+  background: rgba(184, 146, 94, 0.24);
+}
+
+.watch-btn:focus-visible,
+.add-btn:focus-visible {
+  outline: 2px solid var(--episode-popup-gold);
+  outline-offset: 2px;
+}
+
+.episode-popup-toggle {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: inherit;
+  background: transparent;
+  cursor: pointer;
+}
+
+.episode-popup-toggle:focus-visible {
+  outline: 2px solid var(--gold-2, var(--av-gold));
+  outline-offset: 3px;
+}
+
+/* =========================================================
+   DESENE: BADGE "MINI SERIES" (2 rânduri + linie corectă)
+   INLOCUIESTE COMPLET regulile tale pentru .bad.bad-mini + ::after
+   ========================================================= */
+
+.desene-wrap .a-card .a-side .bad.bad-mini{
+  /* nu îl mai împinge din top/left */
+  top: 0;
+  left: 0;
+
+  /* îl facem să ocupe lățimea barei (44px) și să fie centrat */
+  width: 44px;
+  display: block;
+  text-align: center;
+
+  /* ascundem textul original ca să NU se dubleze */
+  color: transparent;
+
+  /* spacing ca să aibă loc 2 rânduri + linia */
+  padding-top: 2px;
+  padding-bottom: 10px;
+  line-height: 1;
+  position: relative;
+}
+
+/* textul pe 2 rânduri */
+.desene-wrap .a-card .a-side .bad.bad-mini::before{
+  content: "MINI\A SERIES";
+  white-space: pre;      /* permite \A */
+  display: block;
+
+  color: #24170F;
+  font-weight: 900;
+  font-size: 9px;        /* 🔧 aici îl faci mai mare/mic (8–10) */
+  line-height: 1.05;
+  letter-spacing: 0.6px;
+}
+
+/* linia de sub badge (doar pentru MINI) */
+.desene-wrap .a-card .a-side .bad.bad-mini::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3px;           /* 🔧 urcă/coboară linia */
+
+  width: 35px;           /* 🔧 lungimea liniei */
+  height: 2px;
+
+  background: linear-gradient(90deg, rgba(255,230,170,0.95), rgba(255,200,90,0.95));
+  box-shadow: 0 0 6px rgba(255,200,90,0.5);
+  margin: 0;
+}
+
+
+/* =========================================================
+   DESENE CONTROLS
+   ========================================================= */
+
+.desene-controls {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 10px;
+  gap: 10px;
+  transform: translateY(-25px);
+}
+
+/* Vezi tot */
+
+
+
+
+
+/* V3 — sparkle positions moved out of inline HTML. */
+.sparkle-pos-1 { left: 42%; top: 8%; }
+.sparkle-pos-2 { left: 52%; top: 4%; }
+.sparkle-pos-3 { left: 58%; top: 12%; }
+.sparkle-pos-4 { left: 46%; top: 0; }
+.sparkle-pos-5 { left: 55%; top: 6%; }

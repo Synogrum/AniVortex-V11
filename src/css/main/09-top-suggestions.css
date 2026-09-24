@@ -1,0 +1,1349 @@
+/* TOP SUGESTII: tipografie mai clara si echilibrata pe mobil. */
+.top-sugestii-panel .ts-kicker {
+  font-size: 8.5px;
+  line-height: 1.2;
+  letter-spacing: .17em;
+}
+
+.top-sugestii-panel .ts-title {
+  font-size: 22px;
+  line-height: 1.04;
+}
+
+.top-sugestii-panel .ts-cat-main strong {
+  font-size: 13px;
+  line-height: 1.1;
+}
+
+.top-sugestii-panel .ts-place {
+  font-size: 9.5px;
+  line-height: 1.15;
+}
+
+.top-sugestii-panel .ts-serie {
+  margin-top: 6px;
+  font-size: 19px;
+  line-height: 1.14;
+}
+
+.top-sugestii-panel .ts-user {
+  margin-top: 8px;
+  font-size: 10.5px;
+  line-height: 1.3;
+}
+
+.top-sugestii-panel .ts-score,
+.top-sugestii-panel .ts-row-scores {
+  font-size: 9.5px;
+}
+
+.top-sugestii-panel .ts-view {
+  font-size: 10.5px;
+}
+
+.top-sugestii-panel .ts-mini-poster .ts-rank {
+  font-size: 8px;
+}
+
+.top-sugestii-panel .ts-row-title {
+  font-size: 12.5px;
+  line-height: 1.18;
+  font-weight: 900;
+}
+
+.top-sugestii-panel .ts-row-user {
+  margin-top: 5px;
+  font-size: 9.5px;
+  line-height: 1.2;
+}
+
+.top-sugestii-panel .ts-row-scores {
+  margin-top: 7px;
+  line-height: 1.1;
+}
+
+.top-sugestii-panel .ts-footer {
+  font-size: 11px;
+  line-height: 1.25;
+}
+
+/* TOP SUGESTII: continutul incepe de la marginea de sus a posterelor. */
+.top-sugestii-panel .ts-feature {
+  align-items: center;
+}
+
+.top-sugestii-panel .ts-feature-poster {
+  align-self: center;
+  height: 172px;
+}
+
+.top-sugestii-panel .ts-feature-info {
+  box-sizing: border-box;
+  width: 100%;
+  height: 174px;
+  min-height: 0;
+  align-self: center;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 2px 0 1px;
+  text-align: left;
+}
+
+.top-sugestii-panel .ts-score-row {
+  margin-top: 11px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.top-sugestii-panel .ts-view {
+  margin-top: auto;
+  margin-bottom: 2px;
+  align-self: stretch;
+}
+
+.top-sugestii-panel .ts-row {
+  align-items: start;
+}
+
+.top-sugestii-panel .ts-mini-poster,
+.top-sugestii-panel .ts-row-info {
+  align-self: start;
+}
+
+.top-sugestii-panel .ts-row-info {
+  padding-top: 1px;
+}
+
+.top-sugestii-panel .ts-chevron {
+  align-self: center;
+}
+
+@property --av-news-led-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+/* Gradientul se roteste sub card; elementul ramane fix si stabil. */
+
+
+
+
+@keyframes avNewsLedGradientRun {
+  to { --av-news-led-angle: 360deg; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  
+}
+
+/* FINAL: linie subtire sub card, cu fata clara si coada soft. */
+.av-news-led-track {
+  inset: -3px;
+  z-index: 0;
+  overflow: visible;
+  border-radius: 23px;
+}
+
+.av-news-led-line {
+  inset: 0;
+  width: auto;
+  height: auto;
+  border-radius: inherit;
+  opacity: .78;
+  background: conic-gradient(
+    from var(--av-news-led-angle),
+    transparent 0deg 268deg,
+    rgba(39, 164, 221, .02) 278deg,
+    rgba(48, 194, 221, .08) 294deg,
+    rgba(61, 216, 216, .18) 315deg,
+    rgba(80, 232, 214, .34) 336deg,
+    rgba(139, 255, 229, .68) 354deg,
+    rgba(70, 218, 215, .12) 359deg,
+    transparent 360deg
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  box-shadow: none;
+  offset-path: none;
+  offset-distance: 0;
+  offset-rotate: 0deg;
+  transform: none;
+  animation: avNewsLedGradientRun 8s linear infinite;
+  animation-delay: -2s;
+}
+
+.av-news-led-line::before,
+.av-news-led-line::after {
+  content: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .av-news-led-line {
+    animation: none;
+    animation-delay: 0s;
+    --av-news-led-angle: 72deg;
+  }
+}
+
+/* =========================================================
+   POPUP SERII — VARIANTA APROBATĂ
+   Comun pentru Anime, Manga și Desene; fără poster duplicat și fără buton X.
+   ========================================================= */
+:is(.anime-wrap, .manga-wrap, .desene-wrap) :is(.anime-popup, .manga-popup).av-series-popup {
+  --av-popup-gap: 16px;
+  --av-popup-teal: #66d7cb;
+  --av-popup-teal-soft: #a2ebe3;
+  --av-popup-gold: var(--gold-2, var(--av-gold));
+  --av-popup-gold-soft: #efd99f;
+  --av-popup-text: #f8fbfb;
+  --av-popup-muted: #c7d8dc;
+
+  position: absolute;
+  inset: auto;
+  top: 0;
+  left: calc(100% + var(--av-popup-gap));
+  right: auto;
+  z-index: 120;
+  width: min(440px, calc(100vw - 28px));
+  height: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 46px minmax(0, 1fr) 34px;
+  gap: 6px;
+  padding: 9px 10px;
+  overflow: visible;
+  color: var(--av-popup-text);
+  border: 1px solid rgba(139, 230, 221, 0.52);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(102, 215, 203, 0.22), transparent 32%),
+    radial-gradient(circle at 88% 6%, rgba(212, 183, 122, 0.18), transparent 28%),
+    radial-gradient(circle at 88% 100%, rgba(109, 53, 66, 0.42), transparent 42%),
+    linear-gradient(145deg, rgba(10, 83, 98, 0.985), rgba(5, 43, 56, 0.99) 55%, rgba(29, 37, 47, 0.985));
+  box-shadow:
+    0 24px 56px rgba(0, 15, 23, 0.48),
+    0 0 0 1px rgba(0, 27, 36, 0.76),
+    inset 0 1px 0 rgba(255, 255, 255, 0.11),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.24);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(-8px) scale(0.985);
+  transform-origin: left center;
+  transition:
+    opacity 180ms ease,
+    transform 240ms cubic-bezier(0.22, 1, 0.36, 1),
+    visibility 0s linear 240ms;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) :is(.anime-popup, .manga-popup).av-series-popup.is-popup-left {
+  left: auto;
+  right: calc(100% + var(--av-popup-gap));
+  transform: translateX(8px) scale(0.985);
+  transform-origin: right center;
+}
+
+:is(.anime-wrap .a-card, .manga-wrap .a-card-manga, .desene-wrap .a-card).is-popup-open
+  > :is(.anime-popup, .manga-popup).av-series-popup,
+:is(.anime-wrap .a-card, .manga-wrap .a-card-manga, .desene-wrap .a-card).is-popup-open
+  > :is(.anime-popup, .manga-popup).av-series-popup.is-popup-left {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0) scale(1);
+  transition-delay: 0s;
+}
+
+/* Fallback direct: popupul Bao funcționează și dacă scriptul general al paginii întârzie. */
+.desene-wrap .a-card[data-popup-variant="premium"]:hover > .anime-popup.av-series-popup,
+.desene-wrap .a-card[data-popup-variant="premium"]:focus-within > .anime-popup.av-series-popup {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0) scale(1);
+  transition-delay: 0s;
+}
+
+:is(.anime-wrap .a-card, .manga-wrap .a-card-manga, .desene-wrap .a-card).is-popup-open {
+  z-index: 9999999;
+}
+
+.desene-wrap .a-card[data-popup-variant="premium"]:hover,
+.desene-wrap .a-card[data-popup-variant="premium"]:focus-within {
+  z-index: 9999999;
+}
+
+/* Punte invizibilă între card și popup, pentru ca mouseleave să nu-l închidă prematur. */
+:is(.anime-wrap, .manga-wrap, .desene-wrap) :is(.anime-popup, .manga-popup).av-series-popup::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 calc(0px - var(--av-popup-gap));
+  width: var(--av-popup-gap);
+  height: auto;
+  background: transparent;
+  pointer-events: auto;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) :is(.anime-popup, .manga-popup).av-series-popup.is-popup-left::before {
+  inset: 0 calc(0px - var(--av-popup-gap)) 0 auto;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) :is(.anime-popup, .manga-popup).av-series-popup::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: 10px;
+  border: 1px solid rgba(194, 237, 232, 0.06);
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-header {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-rows: 13px minmax(0, 1fr);
+  align-items: center;
+  gap: 0 14px;
+  padding: 5px 10px 6px;
+  overflow: hidden;
+  border: 1px solid rgba(148, 226, 218, 0.18);
+  border-radius: 10px;
+  background:
+    radial-gradient(circle at 16% 42%, rgba(82, 205, 194, 0.17), transparent 38%),
+    radial-gradient(circle at 86% 18%, rgba(212, 183, 122, 0.15), transparent 34%),
+    linear-gradient(112deg, rgba(5, 57, 71, 0.82), rgba(18, 66, 74, 0.58) 55%, rgba(63, 47, 53, 0.5));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  isolation: isolate;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-header::before,
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-header::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-header::before {
+  left: -36px;
+  bottom: -60px;
+  width: 174px;
+  height: 104px;
+  border: 1px solid rgba(102, 215, 203, 0.12);
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-header::after {
+  top: -52px;
+  right: -18px;
+  width: 142px;
+  height: 126px;
+  border: 1px solid rgba(212, 183, 122, 0.14);
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-taxonomy {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--av-popup-teal);
+  font-size: 6.5px;
+  font-weight: 850;
+  letter-spacing: 0.85px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-taxonomy::after {
+  content: "";
+  order: 1;
+  width: 18px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--av-popup-gold), transparent);
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-category {
+  order: 0;
+  display: inline;
+  color: var(--av-popup-teal);
+  font: inherit;
+  letter-spacing: inherit;
+  overflow: visible;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup :is(.popup-tv, .popup-vol) {
+  order: 2;
+  min-width: 0;
+  padding: 0;
+  color: var(--av-popup-gold-soft);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  font: inherit;
+  letter-spacing: inherit;
+  white-space: nowrap;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-title {
+  position: relative;
+  grid-column: 1;
+  grid-row: 2;
+  align-self: end;
+  min-width: 0;
+  width: auto;
+  display: block;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-title .jp {
+  display: block;
+  overflow: hidden;
+  color: transparent;
+  background: linear-gradient(90deg, #fff 0 66%, var(--av-popup-gold-soft) 100%);
+  background-clip: text;
+  font-family: Outfit, Inter, "Segoe UI", sans-serif;
+  font-size: 21px;
+  font-weight: 850;
+  line-height: 1;
+  letter-spacing: -0.65px;
+  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-title .en {
+  display: none;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-rating {
+  position: relative;
+  grid-column: 2;
+  grid-row: 1 / -1;
+  justify-self: end;
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 12px;
+  color: var(--av-popup-gold-soft);
+  border-left: 1px solid rgba(212, 183, 122, 0.28);
+  font-family: Outfit, Inter, "Segoe UI", sans-serif;
+  font-size: 11px;
+  font-weight: 850;
+  font-variant-numeric: tabular-nums;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-rating i {
+  color: #ffe66d;
+  font-size: 8px;
+  filter: drop-shadow(0 0 6px rgba(255, 225, 93, 0.22));
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-content {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 82px minmax(0, 1fr);
+  grid-template-rows: 58px minmax(0, 1fr) 26px;
+  align-items: center;
+  gap: 2px 7px;
+  padding: 3px 10px 4px;
+  overflow: hidden;
+  border: 1px solid rgba(132, 216, 208, 0.16);
+  border-radius: 11px;
+  background:
+    radial-gradient(circle at 50% 4%, rgba(212, 183, 122, 0.09), transparent 34%),
+    linear-gradient(135deg, rgba(3, 39, 51, 0.4), rgba(18, 67, 73, 0.24));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035);
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-duration,
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-genres {
+  position: relative;
+  min-width: 0;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 4px;
+  margin: 0;
+  color: var(--av-popup-muted);
+  text-align: center;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-duration {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-genres {
+  grid-column: 3;
+  grid-row: 1;
+  white-space: normal;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-duration::after,
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-genres::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 36%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(102, 215, 203, 0.28));
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-duration::after { right: -12%; }
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-genres::before {
+  left: -12%;
+  transform: rotate(180deg);
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-duration .popup-meta-label,
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-genres .popup-meta-label {
+  display: block;
+  color: var(--av-popup-teal);
+  font-size: 6px;
+  font-weight: 850;
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-duration .popup-meta-value,
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-genres .popup-meta-value {
+  color: var(--av-popup-gold-soft);
+  font-size: 8px;
+  font-weight: 850;
+  line-height: 1.12;
+  overflow-wrap: anywhere;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-episodes {
+  position: relative;
+  grid-column: 2;
+  grid-row: 1;
+  width: 78px;
+  height: 56px;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) auto;
+  place-items: center;
+  gap: 0;
+  margin: 0;
+  padding: 6px;
+  border: 1px solid rgba(212, 183, 122, 0.55);
+  border-radius: 15px 15px 23px 23px;
+  background:
+    radial-gradient(circle at 50% 20%, rgba(212, 183, 122, 0.18), transparent 48%),
+    linear-gradient(160deg, rgba(13, 91, 102, 0.94), rgba(4, 43, 56, 0.98));
+  box-shadow: 0 9px 18px rgba(0, 18, 28, 0.24), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-ep {
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  place-items: center;
+  gap: 0;
+  padding: 0;
+  color: var(--av-popup-text);
+  border: 0;
+  background: transparent;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-ep + .popup-ep {
+  padding: 0;
+  border: 0;
+}
+
+
+
+
+
+
+
+
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-story {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  min-width: 0;
+  align-self: stretch;
+  display: grid;
+  grid-template-rows: auto auto;
+  align-content: center;
+  justify-items: center;
+  gap: 2px;
+  padding: 1px 14px;
+  border-top: 1px solid rgba(132, 216, 208, 0.14);
+  text-align: center;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-description-label {
+  color: var(--av-popup-teal);
+  font-size: 6px;
+  font-weight: 850;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-desc {
+  position: static;
+  grid-column: auto;
+  grid-row: auto;
+  align-self: center;
+  width: min(100%, 390px);
+  margin: 0;
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--av-popup-muted);
+  font-size: 7px;
+  font-weight: 550;
+  line-height: 1.2;
+  text-align: center;
+  overflow-wrap: anywhere;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-meta-strip {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  width: min(100%, 310px);
+  min-height: 26px;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  border-top: 1px solid rgba(212, 183, 122, 0.22);
+  border-bottom: 1px solid rgba(102, 215, 203, 0.17);
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-meta-strip .popup-posted,
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-meta-strip .popup-status {
+  position: relative;
+  min-width: 0;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 2px;
+  margin: 0;
+  color: var(--av-popup-muted);
+  text-align: center;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-meta-strip .popup-status::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 1px;
+  background: linear-gradient(transparent, rgba(212, 183, 122, 0.42), transparent);
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-meta-strip .popup-meta-label {
+  display: block;
+  color: var(--av-popup-teal);
+  font-size: 5.5px;
+  font-weight: 850;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-meta-strip .popup-meta-value {
+  color: var(--av-popup-text);
+  font-size: 6.75px;
+  font-weight: 850;
+  line-height: 1;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-meta-strip .popup-status .popup-meta-value {
+  color: var(--av-popup-gold-soft);
+}
+
+
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .watch-btn,
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .add-btn {
+  min-width: 0;
+  height: 34px;
+  padding: 0 10px;
+  border-radius: 7px;
+  font-family: Inter, "Segoe UI", sans-serif;
+  font-size: 7.5px;
+  font-weight: 850;
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .watch-btn {
+  color: #fff;
+  border-color: rgba(131, 232, 223, 0.74);
+  background: linear-gradient(110deg, #5576d9, #4383ce 50%, #35b9ac);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.17), 0 8px 18px rgba(1, 23, 36, 0.22);
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .add-btn {
+  width: 38px;
+  min-width: 38px;
+  padding: 0;
+  color: var(--av-popup-teal);
+  border-color: rgba(102, 215, 203, 0.68);
+  background: rgba(2, 31, 43, 0.56);
+}
+
+:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .add-btn .popup-action-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+  :is(.anime-wrap, .manga-wrap, .desene-wrap) :is(.anime-popup, .manga-popup).av-series-popup,
+  :is(.anime-wrap, .manga-wrap, .desene-wrap) :is(.anime-popup, .manga-popup).av-series-popup.is-popup-left {
+    position: fixed;
+    inset: 50% auto auto 50%;
+    width: min(520px, calc(100vw - 24px));
+    height: min(390px, calc(100dvh - 24px));
+    min-height: 300px;
+    transform: translate(-50%, -48%) scale(0.985);
+    transform-origin: center;
+  }
+
+  :is(.anime-wrap .a-card, .manga-wrap .a-card-manga, .desene-wrap .a-card).is-popup-open
+    > :is(.anime-popup, .manga-popup).av-series-popup,
+  :is(.anime-wrap .a-card, .manga-wrap .a-card-manga, .desene-wrap .a-card).is-popup-open
+    > :is(.anime-popup, .manga-popup).av-series-popup.is-popup-left {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .desene-wrap .a-card[data-popup-variant="premium"]:hover > .anime-popup.av-series-popup,
+  .desene-wrap .a-card[data-popup-variant="premium"]:focus-within > .anime-popup.av-series-popup {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  :is(.anime-wrap, .manga-wrap, .desene-wrap) :is(.anime-popup, .manga-popup).av-series-popup::before,
+  :is(.anime-wrap, .manga-wrap, .desene-wrap) :is(.anime-popup, .manga-popup).av-series-popup.is-popup-left::before {
+    display: none;
+  }
+
+  :is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-content {
+    grid-template-rows: 96px minmax(0, 1fr) 42px;
+  }
+
+  :is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-episodes {
+    width: 102px;
+    height: 88px;
+  }
+
+  
+
+  :is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-desc {
+    font-size: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anime-wrap .anime-popup,
+  .manga-wrap .manga-popup,
+  .desene-wrap .anime-popup,
+  .watch-btn,
+  .add-btn {
+    transition-duration: 1ms;
+  }
+}
+
+/* Fallback comun: deschiderea nu depinde de vechiul design al popupului. */
+:is(.anime-wrap .a-card, .manga-wrap .a-card-manga, .desene-wrap .a-card):hover
+  > :is(.anime-popup, .manga-popup).av-series-popup,
+:is(.anime-wrap .a-card, .manga-wrap .a-card-manga, .desene-wrap .a-card):focus-within
+  > :is(.anime-popup, .manga-popup).av-series-popup {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0) scale(1);
+  transition-delay: 0s;
+}
+
+:is(.anime-wrap .a-card, .manga-wrap .a-card-manga, .desene-wrap .a-card):hover,
+:is(.anime-wrap .a-card, .manga-wrap .a-card-manga, .desene-wrap .a-card):focus-within {
+  z-index: 9999999;
+}
+
+@media (max-width: 1100px) {
+  :is(.anime-wrap .a-card, .manga-wrap .a-card-manga, .desene-wrap .a-card):hover
+    > :is(.anime-popup, .manga-popup).av-series-popup,
+  :is(.anime-wrap .a-card, .manga-wrap .a-card-manga, .desene-wrap .a-card):focus-within
+    > :is(.anime-popup, .manga-popup).av-series-popup {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* =========================================================
+   HOT NEWS V2 — POPUPUL DE SERIE APROBAT
+   Componenta reală: .hnv2-popup (generată dinamic).
+   ========================================================= */
+.hnv2-card > .hnv2-popup.av-hnv2-approved {
+  --hnv2-popup-gap: 12px;
+  --hnv2-popup-offset-y: -2px;
+  --hnv2-popup-teal: #66d7cb;
+  --hnv2-popup-teal-soft: #a2ebe3;
+  --hnv2-popup-gold: var(--gold-2, var(--av-gold));
+  --hnv2-popup-gold-soft: #efd99f;
+  --hnv2-popup-text: #f8fbfb;
+  --hnv2-popup-muted: #c7d8dc;
+
+  position: absolute;
+  inset: var(--hnv2-popup-offset-y) auto auto calc(100% + var(--hnv2-popup-gap));
+  z-index: 120;
+  width: var(--hnv2-popup-width, calc(100% + 64px));
+  /* Suprapunere minimă: maschează cardul vecin, dar păstrează iluzia aceleiași înălțimi. */
+  height: calc(var(--hnv2-card-height, 100%) + 5px);
+  min-height: calc(var(--hnv2-card-height, 100%) + 5px);
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 50px minmax(0, 1fr) 44px;
+  gap: 6px;
+  padding: 8px;
+  overflow: visible;
+  color: var(--hnv2-popup-text);
+  border: 1px solid rgba(139, 230, 221, 0.52);
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 12% 8%, rgba(102, 215, 203, 0.22), transparent 32%),
+    radial-gradient(circle at 88% 6%, rgba(212, 183, 122, 0.18), transparent 28%),
+    radial-gradient(circle at 88% 100%, rgba(109, 53, 66, 0.42), transparent 42%),
+    linear-gradient(145deg, rgba(10, 83, 98, 0.985), rgba(5, 43, 56, 0.99) 55%, rgba(29, 37, 47, 0.985));
+  box-shadow:
+    0 24px 56px rgba(0, 15, 23, 0.48),
+    0 0 0 1px rgba(0, 27, 36, 0.76),
+    inset 0 1px 0 rgba(255, 255, 255, 0.11),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.24);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(-8px) scale(0.985);
+  transform-origin: left center;
+  transition:
+    opacity 180ms ease,
+    transform 240ms cubic-bezier(0.22, 1, 0.36, 1),
+    visibility 0s linear 240ms;
+}
+
+.hnv2-card > .hnv2-popup.av-hnv2-approved[aria-hidden="true"] {
+  pointer-events: none;
+}
+
+.hnv2-card:nth-child(5n + 4) > .hnv2-popup.av-hnv2-approved,
+.hnv2-card:nth-child(5n + 5) > .hnv2-popup.av-hnv2-approved {
+  inset: var(--hnv2-popup-offset-y) calc(100% + var(--hnv2-popup-gap)) auto auto;
+  transform: translateX(8px) scale(0.985);
+  transform-origin: right center;
+}
+
+.hnv2-card:hover > .hnv2-popup.av-hnv2-approved,
+.hnv2-card:focus-within > .hnv2-popup.av-hnv2-approved,
+.hnv2-card:nth-child(5n + 4):hover > .hnv2-popup.av-hnv2-approved,
+.hnv2-card:nth-child(5n + 4):focus-within > .hnv2-popup.av-hnv2-approved,
+.hnv2-card:nth-child(5n + 5):hover > .hnv2-popup.av-hnv2-approved,
+.hnv2-card:nth-child(5n + 5):focus-within > .hnv2-popup.av-hnv2-approved {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0) scale(1);
+  transition-delay: 0s;
+}
+
+.hnv2-card:hover,
+.hnv2-card:focus-within {
+  z-index: 10000;
+}
+
+.hnv2-card > .hnv2-popup.av-hnv2-approved::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 calc(0px - var(--hnv2-popup-gap));
+  width: var(--hnv2-popup-gap);
+  background: transparent;
+  pointer-events: auto;
+}
+
+.hnv2-card:nth-child(5n + 4) > .hnv2-popup.av-hnv2-approved::before,
+.hnv2-card:nth-child(5n + 5) > .hnv2-popup.av-hnv2-approved::before {
+  inset: 0 calc(0px - var(--hnv2-popup-gap)) 0 auto;
+}
+
+.hnv2-card > .hnv2-popup.av-hnv2-approved::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: 10px;
+  border: 1px solid rgba(194, 237, 232, 0.06);
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.av-hnv2-approved > .hnv2-popup-head {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-rows: 15px minmax(0, 1fr);
+  align-items: center;
+  gap: 0 8px;
+  padding: 5px 8px 6px;
+  overflow: hidden;
+  border: 1px solid rgba(148, 226, 218, 0.18);
+  border-radius: 10px;
+  background:
+    radial-gradient(circle at 16% 42%, rgba(82, 205, 194, 0.17), transparent 38%),
+    radial-gradient(circle at 86% 18%, rgba(212, 183, 122, 0.15), transparent 34%),
+    linear-gradient(112deg, rgba(5, 57, 71, 0.82), rgba(18, 66, 74, 0.58) 55%, rgba(63, 47, 53, 0.5));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  isolation: isolate;
+}
+
+.av-hnv2-approved > .hnv2-popup-head::before,
+.av-hnv2-approved > .hnv2-popup-head::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.av-hnv2-approved > .hnv2-popup-head::before {
+  width: 150px;
+  height: 150px;
+  left: -32px;
+  top: 25px;
+  border: 1px solid rgba(102, 215, 203, 0.11);
+}
+
+.av-hnv2-approved > .hnv2-popup-head::after {
+  width: 128px;
+  height: 128px;
+  right: -44px;
+  top: -70px;
+  border: 1px solid rgba(212, 183, 122, 0.13);
+}
+
+.av-hnv2-approved .hnv2-approved-taxonomy {
+  grid-column: 1;
+  grid-row: 1;
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  justify-self: start;
+  margin-block-start: 2px;
+  color: var(--hnv2-popup-teal);
+  font-size: 7.5px;
+  font-weight: 900;
+  letter-spacing: 0.85px;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.av-hnv2-approved .hnv2-approved-taxonomy-line {
+  width: 16px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--hnv2-popup-gold), transparent);
+}
+
+.av-hnv2-approved .hnv2-approved-type {
+  color: var(--hnv2-popup-gold-soft);
+}
+
+.av-hnv2-approved .hnv2-approved-title {
+  grid-column: 1;
+  grid-row: 2;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  color: var(--hnv2-popup-text);
+  font-family: Outfit, Inter, "Segoe UI", sans-serif;
+  font-size: 12px;
+  font-weight: 850;
+  line-height: 1;
+  letter-spacing: -0.25px;
+  text-align: left;
+  text-overflow: ellipsis;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.42), 1px 1px 0 rgba(212, 183, 122, 0.32);
+  white-space: nowrap;
+}
+
+.av-hnv2-approved .hnv2-approved-rating {
+  grid-column: 2;
+  grid-row: 1 / -1;
+  min-width: 52px;
+  align-self: stretch;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding-inline-start: 7px;
+  color: var(--hnv2-popup-gold-soft);
+  border-inline-start: 1px solid rgba(212, 183, 122, 0.26);
+  font-size: 11.5px;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+}
+
+.av-hnv2-approved .hnv2-approved-rating i {
+  color: #f3d65d;
+  font-size: 9px;
+}
+
+.av-hnv2-approved > .hnv2-popup-content {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  min-height: 0;
+  padding: 3px 6px 2px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 70px minmax(0, 1fr);
+  grid-template-rows: 76px minmax(0, 1fr) 38px;
+  align-items: center;
+  gap: 0 6px;
+  overflow: hidden;
+  border: 1px solid rgba(130, 220, 211, 0.17);
+  border-radius: 10px;
+  background:
+    radial-gradient(circle at 50% 0, rgba(67, 184, 175, 0.12), transparent 34%),
+    radial-gradient(circle at 100% 100%, rgba(212, 183, 122, 0.09), transparent 37%),
+    rgba(2, 35, 46, 0.47);
+}
+
+.av-hnv2-approved .hnv2-approved-side-fact {
+  position: relative;
+  grid-row: 1;
+  min-width: 0;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 4px;
+  text-align: center;
+}
+
+.av-hnv2-approved .hnv2-approved-duration { grid-column: 1; }
+.av-hnv2-approved .hnv2-approved-quality { grid-column: 3; }
+
+.av-hnv2-approved .hnv2-approved-side-fact::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(102, 215, 203, 0.3));
+}
+
+.av-hnv2-approved .hnv2-approved-duration::after { right: -12%; }
+.av-hnv2-approved .hnv2-approved-quality::after {
+  left: -12%;
+  transform: rotate(180deg);
+}
+
+.av-hnv2-approved .hnv2-approved-label {
+  color: var(--hnv2-popup-teal);
+  font-size: 6.25px;
+  font-weight: 900;
+  letter-spacing: 0.7px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.av-hnv2-approved .hnv2-approved-value {
+  max-width: 100%;
+  overflow: hidden;
+  color: var(--hnv2-popup-gold-soft);
+  font-size: 8px;
+  font-weight: 900;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.av-hnv2-approved .hnv2-approved-episode {
+  position: relative;
+  grid-column: 2;
+  grid-row: 1;
+  z-index: 2;
+  width: 64px;
+  height: 62px;
+  place-self: center;
+  display: grid;
+  grid-template-rows: 10px 34px 9px;
+  place-items: center;
+  align-content: center;
+  border: 1px solid rgba(212, 183, 122, 0.62);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 50% 22%, rgba(102, 215, 203, 0.18), transparent 45%),
+    linear-gradient(180deg, rgba(7, 79, 89, 0.96), rgba(4, 49, 62, 0.98));
+  box-shadow:
+    0 0 0 3px rgba(102, 215, 203, 0.055),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 10px 24px rgba(0, 16, 23, 0.24);
+}
+
+.av-hnv2-approved .hnv2-approved-episode-number {
+  color: #fff;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 29px;
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -1.2px;
+  font-variant-numeric: tabular-nums;
+  text-shadow: 2px 2px 0 rgba(212, 183, 122, 0.28);
+}
+
+.av-hnv2-approved .hnv2-approved-episode small {
+  color: var(--hnv2-popup-gold-soft);
+  font-size: 5.25px;
+  font-weight: 900;
+  letter-spacing: 0.4px;
+}
+
+.av-hnv2-approved .hnv2-approved-story {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  min-width: 0;
+  min-height: 0;
+  align-self: stretch;
+  display: grid;
+  grid-template-rows: auto auto;
+  align-content: start;
+  justify-items: center;
+  gap: 8px;
+  padding: 8px 9px 3px;
+  border: 1px solid rgba(132, 216, 208, 0.16);
+  border-radius: 9px;
+  background:
+    radial-gradient(circle at 50% 0, rgba(102, 215, 203, 0.09), transparent 58%),
+    linear-gradient(180deg, rgba(5, 54, 65, 0.32), rgba(2, 32, 43, 0.18));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.025);
+  text-align: center;
+}
+
+.av-hnv2-approved .hnv2-approved-story > .hnv2-approved-label {
+  width: 94%;
+  display: grid;
+  grid-template-columns: minmax(18px, 1fr) auto minmax(18px, 1fr);
+  align-items: center;
+  gap: 7px;
+  font-size: 8px;
+  letter-spacing: 0.85px;
+  text-align: center;
+}
+
+.av-hnv2-approved .hnv2-approved-story > .hnv2-approved-label::before,
+.av-hnv2-approved .hnv2-approved-story > .hnv2-approved-label::after {
+  content: "";
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(102, 215, 203, 0.38));
+}
+
+.av-hnv2-approved .hnv2-approved-story > .hnv2-approved-label::after {
+  transform: rotate(180deg);
+}
+
+.av-hnv2-approved .hnv2-popup-description {
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  margin: 0 auto;
+  align-self: start;
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--hnv2-popup-muted);
+  font-size: 9px;
+  font-weight: 450;
+  line-height: 1.35;
+  text-align: center;
+  text-overflow: ellipsis;
+  text-wrap: pretty;
+  overflow-wrap: anywhere;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+}
+
+.av-hnv2-approved .hnv2-approved-meta-strip {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  width: 100%;
+  min-height: 32px;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.av-hnv2-approved .hnv2-approved-meta {
+  position: relative;
+  min-width: 0;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: 4px;
+}
+
+.av-hnv2-approved .hnv2-approved-meta .hnv2-approved-label {
+  font-size: 8px;
+  letter-spacing: 0.8px;
+}
+
+.av-hnv2-approved .hnv2-approved-status::before {
+  content: "";
+  position: absolute;
+  inset: 4px auto 4px 0;
+  width: 1px;
+  background: linear-gradient(transparent, rgba(212, 183, 122, 0.42), transparent);
+}
+
+.av-hnv2-approved .hnv2-approved-meta .hnv2-approved-value {
+  color: var(--hnv2-popup-text);
+  font-size: 10px;
+}
+
+.av-hnv2-approved .hnv2-approved-status .hnv2-approved-value {
+  color: var(--hnv2-popup-gold-soft);
+}
+
+.av-hnv2-approved > .hnv2-popup-actions {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 40px;
+  align-items: center;
+  gap: 6px;
+}
+
+.av-hnv2-approved > .hnv2-popup-actions button {
+  min-width: 0;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 0 9px;
+  color: #fff;
+  border: 1px solid rgba(131, 232, 223, 0.58);
+  border-radius: 7px;
+  background: linear-gradient(110deg, #5576d9, #4383ce 50%, #35b9ac);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.13), 0 5px 12px rgba(1, 23, 36, 0.18);
+  font: 800 10.5px Inter, "Segoe UI", sans-serif;
+  cursor: pointer;
+  transition:
+    filter 150ms ease,
+    transform 150ms ease,
+    border-color 150ms ease;
+}
+
+.av-hnv2-approved > .hnv2-popup-actions button:last-child {
+  width: 40px;
+  padding: 0;
+  color: var(--hnv2-popup-teal);
+  background: rgba(2, 31, 43, 0.56);
+  font-size: 12px;
+}
+
+.av-hnv2-approved > .hnv2-popup-actions button:first-child i {
+  font-size: 8px;
+}
+
+.av-hnv2-approved > .hnv2-popup-actions button:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.av-hnv2-approved > .hnv2-popup-actions button:focus-visible {
+  outline: 2px solid var(--hnv2-popup-gold);
+  outline-offset: 2px;
+}
+
+@media (max-width: 1100px) {
+  .hnv2-card > .hnv2-popup.av-hnv2-approved,
+  .hnv2-card:nth-child(5n + 4) > .hnv2-popup.av-hnv2-approved,
+  .hnv2-card:nth-child(5n + 5) > .hnv2-popup.av-hnv2-approved {
+    position: fixed;
+    inset: 50% auto auto 50%;
+    width: min(var(--hnv2-popup-width, 260px), calc(100vw - 24px));
+    height: min(var(--hnv2-card-height, 360px), calc(100dvh - 24px));
+    min-height: min(var(--hnv2-card-height, 305px), calc(100dvh - 24px));
+    transform: translate(-50%, -48%) scale(0.985);
+    transform-origin: center;
+  }
+
+  .hnv2-card:hover > .hnv2-popup.av-hnv2-approved,
+  .hnv2-card:focus-within > .hnv2-popup.av-hnv2-approved,
+  .hnv2-card:nth-child(5n + 4):hover > .hnv2-popup.av-hnv2-approved,
+  .hnv2-card:nth-child(5n + 4):focus-within > .hnv2-popup.av-hnv2-approved,
+  .hnv2-card:nth-child(5n + 5):hover > .hnv2-popup.av-hnv2-approved,
+  .hnv2-card:nth-child(5n + 5):focus-within > .hnv2-popup.av-hnv2-approved {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .hnv2-card > .hnv2-popup.av-hnv2-approved::before {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hnv2-card > .hnv2-popup.av-hnv2-approved {
+    grid-template-rows: 48px minmax(0, 1fr) 44px;
+    padding: 8px;
+  }
+
+  .av-hnv2-approved .hnv2-popup-description {
+    font-size: 8.5px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hnv2-card > .hnv2-popup.av-hnv2-approved,
+  .av-hnv2-approved > .hnv2-popup-actions button {
+    transition-duration: 1ms;
+  }
+}
+
+/* =========================================================
+   COM + MAIN — ÎMBINARE V11
+   Coloana centrală din MAIN urcă în decupajul COM, dar păstrează
+   aproximativ 22–24px spațiu față de muchia interioară a golului.
+   Coloanele laterale rămân la poziția normală.
+   ========================================================= */
+@media (min-width: 1181px) {
+  .main-container > .view-video {
+    transform: translateY(-48px);
+    margin-bottom: -48px;
+    z-index: 10;
+  }
+}
+
+/* Pe tablete/mobile păstrăm layout-ul normal, fără suprapunere vizuală. */
+@media (max-width: 1180px) {
+  .main-container > .view-video {
+    transform: none;
+    margin-bottom: 0;
+  }
+}
+

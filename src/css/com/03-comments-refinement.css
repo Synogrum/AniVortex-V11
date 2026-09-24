@@ -1,0 +1,849 @@
+/* ============================================================
+   AniVortex Comentarii V16 — head + series visibility fix
+   - poza si numele utilizatorului sunt mai mari
+   - caseta seriei este mai vizibila si poate afisa titluri lungi
+   - separare mai buna intre header, serie, comentariu si reactii
+   ============================================================ */
+
+.comentarii-section {
+  min-height: 590px;
+}
+
+.comentarii-top {
+  margin-bottom: 16px;
+}
+
+/* Card mai aerisit, ca sa putem mari headerul si seria fara suprapuneri. */
+.av10-card {
+  
+  
+  row-gap: 10px;
+  padding: 15px 14px 13px;
+}
+
+/* Numarul decorativ nu mai intra vizual peste zona cu numele. */
+.av10-number {
+  right: 10px;
+  top: 22px;
+  font-size: 44px;
+  opacity: 0.42;
+}
+
+/* Header utilizator mai vizibil. */
+.av10-head {
+  height: 68px;
+  gap: 12px;
+  padding: 0 42px 0 2px;
+}
+
+.av10-head:not(#__av_prio_a#__av_prio_b) {
+  transform: none;
+}
+
+.av10-avatar-wrap,
+.av10-avatar {
+  width: 56px;
+  height: 56px;
+}
+
+.av10-avatar-wrap {
+  flex: 0 0 56px;
+}
+
+.av10-online {
+  
+  
+  
+}
+
+.av10-identity {
+  min-width: 0;
+  justify-content: center;
+  
+}
+
+.av10-name {
+  max-width: 100%;
+  
+  
+  
+  letter-spacing: -0.02em;
+}
+
+.av10-time {
+  
+  
+  
+  
+  color: #93b1b2;
+}
+
+/* Caseta seriei — mai inalta, mai clara, titlul se poate intinde pe 2 randuri. */
+.av10-message {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+
+.av10-series {
+  
+  
+  
+  
+  
+  
+  
+  border-width: 1px;
+  
+}
+
+
+
+
+
+.av10-series-copy small {
+  display: block;
+  
+  
+  
+  
+}
+
+.av10-series-copy strong {
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.av10-series-arrow {
+  
+  
+  
+  
+}
+
+/* Comentariul ramane lizibil fara sa se inghesuie. */
+.av10-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  
+}
+
+.av10-text {
+  
+  
+  
+  
+}
+
+/* Reactiile raman jos, separate vizual. */
+.av10-footer {
+  height: 46px;
+}
+
+.av10-reactions {
+  height: 44px;
+}
+
+.av10-reaction {
+  height: 36px;
+}
+
+@media (max-width: 1510px) {
+  .comentarii-section {
+    min-height: 860px;
+  }
+
+  .av10-card {
+    
+    
+    padding: 14px 13px 12px;
+  }
+
+  .av10-head {
+    height: 64px;
+    padding-right: 36px;
+  }
+
+  .av10-avatar-wrap,
+  .av10-avatar {
+    width: 52px;
+    height: 52px;
+  }
+
+  .av10-avatar-wrap {
+    flex-basis: 52px;
+  }
+
+  .av10-name {
+    
+  }
+
+  .av10-time {
+    
+  }
+
+  .av10-series {
+    
+    
+    margin-inline: 6px;
+    
+  }
+
+  .av10-series-copy strong {
+    
+  }
+
+  .av10-text {
+    
+    
+    
+  }
+
+  .av10-number {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 990px) {
+  .comentarii-section {
+    min-height: 0;
+  }
+
+  .av10-card {
+    height: 412px;
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-card {
+    
+    grid-template-rows: 66px minmax(0, 1fr) 46px;
+  }
+
+  .av10-head {
+    height: 66px;
+    padding-right: 26px;
+  }
+
+  .av10-avatar-wrap,
+  .av10-avatar {
+    width: 54px;
+    height: 54px;
+  }
+
+  .av10-name {
+    
+  }
+
+  .av10-series {
+    
+    
+  }
+
+  .av10-series-copy strong {
+    
+  }
+
+  
+}
+/* ============================================================
+   AniVortex Comentarii V17 — series box refinement
+   - caseta seriei este mai compacta si mai eleganta
+   - continutul nu mai pare gol / dezechilibrat
+   - titlul seriei este centrat vizual si mai usor de citit
+   ============================================================ */
+
+/* Cardul ramane aerisit, dar zona seriei nu mai ocupa inutil din spatiu. */
+.av10-card {
+  
+  grid-template-rows: 68px minmax(0, 1fr) 46px;
+}
+
+.av10-message {
+  background: linear-gradient(150deg, rgba(1,16,20,.76), rgba(3,24,29,.68)) padding-box,
+    linear-gradient(145deg, color-mix(in srgb, var(--accent) 38%, rgba(255,255,255,.08)), rgba(145,220,212,.08) 46%, color-mix(in srgb, var(--accent) 14%, transparent)) border-box;
+}
+
+.av10-message:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 18px;
+}
+
+/* Caseta seriei este mai "tight", fara gol mare dedesubt. */
+.av10-series {
+  position: relative;
+  
+  
+  
+  
+  
+  
+  
+  
+  border: 1px solid color-mix(in srgb, var(--accent) 24%, rgba(255,255,255,.08));
+  
+  background:
+    linear-gradient(140deg, rgba(255,255,255,.035), rgba(255,255,255,.01)) padding-box,
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 10%, rgba(5,24,29,.9)), rgba(2,17,22,.82)) border-box;
+  box-shadow:
+    inset 0 1px rgba(255,255,255,.04),
+    0 6px 14px rgba(0,0,0,.13);
+}
+
+.av10-series::before {
+  left: 0;
+  
+  
+  
+  border-radius: 3px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 76%, #fff 4%), color-mix(in srgb, var(--accent) 45%, transparent));
+  box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 24%, transparent);
+  opacity: .95;
+}
+
+/* Textul sta mai bine grupat si centrat pe verticala. */
+.av10-series-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.av10-series-copy small {
+  margin: 0;
+  
+  font-weight: 840;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  color: #84a4a6;
+  text-transform: uppercase;
+}
+
+.av10-series-copy strong {
+  display: block;
+  
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #f3f8f7;
+  
+  font-weight: 800;
+  
+  letter-spacing: -0.015em;
+}
+
+/* Săgeata devine discretă și premium. */
+.av10-series-arrow {
+  
+  
+  border: 1px solid rgba(222, 196, 129, 0.13);
+  
+  background: rgba(222, 196, 129, 0.06);
+  
+  
+  
+  box-shadow: inset 0 1px rgba(255,255,255,.03);
+}
+
+.av10-series:hover {
+  transform: translateY(-1px);
+  border-color: color-mix(in srgb, var(--accent) 34%, rgba(255,255,255,.12));
+  background:
+    linear-gradient(140deg, rgba(255,255,255,.045), rgba(255,255,255,.018)) padding-box,
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 14%, rgba(5,27,32,.92)), rgba(2,18,23,.86)) border-box;
+  box-shadow:
+    inset 0 1px rgba(255,255,255,.05),
+    0 8px 18px rgba(0,0,0,.16);
+}
+
+.av10-series:hover .av10-series-arrow,
+.av10-series:focus-visible .av10-series-arrow {
+  transform: translateX(2px);
+  background: rgba(222, 196, 129, 0.11);
+  border-color: rgba(222, 196, 129, 0.22);
+}
+
+/* Comentariul urca puțin mai sus ca să arate legat natural de serie. */
+.av10-body {
+  
+}
+
+.av10-text {
+  
+  
+  
+  
+}
+
+/* Responsive */
+@media (max-width: 1510px) {
+  .av10-card {
+    
+    grid-template-rows: 64px minmax(0, 1fr) 44px;
+  }
+
+  .av10-series {
+    
+    
+    margin: 7px 7px 0;
+    
+    
+  }
+
+  .av10-series-copy strong {
+    
+  }
+
+  .av10-text {
+    
+    
+    
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-card {
+    
+  }
+
+  .av10-series {
+    
+    
+  }
+
+  
+}
+/* ============================================================
+   AniVortex Comentarii V18 — series box smaller
+   - bara cu seria este mai scurtă pe lățime
+   - este și puțin mai joasă
+   - rămâne centrată și mai elegantă
+   ============================================================ */
+
+.av10-series {
+  flex: 0 0 52px;
+  width: calc(100% - 34px);
+  height: 52px;
+  margin: 8px auto 0;
+  grid-template-columns: minmax(0, 1fr) 22px;
+  gap: 9px;
+  padding: 7px 10px 7px 13px;
+  border-radius: 13px;
+}
+
+.av10-series::before {
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+}
+
+.av10-series-copy small {
+  
+}
+
+.av10-series-copy strong {
+  margin-top: 4px;
+  
+  
+}
+
+.av10-series-arrow {
+  
+  
+  font-size: 15px;
+  border-radius: 7px;
+}
+
+.av10-body {
+  padding-top: 11px;
+}
+
+@media (max-width: 1510px) {
+  .av10-series {
+    flex-basis: 50px;
+    width: calc(100% - 28px);
+    height: 50px;
+    margin-top: 7px;
+    padding-left: 12px;
+  }
+
+  .av10-series-copy strong {
+    
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-series {
+    flex-basis: 52px;
+    width: calc(100% - 24px);
+    height: 52px;
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V19 — comment window smaller
+   - fereastra comentariului este puțin mai mică
+   - cardul rămâne echilibrat
+   - textul nu mai ocupă atât de mult spațiu
+   ============================================================ */
+
+.av10-card {
+  
+}
+
+.av10-body {
+  
+}
+
+.av10-text {
+  
+  
+  
+  
+}
+
+.av10-symbol {
+  
+  
+}
+
+@media (max-width: 1510px) {
+  .av10-card {
+    
+  }
+
+  .av10-body {
+    
+    
+  }
+
+  .av10-text {
+    
+    
+    
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-card {
+    
+  }
+
+  .av10-text {
+    
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V20 — comment area smaller + avatar higher
+   - fereastra comentariului este și mai mică
+   - poza utilizatorului este ridicată mai sus
+   ============================================================ */
+
+.av10-card {
+  height: 392px;
+}
+
+.av10-avatar-wrap {
+  transform: translateY(-6px);
+}
+
+.av10-series {
+  margin-top: 6px;
+}
+
+.av10-body {
+  padding: 8px 13px 8px;
+}
+
+.av10-text {
+  
+  
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+}
+
+.av10-symbol {
+  font-size: 36px;
+  bottom: 6px;
+}
+
+@media (max-width: 1510px) {
+  .av10-card {
+    height: 382px;
+  }
+
+  .av10-avatar-wrap {
+    transform: translateY(-5px);
+  }
+
+  .av10-body {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .av10-text {
+    
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-card {
+    height: 388px;
+  }
+
+  .av10-avatar-wrap {
+    transform: translateY(-4px);
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V21 — text larger + centered series arrow
+   - scrisul comentariului este mai mare
+   - textul din seria anime este mai mare
+   - săgeata din pătrat este centrată corect
+   ============================================================ */
+
+.av10-text {
+  
+  
+}
+
+.av10-series-copy small {
+  font-size: 8.5px;
+}
+
+.av10-series-copy strong {
+  font-size: 12.2px;
+  line-height: 1.12;
+}
+
+.av10-series-arrow {
+  
+  place-items: center;
+  
+  
+  
+  
+  
+}
+
+@media (max-width: 1510px) {
+  .av10-text {
+    
+  }
+
+  .av10-series-copy strong {
+    font-size: 11.5px;
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-text {
+    
+  }
+
+  .av10-series-copy strong {
+    font-size: 11.6px;
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V22 — comment text bigger + arrow truly centered
+   - scrisul comentariului este mai mare
+   - săgeata din pătrat este centrată perfect
+   ============================================================ */
+
+.av10-body {
+  display: flex;
+  align-items: flex-start;
+}
+
+.av10-text {
+  
+  
+}
+
+.av10-series {
+  align-items: center;
+}
+
+.av10-series-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  line-height: 1;
+  text-align: center;
+  transform: none;
+}
+
+@media (max-width: 1510px) {
+  .av10-text {
+    
+  }
+
+  .av10-series-arrow {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-text {
+    
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V23 — comment text larger + arrow centered
+   - scrisul comentariului este mai mare
+   - săgeata din pătrat este centrată corect
+   ============================================================ */
+
+.av10-text {
+  font-size: 13.7px;
+  line-height: 1.56;
+}
+
+.av10-series-arrow {
+  position: relative;
+  justify-self: center;
+  align-self: center;
+  overflow: hidden;
+  color: transparent;
+  text-indent: -9999px;
+}
+
+.av10-series-arrow:not(#__av_prio_a#__av_prio_b) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.av10-series-arrow::before {
+  content: "›";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e4ca82;
+  font-size: 17px;
+  line-height: 1;
+  text-indent: 0;
+  transform: translate(0px, -3px);
+}
+
+@media (max-width: 1510px) {
+  .av10-text {
+    font-size: 12.8px;
+  }
+
+  .av10-series-arrow::before {
+    font-size: 16.5px;
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-text {
+    font-size: 12.9px;
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V24 — online dot smaller + name higher
+   - bulina verde este mai mica
+   - numele utilizatorului este urcat mai sus
+   ============================================================ */
+
+.av10-online {
+  width: 10px;
+  height: 10px;
+  border-width: 2px;
+  right: 1px;
+  bottom: 1px;
+}
+
+.av10-identity {
+  transform: translateY(-13px);
+}
+
+.av10-name {
+  
+}
+
+.av10-time {
+  
+}
+
+@media (max-width: 1510px) {
+  .av10-online {
+    width: 9px;
+    height: 9px;
+    border-width: 2px;
+  }
+
+  .av10-identity {
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-online {
+    width: 10px;
+    height: 10px;
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V25 — username + time larger
+   - numele utilizatorului este puțin mai mare
+   - timpul de sub nume este și el mai mare
+   ============================================================ */
+
+.av10-name {
+  font-size: 16.6px;
+  font-weight: 850;
+  line-height: 1.04;
+}
+
+.av10-time {
+  margin-top: 4px;
+  font-size: 10.2px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+@media (max-width: 1510px) {
+  .av10-name {
+    font-size: 16.2px;
+  }
+
+  .av10-time {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-name {
+    font-size: 16.4px;
+  }
+
+  .av10-time {
+    font-size: 10.1px;
+  }
+}

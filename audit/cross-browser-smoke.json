@@ -1,0 +1,72 @@
+[
+  {
+    "engine": "chromium",
+    "viewport": [
+      360,
+      800
+    ],
+    "errors": []
+  },
+  {
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "errors": []
+  },
+  {
+    "engine": "chromium",
+    "viewport": [
+      430,
+      932
+    ],
+    "errors": []
+  },
+  {
+    "engine": "chromium",
+    "viewport": [
+      768,
+      1024
+    ],
+    "errors": []
+  },
+  {
+    "engine": "chromium",
+    "viewport": [
+      1366,
+      768
+    ],
+    "errors": []
+  },
+  {
+    "engine": "chromium",
+    "viewport": [
+      1920,
+      1080
+    ],
+    "errors": []
+  },
+  {
+    "engine": "chromium",
+    "viewport": [
+      2560,
+      1440
+    ],
+    "errors": []
+  },
+  {
+    "engine": "firefox",
+    "viewport": null,
+    "errors": [
+      "browser unavailable: BrowserType.launch: Executable doesn't exist at /home/oai/.cache/ms-playwright/firefox-1497/firefox/firefox\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     playwright install                                     ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+    ]
+  },
+  {
+    "engine": "webkit",
+    "viewport": null,
+    "errors": [
+      "browser unavailable: BrowserType.launch: Executable doesn't exist at /home/oai/.cache/ms-playwright/webkit-2227/pw_run.sh\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     playwright install                                     ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+    ]
+  }
+]

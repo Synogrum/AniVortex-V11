@@ -1,0 +1,112 @@
+/* V46 — cardurile Trending coborâte încă 5px față de V45 */
+#trendingMaster .cards-list:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 19px;
+  margin-bottom: -19px;
+}
+
+/* V47 — headerul Trending mai mare și mai jos */
+#trendingMaster .section-header:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 14px;
+  margin-bottom: 16px;
+  
+  align-items: center;
+}
+
+
+
+#trendingMaster .pulse-dot:not(#__av_prio_a#__av_prio_b) {
+  width: 12px;
+  height: 12px;
+}
+
+
+
+#trendingMaster .cat-btn:not(#__av_prio_a#__av_prio_b) {
+  min-width: 122px;
+  min-height: 36px;
+  padding: 4px 4px 4px 14px;
+}
+
+#trendingMaster .cat-btn-label:not(#__av_prio_a#__av_prio_b) {
+  font-size: 0.76rem;
+  min-width: 62px;
+}
+
+#trendingMaster .cat-btn-arrow:not(#__av_prio_a#__av_prio_b) {
+  width: 24px;
+  height: 24px;
+}
+
+#trendingMaster .cat-btn-arrow svg:not(#__av_prio_a#__av_prio_b) {
+  width: 9px;
+  height: 9px;
+}
+
+#trendingMaster .badge-info:not(#__av_prio_a#__av_prio_b) {
+  padding: 10px 16px;
+  font-size: 0.78rem;
+}
+
+/* V48 — titlul/badge-ul aliniate cu cardurile și coborâte 2px */
+#trendingMaster .section-header:not(#__av_prio_a#__av_prio_b) {
+  max-width: 1790px;
+  margin: 16px auto 16px;
+  padding-inline: 0;
+  width: min(1790px, calc(100% - 32px));
+}
+
+
+
+
+
+
+
+/* V50 — mută grupul din stânga mai în dreapta */
+#trendingMaster .trending-row-meta-left:not(#__av_prio_a#__av_prio_b) {
+  margin-left: 16px;
+}
+
+/* V51 — mută badge-ul din dreapta mai în stânga */
+#trendingMaster .trending-row-meta-right:not(#__av_prio_a#__av_prio_b) {
+  margin-right: 18px;
+}
+
+/* V52 — coboară ambele grupuri din headerul Trending */
+#trendingMaster .trending-row-meta-left:not(#__av_prio_a#__av_prio_b), #trendingMaster .trending-row-meta-right:not(#__av_prio_a#__av_prio_b) {
+  position: relative;
+  
+}
+
+/* V53 — coboară încă puțin cele două grupuri din headerul Trending */
+#trendingMaster .trending-row-meta-left:not(#__av_prio_a#__av_prio_b), #trendingMaster .trending-row-meta-right:not(#__av_prio_a#__av_prio_b) {
+  top: 7px;
+}
+
+
+/* ============================================================
+   FINAL — Trending primește V-ul Banner de sus
+   Echivalentul exact al spațiului folosit de COM sub SHARE.
+   ============================================================ */
+#trendingMaster:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 0;
+  padding-top: 116px;
+  border-top: 0;
+}
+
+@media (max-width: 1510px) {
+    #trendingMaster:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 104px;
+}
+}
+
+@media (max-width: 990px) {
+    #trendingMaster:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 86px;
+}
+}
+
+@media (max-width: 620px) {
+    #trendingMaster:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 72px;
+}
+}

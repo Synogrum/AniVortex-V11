@@ -1,0 +1,264 @@
+/* ============================================================
+   FINAL — banner ridicat, fundalul verde lasat mai jos
+   - mutam doar banner-sliderul in sus
+   - layout-ul .page ramane pe loc si continua mai jos
+   - spatiul de jos ramane fundal verde, apoi vine V-ul
+   ============================================================ */
+body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
+  
+  
+}
+
+body .banner-slider:not(#__av_prio_a#__av_prio_b) {
+  
+  
+}
+
+/* Anulam coborarea interna din versiunea precedenta ca sa urce bannerul ca ansamblu. */
+body .banner-grid:not(#__av_prio_a#__av_prio_b) {
+  transform: none;
+}
+
+body .left-inner:not(#__av_prio_a#__av_prio_b) {
+  transform: none;
+}
+
+/* Fundalul ramane vizibil sub banner. */
+body .page:not(#__av_prio_a#__av_prio_b) {
+  padding-bottom: 20px;
+}
+
+/* V-ul incepe dupa fundal, fara sa intre peste banner. */
+
+
+@media (max-width: 1279px) {
+    body .banner-slider:not(#__av_prio_a#__av_prio_b) {
+  
+  
+}
+
+    
+}
+
+@media (max-width: 640px) {
+    body .banner-slider:not(#__av_prio_a#__av_prio_b) {
+  
+  
+}
+
+    
+
+    body .page:not(#__av_prio_a#__av_prio_b) {
+  padding-bottom: 12px;
+}
+}
+
+
+/* ============================================================
+   AJUSTARE — bannerul mai jos
+   ============================================================ */
+body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
+  
+  padding-bottom: 34px;
+}
+
+body .banner-slider:not(#__av_prio_a#__av_prio_b) {
+  transform: translateY(-10px);
+  margin-bottom: -10px;
+}
+
+@media (max-width: 1279px) {
+    body .banner-slider:not(#__av_prio_a#__av_prio_b) {
+  transform: translateY(-8px);
+  margin-bottom: -8px;
+}
+
+    body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
+  
+  padding-bottom: 28px;
+}
+}
+
+@media (max-width: 640px) {
+    body .banner-slider:not(#__av_prio_a#__av_prio_b) {
+  transform: translateY(-4px);
+  margin-bottom: -4px;
+}
+
+    body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
+  
+  padding-bottom: 20px;
+}
+}
+
+
+/* ============================================================
+   AJUSTARE — blocul din dreapta mai jos
+   ============================================================ */
+body .banner-right:not(#__av_prio_a#__av_prio_b) {
+  
+  
+}
+
+body .image-group:not(#__av_prio_a#__av_prio_b) {
+  
+}
+
+@media (max-width: 1279px) {
+    body .banner-right:not(#__av_prio_a#__av_prio_b) {
+  
+}
+
+    body .image-group:not(#__av_prio_a#__av_prio_b) {
+  
+}
+}
+
+@media (max-width: 640px) {
+    body .banner-right:not(#__av_prio_a#__av_prio_b) {
+  
+}
+
+    body .image-group:not(#__av_prio_a#__av_prio_b) {
+  
+}
+}
+
+
+/* ============================================================
+   AJUSTARE EXTRA — blocul din dreapta si mai jos
+   ============================================================ */
+body .banner-right:not(#__av_prio_a#__av_prio_b) {
+  align-items: flex-start;
+  padding-top: 42px;
+}
+
+body .image-group:not(#__av_prio_a#__av_prio_b) {
+  --av-banner-image-y: 18px;
+  transform: translateY(var(--av-banner-image-y));
+}
+
+@media (max-width: 1279px) {
+    body .banner-right:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 32px;
+}
+
+    body .image-group:not(#__av_prio_a#__av_prio_b) {
+  --av-banner-image-y: 12px;
+  transform: translateY(var(--av-banner-image-y));
+}
+}
+
+@media (max-width: 640px) {
+    body .banner-right:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 22px;
+}
+
+    body .image-group:not(#__av_prio_a#__av_prio_b) {
+  --av-banner-image-y: 6px;
+  transform: translateY(var(--av-banner-image-y));
+}
+}
+
+
+/* ============================================================
+   AniVortex — modificările finale cerute (V28)
+   - banner coborât sub header
+   - verde uniform var(--av-bg-teal)
+   - interiorul complet al V-ului negru până la capăt
+   - stelele copiate din COM
+   ============================================================ */
+
+/* Banner coborât sub header, fără suprapunere */
+body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 92px;
+}
+
+
+
+@media (max-width: 1279px) {
+    body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 88px;
+}
+}
+
+@media (max-width: 640px) {
+    body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 82px;
+}
+}
+
+/* var(--av-bg-teal) vizual identic peste tot */
+html:not(#__av_prio_a#__av_prio_b), body:not(#__av_prio_a#__av_prio_b), body .page:not(#__av_prio_a#__av_prio_b), body .banner-wrap:not(#__av_prio_a#__av_prio_b), body #trendingMaster:not(#__av_prio_a#__av_prio_b), body .banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  background: var(--av-green-final);
+  background-image: none;
+}
+
+body .banner:not(#__av_prio_a#__av_prio_b), body .banner.active:not(#__av_prio_a#__av_prio_b) {
+  box-shadow: none;
+}
+
+body .banner-trending-join svg:not(#__av_prio_a#__av_prio_b) {
+  filter: none;
+}
+
+/* Oprim overlay-urile care schimbau culoarea de bază */
+body .page:not(#__av_prio_a#__av_prio_b)::after, body #trendingMaster:not(#__av_prio_a#__av_prio_b)::after, body .banner-trending-join:not(#__av_prio_a#__av_prio_b)::after {
+  background: transparent;
+  background-image: none;
+  opacity: 0;
+}
+
+
+
+/* TOT interiorul V-ului devine negru până la capăt */
+body .banner-trending-join-bandfill:not(#__av_prio_a#__av_prio_b) {
+  fill: #000000;
+  opacity: 1;
+}
+
+body .banner-trending-join-gold:not(#__av_prio_a#__av_prio_b) {
+  stroke: rgba(209,180,106,.52);
+}
+
+body .banner-trending-join-teal:not(#__av_prio_a#__av_prio_b) {
+  stroke: rgba(118,223,211,.46);
+}
+
+/* Stelele din COM */
+body .page:not(#__av_prio_a#__av_prio_b)::before, body #trendingMaster:not(#__av_prio_a#__av_prio_b)::before, body .banner-trending-join:not(#__av_prio_a#__av_prio_b)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.22;
+  background-image: radial-gradient(circle at 7% 14%, rgba(225, 252, 255, 0.7) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 19% 62%, rgba(180, 244, 255, 0.48) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 34% 29%, rgba(230, 255, 255, 0.62) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 49% 79%, rgba(176, 242, 255, 0.52) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 66% 18%, rgba(235, 255, 255, 0.72) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 81% 58%, rgba(185, 245, 255, 0.55) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 94% 31%, rgba(230, 255, 255, 0.65) 0 1px, transparent 1.6px);
+  background-size: 330px 260px,
+    390px 310px,
+    460px 350px,
+    410px 300px,
+    370px 280px,
+    430px 330px,
+    360px 290px;
+  background-repeat: repeat;
+  mask-image: none;
+  -webkit-mask-image: none;
+  animation: avEntStars 22s linear infinite alternate;
+}
+
+body .page > *,
+body #trendingMaster > *,
+body .banner-trending-join > * {
+  position: relative;
+  z-index: 1;
+}
+
+

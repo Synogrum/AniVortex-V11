@@ -1,0 +1,570 @@
+/* ============================================================
+   AniVortex Comentarii V11
+   Forma containerului + personajul sunt păstrate din fișierul original.
+   Designul V10 este aplicat exclusiv conținutului din dreapta.
+   ============================================================ */
+
+.comentarii-section {
+  --com-blue: #2448ad;
+  --com-cyan: #0b6572;
+  --com-teal: #07584d;
+  --com-cream: #f6e7ad;
+  --com-ink: #07131d;
+  --com-gold: #dec481;
+
+  position: relative;
+  isolation: isolate;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  margin: 18px auto 0;
+  min-height: 555px;
+  padding: 42px 26px 78px;
+  overflow: hidden;
+  background: var(--avf-surface-top, #071b21);
+  border: 0;
+  border-radius: 0;
+  -webkit-clip-path: url(#comentariiClipV7);
+  clip-path: url(#comentariiClipV7);
+  filter:
+    drop-shadow(0 1px 0 rgba(129, 222, 211, 0.62))
+    drop-shadow(0 0 1.25px rgba(129, 222, 211, 0.32))
+    drop-shadow(0 18px 34px rgba(0, 0, 0, 0.26));
+}
+
+.comentarii-section::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.22;
+  background-image:
+    radial-gradient(circle at 7% 14%, rgba(225, 252, 255, 0.7) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 19% 62%, rgba(180, 244, 255, 0.48) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 34% 29%, rgba(230, 255, 255, 0.62) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 49% 79%, rgba(176, 242, 255, 0.52) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 66% 18%, rgba(235, 255, 255, 0.72) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 81% 58%, rgba(185, 245, 255, 0.55) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 94% 31%, rgba(230, 255, 255, 0.65) 0 1px, transparent 1.6px);
+  background-size: 330px 260px, 390px 310px, 460px 350px, 410px 300px, 370px 280px, 430px 330px, 360px 290px;
+  mask-image: none;
+  animation: avEntStars 22s linear infinite alternate;
+}
+
+.comentarii-section::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  left: -90px;
+  bottom: -170px;
+  width: 390px;
+  height: 390px;
+  border-radius: 50%;
+  background: rgba(37, 154, 150, 0.13);
+  filter: blur(100px);
+  pointer-events: none;
+}
+
+.comentarii-frame-v7 {
+  position: absolute;
+  z-index: 8;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  filter: drop-shadow(0 0 8px rgba(88, 225, 207, 0.08));
+}
+
+.comentarii-frame-v7 path {
+  fill: none;
+  stroke: rgba(143, 231, 220, 0.62);
+  stroke-width: 1.45;
+  vector-effect: non-scaling-stroke;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  shape-rendering: geometricPrecision;
+}
+
+.comentarii-shape-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Poziția și dimensiunea personajului sunt identice cu varianta primită. */
+.comentarii-character {
+  position: absolute;
+  z-index: 2;
+  left: -45px;
+  top: 110px;
+  bottom: auto;
+  width: auto;
+  height: 510px;
+  max-width: none;
+  object-fit: contain;
+  object-position: bottom left;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.96;
+  filter: none;
+}
+
+.comentarii-content {
+  position: relative;
+  z-index: 3;
+  min-width: 0;
+  margin-left: 300px;
+}
+
+/* Antet V10, în interiorul zonei deja existente. */
+.comentarii-top {
+  min-height: 58px;
+  display: flex;
+  
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px 22px;
+  width: 100%;
+  margin: 0 4px 13px;
+}
+
+.comentarii-title-group {
+  display: grid;
+  align-items: center;
+  min-width: max-content;
+}
+
+.comentarii-title-group .v-bar { display: none; }
+
+.com-eyebrow {
+  display: block;
+  margin: 0 0 7px;
+  color: #78dccc;
+  font-size: 7px;
+  font-weight: 850;
+  letter-spacing: 0.23em;
+  text-transform: uppercase;
+}
+
+.comentarii-title-line {
+  
+  align-items: center;
+  gap: 10px;
+}
+
+.comentarii-title-group h2 {
+  margin: 0;
+  color: #fff;
+  font: 800 23px/1 Outfit, Inter, sans-serif;
+  letter-spacing: -0.035em;
+}
+
+.com-live-count {
+  padding: 5px 8px;
+  border: 1px solid rgba(222, 196, 129, 0.16);
+  border-radius: 999px;
+  color: #e3cb8d;
+  background: rgba(222, 196, 129, 0.06);
+  font-size: 7px;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.comentarii-tabs {
+  display: flex;
+  
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  
+}
+
+.comentarii-tabs::before {
+  content: "20 comentarii noi";
+  display: inline-flex;
+  align-items: center;
+  margin-right: 3px;
+  color: #78999a;
+  font-size: 7.5px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.com-tab,
+.com-category-selector {
+  
+  padding: 0 13px;
+  border: 1px solid rgba(165, 224, 217, 0.13);
+  border-radius: 12px;
+  background: rgba(2, 14, 18, 0.42);
+  color: #86a3a4;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.035);
+  backdrop-filter: blur(16px);
+  font: 760 9px/1 Inter, sans-serif;
+  cursor: pointer;
+  transition: color 180ms ease, border-color 180ms ease, background 180ms ease, transform 180ms ease;
+}
+
+.com-tab:hover,
+.com-category-selector:hover {
+  color: #fff;
+  border-color: rgba(118, 226, 209, 0.33);
+  background: rgba(25, 77, 80, 0.22);
+}
+
+.com-tab.active {
+  color: #071719;
+  border-color: transparent;
+  background: linear-gradient(135deg, #e0c783, #8de0d2);
+  box-shadow: 0 9px 22px rgba(0, 0, 0, 0.23), inset 0 1px rgba(255, 255, 255, 0.25);
+}
+
+.com-category-selector {
+  display: inline-flex;
+  
+  justify-content: flex-start;
+  gap: 7px;
+  min-width: 0;
+  padding-inline: 13px 10px;
+  color: #d9e7e5;
+}
+
+.com-cat-label { white-space: nowrap; }
+.com-cat-arrow { color: var(--com-gold); font-size: 18px; line-height: 0.8; transition: transform 180ms ease; }
+.com-category-selector:hover .com-cat-arrow { transform: translateX(2px); }
+
+/* Cele șase carduri V10. */
+.comentarii-track {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 14px;
+  width: 100%;
+  padding: 0 4px 18px;
+  overflow: hidden;
+}
+
+.comentarii-track > .cloud-card { display: none; }
+
+.av10-card {
+  --accent: #76e2d1;
+  position: relative;
+  box-sizing: border-box;
+  min-width: 0;
+  
+  display: grid;
+  
+  
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 27px 27px 27px 9px;
+  background:
+    linear-gradient(150deg, rgba(18, 57, 63, 0.84), rgba(5, 27, 33, 0.94)) padding-box,
+    linear-gradient(145deg, color-mix(in srgb, var(--accent) 46%, rgba(255,255,255,.1)), rgba(255,255,255,.035) 44%, rgba(222,196,129,.2)) border-box;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.3), inset 0 1px rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(22px) saturate(145%);
+  animation: comGlassEnter 550ms cubic-bezier(0.18, 0.85, 0.25, 1) both;
+  transition: transform 240ms ease, box-shadow 240ms ease;
+}
+
+.av10-card::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: linear-gradient(125deg, rgba(255,255,255,.06), transparent 22%, transparent 70%, color-mix(in srgb, var(--accent) 7%, transparent));
+  pointer-events: none;
+}
+
+.av10-card:hover {
+  z-index: 2;
+  transform: translateY(-5px);
+  box-shadow: 0 28px 56px rgba(0,0,0,.42), 0 0 36px color-mix(in srgb, var(--accent) 8%, transparent), inset 0 1px rgba(255,255,255,.08);
+}
+
+.av10-glow {
+  position: absolute;
+  z-index: 0;
+  width: 145px;
+  height: 145px;
+  right: -65px;
+  top: -70px;
+  border-radius: 50%;
+  background: var(--accent);
+  filter: blur(50px);
+  opacity: 0.11;
+  animation: comGlowBreathe 7s ease-in-out var(--motion-delay, 0s) infinite;
+}
+
+.av10-geometry { position: absolute; z-index: 0; inset: 0; overflow: hidden; pointer-events: none; opacity: 0.68; }
+.av10-geometry span { position: absolute; display: block; }
+.av10-ring { border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent); border-radius: 50%; box-shadow: inset 0 0 24px color-mix(in srgb, var(--accent) 4%, transparent); }
+.av10-ring::after { content: ""; position: absolute; left: 50%; top: -2.5px; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 58%, transparent); }
+.av10-ring-large { width: 164px; height: 164px; right: -76px; bottom: 63px; animation: comOrbitLarge 10s ease-in-out var(--motion-delay, 0s) infinite; }
+.av10-ring-small { width: 62px; height: 62px; right: 18px; bottom: 112px; animation: comOrbitSmall 7.5s linear var(--motion-delay, 0s) infinite reverse; }
+.av10-line { height: 1px; transform-origin: left center; background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--accent) 28%, transparent), transparent); }
+.av10-line-one { width: 178px; right: -47px; bottom: 128px; transform: rotate(-34deg); animation: comLineOne 8s ease-in-out var(--motion-delay, 0s) infinite; }
+.av10-line-two { width: 112px; left: -24px; top: 157px; transform: rotate(22deg); opacity: 0.6; animation: comLineTwo 9.5s ease-in-out var(--motion-delay, 0s) infinite; }
+.av10-dot { right: 54px; bottom: 141px; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 7%, transparent), 0 0 14px color-mix(in srgb, var(--accent) 36%, transparent); animation: comNodeDrift 6s ease-in-out var(--motion-delay, 0s) infinite; }
+.av10-number { position: absolute; z-index: 0; right: 13px; top: 21px; color: color-mix(in srgb, var(--accent) 9%, transparent); font: 800 56px/1 ui-monospace, monospace; letter-spacing: -0.09em; pointer-events: none; }
+
+.av10-head { position: relative; z-index: 1; display: flex;   min-width: 0; transform: translateY(-7px); }
+.av10-avatar-wrap { position: relative; flex: 0 0 auto; }
+.av10-avatar {
+  
+  
+  display: grid;
+  place-items: center;
+  
+  border: 1px solid color-mix(in srgb, var(--accent) 62%, rgba(255,255,255,.25));
+  border-radius: 50%;
+  color: #fff;
+  
+  box-shadow: 0 9px 22px rgba(0,0,0,.3), inset 0 1px rgba(255,255,255,.22), 0 0 0 4px rgba(255,255,255,.025);
+  font-size: 11px;
+  font-weight: 850;
+}
+.av10-avatar img {    border-radius: inherit; }
+.av10-online { position: absolute;     border: 3px solid #11353a; border-radius: 50%; background: #6be1b9; box-shadow: 0 0 12px rgba(107,225,185,.38); }
+.av10-identity {  flex: 1; display: flex; align-items: flex-start; flex-direction: column; }
+.av10-name {  overflow: hidden; color: #fff;  line-height: 1.15; text-overflow: ellipsis; white-space: nowrap; }
+.av10-time { display: block;  color: #7f9fa0; font-size: 8.5px;  }
+
+.av10-message {
+  position: relative;
+  z-index: 1;
+  
+  display: grid;
+  grid-template-rows: 55px minmax(0, 1fr);
+  
+  border: 1px solid transparent;
+  border-radius: 18px 18px 22px 8px;
+  background:
+    linear-gradient(150deg, rgba(1,16,20,.78), rgba(3,24,29,.66)) padding-box,
+    linear-gradient(145deg, color-mix(in srgb, var(--accent) 46%, rgba(255,255,255,.08)), rgba(145,220,212,.08) 46%, color-mix(in srgb, var(--accent) 18%, transparent)) border-box;
+  box-shadow: inset 0 1px rgba(255,255,255,.045), inset 4px 0 24px color-mix(in srgb, var(--accent) 5%, transparent), 0 14px 30px rgba(0,0,0,.18);
+  backdrop-filter: blur(16px) saturate(125%);
+}
+.av10-message::before { content: ""; position: absolute; z-index: 0; inset: 0; background: radial-gradient(circle at 92% 8%, color-mix(in srgb, var(--accent) 11%, transparent), transparent 26%), linear-gradient(115deg, transparent 42%, color-mix(in srgb, var(--accent) 4%, transparent), transparent 68%); pointer-events: none; animation: comPanelBreathe 6.5s ease-in-out var(--motion-delay, 0s) infinite; }
+.av10-message::after { content: ""; position: absolute; z-index: 2; top: 0; left: -72px; width: 72px; height: 1px; background: linear-gradient(90deg, transparent, var(--accent), transparent); box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 40%, transparent); pointer-events: none; animation: comPanelScan 7s ease-in-out var(--motion-delay, 0s) infinite; }
+
+.av10-series {
+  
+  z-index: 1;
+  width: 100%;
+  height: 55px;
+  display: grid;
+  
+  
+  
+  
+  border: 0;
+  border-bottom: 1px solid rgba(166,223,216,.13);
+  border-radius: 0;
+  color: #fff;
+  text-align: left;
+  background: linear-gradient(100deg, color-mix(in srgb, var(--accent) 11%, rgba(1,14,18,.36)), rgba(1,14,18,.2) 72%);
+  cursor: pointer;
+}
+.av10-series:hover { background: linear-gradient(100deg, color-mix(in srgb, var(--accent) 16%, rgba(1,14,18,.38)), rgba(1,14,18,.24) 72%); }
+
+.av10-series-copy small,
+.av10-series-copy strong { display: block; }
+.av10-series-copy small { color: #739496; font-size: 6.5px;  letter-spacing: 0.1em;  }
+.av10-series-copy strong { margin-top: 3px;  color: #edf5f3;  font-weight: 750;   }
+.av10-series-arrow {      color: var(--com-gold); background: rgba(222,196,129,.055);   }
+
+.av10-body {  z-index: 1;  padding: 18px 13px 14px; background: linear-gradient(180deg, transparent, rgba(0,7,10,.12)); }
+.av10-text {   display: -webkit-box;  overflow: hidden; color: #e3eeec; font-size: 11.4px; font-weight: 550; line-height: 1.65; -webkit-box-orient: vertical;   }
+.av10-symbol { position: absolute; z-index: 0; right: 8px; bottom: -7px; color: var(--accent); font-family: "Noto Serif JP", "Yu Mincho", serif; font-size: 52px; font-weight: 800; line-height: 1; opacity: 0.085; text-shadow: 0 0 18px color-mix(in srgb, var(--accent) 24%, transparent); pointer-events: none; animation: comSymbolFloat 7.5s ease-in-out var(--motion-delay, 0s) infinite; }
+
+.av10-footer { position: relative; z-index: 2; align-self: end; width: calc(100% + 6px);  margin-left: -3px; padding-top: 8px; }
+.av10-reactions {    grid-template-columns: repeat(3, 1fr); gap: 5px; padding: 4px; border: 1px solid transparent; border-radius: 15px; background: linear-gradient(rgba(1,12,16,.58), rgba(1,12,16,.58)) padding-box, linear-gradient(135deg, rgba(150,224,216,.16), rgba(255,255,255,.035), rgba(222,196,129,.12)) border-box; box-shadow: 0 10px 24px rgba(0,0,0,.22), inset 0 1px rgba(255,255,255,.035); backdrop-filter: blur(16px); }
+.av10-reaction { height: 30px; display: flex; align-items: center; justify-content: center;   border: 1px solid rgba(145,210,204,.08); border-radius: 10px 10px 10px 6px; color: #829fa1; background: linear-gradient(145deg, rgba(255,255,255,.025), rgba(255,255,255,.008)); box-shadow: inset 0 1px rgba(255,255,255,.025); cursor: pointer; transition: transform 180ms ease, color 180ms ease, border-color 180ms ease, background 180ms ease; }
+.av10-reaction svg {   fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.av10-reaction span { font-size: 8.5px; font-weight: 780; }
+.av10-reaction:hover { transform: translateY(-1px); color: #fff; border-color: rgba(255,255,255,.13); background: rgba(255,255,255,.055); }
+.av10-reaction.like:hover { color: #83e3d3; }
+.av10-reaction.love:hover { color: #ffa1b9; }
+.av10-reaction.reply:hover { color: #9ac8ff; }
+.av10-reaction.is-active {  border-color: color-mix(in srgb, var(--accent) 28%, transparent); background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.av10-reaction.love.is-active { color: #ffa1b9; border-color: rgba(255,161,185,.28); background: rgba(255,161,185,.09); }
+
+.com-tab:focus-visible,
+.com-category-selector:focus-visible,
+.av10-series:focus-visible,
+.av10-reaction:focus-visible {
+  outline: 2px solid #89e8d9;
+  outline-offset: 3px;
+}
+
+@keyframes comGlassEnter { from { opacity: 0; transform: translateY(16px) scale(.985); } to { opacity: 1; transform: none; } }
+@keyframes comGlowBreathe { 0%,100% { opacity: .08; transform: scale(.92); } 50% { opacity: .16; transform: scale(1.12); } }
+@keyframes comOrbitLarge { 0%,100% { transform: translate3d(0,0,0) rotate(0deg); } 45% { transform: translate3d(-14px,-9px,0) rotate(135deg); } 72% { transform: translate3d(-7px,7px,0) rotate(245deg); } }
+@keyframes comOrbitSmall { 0% { transform: translate3d(0,0,0) rotate(0deg); } 50% { transform: translate3d(-15px,8px,0) rotate(180deg); } 100% { transform: translate3d(0,0,0) rotate(360deg); } }
+@keyframes comLineOne { 0%,100% { opacity: .35; transform: translateX(0) rotate(-34deg); } 50% { opacity: .85; transform: translateX(-28px) rotate(-23deg); } }
+@keyframes comLineTwo { 0%,100% { opacity: .28; transform: translateX(0) rotate(22deg); } 50% { opacity: .72; transform: translateX(34px) rotate(15deg); } }
+@keyframes comNodeDrift { 0%,100% { transform: translate3d(0,0,0) scale(.85); } 35% { transform: translate3d(-18px,-11px,0) scale(1.18); } 70% { transform: translate3d(8px,-22px,0) scale(.95); } }
+@keyframes comPanelBreathe { 0%,100% { opacity: .48; transform: translateX(-2%); } 50% { opacity: 1; transform: translateX(3%); } }
+@keyframes comPanelScan { 0%,12% { left: -72px; opacity: 0; } 28% { opacity: .8; } 58%,100% { left: calc(100% + 12px); opacity: 0; } }
+@keyframes comSymbolFloat { 0%,100% { opacity: .065; transform: translate3d(0,0,0) rotate(-4deg) scale(.96); } 50% { opacity: .12; transform: translate3d(-5px,-5px,0) rotate(3deg) scale(1.04); } }
+
+@media (max-width: 1510px) {
+  .comentarii-section { min-height: 830px; padding-inline: 24px; padding-bottom: 48px; -webkit-clip-path: none; clip-path: none; border-top: 0; border-left: 0; border-right: 0; border-bottom: 1px solid rgba(129,222,211,.24); border-radius: 0 0 26px 26px; }
+  .comentarii-frame-v7 { display: none; }
+  .comentarii-character { left: -42px; top: 98px; height: 408px; }
+  .comentarii-content { margin-left: 218px; }
+  .comentarii-track { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  
+}
+
+@media (max-width: 990px) {
+  .comentarii-section {  padding: 30px 20px 34px; }
+  .comentarii-character { display: none; }
+  .comentarii-content { margin-left: 0; }
+  .comentarii-top {  flex-direction: column;  }
+  .comentarii-tabs { justify-content: flex-start; }
+  .comentarii-tabs::before { display: none; }
+  .comentarii-track { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 620px) {
+  .comentarii-section { padding-inline: 15px; }
+  .comentarii-tabs { width: 100%; }
+  .com-tab { flex: 1; min-width: 0; }
+  .comentarii-track { grid-template-columns: 1fr; }
+  
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .comentarii-section:not(#__av_prio_a#__av_prio_b)::before, .av10-card:not(#__av_prio_a#__av_prio_b), .av10-card:not(#__av_prio_a#__av_prio_b)::before, .av10-glow:not(#__av_prio_a#__av_prio_b), .av10-geometry span:not(#__av_prio_a#__av_prio_b), .av10-message:not(#__av_prio_a#__av_prio_b)::before, .av10-message:not(#__av_prio_a#__av_prio_b)::after, .av10-symbol:not(#__av_prio_a#__av_prio_b) {
+  animation: none;
+  transition: none;
+}
+}
+
+@media (min-width: 2000px) {
+  .comentarii-section { width: calc(100% - 16px); max-width: 1900px; margin-inline: auto; }
+}
+
+@media (min-width: 5200px) {
+  .comentarii-section { width: calc(100% - 24px); }
+}
+
+/* ============================================================
+   AniVortex Comentarii V12
+   - zona din spatele cardurilor este complet transparenta
+   - carduri perfect simetrice
+   - avataruri foto curate, fara initiale/litere
+   ============================================================ */
+
+/* Fundalul din spatele randului de carduri ramane complet transparent.
+   Fundalul/formarea containerului .comentarii-section NU este modificata. */
+
+
+.comentarii-track {
+  align-items: stretch;
+  grid-auto-rows: 1fr;
+}
+
+.comentarii-track:not(#__av_prio_a#__av_prio_b)::before, .comentarii-track:not(#__av_prio_a#__av_prio_b)::after {
+  content: none;
+  display: none;
+}
+
+/* Carduri egale si simetrice pe toate cele patru colturi. */
+.av10-card {
+  height: 390px;
+  grid-template-rows: 72px minmax(0, 1fr) 50px;
+  padding: 16px 14px 12px;
+}
+
+.av10-card:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 24px;
+}
+
+.av10-card::before {
+  border-radius: inherit;
+}
+
+.av10-head {
+  min-height: 58px;
+  
+  
+}
+
+
+
+/* Avatar: doar poza, centrata si decupata corect in cerc. */
+.av10-avatar-wrap {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+}
+
+.av10-avatar {
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  overflow: hidden;
+  line-height: 0;
+  background: rgba(5, 24, 30, 0.88);
+}
+
+.av10-avatar:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 50%;
+  font-size: 0;
+}
+
+.av10-avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 50% 20%;
+  transform: scale(1.04);
+  transform-origin: center;
+}
+
+.av10-avatar img:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 50%;
+}
+
+
+
+/* Interiorul comentariului urmeaza aceeasi geometrie simetrica. */
+
+
+.av10-reactions:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 14px;
+}
+
+.av10-reaction:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 10px;
+}
+
+/* Aliniere identica intre toate cardurile. */
+
+
+.av10-name,
+.av10-time,
+.av10-series-copy strong,
+.av10-text {
+  text-rendering: geometricPrecision;
+}
+
+@media (max-width: 1510px) {
+  .av10-card { height: 340px; }
+}
+
+@media (max-width: 620px) {
+  .av10-card { height: 350px; }
+}
+
+

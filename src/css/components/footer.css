@@ -1,0 +1,1650 @@
+/* ============================================================
+   ANIVORTEX FOOTER — FINAL V26
+   - paletă albastru / cyan / mint compatibilă cu site-ul
+   - logo din header
+   - personaj fără fundal decorativ
+   - social media rotundă și centrată
+   - A-Z deasupra celor 4 coloane
+   - contur AniVortex animat din litere separate
+   - V26: partea inferioară mărită pentru lizibilitate desktop
+   ============================================================ */
+.av-footer {
+  --avf-royal: #4169e1;
+  --avf-cyan: #79ebff;
+  --avf-mint: #63ffd0;
+  --avf-text: #f7ffff;
+  --avf-muted: #8fb3ba;
+
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+  flex: 0 0 auto;
+  margin-top: auto;
+
+  /* V25 — aceeași lățime ca fereastra caruselelor.
+     La zoom-out footerul nu mai umple tot viewport-ul,
+     ci rămâne centrat și limitat exact ca .av-entertainment-shell. */
+  width: calc(100% - 16px);
+  max-width: 1900px;
+  margin-left: auto;
+  margin-right: auto;
+
+  min-height: 690px;
+  overflow: hidden;
+  color: var(--avf-text);
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+
+  background: var(--avf-surface-top);
+}
+
+.av-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  pointer-events: none;
+  opacity: 0.18;
+  background-image:
+    radial-gradient(circle at 8% 18%, rgba(255,255,255,.24) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 36% 68%, rgba(121,235,255,.20) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 67% 22%, rgba(255,255,255,.22) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 92% 70%, rgba(99,255,208,.20) 0 1px, transparent 1.6px);
+  background-size: 260px 220px, 320px 280px, 380px 320px, 300px 250px;
+}
+
+.avf-accent {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--avf-royal) 14%,
+    var(--avf-cyan) 48%,
+    var(--avf-mint) 73%,
+    transparent 100%
+  );
+  opacity: 0.9;
+}
+
+/* ---------- AniVortex outline animation ---------- */
+
+.avf-outline-word {
+  position: absolute;
+  
+  
+  
+  display: flex;
+  align-items: center;
+  
+  gap: clamp(5px, 0.42vw, 10px);
+  
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.avf-outline-word span {
+  display: inline-block;
+  flex: 0 0 auto;
+  color: transparent;
+  font-size: clamp(62px, 7vw, 132px);
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: 0;
+  opacity: 0.95;
+
+  -webkit-text-stroke: 1px rgba(121, 235, 255, 0.105);
+  text-shadow: 0 0 30px rgba(121, 235, 255, 0.065);
+
+  
+
+  animation: none;
+}
+
+.avf-outline-word span:nth-child(3n) {
+  -webkit-text-stroke-color: rgba(99, 255, 208, 0.085);
+}
+
+.avf-outline-word.is-assembling span {
+  animation:
+    avf-letter-assemble 2.8s cubic-bezier(.22,.8,.16,1) forwards;
+  animation-delay: var(--avf-delay);
+}
+
+@keyframes avf-letter-assemble {
+  0% {
+    opacity: 0.06;
+    transform:
+      translate(var(--avf-dx), var(--avf-dy))
+      rotate(var(--avf-rot))
+      scale(0.76);
+  }
+
+  52% {
+    opacity: 0.55;
+  }
+
+  100% {
+    opacity: 0.95;
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+}
+
+/* ---------- Hero ---------- */
+
+.avf-hero {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 1720px);
+  
+  margin: 0 auto;
+  
+
+  display: grid;
+  grid-template-columns: minmax(0, 1.14fr) minmax(330px, 0.86fr);
+  
+  gap: 30px;
+}
+
+.avf-hero-copy {
+  position: relative;
+  z-index: 3;
+  
+}
+
+.avf-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  
+}
+
+.avf-logo {
+  display: block;
+  
+  
+  object-fit: contain;
+  filter: drop-shadow(0 10px 18px rgba(0,0,0,.34));
+}
+
+.avf-brand-copy {
+  padding-left: 15px;
+  border-left: 1px solid rgba(121, 235, 255, 0.15);
+}
+
+.avf-brand-copy strong {
+  display: block;
+  
+  
+  
+  
+  
+}
+
+.avf-brand-copy span {
+  display: block;
+  
+  
+  
+  
+}
+
+.avf-headline {
+  
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.avf-headline-top,
+.avf-headline-bottom {
+  display: block;
+  
+  font-weight: 950;
+  
+  letter-spacing: -0.05em;
+  
+}
+
+.avf-headline-top {
+  color: #fff;
+}
+
+.avf-headline-bottom {
+  color: transparent;
+  background: linear-gradient(102deg, #c4f9ff, #7ae8d5 58%, #a8ffe9);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Personajul rămâne singur: fără cerc, card sau background în spate. */
+.avf-character-wrap {
+  position: relative;
+  z-index: 3;
+  min-height: 330px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.avf-character {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  
+  object-fit: contain;
+  object-position: right bottom;
+  pointer-events: none;
+  filter: drop-shadow(0 26px 34px rgba(0,0,0,.46));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- A-Z ---------- */
+
+.avf-az-section {
+  position: relative;
+  z-index: 4;
+  width: min(calc(100% - 68px), 1720px);
+  margin: 0 auto;
+  padding: 22px 16px 24px;
+
+  border-top: 1px solid rgba(255,255,255,.055);
+}
+
+.avf-az-title {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #defcff;
+  font-size: 11px;
+  font-weight: 950;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.avf-az-title > span {
+  width: 30px;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--avf-royal), var(--avf-mint));
+}
+
+.avf-az {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.avf-az a {
+  min-width: 28px;
+  height: 34px;
+  padding: 0 6px;
+  display: grid;
+  place-items: center;
+
+  border-radius: 7px;
+
+  color: #6f9aa2;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 950;
+
+  transition:
+    color 0.18s ease,
+    background 0.18s ease,
+    transform 0.18s ease;
+}
+
+.avf-az a:hover {
+  color: #fff;
+  background: rgba(121,235,255,.05);
+  transform: translateY(-2px);
+}
+
+/* ---------- 4 coloane ---------- */
+
+.avf-nav-columns {
+  position: relative;
+  z-index: 4;
+  width: min(calc(100% - 68px), 1720px);
+  margin: 0 auto;
+  padding: 27px 18px 28px;
+
+  display: grid;
+  
+  
+
+  border-top: 1px solid rgba(255,255,255,.055);
+  border-bottom: 1px solid rgba(255,255,255,.055);
+}
+
+.avf-nav-column {
+  
+  
+}
+
+.avf-nav-column + .avf-nav-column {
+  border-left: 1px solid rgba(255,255,255,.045);
+}
+
+.avf-nav-column strong {
+  display: block;
+  
+
+  color: #7be4d2;
+  
+  font-weight: 950;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.avf-nav-column a {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  
+
+  color: #91b8bf;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.35;
+  font-weight: 780;
+
+  transition:
+    color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.avf-nav-column a:hover {
+  color: #fff;
+  transform: translateX(3px);
+}
+
+/* ---------- Footer bottom ---------- */
+
+.avf-bottom {
+  position: relative;
+  z-index: 4;
+  
+  margin: 0 auto;
+  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avf-bottom p {
+  margin: 0;
+  
+
+  
+  text-align: center;
+  
+  
+}
+
+.avf-bottom strong {
+  
+  
+}
+
+.avf-bottom span {
+  display: block;
+}
+
+/* ---------- Focus / accessibility ---------- */
+
+.av-footer a:focus-visible {
+  outline: 2px solid rgba(121,235,255,.72);
+  outline-offset: 3px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 1120px) {
+  .avf-hero {
+    
+    grid-template-columns: 1fr;
+  }
+
+  .avf-character-wrap {
+    min-height: 285px;
+    justify-content: center;
+  }
+
+  .avf-character {
+    max-height: 315px;
+  }
+
+  .avf-outline-word {
+    
+  }
+
+  
+
+  .avf-nav-column:nth-child(3) {
+    border-left: 0;
+  }
+
+  
+}
+
+@media (max-width: 820px) {
+  .av-footer {
+    width: calc(100% - 24px);
+    max-width: 1900px;
+    min-height: 0;
+  }
+
+  .avf-hero {
+    
+    
+  }
+
+  .avf-logo {
+    width: 68px;
+    height: 68px;
+  }
+
+  .avf-headline-top,
+  .avf-headline-bottom {
+    
+  }
+
+  .avf-outline-word {
+    
+    gap: 3px;
+  }
+
+  .avf-outline-word span {
+    font-size: clamp(42px, 12vw, 72px);
+  }
+
+  .avf-character-wrap {
+    min-height: 260px;
+  }
+
+  .avf-character {
+    
+  }
+
+  
+
+  
+
+  
+
+  .avf-az-section,
+  .avf-nav-columns {
+    width: calc(100% - 32px);
+  }
+
+  .avf-az {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .avf-nav-columns {
+    
+    padding: 15px;
+  }
+
+  .avf-nav-column {
+    
+  }
+
+  
+
+  .avf-nav-column:nth-child(n/**/+3) {
+    padding-top: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .avf-outline-word span:not(#__av_prio_a#__av_prio_b),
+.avf-az a:not(#__av_prio_a#__av_prio_b),
+.avf-nav-column a:not(#__av_prio_a#__av_prio_b) {
+  animation: none;
+  transition-duration: 0.01ms;
+}
+
+  
+}
+
+/* ============================================================
+   ANIVORTEX FOOTER — COMMUNITY OVERRIDES V38
+   - social media mutată în zona celor 4 coloane
+   - coloană nouă: Alătură-te comunității
+   - mai mult spațiu între logo și titlul mare
+   ============================================================ */
+
+.avf-brand {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 820px) {
+  
+
+  
+}
+
+/* ============================================================
+   ANIVORTEX FOOTER — UPDATE V39
+   - logo poziționat mai sus
+   - distanță mai mare între brand și headline
+   - headline puțin mai mic și păstrat pe orizontală
+   - 5 coloane desktop
+   - social media redesenat
+   - disclaimer extins în limba română
+   ============================================================ */
+
+/* Hero: logo mai sus + spațiu clar până la textul mare */
+.avf-hero {
+  min-height: 350px;
+  padding: 18px 46px 14px;
+  align-items: start;
+}
+
+.avf-hero-copy {
+  max-width: 1040px;
+  padding-top: 0;
+}
+
+.avf-brand {
+  margin: 0 0 42px;
+}
+
+.avf-headline {
+  max-width: none;
+  width: max-content;
+  gap: 8px;
+}
+
+.avf-headline-top,
+.avf-headline-bottom {
+  
+  line-height: 1.02;
+  white-space: nowrap;
+  text-wrap: nowrap;
+}
+
+/* 5 coloane */
+.avf-nav-columns {
+  
+  
+  padding-top: 28px;
+  padding-bottom: 30px;
+}
+
+.avf-nav-column {
+  
+}
+
+.avf-nav-column strong {
+  
+}
+
+/* Social media premium, integrat în coloane */
+.avf-social-column {
+  min-width: 0;
+}
+
+.avf-social-stack {
+  
+  
+  
+  
+}
+
+.avf-social-item {
+  padding: 9px 11px;
+  align-items: center;
+  gap: 11px;
+  border: 1px solid rgba(121, 235, 255, 0.11);
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255,255,255,.028), rgba(255,255,255,.012)),
+    rgba(255,255,255,.012);
+  color: inherit;
+  
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.02);
+  
+}
+
+.avf-social-item:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  
+  
+}
+
+.avf-social-item:hover {
+  border-color: rgba(99,255,208,.28);
+  background: linear-gradient(135deg, rgba(65,105,225,.10), rgba(44,181,171,.08)),
+    rgba(255,255,255,.018);
+  box-shadow: 0 12px 26px rgba(0,0,0,.16);
+}
+
+.avf-social-item:hover:not(#__av_prio_a#__av_prio_b) {
+  
+}
+
+.avf-social-item-icon {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  display: grid;
+  place-items: center;
+
+  border: 1px solid rgba(121,235,255,.18);
+  border-radius: 50%;
+  color: #f7ffff;
+  font-size: 15px;
+
+  background:
+    radial-gradient(circle at 30% 25%, rgba(255,255,255,.14), transparent 34%),
+    linear-gradient(135deg, rgba(65,105,225,.86), rgba(44,181,171,.72));
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.08),
+    0 7px 18px rgba(0,0,0,.18);
+
+  
+}
+
+.avf-social-item:hover .avf-social-item-icon {
+  transform: scale(1.06);
+  filter: brightness(1.08);
+}
+
+.avf-social-item-copy {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.avf-social-item-copy b {
+  color: #e9fcff;
+  font-size: 12.5px;
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+.avf-social-item-copy small {
+  display: block;
+  color: #789ca4;
+  font-size: 9.5px;
+  line-height: 1.28;
+  font-weight: 700;
+}
+
+/* Disclaimer */
+.avf-bottom {
+  width: min(100%, 1260px);
+  padding: 24px 36px 34px;
+}
+
+.avf-bottom p {
+  max-width: 1160px;
+  color: #6e9097;
+  
+  line-height: 1.68;
+}
+
+.avf-bottom strong {
+  color: #c9eef2;
+  font-weight: 900;
+}
+
+.avf-bottom span {
+  margin-top: 7px;
+  color: #789ba2;
+}
+
+/* Tablete/laptopuri: păstrăm headline-ul pe un singur rând per linie,
+   dar reducem fontul înainte să devină prea lat. */
+@media (max-width: 1320px) {
+  .avf-headline-top,
+  .avf-headline-bottom {
+    font-size: clamp(27px, 3.25vw, 43px);
+  }
+
+  .avf-nav-columns {
+    
+    
+  }
+
+  .avf-nav-column:nth-child(4) {
+    border-left: 0;
+  }
+
+  .avf-nav-column:nth-child(4),
+  .avf-nav-column:nth-child(5) {
+    padding-top: 14px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .avf-hero {
+    padding-top: 18px;
+    min-height: 590px;
+  }
+
+  .avf-brand {
+    margin-bottom: 34px;
+  }
+
+  .avf-headline-top,
+  .avf-headline-bottom {
+    font-size: clamp(24px, 4.2vw, 38px);
+  }
+
+  
+
+  .avf-nav-column:nth-child(3),
+  .avf-nav-column:nth-child(5) {
+    border-left: 0;
+  }
+
+  .avf-nav-column:nth-child(n/**/+3) {
+    padding-top: 14px;
+  }
+}
+
+@media (max-width: 820px) {
+  .avf-hero {
+    padding: 18px 20px 10px;
+  }
+
+  .avf-brand {
+    
+  }
+
+  .avf-headline {
+    width: max-content;
+    max-width: 100%;
+  }
+
+  .avf-headline-top,
+  .avf-headline-bottom {
+    font-size: clamp(16px, 5.25vw, 28px);
+    white-space: nowrap;
+  }
+
+  
+
+  
+
+  .avf-nav-column + .avf-nav-column {
+    border-left: 0;
+    border-top: 1px solid rgba(255,255,255,.045);
+  }
+
+  .avf-social-item:not(#__av_prio_a#__av_prio_b) {
+  
+}
+
+  .avf-bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .avf-bottom p {
+    font-size: 10.8px;
+  }
+}
+
+
+/* ============================================================
+   ANIVORTEX FOOTER — V40
+   Conturul AniVortex mutat în partea dreaptă-sus,
+   înaintea personajului, fără să afecteze restul footerului.
+   ============================================================ */
+
+.avf-outline-word {
+  left: auto;
+  right: 580px;
+  top: 200px;
+  transform: none;
+  justify-content: flex-end;
+  z-index: 1;
+}
+
+@media (max-width: 1120px) {
+  .avf-outline-word {
+    left: auto;
+    right: 40px;
+    top: 95px;
+    transform: none;
+  }
+}
+
+@media (max-width: 820px) {
+  .avf-outline-word {
+    left: auto;
+    right: 20px;
+    top: 92px;
+    transform: none;
+  }
+}
+
+/* ============================================================
+   ANIVORTEX FOOTER — V41 SOCIAL COMPACT
+   - toate cele 5 coloane au aceeași greutate vizuală
+   - Social Media este compactă, fără carduri mari
+   - iconurile rămân discrete și aliniate cu linkurile
+   ============================================================ */
+
+.avf-nav-columns {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0;
+  align-items: start;
+}
+
+.avf-nav-column {
+  min-width: 0;
+  padding: 0 28px;
+}
+
+.avf-nav-column strong {
+  margin-bottom: 16px;
+}
+
+.avf-nav-column a {
+  margin: 10px 0;
+}
+
+/* Social Media — aceeași logică vizuală ca restul coloanelor */
+.avf-social-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 0;
+}
+
+.avf-social-item {
+  text-decoration: none;
+  transition: color .18s ease, transform .18s ease;
+}
+
+.avf-social-item:not(#__av_prio_a#__av_prio_b) {
+  width: max-content;
+  max-width: 100%;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: #91b8bf;
+}
+
+.avf-social-item:hover:not(#__av_prio_a#__av_prio_b) {
+  transform: translateX(3px);
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  color: #fff;
+}
+
+.avf-social-item-icon {
+  transition: color .18s ease, border-color .18s ease, background .18s ease;
+}
+
+.avf-social-item-icon:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  flex: 0 0 27px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(121,235,255,.13);
+  border-radius: 50%;
+  background: rgba(255,255,255,.025);
+  color: #9fdde3;
+  font-size: 12px;
+  box-shadow: none;
+}
+
+.avf-social-item:hover .avf-social-item-icon:not(#__av_prio_a#__av_prio_b) {
+  transform: none;
+  color: #fff;
+  border-color: rgba(99,255,208,.30);
+  background: rgba(99,255,208,.07);
+}
+
+.avf-social-item-copy {
+  min-width: 0;
+}
+
+.avf-social-item-copy:not(#__av_prio_a#__av_prio_b) {
+  display: block;
+}
+
+.avf-social-item-copy b {
+  display: block;
+  transition: color .18s ease;
+}
+
+.avf-social-item-copy b:not(#__av_prio_a#__av_prio_b) {
+  color: #91b8bf;
+  font-size: 13px;
+  line-height: 1.35;
+  font-weight: 780;
+}
+
+.avf-social-item:hover .avf-social-item-copy b:not(#__av_prio_a#__av_prio_b) {
+  color: #fff;
+}
+
+.avf-social-item-copy small:not(#__av_prio_a#__av_prio_b) {
+  display: none;
+}
+
+@media (max-width: 1320px) {
+  .avf-nav-columns {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 24px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .avf-nav-columns {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 820px) {
+  .avf-nav-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .avf-nav-column {
+    padding: 13px 6px;
+  }
+
+  .avf-social-item:not(#__av_prio_a#__av_prio_b) {
+  max-width: 100%;
+}
+}
+
+/* ============================================================
+   ANIVORTEX FOOTER — V42
+   - personaj oglindit pe orizontală
+   - text explicativ lângă A–Z LIST
+   ============================================================ */
+
+/* Întoarce personajul în direcția opusă. */
+.avf-character {
+  transform: scaleX(-1);
+  transform-origin: center;
+}
+
+/* Titlul A-Z + explicația pe aceeași linie. */
+.avf-az-title {
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 6px;
+}
+
+.avf-az-title::after {
+  content: "Browse all anime titles alphabetically from A to Z";
+  margin-left: 8px;
+  color: #6f9299;
+  
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  opacity: 0.9;
+}
+
+@media (max-width: 820px) {
+  .avf-az-title::after {
+    flex-basis: 100%;
+    margin-left: 40px;
+    font-size: 10px;
+  }
+}
+
+/* ============================================================
+   ANIVORTEX FOOTER — V43 LETTER ORBIT
+   - literele plutesc 20 secunde prin footer
+   - apoi sunt atrase spre poziția finală și formează AniVortex
+   - animația pornește doar când footerul intră în viewport
+   ============================================================ */
+
+/* JS-ul V43 controlează transformările; dezactivăm animația CSS veche. */
+.avf-outline-word span {
+  transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+  will-change: transform, opacity, filter;
+  backface-visibility: hidden;
+}
+
+.avf-outline-word span:not(#__av_prio_a#__av_prio_b) {
+  animation: none;
+}
+
+.avf-outline-word.is-waiting span {
+  opacity: 0;
+}
+
+.avf-outline-word.is-roaming span {
+  -webkit-text-stroke-color: rgba(121, 235, 255, 0.16);
+  text-shadow:
+    0 0 18px rgba(121, 235, 255, 0.08),
+    0 0 34px rgba(99, 255, 208, 0.035);
+}
+
+.avf-outline-word.is-roaming span:nth-child(3n) {
+  -webkit-text-stroke-color: rgba(99, 255, 208, 0.14);
+}
+
+.avf-outline-word.is-gathering span {
+  -webkit-text-stroke-color: rgba(121, 235, 255, 0.18);
+  text-shadow:
+    0 0 22px rgba(121, 235, 255, 0.10),
+    0 0 44px rgba(99, 255, 208, 0.055);
+}
+
+.avf-outline-word.is-assembled span {
+  opacity: 0.95;
+  transform: translate3d(0, 0, 0) rotate(0deg) scale(1);
+  filter: blur(0);
+  -webkit-text-stroke-color: rgba(121, 235, 255, 0.105);
+  text-shadow: 0 0 30px rgba(121, 235, 255, 0.065);
+}
+
+.avf-outline-word.is-assembled span:nth-child(3n) {
+  -webkit-text-stroke-color: rgba(99, 255, 208, 0.085);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .avf-outline-word span:not(#__av_prio_a#__av_prio_b) {
+  animation: none;
+  transform: none;
+  opacity: 0.95;
+  filter: none;
+}
+}
+
+/* ============================================================
+   ANIVORTEX FOOTER — V44 LOOP
+   Secvența literelor este controlată din footer.js v5:
+   ~8s roaming -> assemble -> 15s pauză -> 15s roaming -> assemble -> repeat.
+   ============================================================ */
+
+
+/* ============================================================
+   ANIVORTEX FOOTER — V45 LOOP CLEAN
+   - AniVortex rămâne unit exact 15 secunde
+   - după 15 secunde literele pleacă din nou lin
+   - fără strălucire / flash când se unesc
+   ============================================================ */
+
+/* Fără glow în momentul unirii. */
+.avf-outline-word.is-gathering span:not(#__av_prio_a#__av_prio_b), .avf-outline-word.is-gathering span:nth-child(3n):not(#__av_prio_a#__av_prio_b) {
+  -webkit-text-stroke-color: rgba(121, 235, 255, 0.105);
+  text-shadow: none;
+  filter: none;
+}
+
+/* Cuvântul final rămâne doar contur discret, fără halo luminos. */
+.avf-outline-word.is-assembled span,
+.avf-outline-word.is-assembled span:nth-child(3n) {
+  opacity: 0.95;
+}
+
+.avf-outline-word.is-assembled span:not(#__av_prio_a#__av_prio_b), .avf-outline-word.is-assembled span:nth-child(3n):not(#__av_prio_a#__av_prio_b) {
+  -webkit-text-stroke-color: rgba(121, 235, 255, 0.105);
+  text-shadow: none;
+  filter: none;
+}
+
+/* Nicio tranziție CSS suplimentară care ar putea produce flash la schimbarea stării. */
+.avf-outline-word span:not(#__av_prio_a#__av_prio_b) {
+  transition: none;
+}
+
+
+/* ============================================================
+   ANIVORTEX FOOTER — V46 BRAND 2026
+   - wordmark mai modern / geometric
+   - titlul AniVortex mai mare
+   - tagline mai mare și mai lizibil
+   ============================================================ */
+
+.avf-brand-copy strong {
+  font-family: "Space Grotesk", Inter, "Segoe UI", Arial, sans-serif;
+  
+  font-weight: 700;
+  
+  
+  color: #f4ffff;
+  text-transform: uppercase;
+}
+
+.avf-brand-copy span {
+  
+  font-family: "Space Grotesk", Inter, "Segoe UI", Arial, sans-serif;
+  
+  font-weight: 600;
+  
+  letter-spacing: -0.01em;
+  color: #739aa2;
+}
+
+@media (max-width: 820px) {
+  .avf-brand-copy strong {
+    
+    letter-spacing: 0.12em;
+  }
+
+  .avf-brand-copy span {
+    
+  }
+}
+
+/* ============================================================
+   ANIVORTEX FOOTER — V47 DESKTOP 100% FIT
+   - brandul este puțin mai mare
+   - footerul este compactat vertical pe desktop
+   - la zoom 100% încape complet mult mai bine în viewport
+   ============================================================ */
+
+/* Brand mai vizibil */
+.avf-brand-copy strong {
+  
+  line-height: 1.02;
+  letter-spacing: 0.13em;
+}
+
+.avf-brand-copy span {
+  margin-top: 8px;
+  
+  line-height: 1.32;
+}
+
+/* Desktop mare: reducem doar spațiile verticale, nu conținutul. */
+@media (min-width: 1321px) {
+  .av-footer {
+    min-height: 0;
+  }
+
+  .avf-hero {
+    min-height: 310px;
+    padding: 14px 46px 8px;
+    align-items: start;
+  }
+
+  .avf-brand {
+    margin-bottom: 32px;
+  }
+
+  .avf-logo {
+    width: 76px;
+    height: 76px;
+  }
+
+  .avf-character-wrap {
+    min-height: 292px;
+  }
+
+  .avf-character {
+    
+  }
+
+  .avf-az-section {
+    padding-top: 14px;
+    padding-bottom: 15px;
+  }
+
+  .avf-az-title {
+    margin-bottom: 9px;
+  }
+
+  .avf-az a {
+    height: 30px;
+  }
+
+  .avf-nav-columns {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .avf-nav-column strong {
+    margin-bottom: 12px;
+  }
+
+  .avf-nav-column a {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .avf-social-stack {
+    gap: 8px;
+  }
+
+  .avf-bottom {
+    padding-top: 16px;
+    padding-bottom: 18px;
+  }
+
+  .avf-bottom p {
+    line-height: 1.55;
+  }
+}
+
+/* Pe ecrane desktop cu înălțime mai mică (de ex. 768px),
+   compactăm încă puțin pentru ca footerul să fie vizibil complet la 100%. */
+@media (min-width: 1321px) and (max-height: 820px) {
+  .avf-hero {
+    min-height: 292px;
+    padding-top: 10px;
+    padding-bottom: 4px;
+  }
+
+  .avf-brand {
+    
+  }
+
+  .avf-character-wrap {
+    min-height: 276px;
+  }
+
+  .avf-character {
+    max-height: 296px;
+  }
+
+  .avf-az-section {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  .avf-az-title {
+    margin-bottom: 6px;
+  }
+
+  .avf-nav-columns {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .avf-bottom {
+    padding-top: 12px;
+    padding-bottom: 14px;
+  }
+}
+
+@media (max-width: 820px) {
+  .avf-brand-copy strong {
+    font-size: 14px;
+  }
+
+  .avf-brand-copy span {
+    font-size: 10.5px;
+  }
+}
+
+/* ============================================================
+   ANIVORTEX FOOTER — V48 FULL WIDTH
+   - elimină spațiul gol din stânga și dreapta
+   - footerul ocupă 100% din lățimea disponibilă
+   - păstrează toate dimensiunile și animațiile existente
+   ============================================================ */
+
+.av-footer:not(#__av_prio_a#__av_prio_b) {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Regulile responsive vechi aveau din nou width: calc(...).
+   Le suprascriem și pe mobil/tabletă. */
+@media (max-width: 820px) {
+  .av-footer:not(#__av_prio_a#__av_prio_b) {
+  width: 100%;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+}
+
+/* ============================================================
+   ANIVORTEX FOOTER — V50 ZOOM MATCH
+   - la 100% footerul rămâne full-width
+   - de la primul pas de zoom-out footerul se comportă ca restul site-ului:
+     rămâne centrat și limitat la lățimea shell-ului principal
+   - NU mai mărim fonturile/pozițiile cu vw la viewport-uri uriașe
+   ============================================================ */
+
+/*
+ * La 100% pe un monitor Full HD viewport-ul CSS este sub 2000px,
+ * deci rămâne activ V48: footer full-width.
+ *
+ * Începând aproximativ de la zoom 95%, viewport-ul trece de 2000px.
+ * În loc să întindem footerul pe tot acel viewport, îl limităm la
+ * aceeași lățime maximă folosită de conținutul principal.
+ */
+@media (min-width: 2000px) {
+  .av-footer:not(#__av_prio_a#__av_prio_b) {
+  width: calc(100% - 16px);
+  max-width: 1900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+/* Un pic mai mult aer la zoom extrem, fără să schimbăm scara componentelor. */
+@media (min-width: 5200px) {
+  .av-footer:not(#__av_prio_a#__av_prio_b) {
+  width: calc(100% - 24px);
+  max-width: 1900px;
+}
+}
+
+/* ============================================================
+   ANIVORTEX FOOTER — V59 SPACED JOIN + REFINED SCALE
+   - curbele păstrează un spațiu real de aproximativ 14–20px
+   - accentul drept dintre îmbinare și footer este eliminat
+   - scara tipografică și brandul sunt mărite controlat
+   ============================================================ */
+
+.av-footer-join {
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: clamp(72px, 5.5vw, 88px);
+  margin: -1px auto 0;
+  overflow: visible;
+  pointer-events: none;
+  background: #02090c;
+}
+
+.av-footer {
+  --avf-logo-size: clamp(78px, 7vw, 90px);
+  --avf-brand-title-size: clamp(18px, 1.45vw, 20px);
+  --avf-tagline-size: clamp(12.5px, 1.05vw, 14px);
+  --avf-headline-size: clamp(38px, 3.75vw, 60px);
+  --avf-label-size: 12.5px;
+  --avf-link-size: 14px;
+  --avf-meta-size: 12px;
+  clip-path: none;
+}
+
+.av-footer:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 0;
+}
+
+/* SVG-ul trasează singurele accente ale îmbinării. */
+.av-footer > .avf-accent {
+  display: none;
+}
+
+.avf-hero {
+  padding-top: 0;
+}
+
+.avf-hero-copy {
+  /* Ridicare optică în suprafața comună a îmbinării; evităm transformările. */
+  margin-top: -14px;
+}
+
+.avf-brand {
+  margin-bottom: 14px;
+}
+
+@media (min-width: 821px) {
+  .av-footer {
+    z-index: 3;
+    overflow: visible;
+  }
+
+  .avf-brand {
+    position: relative;
+    z-index: 4;
+    inset-block-start: -34px;
+  }
+
+  .avf-headline {
+    margin-block-start: -20px;
+  }
+}
+
+.avf-logo {
+  width: var(--avf-logo-size);
+  height: var(--avf-logo-size);
+}
+
+.avf-brand-copy strong {
+  font-size: var(--avf-brand-title-size);
+}
+
+.avf-brand-copy span {
+  font-size: var(--avf-tagline-size);
+}
+
+.avf-headline-top,
+.avf-headline-bottom {
+  font-size: var(--avf-headline-size);
+}
+
+.avf-character {
+  max-height: 350px;
+}
+
+@media (min-width: 1121px) {
+  .avf-character-wrap {
+    width: 100%;
+    height: 320px;
+    min-height: 320px;
+  }
+
+  .avf-character {
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-end: 10px;
+    max-height: 360px;
+  }
+}
+
+.avf-az-title,
+.avf-az a {
+  font-size: var(--avf-meta-size);
+}
+
+.avf-az-title::after {
+  font-size: 11.5px;
+}
+
+.avf-nav-column strong {
+  font-size: var(--avf-label-size);
+}
+
+.avf-nav-column a:not(#__av_prio_a#__av_prio_b), .avf-social-item-copy b:not(#__av_prio_a#__av_prio_b) {
+  font-size: var(--avf-link-size);
+}
+
+.avf-social-item-icon:not(#__av_prio_a#__av_prio_b) {
+  width: 30px;
+  height: 30px;
+  flex-basis: 30px;
+}
+
+.avf-bottom p {
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  .av-footer-join {
+    height: 62px;
+  }
+}
+
+@media (min-width: 1321px) {
+  .avf-character {
+    max-height: 360px;
+  }
+}
+
+@media (max-width: 820px) {
+  .av-footer {
+    --avf-logo-size: 72px;
+    --avf-brand-title-size: 15px;
+    --avf-tagline-size: 11.5px;
+    --avf-headline-size: clamp(32px, 8.4vw, 42px);
+    --avf-label-size: 12px;
+    --avf-link-size: 13.5px;
+    --avf-meta-size: 11.5px;
+  }
+
+  .avf-hero {
+    min-height: 0;
+    padding-top: 8px;
+  }
+
+  .avf-hero-copy {
+    margin-top: 0;
+  }
+
+  .avf-brand {
+    margin-bottom: 22px;
+  }
+
+  .avf-character {
+    max-height: 310px;
+  }
+}
+
+/* Zoom mare / viewport foarte îngust: compactăm elementele decorative
+   și permitem titlului să curgă natural, fără scalare excesivă. */
+@media (max-width: 480px) {
+  .av-footer-join {
+    height: 52px;
+  }
+
+  .av-footer {
+    --avf-logo-size: 56px;
+    --avf-brand-title-size: 13px;
+    --avf-tagline-size: 10.5px;
+    --avf-headline-size: clamp(21px, 6.4vw, 26px);
+    --avf-label-size: 11.5px;
+    --avf-link-size: 13px;
+    --avf-meta-size: 11px;
+  }
+
+  .avf-hero {
+    padding: 4px 14px 8px;
+    gap: 18px;
+  }
+
+  .avf-brand {
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .avf-brand-copy {
+    padding-left: 10px;
+  }
+
+  .avf-headline {
+    gap: 5px;
+  }
+
+  .avf-headline-top,
+  .avf-headline-bottom {
+    white-space: normal;
+    text-wrap: balance;
+  }
+
+  .avf-character-wrap {
+    min-height: 200px;
+  }
+
+  .avf-character {
+    max-height: 220px;
+  }
+}
+
+@media (min-width: 1321px) and (max-height: 820px) {
+  .avf-logo {
+    width: 84px;
+    height: 84px;
+  }
+
+  .avf-brand {
+    margin-bottom: 10px;
+  }
+
+  .avf-headline-top,
+  .avf-headline-bottom {
+    font-size: clamp(42px, 3.45vw, 56px);
+  }
+}
+
+@media (min-width: 2000px) {
+  .av-footer-join {
+    width: calc(100% - 16px);
+    max-width: 1900px;
+  }
+}
+
+@media (min-width: 5200px) {
+  .av-footer-join {
+    width: calc(100% - 24px);
+  }
+}

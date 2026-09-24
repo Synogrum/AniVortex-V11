@@ -1,0 +1,4 @@
+file	rule_selector	dropped_branch	missing_classes	missing_ids	action
+src/css/main/01-foundation.css	.stire-card	.stire-card	stire-card		drop-rule
+src/css/main/01-foundation.css	.stire-card:hover	.stire-card:hover	stire-card		drop-rule
+src/css/main/01-foundation.css	.stire-card img	.stire-card img	stire-card		drop-rule

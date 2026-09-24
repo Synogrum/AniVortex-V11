@@ -1,0 +1,3249 @@
+/* ============================================================
+   AniVortex Comentarii V11
+   Forma containerului + personajul sunt păstrate din fișierul original.
+   Designul V10 este aplicat exclusiv conținutului din dreapta.
+   ============================================================ */
+
+.comentarii-section {
+  --com-blue: #2448ad;
+  --com-cyan: #0b6572;
+  --com-teal: #07584d;
+  --com-cream: #f6e7ad;
+  --com-ink: #07131d;
+  --com-gold: #dec481;
+
+  position: relative;
+  isolation: isolate;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  margin: 18px auto 0;
+  min-height: 555px;
+  padding: 42px 26px 78px;
+  overflow: hidden;
+  background: var(--avf-surface-top, #071b21);
+  border: 0;
+  border-radius: 0;
+  -webkit-clip-path: url(#comentariiClipV7);
+  clip-path: url(#comentariiClipV7);
+  filter:
+    drop-shadow(0 1px 0 rgba(129, 222, 211, 0.62))
+    drop-shadow(0 0 1.25px rgba(129, 222, 211, 0.32))
+    drop-shadow(0 18px 34px rgba(0, 0, 0, 0.26));
+}
+
+.comentarii-section::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.22;
+  background-image:
+    radial-gradient(circle at 7% 14%, rgba(225, 252, 255, 0.7) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 19% 62%, rgba(180, 244, 255, 0.48) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 34% 29%, rgba(230, 255, 255, 0.62) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 49% 79%, rgba(176, 242, 255, 0.52) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 66% 18%, rgba(235, 255, 255, 0.72) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 81% 58%, rgba(185, 245, 255, 0.55) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 94% 31%, rgba(230, 255, 255, 0.65) 0 1px, transparent 1.6px);
+  background-size: 330px 260px, 390px 310px, 460px 350px, 410px 300px, 370px 280px, 430px 330px, 360px 290px;
+  mask-image: none;
+  animation: avEntStars 22s linear infinite alternate;
+}
+
+.comentarii-section::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  left: -90px;
+  bottom: -170px;
+  width: 390px;
+  height: 390px;
+  border-radius: 50%;
+  background: rgba(37, 154, 150, 0.13);
+  filter: blur(100px);
+  pointer-events: none;
+}
+
+.comentarii-frame-v7 {
+  position: absolute;
+  z-index: 8;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  filter: drop-shadow(0 0 8px rgba(88, 225, 207, 0.08));
+}
+
+.comentarii-frame-v7 path {
+  fill: none;
+  stroke: rgba(143, 231, 220, 0.62);
+  stroke-width: 1.45;
+  vector-effect: non-scaling-stroke;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  shape-rendering: geometricPrecision;
+}
+
+.comentarii-shape-defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Poziția și dimensiunea personajului sunt identice cu varianta primită. */
+.comentarii-character {
+  position: absolute;
+  z-index: 2;
+  left: -45px;
+  top: 110px;
+  bottom: auto;
+  width: auto;
+  height: 510px;
+  max-width: none;
+  object-fit: contain;
+  object-position: bottom left;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.96;
+  filter: none;
+}
+
+.comentarii-content {
+  position: relative;
+  z-index: 3;
+  min-width: 0;
+  margin-left: 300px;
+}
+
+/* Antet V10, în interiorul zonei deja existente. */
+.comentarii-top {
+  min-height: 58px;
+  display: flex;
+  
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px 22px;
+  width: 100%;
+  margin: 0 4px 13px;
+}
+
+.comentarii-title-group {
+  display: grid;
+  align-items: center;
+  min-width: max-content;
+}
+
+.comentarii-title-group .v-bar { display: none; }
+
+.com-eyebrow {
+  display: block;
+  margin: 0 0 7px;
+  color: #78dccc;
+  font-size: 7px;
+  font-weight: 850;
+  letter-spacing: 0.23em;
+  text-transform: uppercase;
+}
+
+.comentarii-title-line {
+  
+  align-items: center;
+  gap: 10px;
+}
+
+.comentarii-title-group h2 {
+  margin: 0;
+  color: #fff;
+  font: 800 23px/1 Outfit, Inter, sans-serif;
+  letter-spacing: -0.035em;
+}
+
+.com-live-count {
+  padding: 5px 8px;
+  border: 1px solid rgba(222, 196, 129, 0.16);
+  border-radius: 999px;
+  color: #e3cb8d;
+  background: rgba(222, 196, 129, 0.06);
+  font-size: 7px;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.comentarii-tabs {
+  display: flex;
+  
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  
+}
+
+.comentarii-tabs::before {
+  content: "20 comentarii noi";
+  display: inline-flex;
+  align-items: center;
+  margin-right: 3px;
+  color: #78999a;
+  font-size: 7.5px;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.com-tab,
+.com-category-selector {
+  
+  padding: 0 13px;
+  border: 1px solid rgba(165, 224, 217, 0.13);
+  border-radius: 12px;
+  background: rgba(2, 14, 18, 0.42);
+  color: #86a3a4;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.035);
+  backdrop-filter: blur(16px);
+  font: 760 9px/1 Inter, sans-serif;
+  cursor: pointer;
+  transition: color 180ms ease, border-color 180ms ease, background 180ms ease, transform 180ms ease;
+}
+
+.com-tab:hover,
+.com-category-selector:hover {
+  color: #fff;
+  border-color: rgba(118, 226, 209, 0.33);
+  background: rgba(25, 77, 80, 0.22);
+}
+
+.com-tab.active {
+  color: #071719;
+  border-color: transparent;
+  background: linear-gradient(135deg, #e0c783, #8de0d2);
+  box-shadow: 0 9px 22px rgba(0, 0, 0, 0.23), inset 0 1px rgba(255, 255, 255, 0.25);
+}
+
+.com-category-selector {
+  display: inline-flex;
+  
+  justify-content: flex-start;
+  gap: 7px;
+  min-width: 0;
+  padding-inline: 13px 10px;
+  color: #d9e7e5;
+}
+
+.com-cat-label { white-space: nowrap; }
+.com-cat-arrow { color: var(--com-gold); font-size: 18px; line-height: 0.8; transition: transform 180ms ease; }
+.com-category-selector:hover .com-cat-arrow { transform: translateX(2px); }
+
+/* Cele șase carduri V10. */
+.comentarii-track {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 14px;
+  width: 100%;
+  padding: 0 4px 18px;
+  overflow: hidden;
+}
+
+.comentarii-track > .cloud-card { display: none; }
+
+.av10-card {
+  --accent: #76e2d1;
+  position: relative;
+  box-sizing: border-box;
+  min-width: 0;
+  
+  display: grid;
+  
+  
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 27px 27px 27px 9px;
+  background:
+    linear-gradient(150deg, rgba(18, 57, 63, 0.84), rgba(5, 27, 33, 0.94)) padding-box,
+    linear-gradient(145deg, color-mix(in srgb, var(--accent) 46%, rgba(255,255,255,.1)), rgba(255,255,255,.035) 44%, rgba(222,196,129,.2)) border-box;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.3), inset 0 1px rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(22px) saturate(145%);
+  animation: comGlassEnter 550ms cubic-bezier(0.18, 0.85, 0.25, 1) both;
+  transition: transform 240ms ease, box-shadow 240ms ease;
+}
+
+.av10-card::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: linear-gradient(125deg, rgba(255,255,255,.06), transparent 22%, transparent 70%, color-mix(in srgb, var(--accent) 7%, transparent));
+  pointer-events: none;
+}
+
+.av10-card:hover {
+  z-index: 2;
+  transform: translateY(-5px);
+  box-shadow: 0 28px 56px rgba(0,0,0,.42), 0 0 36px color-mix(in srgb, var(--accent) 8%, transparent), inset 0 1px rgba(255,255,255,.08);
+}
+
+.av10-glow {
+  position: absolute;
+  z-index: 0;
+  width: 145px;
+  height: 145px;
+  right: -65px;
+  top: -70px;
+  border-radius: 50%;
+  background: var(--accent);
+  filter: blur(50px);
+  opacity: 0.11;
+  animation: comGlowBreathe 7s ease-in-out var(--motion-delay, 0s) infinite;
+}
+
+.av10-geometry { position: absolute; z-index: 0; inset: 0; overflow: hidden; pointer-events: none; opacity: 0.68; }
+.av10-geometry span { position: absolute; display: block; }
+.av10-ring { border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent); border-radius: 50%; box-shadow: inset 0 0 24px color-mix(in srgb, var(--accent) 4%, transparent); }
+.av10-ring::after { content: ""; position: absolute; left: 50%; top: -2.5px; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 58%, transparent); }
+.av10-ring-large { width: 164px; height: 164px; right: -76px; bottom: 63px; animation: comOrbitLarge 10s ease-in-out var(--motion-delay, 0s) infinite; }
+.av10-ring-small { width: 62px; height: 62px; right: 18px; bottom: 112px; animation: comOrbitSmall 7.5s linear var(--motion-delay, 0s) infinite reverse; }
+.av10-line { height: 1px; transform-origin: left center; background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--accent) 28%, transparent), transparent); }
+.av10-line-one { width: 178px; right: -47px; bottom: 128px; transform: rotate(-34deg); animation: comLineOne 8s ease-in-out var(--motion-delay, 0s) infinite; }
+.av10-line-two { width: 112px; left: -24px; top: 157px; transform: rotate(22deg); opacity: 0.6; animation: comLineTwo 9.5s ease-in-out var(--motion-delay, 0s) infinite; }
+.av10-dot { right: 54px; bottom: 141px; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 7%, transparent), 0 0 14px color-mix(in srgb, var(--accent) 36%, transparent); animation: comNodeDrift 6s ease-in-out var(--motion-delay, 0s) infinite; }
+.av10-number { position: absolute; z-index: 0; right: 13px; top: 21px; color: color-mix(in srgb, var(--accent) 9%, transparent); font: 800 56px/1 ui-monospace, monospace; letter-spacing: -0.09em; pointer-events: none; }
+
+.av10-head { position: relative; z-index: 1; display: flex;   min-width: 0; transform: translateY(-7px); }
+.av10-avatar-wrap { position: relative; flex: 0 0 auto; }
+.av10-avatar {
+  
+  
+  display: grid;
+  place-items: center;
+  
+  border: 1px solid color-mix(in srgb, var(--accent) 62%, rgba(255,255,255,.25));
+  border-radius: 50%;
+  color: #fff;
+  
+  box-shadow: 0 9px 22px rgba(0,0,0,.3), inset 0 1px rgba(255,255,255,.22), 0 0 0 4px rgba(255,255,255,.025);
+  font-size: 11px;
+  font-weight: 850;
+}
+.av10-avatar img {    border-radius: inherit; }
+.av10-online { position: absolute;     border: 3px solid #11353a; border-radius: 50%; background: #6be1b9; box-shadow: 0 0 12px rgba(107,225,185,.38); }
+.av10-identity {  flex: 1; display: flex; align-items: flex-start; flex-direction: column; }
+.av10-name {  overflow: hidden; color: #fff;  line-height: 1.15; text-overflow: ellipsis; white-space: nowrap; }
+.av10-time { display: block;  color: #7f9fa0; font-size: 8.5px;  }
+
+.av10-message {
+  position: relative;
+  z-index: 1;
+  
+  display: grid;
+  grid-template-rows: 55px minmax(0, 1fr);
+  
+  border: 1px solid transparent;
+  border-radius: 18px 18px 22px 8px;
+  background:
+    linear-gradient(150deg, rgba(1,16,20,.78), rgba(3,24,29,.66)) padding-box,
+    linear-gradient(145deg, color-mix(in srgb, var(--accent) 46%, rgba(255,255,255,.08)), rgba(145,220,212,.08) 46%, color-mix(in srgb, var(--accent) 18%, transparent)) border-box;
+  box-shadow: inset 0 1px rgba(255,255,255,.045), inset 4px 0 24px color-mix(in srgb, var(--accent) 5%, transparent), 0 14px 30px rgba(0,0,0,.18);
+  backdrop-filter: blur(16px) saturate(125%);
+}
+.av10-message::before { content: ""; position: absolute; z-index: 0; inset: 0; background: radial-gradient(circle at 92% 8%, color-mix(in srgb, var(--accent) 11%, transparent), transparent 26%), linear-gradient(115deg, transparent 42%, color-mix(in srgb, var(--accent) 4%, transparent), transparent 68%); pointer-events: none; animation: comPanelBreathe 6.5s ease-in-out var(--motion-delay, 0s) infinite; }
+.av10-message::after { content: ""; position: absolute; z-index: 2; top: 0; left: -72px; width: 72px; height: 1px; background: linear-gradient(90deg, transparent, var(--accent), transparent); box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 40%, transparent); pointer-events: none; animation: comPanelScan 7s ease-in-out var(--motion-delay, 0s) infinite; }
+
+.av10-series {
+  
+  z-index: 1;
+  width: 100%;
+  height: 55px;
+  display: grid;
+  
+  
+  
+  
+  border: 0;
+  border-bottom: 1px solid rgba(166,223,216,.13);
+  border-radius: 0;
+  color: #fff;
+  text-align: left;
+  background: linear-gradient(100deg, color-mix(in srgb, var(--accent) 11%, rgba(1,14,18,.36)), rgba(1,14,18,.2) 72%);
+  cursor: pointer;
+}
+.av10-series:hover { background: linear-gradient(100deg, color-mix(in srgb, var(--accent) 16%, rgba(1,14,18,.38)), rgba(1,14,18,.24) 72%); }
+
+.av10-series-copy small,
+.av10-series-copy strong { display: block; }
+.av10-series-copy small { color: #739496; font-size: 6.5px;  letter-spacing: 0.1em;  }
+.av10-series-copy strong { margin-top: 3px;  color: #edf5f3;  font-weight: 750;   }
+.av10-series-arrow {      color: var(--com-gold); background: rgba(222,196,129,.055);   }
+
+.av10-body {  z-index: 1;  padding: 18px 13px 14px; background: linear-gradient(180deg, transparent, rgba(0,7,10,.12)); }
+.av10-text {   display: -webkit-box;  overflow: hidden; color: #e3eeec; font-size: 11.4px; font-weight: 550; line-height: 1.65; -webkit-box-orient: vertical;   }
+.av10-symbol { position: absolute; z-index: 0; right: 8px; bottom: -7px; color: var(--accent); font-family: "Noto Serif JP", "Yu Mincho", serif; font-size: 52px; font-weight: 800; line-height: 1; opacity: 0.085; text-shadow: 0 0 18px color-mix(in srgb, var(--accent) 24%, transparent); pointer-events: none; animation: comSymbolFloat 7.5s ease-in-out var(--motion-delay, 0s) infinite; }
+
+.av10-footer { position: relative; z-index: 2; align-self: end; width: calc(100% + 6px);  margin-left: -3px; padding-top: 8px; }
+.av10-reactions {    grid-template-columns: repeat(3, 1fr); gap: 5px; padding: 4px; border: 1px solid transparent; border-radius: 15px; background: linear-gradient(rgba(1,12,16,.58), rgba(1,12,16,.58)) padding-box, linear-gradient(135deg, rgba(150,224,216,.16), rgba(255,255,255,.035), rgba(222,196,129,.12)) border-box; box-shadow: 0 10px 24px rgba(0,0,0,.22), inset 0 1px rgba(255,255,255,.035); backdrop-filter: blur(16px); }
+.av10-reaction { height: 30px; display: flex; align-items: center; justify-content: center;   border: 1px solid rgba(145,210,204,.08); border-radius: 10px 10px 10px 6px; color: #829fa1; background: linear-gradient(145deg, rgba(255,255,255,.025), rgba(255,255,255,.008)); box-shadow: inset 0 1px rgba(255,255,255,.025); cursor: pointer; transition: transform 180ms ease, color 180ms ease, border-color 180ms ease, background 180ms ease; }
+.av10-reaction svg {   fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.av10-reaction span { font-size: 8.5px; font-weight: 780; }
+.av10-reaction:hover { transform: translateY(-1px); color: #fff; border-color: rgba(255,255,255,.13); background: rgba(255,255,255,.055); }
+.av10-reaction.like:hover { color: #83e3d3; }
+.av10-reaction.love:hover { color: #ffa1b9; }
+.av10-reaction.reply:hover { color: #9ac8ff; }
+.av10-reaction.is-active {  border-color: color-mix(in srgb, var(--accent) 28%, transparent); background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.av10-reaction.love.is-active { color: #ffa1b9; border-color: rgba(255,161,185,.28); background: rgba(255,161,185,.09); }
+
+.com-tab:focus-visible,
+.com-category-selector:focus-visible,
+.av10-series:focus-visible,
+.av10-reaction:focus-visible {
+  outline: 2px solid #89e8d9;
+  outline-offset: 3px;
+}
+
+@keyframes comGlassEnter { from { opacity: 0; transform: translateY(16px) scale(.985); } to { opacity: 1; transform: none; } }
+@keyframes comGlowBreathe { 0%,100% { opacity: .08; transform: scale(.92); } 50% { opacity: .16; transform: scale(1.12); } }
+@keyframes comOrbitLarge { 0%,100% { transform: translate3d(0,0,0) rotate(0deg); } 45% { transform: translate3d(-14px,-9px,0) rotate(135deg); } 72% { transform: translate3d(-7px,7px,0) rotate(245deg); } }
+@keyframes comOrbitSmall { 0% { transform: translate3d(0,0,0) rotate(0deg); } 50% { transform: translate3d(-15px,8px,0) rotate(180deg); } 100% { transform: translate3d(0,0,0) rotate(360deg); } }
+@keyframes comLineOne { 0%,100% { opacity: .35; transform: translateX(0) rotate(-34deg); } 50% { opacity: .85; transform: translateX(-28px) rotate(-23deg); } }
+@keyframes comLineTwo { 0%,100% { opacity: .28; transform: translateX(0) rotate(22deg); } 50% { opacity: .72; transform: translateX(34px) rotate(15deg); } }
+@keyframes comNodeDrift { 0%,100% { transform: translate3d(0,0,0) scale(.85); } 35% { transform: translate3d(-18px,-11px,0) scale(1.18); } 70% { transform: translate3d(8px,-22px,0) scale(.95); } }
+@keyframes comPanelBreathe { 0%,100% { opacity: .48; transform: translateX(-2%); } 50% { opacity: 1; transform: translateX(3%); } }
+@keyframes comPanelScan { 0%,12% { left: -72px; opacity: 0; } 28% { opacity: .8; } 58%,100% { left: calc(100% + 12px); opacity: 0; } }
+@keyframes comSymbolFloat { 0%,100% { opacity: .065; transform: translate3d(0,0,0) rotate(-4deg) scale(.96); } 50% { opacity: .12; transform: translate3d(-5px,-5px,0) rotate(3deg) scale(1.04); } }
+
+@media (max-width: 1510px) {
+  .comentarii-section { min-height: 830px; padding-inline: 24px; padding-bottom: 48px; -webkit-clip-path: none; clip-path: none; border-top: 0; border-left: 0; border-right: 0; border-bottom: 1px solid rgba(129,222,211,.24); border-radius: 0 0 26px 26px; }
+  .comentarii-frame-v7 { display: none; }
+  .comentarii-character { left: -42px; top: 98px; height: 408px; }
+  .comentarii-content { margin-left: 218px; }
+  .comentarii-track { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  
+}
+
+@media (max-width: 990px) {
+  .comentarii-section {  padding: 30px 20px 34px; }
+  .comentarii-character { display: none; }
+  .comentarii-content { margin-left: 0; }
+  .comentarii-top {  flex-direction: column;  }
+  .comentarii-tabs { justify-content: flex-start; }
+  .comentarii-tabs::before { display: none; }
+  .comentarii-track { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 620px) {
+  .comentarii-section { padding-inline: 15px; }
+  .comentarii-tabs { width: 100%; }
+  .com-tab { flex: 1; min-width: 0; }
+  .comentarii-track { grid-template-columns: 1fr; }
+  
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .comentarii-section:not(#__av_prio_a#__av_prio_b)::before, .av10-card:not(#__av_prio_a#__av_prio_b), .av10-card:not(#__av_prio_a#__av_prio_b)::before, .av10-glow:not(#__av_prio_a#__av_prio_b), .av10-geometry span:not(#__av_prio_a#__av_prio_b), .av10-message:not(#__av_prio_a#__av_prio_b)::before, .av10-message:not(#__av_prio_a#__av_prio_b)::after, .av10-symbol:not(#__av_prio_a#__av_prio_b) {
+  animation: none;
+  transition: none;
+}
+}
+
+@media (min-width: 2000px) {
+  .comentarii-section { width: calc(100% - 16px); max-width: 1900px; margin-inline: auto; }
+}
+
+@media (min-width: 5200px) {
+  .comentarii-section { width: calc(100% - 24px); }
+}
+
+/* ============================================================
+   AniVortex Comentarii V12
+   - zona din spatele cardurilor este complet transparenta
+   - carduri perfect simetrice
+   - avataruri foto curate, fara initiale/litere
+   ============================================================ */
+
+/* Fundalul din spatele randului de carduri ramane complet transparent.
+   Fundalul/formarea containerului .comentarii-section NU este modificata. */
+
+
+.comentarii-track {
+  align-items: stretch;
+  grid-auto-rows: 1fr;
+}
+
+.comentarii-track:not(#__av_prio_a#__av_prio_b)::before, .comentarii-track:not(#__av_prio_a#__av_prio_b)::after {
+  content: none;
+  display: none;
+}
+
+/* Carduri egale si simetrice pe toate cele patru colturi. */
+.av10-card {
+  height: 390px;
+  grid-template-rows: 72px minmax(0, 1fr) 50px;
+  padding: 16px 14px 12px;
+}
+
+.av10-card:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 24px;
+}
+
+.av10-card::before {
+  border-radius: inherit;
+}
+
+.av10-head {
+  min-height: 58px;
+  
+  
+}
+
+
+
+/* Avatar: doar poza, centrata si decupata corect in cerc. */
+.av10-avatar-wrap {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+}
+
+.av10-avatar {
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  overflow: hidden;
+  line-height: 0;
+  background: rgba(5, 24, 30, 0.88);
+}
+
+.av10-avatar:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 50%;
+  font-size: 0;
+}
+
+.av10-avatar img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: 50% 20%;
+  transform: scale(1.04);
+  transform-origin: center;
+}
+
+.av10-avatar img:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 50%;
+}
+
+
+
+/* Interiorul comentariului urmeaza aceeasi geometrie simetrica. */
+
+
+.av10-reactions:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 14px;
+}
+
+.av10-reaction:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 10px;
+}
+
+/* Aliniere identica intre toate cardurile. */
+
+
+.av10-name,
+.av10-time,
+.av10-series-copy strong,
+.av10-text {
+  text-rendering: geometricPrecision;
+}
+
+@media (max-width: 1510px) {
+  .av10-card { height: 340px; }
+}
+
+@media (max-width: 620px) {
+  .av10-card { height: 350px; }
+}
+
+
+/* ============================================================
+   AniVortex Comentarii V13 — UI/UX alignment pass
+   - header utilizator ridicat si aliniat
+   - continutul cardului are aceleasi axe/stanga-dreapta
+   - zona de reactii este perfect aliniata cu mesajul
+   - pata decorativa de sub carduri este eliminata
+   - titlul sectiunii este mai vizibil
+   ============================================================ */
+
+/* Eliminam pata/bluru-ul turcoaz de jos. Forma containerului ramane neschimbata. */
+.comentarii-section:not(#__av_prio_a#__av_prio_b)::after {
+  content: none;
+  display: none;
+  background: transparent;
+  filter: none;
+}
+
+/* Antetul sectiunii: ierarhie vizuala mai clara. */
+.com-eyebrow {
+  margin-bottom: 8px;
+  font-size: 9.5px;
+  line-height: 1.1;
+  letter-spacing: 0.20em;
+}
+
+.comentarii-title-group h2 {
+  
+  
+  letter-spacing: -0.04em;
+}
+
+.com-live-count {
+  padding: 6px 9px;
+  font-size: 8px;
+}
+
+.comentarii-title-line {
+  gap: 11px;
+}
+
+/* Card: toate blocurile folosesc aceeasi latime si aceleasi axe. */
+.av10-card {
+  
+  
+}
+
+/* Poza + numele sunt urcate putin si raman centrate unul fata de altul. */
+.av10-head {
+  
+  
+  
+}
+
+.av10-head:not(#__av_prio_a#__av_prio_b) {
+  transform: translateY(-4px);
+}
+
+.av10-avatar-wrap {
+  width: 54px;
+  height: 54px;
+}
+
+.av10-avatar {
+  width: 54px;
+  height: 54px;
+}
+
+.av10-identity {
+  
+  transform: translateY(-1px);
+}
+
+.av10-name {
+  
+  
+}
+
+.av10-time {
+  
+  line-height: 1.05;
+}
+
+/* Zona serie + comentariu: proportii mai curate si aliniere constanta. */
+.av10-message {
+  
+  width: 100%;
+}
+
+.av10-series {
+  
+  
+  
+  
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.av10-series-copy small {
+  
+  line-height: 1.1;
+}
+
+.av10-series-copy strong {
+  
+  
+  
+}
+
+
+
+
+
+.av10-series-arrow {
+  transition: transform 180ms ease;
+}
+
+.av10-body {
+  
+}
+
+.av10-text {
+  
+  
+  
+}
+
+/* Reactiile nu mai ies in lateral: sunt pe aceeasi linie cu mesajul. */
+.av10-footer {
+  
+  
+  margin-left: 0;
+  
+}
+
+.av10-reactions {
+  
+  
+}
+
+/* La rezolutii mai mici pastram aceeasi logica vizuala. */
+@media (max-width: 1510px) {
+  .av10-card {
+    
+    padding-top: 11px;
+  }
+
+  .av10-head:not(#__av_prio_a#__av_prio_b) {
+  transform: translateY(-3px);
+}
+}
+
+@media (max-width: 620px) {
+  .comentarii-title-group h2 { font-size: 27px; }
+  .com-eyebrow { font-size: 9px; }
+}
+
+/* ============================================================
+   AniVortex Comentarii V14 — polish UI/UX card content
+   - username mai vizibil
+   - serie tratata ca actiune clara/clickabila
+   - comentariu mai lizibil
+   - reactii compacte, egale si bine delimitate
+   ============================================================ */
+
+/* Header utilizator: mai clar, fara sa dezechilibreze avatarul. */
+
+
+.av10-identity {
+  gap: 0;
+}
+
+.av10-name {
+  
+  font-weight: 820;
+  
+  
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.22);
+}
+
+.av10-time {
+  
+  
+  font-weight: 650;
+  
+  letter-spacing: 0.01em;
+  color: #89a9aa;
+}
+
+/* Mesaj: seria devine un control separat, usor de inteles si apasat. */
+.av10-message {
+  grid-template-rows: 62px minmax(0, 1fr);
+}
+
+.av10-series {
+  width: calc(100% - 12px);
+  
+  margin: 6px 6px 4px;
+  
+  
+  
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, rgba(153, 220, 214, 0.13));
+  
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 8%, rgba(5, 24, 29, 0.88)), rgba(2, 17, 22, 0.78));
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.04),
+    0 5px 14px rgba(0, 0, 0, 0.12);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.av10-series::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  
+  
+  
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--accent) 72%, #fff 6%);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 34%, transparent);
+  opacity: 0.72;
+}
+
+.av10-series:hover {
+  
+  border-color: color-mix(in srgb, var(--accent) 38%, rgba(255, 255, 255, 0.12));
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 13%, rgba(5, 27, 32, 0.92)), rgba(2, 18, 23, 0.84));
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.055),
+    0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.av10-series-copy small {
+  
+  
+  
+  letter-spacing: 0.11em;
+  color: #86a7a8;
+}
+
+.av10-series-copy strong {
+  
+  
+  font-weight: 790;
+  line-height: 1.08;
+  letter-spacing: -0.012em;
+  color: #f1f7f5;
+}
+
+.av10-series-arrow {
+  
+  
+  border: 1px solid rgba(222, 196, 129, 0.14);
+  border-radius: 9px;
+  
+  background: linear-gradient(145deg, rgba(222, 196, 129, 0.10), rgba(222, 196, 129, 0.035));
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.av10-series:hover .av10-series-arrow,
+.av10-series:focus-visible .av10-series-arrow {
+  
+  border-color: rgba(222, 196, 129, 0.28);
+  background: rgba(222, 196, 129, 0.13);
+}
+
+/* Comentariul: text mai mare, aceeasi margine stanga/dreapta si ritm mai bun. */
+.av10-body {
+  
+}
+
+.av10-text {
+  
+  
+  
+  
+  color: #e7f0ef;
+  
+  
+}
+
+/* Reactii: fiecare actiune este un buton distinct, egal si usor de apasat. */
+.av10-footer {
+  
+  padding-top: 7px;
+}
+
+.av10-reactions {
+  height: 41px;
+  
+  
+  
+  border-radius: 0;
+  
+  
+  
+}
+
+.av10-reaction {
+  position: relative;
+  
+  
+  
+  border: 1px solid rgba(145, 210, 204, 0.13);
+  border-radius: 11px;
+  color: #91abad;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.036), rgba(255, 255, 255, 0.011));
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.035),
+    0 4px 11px rgba(0, 0, 0, 0.10);
+  transition:
+    transform 170ms ease,
+    color 170ms ease,
+    border-color 170ms ease,
+    background 170ms ease,
+    box-shadow 170ms ease;
+}
+
+.av10-reaction svg {
+  box-sizing: content-box;
+  
+  
+  
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: rgba(129, 218, 207, 0.055);
+  stroke-width: 1.85;
+  transition: background 170ms ease, transform 170ms ease;
+}
+
+.av10-reaction span {
+  
+  
+  font-weight: 800;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.av10-reaction:hover {
+  transform: translateY(-2px);
+  color: #f7fbfb;
+  border-color: rgba(255, 255, 255, 0.17);
+  background: rgba(255, 255, 255, 0.055);
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.045),
+    0 8px 16px rgba(0, 0, 0, 0.16);
+}
+
+.av10-reaction:hover svg {
+  transform: scale(1.04);
+}
+
+.av10-reaction.like:hover svg,
+.av10-reaction.like.is-active svg {
+  background: rgba(131, 227, 211, 0.10);
+}
+
+.av10-reaction.love:hover svg,
+.av10-reaction.love.is-active svg {
+  background: rgba(255, 161, 185, 0.10);
+}
+
+.av10-reaction.reply:hover svg,
+.av10-reaction.reply.is-active svg {
+  background: rgba(154, 200, 255, 0.10);
+}
+
+.av10-reaction.like:hover { color: #8be6d7; border-color: rgba(139, 230, 215, 0.23); }
+.av10-reaction.love:hover { color: #ffa8bf; border-color: rgba(255, 168, 191, 0.22); }
+.av10-reaction.reply:hover { color: #a4ceff; border-color: rgba(164, 206, 255, 0.22); }
+
+.av10-reaction.is-active {
+  transform: translateY(-1px);
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 34%, transparent);
+  background: color-mix(in srgb, var(--accent) 9%, rgba(4, 22, 27, 0.86));
+}
+
+.av10-reaction.love.is-active {
+  color: #ffa8bf;
+  border-color: rgba(255, 168, 191, 0.30);
+  background: rgba(255, 168, 191, 0.075);
+}
+
+.av10-reaction.reply.is-active {
+  color: #a4ceff;
+  border-color: rgba(164, 206, 255, 0.28);
+  background: rgba(164, 206, 255, 0.07);
+}
+
+@media (max-width: 1510px) {
+  .av10-name { font-size: 14px; }
+  
+  .av10-series-copy strong { font-size: 10.5px; }
+  .av10-reaction { padding-inline: 6px; }
+}
+
+@media (max-width: 620px) {
+  
+  
+}
+/* ============================================================
+   AniVortex Comentarii V15 — spacing & hierarchy fix
+   - elementele din card nu se mai ating / suprapun
+   - header, serie, comentariu si reactii au zone separate
+   - pastreaza forma exterioara, culorile si personajul existente
+   ============================================================ */
+
+.comentarii-track {
+  gap: 16px;
+}
+
+.av10-card {
+  height: 406px;
+  grid-template-rows: 60px minmax(0, 1fr) 44px;
+  
+  padding: 14px;
+}
+
+/* Header utilizator — zonă proprie, fără să intre peste mesaj. */
+.av10-head {
+  min-height: 0;
+  height: 60px;
+  align-items: center;
+  gap: 11px;
+  padding: 0 2px;
+}
+
+
+
+.av10-avatar-wrap,
+.av10-avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.av10-avatar-wrap {
+  flex: 0 0 50px;
+}
+
+.av10-online {
+  right: 0;
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+}
+
+
+
+.av10-name {
+  position: relative;
+  z-index: 2;
+  
+  font-size: 14px;
+  line-height: 1.08;
+}
+
+.av10-time {
+  
+  font-size: 8.8px;
+  
+}
+
+.av10-number {
+  
+  
+  font-size: 50px;
+  opacity: 0.72;
+}
+
+/* Mesajul devine un stack clar: serie sus + comentariu jos. */
+
+
+.av10-message:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 17px;
+}
+
+.av10-series {
+  
+  
+  
+  
+  grid-template-columns: minmax(0, 1fr) 26px;
+  
+  padding: 8px 8px 8px 12px;
+  border-radius: 11px;
+}
+
+
+
+.av10-series-copy small {
+  font-size: 7px;
+  
+}
+
+.av10-series-copy strong {
+  
+  max-width: 100%;
+  font-size: 10.5px;
+  
+}
+
+.av10-series-arrow {
+  width: 26px;
+  height: 26px;
+  
+  
+}
+
+.av10-body {
+  
+  
+  
+  padding: 15px 13px 13px;
+  background: linear-gradient(180deg, transparent, rgba(0, 7, 10, 0.12));
+}
+
+.av10-text {
+  max-width: 100%;
+  margin: 0;
+  font-size: 11.7px;
+  font-weight: 600;
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+  
+  
+}
+
+.av10-symbol {
+  right: 10px;
+  bottom: 2px;
+  font-size: 46px;
+  opacity: 0.065;
+}
+
+/* Footer separat de mesaj: fără margini negative / fără intrare peste body. */
+.av10-footer {
+  align-self: stretch;
+  width: 100%;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+}
+
+.av10-reactions {
+  width: 100%;
+  
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  gap: 6px;
+  padding: 3px;
+  border: 1px solid rgba(145, 210, 204, 0.10);
+  background: rgba(1, 12, 16, 0.32);
+  box-shadow: inset 0 1px rgba(255,255,255,.025);
+  backdrop-filter: blur(10px);
+}
+
+.av10-reactions:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 13px;
+}
+
+.av10-reaction {
+  min-width: 0;
+  
+  gap: 5px;
+  padding: 0 5px;
+}
+
+.av10-reaction:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 9px;
+}
+
+.av10-reaction svg {
+  width: 13px;
+  height: 13px;
+  padding: 2.5px;
+}
+
+.av10-reaction span {
+  min-width: 9px;
+  font-size: 9.3px;
+}
+
+/* Pe ecrane ceva mai înguste nu mai micșorăm cardul până când conținutul se calcă. */
+@media (max-width: 1510px) {
+  .av10-card {
+    
+    grid-template-rows: 58px minmax(0, 1fr) 44px;
+    row-gap: 9px;
+    padding: 13px;
+  }
+
+  .av10-head {
+    height: 58px;
+  }
+
+  .av10-avatar-wrap,
+  .av10-avatar {
+    width: 48px;
+    height: 48px;
+  }
+
+  .av10-avatar-wrap {
+    flex-basis: 48px;
+  }
+
+  
+
+  .av10-body {
+    padding-top: 13px;
+  }
+
+  .av10-text {
+    font-size: 11.6px;
+    line-height: 1.5;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+  }
+}
+
+@media (max-width: 990px) {
+  .av10-card {
+    height: 392px;
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-card {
+    height: 402px;
+    grid-template-rows: 60px minmax(0, 1fr) 46px;
+    row-gap: 10px;
+  }
+
+  .av10-name {
+    font-size: 14.5px;
+  }
+
+  
+}
+/* ============================================================
+   AniVortex Comentarii V16 — head + series visibility fix
+   - poza si numele utilizatorului sunt mai mari
+   - caseta seriei este mai vizibila si poate afisa titluri lungi
+   - separare mai buna intre header, serie, comentariu si reactii
+   ============================================================ */
+
+.comentarii-section {
+  min-height: 590px;
+}
+
+.comentarii-top {
+  margin-bottom: 16px;
+}
+
+/* Card mai aerisit, ca sa putem mari headerul si seria fara suprapuneri. */
+.av10-card {
+  
+  
+  row-gap: 10px;
+  padding: 15px 14px 13px;
+}
+
+/* Numarul decorativ nu mai intra vizual peste zona cu numele. */
+.av10-number {
+  right: 10px;
+  top: 22px;
+  font-size: 44px;
+  opacity: 0.42;
+}
+
+/* Header utilizator mai vizibil. */
+.av10-head {
+  height: 68px;
+  gap: 12px;
+  padding: 0 42px 0 2px;
+}
+
+.av10-head:not(#__av_prio_a#__av_prio_b) {
+  transform: none;
+}
+
+.av10-avatar-wrap,
+.av10-avatar {
+  width: 56px;
+  height: 56px;
+}
+
+.av10-avatar-wrap {
+  flex: 0 0 56px;
+}
+
+.av10-online {
+  
+  
+  
+}
+
+.av10-identity {
+  min-width: 0;
+  justify-content: center;
+  
+}
+
+.av10-name {
+  max-width: 100%;
+  
+  
+  
+  letter-spacing: -0.02em;
+}
+
+.av10-time {
+  
+  
+  
+  
+  color: #93b1b2;
+}
+
+/* Caseta seriei — mai inalta, mai clara, titlul se poate intinde pe 2 randuri. */
+.av10-message {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+
+.av10-series {
+  
+  
+  
+  
+  
+  
+  
+  border-width: 1px;
+  
+}
+
+
+
+
+
+.av10-series-copy small {
+  display: block;
+  
+  
+  
+  
+}
+
+.av10-series-copy strong {
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.av10-series-arrow {
+  
+  
+  
+  
+}
+
+/* Comentariul ramane lizibil fara sa se inghesuie. */
+.av10-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  
+}
+
+.av10-text {
+  
+  
+  
+  
+}
+
+/* Reactiile raman jos, separate vizual. */
+.av10-footer {
+  height: 46px;
+}
+
+.av10-reactions {
+  height: 44px;
+}
+
+.av10-reaction {
+  height: 36px;
+}
+
+@media (max-width: 1510px) {
+  .comentarii-section {
+    min-height: 860px;
+  }
+
+  .av10-card {
+    
+    
+    padding: 14px 13px 12px;
+  }
+
+  .av10-head {
+    height: 64px;
+    padding-right: 36px;
+  }
+
+  .av10-avatar-wrap,
+  .av10-avatar {
+    width: 52px;
+    height: 52px;
+  }
+
+  .av10-avatar-wrap {
+    flex-basis: 52px;
+  }
+
+  .av10-name {
+    
+  }
+
+  .av10-time {
+    
+  }
+
+  .av10-series {
+    
+    
+    margin-inline: 6px;
+    
+  }
+
+  .av10-series-copy strong {
+    
+  }
+
+  .av10-text {
+    
+    
+    
+  }
+
+  .av10-number {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 990px) {
+  .comentarii-section {
+    min-height: 0;
+  }
+
+  .av10-card {
+    height: 412px;
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-card {
+    
+    grid-template-rows: 66px minmax(0, 1fr) 46px;
+  }
+
+  .av10-head {
+    height: 66px;
+    padding-right: 26px;
+  }
+
+  .av10-avatar-wrap,
+  .av10-avatar {
+    width: 54px;
+    height: 54px;
+  }
+
+  .av10-name {
+    
+  }
+
+  .av10-series {
+    
+    
+  }
+
+  .av10-series-copy strong {
+    
+  }
+
+  
+}
+/* ============================================================
+   AniVortex Comentarii V17 — series box refinement
+   - caseta seriei este mai compacta si mai eleganta
+   - continutul nu mai pare gol / dezechilibrat
+   - titlul seriei este centrat vizual si mai usor de citit
+   ============================================================ */
+
+/* Cardul ramane aerisit, dar zona seriei nu mai ocupa inutil din spatiu. */
+.av10-card {
+  
+  grid-template-rows: 68px minmax(0, 1fr) 46px;
+}
+
+.av10-message {
+  background: linear-gradient(150deg, rgba(1,16,20,.76), rgba(3,24,29,.68)) padding-box,
+    linear-gradient(145deg, color-mix(in srgb, var(--accent) 38%, rgba(255,255,255,.08)), rgba(145,220,212,.08) 46%, color-mix(in srgb, var(--accent) 14%, transparent)) border-box;
+}
+
+.av10-message:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 18px;
+}
+
+/* Caseta seriei este mai "tight", fara gol mare dedesubt. */
+.av10-series {
+  position: relative;
+  
+  
+  
+  
+  
+  
+  
+  
+  border: 1px solid color-mix(in srgb, var(--accent) 24%, rgba(255,255,255,.08));
+  
+  background:
+    linear-gradient(140deg, rgba(255,255,255,.035), rgba(255,255,255,.01)) padding-box,
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 10%, rgba(5,24,29,.9)), rgba(2,17,22,.82)) border-box;
+  box-shadow:
+    inset 0 1px rgba(255,255,255,.04),
+    0 6px 14px rgba(0,0,0,.13);
+}
+
+.av10-series::before {
+  left: 0;
+  
+  
+  
+  border-radius: 3px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 76%, #fff 4%), color-mix(in srgb, var(--accent) 45%, transparent));
+  box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 24%, transparent);
+  opacity: .95;
+}
+
+/* Textul sta mai bine grupat si centrat pe verticala. */
+.av10-series-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.av10-series-copy small {
+  margin: 0;
+  
+  font-weight: 840;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  color: #84a4a6;
+  text-transform: uppercase;
+}
+
+.av10-series-copy strong {
+  display: block;
+  
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #f3f8f7;
+  
+  font-weight: 800;
+  
+  letter-spacing: -0.015em;
+}
+
+/* Săgeata devine discretă și premium. */
+.av10-series-arrow {
+  
+  
+  border: 1px solid rgba(222, 196, 129, 0.13);
+  
+  background: rgba(222, 196, 129, 0.06);
+  
+  
+  
+  box-shadow: inset 0 1px rgba(255,255,255,.03);
+}
+
+.av10-series:hover {
+  transform: translateY(-1px);
+  border-color: color-mix(in srgb, var(--accent) 34%, rgba(255,255,255,.12));
+  background:
+    linear-gradient(140deg, rgba(255,255,255,.045), rgba(255,255,255,.018)) padding-box,
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 14%, rgba(5,27,32,.92)), rgba(2,18,23,.86)) border-box;
+  box-shadow:
+    inset 0 1px rgba(255,255,255,.05),
+    0 8px 18px rgba(0,0,0,.16);
+}
+
+.av10-series:hover .av10-series-arrow,
+.av10-series:focus-visible .av10-series-arrow {
+  transform: translateX(2px);
+  background: rgba(222, 196, 129, 0.11);
+  border-color: rgba(222, 196, 129, 0.22);
+}
+
+/* Comentariul urca puțin mai sus ca să arate legat natural de serie. */
+.av10-body {
+  
+}
+
+.av10-text {
+  
+  
+  
+  
+}
+
+/* Responsive */
+@media (max-width: 1510px) {
+  .av10-card {
+    
+    grid-template-rows: 64px minmax(0, 1fr) 44px;
+  }
+
+  .av10-series {
+    
+    
+    margin: 7px 7px 0;
+    
+    
+  }
+
+  .av10-series-copy strong {
+    
+  }
+
+  .av10-text {
+    
+    
+    
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-card {
+    
+  }
+
+  .av10-series {
+    
+    
+  }
+
+  
+}
+/* ============================================================
+   AniVortex Comentarii V18 — series box smaller
+   - bara cu seria este mai scurtă pe lățime
+   - este și puțin mai joasă
+   - rămâne centrată și mai elegantă
+   ============================================================ */
+
+.av10-series {
+  flex: 0 0 52px;
+  width: calc(100% - 34px);
+  height: 52px;
+  margin: 8px auto 0;
+  grid-template-columns: minmax(0, 1fr) 22px;
+  gap: 9px;
+  padding: 7px 10px 7px 13px;
+  border-radius: 13px;
+}
+
+.av10-series::before {
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+}
+
+.av10-series-copy small {
+  
+}
+
+.av10-series-copy strong {
+  margin-top: 4px;
+  
+  
+}
+
+.av10-series-arrow {
+  
+  
+  font-size: 15px;
+  border-radius: 7px;
+}
+
+.av10-body {
+  padding-top: 11px;
+}
+
+@media (max-width: 1510px) {
+  .av10-series {
+    flex-basis: 50px;
+    width: calc(100% - 28px);
+    height: 50px;
+    margin-top: 7px;
+    padding-left: 12px;
+  }
+
+  .av10-series-copy strong {
+    
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-series {
+    flex-basis: 52px;
+    width: calc(100% - 24px);
+    height: 52px;
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V19 — comment window smaller
+   - fereastra comentariului este puțin mai mică
+   - cardul rămâne echilibrat
+   - textul nu mai ocupă atât de mult spațiu
+   ============================================================ */
+
+.av10-card {
+  
+}
+
+.av10-body {
+  
+}
+
+.av10-text {
+  
+  
+  
+  
+}
+
+.av10-symbol {
+  
+  
+}
+
+@media (max-width: 1510px) {
+  .av10-card {
+    
+  }
+
+  .av10-body {
+    
+    
+  }
+
+  .av10-text {
+    
+    
+    
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-card {
+    
+  }
+
+  .av10-text {
+    
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V20 — comment area smaller + avatar higher
+   - fereastra comentariului este și mai mică
+   - poza utilizatorului este ridicată mai sus
+   ============================================================ */
+
+.av10-card {
+  height: 392px;
+}
+
+.av10-avatar-wrap {
+  transform: translateY(-6px);
+}
+
+.av10-series {
+  margin-top: 6px;
+}
+
+.av10-body {
+  padding: 8px 13px 8px;
+}
+
+.av10-text {
+  
+  
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+}
+
+.av10-symbol {
+  font-size: 36px;
+  bottom: 6px;
+}
+
+@media (max-width: 1510px) {
+  .av10-card {
+    height: 382px;
+  }
+
+  .av10-avatar-wrap {
+    transform: translateY(-5px);
+  }
+
+  .av10-body {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .av10-text {
+    
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-card {
+    height: 388px;
+  }
+
+  .av10-avatar-wrap {
+    transform: translateY(-4px);
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V21 — text larger + centered series arrow
+   - scrisul comentariului este mai mare
+   - textul din seria anime este mai mare
+   - săgeata din pătrat este centrată corect
+   ============================================================ */
+
+.av10-text {
+  
+  
+}
+
+.av10-series-copy small {
+  font-size: 8.5px;
+}
+
+.av10-series-copy strong {
+  font-size: 12.2px;
+  line-height: 1.12;
+}
+
+.av10-series-arrow {
+  
+  place-items: center;
+  
+  
+  
+  
+  
+}
+
+@media (max-width: 1510px) {
+  .av10-text {
+    
+  }
+
+  .av10-series-copy strong {
+    font-size: 11.5px;
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-text {
+    
+  }
+
+  .av10-series-copy strong {
+    font-size: 11.6px;
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V22 — comment text bigger + arrow truly centered
+   - scrisul comentariului este mai mare
+   - săgeata din pătrat este centrată perfect
+   ============================================================ */
+
+.av10-body {
+  display: flex;
+  align-items: flex-start;
+}
+
+.av10-text {
+  
+  
+}
+
+.av10-series {
+  align-items: center;
+}
+
+.av10-series-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  line-height: 1;
+  text-align: center;
+  transform: none;
+}
+
+@media (max-width: 1510px) {
+  .av10-text {
+    
+  }
+
+  .av10-series-arrow {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-text {
+    
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V23 — comment text larger + arrow centered
+   - scrisul comentariului este mai mare
+   - săgeata din pătrat este centrată corect
+   ============================================================ */
+
+.av10-text {
+  font-size: 13.7px;
+  line-height: 1.56;
+}
+
+.av10-series-arrow {
+  position: relative;
+  justify-self: center;
+  align-self: center;
+  overflow: hidden;
+  color: transparent;
+  text-indent: -9999px;
+}
+
+.av10-series-arrow:not(#__av_prio_a#__av_prio_b) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.av10-series-arrow::before {
+  content: "›";
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e4ca82;
+  font-size: 17px;
+  line-height: 1;
+  text-indent: 0;
+  transform: translate(0px, -3px);
+}
+
+@media (max-width: 1510px) {
+  .av10-text {
+    font-size: 12.8px;
+  }
+
+  .av10-series-arrow::before {
+    font-size: 16.5px;
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-text {
+    font-size: 12.9px;
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V24 — online dot smaller + name higher
+   - bulina verde este mai mica
+   - numele utilizatorului este urcat mai sus
+   ============================================================ */
+
+.av10-online {
+  width: 10px;
+  height: 10px;
+  border-width: 2px;
+  right: 1px;
+  bottom: 1px;
+}
+
+.av10-identity {
+  transform: translateY(-13px);
+}
+
+.av10-name {
+  
+}
+
+.av10-time {
+  
+}
+
+@media (max-width: 1510px) {
+  .av10-online {
+    width: 9px;
+    height: 9px;
+    border-width: 2px;
+  }
+
+  .av10-identity {
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-online {
+    width: 10px;
+    height: 10px;
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V25 — username + time larger
+   - numele utilizatorului este puțin mai mare
+   - timpul de sub nume este și el mai mare
+   ============================================================ */
+
+.av10-name {
+  font-size: 16.6px;
+  font-weight: 850;
+  line-height: 1.04;
+}
+
+.av10-time {
+  margin-top: 4px;
+  font-size: 10.2px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+@media (max-width: 1510px) {
+  .av10-name {
+    font-size: 16.2px;
+  }
+
+  .av10-time {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-name {
+    font-size: 16.4px;
+  }
+
+  .av10-time {
+    font-size: 10.1px;
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V26 — title cleanup
+   - elimina "LIVE"
+   - elimina bulina "24 NOI"
+   - muta "COMUNITATEA ANIVORTEX" sub titlul "Comentarii"
+   ============================================================ */
+
+/* Ascundem textul vechi "COMUNITATEA ANIVORTEX · LIVE". */
+.com-eyebrow:not(#__av_prio_a#__av_prio_b) {
+  display: none;
+}
+
+/* Eliminăm complet bulina "24 NOI". */
+.com-live-count:not(#__av_prio_a#__av_prio_b) {
+  display: none;
+}
+
+/* Titlul devine pe două rânduri: Comentarii + Comunitatea AniVortex. */
+.comentarii-title-line {
+  
+  
+  
+  
+}
+
+/* Textul mutat sub "Comentarii". */
+.comentarii-title-line::after {
+  
+  
+  
+  
+  
+  
+  
+  
+}
+
+/* Mică ajustare pentru a păstra antetul compact și echilibrat. */
+.comentarii-title-group {
+  align-items: start;
+}
+
+@media (max-width: 620px) {
+  .comentarii-title-line::after {
+    font-size: 8.5px;
+    letter-spacing: 0.16em;
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V27 — controls next to title
+   - elimina "24 COMENTARII NOI"
+   - muta butoanele langa "Comentarii"
+   - lasa un spatiu mic intre titlu si butoane
+   ============================================================ */
+
+.comentarii-tabs:not(#__av_prio_a#__av_prio_b)::before {
+  content: none;
+  display: none;
+}
+
+/* Titlul si butoanele stau unul langa altul, nu la capetele containerului. */
+.comentarii-top {
+  justify-content: flex-start;
+  
+  flex-wrap: nowrap;
+  
+}
+
+/* Butoanele pornesc imediat dupa titlu, cu un mic spatiu. */
+.comentarii-tabs {
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  
+  
+}
+
+/* Pastram titlul compact ca sa nu impinga butoanele prea departe. */
+.comentarii-title-group {
+  flex: 0 0 auto;
+}
+
+/* Pe ecrane mai mici permitem din nou impachetarea. */
+@media (max-width: 990px) {
+  .comentarii-top {
+    flex-wrap: wrap;
+    
+  }
+
+  .comentarii-tabs {
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V28 — header controls polish
+   - Anime are aceeași dimensiune ca "Comentarii noi"
+   - butoanele sunt mai curate și mai bine aliniate
+   ============================================================ */
+
+.comentarii-top {
+  
+  
+}
+
+.comentarii-tabs {
+  align-items: center;
+  
+  
+}
+
+/* Aceeași înălțime și același stil vizual pentru toate controalele. */
+.com-tab,
+.com-category-selector {
+  height: 38px;
+  min-height: 38px;
+  border-radius: 11px;
+  font-size: 10px;
+  font-weight: 780;
+  box-shadow:
+    inset 0 1px rgba(255,255,255,.035),
+    0 5px 14px rgba(0,0,0,.10);
+}
+
+/* "Comentarii noi" și "Anime" au exact aceeași lățime. */
+.com-tab.active,
+.com-category-selector {
+  width: 112px;
+  min-width: 112px;
+}
+
+/* Butonul activ rămâne centrat și mai rafinat. */
+.com-tab.active {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 12px;
+}
+
+/* Anime: text centrat, săgeata păstrată curat în dreapta. */
+.com-category-selector {
+  display: grid;
+  
+  align-items: center;
+  justify-content: stretch;
+  
+  
+}
+
+.com-category-selector .com-cat-label {
+  min-width: 0;
+  
+}
+
+.com-category-selector .com-cat-arrow {
+  display: grid;
+  place-items: center;
+  
+  
+  
+  line-height: 1;
+}
+
+/* Al doilea buton rămâne puțin mai lat fiindcă are text mai lung. */
+.comentarii-tabs .com-tab:not(.active) {
+  padding-inline: 15px;
+}
+
+/* Hover mai uniform între cele trei controale. */
+.com-tab:hover,
+.com-category-selector:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 990px) {
+  .comentarii-tabs {
+    gap: 7px;
+  }
+
+  .com-tab.active,
+  .com-category-selector {
+    width: 110px;
+    min-width: 110px;
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V29 — title/subtitle hierarchy + smaller Anime
+   ============================================================ */
+
+/* Mai mult aer între titlu și subtitlu. */
+.comentarii-title-line {
+  
+}
+
+/* Titlul rămâne elementul principal. */
+.comentarii-title-group h2 {
+  
+  
+  
+  
+}
+
+/* Subtitlul devine clar secundar. */
+.comentarii-title-line::after {
+  
+  
+  
+  
+  
+}
+
+/* Anime mai compact decât Comentarii noi. */
+.com-category-selector {
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
+
+.com-category-selector .com-cat-label {
+  
+}
+
+.com-category-selector .com-cat-arrow {
+  
+  
+  
+}
+
+@media (max-width: 990px) {
+  .comentarii-title-line {
+    
+  }
+
+  .com-category-selector {
+    
+    
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V30 — cleaner title area
+   - titlu + subtitlu mai elegant
+   - subtitlul are accent discret, nu pare text aruncat
+   - butonul Anime este compact si echilibrat
+   ============================================================ */
+
+/* Antetul rămâne compact și curat. */
+.comentarii-top {
+  align-items: center;
+  gap: 18px;
+}
+
+/* Titlu + subtitlu: ierarhie mai naturală. */
+.comentarii-title-line {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.comentarii-title-group h2 {
+  position: relative;
+  font-size: 30px;
+  font-weight: 850;
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+/* Subtitlu cu o mică linie-accent în stânga. */
+.comentarii-title-line::after {
+  content: "COMUNITATEA ANIVORTEX";
+  display: flex;
+  align-items: center;
+  min-height: 16px;
+  padding-left: 12px;
+  color: #79cfc5;
+  font-size: 8.1px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border-left: 2px solid rgba(222, 196, 129, 0.72);
+  opacity: 0.92;
+}
+
+/* Grupul de butoane ușor mai aproape de titlu. */
+.comentarii-tabs {
+  gap: 7px;
+  margin-top: 0;
+}
+
+/* Butoanele principale rămân clare. */
+.com-tab {
+  height: 36px;
+  min-height: 36px;
+  border-radius: 10px;
+}
+
+/* Anime devine compact, nu mai concurează vizual cu "Comentarii noi". */
+.com-category-selector {
+  width: 76px;
+  min-width: 76px;
+  height: 32px;
+  min-height: 32px;
+  margin-top: 0;
+  padding: 0 7px 0 10px;
+  border-radius: 9px;
+  grid-template-columns: minmax(0, 1fr) 14px;
+  gap: 2px;
+  background: rgba(2, 14, 18, 0.34);
+  box-shadow: inset 0 1px rgba(255,255,255,.025);
+}
+
+.com-category-selector .com-cat-label {
+  font-size: 8.4px;
+  font-weight: 760;
+  text-align: center;
+}
+
+.com-category-selector .com-cat-arrow {
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+}
+
+/* Hover discret pentru butonul Anime. */
+.com-category-selector:hover {
+  background: rgba(25, 77, 80, 0.18);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 990px) {
+  .comentarii-top {
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .comentarii-title-line {
+    gap: 6px;
+  }
+
+  .com-category-selector {
+    width: 74px;
+    min-width: 74px;
+  }
+}
+/* ============================================================
+   AniVortex Comentarii — selector categorie + simboluri finale
+   Curățat din versiunile V31–V34: fără emoji/Base64 legacy.
+   ============================================================ */
+
+/* Selectorul de categorie. */
+.com-category-selector {
+  width: 84px;
+  min-width: 84px;
+  height: 34px;
+  min-height: 34px;
+  padding: 0 8px 0 11px;
+  grid-template-columns: minmax(0, 1fr) 15px;
+  gap: 3px;
+}
+
+.com-category-selector .com-cat-label {
+  font-size: 11px;
+  font-weight: 780;
+}
+
+.com-category-selector .com-cat-arrow {
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+}
+
+/* Numărul decorativ din dreapta-sus. */
+.av10-number {
+  right: 12px;
+  top: 18px;
+  min-width: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1px;
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  opacity: 0.34;
+  transform: none;
+}
+
+/* Simbolurile actuale sunt imagini WebP reale, nu data-uri în CSS. */
+.av10-symbol:not(#__av_prio_a#__av_prio_b) {
+  right: 9px;
+  bottom: 5px;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  overflow: visible;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  opacity: 1;
+  background: transparent;
+  text-shadow: none;
+  animation: comImageSymbolFloat 5.5s ease-in-out var(--motion-delay, 0s) infinite;
+}
+
+.av10-symbol-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.16;
+  filter:
+    brightness(0)
+    invert(1)
+    drop-shadow(0 0 8px color-mix(in srgb, var(--accent) 24%, transparent));
+  transform: translateZ(0);
+}
+
+/* Formele late primesc puțin mai mult spațiu. */
+.av10-symbol[data-symbol="Dragon"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Fluture"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Val"]:not(#__av_prio_a#__av_prio_b) {
+  width: 56px;
+  height: 56px;
+  right: 7px;
+  bottom: 3px;
+}
+
+.av10-symbol[data-symbol="Fulger"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Foc"]:not(#__av_prio_a#__av_prio_b) {
+  width: 48px;
+  height: 48px;
+  right: 10px;
+  bottom: 7px;
+}
+
+@keyframes comImageSymbolFloat {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(-2deg) scale(.98); }
+  50% { transform: translate3d(-4px, -4px, 0) rotate(2.5deg) scale(1.03); }
+}
+
+@media (max-width: 1510px) {
+  .com-category-selector {
+    width: 82px;
+    min-width: 82px;
+  }
+
+  .av10-number {
+    right: 10px;
+    top: 17px;
+    min-width: 50px;
+    font-size: 39px;
+    letter-spacing: 0.015em;
+  }
+
+  .av10-symbol:not(#__av_prio_a#__av_prio_b) {
+    width: 48px;
+    height: 48px;
+    right: 8px;
+    bottom: 5px;
+  }
+
+  .av10-symbol-img { opacity: 0.15; }
+}
+
+@media (max-width: 620px) {
+  .av10-number {
+    min-width: 46px;
+    font-size: 37px;
+  }
+
+  .av10-symbol:not(#__av_prio_a#__av_prio_b) {
+    width: 46px;
+    height: 46px;
+    right: 8px;
+    bottom: 6px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .av10-symbol:not(#__av_prio_a#__av_prio_b) { animation: none; }
+}
+/* ============================================================
+   AniVortex Comentarii V35 — ajustări pentru simbolurile suplimentare
+   Selectori pe data-symbol: independenți de extensia imaginii.
+   ============================================================ */
+
+.av10-symbol[data-symbol="Phoenix"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Corb"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Vant"]:not(#__av_prio_a#__av_prio_b) {
+  width: 56px;
+  height: 56px;
+  right: 7px;
+  bottom: 3px;
+}
+
+.av10-symbol[data-symbol="Coroana"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Stea"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Cristal"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Soare"]:not(#__av_prio_a#__av_prio_b) {
+  width: 50px;
+  height: 50px;
+  right: 9px;
+  bottom: 6px;
+}
+
+.av10-symbol[data-symbol="Oni"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Tigru"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Lup"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Sarpe"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Lotus"]:not(#__av_prio_a#__av_prio_b) {
+  width: 52px;
+  height: 52px;
+  right: 8px;
+  bottom: 5px;
+}
+
+/* ============================================================
+   AniVortex Comentarii V38 — brush / pensula background polish
+   - adauga urme fine de pensula in spatele cardului
+   - introduce linii decorative subtile si glow mai bogat
+   - fara sa modifice structura HTML sau JS
+   ============================================================ */
+
+.av10-card {
+  isolation: isolate;
+}
+
+/* Strat nou in spatele continutului: urme de pensula + linii fine. */
+.av10-card::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0.88;
+  
+  filter: blur(.15px) saturate(112%);
+}
+
+/* Zona de mesaj primește o textură de pensulă mai vizibilă, dar subtilă. */
+.av10-body {
+  position: relative;
+  overflow: hidden;
+}
+
+.av10-body::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.36;
+  background:
+    radial-gradient(circle at 18% 82%, color-mix(in srgb, var(--accent) 10%, transparent) 0 20px, transparent 48px),
+    linear-gradient(118deg, transparent 0 16%, color-mix(in srgb, var(--accent) 10%, transparent) 16.4% 18.5%, transparent 19% 100%),
+    linear-gradient(133deg, transparent 0 44%, rgba(255,255,255,.038) 44.2% 45.3%, transparent 45.7% 100%),
+    repeating-linear-gradient(-18deg,
+      transparent 0 24px,
+      color-mix(in srgb, var(--accent) 4.2%, transparent) 24px 26px,
+      transparent 26px 58px);
+  mask-image: linear-gradient(180deg, rgba(0,0,0,.12), rgba(0,0,0,.92) 22%, rgba(0,0,0,.96));
+}
+
+/* Păstrăm textul și simbolul deasupra efectului. */
+.av10-text {
+  position: relative;
+  z-index: 2;
+}
+
+.av10-symbol:not(#__av_prio_a#__av_prio_b) {
+  z-index: 1;
+}
+
+/* Geometria existentă devine puțin mai vizibilă pentru un fundal mai bogat. */
+.av10-geometry {
+  opacity: 0.82;
+}
+
+.av10-line,
+.av10-ring,
+.av10-dot {
+  filter: drop-shadow(0 0 8px color-mix(in srgb, var(--accent) 9%, transparent));
+}
+
+/* O ușoară pată artistică în colțul stânga-jos al cardului. */
+.av10-glow {
+  opacity: 0.14;
+}
+
+@media (max-width: 1510px) {
+  .av10-card::after {
+    opacity: 0.8;
+  }
+
+  .av10-body::before {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-card::after {
+    background:
+      linear-gradient(118deg, transparent 0 18%, color-mix(in srgb, var(--accent) 7%, transparent) 18.3% 19.2%, transparent 19.5% 100%),
+      repeating-linear-gradient(-18deg,
+        transparent 0 20px,
+        color-mix(in srgb, var(--accent) 4%, transparent) 20px 21px,
+        transparent 21px 48px);
+    opacity: 0.66;
+  }
+
+  .av10-body::before {
+    opacity: 0.24;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .av10-card:not(#__av_prio_a#__av_prio_b)::after, .av10-body:not(#__av_prio_a#__av_prio_b)::before {
+  transition: none;
+}
+}
+
+
+/* ============================================================
+   AniVortex Comentarii V39 — accent stanga-jos + numar mai vizibil
+   ============================================================ */
+
+/* Pată de culoare / pensulă în zona stânga-jos indicată. */
+.av10-card::after {
+  background:
+    radial-gradient(ellipse at 7% 81%,
+      color-mix(in srgb, var(--accent) 20%, transparent) 0 14px,
+      color-mix(in srgb, var(--accent) 10%, transparent) 30px,
+      transparent 68px),
+    linear-gradient(154deg,
+      transparent 0 67%,
+      color-mix(in srgb, var(--accent) 9%, transparent) 67.3% 68.2%,
+      transparent 68.7% 100%),
+    radial-gradient(circle at 84% 18%, color-mix(in srgb, var(--accent) 10%, transparent) 0 0, color-mix(in srgb, var(--accent) 18%, transparent) 0 54px, transparent 96px),
+    linear-gradient(112deg, transparent 0 13%, color-mix(in srgb, var(--accent) 8%, transparent) 13.3% 14.1%, transparent 14.5% 100%),
+    linear-gradient(126deg, transparent 0 26%, rgba(255,255,255,.03) 26.3% 27.1%, transparent 27.5% 100%),
+    linear-gradient(142deg, transparent 0 58%, color-mix(in srgb, var(--accent) 6%, transparent) 58.4% 59%, transparent 59.4% 100%),
+    repeating-linear-gradient(-21deg,
+      transparent 0 22px,
+      color-mix(in srgb, var(--accent) 3.8%, transparent) 22px 24px,
+      transparent 24px 62px),
+    repeating-linear-gradient(94deg,
+      transparent 0 68px,
+      rgba(255,255,255,.018) 68px 69px,
+      transparent 69px 128px);
+}
+
+/* Numărul decorativ din dreapta-sus devine mai clar, fără să domine numele. */
+.av10-number {
+  z-index: 1;
+  font-weight: 850;
+  text-shadow: 0 0 10px color-mix(in srgb, var(--accent) 14%, transparent),
+    0 1px 0 rgba(255,255,255,.025);
+  -webkit-text-stroke: .25px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+.av10-number:not(#__av_prio_a#__av_prio_b) {
+  color: color-mix(in srgb, var(--accent) 30%, transparent);
+  opacity: 0.82;
+}
+
+/* Un mic plus de culoare și în corpul comentariului, jos-stânga. */
+.av10-body {
+  background:
+    radial-gradient(ellipse at 5% 96%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 42%),
+    linear-gradient(180deg, transparent, rgba(0,7,10,.12));
+}
+
+@media (max-width: 1510px) {
+  .av10-number:not(#__av_prio_a#__av_prio_b) {
+  color: color-mix(in srgb, var(--accent) 27%, transparent);
+  opacity: 0.78;
+}
+}
+
+@media (max-width: 620px) {
+  .av10-number:not(#__av_prio_a#__av_prio_b) {
+  opacity: 0.74;
+}
+}
+
+
+/* ============================================================
+   AniVortex Comentarii V42 — buton categorie auto-size dupa text
+   ============================================================ */
+
+.com-category-selector:not(#__av_prio_a#__av_prio_b) {
+  width: max-content;
+  min-width: 84px;
+  max-width: none;
+  flex: 0 0 auto;
+  padding-left: 12px;
+  padding-right: 9px;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.com-category-selector .com-cat-label:not(#__av_prio_a#__av_prio_b) {
+  width: auto;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 990px) {
+  .com-category-selector:not(#__av_prio_a#__av_prio_b) {
+  width: max-content;
+  min-width: 82px;
+}
+}
+
+
+/* ============================================================
+   AniVortex Comentarii V43 — sublinie sezon + episod la serie
+   - adauga linia "Sezonul 1 Episodul 2111" sub numele seriei
+   - mareste usor caseta seriei pentru 3 randuri curate
+   ============================================================ */
+
+.av10-card:not(#__av_prio_a#__av_prio_b) {
+  
+}
+
+.av10-series:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  
+  
+}
+
+
+
+.av10-series-copy small:not(#__av_prio_a#__av_prio_b), .av10-series-copy strong:not(#__av_prio_a#__av_prio_b), .av10-series-copy .av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  display: block;
+}
+
+.av10-series-copy strong:not(#__av_prio_a#__av_prio_b) {
+  
+  max-width: 100%;
+  
+  
+  
+}
+
+.av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
+
+.av10-body:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 13px;
+}
+
+@media (max-width: 1510px) {
+  .av10-card:not(#__av_prio_a#__av_prio_b) {
+  
+}
+
+  .av10-series:not(#__av_prio_a#__av_prio_b) {
+  
+  
+}
+
+  .av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  
+}
+}
+
+@media (max-width: 620px) {
+  .av10-card:not(#__av_prio_a#__av_prio_b) {
+  
+}
+
+  .av10-series:not(#__av_prio_a#__av_prio_b) {
+  
+  
+}
+
+  .av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  
+}
+}
+
+
+/* ============================================================
+   AniVortex Comentarii V44 — meta compacta si diferita pe fiecare card
+   - format scurt: S1 Ep. 123
+   - fiecare comentariu are alt sezon/episod
+   - fereastra seriei este mai compacta
+   - textele mici sunt marite pentru lizibilitate mai buna
+   ============================================================ */
+
+.av10-card:not(#__av_prio_a#__av_prio_b) {
+  height: 404px;
+}
+
+.av10-series:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  
+  align-items: center;
+}
+
+.av10-series-copy:not(#__av_prio_a#__av_prio_b) {
+  
+  min-width: 0;
+  overflow: hidden;
+}
+
+.av10-series-copy small:not(#__av_prio_a#__av_prio_b) {
+  display: block;
+  font-size: 7.5px;
+  line-height: 1.08;
+  letter-spacing: 0.11em;
+}
+
+.av10-series-copy strong:not(#__av_prio_a#__av_prio_b) {
+  display: block;
+  
+  font-size: 13.5px;
+  line-height: 1.08;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  display: block;
+  
+  color: color-mix(in srgb, var(--accent) 58%, #d9efeb);
+  font-size: 9.5px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.98;
+}
+
+.av10-series-arrow:not(#__av_prio_a#__av_prio_b) {
+  align-self: center;
+}
+
+@media (max-width: 1510px) {
+  .av10-card:not(#__av_prio_a#__av_prio_b) {
+  height: 352px;
+}
+
+  .av10-series:not(#__av_prio_a#__av_prio_b) {
+  
+  
+}
+
+  .av10-series-copy small:not(#__av_prio_a#__av_prio_b) {
+  font-size: 7px;
+}
+
+  .av10-series-copy strong:not(#__av_prio_a#__av_prio_b) {
+  font-size: 10.8px;
+}
+
+  .av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  font-size: 8.2px;
+}
+}
+
+@media (max-width: 620px) {
+  .av10-card:not(#__av_prio_a#__av_prio_b) {
+  height: 362px;
+}
+
+  .av10-series:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  padding-left: 11px;
+}
+
+  .av10-series-copy small:not(#__av_prio_a#__av_prio_b) {
+  font-size: 6.9px;
+}
+
+  .av10-series-copy strong:not(#__av_prio_a#__av_prio_b) {
+  font-size: 10.6px;
+}
+
+  .av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  font-size: 8px;
+}
+}
+
+
+/* ============================================================
+   AniVortex Comentarii V45 — fereastra serie mai compacta
+   - pastreaza textele mari din V44
+   - reduce doar inaltimea si spatiile casetei seriei
+   ============================================================ */
+
+.av10-series:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  
+}
+
+.av10-series-copy strong:not(#__av_prio_a#__av_prio_b) {
+  
+}
+
+.av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  
+}
+
+@media (max-width: 1510px) {
+  .av10-series:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+}
+
+@media (max-width: 620px) {
+  .av10-series:not(#__av_prio_a#__av_prio_b) {
+  
+  
+}
+}
+
+
+/* ============================================================
+   AniVortex Comentarii V46 — 1px intre cele 3 randuri din serie
+   ============================================================ */
+
+.av10-series-copy strong:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 1px;
+}
+
+.av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 1px;
+}
+
+
+/* ============================================================
+   AniVortex Comentarii V47 — spatiu mai aerisit intre cele 3 randuri
+   ============================================================ */
+
+.av10-series:not(#__av_prio_a#__av_prio_b) {
+  flex: 0 0 54px;
+  height: 54px;
+  padding: 5px 8px 5px 12px;
+}
+
+.av10-series-copy:not(#__av_prio_a#__av_prio_b) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+
+.av10-series-copy small:not(#__av_prio_a#__av_prio_b), .av10-series-copy strong:not(#__av_prio_a#__av_prio_b), .av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1510px) {
+  .av10-series:not(#__av_prio_a#__av_prio_b) {
+  flex-basis: 53px;
+  height: 53px;
+}
+
+  .av10-series-copy:not(#__av_prio_a#__av_prio_b) {
+  gap: 3px;
+}
+}
+
+@media (max-width: 620px) {
+  .av10-series:not(#__av_prio_a#__av_prio_b) {
+  flex-basis: 53px;
+  height: 53px;
+}
+}
+
+
+/* ============================================================
+   AniVortex Comentarii V49 — fundalul sectiunii revine,
+   iar zona indicata de sub/spatele cardurilor ramane transparenta
+   ============================================================ */
+
+/* Readucem fundalul mare al sectiunii. */
+.comentarii-section:not(#__av_prio_a#__av_prio_b) {
+  background: var(--avf-surface-top, #071b21);
+  background-color: var(--avf-surface-top, #071b21);
+  background-image: none;
+}
+
+/* Zona din spatele randului de carduri ramane transparenta. */
+
+
+
+
+
+/* ============================================================
+   AniVortex Comentarii V50 — elimina banda/fundalul din spatele cardurilor
+   Cauza era umbra externa a fiecarui card, care se suprapunea intre carduri.
+   ============================================================ */
+
+/* Fundalul wrapperelor ramane complet transparent. */
+.comentarii-content:not(#__av_prio_a#__av_prio_b), .comentarii-track:not(#__av_prio_a#__av_prio_b) {
+  background: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none;
+  filter: none;
+}
+
+/* Eliminam doar umbra EXTERNA a cardurilor; pastram un inset foarte fin. */
+.av10-card:not(#__av_prio_a#__av_prio_b), .av10-card:hover:not(#__av_prio_a#__av_prio_b) {
+  box-shadow: inset 0 1px rgba(255,255,255,.055);
+}
+
+/* Fara pseudo-elemente de fundal pe randul de carduri. */
+.comentarii-track:not(#__av_prio_a#__av_prio_b)::before, .comentarii-track:not(#__av_prio_a#__av_prio_b)::after, .comentarii-content:not(#__av_prio_a#__av_prio_b)::before, .comentarii-content:not(#__av_prio_a#__av_prio_b)::after {
+  content: none;
+  display: none;
+  background: transparent;
+  box-shadow: none;
+  filter: none;
+}
+
+
+/* ============================================================
+   V5 — COM primește îmbinarea SHARE de sus
+   Nu schimbă cardurile sau personajul; doar creează spațiu pentru V.
+   ============================================================ */
+
+.comentarii-section:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 0;
+  padding-top: 116px;
+}
+
+@media (max-width: 1510px) {
+    .comentarii-section:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 104px;
+}
+}
+
+@media (max-width: 990px) {
+    .comentarii-section:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 86px;
+}
+}
+
+@media (max-width: 620px) {
+    .comentarii-section:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 72px;
+}
+}
+
+/* ============================================================
+   AniVortex COM — stele identice cu CHRONO
+   Doar acest strat de fundal este fortat peste regula din main.css.
+   Valorile sunt copiate 1:1 din .chronologie-container::after.
+   ============================================================ */
+body .comentarii-section::before {
+  mask-image: none;
+  animation: avEntStars 22s linear infinite alternate;
+}
+
+body .comentarii-section:not(#__av_prio_a#__av_prio_b)::before {
+  opacity: 0.22;
+  background-image: radial-gradient(circle at 7% 14%, rgba(225, 252, 255, 0.7) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 19% 62%, rgba(180, 244, 255, 0.48) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 34% 29%, rgba(230, 255, 255, 0.62) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 49% 79%, rgba(176, 242, 255, 0.52) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 66% 18%, rgba(235, 255, 255, 0.72) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 81% 58%, rgba(185, 245, 255, 0.55) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 94% 31%, rgba(230, 255, 255, 0.65) 0 1px, transparent 1.6px);
+  background-size: 330px 260px,
+    390px 310px,
+    460px 350px,
+    410px 300px,
+    370px 280px,
+    430px 330px,
+    360px 290px;
+}
+
+/* ============================================================
+   AniVortex COM V5 — FIX FINAL contur lateral
+   Cauza reală era border-ul complet activat sub 1510px.
+   Nu mai există contur pe stânga/dreapta la nicio rezoluție.
+   ============================================================ */
+.comentarii-section:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  
+  filter: none;
+}
+
+@media (max-width: 1510px) {
+  .comentarii-section:not(#__av_prio_a#__av_prio_b) {
+  border-left: 0;
+  border-right: 0;
+  border-inline: 0;
+}
+}
+
+/* ============================================================
+   AniVortex COM V6 — eliminare REALĂ contur stânga/dreapta
+   Lateralele erau desenate în SVG-ul .comentarii-frame-v7 din HTML,
+   nu de main.css. SVG-ul a fost schimbat să deseneze doar conturul de jos.
+   Acest guard păstrează și border-ele CSS laterale dezactivate.
+   ============================================================ */
+.comentarii-section:not(#__av_prio_a#__av_prio_b) {
+  border-left: 0;
+  border-right: 0;
+  border-inline: 0;
+}
+
+.comentarii-frame-v7:not(#__av_prio_a#__av_prio_b) {
+  border: 0;
+}
+
+
+
+/* V10 performance: comment decoration animates only for the card being explored. */
+.av10-card:not(:hover):not(:focus-within) .av10-glow:not(#__av_prio_a#__av_prio_b),
+.av10-card:not(:hover):not(:focus-within) .av10-ring:not(#__av_prio_a#__av_prio_b),
+.av10-card:not(:hover):not(:focus-within) .av10-line:not(#__av_prio_a#__av_prio_b),
+.av10-card:not(:hover):not(:focus-within) .av10-dot:not(#__av_prio_a#__av_prio_b),
+.av10-card:not(:hover):not(:focus-within) .av10-symbol:not(#__av_prio_a#__av_prio_b),
+.av10-card:not(:hover):not(:focus-within) .av10-symbol-img:not(#__av_prio_a#__av_prio_b),
+.av10-card:not(:hover):not(:focus-within) .av10-message:not(#__av_prio_a#__av_prio_b)::before,
+.av10-card:not(:hover):not(:focus-within) .av10-message:not(#__av_prio_a#__av_prio_b)::after {
+  animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+  .av10-card .av10-glow:not(#__av_prio_a#__av_prio_b),
+  .av10-card .av10-ring:not(#__av_prio_a#__av_prio_b),
+  .av10-card .av10-line:not(#__av_prio_a#__av_prio_b),
+  .av10-card .av10-dot:not(#__av_prio_a#__av_prio_b),
+  .av10-card .av10-symbol:not(#__av_prio_a#__av_prio_b),
+  .av10-card .av10-symbol-img:not(#__av_prio_a#__av_prio_b),
+  .av10-card .av10-message:not(#__av_prio_a#__av_prio_b)::before,
+  .av10-card .av10-message:not(#__av_prio_a#__av_prio_b)::after {
+    animation: none;
+  }
+
+  .av10-card,
+  .av10-message,
+  .av10-reactions {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}

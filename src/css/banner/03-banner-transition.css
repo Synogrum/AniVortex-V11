@@ -1,0 +1,340 @@
+/* =========================================================
+   V7 — îmbinare Banner -> Trending, refăcută după modelul dat
+   ========================================================= */
+body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
+  padding-bottom: 0;
+}
+
+.banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
+
+.banner-trending-join::before {
+  content: "";
+  position: absolute;
+  inset: 28px 0 0 0;
+  z-index: 1;
+  opacity: .18;
+  background-image:
+    radial-gradient(circle at 8% 28%, rgba(225,252,255,.70) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 22% 72%, rgba(180,244,255,.48) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 37% 24%, rgba(230,255,255,.62) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 51% 76%, rgba(176,242,255,.52) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 67% 30%, rgba(235,255,255,.72) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 82% 68%, rgba(185,245,255,.55) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 95% 34%, rgba(230,255,255,.65) 0 1px, transparent 1.6px);
+  background-repeat: no-repeat;
+}
+
+.banner-trending-join svg {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.banner-trending-join-gold,
+.banner-trending-join-teal {
+  fill: none;
+  vector-effect: non-scaling-stroke;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.banner-trending-join-gold {
+  stroke: url(#bannerTrendingGold);
+  stroke-width: 1.35;
+}
+
+.banner-trending-join-teal {
+  stroke: url(#bannerTrendingTeal);
+  stroke-width: 1.2;
+  opacity: .95;
+}
+
+#trendingMaster:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 0;
+  border-top: 0;
+  padding-top: 16px;
+}
+
+#trendingMaster:not(#__av_prio_a#__av_prio_b)::before {
+  inset: 12px 10px 7px 8px;
+}
+
+@media (max-width: 760px) {
+  .banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  min-width: 0;
+  height: 48px;
+}
+
+  .banner-trending-join:not(#__av_prio_a#__av_prio_b)::before {
+  inset: 18px 0 0 0;
+}
+}
+
+
+
+/* ============================================================
+   FINAL — Banner → Trending, V COPIAT IDENTIC din SHARE → COM
+   Geometrie, grosime contur, umplere, stele si comportament copiate.
+   V-ul incepe DUPA banner si se suprapune numai peste Trending.
+   ============================================================ */
+.banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  --banner-trending-join-surface: var(--avf-surface-top, #071b21);
+  position: relative;
+  
+  display: block;
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  
+  
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--avf-surface-top, #071b21);
+  isolation: isolate;
+}
+
+/* Stele copiate din îmbinarea SHARE → COM */
+.banner-trending-join:not(#__av_prio_a#__av_prio_b)::before {
+  content: "";
+  position: absolute;
+  
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.22;
+  background-image: radial-gradient(circle at 7% 34%, rgba(225,252,255,.70) 0 1px, transparent 1.7px),
+      radial-gradient(circle at 21% 68%, rgba(180,244,255,.48) 0 1px, transparent 1.7px),
+      radial-gradient(circle at 36% 24%, rgba(230,255,255,.62) 0 1px, transparent 1.6px),
+      radial-gradient(circle at 51% 70%, rgba(176,242,255,.52) 0 1px, transparent 1.7px),
+      radial-gradient(circle at 66% 28%, rgba(235,255,255,.72) 0 1px, transparent 1.6px),
+      radial-gradient(circle at 81% 64%, rgba(185,245,255,.55) 0 1px, transparent 1.7px),
+      radial-gradient(circle at 94% 38%, rgba(230,255,255,.65) 0 1px, transparent 1.6px);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  animation: none;
+}
+
+.banner-trending-join svg:not(#__av_prio_a#__av_prio_b) {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  filter: drop-shadow(0 14px 20px rgba(0,0,0,.24))
+      drop-shadow(0 0 12px rgba(212,183,122,.045));
+}
+
+
+
+.banner-trending-join-gold:not(#__av_prio_a#__av_prio_b), .banner-trending-join-teal:not(#__av_prio_a#__av_prio_b) {
+  display: block;
+  fill: none;
+  vector-effect: non-scaling-stroke;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.banner-trending-join-gold:not(#__av_prio_a#__av_prio_b) {
+  stroke: rgba(209,180,106,.52);
+  stroke-width: 1.25;
+}
+
+.banner-trending-join-teal:not(#__av_prio_a#__av_prio_b) {
+  stroke: rgba(118,223,211,.46);
+  stroke-width: 1.05;
+}
+
+/* IMPORTANT: nu urca peste banner. Doar 1px pentru a ascunde cusatura. */
+body .page:not(#__av_prio_a#__av_prio_b), body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+@media (max-width: 990px) {
+    .banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  
+  
+}
+}
+
+@media (max-width: 620px) {
+    .banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  
+  
+}
+}
+
+@media (min-width: 2000px) {
+    .banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  width: calc(100% - 16px);
+  max-width: 1900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+@media (min-width: 5200px) {
+    .banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  width: calc(100% - 24px);
+  max-width: 1900px;
+}
+}
+
+
+/* ============================================================
+   FINAL V2 — spațiu negru mai mare + umeri mai lungi
+   ============================================================ */
+.banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  height: 90px;
+  
+}
+
+.banner-trending-join:not(#__av_prio_a#__av_prio_b)::before {
+  inset: 6px 0 0 0;
+}
+
+@media (max-width: 990px) {
+    .banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  height: 76px;
+  
+}
+}
+
+@media (max-width: 620px) {
+    .banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  height: 60px;
+  
+}
+}
+
+
+/* ============================================================
+   FIX FINAL — bannerul sa se vada complet
+   - bannerul ramane deasupra imbinarii
+   - imbinarea porneste putin mai jos
+   - se pastreaza spatiul negru mare si umerii lungi
+   ============================================================ */
+.banner-slider:not(#__av_prio_a#__av_prio_b), .banner:not(#__av_prio_a#__av_prio_b) {
+  position: relative;
+  z-index: 30;
+}
+
+.banner-slider:not(#__av_prio_a#__av_prio_b) {
+  overflow: visible;
+}
+
+.banner:not(#__av_prio_a#__av_prio_b) {
+  overflow: hidden;
+}
+
+.banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  z-index: 12;
+  
+}
+
+#trendingMaster:not(#__av_prio_a#__av_prio_b) {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 990px) {
+    .banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  
+  
+}
+}
+
+@media (max-width: 620px) {
+    .banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  
+  
+}
+}
+
+
+/* ============================================================
+   FIX EXTRA — coboara tot continutul bannerului si lasa bannerul vizibil
+   ============================================================ */
+.banner:not(#__av_prio_a#__av_prio_b) {
+  min-height: auto;
+  padding-bottom: 12px;
+}
+
+.banner-grid:not(#__av_prio_a#__av_prio_b) {
+  min-height: clamp(560px, 36vw, 680px);
+  align-items: start;
+  transform: translateY(26px);
+}
+
+.banner-left:not(#__av_prio_a#__av_prio_b), .banner-right:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 56px;
+  padding-bottom: 42px;
+}
+
+.left-inner:not(#__av_prio_a#__av_prio_b) {
+  transform: translateY(10px);
+}
+
+.top-badge:not(#__av_prio_a#__av_prio_b) {
+  bottom: 0;
+}
+
+.banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  margin: 18px auto -90px;
+}
+
+@media (max-width: 1279px) {
+    .banner-grid:not(#__av_prio_a#__av_prio_b) {
+  min-height: clamp(500px, 46vw, 620px);
+  transform: translateY(18px);
+}
+
+    .banner-left:not(#__av_prio_a#__av_prio_b), .banner-right:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 34px;
+  padding-bottom: 34px;
+}
+}
+
+@media (max-width: 990px) {
+    .banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 14px;
+  margin-bottom: -76px;
+}
+}
+
+@media (max-width: 640px) {
+    .banner-grid:not(#__av_prio_a#__av_prio_b) {
+  min-height: 0;
+  transform: translateY(10px);
+}
+
+    .banner-left:not(#__av_prio_a#__av_prio_b), .banner-right:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+}
+
+@media (max-width: 620px) {
+    .banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 10px;
+  margin-bottom: -60px;
+}
+}
+
+

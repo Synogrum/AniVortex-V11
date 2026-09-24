@@ -1,0 +1,648 @@
+/* ============================================================
+   AniVortex Comentarii V13 — UI/UX alignment pass
+   - header utilizator ridicat si aliniat
+   - continutul cardului are aceleasi axe/stanga-dreapta
+   - zona de reactii este perfect aliniata cu mesajul
+   - pata decorativa de sub carduri este eliminata
+   - titlul sectiunii este mai vizibil
+   ============================================================ */
+
+/* Eliminam pata/bluru-ul turcoaz de jos. Forma containerului ramane neschimbata. */
+.comentarii-section:not(#__av_prio_a#__av_prio_b)::after {
+  content: none;
+  display: none;
+  background: transparent;
+  filter: none;
+}
+
+/* Antetul sectiunii: ierarhie vizuala mai clara. */
+.com-eyebrow {
+  margin-bottom: 8px;
+  font-size: 9.5px;
+  line-height: 1.1;
+  letter-spacing: 0.20em;
+}
+
+.comentarii-title-group h2 {
+  
+  
+  letter-spacing: -0.04em;
+}
+
+.com-live-count {
+  padding: 6px 9px;
+  font-size: 8px;
+}
+
+.comentarii-title-line {
+  gap: 11px;
+}
+
+/* Card: toate blocurile folosesc aceeasi latime si aceleasi axe. */
+.av10-card {
+  
+  
+}
+
+/* Poza + numele sunt urcate putin si raman centrate unul fata de altul. */
+.av10-head {
+  
+  
+  
+}
+
+.av10-head:not(#__av_prio_a#__av_prio_b) {
+  transform: translateY(-4px);
+}
+
+.av10-avatar-wrap {
+  width: 54px;
+  height: 54px;
+}
+
+.av10-avatar {
+  width: 54px;
+  height: 54px;
+}
+
+.av10-identity {
+  
+  transform: translateY(-1px);
+}
+
+.av10-name {
+  
+  
+}
+
+.av10-time {
+  
+  line-height: 1.05;
+}
+
+/* Zona serie + comentariu: proportii mai curate si aliniere constanta. */
+.av10-message {
+  
+  width: 100%;
+}
+
+.av10-series {
+  
+  
+  
+  
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.av10-series-copy small {
+  
+  line-height: 1.1;
+}
+
+.av10-series-copy strong {
+  
+  
+  
+}
+
+
+
+
+
+.av10-series-arrow {
+  transition: transform 180ms ease;
+}
+
+.av10-body {
+  
+}
+
+.av10-text {
+  
+  
+  
+}
+
+/* Reactiile nu mai ies in lateral: sunt pe aceeasi linie cu mesajul. */
+.av10-footer {
+  
+  
+  margin-left: 0;
+  
+}
+
+.av10-reactions {
+  
+  
+}
+
+/* La rezolutii mai mici pastram aceeasi logica vizuala. */
+@media (max-width: 1510px) {
+  .av10-card {
+    
+    padding-top: 11px;
+  }
+
+  .av10-head:not(#__av_prio_a#__av_prio_b) {
+  transform: translateY(-3px);
+}
+}
+
+@media (max-width: 620px) {
+  .comentarii-title-group h2 { font-size: 27px; }
+  .com-eyebrow { font-size: 9px; }
+}
+
+/* ============================================================
+   AniVortex Comentarii V14 — polish UI/UX card content
+   - username mai vizibil
+   - serie tratata ca actiune clara/clickabila
+   - comentariu mai lizibil
+   - reactii compacte, egale si bine delimitate
+   ============================================================ */
+
+/* Header utilizator: mai clar, fara sa dezechilibreze avatarul. */
+
+
+.av10-identity {
+  gap: 0;
+}
+
+.av10-name {
+  
+  font-weight: 820;
+  
+  
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.22);
+}
+
+.av10-time {
+  
+  
+  font-weight: 650;
+  
+  letter-spacing: 0.01em;
+  color: #89a9aa;
+}
+
+/* Mesaj: seria devine un control separat, usor de inteles si apasat. */
+.av10-message {
+  grid-template-rows: 62px minmax(0, 1fr);
+}
+
+.av10-series {
+  width: calc(100% - 12px);
+  
+  margin: 6px 6px 4px;
+  
+  
+  
+  border: 1px solid color-mix(in srgb, var(--accent) 20%, rgba(153, 220, 214, 0.13));
+  
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 8%, rgba(5, 24, 29, 0.88)), rgba(2, 17, 22, 0.78));
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.04),
+    0 5px 14px rgba(0, 0, 0, 0.12);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.av10-series::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  
+  
+  
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--accent) 72%, #fff 6%);
+  box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 34%, transparent);
+  opacity: 0.72;
+}
+
+.av10-series:hover {
+  
+  border-color: color-mix(in srgb, var(--accent) 38%, rgba(255, 255, 255, 0.12));
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 13%, rgba(5, 27, 32, 0.92)), rgba(2, 18, 23, 0.84));
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.055),
+    0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.av10-series-copy small {
+  
+  
+  
+  letter-spacing: 0.11em;
+  color: #86a7a8;
+}
+
+.av10-series-copy strong {
+  
+  
+  font-weight: 790;
+  line-height: 1.08;
+  letter-spacing: -0.012em;
+  color: #f1f7f5;
+}
+
+.av10-series-arrow {
+  
+  
+  border: 1px solid rgba(222, 196, 129, 0.14);
+  border-radius: 9px;
+  
+  background: linear-gradient(145deg, rgba(222, 196, 129, 0.10), rgba(222, 196, 129, 0.035));
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.av10-series:hover .av10-series-arrow,
+.av10-series:focus-visible .av10-series-arrow {
+  
+  border-color: rgba(222, 196, 129, 0.28);
+  background: rgba(222, 196, 129, 0.13);
+}
+
+/* Comentariul: text mai mare, aceeasi margine stanga/dreapta si ritm mai bun. */
+.av10-body {
+  
+}
+
+.av10-text {
+  
+  
+  
+  
+  color: #e7f0ef;
+  
+  
+}
+
+/* Reactii: fiecare actiune este un buton distinct, egal si usor de apasat. */
+.av10-footer {
+  
+  padding-top: 7px;
+}
+
+.av10-reactions {
+  height: 41px;
+  
+  
+  
+  border-radius: 0;
+  
+  
+  
+}
+
+.av10-reaction {
+  position: relative;
+  
+  
+  
+  border: 1px solid rgba(145, 210, 204, 0.13);
+  border-radius: 11px;
+  color: #91abad;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.036), rgba(255, 255, 255, 0.011));
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.035),
+    0 4px 11px rgba(0, 0, 0, 0.10);
+  transition:
+    transform 170ms ease,
+    color 170ms ease,
+    border-color 170ms ease,
+    background 170ms ease,
+    box-shadow 170ms ease;
+}
+
+.av10-reaction svg {
+  box-sizing: content-box;
+  
+  
+  
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: rgba(129, 218, 207, 0.055);
+  stroke-width: 1.85;
+  transition: background 170ms ease, transform 170ms ease;
+}
+
+.av10-reaction span {
+  
+  
+  font-weight: 800;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+}
+
+.av10-reaction:hover {
+  transform: translateY(-2px);
+  color: #f7fbfb;
+  border-color: rgba(255, 255, 255, 0.17);
+  background: rgba(255, 255, 255, 0.055);
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.045),
+    0 8px 16px rgba(0, 0, 0, 0.16);
+}
+
+.av10-reaction:hover svg {
+  transform: scale(1.04);
+}
+
+.av10-reaction.like:hover svg,
+.av10-reaction.like.is-active svg {
+  background: rgba(131, 227, 211, 0.10);
+}
+
+.av10-reaction.love:hover svg,
+.av10-reaction.love.is-active svg {
+  background: rgba(255, 161, 185, 0.10);
+}
+
+.av10-reaction.reply:hover svg,
+.av10-reaction.reply.is-active svg {
+  background: rgba(154, 200, 255, 0.10);
+}
+
+.av10-reaction.like:hover { color: #8be6d7; border-color: rgba(139, 230, 215, 0.23); }
+.av10-reaction.love:hover { color: #ffa8bf; border-color: rgba(255, 168, 191, 0.22); }
+.av10-reaction.reply:hover { color: #a4ceff; border-color: rgba(164, 206, 255, 0.22); }
+
+.av10-reaction.is-active {
+  transform: translateY(-1px);
+  color: var(--accent);
+  border-color: color-mix(in srgb, var(--accent) 34%, transparent);
+  background: color-mix(in srgb, var(--accent) 9%, rgba(4, 22, 27, 0.86));
+}
+
+.av10-reaction.love.is-active {
+  color: #ffa8bf;
+  border-color: rgba(255, 168, 191, 0.30);
+  background: rgba(255, 168, 191, 0.075);
+}
+
+.av10-reaction.reply.is-active {
+  color: #a4ceff;
+  border-color: rgba(164, 206, 255, 0.28);
+  background: rgba(164, 206, 255, 0.07);
+}
+
+@media (max-width: 1510px) {
+  .av10-name { font-size: 14px; }
+  
+  .av10-series-copy strong { font-size: 10.5px; }
+  .av10-reaction { padding-inline: 6px; }
+}
+
+@media (max-width: 620px) {
+  
+  
+}
+/* ============================================================
+   AniVortex Comentarii V15 — spacing & hierarchy fix
+   - elementele din card nu se mai ating / suprapun
+   - header, serie, comentariu si reactii au zone separate
+   - pastreaza forma exterioara, culorile si personajul existente
+   ============================================================ */
+
+.comentarii-track {
+  gap: 16px;
+}
+
+.av10-card {
+  height: 406px;
+  grid-template-rows: 60px minmax(0, 1fr) 44px;
+  
+  padding: 14px;
+}
+
+/* Header utilizator — zonă proprie, fără să intre peste mesaj. */
+.av10-head {
+  min-height: 0;
+  height: 60px;
+  align-items: center;
+  gap: 11px;
+  padding: 0 2px;
+}
+
+
+
+.av10-avatar-wrap,
+.av10-avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.av10-avatar-wrap {
+  flex: 0 0 50px;
+}
+
+.av10-online {
+  right: 0;
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+}
+
+
+
+.av10-name {
+  position: relative;
+  z-index: 2;
+  
+  font-size: 14px;
+  line-height: 1.08;
+}
+
+.av10-time {
+  
+  font-size: 8.8px;
+  
+}
+
+.av10-number {
+  
+  
+  font-size: 50px;
+  opacity: 0.72;
+}
+
+/* Mesajul devine un stack clar: serie sus + comentariu jos. */
+
+
+.av10-message:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 17px;
+}
+
+.av10-series {
+  
+  
+  
+  
+  grid-template-columns: minmax(0, 1fr) 26px;
+  
+  padding: 8px 8px 8px 12px;
+  border-radius: 11px;
+}
+
+
+
+.av10-series-copy small {
+  font-size: 7px;
+  
+}
+
+.av10-series-copy strong {
+  
+  max-width: 100%;
+  font-size: 10.5px;
+  
+}
+
+.av10-series-arrow {
+  width: 26px;
+  height: 26px;
+  
+  
+}
+
+.av10-body {
+  
+  
+  
+  padding: 15px 13px 13px;
+  background: linear-gradient(180deg, transparent, rgba(0, 7, 10, 0.12));
+}
+
+.av10-text {
+  max-width: 100%;
+  margin: 0;
+  font-size: 11.7px;
+  font-weight: 600;
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+  
+  
+}
+
+.av10-symbol {
+  right: 10px;
+  bottom: 2px;
+  font-size: 46px;
+  opacity: 0.065;
+}
+
+/* Footer separat de mesaj: fără margini negative / fără intrare peste body. */
+.av10-footer {
+  align-self: stretch;
+  width: 100%;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+}
+
+.av10-reactions {
+  width: 100%;
+  
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  gap: 6px;
+  padding: 3px;
+  border: 1px solid rgba(145, 210, 204, 0.10);
+  background: rgba(1, 12, 16, 0.32);
+  box-shadow: inset 0 1px rgba(255,255,255,.025);
+  backdrop-filter: blur(10px);
+}
+
+.av10-reactions:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 13px;
+}
+
+.av10-reaction {
+  min-width: 0;
+  
+  gap: 5px;
+  padding: 0 5px;
+}
+
+.av10-reaction:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 9px;
+}
+
+.av10-reaction svg {
+  width: 13px;
+  height: 13px;
+  padding: 2.5px;
+}
+
+.av10-reaction span {
+  min-width: 9px;
+  font-size: 9.3px;
+}
+
+/* Pe ecrane ceva mai înguste nu mai micșorăm cardul până când conținutul se calcă. */
+@media (max-width: 1510px) {
+  .av10-card {
+    
+    grid-template-rows: 58px minmax(0, 1fr) 44px;
+    row-gap: 9px;
+    padding: 13px;
+  }
+
+  .av10-head {
+    height: 58px;
+  }
+
+  .av10-avatar-wrap,
+  .av10-avatar {
+    width: 48px;
+    height: 48px;
+  }
+
+  .av10-avatar-wrap {
+    flex-basis: 48px;
+  }
+
+  
+
+  .av10-body {
+    padding-top: 13px;
+  }
+
+  .av10-text {
+    font-size: 11.6px;
+    line-height: 1.5;
+    -webkit-line-clamp: 6;
+    line-clamp: 6;
+  }
+}
+
+@media (max-width: 990px) {
+  .av10-card {
+    height: 392px;
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-card {
+    height: 402px;
+    grid-template-rows: 60px minmax(0, 1fr) 46px;
+    row-gap: 10px;
+  }
+
+  .av10-name {
+    font-size: 14.5px;
+  }
+
+  
+}

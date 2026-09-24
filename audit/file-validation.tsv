@@ -1,0 +1,678 @@
+path	ext	status	detail
+.vscode/settings.json	.json	OK	JSON parsed
+AGENTS.md	.md	OK	UTF-8 text read
+UPC.css	.css	OK	CSS parsed; top-level parse errors=0
+UPC.js	.js	OK	JS syntax OK
+banner.css	.css	OK	CSS parsed; top-level parse errors=0
+banner.js	.js	OK	JS syntax OK
+base.css	.css	OK	CSS parsed; top-level parse errors=0
+body.css	.css	OK	CSS parsed; top-level parse errors=0
+card.js	.js	OK	JS syntax OK
+chrono.css	.css	OK	CSS parsed; top-level parse errors=0
+chrono.js	.js	OK	JS syntax OK
+com.css	.css	OK	CSS parsed; top-level parse errors=0
+com.js	.js	OK	JS syntax OK
+design/approved/homepage-before/README.md	.md	OK	UTF-8 text read
+design/approved/homepage-before/homepage-1366x768-full.png	.png	OK	image verified
+design/approved/homepage-before/homepage-1366x768-viewport.png	.png	OK	image verified
+design/approved/homepage-before/homepage-1920x1080-full.png	.png	OK	image verified
+design/approved/homepage-before/homepage-1920x1080-viewport.png	.png	OK	image verified
+footer.css	.css	OK	CSS parsed; top-level parse errors=0
+footer.js	.js	OK	JS syntax OK
+header.css	.css	OK	CSS parsed; top-level parse errors=0
+header.js	.js	OK	JS syntax OK
+hot-news-new.css	.css	OK	CSS parsed; top-level parse errors=0
+hot-news-new.js	.js	OK	JS syntax OK
+inceputuri/1.png	.png	OK	image verified
+inceputuri/Background.png	.png	OK	image verified
+inceputuri/New folder/1.png	.png	OK	image verified
+inceputuri/New folder/11111.png	.png	OK	image verified
+inceputuri/New folder/11111111111.png	.png	OK	image verified
+inceputuri/New folder/123-removebg-preview.png	.png	OK	image verified
+inceputuri/New folder/123.png	.png	OK	image verified
+inceputuri/New folder/2.png	.png	OK	image verified
+inceputuri/New folder/3.png	.png	OK	image verified
+inceputuri/New folder/3z0TY.jpg	.jpg	OK	image verified
+inceputuri/New folder/Adaugă un subtitlu.pdf	.pdf	OK	PDF signature/EOF checked
+inceputuri/New folder/Adaugă un subtitlu.png	.png	OK	image verified
+inceputuri/New folder/ChatGPT Image Mar 28, 2026, 07_16_55 AM.png	.png	OK	image verified
+inceputuri/New folder/ChatGPT Image Mar 28, 2026, 07_16_55 AM.webp	.webp	OK	image verified
+inceputuri/New folder/ChatGPT Image Mar 28, 2026, 08_13_32 AM.png	.png	OK	image verified
+inceputuri/New folder/ChatGPT Image Mar 28, 2026, 08_18_13 AM.png	.png	OK	image verified
+inceputuri/New folder/ChatGPT Image Mar 28, 2026, 10_21_55 AM.png	.png	OK	image verified
+inceputuri/New folder/ChatGPT Image Mar 28, 2026, 10_34_27 AM.png	.png	OK	image verified
+inceputuri/New folder/ChatGPT Image Mar 28, 2026, 10_55_17 AM (1).png	.png	OK	image verified
+inceputuri/New folder/ChatGPT Image Mar 28, 2026, 10_55_17 AM (2).png	.png	OK	image verified
+inceputuri/New folder/ChatGPT Image Mar 28, 2026, 10_55_17 AM.png	.png	OK	image verified
+inceputuri/New folder/ChatGPT Image Mar 28, 2026, 11_05_17 AM.png	.png	OK	image verified
+inceputuri/New folder/ChatGPT Image Mar 28, 2026, 11_29_28 AM.png	.png	OK	image verified
+inceputuri/New folder/ChatGPT_Image_Mar_28__2026__10_55_17_AM-removebg-preview.png	.png	OK	image verified
+inceputuri/New folder/ChatGPT_Image_Mar_28__2026__10_55_17_AM__1_-removebg-preview.png	.png	OK	image verified
+inceputuri/New folder/ChatGPT_Image_Mar_28__2026__10_55_17_AM__2_-removebg-preview.png	.png	OK	image verified
+inceputuri/New folder/Gemini_Generated_Image_ek37qyek37qyek37.png	.png	OK	image verified
+inceputuri/New folder/Gemini_Generated_Image_le6csyle6csyle6c-removebg-preview.png	.png	OK	image verified
+inceputuri/New folder/Gemini_Generated_Image_le6csyle6csyle6c.png	.png	OK	image verified
+inceputuri/New folder/Gemini_Generated_Image_le6csyle6csyle6c.webp	.webp	OK	image verified
+inceputuri/New folder/Gemini_Generated_Image_le6csyle6csyle6c1221-removebg-preview.png	.png	OK	image verified
+inceputuri/New folder/Gemini_Generated_Image_le6csyle6csyle6c1221.webp	.webp	OK	image verified
+inceputuri/New folder/Gemini_Generated_Image_t4tpu4t4tpu4t4tp-removebg-preview.png	.png	OK	image verified
+inceputuri/New folder/Gemini_Generated_Image_t4tpu4t4tpu4t4tp.png	.png	OK	image verified
+inceputuri/New folder/Gemini_Generated_Image_vm3y5kvm3y5kvm3y.png	.png	OK	image verified
+inceputuri/New folder/Screenshot 2026-03-28 110318.png	.png	OK	image verified
+inceputuri/New folder/anivortex-dragon-logo.svg	.svg	OK	XML/SVG parsed
+inceputuri/New folder/anivortex-logo-vectorized.svg	.svg	OK	XML/SVG parsed
+inceputuri/New folder/anivortex_dragon_logo (1).xml	.xml	OK	XML/SVG parsed
+inceputuri/New folder/anivortex_dragon_logo (2).xml	.xml	OK	XML/SVG parsed
+inceputuri/New folder/anivortex_dragon_logo (3).xml	.xml	OK	XML/SVG parsed
+inceputuri/New folder/anivortex_dragon_logo (4).xml	.xml	OK	XML/SVG parsed
+inceputuri/New folder/anivortex_dragon_logo.xml	.xml	OK	XML/SVG parsed
+inceputuri/New folder/image_1774684036484-removebg-preview.png	.png	OK	image verified
+inceputuri/New folder/image_1774684036484.png	.png	OK	image verified
+inceputuri/New folder/image_1774684223774.png	.png	OK	image verified
+inceputuri/New folder/image_1774684454973-removebg-preview.png	.png	OK	image verified
+inceputuri/New folder/image_1774684454973.jpg	.jpg	OK	image verified
+inceputuri/New folder/image_1774685579741.jpg	.jpg	OK	image verified
+inceputuri/New folder/image_1774686236597.jpg	.jpg	OK	image verified
+inceputuri/New folder/image_1774686644973.jpg	.jpg	OK	image verified
+inceputuri/New folder/image_1774686664552.jpg	.jpg	OK	image verified
+inceputuri/New folder/image_1774687271093.jpg	.jpg	OK	image verified
+inceputuri/New folder/image_1774687274263.jpg	.jpg	OK	image verified
+inceputuri/New folder/image_1774687284771.jpg	.jpg	OK	image verified
+inceputuri/New folder/image_1774687287942.jpg	.jpg	OK	image verified
+inceputuri/New folder/image_1774687299139.jpg	.jpg	OK	image verified
+inceputuri/New folder/index.html	.html	OK	HTML parsed; duplicate ids=0
+inceputuri/erau 1.2.png	.png	OK	image verified
+index.html	.html	OK	HTML parsed; duplicate ids=0
+login-content-final/README.txt	.txt	OK	UTF-8 text read
+login-content-final/assets/avatar.gif	.gif	OK	image verified
+login-content-final/assets/bell.svg	.svg	OK	XML/SVG parsed
+login-content-final/assets/crest.png	.png	OK	image verified
+login-content-final/assets/favorite-top1.png	.png	OK	image verified
+login-content-final/assets/favorite-top2.png	.png	OK	image verified
+login-content-final/assets/favorite-top3.png	.png	OK	image verified
+login-content-final/index.html	.html	OK	HTML parsed; duplicate ids=0
+login-content-final/preview-final.png	.png	OK	image verified
+login-content-final/script.js	.js	OK	JS syntax OK
+login-content-final/style.css	.css	OK	CSS parsed; top-level parse errors=0
+main.css	.css	OK	CSS parsed; top-level parse errors=0
+main.js	.js	OK	JS syntax OK
+preview/activitate-staff/index.html	.html	OK	HTML parsed; duplicate ids=0
+preview/activitate-staff/preview-text-si-spatiere.png	.png	OK	image verified
+preview/audit-proposal/index.html	.html	OK	HTML parsed; duplicate ids=0
+preview/audit-proposal/script.js	.js	OK	JS syntax OK
+preview/audit-proposal/style.css	.css	OK	CSS parsed; top-level parse errors=0
+preview/carusele-finale-redesign/index.html	.html	OK	HTML parsed; duplicate ids=0
+preview/carusele-finale-redesign/preview-v6-detalii.png	.png	OK	image verified
+preview/carusele-finale-redesign/preview-v6-mobile.png	.png	OK	image verified
+preview/carusele-finale-redesign/preview-v6-nocturne.png	.png	OK	image verified
+preview/carusele-finale-redesign/preview.js	.js	OK	JS syntax OK
+preview/carusele-finale-redesign/style.css	.css	OK	CSS parsed; top-level parse errors=0
+preview/chronologie-redesign/index.html	.html	OK	HTML parsed; duplicate ids=0
+preview/chronologie-redesign/preview-desktop.jpg	.jpg	OK	image verified
+preview/chronologie-redesign/preview.js	.js	OK	JS syntax OK
+preview/chronologie-redesign/style.css	.css	OK	CSS parsed; top-level parse errors=0
+preview/donate-modal/index.html	.html	OK	HTML parsed; duplicate ids=0
+preview/donate-modal/preview.png	.png	OK	image verified
+preview/donate-modal/style.css	.css	OK	CSS parsed; top-level parse errors=0
+preview/episode-popup-card/index.html	.html	OK	HTML parsed; duplicate ids=0
+preview/episode-popup-card/preview.js	.js	OK	JS syntax OK
+preview/episode-popup-card/preview.png	.png	OK	image verified
+preview/episode-popup-card/style.css	.css	OK	CSS parsed; top-level parse errors=0
+preview/hof-anime-integration/index.html	.html	OK	HTML parsed; duplicate ids=0
+preview/hof-container/index.html	.html	OK	HTML parsed; duplicate ids=0
+preview/hof-container/preview-footer-separat.png	.png	OK	image verified
+preview/hof-container/preview.png	.png	OK	image verified
+preview/hof-container/style.css	.css	OK	CSS parsed; top-level parse errors=0
+preview/login-content-v2/index.html	.html	OK	HTML parsed; duplicate ids=0
+preview/login-content-v2/preview-varianta-10-profil-compact.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-11-top1-central.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-12-aerisit-premium.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-13-simetric.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-14-incadrare-corecta.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-15-marit-butoane-noi.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-16-nume-gradient.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-17-mare-5px.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-18-fara-text-final.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-19-episod-centrat.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-20-buton-ridicat.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-21-buton-ridicat-10px.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-22-episod-premium.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-23-spatiere-echilibrata.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-24-episod-mai-jos.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-25-episod-jos.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-26-titlu-episod-diferit.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-27-episod-media-card.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-28-doar-numele-seriei.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-29-titlu-si-nume.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-3.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-30-nume-stanga-episod-dreapta.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-31-episod-echilibrat.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-32-episod-rand-interior.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-33-nume-cu-ellipsis.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-34-episod-minimalist.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-35-episod-premium-clean.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-36-episod-coloana.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-37-episod-trei-coloane.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-38-episod-simplu.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-39-episod-elegant.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-4-culori-butoane.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-40-fara-episod.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-41-nume-centrat.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-42-spatiere-egala.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-43-carduri-activitate.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-44-butoane-activitate.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-45-butoane-activitate.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-46-numere-dreapta.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-47-favorite-mai-jos.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-48-favorite-podium.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-49-podium-aliniat.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-5-top-anime.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-50-podium-clasic.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-51-favorite-centrat.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-52-linie-separatoare.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-53-spatiere-uniforma.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-54-spatii-egale.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-55-linie-sus-aliniata.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-56-linie-sus-mai-jos.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-57-linie-sus-echilibrata.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-58-butoane-setari-mai-jos.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-59-butoane-setari-premium.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-6-ca-referinta.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-60-butoane-culori-vii.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-61-setari-ca-activitatea.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-62-statistici-mai-jos.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-63-profil-mai-jos.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-64-hover-si-spatiere.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-65-hover-text-gradient.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-66-stari-utilizator.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-67-lista-notificari.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-7-carduri-aerisite.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-8-rafinata.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-9-card-unic.png	.png	OK	image verified
+preview/login-content-v2/preview-varianta-pastrata.png	.png	OK	image verified
+preview/login-content-v2/preview.png	.png	OK	image verified
+preview/login-content-v2/preview.svg	.svg	OK	XML/SVG parsed
+preview/login-content-v2/render-preserved.ps1	.ps1	OK	UTF-8 text read
+preview/login-content-v2/render-preview.ps1	.ps1	OK	UTF-8 text read
+preview/login-content-v2/varianta-12.html	.html	OK	HTML parsed; duplicate ids=0
+preview/noutati-fierbinti-carduri/alternative.css	.css	OK	CSS parsed; top-level parse errors=0
+preview/noutati-fierbinti-carduri/alternative.html	.html	OK	HTML parsed; duplicate ids=0
+preview/noutati-fierbinti-carduri/arc-card.css	.css	OK	CSS parsed; top-level parse errors=0
+preview/noutati-fierbinti-carduri/arc-card.html	.html	OK	HTML parsed; duplicate ids=0
+preview/noutati-fierbinti-carduri/bento.css	.css	OK	CSS parsed; top-level parse errors=0
+preview/noutati-fierbinti-carduri/bento.html	.html	OK	HTML parsed; duplicate ids=0
+preview/noutati-fierbinti-carduri/futuristic.css	.css	OK	CSS parsed; top-level parse errors=0
+preview/noutati-fierbinti-carduri/futuristic.html	.html	OK	HTML parsed; duplicate ids=0
+preview/noutati-fierbinti-carduri/index.html	.html	OK	HTML parsed; duplicate ids=0
+preview/noutati-fierbinti-carduri/landscape.css	.css	OK	CSS parsed; top-level parse errors=0
+preview/noutati-fierbinti-carduri/landscape.html	.html	OK	HTML parsed; duplicate ids=0
+preview/noutati-fierbinti-carduri/preview-3-designuri-noi.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-arc-card.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-bento-noutati.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-cinema-rail.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-directie-recomandata-card.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-directie-recomandata.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-holo-frame-card.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-holo-frame.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-release-board.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-signature-card-clean.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-signature-card-footer-v2.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-signature-card-large-image.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-signature-card.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-three-categories.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-a.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v10.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v11-detaliu-card.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v11.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v12-detaliu-card.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v12.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v13-detaliu-card.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v13.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v14-detaliu-card.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v14.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v15-detaliu-card.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v15.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v16-detaliu-card.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v16.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v17-detaliu-card.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v17.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v18-detaliu-card.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v18.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v2.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v3.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v4.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v5.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v6.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v7.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v8.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b-v9.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-b.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/preview-varianta-c.png	.png	OK	image verified
+preview/noutati-fierbinti-carduri/release-board.css	.css	OK	CSS parsed; top-level parse errors=0
+preview/noutati-fierbinti-carduri/release-board.html	.html	OK	HTML parsed; duplicate ids=0
+preview/noutati-fierbinti-carduri/render-alternative.cjs	.cjs	OK	JS syntax OK
+preview/noutati-fierbinti-carduri/render-arc-card.cjs	.cjs	OK	JS syntax OK
+preview/noutati-fierbinti-carduri/render-bento.cjs	.cjs	OK	JS syntax OK
+preview/noutati-fierbinti-carduri/render-futuristic.cjs	.cjs	OK	JS syntax OK
+preview/noutati-fierbinti-carduri/render-landscape.cjs	.cjs	OK	JS syntax OK
+preview/noutati-fierbinti-carduri/render-release-board.cjs	.cjs	OK	JS syntax OK
+preview/noutati-fierbinti-carduri/render-research.cjs	.cjs	OK	JS syntax OK
+preview/noutati-fierbinti-carduri/render-signature-card.cjs	.cjs	OK	JS syntax OK
+preview/noutati-fierbinti-carduri/render-three-categories.cjs	.cjs	OK	JS syntax OK
+preview/noutati-fierbinti-carduri/render.cjs	.cjs	OK	JS syntax OK
+preview/noutati-fierbinti-carduri/research.css	.css	OK	CSS parsed; top-level parse errors=0
+preview/noutati-fierbinti-carduri/research.html	.html	OK	HTML parsed; duplicate ids=0
+preview/noutati-fierbinti-carduri/signature-card.css	.css	OK	CSS parsed; top-level parse errors=0
+preview/noutati-fierbinti-carduri/signature-card.html	.html	OK	HTML parsed; duplicate ids=0
+preview/noutati-fierbinti-carduri/style.css	.css	OK	CSS parsed; top-level parse errors=0
+preview/noutati-fierbinti-carduri/three-categories.css	.css	OK	CSS parsed; top-level parse errors=0
+preview/noutati-fierbinti-carduri/three-categories.html	.html	OK	HTML parsed; duplicate ids=0
+preview/redesign-homepage-v2/index.html	.html	OK	HTML parsed; duplicate ids=0
+preview/redesign-homepage-v2/script.js	.js	OK	JS syntax OK
+preview/redesign-homepage-v2/style.css	.css	OK	CSS parsed; top-level parse errors=0
+preview/serii-favorite/index.html	.html	OK	HTML parsed; duplicate ids=0
+preview/staff-activity-panel/index.html	.html	OK	HTML parsed; duplicate ids=0
+preview/staff-activity-panel/preview.svg	.svg	OK	XML/SVG parsed
+preview/stiri-anivortex/index.html	.html	OK	HTML parsed; duplicate ids=0
+preview/stiri-anivortex/preview-v10.png	.png	OK	image verified
+preview/stiri-anivortex/preview-v16.png	.png	OK	image verified
+preview/stiri-anivortex/preview-v17.png	.png	OK	image verified
+preview/stiri-anivortex/preview-v2.png	.png	OK	image verified
+preview/stiri-anivortex/preview-v20.png	.png	OK	image verified
+preview/stiri-anivortex/preview-v22.png	.png	OK	image verified
+preview/stiri-anivortex/preview-v3.png	.png	OK	image verified
+preview/stiri-anivortex/preview-v4.png	.png	OK	image verified
+preview/stiri-anivortex/preview-v5.png	.png	OK	image verified
+preview/stiri-anivortex/preview-v6.png	.png	OK	image verified
+preview/stiri-anivortex/preview-v7.png	.png	OK	image verified
+preview/stiri-anivortex/preview-v8.png	.png	OK	image verified
+preview/stiri-anivortex/preview-v9.png	.png	OK	image verified
+preview/stiri-anivortex/preview.png	.png	OK	image verified
+preview/stiri-anivortex/style.css	.css	OK	CSS parsed; top-level parse errors=0
+preview/top-sugestii/compact.html	.html	OK	HTML parsed; duplicate ids=0
+preview/top-sugestii/index.html	.html	OK	HTML parsed; duplicate ids=0
+preview/top-sugestii/preview-aliniere-postere.png	.png	OK	image verified
+preview/top-sugestii/preview-centrare-buton-jos.png	.png	OK	image verified
+preview/top-sugestii/preview-compact-final.png	.png	OK	image verified
+preview/top-sugestii/preview-grup-centrat.png	.png	OK	image verified
+preview/top-sugestii/preview-poster-principal-marit.png	.png	OK	image verified
+preview/top-sugestii/preview-text-marire.png	.png	OK	image verified
+preview/trending-now-redesign/index.html	.html	OK	HTML parsed; duplicate ids=0
+preview/trending-now-redesign/preview.png	.png	OK	image verified
+preview/trending-now-redesign/style.css	.css	OK	CSS parsed; top-level parse errors=0
+preview/trending-vertical/data.js	.js	OK	JS syntax OK
+preview/trending-vertical/index.html	.html	OK	HTML parsed; duplicate ids=0
+public/icons/Share/Rimuru slime.webp	.webp	OK	image verified
+public/icons/avatar/Anne-v1.1.png	.png	OK	image verified
+public/icons/avatar/anne.png	.png	OK	image verified
+public/icons/comm/dislike.svg	.svg	OK	XML/SVG parsed
+public/icons/comm/link.svg	.svg	OK	XML/SVG parsed
+public/icons/comm/love.svg	.svg	OK	XML/SVG parsed
+public/icons/donatii/coffee-cup.png	.png	OK	image verified
+public/icons/donatii/paypal.png	.png	OK	image verified
+public/icons/donatii/revolut.png	.png	OK	image verified
+public/icons/faction/coin.svg	.svg	OK	XML/SVG parsed
+public/icons/faction/favorites.svg	.svg	OK	XML/SVG parsed
+public/icons/faction/series.svg	.svg	OK	XML/SVG parsed
+public/icons/icon detalii/4k.png	.png	OK	image verified
+public/icons/icon detalii/chapter.png	.png	OK	image verified
+public/icons/icon detalii/fhd.png	.png	OK	image verified
+public/icons/icon detalii/hd.png	.png	OK	image verified
+public/icons/icon detalii/schedule.png	.png	OK	image verified
+public/icons/icon detalii/sd.png	.png	OK	image verified
+public/icons/icon detalii/smart-tv.png	.png	OK	image verified
+public/icons/icon detalii/time-left.png	.png	OK	image verified
+public/icons/info icon/info.png	.png	OK	image verified
+public/icons/logo anime/bleach.png	.png	OK	image verified
+public/icons/logo anime/d.gray-man.png	.png	OK	image verified
+public/icons/logo anime/dragon ball.png	.png	OK	image verified
+public/icons/logo anime/fairy tail.png	.png	OK	image verified
+public/icons/logo anime/gintama.png	.png	OK	image verified
+public/icons/logo anime/hajime no ippo.png	.png	OK	image verified
+public/icons/logo anime/hxh.png	.png	OK	image verified
+public/icons/logo anime/inuyasha.png	.png	OK	image verified
+public/icons/logo anime/naruto.png	.png	OK	image verified
+public/icons/logo anime/one piece.png	.png	OK	image verified
+public/icons/logo site/anivortex.png	.png	OK	image verified
+public/icons/media/discord.png	.png	OK	image verified
+public/icons/media/facebook.png	.png	OK	image verified
+public/icons/media/instagram.png	.png	OK	image verified
+public/icons/media/tik-tok.png	.png	OK	image verified
+public/icons/media/twitter.png	.png	OK	image verified
+public/icons/media/youtube.png	.png	OK	image verified
+public/icons/notification/bell-icon.svg	.svg	OK	XML/SVG parsed
+public/icons/notification/eye.png	.png	OK	image verified
+public/icons/search icon/search.png	.png	OK	image verified
+public/icons/share icon/facebook.png	.png	OK	image verified
+public/icons/share icon/instagram.png	.png	OK	image verified
+public/icons/share icon/messenger.png	.png	OK	image verified
+public/icons/share icon/tik-tok.png	.png	OK	image verified
+public/icons/share icon/twitter.png	.png	OK	image verified
+public/icons/share icon/whatsapp.png	.png	OK	image verified
+public/icons/social-media/discord.png	.png	OK	image verified
+public/icons/social-media/facebook.png	.png	OK	image verified
+public/icons/social-media/instagram.png	.png	OK	image verified
+public/icons/social-media/tiktok.png	.png	OK	image verified
+public/icons/social-media/x.png	.png	OK	image verified
+public/icons/social-media/youtube.png	.png	OK	image verified
+public/icons/user profil/user.png	.png	OK	image verified
+public/icons/x/Aka.png	.png	OK	image verified
+public/icons/x/AniVortex txt.webp	.webp	OK	image verified
+public/icons/x/ChatGPT Image Mar 28, 2026, 08_22_05 AM.png	.png	OK	image verified
+public/icons/x/ChatGPT Image Mar 28, 2026, 10_22_00 AM.png	.png	OK	image verified
+public/icons/x/ChatGPT Image Mar 28, 2026, 10_41_45 AM.png	.png	OK	image verified
+public/icons/x/ChatGPT Image Mar 28, 2026, 11_23_59 AM.png	.png	OK	image verified
+public/icons/x/ChatGPT_Image_Mar_28__2026__11_29_28_AM-removebg-preview.png	.png	OK	image verified
+public/icons/x/Gemini_Generated_Image_ek37qyek37qyek37-removebg-preview.png	.png	OK	image verified
+public/icons/x/Logo-txt.webp	.webp	OK	image verified
+public/icons/x/Logo.webp	.webp	OK	image verified
+public/icons/x/ff.png	.png	OK	image verified
+public/icons/x/gg.png	.png	OK	image verified
+public/icons/x/image_1774687287942-removebg-preview.png	.png	OK	image verified
+public/icons/x/kk.png	.png	OK	image verified
+public/icons/x/kl.png	.png	OK	image verified
+public/icons/x/logo-traced.svg	.svg	OK	XML/SVG parsed
+public/icons/x/op.png	.png	OK	image verified
+public/icons/x/pp.png	.png	OK	image verified
+public/icons/x/x.png	.png	OK	image verified
+public/imgs/banner/bleach.png	.png	OK	image verified
+public/imgs/banner/d.gray man.png	.png	OK	image verified
+public/imgs/banner/dragon ball.png	.png	OK	image verified
+public/imgs/banner/fairy tail.png	.png	OK	image verified
+public/imgs/banner/gintama.png	.png	OK	image verified
+public/imgs/banner/hajime no ippo.png	.png	OK	image verified
+public/imgs/banner/hxh.png	.png	OK	image verified
+public/imgs/banner/inuyasha.png	.png	OK	image verified
+public/imgs/banner/naruto.png	.png	OK	image verified
+public/imgs/banner/one piece.png	.png	OK	image verified
+public/imgs/card/1.jpg	.jpg	OK	image verified
+public/imgs/card/10.jpg	.jpg	OK	image verified
+public/imgs/card/11.jpg	.jpg	OK	image verified
+public/imgs/card/12.jpg	.jpg	OK	image verified
+public/imgs/card/13.jpg	.jpg	OK	image verified
+public/imgs/card/14.jpg	.jpg	OK	image verified
+public/imgs/card/15.jpg	.jpg	OK	image verified
+public/imgs/card/16.jpg	.jpg	OK	image verified
+public/imgs/card/2.jpg	.jpg	OK	image verified
+public/imgs/card/3.jpg	.jpg	OK	image verified
+public/imgs/card/4.jpg	.jpg	OK	image verified
+public/imgs/card/5.jpg	.jpg	OK	image verified
+public/imgs/card/6.jpg	.jpg	OK	image verified
+public/imgs/card/7.jpg	.jpg	OK	image verified
+public/imgs/card/8.jpg	.jpg	OK	image verified
+public/imgs/card/9.jpg	.jpg	OK	image verified
+public/imgs/chronologi/Kirara.png	.png	OK	image verified
+public/imgs/chronologi/Menchi.png	.png	OK	image verified
+public/imgs/comm/Rimuru..webp	.webp	OK	image verified
+public/imgs/cufar/close.png	.png	OK	image verified
+public/imgs/cufar/dragcoin.png	.png	OK	image verified
+public/imgs/cufar/open.png	.png	OK	image verified
+public/imgs/footer/cires.png	.png	OK	image verified
+public/imgs/footer/personaj yaoi/1.png	.png	OK	image verified
+public/imgs/serii favorite/Carti/1.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/10.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/11.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/12.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/13.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/14.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/15.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/16.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/17.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/18.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/19.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/2.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/20.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/21.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/22.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/23.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/24.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/25.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/26.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/27.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/28.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/29.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/3.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/30.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/4.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/5.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/6.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/7.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/8.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Carti/9.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.1.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.10.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.11.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.12.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.13.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.14.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.15.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.16.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.17.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.18.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.19.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.2.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.20.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.21.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.22.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.23.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.24.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.25.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.26.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.27.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.28.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.29.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.3.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.30.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.4.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.5.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.6.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.7.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.8.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Desene/1.9.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/1.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/10.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/11.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/12.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/13.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/14.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/15.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/16.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/17.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/18.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/19.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/2.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/20.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/21.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/22.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/23.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/24.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/25.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/26.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/27.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/28.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/29.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/3.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/30.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/4.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/5.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/6.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/7.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/8.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Filme - Seriale/9.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/1.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/10.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/11.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/12.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/13.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/14.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/15.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/16.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/17.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/18.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/19.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/2.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/20.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/21.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/22.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/23.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/24.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/25.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/26.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/27.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/28.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/29.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/3.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/30.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/4.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/5.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/6.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/7.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/8.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/Live action/9.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/icon ep/cc 1.1.png	.png	OK	image verified
+public/imgs/serii favorite/icon ep/cc.png	.png	OK	image verified
+public/imgs/serii favorite/icon ep/eye 1.1.png	.png	OK	image verified
+public/imgs/serii favorite/icon ep/eye.png	.png	OK	image verified
+public/imgs/serii favorite/icon ep/fire.png	.png	OK	image verified
+public/imgs/serii favorite/icon ep/microfon 1.1.png	.png	OK	image verified
+public/imgs/serii favorite/icon ep/microphone.png	.png	OK	image verified
+public/imgs/serii favorite/icon pop/Anime end.png	.png	OK	image verified
+public/imgs/serii favorite/icon pop/chapter.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/1.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/10.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/2.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/3.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/4.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/5.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/6.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/7.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/8.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/9.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/Class 1.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/Class 10.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/Class 2.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/Class 3.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/Class 4.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/Class 5.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/Class 6.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/Class 7.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/Class 8.png	.png	OK	image verified
+public/imgs/serii favorite/numar 1-10/Class 9.png	.png	OK	image verified
+public/imgs/serii favorite/poza manga/1v1.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v10.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v11.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v12.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v13.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v14.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v15.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v16.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v17.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v18.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v19.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v2.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v20.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v21.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v22.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v23.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v24.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v25.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v26.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v27.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v28.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v29.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v3.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v30.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v4.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v5.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v6.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v7.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v8.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poza manga/1v9.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/1.png	.png	OK	image verified
+public/imgs/serii favorite/poze anime/10.png	.png	OK	image verified
+public/imgs/serii favorite/poze anime/11.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/12.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/13.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/14.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/15.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/16.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/17.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/18.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/19.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/2.png	.png	OK	image verified
+public/imgs/serii favorite/poze anime/20.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/21.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/22.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/23.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/24.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/25.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/26.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/27.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/28.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/29.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/3.png	.png	OK	image verified
+public/imgs/serii favorite/poze anime/30.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/poze anime/4.png	.png	OK	image verified
+public/imgs/serii favorite/poze anime/5.png	.png	OK	image verified
+public/imgs/serii favorite/poze anime/6.png	.png	OK	image verified
+public/imgs/serii favorite/poze anime/7.png	.png	OK	image verified
+public/imgs/serii favorite/poze anime/8.png	.png	OK	image verified
+public/imgs/serii favorite/poze anime/9.png	.png	OK	image verified
+public/imgs/serii favorite/style/watercolor-painted(1).png	.png	OK	image verified
+public/imgs/serii favorite/style/watercolor-painted-1.png	.png	OK	image verified
+public/imgs/serii favorite/style/watercolor-painted-2.png	.png	OK	image verified
+public/imgs/serii favorite/style/watercolor-painted.png	.png	OK	image verified
+public/imgs/serii favorite/top anime/1.v1.1.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/top anime/1.v1.10.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/top anime/1.v1.2.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/top anime/1.v1.3.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/top anime/1.v1.4.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/top anime/1.v1.5.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/top anime/1.v1.6.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/top anime/1.v1.7.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/top anime/1.v1.8.jpg	.jpg	OK	image verified
+public/imgs/serii favorite/top anime/1.v1.9.jpg	.jpg	OK	image verified
+public/imgs/simboluri/Corb.png	.png	OK	image verified
+public/imgs/simboluri/Coroana.png	.png	OK	image verified
+public/imgs/simboluri/Cristal.png	.png	OK	image verified
+public/imgs/simboluri/Dragon.png	.png	OK	image verified
+public/imgs/simboluri/Fluture.png	.png	OK	image verified
+public/imgs/simboluri/Foc.png	.png	OK	image verified
+public/imgs/simboluri/Fulger.png	.png	OK	image verified
+public/imgs/simboluri/Lotus.png	.png	OK	image verified
+public/imgs/simboluri/Luna.png	.png	OK	image verified
+public/imgs/simboluri/Lup.png	.png	OK	image verified
+public/imgs/simboluri/Oni.png	.png	OK	image verified
+public/imgs/simboluri/Phoenix.png	.png	OK	image verified
+public/imgs/simboluri/Sakura.png	.png	OK	image verified
+public/imgs/simboluri/Sarpe.png	.png	OK	image verified
+public/imgs/simboluri/Soare.png	.png	OK	image verified
+public/imgs/simboluri/Stea.png	.png	OK	image verified
+public/imgs/simboluri/Tigru.png	.png	OK	image verified
+public/imgs/simboluri/Val.png	.png	OK	image verified
+public/imgs/simboluri/Vant.png	.png	OK	image verified
+public/imgs/simboluri/Vulpe.png	.png	OK	image verified
+public/imgs/stiri/33.png	.png	OK	image verified
+public/imgs/stiri/Gachea.png	.png	OK	image verified
+public/imgs/stiri/ooppp.jpg	.jpg	OK	image verified
+public/imgs/suprinde-ma/Ayakashi Triangle.png	.png	OK	image verified
+public/imgs/suprinde-ma/Blue Dragon.png	.png	OK	image verified
+public/imgs/user/aot.png	.png	OK	image verified
+public/imgs/user/jk.png	.png	OK	image verified
+public/imgs/user/n.png	.png	OK	image verified
+public/user/profil img/sung jin woo.gif	.gif	OK	image verified
+share-com-complet/README.md	.md	OK	UTF-8 text read
+share-com-complet/index.html	.html	OK	HTML parsed; duplicate ids=0
+share-com-complet/script.js	.js	OK	JS syntax OK
+share-com-complet/styles.css	.css	OK	CSS parsed; top-level parse errors=0
+sitemap.xml	.xml	OK	XML/SVG parsed
+swap.js	.js	OK	JS syntax OK
+tasks/plan.md	.md	OK	UTF-8 text read
+tasks/todo.md	.md	OK	UTF-8 text read
+tmp/previews/comments-preview-base.png	.png	OK	image verified
+tmp/refined-preview.png	.png	OK	image verified
+tmp/trending-background.png	.png	OK	image verified
+tmp/trending-reference-match.png	.png	OK	image verified
+tmp/trending-two-tone.png	.png	OK	image verified
+trending.css	.css	OK	CSS parsed; top-level parse errors=0
+trending.js	.js	OK	JS syntax OK

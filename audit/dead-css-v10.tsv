@@ -1,0 +1,93 @@
+file	rule_selector	dropped_branch	missing_classes	missing_ids	action
+src/css/components/UPC.css	.carousel-collection .card-front, .carousel-collection .card-back	.carousel-collection .card-back	card-back		drop-branch
+src/css/components/UPC.css	.carousel-collection .card-back	.carousel-collection .card-back	card-back		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-canvas	.carousel-collection .card-back-canvas	card-back-canvas		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-side	.carousel-collection .card-back-side	card-back-side		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-side::before, .carousel-collection .card-back-side::after	.carousel-collection .card-back-side::before	card-back-side		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-side::before, .carousel-collection .card-back-side::after	.carousel-collection .card-back-side::after	card-back-side		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-year	.carousel-collection .card-back-year	card-back-year		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-romb, .carousel-collection .card-back-romb-s	.carousel-collection .card-back-romb	card-back-romb		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-romb, .carousel-collection .card-back-romb-s	.carousel-collection .card-back-romb-s	card-back-romb-s		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-live	.carousel-collection .card-back-live	card-back-live		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-content	.carousel-collection .card-back-content	card-back-content		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-content::before, .carousel-collection .card-back-content::after	.carousel-collection .card-back-content::before	card-back-content		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-content::before, .carousel-collection .card-back-content::after	.carousel-collection .card-back-content::after	card-back-content		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-inner	.carousel-collection .card-back-inner	card-back-inner		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-title	.carousel-collection .card-title	card-title		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-sep	.carousel-collection .card-back-sep	card-back-sep		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-sep-line-l, .carousel-collection .card-back-sep-line-r	.carousel-collection .card-back-sep-line-l	card-back-sep-line-l		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-sep-line-l, .carousel-collection .card-back-sep-line-r	.carousel-collection .card-back-sep-line-r	card-back-sep-line-r		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-sep-line-r	.carousel-collection .card-back-sep-line-r	card-back-sep-line-r		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-sep-diamond	.carousel-collection .card-back-sep-diamond	card-back-sep-diamond		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-meta	.carousel-collection .card-back-meta	card-back-meta		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-meta-col	.carousel-collection .card-back-meta-col	card-back-meta-col		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-meta-col:nth-of-type(2):not(#__av_prio_a#__av_prio_b), .carousel-collection .card-back-meta-div:not(#__av_prio_a#__av_prio_b), .carousel-collection .card-back-meta-stars:not(#__av_prio_a#__av_prio_b)	.carousel-collection .card-back-meta-col:nth-of-type(2):not(#__av_prio_a#__av_prio_b)	card-back-meta-col		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-meta-col:nth-of-type(2):not(#__av_prio_a#__av_prio_b), .carousel-collection .card-back-meta-div:not(#__av_prio_a#__av_prio_b), .carousel-collection .card-back-meta-stars:not(#__av_prio_a#__av_prio_b)	.carousel-collection .card-back-meta-div:not(#__av_prio_a#__av_prio_b)	card-back-meta-div		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-meta-col:nth-of-type(2):not(#__av_prio_a#__av_prio_b), .carousel-collection .card-back-meta-div:not(#__av_prio_a#__av_prio_b), .carousel-collection .card-back-meta-stars:not(#__av_prio_a#__av_prio_b)	.carousel-collection .card-back-meta-stars:not(#__av_prio_a#__av_prio_b)	card-back-meta-stars		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-meta-label	.carousel-collection .card-back-meta-label	card-back-meta-label		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-meta-value	.carousel-collection .card-back-meta-value	card-back-meta-value		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-desc	.carousel-collection .card-desc	card-desc		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-btn::before, .carousel-collection .card-back-btn::after, .carousel-collection .card-back-btn-shimmer	.carousel-collection .card-back-btn-shimmer	card-back-btn-shimmer		drop-branch
+src/css/components/UPC.css	.carousel-collection .card-back-btn-text	.carousel-collection .card-back-btn-text	card-back-btn-text		drop-rule
+src/css/components/UPC.css	.carousel-collection .card.flipped .card-back-year, .carousel-collection .card.flipped .card-back-romb, .carousel-collection .card.flipped .card-back-live, .carousel-collection .card.flipped .card-back-romb-s, .carousel-collection .card.flipped .card-title, .carousel-collection .card.flipped .card-back-sep, .carousel-collection .card.flipped .card-back-meta, .carousel-collection .card.flipped .card-desc, .carousel-collection .card.flipped .card-back-btn	.carousel-collection .card.flipped .card-back-year	card-back-year		drop-branch
+src/css/components/UPC.css	.carousel-collection .card.flipped .card-back-year, .carousel-collection .card.flipped .card-back-romb, .carousel-collection .card.flipped .card-back-live, .carousel-collection .card.flipped .card-back-romb-s, .carousel-collection .card.flipped .card-title, .carousel-collection .card.flipped .card-back-sep, .carousel-collection .card.flipped .card-back-meta, .carousel-collection .card.flipped .card-desc, .carousel-collection .card.flipped .card-back-btn	.carousel-collection .card.flipped .card-back-romb	card-back-romb		drop-branch
+src/css/components/UPC.css	.carousel-collection .card.flipped .card-back-year, .carousel-collection .card.flipped .card-back-romb, .carousel-collection .card.flipped .card-back-live, .carousel-collection .card.flipped .card-back-romb-s, .carousel-collection .card.flipped .card-title, .carousel-collection .card.flipped .card-back-sep, .carousel-collection .card.flipped .card-back-meta, .carousel-collection .card.flipped .card-desc, .carousel-collection .card.flipped .card-back-btn	.carousel-collection .card.flipped .card-back-live	card-back-live		drop-branch
+src/css/components/UPC.css	.carousel-collection .card.flipped .card-back-year, .carousel-collection .card.flipped .card-back-romb, .carousel-collection .card.flipped .card-back-live, .carousel-collection .card.flipped .card-back-romb-s, .carousel-collection .card.flipped .card-title, .carousel-collection .card.flipped .card-back-sep, .carousel-collection .card.flipped .card-back-meta, .carousel-collection .card.flipped .card-desc, .carousel-collection .card.flipped .card-back-btn	.carousel-collection .card.flipped .card-back-romb-s	card-back-romb-s		drop-branch
+src/css/components/UPC.css	.carousel-collection .card.flipped .card-back-year, .carousel-collection .card.flipped .card-back-romb, .carousel-collection .card.flipped .card-back-live, .carousel-collection .card.flipped .card-back-romb-s, .carousel-collection .card.flipped .card-title, .carousel-collection .card.flipped .card-back-sep, .carousel-collection .card.flipped .card-back-meta, .carousel-collection .card.flipped .card-desc, .carousel-collection .card.flipped .card-back-btn	.carousel-collection .card.flipped .card-title	card-title		drop-branch
+src/css/components/UPC.css	.carousel-collection .card.flipped .card-back-year, .carousel-collection .card.flipped .card-back-romb, .carousel-collection .card.flipped .card-back-live, .carousel-collection .card.flipped .card-back-romb-s, .carousel-collection .card.flipped .card-title, .carousel-collection .card.flipped .card-back-sep, .carousel-collection .card.flipped .card-back-meta, .carousel-collection .card.flipped .card-desc, .carousel-collection .card.flipped .card-back-btn	.carousel-collection .card.flipped .card-back-sep	card-back-sep		drop-branch
+src/css/components/UPC.css	.carousel-collection .card.flipped .card-back-year, .carousel-collection .card.flipped .card-back-romb, .carousel-collection .card.flipped .card-back-live, .carousel-collection .card.flipped .card-back-romb-s, .carousel-collection .card.flipped .card-title, .carousel-collection .card.flipped .card-back-sep, .carousel-collection .card.flipped .card-back-meta, .carousel-collection .card.flipped .card-desc, .carousel-collection .card.flipped .card-back-btn	.carousel-collection .card.flipped .card-back-meta	card-back-meta		drop-branch
+src/css/components/UPC.css	.carousel-collection .card.flipped .card-back-year, .carousel-collection .card.flipped .card-back-romb, .carousel-collection .card.flipped .card-back-live, .carousel-collection .card.flipped .card-back-romb-s, .carousel-collection .card.flipped .card-title, .carousel-collection .card.flipped .card-back-sep, .carousel-collection .card.flipped .card-back-meta, .carousel-collection .card.flipped .card-desc, .carousel-collection .card.flipped .card-back-btn	.carousel-collection .card.flipped .card-desc	card-desc		drop-branch
+src/css/components/UPC.css	.carousel-collection .card-back	.carousel-collection .card-back	card-back		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-side:not(#__av_prio_a#__av_prio_b)	.carousel-collection .card-back-side:not(#__av_prio_a#__av_prio_b)	card-back-side		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-inner	.carousel-collection .card-back-inner	card-back-inner		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-title	.carousel-collection .card-title	card-title		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-sep	.carousel-collection .card-back-sep	card-back-sep		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-meta	.carousel-collection .card-back-meta	card-back-meta		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-meta-col	.carousel-collection .card-back-meta-col	card-back-meta-col		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-meta-col:not(#__av_prio_a#__av_prio_b)	.carousel-collection .card-back-meta-col:not(#__av_prio_a#__av_prio_b)	card-back-meta-col		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-meta-col + .card-back-meta-col::before	.carousel-collection .card-back-meta-col + .card-back-meta-col::before	card-back-meta-col,card-back-meta-col		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-meta-label	.carousel-collection .card-back-meta-label	card-back-meta-label		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-meta-value	.carousel-collection .card-back-meta-value	card-back-meta-value		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-meta-col.av-back-year-col .card-back-meta-value	.carousel-collection .card-back-meta-col.av-back-year-col .card-back-meta-value	card-back-meta-col,card-back-meta-value		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-meta-col.av-back-rating-col .card-back-meta-value	.carousel-collection .card-back-meta-col.av-back-rating-col .card-back-meta-value	card-back-meta-col,card-back-meta-value		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-desc	.carousel-collection .card-desc	card-desc		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-desc::before	.carousel-collection .card-desc::before	card-desc		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back	.carousel-collection .card-back	card-back		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back-content	.carousel-collection .card-back-content	card-back-content		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-front, .carousel-collection .card-back	.carousel-collection .card-back	card-back		drop-branch
+src/css/components/UPC.css	.carousel-collection .card-front:not(#__av_prio_a#__av_prio_b), .carousel-collection .card-back:not(#__av_prio_a#__av_prio_b)	.carousel-collection .card-back:not(#__av_prio_a#__av_prio_b)	card-back		drop-branch
+src/css/components/UPC.css	.carousel-collection .card-back	.carousel-collection .card-back	card-back		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back:not(#__av_prio_a#__av_prio_b)	.carousel-collection .card-back:not(#__av_prio_a#__av_prio_b)	card-back		drop-rule
+src/css/components/UPC.css	.carousel-collection .card.flipped .card-back	.carousel-collection .card.flipped .card-back	card-back		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-inner, .carousel-collection .card-front, .carousel-collection .card-back, .carousel-collection .card-back-content	.carousel-collection .card-back	card-back		drop-branch
+src/css/components/UPC.css	.carousel-collection .card-inner, .carousel-collection .card-front, .carousel-collection .card-back, .carousel-collection .card-back-content	.carousel-collection .card-back-content	card-back-content		drop-branch
+src/css/components/UPC.css	.carousel-collection .av33-back	.carousel-collection .av33-back	av33-back		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-back::before	.carousel-collection .av33-back::before	av33-back		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-top	.carousel-collection .av33-top	av33-top		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-category	.carousel-collection .av33-category	av33-category		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-rating	.carousel-collection .av33-rating	av33-rating		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-title	.carousel-collection .av33-title	av33-title		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-rule	.carousel-collection .av33-rule	av33-rule		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-meta	.carousel-collection .av33-meta	av33-meta		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-meta > span	.carousel-collection .av33-meta > span	av33-meta		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-meta > i	.carousel-collection .av33-meta > i	av33-meta		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-meta small	.carousel-collection .av33-meta small	av33-meta		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-meta b	.carousel-collection .av33-meta b	av33-meta		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-meta .av33-episode b	.carousel-collection .av33-meta .av33-episode b	av33-meta,av33-episode		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-desc	.carousel-collection .av33-desc	av33-desc		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-desc > small	.carousel-collection .av33-desc > small	av33-desc		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-desc p	.carousel-collection .av33-desc p	av33-desc		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-watch	.carousel-collection .av33-watch	av33-watch		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-back	.carousel-collection .av33-back	av33-back		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-category	.carousel-collection .av33-category	av33-category		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-rating	.carousel-collection .av33-rating	av33-rating		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-title	.carousel-collection .av33-title	av33-title		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-meta	.carousel-collection .av33-meta	av33-meta		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-meta small	.carousel-collection .av33-meta small	av33-meta		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-meta b	.carousel-collection .av33-meta b	av33-meta		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-meta .av33-episode b	.carousel-collection .av33-meta .av33-episode b	av33-meta,av33-episode		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-desc	.carousel-collection .av33-desc	av33-desc		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-desc > small	.carousel-collection .av33-desc > small	av33-desc		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-desc p	.carousel-collection .av33-desc p	av33-desc		drop-rule
+src/css/components/UPC.css	.carousel-collection .av33-watch	.carousel-collection .av33-watch	av33-watch		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-back:not(#__av_prio_a#__av_prio_b)	.carousel-collection .card-back:not(#__av_prio_a#__av_prio_b)	card-back		drop-rule

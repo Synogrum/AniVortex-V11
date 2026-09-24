@@ -1,0 +1,195 @@
+file	context	selector	property	old_value	final_value	old_rule	final_rule
+src/css/banner/02-banner-layout.css		.banner-wrap:not(#__av_prio_a#__av_prio_b)	padding	26px 0 28px	20px 18px 18px	9	42
+src/css/banner/02-banner-layout.css		.banner-wrap:not(#__av_prio_a#__av_prio_b)	padding	20px 0 18px	20px 18px 18px	11	42
+src/css/banner/02-banner-layout.css		.banner-wrap:not(#__av_prio_a#__av_prio_b)	width	min(1790px, calc(100% - 32px))	100%	11	42
+src/css/banner/02-banner-layout.css		.banner-wrap:not(#__av_prio_a#__av_prio_b)	max-width	1790px	none	11	42
+src/css/banner/03-banner-transition.css		.banner-trending-join:not(#__av_prio_a#__av_prio_b)	max-width	1920px	none	1	11
+src/css/banner/03-banner-transition.css		.banner-trending-join:not(#__av_prio_a#__av_prio_b)	min-width	1808px	0	1	11
+src/css/banner/03-banner-transition.css		.banner-trending-join:not(#__av_prio_a#__av_prio_b)	height	clamp(60px, 4.4vw, 84px)	90px	1	22
+src/css/banner/03-banner-transition.css		.banner-trending-join:not(#__av_prio_a#__av_prio_b)	height	82px	90px	11	22
+src/css/banner/03-banner-transition.css		.banner-trending-join:not(#__av_prio_a#__av_prio_b)	z-index	24	12	11	29
+src/css/banner/03-banner-transition.css		.banner-trending-join:not(#__av_prio_a#__av_prio_b)	margin	-1px auto -82px	18px auto -90px	11	38
+src/css/banner/03-banner-transition.css		.banner-trending-join:not(#__av_prio_a#__av_prio_b)	margin	-1px auto -90px	18px auto -90px	22	38
+src/css/banner/03-banner-transition.css		.banner-trending-join:not(#__av_prio_a#__av_prio_b)::before	inset	0	6px 0 0 0	12	23
+src/css/banner/04-banner-color-merge.css		body .banner-wrap:not(#__av_prio_a#__av_prio_b)	padding-top	20px	92px	0	26
+src/css/banner/04-banner-color-merge.css		body .banner-wrap:not(#__av_prio_a#__av_prio_b)	padding-top	28px	92px	8	26
+src/css/banner/04-banner-color-merge.css	@media (max-width: 1279px)	body .banner-slider:not(#__av_prio_a#__av_prio_b)	transform	translateY(-18px)	translateY(-8px)	5	10
+src/css/banner/04-banner-color-merge.css	@media (max-width: 1279px)	body .banner-slider:not(#__av_prio_a#__av_prio_b)	margin-bottom	-18px	-8px	5	10
+src/css/banner/04-banner-color-merge.css		body .banner-right:not(#__av_prio_a#__av_prio_b)	padding-top	52px	74px	14	20
+src/css/banner/05-banner-final.css		body .page:not(#__av_prio_a#__av_prio_b)::after	top	calc(var(--av-equal-gap) * -1)	0	9	17
+src/css/banner/05-banner-final.css		body .page:not(#__av_prio_a#__av_prio_b)::after	height	var(--av-equal-gap)	0	9	17
+src/css/com/01-comments-core.css		.av10-card	grid-template-rows	70px minmax(0, 1fr) 50px	72px minmax(0, 1fr) 50px	26	94
+src/css/com/02-comments-layout.css		.av10-card	grid-template-rows	62px minmax(0, 1fr) 46px	60px minmax(0, 1fr) 44px	5	59
+src/css/com/02-comments-layout.css		.av10-card	padding	12px 14px 12px	14px	5	59
+src/css/com/02-comments-layout.css		.av10-head	min-height	56px	0	6	60
+src/css/com/02-comments-layout.css		.av10-message	grid-template-rows	52px minmax(0, 1fr)	62px minmax(0, 1fr)	13	29
+src/css/com/02-comments-layout.css		.av10-footer	padding-top	6px	7px	20	39
+src/css/com/02-comments-layout.css	@media (max-width: 1510px)	.av10-card	grid-template-rows	60px minmax(0, 1fr) 46px	58px minmax(0, 1fr) 44px	22	82
+src/css/com/02-comments-layout.css		.av10-body	padding	13px 13px 12px	15px 13px 13px	37	72
+src/css/com/02-comments-layout.css		.av10-footer	height	48px	44px	39	75
+src/css/com/03-comments-refinement.css		.av10-card	height	430px	392px	2	78
+src/css/com/03-comments-refinement.css		.av10-card	height	418px	392px	41	78
+src/css/com/03-comments-refinement.css		.av10-card	height	402px	392px	69	78
+src/css/com/03-comments-refinement.css		.av10-online	width	13px	10px	8	112
+src/css/com/03-comments-refinement.css		.av10-online	height	13px	10px	8	112
+src/css/com/03-comments-refinement.css		.av10-online	border-width	3px	2px	8	112
+src/css/com/03-comments-refinement.css		.av10-name	font-size	15.6px	16.6px	10	119
+src/css/com/03-comments-refinement.css		.av10-name	font-weight	840	850	10	119
+src/css/com/03-comments-refinement.css		.av10-series	flex	0 0 72px	0 0 52px	13	60
+src/css/com/03-comments-refinement.css		.av10-series	flex	0 0 58px	0 0 52px	44	60
+src/css/com/03-comments-refinement.css		.av10-series	width	calc(100% - 14px)	calc(100% - 34px)	13	60
+src/css/com/03-comments-refinement.css		.av10-series	width	calc(100% - 16px)	calc(100% - 34px)	44	60
+src/css/com/03-comments-refinement.css		.av10-series	height	72px	52px	13	60
+src/css/com/03-comments-refinement.css		.av10-series	height	58px	52px	44	60
+src/css/com/03-comments-refinement.css		.av10-series	margin	7px 7px 0	8px auto 0	13	60
+src/css/com/03-comments-refinement.css		.av10-series	margin	8px 8px 0	8px auto 0	44	60
+src/css/com/03-comments-refinement.css		.av10-series	grid-template-columns	minmax(0, 1fr) 28px	minmax(0, 1fr) 22px	13	60
+src/css/com/03-comments-refinement.css		.av10-series	grid-template-columns	minmax(0, 1fr) 24px	minmax(0, 1fr) 22px	44	60
+src/css/com/03-comments-refinement.css		.av10-series	padding	9px 9px 9px 13px	7px 10px 7px 13px	13	60
+src/css/com/03-comments-refinement.css		.av10-series	padding	8px 10px 8px 14px	7px 10px 7px 13px	44	60
+src/css/com/03-comments-refinement.css		.av10-body	padding	14px 13px 12px	8px 13px 8px	17	81
+src/css/com/03-comments-refinement.css		.av10-body	padding	12px 13px 12px	8px 13px 8px	52	81
+src/css/com/03-comments-refinement.css		.av10-series	gap	10px	9px	44	60
+src/css/com/03-comments-refinement.css		.av10-series	border-radius	14px	13px	44	60
+src/css/com/03-comments-refinement.css		.av10-series-arrow	width	24px	22px	49	101
+src/css/com/03-comments-refinement.css		.av10-series-arrow	height	24px	22px	49	101
+src/css/com/03-comments-refinement.css		.av10-series-arrow	border-radius	8px	7px	49	64
+src/css/com/03-comments-refinement.css		.av10-series-arrow	color	#e4ca82	transparent	49	106
+src/css/com/03-comments-refinement.css		.av10-series-arrow	font-size	16px	15px	49	64
+src/css/com/03-comments-refinement.css	@media (max-width: 1510px)	.av10-card	height	400px	382px	54	84
+src/css/com/03-comments-refinement.css	@media (max-width: 1510px)	.av10-series	flex-basis	56px	50px	55	66
+src/css/com/03-comments-refinement.css	@media (max-width: 1510px)	.av10-series	height	56px	50px	55	66
+src/css/com/03-comments-refinement.css	@media (max-width: 1510px)	.av10-series	width	calc(100% - 14px)	calc(100% - 28px)	55	66
+src/css/com/03-comments-refinement.css	@media (max-width: 1510px)	.av10-series	padding-left	13px	12px	55	66
+src/css/com/03-comments-refinement.css	@media (max-width: 1510px)	.av10-series-copy strong	font-size	11.4px	11.5px	56	95
+src/css/com/03-comments-refinement.css	@media (max-width: 1510px)	.av10-text	font-size	11.7px	12.8px	57	109
+src/css/com/03-comments-refinement.css		.av10-text	font-size	12.1px	13.7px	90	105
+src/css/com/03-comments-refinement.css		.av10-text	font-size	12.7px	13.7px	99	105
+src/css/com/03-comments-refinement.css		.av10-text	line-height	1.5	1.56	90	105
+src/css/com/03-comments-refinement.css		.av10-text	line-height	1.54	1.56	99	105
+src/css/com/03-comments-refinement.css		.av10-name	line-height	1.06	1.04	114	119
+src/css/com/04-comments-header.css		.comentarii-title-line	gap	6px	7px	2	33
+src/css/com/04-comments-header.css		.comentarii-title-line	gap	9px	7px	24	33
+src/css/com/04-comments-header.css		.comentarii-title-line::after	color	#78dccc	#79cfc5	3	35
+src/css/com/04-comments-header.css		.comentarii-title-line::after	color	rgba(120, 220, 204, 0.82)	#79cfc5	26	35
+src/css/com/04-comments-header.css		.comentarii-title-line::after	font-size	9px	8.1px	3	35
+src/css/com/04-comments-header.css		.comentarii-title-line::after	font-size	8.4px	8.1px	26	35
+src/css/com/04-comments-header.css		.comentarii-title-line::after	font-weight	850	800	3	35
+src/css/com/04-comments-header.css		.comentarii-title-line::after	letter-spacing	0.18em	0.16em	3	35
+src/css/com/04-comments-header.css		.comentarii-title-line::after	letter-spacing	0.19em	0.16em	26	35
+src/css/com/04-comments-header.css		.comentarii-tabs	margin-top	1px	0	8	36
+src/css/com/04-comments-header.css		.comentarii-top	align-items	flex-start	center	12	32
+src/css/com/04-comments-header.css		.comentarii-top	gap	16px	18px	12	32
+src/css/com/04-comments-header.css		.comentarii-tabs	gap	8px	7px	13	36
+src/css/com/04-comments-header.css		.com-category-selector	grid-template-columns	minmax(0, 1fr) 18px	minmax(0, 1fr) 14px	17	38
+src/css/com/04-comments-header.css		.com-category-selector	grid-template-columns	minmax(0, 1fr) 16px	minmax(0, 1fr) 14px	27	38
+src/css/com/04-comments-header.css		.com-category-selector	gap	4px	2px	17	38
+src/css/com/04-comments-header.css		.com-category-selector	padding	0 9px 0 13px	0 7px 0 10px	17	38
+src/css/com/04-comments-header.css		.comentarii-title-group h2	line-height	0.98	1	25	34
+src/css/com/04-comments-header.css		.com-category-selector	width	88px	76px	27	38
+src/css/com/04-comments-header.css		.com-category-selector	min-width	88px	76px	27	38
+src/css/com/04-comments-header.css		.com-category-selector	border-radius	10px	9px	27	38
+src/css/com/04-comments-header.css		.com-category-selector	margin-top	2px	0	27	38
+src/css/com/06-comments-art.css		.av10-card:not(#__av_prio_a#__av_prio_b)	height	416px	404px	26	38
+src/css/com/06-comments-art.css		.av10-series:not(#__av_prio_a#__av_prio_b)	flex	0 0 58px	0 0 54px	39	62
+src/css/com/06-comments-art.css		.av10-series:not(#__av_prio_a#__av_prio_b)	flex	0 0 50px	0 0 54px	55	62
+src/css/com/06-comments-art.css		.av10-series:not(#__av_prio_a#__av_prio_b)	height	58px	54px	39	62
+src/css/com/06-comments-art.css		.av10-series:not(#__av_prio_a#__av_prio_b)	height	50px	54px	55	62
+src/css/com/06-comments-art.css		.av10-series:not(#__av_prio_a#__av_prio_b)	padding	8px 8px 8px 12px	5px 8px 5px 12px	39	62
+src/css/com/06-comments-art.css		.av10-series:not(#__av_prio_a#__av_prio_b)	padding	4px 8px 4px 12px	5px 8px 5px 12px	55	62
+src/css/com/06-comments-art.css		.av10-series-copy strong:not(#__av_prio_a#__av_prio_b)	margin-top	2px	1px	56	60
+src/css/components/UPC.css		.carousel-collection.av-entertainment-shell	width	calc(100% - 16px)	100%	0	244
+src/css/components/UPC.css		.carousel-collection.av-entertainment-shell	max-width	1900px	none	0	244
+src/css/components/UPC.css		.carousel-collection.av-entertainment-shell	border	1px solid rgba(121, 235, 255, 0.10)	0	0	244
+src/css/components/UPC.css		.carousel-collection .carousel-track-wrapper	height	304px	320px	15	92
+src/css/components/UPC.css		.carousel-collection .card-inner	transition	transform .70s cubic-bezier(.2,.8,.2,1)	transform .62s cubic-bezier(.20,.80,.20,1),         -webkit-transform .62s cubic-bezier(.20,.80,.20,1)	36	114
+src/css/components/UPC.css		.carousel-collection .card-label	font-size	16px	17px	45	105
+src/css/components/UPC.css		.carousel-collection .card-label	font-weight	850	900	45	105
+src/css/components/UPC.css		.carousel-collection .card-label	line-height	1.12	1.08	45	105
+src/css/components/UPC.css		.carousel-collection .card-back	border	1px solid rgba(121,235,255,.23)	1px solid rgba(121,235,255,.30)	47	110
+src/css/components/UPC.css		.carousel-collection .av-card-front-meta	min-height	15px	17px	72	238
+src/css/components/UPC.css		.carousel-collection .av-card-front-meta	margin-top	4px	6px	72	238
+src/css/components/UPC.css		.carousel-collection .av-card-front-meta	margin-top	5px	6px	106	238
+src/css/components/UPC.css		.carousel-collection .av-card-front-meta	gap	6px	7px	72	238
+src/css/components/UPC.css		.carousel-collection .av-card-front-meta	font-size	8.5px	10.5px	72	238
+src/css/components/UPC.css		.carousel-collection .av-card-front-meta	font-size	9px	10.5px	106	238
+src/css/components/UPC.css		.carousel-collection .av-card-front-meta	font-weight	800	900	72	238
+src/css/components/UPC.css		.carousel-collection .av-card-front-meta	letter-spacing	.08em	.07em	72	238
+src/css/components/UPC.css		.carousel-collection .av-card-front-meta	letter-spacing	.075em	.07em	106	238
+src/css/components/UPC.css		.av-card-popover-wrap .av-popup-panel	grid-template-rows	16px         26px         58px         minmax(86px, 1fr)         34px         36px	18px         24px         56px         minmax(76px, 1fr)         30px         32px	163	204
+src/css/components/UPC.css		.av-card-popover-wrap .av-popup-category	letter-spacing	.10em	.09em	169	206
+src/css/components/UPC.css		.av-card-popover-wrap .av-popup-title	padding	0 4px	0 3px	171	208
+src/css/components/UPC.css		.av-card-popover-wrap .av-popup-trio	height	58px	56px	172	209
+src/css/components/UPC.css		.av-card-popover-wrap .av-popup-trio	padding	6px 8px	5px 7px	172	209
+src/css/components/UPC.css		.av-card-popover-wrap .av-popup-trio	border-radius	12px	11px	172	209
+src/css/components/UPC.css		.av-card-popover-wrap .av-popup-desc	min-height	86px	0	178	215
+src/css/components/UPC.css		.av-card-popover-wrap .av-popup-desc	padding	8px 10px 7px	8px 9px 7px	178	215
+src/css/components/UPC.css		.av-card-popover-wrap .av-popup-desc	border-radius	12px	11px	178	215
+src/css/components/UPC.css		.av-card-popover-wrap .av-popup-footer	height	34px	30px	181	218
+src/css/components/footer.css		.avf-outline-word	z-index	0	1	3	97
+src/css/components/footer.css		.avf-outline-word	left	50%	auto	3	97
+src/css/components/footer.css		.avf-outline-word	top	32%	200px	3	97
+src/css/components/footer.css		.avf-outline-word	justify-content	center	flex-end	3	97
+src/css/components/footer.css		.avf-outline-word	transform	translate(-50%, -50%)	none	3	97
+src/css/components/footer.css		.avf-outline-word span	transform	translate(var(--avf-dx), var(--avf-dy))     rotate(var(--avf-rot))     scale(0.84)	translate3d(0, 0, 0) rotate(0deg) scale(1)	4	126
+src/css/components/footer.css		.avf-hero	min-height	360px	350px	7	57
+src/css/components/footer.css		.avf-hero	padding	34px 46px 14px	18px 46px 14px	7	57
+src/css/components/footer.css		.avf-hero	align-items	center	start	7	57
+src/css/components/footer.css		.avf-brand-copy strong	color	#f0ffff	#f4ffff	12	139
+src/css/components/footer.css		.avf-brand-copy strong	font-weight	950	700	12	139
+src/css/components/footer.css		.avf-brand-copy strong	letter-spacing	0.20em	0.13em	12	143
+src/css/components/footer.css		.avf-brand-copy strong	letter-spacing	0.14em	0.13em	139	143
+src/css/components/footer.css		.avf-nav-columns	grid-template-columns	repeat(4, minmax(0, 1fr))	repeat(5, minmax(0, 1fr))	26	100
+src/css/components/footer.css		.avf-nav-columns	gap	10px	0	26	100
+src/css/components/footer.css		.avf-bottom	width	min(100%, 900px)	min(100%, 1260px)	32	76
+src/css/components/footer.css		.avf-bottom	padding	24px 28px 32px	24px 36px 34px	32	76
+src/css/components/footer.css	@media (max-width: 1120px)	.avf-hero	min-height	600px	590px	37	84
+src/css/components/footer.css	@media (max-width: 1120px)	.avf-outline-word	top	27%	95px	40	98
+src/css/components/footer.css		.avf-brand	margin-bottom	28px	14px	56	180
+src/css/components/footer.css		.avf-social-stack	margin-top	2px	0	66	104
+src/css/components/footer.css	@media (max-width: 1320px)	.avf-nav-columns	row-gap	26px	24px	81	117
+src/css/components/footer.css		.avf-brand-copy strong	font-size	14px	var(--avf-brand-title-size)	139	185
+src/css/components/footer.css		.avf-brand-copy strong	font-size	16px	var(--avf-brand-title-size)	143	185
+src/css/components/footer.css		.avf-brand-copy strong	line-height	1	1.02	139	143
+src/css/components/footer.css	@media (min-width: 1321px)	.avf-character	max-height	315px	360px	150	198
+src/css/components/footer.css	@media (min-width: 1321px) and (max-height: 820px)	.avf-brand	margin-bottom	26px	10px	161	214
+src/css/main/01-foundation.css		.serii-cerute::before	z-index	0	-1	106	107
+src/css/main/02-hall-of-fame.css		.desene-wrap .a-card .a-side .bad.bad-mini	top	0px	0	131	184
+src/css/main/02-hall-of-fame.css		.desene-wrap .a-card .a-side .bad.bad-mini	left	3px	0	131	184
+src/css/main/02-hall-of-fame.css		.desene-wrap .a-card .a-side .bad.bad-mini::after	left	42%	50%	132	186
+src/css/main/02-hall-of-fame.css		.desene-wrap .a-card .a-side .bad.bad-mini::after	width	2ch	35px	132	186
+src/css/main/03-navigation.css		.top-sugestii-panel .ts-category	height	46px	40px	18	73
+src/css/main/03-navigation.css		.top-sugestii-panel .ts-score-row	gap	7px	0	46	84
+src/css/main/03-navigation.css		.staff-activity-panel	padding	14px	10px	95	117
+src/css/main/03-navigation.css		.staff-activity-panel	border	3px solid rgba(255, 255, 255, 0.829)	2px solid rgba(222, 255, 249, .9)	95	117
+src/css/main/03-navigation.css		.staff-activity-panel	box-shadow	0 28px 80px rgba(0, 0, 0, 0.58),     0 0 24px rgba(39, 39, 39, 0.35),     inset 0 1px 0 rgba(255, 255, 255, 0.06)	0 20px 50px rgba(0, 0, 0, .48), inset 0 1px rgba(255, 255, 255, .18)	95	117
+src/css/main/05-sidebar-effects.css		.serii-programate	height	430px	585px	44	101
+src/css/main/06-favorites.css		.serii-cerute.serii-favorite-refresh	height	835px	831px	0	86
+src/css/main/06-favorites.css		.serii-cerute.serii-favorite-refresh	height	806px	831px	72	86
+src/css/main/06-favorites.css		.serii-favorite-refresh .fav-tag	height	18px	20px	31	89
+src/css/main/06-favorites.css		.serii-favorite-refresh .fav-tag	padding	0 6px	0 7px	31	89
+src/css/main/06-favorites.css		.serii-favorite-refresh .fav-tag	font-size	7.8px	8.6px	31	89
+src/css/main/06-favorites.css		.serii-favorite-refresh .fav-views	font-size	8.5px	9.5px	35	90
+src/css/main/06-favorites.css		.serii-favorite-refresh .fav-views	font-weight	800	850	35	90
+src/css/main/06-favorites.css		.serii-favorite-refresh .fav-info	grid-template-rows	18px 18px 14px	18px 20px 16px	76	87
+src/css/main/06-favorites.css		.serii-favorite-refresh .fav-info	row-gap	5px	11px	76	87
+src/css/main/08-news-and-effects.css		.av-news-featured	box-shadow	0 0 10px rgba(63, 232, 218, .25),     0 0 22px rgba(38, 167, 255, .13),     inset 0 1px rgba(255, 255, 255, .04),     0 14px 28px rgba(0, 15, 24, .15)	inset 0 1px rgba(255, 255, 255, .04),     0 14px 28px rgba(0, 15, 24, .15)	21	31
+src/css/main/08-news-and-effects.css		.av-news-led-track	inset	-34px	-42px	33	38
+src/css/main/08-news-and-effects.css		.av-news-led-track	inset	-22px	-42px	35	38
+src/css/trending/03-trending-responsive.css		#trendingMaster .trending-pair	transition	transform .28s ease, border-color .28s ease, box-shadow .28s ease	transform .32s cubic-bezier(.22, 1, .36, 1), border-color .3s ease, box-shadow .3s ease	24	55
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair::before	z-index	2	4	0	92
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair::before	z-index	5	4	71	92
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair::before	box-shadow	inset 0 1px 0 rgba(255,255,255,.045), inset 0 -1px 0 rgba(255,255,255,.025)	inset 0 0 0 1px rgba(255,255,255,.04), inset 0 1px 0 rgba(255,255,255,.05), inset 0 -12px 22px rgba(0,0,0,.08)	0	65
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair::before	box-shadow	inset 0 0 0 1px rgba(255,255,255,.035), inset 0 1px 0 rgba(255,255,255,.05), inset 0 -10px 18px rgba(0,0,0,.08)	inset 0 0 0 1px rgba(255,255,255,.04), inset 0 1px 0 rgba(255,255,255,.05), inset 0 -12px 22px rgba(0,0,0,.08)	53	65
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair::before	opacity	.55	.34	0	71
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair::before	opacity	.92	.34	65	71
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair::before	transition	opacity .28s ease, box-shadow .28s ease, border-color .28s ease	opacity .28s ease, filter .28s ease	53	71
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair::before	transition	opacity .28s ease, box-shadow .28s ease	opacity .28s ease, filter .28s ease	65	71
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair::after	border-radius	inherit	0 0 17px 17px	63	90
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair::after	transition	opacity .28s ease, box-shadow .28s ease, filter .28s ease	opacity .3s ease, filter .3s ease	63	72
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair::before	inset	-1px	0	71	92
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair::before	border-radius	25px	inherit	71	92
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair::before	padding	1px	0	71	92
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:not(#__av_prio_a#__av_prio_b)	padding-left	38px	7px	105	109
+src/css/trending/05-trending-effects.css		#trendingMaster .avt-v31-shard.s1:not(#__av_prio_a#__av_prio_b)	animation-duration	8.8s	11.5s	22	43
+src/css/trending/06-trending-final.css		#trendingMaster .trending-row-meta-left:not(#__av_prio_a#__av_prio_b), #trendingMaster .trending-row-meta-right:not(#__av_prio_a#__av_prio_b)	top	4px	7px	11	12

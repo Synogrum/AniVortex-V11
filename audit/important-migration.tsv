@@ -1,0 +1,796 @@
+file	selector	properties_migrated
+src/css/banner/02-banner-layout.css	.page	background,border-radius
+src/css/banner/02-banner-layout.css	".banner-wrap,
+.banner-slider"	border-radius
+src/css/banner/02-banner-layout.css	".banner,
+.banner.active"	border-radius,overflow
+src/css/banner/02-banner-layout.css	.image-card	border-radius,overflow
+src/css/banner/02-banner-layout.css	.page	position,overflow,background
+src/css/banner/02-banner-layout.css	.banner-wrap	width,max-width,margin,padding
+src/css/banner/02-banner-layout.css	.banner-wrap	width,max-width,padding
+src/css/banner/02-banner-layout.css	.banner	min-height
+src/css/banner/02-banner-layout.css	.banner-grid	min-height,align-items
+src/css/banner/02-banner-layout.css	.banner-left	padding
+src/css/banner/02-banner-layout.css	.left-inner	max-width
+src/css/banner/02-banner-layout.css	.top-badge	bottom,margin-bottom
+src/css/banner/02-banner-layout.css	.title-row	margin-bottom
+src/css/banner/02-banner-layout.css	.title-text	font-size,bottom
+src/css/banner/02-banner-layout.css	.genre-row	margin-bottom,font-size,bottom
+src/css/banner/02-banner-layout.css	.meta-grid	margin-bottom,gap
+src/css/banner/02-banner-layout.css	".meta-item,
+.meta-item.meta-big"	min-height
+src/css/banner/02-banner-layout.css	.description	max-width,font-size,line-height,-webkit-line-clamp,line-clamp
+src/css/banner/02-banner-layout.css	.button-row	margin-top
+src/css/banner/02-banner-layout.css	.btn	padding,font-size
+src/css/banner/02-banner-layout.css	.banner-right	padding
+src/css/banner/02-banner-layout.css	.image-group	max-width,left,bottom
+src/css/banner/02-banner-layout.css	.image-card	height,min-height
+src/css/banner/02-banner-layout.css	.hero-image	height
+src/css/banner/02-banner-layout.css	.thumb-box	bottom,left
+src/css/banner/02-banner-layout.css	.thumb-box img	width,height
+src/css/banner/02-banner-layout.css	.slider-row	bottom
+src/css/banner/02-banner-layout.css	.banner-grid	min-height
+src/css/banner/02-banner-layout.css	".banner-left,
+  .banner-right"	padding
+src/css/banner/02-banner-layout.css	.banner-right	padding-bottom
+src/css/banner/02-banner-layout.css	".image-group,
+  .image-card,
+  .hero-image"	height,min-height
+src/css/banner/02-banner-layout.css	.hero-image	width,height
+src/css/banner/02-banner-layout.css	.banner-wrap	width,padding
+src/css/banner/02-banner-layout.css	".banner-left,
+  .banner-right"	padding
+src/css/banner/02-banner-layout.css	.hero-image	height
+src/css/banner/02-banner-layout.css	.description	font-size,line-height
+src/css/banner/02-banner-layout.css	.button-row	margin-top
+src/css/banner/02-banner-layout.css	.page	box-sizing,position,isolation,width,max-width,min-width,margin-left,margin-right,overflow,border-radius
+src/css/banner/02-banner-layout.css	.banner-wrap	box-sizing,width,max-width,margin,padding
+src/css/banner/02-banner-layout.css	".page::before,
+.page::after"	border-radius
+src/css/banner/02-banner-layout.css	.page	width,max-width
+src/css/banner/02-banner-layout.css	.page	width,min-width
+src/css/banner/02-banner-layout.css	.banner-wrap	width,padding-inline
+src/css/banner/02-banner-layout.css	body .page	padding-bottom
+src/css/banner/02-banner-layout.css	body .banner-trending-join + #trendingMaster	margin-top
+src/css/banner/02-banner-layout.css	body .page	position,z-index,padding-bottom,margin-bottom
+src/css/banner/02-banner-layout.css	body .banner-wrap	padding-bottom
+src/css/banner/02-banner-layout.css	.banner-trending-join	z-index,width,max-width,min-width,height,margin,background,overflow
+src/css/banner/02-banner-layout.css	.banner-trending-join::before	inset,opacity
+src/css/banner/02-banner-layout.css	.banner-trending-join svg	overflow
+src/css/banner/02-banner-layout.css	.banner-trending-join-fill	fill
+src/css/banner/02-banner-layout.css	.banner-trending-join-gold	stroke-width
+src/css/banner/02-banner-layout.css	.banner-trending-join-teal	stroke-width,opacity
+src/css/banner/02-banner-layout.css	#trendingMaster	margin-top,padding-top,border-top,box-shadow
+src/css/banner/02-banner-layout.css	#trendingMaster::before	inset
+src/css/banner/02-banner-layout.css	.banner-trending-join	min-width,height,margin
+src/css/banner/02-banner-layout.css	#trendingMaster	padding-top
+src/css/banner/03-banner-transition.css	body .banner-wrap	padding-bottom
+src/css/banner/03-banner-transition.css	.banner-trending-join	position,z-index,width,max-width,min-width,height,margin,overflow,pointer-events,background,isolation
+src/css/banner/03-banner-transition.css	#trendingMaster	margin-top,border-top,padding-top
+src/css/banner/03-banner-transition.css	#trendingMaster::before	inset
+src/css/banner/03-banner-transition.css	.banner-trending-join	min-width,height
+src/css/banner/03-banner-transition.css	.banner-trending-join::before	inset
+src/css/banner/03-banner-transition.css	.banner-trending-join	--banner-trending-join-surface,position,z-index,display,width,max-width,min-width,height,margin,overflow,pointer-events,background,isolation
+src/css/banner/03-banner-transition.css	.banner-trending-join::before	content,position,inset,z-index,pointer-events,opacity,background-image,background-size,background-repeat,animation
+src/css/banner/03-banner-transition.css	.banner-trending-join svg	position,z-index,display,width,height,overflow,filter
+src/css/banner/03-banner-transition.css	.banner-trending-join-fill	fill
+src/css/banner/03-banner-transition.css	".banner-trending-join-gold,
+.banner-trending-join-teal"	display,fill,vector-effect,stroke-linecap,stroke-linejoin
+src/css/banner/03-banner-transition.css	.banner-trending-join-gold	stroke,stroke-width
+src/css/banner/03-banner-transition.css	.banner-trending-join-teal	stroke,stroke-width
+src/css/banner/03-banner-transition.css	"body .page,
+body .banner-wrap"	margin-bottom,padding-bottom
+src/css/banner/03-banner-transition.css	.banner-trending-join	height,margin-bottom
+src/css/banner/03-banner-transition.css	.banner-trending-join	height,margin-bottom
+src/css/banner/03-banner-transition.css	.banner-trending-join	width,max-width,margin-left,margin-right
+src/css/banner/03-banner-transition.css	.banner-trending-join	width,max-width
+src/css/banner/03-banner-transition.css	.banner-trending-join	height,margin
+src/css/banner/03-banner-transition.css	.banner-trending-join::before	inset
+src/css/banner/03-banner-transition.css	.banner-trending-join	height,margin-bottom
+src/css/banner/03-banner-transition.css	.banner-trending-join	height,margin-bottom
+src/css/banner/03-banner-transition.css	".banner-slider,
+.banner"	position,z-index
+src/css/banner/03-banner-transition.css	.banner-slider	overflow
+src/css/banner/03-banner-transition.css	.banner	overflow
+src/css/banner/03-banner-transition.css	.banner-trending-join	z-index,margin
+src/css/banner/03-banner-transition.css	#trendingMaster	position,z-index
+src/css/banner/03-banner-transition.css	.banner-trending-join	margin-top,margin-bottom
+src/css/banner/03-banner-transition.css	.banner-trending-join	margin-top,margin-bottom
+src/css/banner/03-banner-transition.css	.banner	min-height,padding-bottom
+src/css/banner/03-banner-transition.css	.banner-grid	min-height,align-items,transform
+src/css/banner/03-banner-transition.css	".banner-left,
+.banner-right"	padding-top,padding-bottom
+src/css/banner/03-banner-transition.css	.left-inner	transform
+src/css/banner/03-banner-transition.css	.top-badge	bottom
+src/css/banner/03-banner-transition.css	.banner-trending-join	margin
+src/css/banner/03-banner-transition.css	.banner-grid	min-height,transform
+src/css/banner/03-banner-transition.css	".banner-left,
+    .banner-right"	padding-top,padding-bottom
+src/css/banner/03-banner-transition.css	.banner-trending-join	margin-top,margin-bottom
+src/css/banner/03-banner-transition.css	.banner-grid	min-height,transform
+src/css/banner/03-banner-transition.css	".banner-left,
+    .banner-right"	padding-top,padding-bottom
+src/css/banner/03-banner-transition.css	.banner-trending-join	margin-top,margin-bottom
+src/css/banner/04-banner-color-merge.css	body .banner-wrap	padding-top,padding-bottom
+src/css/banner/04-banner-color-merge.css	body .banner-slider	transform,margin-bottom
+src/css/banner/04-banner-color-merge.css	body .banner-grid	transform
+src/css/banner/04-banner-color-merge.css	body .left-inner	transform
+src/css/banner/04-banner-color-merge.css	body .page	padding-bottom
+src/css/banner/04-banner-color-merge.css	body .banner-trending-join	margin-top
+src/css/banner/04-banner-color-merge.css	body .banner-slider	transform,margin-bottom
+src/css/banner/04-banner-color-merge.css	body .banner-wrap	padding-bottom
+src/css/banner/04-banner-color-merge.css	body .banner-slider	transform,margin-bottom
+src/css/banner/04-banner-color-merge.css	body .banner-wrap	padding-bottom
+src/css/banner/04-banner-color-merge.css	body .page	padding-bottom
+src/css/banner/04-banner-color-merge.css	body .banner-wrap	padding-top,padding-bottom
+src/css/banner/04-banner-color-merge.css	body .banner-slider	transform,margin-bottom
+src/css/banner/04-banner-color-merge.css	body .banner-slider	transform,margin-bottom
+src/css/banner/04-banner-color-merge.css	body .banner-wrap	padding-top,padding-bottom
+src/css/banner/04-banner-color-merge.css	body .banner-slider	transform,margin-bottom
+src/css/banner/04-banner-color-merge.css	body .banner-wrap	padding-top,padding-bottom
+src/css/banner/04-banner-color-merge.css	body .banner-right	align-items,padding-top
+src/css/banner/04-banner-color-merge.css	body .image-group	transform
+src/css/banner/04-banner-color-merge.css	body .banner-right	padding-top
+src/css/banner/04-banner-color-merge.css	body .image-group	transform
+src/css/banner/04-banner-color-merge.css	body .banner-right	padding-top
+src/css/banner/04-banner-color-merge.css	body .image-group	transform
+src/css/banner/04-banner-color-merge.css	body .banner-right	align-items,padding-top
+src/css/banner/04-banner-color-merge.css	body .image-group	transform
+src/css/banner/04-banner-color-merge.css	body .banner-right	padding-top
+src/css/banner/04-banner-color-merge.css	body .image-group	transform
+src/css/banner/04-banner-color-merge.css	body .banner-right	padding-top
+src/css/banner/04-banner-color-merge.css	body .image-group	transform
+src/css/banner/04-banner-color-merge.css	body .banner-wrap	padding-top
+src/css/banner/04-banner-color-merge.css	body .banner-slider	transform,margin-bottom
+src/css/banner/04-banner-color-merge.css	body .banner-wrap	padding-top
+src/css/banner/04-banner-color-merge.css	body .banner-wrap	padding-top
+src/css/banner/04-banner-color-merge.css	"html,
+body,
+body .page,
+body .banner-wrap,
+body #trendingMaster,
+body .banner-trending-join"	background,background-image
+src/css/banner/04-banner-color-merge.css	"body .banner,
+body .banner.active"	box-shadow
+src/css/banner/04-banner-color-merge.css	body .banner-trending-join svg	filter
+src/css/banner/04-banner-color-merge.css	"body .page::after,
+body #trendingMaster::after,
+body .banner-trending-join::after"	background,background-image,opacity
+src/css/banner/04-banner-color-merge.css	"body .banner-trending-join-fill,
+body .banner-trending-join-topfill"	fill
+src/css/banner/04-banner-color-merge.css	body .banner-trending-join-bandfill	fill,opacity
+src/css/banner/04-banner-color-merge.css	body .banner-trending-join-gold	stroke
+src/css/banner/04-banner-color-merge.css	body .banner-trending-join-teal	stroke
+src/css/banner/04-banner-color-merge.css	"body .page::before,
+body #trendingMaster::before,
+body .banner-trending-join::before"	content,display,position,inset,z-index,pointer-events,opacity,background-image,background-size,background-repeat,mask-image,-webkit-mask-image,animation
+src/css/banner/05-banner-final.css	body .page	position,overflow
+src/css/banner/05-banner-final.css	body .page::after	content,position,left,right,top,height,background,background-image,z-index,pointer-events,opacity,box-shadow
+src/css/banner/05-banner-final.css	body .page::before	inset
+src/css/banner/05-banner-final.css	body .page > *	position,z-index
+src/css/banner/05-banner-final.css	body .header	top
+src/css/banner/05-banner-final.css	body .banner-wrap	padding-top,padding-bottom
+src/css/banner/05-banner-final.css	body .banner-slider	transform,margin-bottom
+src/css/banner/05-banner-final.css	body .page	padding-bottom
+src/css/banner/05-banner-final.css	body .banner-trending-join	margin-top
+src/css/banner/05-banner-final.css	body .page::after	top,height
+src/css/banner/05-banner-final.css	body .page::before	inset
+src/css/banner/05-banner-final.css	body .page::after	top,height
+src/css/banner/05-banner-final.css	body .page::before	inset
+src/css/banner/05-banner-final.css	body .banner-wrap	padding-top,padding-bottom
+src/css/banner/05-banner-final.css	body .page::after	top,height
+src/css/banner/05-banner-final.css	body .page::before	inset
+src/css/banner/05-banner-final.css	body .banner-wrap	padding-top,padding-bottom
+src/css/banner/05-banner-final.css	body .page	padding-top
+src/css/banner/05-banner-final.css	body .page::after	top,height,content
+src/css/banner/05-banner-final.css	body .page::before	inset
+src/css/banner/05-banner-final.css	"html,
+body"	margin,padding,background,background-image
+src/css/banner/05-banner-final.css	body .page	margin-top,padding-top
+src/css/com/01-comments-core.css	".comentarii-section::before,
+  .av10-card,
+  .av10-card::before,
+  .av10-glow,
+  .av10-geometry span,
+  .av10-message::before,
+  .av10-message::after,
+  .av10-symbol"	animation,transition
+src/css/com/01-comments-core.css	".comentarii-content,
+.comentarii-track"	background,background-image,box-shadow
+src/css/com/01-comments-core.css	".comentarii-track::before,
+.comentarii-track::after"	content,display
+src/css/com/01-comments-core.css	.av10-card	border-radius
+src/css/com/01-comments-core.css	.av10-head	transform
+src/css/com/01-comments-core.css	.av10-avatar	border-radius,font-size
+src/css/com/01-comments-core.css	.av10-avatar img	border-radius
+src/css/com/01-comments-core.css	.av10-message	border-radius
+src/css/com/01-comments-core.css	.av10-reactions	border-radius
+src/css/com/01-comments-core.css	.av10-reaction	border-radius
+src/css/com/02-comments-layout.css	.comentarii-section::after	content,display,background,filter
+src/css/com/02-comments-layout.css	.av10-head	transform
+src/css/com/02-comments-layout.css	.av10-head	transform
+src/css/com/02-comments-layout.css	.av10-head	transform
+src/css/com/02-comments-layout.css	.av10-message	border-radius
+src/css/com/02-comments-layout.css	.av10-reactions	border-radius
+src/css/com/02-comments-layout.css	.av10-reaction	border-radius
+src/css/com/03-comments-refinement.css	.av10-head	transform
+src/css/com/03-comments-refinement.css	.av10-message	border-radius
+src/css/com/03-comments-refinement.css	.av10-message	border-radius
+src/css/com/03-comments-refinement.css	.av10-series-arrow	display,align-items,justify-content
+src/css/com/04-comments-header.css	.com-eyebrow	display
+src/css/com/04-comments-header.css	.com-live-count	display
+src/css/com/04-comments-header.css	.comentarii-tabs::before	content,display
+src/css/com/05-comments-symbols.css	.av10-symbol	color,font-size
+src/css/com/05-comments-symbols.css	.av10-symbol	animation
+src/css/com/05-comments-symbols.css	.av10-symbol	color,font-size,text-shadow
+src/css/com/05-comments-symbols.css	.av10-symbol::before	content
+src/css/com/05-comments-symbols.css	.av10-symbol	right,bottom,width,height,display,place-items,overflow,color,font-size,line-height,opacity,background,text-shadow,--av-symbol-url,animation
+src/css/com/05-comments-symbols.css	".av10-symbol::before,
+.av10-symbol::after"	content,display,-webkit-mask-image,mask-image,background
+src/css/com/05-comments-symbols.css	".av10-card:has(.av10-symbol-img[src$=""Dragon.png""]) .av10-symbol,
+.av10-card:has(.av10-symbol-img[src$=""Fluture.png""]) .av10-symbol,
+.av10-card:has(.av10-symbol-img[src$=""Val.png""]) .av10-symbol"	width,height,right,bottom
+src/css/com/05-comments-symbols.css	".av10-card:has(.av10-symbol-img[src$=""Fulger.png""]) .av10-symbol,
+.av10-card:has(.av10-symbol-img[src$=""Foc.png""]) .av10-symbol"	width,height,right,bottom
+src/css/com/05-comments-symbols.css	.av10-symbol	width,height,right,bottom
+src/css/com/05-comments-symbols.css	.av10-symbol	width,height,right,bottom
+src/css/com/05-comments-symbols.css	.av10-symbol	animation
+src/css/com/06-comments-art.css	".av10-card:has(.av10-symbol-img[src$=""Phoenix.png""]) .av10-symbol,
+.av10-card:has(.av10-symbol-img[src$=""Corb.png""]) .av10-symbol,
+.av10-card:has(.av10-symbol-img[src$=""Vant.png""]) .av10-symbol"	width,height,right,bottom
+src/css/com/06-comments-art.css	".av10-card:has(.av10-symbol-img[src$=""Coroana.png""]) .av10-symbol,
+.av10-card:has(.av10-symbol-img[src$=""Stea.png""]) .av10-symbol,
+.av10-card:has(.av10-symbol-img[src$=""Cristal.png""]) .av10-symbol,
+.av10-card:has(.av10-symbol-img[src$=""Soare.png""]) .av10-symbol"	width,height,right,bottom
+src/css/com/06-comments-art.css	".av10-card:has(.av10-symbol-img[src$=""Oni.png""]) .av10-symbol,
+.av10-card:has(.av10-symbol-img[src$=""Tigru.png""]) .av10-symbol,
+.av10-card:has(.av10-symbol-img[src$=""Lup.png""]) .av10-symbol,
+.av10-card:has(.av10-symbol-img[src$=""Sarpe.png""]) .av10-symbol,
+.av10-card:has(.av10-symbol-img[src$=""Lotus.png""]) .av10-symbol"	width,height,right,bottom
+src/css/com/06-comments-art.css	.av10-symbol	z-index
+src/css/com/06-comments-art.css	".av10-card::after,
+  .av10-body::before"	transition
+src/css/com/06-comments-art.css	.av10-number	color,opacity
+src/css/com/06-comments-art.css	.av10-number	color,opacity
+src/css/com/06-comments-art.css	.av10-number	opacity
+src/css/com/06-comments-art.css	.com-category-selector	width,min-width,max-width,flex,padding-left,padding-right,gap,white-space
+src/css/com/06-comments-art.css	.com-category-selector .com-cat-label	width,min-width,white-space
+src/css/com/06-comments-art.css	.com-category-selector	width,min-width
+src/css/com/06-comments-art.css	.av10-card	height
+src/css/com/06-comments-art.css	.av10-series	flex,height,align-items,padding
+src/css/com/06-comments-art.css	.av10-series-copy	display,min-width,overflow
+src/css/com/06-comments-art.css	".av10-series-copy small,
+.av10-series-copy strong,
+.av10-series-copy .av10-series-meta"	display
+src/css/com/06-comments-art.css	.av10-series-copy strong	margin-top,max-width,overflow,text-overflow,white-space
+src/css/com/06-comments-art.css	.av10-series-meta	margin-top,overflow,color,font-size,font-style,font-weight,line-height,letter-spacing,text-overflow,white-space,opacity
+src/css/com/06-comments-art.css	.av10-body	padding-top
+src/css/com/06-comments-art.css	.av10-card	height
+src/css/com/06-comments-art.css	.av10-series	flex-basis,height
+src/css/com/06-comments-art.css	.av10-series-meta	font-size
+src/css/com/06-comments-art.css	.av10-card	height
+src/css/com/06-comments-art.css	.av10-series	flex-basis,height
+src/css/com/06-comments-art.css	.av10-series-meta	font-size
+src/css/com/06-comments-art.css	.av10-card	height
+src/css/com/06-comments-art.css	.av10-series	flex,height,padding,align-items
+src/css/com/06-comments-art.css	.av10-series-copy	display,min-width,overflow
+src/css/com/06-comments-art.css	.av10-series-copy small	display,font-size,line-height,letter-spacing
+src/css/com/06-comments-art.css	.av10-series-copy strong	display,margin-top,font-size,line-height,white-space,overflow,text-overflow
+src/css/com/06-comments-art.css	.av10-series-meta	display,margin-top,color,font-size,font-style,font-weight,line-height,letter-spacing,white-space,overflow,text-overflow,opacity
+src/css/com/06-comments-art.css	.av10-series-arrow	align-self
+src/css/com/06-comments-art.css	.av10-card	height
+src/css/com/06-comments-art.css	.av10-series	flex-basis,height
+src/css/com/06-comments-art.css	.av10-series-copy small	font-size
+src/css/com/06-comments-art.css	.av10-series-copy strong	font-size
+src/css/com/06-comments-art.css	.av10-series-meta	font-size
+src/css/com/06-comments-art.css	.av10-card	height
+src/css/com/06-comments-art.css	.av10-series	flex-basis,height,padding-left
+src/css/com/06-comments-art.css	.av10-series-copy small	font-size
+src/css/com/06-comments-art.css	.av10-series-copy strong	font-size
+src/css/com/06-comments-art.css	.av10-series-meta	font-size
+src/css/com/06-comments-art.css	.av10-series	flex,height,padding
+src/css/com/06-comments-art.css	.av10-series-copy strong	margin-top
+src/css/com/06-comments-art.css	.av10-series-meta	margin-top
+src/css/com/06-comments-art.css	.av10-series	flex-basis,height,padding-top,padding-bottom
+src/css/com/06-comments-art.css	.av10-series	flex-basis,height
+src/css/com/06-comments-art.css	.av10-series-copy strong	margin-top
+src/css/com/06-comments-art.css	.av10-series-meta	margin-top
+src/css/com/06-comments-art.css	.av10-series	flex,height,padding
+src/css/com/06-comments-art.css	.av10-series-copy	display,flex-direction,justify-content,gap
+src/css/com/06-comments-art.css	".av10-series-copy small,
+.av10-series-copy strong,
+.av10-series-meta"	margin-top,margin-bottom
+src/css/com/06-comments-art.css	.av10-series	flex-basis,height
+src/css/com/06-comments-art.css	.av10-series-copy	gap
+src/css/com/06-comments-art.css	.av10-series	flex-basis,height
+src/css/com/07-comments-final.css	.comentarii-section	background,background-color,background-image
+src/css/com/07-comments-final.css	".comentarii-content,
+.comentarii-track"	background,background-color,background-image,box-shadow
+src/css/com/07-comments-final.css	".comentarii-track::before,
+.comentarii-track::after,
+.comentarii-content::before,
+.comentarii-content::after"	content,display
+src/css/com/07-comments-final.css	".comentarii-content,
+.comentarii-track"	background,background-color,background-image,box-shadow,filter
+src/css/com/07-comments-final.css	".av10-card,
+.av10-card:hover"	box-shadow
+src/css/com/07-comments-final.css	".comentarii-track::before,
+.comentarii-track::after,
+.comentarii-content::before,
+.comentarii-content::after"	content,display,background,box-shadow,filter
+src/css/com/07-comments-final.css	.comentarii-section	margin-top,padding-top
+src/css/com/07-comments-final.css	.comentarii-section	padding-top
+src/css/com/07-comments-final.css	.comentarii-section	padding-top
+src/css/com/07-comments-final.css	.comentarii-section	padding-top
+src/css/com/07-comments-final.css	body .comentarii-section::before	opacity,background-image,background-size
+src/css/com/07-comments-final.css	.comentarii-section	border-left,border-right,border-inline,filter
+src/css/com/07-comments-final.css	.comentarii-section	border-left,border-right,border-inline
+src/css/com/07-comments-final.css	.comentarii-section	border-left,border-right,border-inline
+src/css/com/07-comments-final.css	.comentarii-frame-v7	border
+src/css/components/UPC.css	.carousel-collection .vezi-tot	display
+src/css/components/UPC.css	.carousel-collection .carousel-track	transform
+src/css/components/UPC.css	.carousel-collection .card.av-exit-left	left,top
+src/css/components/UPC.css	.carousel-collection .card.av-exit-right	left,top
+src/css/components/UPC.css	.carousel-collection .card.av-enter-right	left,top
+src/css/components/UPC.css	.carousel-collection .card.av-enter-left	left,top
+src/css/components/UPC.css	".carousel-collection .card-back-meta-col:nth-of-type(2),
+.carousel-collection .card-back-meta-div,
+.carousel-collection .card-back-meta-stars"	display
+src/css/components/UPC.css	.carousel-collection .card-back-side	display
+src/css/components/UPC.css	.carousel-collection .card-back-meta-col	display
+src/css/components/UPC.css	".carousel-collection *,
+    .carousel-collection *::before,
+    .carousel-collection *::after"	animation,transition-duration
+src/css/components/UPC.css	.carousel-collection .card.flipped .card-inner	transform,-webkit-transform
+src/css/components/UPC.css	".carousel-collection .card-front,
+.carousel-collection .card-back"	-webkit-backface-visibility,backface-visibility
+src/css/components/UPC.css	.carousel-collection .card-back	transform,-webkit-transform
+src/css/components/UPC.css	".carousel-collection .av-back-plus,
+.carousel-collection .av-back-footer-info,
+.carousel-collection .av-back-center,
+.carousel-collection .av-card-back-kicker"	display
+src/css/components/UPC.css	".carousel-collection .card-inner,
+.carousel-collection .card.flipped .card-inner"	transform,-webkit-transform
+src/css/components/UPC.css	.carousel-collection .card-back	display
+src/css/components/UPC.css	.av-card-popover-wrap[hidden]	display
+src/css/components/UPC.css	.av-card-popover-wrap.is-measuring .av-popup-panel	opacity,visibility
+src/css/components/UPC.css	.av-card-popover-wrap .av-popup-genre-footer	color
+src/css/components/UPC.css	".av-card-popover-wrap .av-popup-panel,
+    .av-card-popover-wrap .av-popup-watch"	transition-duration
+src/css/components/body.css	"*,
+  *::before,
+  *::after"	animation-duration,animation-iteration-count,transition-duration,scroll-behavior
+src/css/components/footer.css	".avf-outline-word span,
+  .avf-action,
+  .avf-social-circle,
+  .avf-az a,
+  .avf-nav-column a"	animation,transition-duration
+src/css/components/footer.css	.avf-outline-word span	transform,opacity
+src/css/components/footer.css	.avf-brand-social	display
+src/css/components/footer.css	.avf-social-item	width,max-width,margin,display
+src/css/components/footer.css	.avf-social-item:hover	transform
+src/css/components/footer.css	.avf-social-item	max-width
+src/css/components/footer.css	.avf-social-item	width,max-width,min-height,padding,margin,display,align-items,gap,border,border-radius,background,box-shadow,color
+src/css/components/footer.css	.avf-social-item:hover	transform,border,background,box-shadow,color
+src/css/components/footer.css	.avf-social-item-icon	width,height,flex,display,place-items,border,border-radius,background,color,font-size,box-shadow
+src/css/components/footer.css	.avf-social-item:hover .avf-social-item-icon	transform,color,border-color,background
+src/css/components/footer.css	.avf-social-item-copy	display
+src/css/components/footer.css	.avf-social-item-copy b	color,font-size,line-height,font-weight
+src/css/components/footer.css	.avf-social-item:hover .avf-social-item-copy b	color
+src/css/components/footer.css	.avf-social-item-copy small	display
+src/css/components/footer.css	.avf-social-item	max-width
+src/css/components/footer.css	.avf-outline-word span	animation
+src/css/components/footer.css	.avf-outline-word span	animation,transform,opacity,filter
+src/css/components/footer.css	".avf-outline-word.is-gathering span,
+.avf-outline-word.is-gathering span:nth-child(3n)"	-webkit-text-stroke-color,text-shadow,filter
+src/css/components/footer.css	".avf-outline-word.is-assembled span,
+.avf-outline-word.is-assembled span:nth-child(3n)"	-webkit-text-stroke-color,text-shadow,filter
+src/css/components/footer.css	.avf-outline-word span	transition
+src/css/components/footer.css	.av-footer	width,max-width,margin-left,margin-right
+src/css/components/footer.css	.av-footer	width,max-width,margin-left,margin-right
+src/css/components/footer.css	.av-footer	width,max-width,margin-left,margin-right
+src/css/components/footer.css	.av-footer	width,max-width
+src/css/components/footer.css	.av-footer	margin-top
+src/css/components/footer.css	".avf-nav-column a,
+.avf-social-item-copy b"	font-size
+src/css/components/footer.css	.avf-social-item-icon	width,height,flex-basis
+src/css/components/hardening.css	html	scroll-behavior
+src/css/components/hardening.css	"*,
+  *::before,
+  *::after"	animation-duration,animation-iteration-count,transition-duration,scroll-behavior
+src/css/components/hot-news-new.css	".right-sidebar > .serii-programate,
+.right-sidebar > .serii-programate.is-empty,
+.right-sidebar > .serii-programate.has-program"	height,min-height,max-height
+src/css/main/04-sidebar-layout.css	.sb-twitter.click-effect	background,border
+src/css/main/04-sidebar-layout.css	".share-banner-section,
+.sb-right-group,
+.sb-buttons-group,
+.plus-dropdown"	overflow
+src/css/main/04-sidebar-layout.css	".left-sidebar,
+.right-sidebar"	row-gap
+src/css/main/04-sidebar-layout.css	".left-sidebar > *,
+.right-sidebar > :not(.modal-overlay):not(.favorite-status-popup)"	top,bottom,margin-top,margin-bottom
+src/css/main/04-sidebar-layout.css	.left-sidebar > .membri-user	left,right
+src/css/main/05-sidebar-effects.css	.serii-cerute::before	content,display
+src/css/main/05-sidebar-effects.css	.stiri-anime::before	content,display
+src/css/main/05-sidebar-effects.css	.serii-programate::before	content,display
+src/css/main/05-sidebar-effects.css	.zile-butoane button	text-decoration
+src/css/main/05-sidebar-effects.css	.serii-programate .program-header	padding-left,padding-right
+src/css/main/05-sidebar-effects.css	.serii-programate .titlu-programate	width,max-width,white-space
+src/css/main/05-sidebar-effects.css	.serii-programate .program-summary	position,inset,margin-left,transform
+src/css/main/05-sidebar-effects.css	.serii-programate .program-afisat	width,max-width,left,right
+src/css/main/05-sidebar-effects.css	".serii-programate,
+.serii-programate.is-empty,
+.serii-programate.has-program"	height,min-height,max-height
+src/css/main/05-sidebar-effects.css	".serii-programate .program-afisat,
+.serii-programate .program-afisat.is-empty,
+.serii-programate .program-afisat.has-program"	min-height,height,flex
+src/css/main/05-sidebar-effects.css	".serii-programate .program-list,
+.serii-programate .program-afisat.is-empty .program-list,
+.serii-programate .program-afisat.has-program .program-list"	min-height,height,max-height,flex,overflow-y
+src/css/main/05-sidebar-effects.css	".serii-programate .program-empty,
+.serii-programate .program-afisat.is-empty .program-empty"	min-height
+src/css/main/05-sidebar-effects.css	".serii-programate .wrapper-disclaimer,
+.serii-programate.is-empty .wrapper-disclaimer,
+.serii-programate.has-program .wrapper-disclaimer"	margin
+src/css/main/05-sidebar-effects.css	".serii-programate,
+  .serii-programate.is-empty,
+  .serii-programate.has-program"	height,min-height,max-height
+src/css/main/05-sidebar-effects.css	.serii-programate .zile-butoane button	pointer-events
+src/css/main/06-favorites.css	.serii-cerute.serii-favorite-refresh::before	content,display
+src/css/main/06-favorites.css	.serii-favorite-refresh .fav-action	pointer-events
+src/css/main/06-favorites.css	.serii-favorite-refresh .fav-genre	display
+src/css/main/06-favorites.css	.serii-favorite-refresh .fav-action	pointer-events
+src/css/main/06-favorites.css	.favorite-status-popup	z-index
+src/css/main/06-favorites.css	.serii-cerute.serii-favorite-refresh .fav-footer	position,top,margin-top
+src/css/main/06-favorites.css	#favoriteStatusPopup.favorite-status-popup	position,width,max-width,margin,flex
+src/css/main/07-layout-adjustments.css	.stiri-anime-legacy	display
+src/css/main/07-layout-adjustments.css	.av-news-read	color
+src/css/main/07-layout-adjustments.css	.av-news-row-arrow	color
+src/css/main/08-news-and-effects.css	.login-content--v2 > :not(.av-profile-v2):not(.chest-popup)	display
+src/css/main/08-news-and-effects.css	".av-profile-v2 *,
+  .av-profile-v2 *::before,
+  .av-profile-v2 *::after"	transition
+src/css/main/10-responsive-final.css	.share-banner-container	margin-bottom
+src/css/main/10-responsive-final.css	.share-banner-container	background,background-color,background-image,border-bottom
+src/css/main/10-responsive-final.css	.share-banner-container::before	border-bottom
+src/css/main/10-responsive-final.css	.share-banner-container::after	content,display
+src/css/main/10-responsive-final.css	.share-banner-container	border-top,border-bottom
+src/css/main/10-responsive-final.css	.share-banner-container::before	border-top,border-bottom
+src/css/main/10-responsive-final.css	".share-com-v-top,
+.share-com-v-bottom"	display,stroke
+src/css/main/10-responsive-final.css	.share-com-v-join svg	filter
+src/css/main/10-responsive-final.css	.share-banner-container	position,width,max-width,min-width,margin,padding,border,border-radius,background,background-color,background-image,overflow,box-shadow
+src/css/main/10-responsive-final.css	.share-banner-container::before	content,display
+src/css/main/10-responsive-final.css	.share-banner-section	position,z-index,display,grid-template-columns,align-items,gap,width,max-width,min-width,margin,padding,overflow,border-radius,background,isolation
+src/css/main/10-responsive-final.css	.share-banner-section::before	content,position,inset,z-index,pointer-events,opacity,background-image,background-size,mask-image,-webkit-mask-image,animation
+src/css/main/10-responsive-final.css	.share-banner-section > *	position,z-index
+src/css/main/10-responsive-final.css	.share-banner-container::after	content,position,left,right,bottom,height,background,pointer-events,z-index
+src/css/main/10-responsive-final.css	.share-com-v-join	--share-join-surface,position,z-index,display,width,max-width,min-width,height,margin,overflow,pointer-events,background,isolation
+src/css/main/10-responsive-final.css	.share-com-v-join::before	content,position,inset,z-index,pointer-events,opacity,background-image,background-size,background-repeat,animation
+src/css/main/10-responsive-final.css	.share-com-v-join svg	position,z-index,display,width,height,overflow,filter
+src/css/main/10-responsive-final.css	.share-com-v-fill	fill
+src/css/main/10-responsive-final.css	".share-com-v-top,
+.share-com-v-bottom"	display,fill,vector-effect,stroke-linecap,stroke-linejoin
+src/css/main/10-responsive-final.css	.share-com-v-top	stroke,stroke-width
+src/css/main/10-responsive-final.css	.share-com-v-bottom	stroke,stroke-width
+src/css/main/10-responsive-final.css	.comentarii-section	background,background-color,width,max-width,min-width
+src/css/main/10-responsive-final.css	.comentarii-section::before	opacity,background-size
+src/css/main/10-responsive-final.css	.share-banner-section	grid-template-columns,justify-items,text-align,padding,gap
+src/css/main/10-responsive-final.css	.sb-left	justify-content,text-align
+src/css/main/10-responsive-final.css	.sb-right-group	justify-content,width
+src/css/main/10-responsive-final.css	.sb-buttons-group	justify-content
+src/css/main/10-responsive-final.css	".share-banner-section .sb-left,
+  .share-banner-section .sb-right-group"	transform
+src/css/main/10-responsive-final.css	.share-banner-section .sb-count-separate	animation,transform
+src/css/main/10-responsive-final.css	".share-banner-container,
+  .share-com-v-join,
+  .comentarii-section"	width,max-width,margin-left,margin-right
+src/css/main/10-responsive-final.css	".share-banner-container,
+  .share-com-v-join,
+  .comentarii-section"	width,max-width
+src/css/main/10-responsive-final.css	.share-banner-container	z-index,overflow
+src/css/main/10-responsive-final.css	".share-banner-section,
+.share-banner-section .sb-right-group,
+.share-banner-section .sb-buttons-group,
+.share-banner-section .plus-dropdown"	overflow
+src/css/main/10-responsive-final.css	.share-banner-section .plus-dropdown	z-index
+src/css/main/10-responsive-final.css	.share-banner-section .plus-dropdown-menu	z-index
+src/css/main/10-responsive-final.css	.share-banner-section	border-top,box-shadow
+src/css/main/10-responsive-final.css	.comentarii-section	border-left,border-right,border-inline,outline,filter
+src/css/main/10-responsive-final.css	.comentarii-frame-v7	-webkit-clip-path,clip-path
+src/css/main/10-responsive-final.css	".comentarii-section::before,
+.comentarii-section::after"	border-left,border-right,border-inline,outline
+src/css/main/10-responsive-final.css	.comentarii-section	border-left,border-right,border-inline
+src/css/main/10-responsive-final.css	.comentarii-frame-v7	display
+src/css/trending/01-trending-core.css	.trending-pair:hover	transform
+src/css/trending/01-trending-core.css	.trending-section .card	width,min-width,height,min-height,border-radius,overflow,position,background,border,box-shadow,cursor,isolation,transition,flex,display,margin,padding
+src/css/trending/01-trending-core.css	.trending-pair:hover .trending-section .card	box-shadow
+src/css/trending/01-trending-core.css	.trending-section .card:hover	transform,margin-top,translate
+src/css/trending/01-trending-core.css	.trending-section .card-image	position,top,left,width,height,overflow
+src/css/trending/01-trending-core.css	.trending-section .card-image img	position,top,left,width,height,object-fit,display,transition
+src/css/trending/01-trending-core.css	.trending-pair:hover .trending-section .card-image img	transform
+src/css/trending/02-trending-popup.css	.trending-popup-desc p	font-size,line-height
+src/css/trending/03-trending-responsive.css	.trending-section .card	width,height,min-height
+src/css/trending/03-trending-responsive.css	"#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within"	transform
+src/css/trending/03-trending-responsive.css	#trendingMaster .trending-pair:hover	transform
+src/css/trending/03-trending-responsive.css	"#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within,
+#trendingMaster .trending-pair.avt-tilt-active"	transform
+src/css/trending/03-trending-responsive.css	"#trendingMaster .trending-pair:hover,
+  #trendingMaster .trending-pair:focus-within,
+  #trendingMaster .trending-pair.avt-tilt-active"	transform
+src/css/trending/03-trending-responsive.css	#trendingMaster .trending-pair:active	transform
+src/css/trending/03-trending-responsive.css	"#trendingMaster .trending-pair,
+  #trendingMaster .trending-pair:hover,
+  #trendingMaster .trending-pair:focus-within,
+  #trendingMaster .trending-pair:active,
+  #trendingMaster .trending-pair.avt-tilt-active,
+  #trendingMaster .trending-pair .avt-artwork img"	transform
+src/css/trending/03-trending-responsive.css	#trendingMaster .avt-rank::after	content,display
+src/css/trending/03-trending-responsive.css	#trendingMaster .avt-artwork	-webkit-mask-image,mask-image
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair,
+#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within,
+#trendingMaster .trending-pair:active,
+#trendingMaster .trending-pair.avt-tilt-active"	transform,translate
+src/css/trending/04-trending-refinements.css	"#trendingMaster .avt-artwork img,
+#trendingMaster .trending-pair:hover .avt-artwork img,
+#trendingMaster .trending-pair:focus-within .avt-artwork img"	transform,transition
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair:hover .avt-artwork img,
+#trendingMaster .trending-pair:focus-within .avt-artwork img"	filter
+src/css/trending/04-trending-refinements.css	#trendingMaster .avt-artwork::before	content,display,transform,transition
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair:hover .avt-artwork::before,
+#trendingMaster .trending-pair:focus-within .avt-artwork::before"	transform
+src/css/trending/04-trending-refinements.css	#trendingMaster .trending-pair::before	background,transition
+src/css/trending/04-trending-refinements.css	#trendingMaster .trending-pair::after	opacity,background,transform
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within"	border-color,box-shadow
+src/css/trending/04-trending-refinements.css	#trendingMaster .trending-pair::after	content,opacity,transform
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair:hover::after,
+#trendingMaster .trending-pair:focus-within::after"	opacity
+src/css/trending/04-trending-refinements.css	#trendingMaster .trending-pair::after	content,animation,opacity,transform
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair:hover::after,
+#trendingMaster .trending-pair:focus-within::after"	opacity
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair,
+#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within,
+#trendingMaster .trending-pair:active,
+#trendingMaster .trending-pair.avt-tilt-active"	transform
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair,
+#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within,
+#trendingMaster .trending-pair:active,
+#trendingMaster .trending-pair.avt-tilt-active"	transform
+src/css/trending/04-trending-refinements.css	#trendingMaster .trending-pair::after	content,animation,transform,opacity
+src/css/trending/04-trending-refinements.css	#trendingMaster .trending-pair .avt-caption::before	content,display
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair:hover::after,
+#trendingMaster .trending-pair:focus-within::after"	opacity
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within"	border-color,box-shadow
+src/css/trending/04-trending-refinements.css	#trendingMaster .avt-artwork::before	content,display
+src/css/trending/04-trending-refinements.css	"#trendingMaster .avt-artwork img,
+#trendingMaster .trending-pair:hover .avt-artwork img,
+#trendingMaster .trending-pair:focus-within .avt-artwork img"	transform,filter
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair,
+#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within,
+#trendingMaster .trending-pair:active,
+#trendingMaster .trending-pair.avt-tilt-active"	transform
+src/css/trending/04-trending-refinements.css	#trendingMaster .trending-pair::after	content,opacity,transform
+src/css/trending/04-trending-refinements.css	#trendingMaster .trending-pair::before	background
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair:hover::after,
+#trendingMaster .trending-pair:focus-within::after"	opacity
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within"	border-color,box-shadow
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair,
+#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within,
+#trendingMaster .trending-pair:active,
+#trendingMaster .trending-pair.avt-tilt-active"	transform
+src/css/trending/04-trending-refinements.css	#trendingMaster .avt-artwork::before	content,display
+src/css/trending/04-trending-refinements.css	"#trendingMaster .avt-artwork img,
+#trendingMaster .trending-pair:hover .avt-artwork img,
+#trendingMaster .trending-pair:focus-within .avt-artwork img"	transform,filter
+src/css/trending/04-trending-refinements.css	#trendingMaster .trending-pair::before	content
+src/css/trending/04-trending-refinements.css	#trendingMaster .trending-pair::after	content,opacity,transform,animation
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair:hover::after,
+#trendingMaster .trending-pair:focus-within::after"	opacity
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within"	border-color,box-shadow
+src/css/trending/04-trending-refinements.css	#trendingMaster .trending-pair::before	animation
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair,
+#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within,
+#trendingMaster .trending-pair:active,
+#trendingMaster .trending-pair.avt-tilt-active"	transform
+src/css/trending/04-trending-refinements.css	#trendingMaster .avt-artwork::before	content,display
+src/css/trending/04-trending-refinements.css	"#trendingMaster .avt-artwork img,
+#trendingMaster .trending-pair:hover .avt-artwork img,
+#trendingMaster .trending-pair:focus-within .avt-artwork img"	transform,filter
+src/css/trending/04-trending-refinements.css	#trendingMaster .trending-pair	animation
+src/css/trending/04-trending-refinements.css	#trendingMaster .trending-pair::before	content,opacity,animation
+src/css/trending/04-trending-refinements.css	#trendingMaster .trending-pair::after	content,opacity,transform,animation
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair:hover::before,
+#trendingMaster .trending-pair:focus-within::before"	opacity
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair:hover::after,
+#trendingMaster .trending-pair:focus-within::after"	opacity
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within"	border-color,box-shadow
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair,
+  #trendingMaster .trending-pair::before,
+  #trendingMaster .trending-pair::after"	animation
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair,
+#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within,
+#trendingMaster .trending-pair:active,
+#trendingMaster .trending-pair.avt-tilt-active"	transform,animation
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair::before,
+#trendingMaster .trending-pair::after"	animation,transform
+src/css/trending/04-trending-refinements.css	#trendingMaster .avt-artwork::before	content,display
+src/css/trending/04-trending-refinements.css	"#trendingMaster .avt-artwork img,
+#trendingMaster .trending-pair:hover .avt-artwork img,
+#trendingMaster .trending-pair:focus-within .avt-artwork img"	transform,filter
+src/css/trending/04-trending-refinements.css	#trendingMaster .trending-pair::after	content,opacity,filter,animation
+src/css/trending/04-trending-refinements.css	#trendingMaster .trending-pair::before	content,opacity,background,-webkit-mask,mask,filter,box-shadow,animation
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair:hover::after,
+#trendingMaster .trending-pair:focus-within::after"	opacity
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair:hover::before,
+#trendingMaster .trending-pair:focus-within::before"	opacity
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within"	border-color,box-shadow
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair::before,
+  #trendingMaster .trending-pair::after"	animation
+src/css/trending/04-trending-refinements.css	#trendingMaster	height,min-height,max-height,overflow,contain
+src/css/trending/04-trending-refinements.css	#trendingMaster .trending-section	width,height,min-height,max-height,overflow,overscroll-behavior
+src/css/trending/04-trending-refinements.css	#trendingMaster .horizontal-scroll	box-sizing,width,height,min-height,max-height,overflow,overscroll-behavior,scrollbar-width,-ms-overflow-style
+src/css/trending/04-trending-refinements.css	#trendingMaster .horizontal-scroll::-webkit-scrollbar	display,width,height
+src/css/trending/04-trending-refinements.css	"#trendingMaster .cards-list,
+#trendingMaster .cards-track"	height,min-height,max-height
+src/css/trending/04-trending-refinements.css	"#trendingMaster,
+#trendingMaster .trending-section,
+#trendingMaster .horizontal-scroll,
+#trendingMaster .cards-list"	overflow-y
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-section,
+#trendingMaster .horizontal-scroll"	overflow-x,overflow-y
+src/css/trending/04-trending-refinements.css	"#trendingMaster .trending-pair,
+#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within,
+#trendingMaster .trending-pair:active,
+#trendingMaster .trending-pair.avt-tilt-active"	transform
+src/css/trending/04-trending-refinements.css	#trendingMaster .trending-pair	padding-left
+src/css/trending/04-trending-refinements.css	#trendingMaster .avt-visual	width,margin-left
+src/css/trending/04-trending-refinements.css	#trendingMaster .avt-caption	position,left,top,bottom,width,padding,margin,display,align-items,justify-content,z-index,pointer-events
+src/css/trending/04-trending-refinements.css	#trendingMaster .avt-title	margin,min-height,max-height,display,overflow,white-space,text-overflow,writing-mode,text-orientation,transform,color,font-size,font-weight,line-height,letter-spacing
+src/css/trending/04-trending-refinements.css	"#trendingMaster .avt-caption::before,
+#trendingMaster .avt-caption::after"	display,content
+src/css/trending/04-trending-refinements.css	#trendingMaster .trending-pair	padding-left
+src/css/trending/04-trending-refinements.css	#trendingMaster .avt-caption	position,left,top,bottom,width,min-width,padding,margin,display,flex-direction,align-items,justify-content,gap,z-index,pointer-events
+src/css/trending/04-trending-refinements.css	#trendingMaster .avt-title	margin,min-height,max-height,width,display,-webkit-box-orient,-webkit-line-clamp,line-clamp,overflow,white-space,text-overflow,writing-mode,text-orientation,transform,color,font-size,font-weight,line-height,letter-spacing,text-align
+src/css/trending/04-trending-refinements.css	"#trendingMaster .avt-caption::before,
+#trendingMaster .avt-caption::after"	display,content
+src/css/trending/05-trending-effects.css	"#trendingMaster .trending-pair,
+#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within,
+#trendingMaster .trending-pair:active,
+#trendingMaster .trending-pair.avt-tilt-active"	transform
+src/css/trending/05-trending-effects.css	"#trendingMaster .avt-artwork img,
+#trendingMaster .trending-pair:hover .avt-artwork img,
+#trendingMaster .trending-pair:focus-within .avt-artwork img"	transform,filter
+src/css/trending/05-trending-effects.css	#trendingMaster .avt-artwork::before	content,display
+src/css/trending/05-trending-effects.css	"#trendingMaster .trending-pair::before,
+#trendingMaster .trending-pair::after,
+#trendingMaster .avt-caption::after"	content,display
+src/css/trending/05-trending-effects.css	"#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within"	border-color,box-shadow
+src/css/trending/05-trending-effects.css	#trendingMaster .avt-title	transition
+src/css/trending/05-trending-effects.css	"#trendingMaster .trending-pair:hover .avt-title,
+#trendingMaster .trending-pair:focus-within .avt-title"	color
+src/css/trending/05-trending-effects.css	"#trendingMaster .avt-v31-fx::before,
+  #trendingMaster .avt-v31-fx::after,
+  #trendingMaster .avt-v31-shard,
+  #trendingMaster .avt-v31-title-glint::before"	animation
+src/css/trending/05-trending-effects.css	#trendingMaster .avt-v31-shard.s1	animation-duration
+src/css/trending/05-trending-effects.css	#trendingMaster .avt-v31-shard.s2	animation-duration
+src/css/trending/05-trending-effects.css	#trendingMaster .avt-v31-shard.s3	animation-duration
+src/css/trending/05-trending-effects.css	#trendingMaster .avt-v31-shard.s4	animation-duration
+src/css/trending/05-trending-effects.css	"#trendingMaster .trending-pair:hover .avt-v31-shard.s1,
+#trendingMaster .trending-pair:focus-within .avt-v31-shard.s1"	animation-duration
+src/css/trending/05-trending-effects.css	"#trendingMaster .trending-pair:hover .avt-v31-shard.s2,
+#trendingMaster .trending-pair:focus-within .avt-v31-shard.s2"	animation-duration
+src/css/trending/05-trending-effects.css	"#trendingMaster .trending-pair:hover .avt-v31-shard.s3,
+#trendingMaster .trending-pair:focus-within .avt-v31-shard.s3"	animation-duration
+src/css/trending/05-trending-effects.css	"#trendingMaster .trending-pair:hover .avt-v31-shard.s4,
+#trendingMaster .trending-pair:focus-within .avt-v31-shard.s4"	animation-duration
+src/css/trending/05-trending-effects.css	#trendingMaster .avt-v31-fx::after	content,display
+src/css/trending/05-trending-effects.css	"#trendingMaster .avt-v32-ring,
+  #trendingMaster .avt-v32-corner-glow"	animation
+src/css/trending/05-trending-effects.css	#trendingMaster .avt-v31-shard	animation-timing-function
+src/css/trending/05-trending-effects.css	#trendingMaster .avt-v31-shard.s1	animation-duration
+src/css/trending/05-trending-effects.css	#trendingMaster .avt-v31-shard.s2	animation-duration
+src/css/trending/05-trending-effects.css	#trendingMaster .avt-v31-shard.s3	animation-duration
+src/css/trending/05-trending-effects.css	#trendingMaster .avt-v31-shard.s4	animation-duration
+src/css/trending/05-trending-effects.css	"#trendingMaster .trending-pair:hover .avt-v31-shard.s1,
+#trendingMaster .trending-pair:focus-within .avt-v31-shard.s1"	animation-duration
+src/css/trending/05-trending-effects.css	"#trendingMaster .trending-pair:hover .avt-v31-shard.s2,
+#trendingMaster .trending-pair:focus-within .avt-v31-shard.s2"	animation-duration
+src/css/trending/05-trending-effects.css	"#trendingMaster .trending-pair:hover .avt-v31-shard.s3,
+#trendingMaster .trending-pair:focus-within .avt-v31-shard.s3"	animation-duration
+src/css/trending/05-trending-effects.css	"#trendingMaster .trending-pair:hover .avt-v31-shard.s4,
+#trendingMaster .trending-pair:focus-within .avt-v31-shard.s4"	animation-duration
+src/css/trending/05-trending-effects.css	"#trendingMaster .avt-v32-ring,
+#trendingMaster .avt-v32-corner-glow,
+#trendingMaster .avt-v32-extra"	display
+src/css/trending/05-trending-effects.css	#trendingMaster .avt-v31-fx::after	content,animation
+src/css/trending/05-trending-effects.css	"#trendingMaster .trending-pair::before,
+#trendingMaster .trending-pair::after"	content,display
+src/css/trending/05-trending-effects.css	"#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within"	border-color,box-shadow
+src/css/trending/05-trending-effects.css	"#trendingMaster .avt-v31-shard,
+  #trendingMaster .avt-v31-fx::after,
+  #trendingMaster .avt-v33-frame::after"	animation
+src/css/trending/05-trending-effects.css	"#trendingMaster .avt-v31-fx::before,
+#trendingMaster .avt-v31-fx::after"	content,display
+src/css/trending/05-trending-effects.css	"#trendingMaster .avt-v33-frame::before,
+#trendingMaster .trending-pair:hover .avt-v33-frame::before,
+#trendingMaster .trending-pair:focus-within .avt-v33-frame::before"	box-shadow
+src/css/trending/05-trending-effects.css	body .trending-share-join + .share-banner-container	width,max-width,min-width,margin-top
+src/css/trending/05-trending-effects.css	body .trending-share-join + .share-banner-container .share-banner-section	border-top,box-shadow
+src/css/trending/05-trending-effects.css	"body .trending-share-join + .share-banner-container .sb-left,
+  body .trending-share-join + .share-banner-container .sb-right-group"	justify-self,transform
+src/css/trending/05-trending-effects.css	body .trending-share-join + .share-banner-container .sb-left	gap
+src/css/trending/05-trending-effects.css	body .trending-share-join + .share-banner-container .sb-avatar	width,height
+src/css/trending/05-trending-effects.css	body .trending-share-join + .share-banner-container .sb-title	font-size
+src/css/trending/05-trending-effects.css	body .trending-share-join + .share-banner-container .sb-subtitle	font-size
+src/css/trending/05-trending-effects.css	body .trending-share-join + .share-banner-container .sb-buttons-group	justify-content,gap,padding
+src/css/trending/05-trending-effects.css	body .trending-share-join + .share-banner-container .sb-btn	width,height,flex
+src/css/trending/05-trending-effects.css	body .trending-share-join + .share-banner-container .sb-btn svg	width,height
+src/css/trending/05-trending-effects.css	".trending-share-join,
+  body .trending-share-join + .share-banner-container"	width,max-width
+src/css/trending/05-trending-effects.css	".trending-share-join,
+  body .trending-share-join + .share-banner-container"	width
+src/css/trending/05-trending-effects.css	#trendingMaster	padding-block,background,border-color
+src/css/trending/05-trending-effects.css	#trendingMaster .horizontal-scroll	padding
+src/css/trending/05-trending-effects.css	#trendingMaster .cards-track	gap
+src/css/trending/05-trending-effects.css	#trendingMaster .horizontal-scroll	padding-inline
+src/css/trending/05-trending-effects.css	#trendingMaster .cards-track	gap
+src/css/trending/05-trending-effects.css	#trendingMaster .trending-section	padding-bottom
+src/css/trending/05-trending-effects.css	".trending-share-join,
+.trending-share-join + .share-banner-container,
+.trending-share-join + .share-banner-container .share-banner-section"	background
+src/css/trending/05-trending-effects.css	.trending-share-join + .share-banner-container .share-banner-section	border-top,box-shadow
+src/css/trending/05-trending-effects.css	".trending-share-join svg,
+.trending-share-join path,
+.trending-share-join-fill,
+.trending-share-join-gold,
+.trending-share-join-teal"	display,visibility,opacity,stroke,fill,stroke-width
+src/css/trending/05-trending-effects.css	.trending-share-join	border,box-shadow,outline
+src/css/trending/05-trending-effects.css	.trending-share-join::before	display
+src/css/trending/05-trending-effects.css	#trendingMaster .trending-row-meta-left h2	background,-webkit-background-clip,background-clip,color
+src/css/trending/05-trending-effects.css	#trendingMaster .pulse-dot	background,box-shadow
+src/css/trending/06-trending-final.css	#trendingMaster .cards-list	margin-top,margin-bottom
+src/css/trending/06-trending-final.css	#trendingMaster .section-header	margin-top,margin-bottom,padding-inline,align-items
+src/css/trending/06-trending-final.css	#trendingMaster .title-block	gap
+src/css/trending/06-trending-final.css	#trendingMaster .pulse-dot	width,height
+src/css/trending/06-trending-final.css	#trendingMaster .title-block h2	font-size,line-height
+src/css/trending/06-trending-final.css	#trendingMaster .cat-btn	min-width,min-height,padding
+src/css/trending/06-trending-final.css	#trendingMaster .cat-btn-label	font-size,min-width
+src/css/trending/06-trending-final.css	#trendingMaster .cat-btn-arrow	width,height
+src/css/trending/06-trending-final.css	#trendingMaster .cat-btn-arrow svg	width,height
+src/css/trending/06-trending-final.css	#trendingMaster .badge-info	padding,font-size
+src/css/trending/06-trending-final.css	#trendingMaster .section-header	max-width,margin,padding-inline,width
+src/css/trending/06-trending-final.css	"#trendingMaster .title-block,
+#trendingMaster .header-right"	position,top
+src/css/trending/06-trending-final.css	#trendingMaster .title-block	margin-left
+src/css/trending/06-trending-final.css	#trendingMaster .header-right	margin-left,margin-right
+src/css/trending/06-trending-final.css	#trendingMaster .trending-row-meta-left	margin-left
+src/css/trending/06-trending-final.css	#trendingMaster .trending-row-meta-right	margin-right
+src/css/trending/06-trending-final.css	"#trendingMaster .trending-row-meta-left,
+#trendingMaster .trending-row-meta-right"	position,top
+src/css/trending/06-trending-final.css	"#trendingMaster .trending-row-meta-left,
+#trendingMaster .trending-row-meta-right"	top
+src/css/trending/06-trending-final.css	#trendingMaster	margin-top,padding-top,border-top
+src/css/trending/06-trending-final.css	#trendingMaster	padding-top
+src/css/trending/06-trending-final.css	#trendingMaster	padding-top
+src/css/trending/06-trending-final.css	#trendingMaster	padding-top

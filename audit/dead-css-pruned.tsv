@@ -1,0 +1,294 @@
+file	rule_selector	dropped_branch	missing_classes	missing_ids	action
+src/css/banner/02-banner-layout.css	.banner-trending-join-fill	.banner-trending-join-fill	banner-trending-join-fill		drop-rule
+src/css/banner/02-banner-layout.css	.banner-trending-join-fill:not(#__av_prio_a#__av_prio_b)	.banner-trending-join-fill:not(#__av_prio_a#__av_prio_b)	banner-trending-join-fill		drop-rule
+src/css/banner/03-banner-transition.css	.banner-trending-join-topfill	.banner-trending-join-topfill	banner-trending-join-topfill		drop-rule
+src/css/banner/03-banner-transition.css	.banner-trending-join-fill:not(#__av_prio_a#__av_prio_b)	.banner-trending-join-fill:not(#__av_prio_a#__av_prio_b)	banner-trending-join-fill		drop-rule
+src/css/banner/04-banner-color-merge.css	body .banner-trending-join-fill:not(#__av_prio_a#__av_prio_b), body .banner-trending-join-topfill:not(#__av_prio_a#__av_prio_b)	body .banner-trending-join-fill:not(#__av_prio_a#__av_prio_b)	banner-trending-join-fill		drop-rule
+src/css/banner/04-banner-color-merge.css	body .banner-trending-join-fill:not(#__av_prio_a#__av_prio_b), body .banner-trending-join-topfill:not(#__av_prio_a#__av_prio_b)	body .banner-trending-join-topfill:not(#__av_prio_a#__av_prio_b)	banner-trending-join-topfill		drop-rule
+src/css/components/UPC.css	.carousel-collection .vezi-tot:not(#__av_prio_a#__av_prio_b)	.carousel-collection .vezi-tot:not(#__av_prio_a#__av_prio_b)	vezi-tot		drop-rule
+src/css/components/UPC.css	.carousel-collection .card-front-ring	.carousel-collection .card-front-ring	card-front-ring		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-card-back-kicker	.carousel-collection .av-card-back-kicker	av-card-back-kicker		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-card-back-kicker .av-back-type	.carousel-collection .av-card-back-kicker .av-back-type	av-card-back-kicker,av-back-type		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-card-back-kicker .av-back-status	.carousel-collection .av-card-back-kicker .av-back-status	av-card-back-kicker,av-back-status		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-sheet	.carousel-collection .av-back-sheet	av-back-sheet		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-head	.carousel-collection .av-back-head	av-back-head		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-topline	.carousel-collection .av-back-topline	av-back-topline		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-topline i	.carousel-collection .av-back-topline i	av-back-topline		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-rating	.carousel-collection .av-back-rating	av-back-rating		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-name	.carousel-collection .av-back-name	av-back-name		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-trio	.carousel-collection .av-back-trio	av-back-trio		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-stat	.carousel-collection .av-back-stat	av-back-stat		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-stat small, .carousel-collection .av-back-center small	.carousel-collection .av-back-stat small	av-back-stat		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-stat small, .carousel-collection .av-back-center small	.carousel-collection .av-back-center small	av-back-center		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-stat strong	.carousel-collection .av-back-stat strong	av-back-stat		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-center	.carousel-collection .av-back-center	av-back-center		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-center b	.carousel-collection .av-back-center b	av-back-center		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-center span	.carousel-collection .av-back-center span	av-back-center		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-description	.carousel-collection .av-back-description	av-back-description		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-description::before	.carousel-collection .av-back-description::before	av-back-description		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-description p	.carousel-collection .av-back-description p	av-back-description		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-footer-info	.carousel-collection .av-back-footer-info	av-back-footer-info		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-footer-info i	.carousel-collection .av-back-footer-info i	av-back-footer-info		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-footer-info small	.carousel-collection .av-back-footer-info small	av-back-footer-info		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-footer-info strong	.carousel-collection .av-back-footer-info strong	av-back-footer-info		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-footer-info .av-status-on-going	.carousel-collection .av-back-footer-info .av-status-on-going	av-back-footer-info,av-status-on-going		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-footer-info .av-status-in-traducere	.carousel-collection .av-back-footer-info .av-status-in-traducere	av-back-footer-info,av-status-in-traducere		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-footer-info .av-status-complet	.carousel-collection .av-back-footer-info .av-status-complet	av-back-footer-info,av-status-complet		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-actions	.carousel-collection .av-back-actions	av-back-actions		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-watch, .carousel-collection .av-back-plus	.carousel-collection .av-back-watch	av-back-watch		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-watch, .carousel-collection .av-back-plus	.carousel-collection .av-back-plus	av-back-plus		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-watch	.carousel-collection .av-back-watch	av-back-watch		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-plus	.carousel-collection .av-back-plus	av-back-plus		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-watch:hover, .carousel-collection .av-back-plus:hover	.carousel-collection .av-back-watch:hover	av-back-watch		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-watch:hover, .carousel-collection .av-back-plus:hover	.carousel-collection .av-back-plus:hover	av-back-plus		drop-rule
+src/css/components/UPC.css	/* Cardul întors trebuie să rămână în interiorul dimensiunii posterului. */ .carousel-collection .card-inner, .carousel-collection .card-front, .carousel-collection .card-back, .carousel-collection .card-back-content, .carousel-collection .av-back-sheet	.carousel-collection .av-back-sheet	av-back-sheet		drop-branch
+src/css/components/UPC.css	/* IMPORTANT: sunt 5 blocuri reale pe spate, nu 6.    Asta elimina rândul gol care împingea butoanele în afara cardului. */ .carousel-collection .av-back-sheet	/* IMPORTANT: sunt 5 blocuri reale pe spate, nu 6.    Asta elimina rândul gol care împingea butoanele în afara cardului. */ .carousel-collection .av-back-sheet	av-back-sheet		drop-rule
+src/css/components/UPC.css	/* HEAD */ .carousel-collection .av-back-head	/* HEAD */ .carousel-collection .av-back-head	av-back-head		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-topline	.carousel-collection .av-back-topline	av-back-topline		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-topline i	.carousel-collection .av-back-topline i	av-back-topline		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-rating	.carousel-collection .av-back-rating	av-back-rating		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-name	.carousel-collection .av-back-name	av-back-name		drop-rule
+src/css/components/UPC.css	/* DURATĂ / EPISOD / CALITATE */ .carousel-collection .av-back-trio	/* DURATĂ / EPISOD / CALITATE */ .carousel-collection .av-back-trio	av-back-trio		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-stat small, .carousel-collection .av-back-center small	.carousel-collection .av-back-stat small	av-back-stat		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-stat small, .carousel-collection .av-back-center small	.carousel-collection .av-back-center small	av-back-center		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-stat strong	.carousel-collection .av-back-stat strong	av-back-stat		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-center	.carousel-collection .av-back-center	av-back-center		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-center b	.carousel-collection .av-back-center b	av-back-center		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-center span	.carousel-collection .av-back-center span	av-back-center		drop-rule
+src/css/components/UPC.css	/* DESCRIERE — ocupă spațiul disponibil, fără să împingă footer-ul. */ .carousel-collection .av-back-description	/* DESCRIERE — ocupă spațiul disponibil, fără să împingă footer-ul. */ .carousel-collection .av-back-description	av-back-description		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-description::before	.carousel-collection .av-back-description::before	av-back-description		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-description p	.carousel-collection .av-back-description p	av-back-description		drop-rule
+src/css/components/UPC.css	/* POSTAT / STATUS */ .carousel-collection .av-back-footer-info	/* POSTAT / STATUS */ .carousel-collection .av-back-footer-info	av-back-footer-info		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-footer-info i	.carousel-collection .av-back-footer-info i	av-back-footer-info		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-footer-info small	.carousel-collection .av-back-footer-info small	av-back-footer-info		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-footer-info strong	.carousel-collection .av-back-footer-info strong	av-back-footer-info		drop-rule
+src/css/components/UPC.css	/* ACȚIUNI — obligatoriu vizibile în interiorul cardului */ .carousel-collection .av-back-actions	/* ACȚIUNI — obligatoriu vizibile în interiorul cardului */ .carousel-collection .av-back-actions	av-back-actions		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-watch, .carousel-collection .av-back-plus	.carousel-collection .av-back-watch	av-back-watch		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-watch, .carousel-collection .av-back-plus	.carousel-collection .av-back-plus	av-back-plus		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-watch	.carousel-collection .av-back-watch	av-back-watch		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-plus	.carousel-collection .av-back-plus	av-back-plus		drop-rule
+src/css/components/UPC.css	/* ============================================================    V31 — SPATE MAI MARE, MAI CURAT    - fără PLUS    - fără STATUS pe spate    - fără SHORT    - sus rămâne doar categoria:      LIVE-ACTION / CĂRȚI / FILME & SERIALE    - episod compact, fără cerc mare    ============================================================ */  .carousel-collection .av31-back	/* ============================================================    V31 — SPATE MAI MARE, MAI CURAT    - fără PLUS    - fără STATUS pe spate    - fără SHORT    - sus rămâne doar categoria:      LIVE-ACTION / CĂRȚI / FILME & SERIALE    - episod compact, fără cerc mare    ============================================================ */  .carousel-collection .av31-back	av31-back		drop-rule
+src/css/components/UPC.css	/* CAP DE CARD */ .carousel-collection .av31-back-head	/* CAP DE CARD */ .carousel-collection .av31-back-head	av31-back-head		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-category	.carousel-collection .av31-category	av31-category		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-rating	.carousel-collection .av31-rating	av31-rating		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-back-head h3	.carousel-collection .av31-back-head h3	av31-back-head		drop-rule
+src/css/components/UPC.css	/* DURATĂ / EP / CALITATE — compact, fără cerc mare */ .carousel-collection .av31-facts	/* DURATĂ / EP / CALITATE — compact, fără cerc mare */ .carousel-collection .av31-facts	av31-facts		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts > span	.carousel-collection .av31-facts > span	av31-facts		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts small	.carousel-collection .av31-facts small	av31-facts		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts b	.carousel-collection .av31-facts b	av31-facts		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts .av31-episode	.carousel-collection .av31-facts .av31-episode	av31-facts,av31-episode		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts .av31-episode small	.carousel-collection .av31-facts .av31-episode small	av31-facts,av31-episode		drop-rule
+src/css/components/UPC.css	/* DESCRIEREA devine zona principală și se vede mai mare */ .carousel-collection .av31-description	/* DESCRIEREA devine zona principală și se vede mai mare */ .carousel-collection .av31-description	av31-description		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-description > strong	.carousel-collection .av31-description > strong	av31-description		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-description p	.carousel-collection .av31-description p	av31-description		drop-rule
+src/css/components/UPC.css	/* UN SINGUR BUTON, pe toată lățimea */ .carousel-collection .av31-watch	/* UN SINGUR BUTON, pe toată lățimea */ .carousel-collection .av31-watch	av31-watch		drop-rule
+src/css/components/UPC.css	/* Ascundem explicit vechile elemente în caz că rămân în DOM/CSS. */ .carousel-collection .av-back-plus:not(#__av_prio_a#__av_prio_b), .carousel-collection .av-back-footer-info:not(#__av_prio_a#__av_prio_b), .carousel-collection .av-back-center:not(#__av_prio_a#__av_prio_b), .carousel-collection .av-card-back-kicker:not(#__av_prio_a#__av_prio_b)	/* Ascundem explicit vechile elemente în caz că rămân în DOM/CSS. */ .carousel-collection .av-back-plus:not(#__av_prio_a#__av_prio_b)	av-back-plus		drop-rule
+src/css/components/UPC.css	/* Ascundem explicit vechile elemente în caz că rămân în DOM/CSS. */ .carousel-collection .av-back-plus:not(#__av_prio_a#__av_prio_b), .carousel-collection .av-back-footer-info:not(#__av_prio_a#__av_prio_b), .carousel-collection .av-back-center:not(#__av_prio_a#__av_prio_b), .carousel-collection .av-card-back-kicker:not(#__av_prio_a#__av_prio_b)	.carousel-collection .av-back-footer-info:not(#__av_prio_a#__av_prio_b)	av-back-footer-info		drop-rule
+src/css/components/UPC.css	/* Ascundem explicit vechile elemente în caz că rămân în DOM/CSS. */ .carousel-collection .av-back-plus:not(#__av_prio_a#__av_prio_b), .carousel-collection .av-back-footer-info:not(#__av_prio_a#__av_prio_b), .carousel-collection .av-back-center:not(#__av_prio_a#__av_prio_b), .carousel-collection .av-card-back-kicker:not(#__av_prio_a#__av_prio_b)	.carousel-collection .av-back-center:not(#__av_prio_a#__av_prio_b)	av-back-center		drop-rule
+src/css/components/UPC.css	/* Ascundem explicit vechile elemente în caz că rămân în DOM/CSS. */ .carousel-collection .av-back-plus:not(#__av_prio_a#__av_prio_b), .carousel-collection .av-back-footer-info:not(#__av_prio_a#__av_prio_b), .carousel-collection .av-back-center:not(#__av_prio_a#__av_prio_b), .carousel-collection .av-card-back-kicker:not(#__av_prio_a#__av_prio_b)	.carousel-collection .av-card-back-kicker:not(#__av_prio_a#__av_prio_b)	av-card-back-kicker		drop-rule
+src/css/components/UPC.css	/* ============================================================    V32 — SPATE SIMETRIC + TEXT MAI MARE    - toate blocurile aliniate pe centru    - cele 3 informații au aceeași lățime    - descriere mai mare și mai lizibilă    - încape complet în 184x248 / 172x236    ============================================================ */  .carousel-collection .av31-back	/* ============================================================    V32 — SPATE SIMETRIC + TEXT MAI MARE    - toate blocurile aliniate pe centru    - cele 3 informații au aceeași lățime    - descriere mai mare și mai lizibilă    - încape complet în 184x248 / 172x236    ============================================================ */  .carousel-collection .av31-back	av31-back		drop-rule
+src/css/components/UPC.css	/* HEADER */ .carousel-collection .av31-back-head	/* HEADER */ .carousel-collection .av31-back-head	av31-back-head		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-category	.carousel-collection .av31-category	av31-category		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-rating	.carousel-collection .av31-rating	av31-rating		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-back-head h3	.carousel-collection .av31-back-head h3	av31-back-head		drop-rule
+src/css/components/UPC.css	/* 3 COLOANE PERFECT SIMETRICE */ .carousel-collection .av31-facts	/* 3 COLOANE PERFECT SIMETRICE */ .carousel-collection .av31-facts	av31-facts		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts > span, .carousel-collection .av31-facts .av31-episode	.carousel-collection .av31-facts > span	av31-facts		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts > span, .carousel-collection .av31-facts .av31-episode	.carousel-collection .av31-facts .av31-episode	av31-facts,av31-episode		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts .av31-episode	.carousel-collection .av31-facts .av31-episode	av31-facts,av31-episode		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts small, .carousel-collection .av31-facts .av31-episode small	.carousel-collection .av31-facts small	av31-facts		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts small, .carousel-collection .av31-facts .av31-episode small	.carousel-collection .av31-facts .av31-episode small	av31-facts,av31-episode		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts b, .carousel-collection .av31-facts .av31-episode b	.carousel-collection .av31-facts b	av31-facts		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts b, .carousel-collection .av31-facts .av31-episode b	.carousel-collection .av31-facts .av31-episode b	av31-facts,av31-episode		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts .av31-episode b	.carousel-collection .av31-facts .av31-episode b	av31-facts,av31-episode		drop-rule
+src/css/components/UPC.css	/* DESCRIEREA ESTE ZONA PRINCIPALĂ */ .carousel-collection .av31-description	/* DESCRIEREA ESTE ZONA PRINCIPALĂ */ .carousel-collection .av31-description	av31-description		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-description > strong	.carousel-collection .av31-description > strong	av31-description		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-description p	.carousel-collection .av31-description p	av31-description		drop-rule
+src/css/components/UPC.css	/* BUTON SIMETRIC */ .carousel-collection .av31-watch	/* BUTON SIMETRIC */ .carousel-collection .av31-watch	av31-watch		drop-rule
+src/css/components/UPC.css	/* Neutralizăm layout-urile vechi av31/av32 dacă au rămas în CSS. */ .carousel-collection .av31-back, .carousel-collection .av31-back-head, .carousel-collection .av31-facts, .carousel-collection .av31-description, .carousel-collection .av31-watch	/* Neutralizăm layout-urile vechi av31/av32 dacă au rămas în CSS. */ .carousel-collection .av31-back	av31-back		drop-rule
+src/css/components/UPC.css	/* Neutralizăm layout-urile vechi av31/av32 dacă au rămas în CSS. */ .carousel-collection .av31-back, .carousel-collection .av31-back-head, .carousel-collection .av31-facts, .carousel-collection .av31-description, .carousel-collection .av31-watch	.carousel-collection .av31-back-head	av31-back-head		drop-rule
+src/css/components/UPC.css	/* Neutralizăm layout-urile vechi av31/av32 dacă au rămas în CSS. */ .carousel-collection .av31-back, .carousel-collection .av31-back-head, .carousel-collection .av31-facts, .carousel-collection .av31-description, .carousel-collection .av31-watch	.carousel-collection .av31-facts	av31-facts		drop-rule
+src/css/components/UPC.css	/* Neutralizăm layout-urile vechi av31/av32 dacă au rămas în CSS. */ .carousel-collection .av31-back, .carousel-collection .av31-back-head, .carousel-collection .av31-facts, .carousel-collection .av31-description, .carousel-collection .av31-watch	.carousel-collection .av31-description	av31-description		drop-rule
+src/css/components/UPC.css	/* Neutralizăm layout-urile vechi av31/av32 dacă au rămas în CSS. */ .carousel-collection .av31-back, .carousel-collection .av31-back-head, .carousel-collection .av31-facts, .carousel-collection .av31-description, .carousel-collection .av31-watch	.carousel-collection .av31-watch	av31-watch		drop-rule
+src/css/components/footer.css	.avf-description	.avf-description	avf-description		drop-rule
+src/css/components/footer.css	.avf-actions	.avf-actions	avf-actions		drop-rule
+src/css/components/footer.css	.avf-action	.avf-action	avf-action		drop-rule
+src/css/components/footer.css	.avf-action-primary	.avf-action-primary	avf-action-primary		drop-rule
+src/css/components/footer.css	.avf-action:hover	.avf-action:hover	avf-action		drop-rule
+src/css/components/footer.css	/* ---------- Social media ---------- */  .avf-social-section	/* ---------- Social media ---------- */  .avf-social-section	avf-social-section		drop-rule
+src/css/components/footer.css	.avf-social-title	.avf-social-title	avf-social-title		drop-rule
+src/css/components/footer.css	.avf-social-list	.avf-social-list	avf-social-list		drop-rule
+src/css/components/footer.css	.avf-social-link	.avf-social-link	avf-social-link		drop-rule
+src/css/components/footer.css	.avf-social-circle	.avf-social-circle	avf-social-circle		drop-rule
+src/css/components/footer.css	.avf-social-name	.avf-social-name	avf-social-name		drop-rule
+src/css/components/footer.css	.avf-social-link:hover .avf-social-circle	.avf-social-link:hover .avf-social-circle	avf-social-link,avf-social-circle		drop-rule
+src/css/components/footer.css	.avf-social-link:hover .avf-social-name	.avf-social-link:hover .avf-social-name	avf-social-link,avf-social-name		drop-rule
+src/css/components/footer.css	.avf-social-section	.avf-social-section	avf-social-section		drop-rule
+src/css/components/footer.css	.avf-social-list	.avf-social-list	avf-social-list		drop-rule
+src/css/components/footer.css	.avf-social-circle	.avf-social-circle	avf-social-circle		drop-rule
+src/css/components/footer.css	.avf-outline-word span:not(#__av_prio_a#__av_prio_b), .avf-action:not(#__av_prio_a#__av_prio_b), .avf-social-circle:not(#__av_prio_a#__av_prio_b), .avf-az a:not(#__av_prio_a#__av_prio_b), .avf-nav-column a:not(#__av_prio_a#__av_prio_b)	.avf-action:not(#__av_prio_a#__av_prio_b)	avf-action		drop-branch
+src/css/components/footer.css	.avf-outline-word span:not(#__av_prio_a#__av_prio_b), .avf-action:not(#__av_prio_a#__av_prio_b), .avf-social-circle:not(#__av_prio_a#__av_prio_b), .avf-az a:not(#__av_prio_a#__av_prio_b), .avf-nav-column a:not(#__av_prio_a#__av_prio_b)	.avf-social-circle:not(#__av_prio_a#__av_prio_b)	avf-social-circle		drop-branch
+src/css/components/footer.css	.avf-brand-social:not(#__av_prio_a#__av_prio_b)	.avf-brand-social:not(#__av_prio_a#__av_prio_b)	avf-brand-social		drop-rule
+src/css/components/footer.css	.avf-community-column strong	.avf-community-column strong	avf-community-column		drop-rule
+src/css/components/footer.css	.avf-community-links	.avf-community-links	avf-community-links		drop-rule
+src/css/components/footer.css	.avf-community-link	.avf-community-link	avf-community-link		drop-rule
+src/css/components/footer.css	.avf-community-link i	.avf-community-link i	avf-community-link		drop-rule
+src/css/components/footer.css	.avf-community-link:hover	.avf-community-link:hover	avf-community-link		drop-rule
+src/css/components/footer.css	.avf-community-link:hover i	.avf-community-link:hover i	avf-community-link		drop-rule
+src/css/components/footer.css	.avf-community-link	.avf-community-link	avf-community-link		drop-rule
+src/css/components/header.css	.content-placeholder	.content-placeholder	content-placeholder		drop-rule
+src/css/main/01-foundation.css	.side-preview	.side-preview	side-preview		drop-rule
+src/css/main/01-foundation.css	.side-preview::before	.side-preview::before	side-preview		drop-rule
+src/css/main/01-foundation.css	.side-content	.side-content	side-content		drop-rule
+src/css/main/01-foundation.css	.side-title	.side-title	side-title		drop-rule
+src/css/main/01-foundation.css	.side-content h1	.side-content h1	side-content		drop-rule
+src/css/main/01-foundation.css	.side-content h1 span	.side-content h1 span	side-content		drop-rule
+src/css/main/01-foundation.css	.lead	.lead	lead		drop-rule
+src/css/main/01-foundation.css	.mini-card	.mini-card	mini-card		drop-rule
+src/css/main/01-foundation.css	.mini-card .label	.mini-card .label	mini-card		drop-rule
+src/css/main/01-foundation.css	.mini-card .stat	.mini-card .stat	mini-card,stat		drop-rule
+src/css/main/01-foundation.css	.mini-card .small	.mini-card .small	mini-card		drop-rule
+src/css/main/01-foundation.css	.showcase	.showcase	showcase		drop-rule
+src/css/main/01-foundation.css	.panel-card, .palette-card	.panel-card	panel-card		drop-rule
+src/css/main/01-foundation.css	.panel-card, .palette-card	.palette-card	palette-card		drop-rule
+src/css/main/01-foundation.css	.panel-card h3, .palette-card h3	.panel-card h3	panel-card		drop-rule
+src/css/main/01-foundation.css	.panel-card h3, .palette-card h3	.palette-card h3	palette-card		drop-rule
+src/css/main/01-foundation.css	.ui-row	.ui-row	ui-row		drop-rule
+src/css/main/01-foundation.css	.chip	.chip	chip		drop-rule
+src/css/main/01-foundation.css	.chip.active	.chip.active	chip		drop-rule
+src/css/main/01-foundation.css	.swatches	.swatches	swatches		drop-rule
+src/css/main/01-foundation.css	.swatch	.swatch	swatch		drop-rule
+src/css/main/01-foundation.css	.swatch-color	.swatch-color	swatch-color		drop-rule
+src/css/main/01-foundation.css	.swatch strong	.swatch strong	swatch		drop-rule
+src/css/main/01-foundation.css	.swatch span	.swatch span	swatch		drop-rule
+src/css/main/01-foundation.css	.hex	.hex	hex		drop-rule
+src/css/main/01-foundation.css	.layout	.layout	layout		drop-rule
+src/css/main/01-foundation.css	.side-preview	.side-preview	side-preview		drop-rule
+src/css/main/01-foundation.css	.cards,   .showcase	.showcase	showcase		drop-branch
+src/css/main/01-foundation.css	.side-content	.side-content	side-content		drop-rule
+src/css/main/01-foundation.css	/* Container (fereastra) */ .top-anime-widget	/* Container (fereastra) */ .top-anime-widget	top-anime-widget		drop-rule
+src/css/main/01-foundation.css	/* (titlu) */ .serii-title	/* (titlu) */ .serii-title	serii-title		drop-rule
+src/css/main/01-foundation.css	.widget-head	.widget-head	widget-head		drop-rule
+src/css/main/01-foundation.css	.widget-subtitle	.widget-subtitle	widget-subtitle		drop-rule
+src/css/main/01-foundation.css	/* List */ .top-list	/* List */ .top-list	top-list		drop-rule
+src/css/main/01-foundation.css	/* Item */ .top-item	/* Item */ .top-item	top-item		drop-rule
+src/css/main/01-foundation.css	/* Imagine */ .thumb	/* Imagine */ .thumb	thumb		drop-rule
+src/css/main/01-foundation.css	.thumb img	.thumb img	thumb		drop-rule
+src/css/main/01-foundation.css	.badges	.badges	badges		drop-rule
+src/css/main/01-foundation.css	.badge-red	.badge-red	badge-red		drop-rule
+src/css/main/01-foundation.css	.badge-yellow	.badge-yellow	badge-yellow		drop-rule
+src/css/main/01-foundation.css	/* ICON VIZUALIZĂRI (nou) */ .views-2	/* ICON VIZUALIZĂRI (nou) */ .views-2	views-2		drop-rule
+src/css/main/01-foundation.css	.views-eye	.views-eye	views-eye		drop-rule
+src/css/main/01-foundation.css	.views-eye img	.views-eye img	views-eye		drop-rule
+src/css/main/01-foundation.css	/* Elementul serie */ .serie-item	/* Elementul serie */ .serie-item	serie-item		drop-rule
+src/css/main/01-foundation.css	.serie-item:hover	.serie-item:hover	serie-item		drop-rule
+src/css/main/01-foundation.css	.serie-nume	.serie-nume	serie-nume		drop-rule
+src/css/main/01-foundation.css	.serie-episod	.serie-episod	serie-episod		drop-rule
+src/css/main/01-foundation.css	.serie-ora	.serie-ora	serie-ora		drop-rule
+src/css/main/01-foundation.css	.recent-post-arrow	.recent-post-arrow	recent-post-arrow		drop-rule
+src/css/main/01-foundation.css	.recent-post-arrow:hover	.recent-post-arrow:hover	recent-post-arrow		drop-rule
+src/css/main/01-foundation.css	.recent-post,   .recent-post::after,   .recent-post-arrow	.recent-post-arrow	recent-post-arrow		drop-branch
+src/css/main/01-foundation.css	/* Data */ .stire-data	/* Data */ .stire-data	stire-data		drop-rule
+src/css/main/01-foundation.css	/* ===================    Citeste mai multe    =================== */ .citeste-mai-multe	/* ===================    Citeste mai multe    =================== */ .citeste-mai-multe	citeste-mai-multe		drop-rule
+src/css/main/01-foundation.css	.citeste-mai-multe:hover	.citeste-mai-multe:hover	citeste-mai-multe		drop-rule
+src/css/main/02-hall-of-fame.css	.modal .pay-btn	.modal .pay-btn	pay-btn		drop-rule
+src/css/main/02-hall-of-fame.css	/* Shine sweep effect on buttons */ .modal .pay-btn::after	/* Shine sweep effect on buttons */ .modal .pay-btn::after	pay-btn		drop-rule
+src/css/main/02-hall-of-fame.css	.modal .pay-btn:hover::after	.modal .pay-btn:hover::after	pay-btn		drop-rule
+src/css/main/02-hall-of-fame.css	.modal .pay-btn:hover	.modal .pay-btn:hover	pay-btn		drop-rule
+src/css/main/02-hall-of-fame.css	.modal .pay-btn:active	.modal .pay-btn:active	pay-btn		drop-rule
+src/css/main/02-hall-of-fame.css	.modal .pay-btn:last-child	.modal .pay-btn:last-child	pay-btn		drop-rule
+src/css/main/03-navigation.css	.top-sugestii-panel .ts-row-scores .heart	.top-sugestii-panel .ts-row-scores .heart	heart		drop-rule
+src/css/main/04-sidebar-layout.css	.top-anime-widget	.top-anime-widget	top-anime-widget		drop-rule
+src/css/main/04-sidebar-layout.css	/* Centrează titlul principal din top. */ .serii-title	/* Centrează titlul principal din top. */ .serii-title	serii-title		drop-rule
+src/css/main/05-sidebar-effects.css	.serii-cerute-content > .serii-title, .serii-cerute-content > .top-anime-widget	.serii-cerute-content > .serii-title	serii-title		drop-rule
+src/css/main/05-sidebar-effects.css	.serii-cerute-content > .serii-title, .serii-cerute-content > .top-anime-widget	.serii-cerute-content > .top-anime-widget	top-anime-widget		drop-rule
+src/css/main/06-favorites.css	.serii-favorite-refresh .fav-genre	.serii-favorite-refresh .fav-genre	fav-genre		drop-rule
+src/css/main/06-favorites.css	/* Linia Shounen · TV a fost eliminată din HTML. */ .serii-favorite-refresh .fav-genre:not(#__av_prio_a#__av_prio_b)	/* Linia Shounen · TV a fost eliminată din HTML. */ .serii-favorite-refresh .fav-genre:not(#__av_prio_a#__av_prio_b)	fav-genre		drop-rule
+src/css/main/07-layout-adjustments.css	.uap-subtitle	.uap-subtitle	uap-subtitle		drop-rule
+src/css/main/07-layout-adjustments.css	.uap-live	.uap-live	uap-live		drop-rule
+src/css/main/07-layout-adjustments.css	.uap-live span	.uap-live span	uap-live		drop-rule
+src/css/main/07-layout-adjustments.css	.uap-stat-icon	.uap-stat-icon	uap-stat-icon		drop-rule
+src/css/main/07-layout-adjustments.css	.uap-stat-icon svg	.uap-stat-icon svg	uap-stat-icon		drop-rule
+src/css/main/07-layout-adjustments.css	.uap-stat-watch	.uap-stat-watch	uap-stat-watch		drop-rule
+src/css/main/07-layout-adjustments.css	.uap-stat-comment	.uap-stat-comment	uap-stat-comment		drop-rule
+src/css/main/07-layout-adjustments.css	.uap-streak	.uap-streak	uap-streak		drop-rule
+src/css/main/07-layout-adjustments.css	.uap-streak::before	.uap-streak::before	uap-streak		drop-rule
+src/css/main/07-layout-adjustments.css	.uap-streak	.uap-streak	uap-streak		drop-rule
+src/css/main/07-layout-adjustments.css	.uap-live span	.uap-live span	uap-live		drop-rule
+src/css/main/07-layout-adjustments.css	.left-sidebar .uap-live	.left-sidebar .uap-live	uap-live		drop-rule
+src/css/main/07-layout-adjustments.css	.left-sidebar .uap-live span	.left-sidebar .uap-live span	uap-live		drop-rule
+src/css/main/07-layout-adjustments.css	.left-sidebar .uap-stat-icon, .left-sidebar .uap-streak	.left-sidebar .uap-stat-icon	uap-stat-icon		drop-rule
+src/css/main/07-layout-adjustments.css	.left-sidebar .uap-stat-icon, .left-sidebar .uap-streak	.left-sidebar .uap-streak	uap-streak		drop-rule
+src/css/main/08-news-and-effects.css	.av-news-led-frame	.av-news-led-frame	av-news-led-frame		drop-rule
+src/css/main/08-news-and-effects.css	.av-news-led-frame rect	.av-news-led-frame rect	av-news-led-frame		drop-rule
+src/css/main/08-news-and-effects.css	.av-news-led-glow	.av-news-led-glow	av-news-led-glow		drop-rule
+src/css/main/08-news-and-effects.css	.av-news-led-core	.av-news-led-core	av-news-led-core		drop-rule
+src/css/main/08-news-and-effects.css	.av-news-led-frame rect	.av-news-led-frame rect	av-news-led-frame		drop-rule
+src/css/main/08-news-and-effects.css	/* Sarpe LED din puncte apropiate - urmareste exact rama. */ .av-news-led-frame	/* Sarpe LED din puncte apropiate - urmareste exact rama. */ .av-news-led-frame	av-news-led-frame		drop-rule
+src/css/main/08-news-and-effects.css	.av-news-led-snake	.av-news-led-snake	av-news-led-snake		drop-rule
+src/css/main/08-news-and-effects.css	.av-news-led-snake i	.av-news-led-snake i	av-news-led-snake		drop-rule
+src/css/main/08-news-and-effects.css	.av-news-led-snake i	.av-news-led-snake i	av-news-led-snake		drop-rule
+src/css/main/08-news-and-effects.css	/* O singura linie LED: cap luminos si coada estompata. */ .av-news-led-snake	/* O singura linie LED: cap luminos si coada estompata. */ .av-news-led-snake	av-news-led-snake		drop-rule
+src/css/trending/01-trending-core.css	.title-block	.title-block	title-block		drop-rule
+src/css/trending/01-trending-core.css	.title-block h2	.title-block h2	title-block		drop-rule
+src/css/trending/01-trending-core.css	.header-right	.header-right	header-right		drop-rule
+src/css/trending/01-trending-core.css	.episode-badge	.episode-badge	episode-badge		drop-rule
+src/css/trending/01-trending-core.css	.trending-pair .meta-panel	.trending-pair .meta-panel	meta-panel		drop-rule
+src/css/trending/01-trending-core.css	.trending-pair .meta-content-stack	.trending-pair .meta-content-stack	meta-content-stack		drop-rule
+src/css/trending/01-trending-core.css	.trending-pair .series-title-vertical	.trending-pair .series-title-vertical	series-title-vertical		drop-rule
+src/css/trending/01-trending-core.css	.trending-pair .series-rank	.trending-pair .series-rank	series-rank		drop-rule
+src/css/trending/01-trending-core.css	.trending-pair.pair-1 .series-rank	.trending-pair.pair-1 .series-rank	series-rank		drop-rule
+src/css/trending/01-trending-core.css	.trending-pair.pair-2 .series-rank	.trending-pair.pair-2 .series-rank	series-rank		drop-rule
+src/css/trending/01-trending-core.css	.trending-pair.pair-3 .series-rank	.trending-pair.pair-3 .series-rank	series-rank		drop-rule
+src/css/trending/01-trending-core.css	.trending-pair .series-detail, .trending-pair .series-rating	.trending-pair .series-detail	series-detail		drop-rule
+src/css/trending/01-trending-core.css	.trending-pair .series-detail, .trending-pair .series-rating	.trending-pair .series-rating	series-rating		drop-rule
+src/css/trending/01-trending-core.css	.trending-section .card-image:not(#__av_prio_a#__av_prio_b)	.trending-section .card-image:not(#__av_prio_a#__av_prio_b)	card-image		drop-rule
+src/css/trending/01-trending-core.css	.trending-section .card-image img:not(#__av_prio_a#__av_prio_b)	.trending-section .card-image img:not(#__av_prio_a#__av_prio_b)	card-image		drop-rule
+src/css/trending/01-trending-core.css	.trending-pair:hover .trending-section .card-image img	.trending-pair:hover .trending-section .card-image img	card-image		drop-rule
+src/css/trending/01-trending-core.css	.trending-pair:hover .trending-section .card-image img:not(#__av_prio_a#__av_prio_b)	.trending-pair:hover .trending-section .card-image img:not(#__av_prio_a#__av_prio_b)	card-image		drop-rule
+src/css/trending/01-trending-core.css	.trending-section .image-overlay	.trending-section .image-overlay	image-overlay		drop-rule
+src/css/trending/01-trending-core.css	.trending-section .light-sweep, .trending-section .energy-line, .trending-section .energy-line-top, .trending-section .floating-orb	.trending-section .light-sweep	light-sweep		drop-rule
+src/css/trending/01-trending-core.css	.trending-section .light-sweep, .trending-section .energy-line, .trending-section .energy-line-top, .trending-section .floating-orb	.trending-section .energy-line	energy-line		drop-rule
+src/css/trending/01-trending-core.css	.trending-section .light-sweep, .trending-section .energy-line, .trending-section .energy-line-top, .trending-section .floating-orb	.trending-section .energy-line-top	energy-line-top		drop-rule
+src/css/trending/01-trending-core.css	.trending-section .light-sweep, .trending-section .energy-line, .trending-section .energy-line-top, .trending-section .floating-orb	.trending-section .floating-orb	floating-orb		drop-rule
+src/css/trending/01-trending-core.css	.trending-section .shine	.trending-section .shine	shine		drop-rule
+src/css/trending/01-trending-core.css	.trending-pair:hover .trending-section .shine	.trending-pair:hover .trending-section .shine	shine		drop-rule
+src/css/trending/01-trending-core.css	.light-sweep	.light-sweep	light-sweep		drop-rule
+src/css/trending/01-trending-core.css	.trending-pair:hover .light-sweep	.trending-pair:hover .light-sweep	light-sweep		drop-rule
+src/css/trending/01-trending-core.css	.trending-section .energy-line, .trending-section .energy-line-top	.trending-section .energy-line	energy-line		drop-rule
+src/css/trending/01-trending-core.css	.trending-section .energy-line, .trending-section .energy-line-top	.trending-section .energy-line-top	energy-line-top		drop-rule
+src/css/trending/01-trending-core.css	.trending-section .energy-line	.trending-section .energy-line	energy-line		drop-rule
+src/css/trending/01-trending-core.css	.trending-section .energy-line-top	.trending-section .energy-line-top	energy-line-top		drop-rule
+src/css/trending/01-trending-core.css	.trending-section .energy-line::before, .trending-section .energy-line-top::before	.trending-section .energy-line::before	energy-line		drop-rule
+src/css/trending/01-trending-core.css	.trending-section .energy-line::before, .trending-section .energy-line-top::before	.trending-section .energy-line-top::before	energy-line-top		drop-rule
+src/css/trending/01-trending-core.css	.trending-pair:hover .trending-section .energy-line, .trending-pair:hover .trending-section .energy-line-top	.trending-pair:hover .trending-section .energy-line	energy-line		drop-rule
+src/css/trending/01-trending-core.css	.trending-pair:hover .trending-section .energy-line, .trending-pair:hover .trending-section .energy-line-top	.trending-pair:hover .trending-section .energy-line-top	energy-line-top		drop-rule
+src/css/trending/01-trending-core.css	.trending-pair:hover .trending-section .energy-line::before	.trending-pair:hover .trending-section .energy-line::before	energy-line		drop-rule
+src/css/trending/01-trending-core.css	.trending-pair:hover .trending-section .energy-line-top::before	.trending-pair:hover .trending-section .energy-line-top::before	energy-line-top		drop-rule
+src/css/trending/01-trending-core.css	.trending-section .floating-orb	.trending-section .floating-orb	floating-orb		drop-rule
+src/css/trending/01-trending-core.css	.trending-section .orb-center	.trending-section .orb-center	orb-center		drop-rule
+src/css/trending/01-trending-core.css	.trending-pair:hover .trending-section .floating-orb	.trending-pair:hover .trending-section .floating-orb	floating-orb		drop-rule
+src/css/trending/01-trending-core.css	.trending-section .particles-canvas	.trending-section .particles-canvas	particles-canvas		drop-rule
+src/css/trending/01-trending-core.css	.trending-section .episode-badge	.trending-section .episode-badge	episode-badge		drop-rule
+src/css/trending/01-trending-core.css	.trending-popup-fx	.trending-popup-fx	trending-popup-fx		drop-rule
+src/css/trending/01-trending-core.css	.trending-popup-fx::before	.trending-popup-fx::before	trending-popup-fx		drop-rule
+src/css/trending/01-trending-core.css	.hover-popup.active .trending-popup-fx::before	.hover-popup.active .trending-popup-fx::before	trending-popup-fx		drop-rule
+src/css/trending/01-trending-core.css	.trending-popup-fx::after	.trending-popup-fx::after	trending-popup-fx		drop-rule
+src/css/trending/03-trending-responsive.css	.trending-pair .series-rank	.trending-pair .series-rank	series-rank		drop-rule
+src/css/trending/03-trending-responsive.css	.trending-pair .series-title-vertical	.trending-pair .series-title-vertical	series-title-vertical		drop-rule
+src/css/trending/03-trending-responsive.css	.trending-pair .meta-panel	.trending-pair .meta-panel	meta-panel		drop-rule
+src/css/trending/03-trending-responsive.css	.trending-pair .meta-content-stack	.trending-pair .meta-content-stack	meta-content-stack		drop-rule
+src/css/trending/03-trending-responsive.css	#trendingMaster .avt-episode	#trendingMaster .avt-episode	avt-episode		drop-rule
+src/css/trending/03-trending-responsive.css	#trendingMaster .avt-top-label	#trendingMaster .avt-top-label	avt-top-label		drop-rule
+src/css/trending/03-trending-responsive.css	#trendingMaster .avt-caption-meta	#trendingMaster .avt-caption-meta	avt-caption-meta		drop-rule
+src/css/trending/03-trending-responsive.css	#trendingMaster .avt-caption-line	#trendingMaster .avt-caption-line	avt-caption-line		drop-rule
+src/css/trending/03-trending-responsive.css	#trendingMaster .trending-pair:hover .avt-caption-line	#trendingMaster .trending-pair:hover .avt-caption-line	avt-caption-line		drop-rule
+src/css/trending/03-trending-responsive.css	#trendingMaster .avt-episode	#trendingMaster .avt-episode	avt-episode		drop-rule
+src/css/trending/03-trending-responsive.css	#trendingMaster .trending-pair,   #trendingMaster .avt-artwork img,   #trendingMaster .avt-caption-line	#trendingMaster .avt-caption-line	avt-caption-line		drop-branch
+src/css/trending/04-trending-refinements.css	#trendingMaster .title-block h2	#trendingMaster .title-block h2	title-block		drop-rule
+src/css/trending/04-trending-refinements.css	#trendingMaster .avt-caption-meta	#trendingMaster .avt-caption-meta	avt-caption-meta		drop-rule
+src/css/trending/06-trending-final.css	#trendingMaster .title-block:not(#__av_prio_a#__av_prio_b)	#trendingMaster .title-block:not(#__av_prio_a#__av_prio_b)	title-block		drop-rule
+src/css/trending/06-trending-final.css	#trendingMaster .title-block h2:not(#__av_prio_a#__av_prio_b)	#trendingMaster .title-block h2:not(#__av_prio_a#__av_prio_b)	title-block		drop-rule
+src/css/trending/06-trending-final.css	#trendingMaster .title-block:not(#__av_prio_a#__av_prio_b), #trendingMaster .header-right:not(#__av_prio_a#__av_prio_b)	#trendingMaster .title-block:not(#__av_prio_a#__av_prio_b)	title-block		drop-rule
+src/css/trending/06-trending-final.css	#trendingMaster .title-block:not(#__av_prio_a#__av_prio_b), #trendingMaster .header-right:not(#__av_prio_a#__av_prio_b)	#trendingMaster .header-right:not(#__av_prio_a#__av_prio_b)	header-right		drop-rule
+src/css/trending/06-trending-final.css	#trendingMaster .title-block:not(#__av_prio_a#__av_prio_b)	#trendingMaster .title-block:not(#__av_prio_a#__av_prio_b)	title-block		drop-rule
+src/css/trending/06-trending-final.css	#trendingMaster .header-right:not(#__av_prio_a#__av_prio_b)	#trendingMaster .header-right:not(#__av_prio_a#__av_prio_b)	header-right		drop-rule

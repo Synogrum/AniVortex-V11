@@ -1,0 +1,350 @@
+/* ============================================================
+   AniVortex Comentarii V26 — title cleanup
+   - elimina "LIVE"
+   - elimina bulina "24 NOI"
+   - muta "COMUNITATEA ANIVORTEX" sub titlul "Comentarii"
+   ============================================================ */
+
+/* Ascundem textul vechi "COMUNITATEA ANIVORTEX · LIVE". */
+.com-eyebrow:not(#__av_prio_a#__av_prio_b) {
+  display: none;
+}
+
+/* Eliminăm complet bulina "24 NOI". */
+.com-live-count:not(#__av_prio_a#__av_prio_b) {
+  display: none;
+}
+
+/* Titlul devine pe două rânduri: Comentarii + Comunitatea AniVortex. */
+.comentarii-title-line {
+  
+  
+  
+  
+}
+
+/* Textul mutat sub "Comentarii". */
+.comentarii-title-line::after {
+  
+  
+  
+  
+  
+  
+  
+  
+}
+
+/* Mică ajustare pentru a păstra antetul compact și echilibrat. */
+.comentarii-title-group {
+  align-items: start;
+}
+
+@media (max-width: 620px) {
+  .comentarii-title-line::after {
+    font-size: 8.5px;
+    letter-spacing: 0.16em;
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V27 — controls next to title
+   - elimina "24 COMENTARII NOI"
+   - muta butoanele langa "Comentarii"
+   - lasa un spatiu mic intre titlu si butoane
+   ============================================================ */
+
+.comentarii-tabs:not(#__av_prio_a#__av_prio_b)::before {
+  content: none;
+  display: none;
+}
+
+/* Titlul si butoanele stau unul langa altul, nu la capetele containerului. */
+.comentarii-top {
+  justify-content: flex-start;
+  
+  flex-wrap: nowrap;
+  
+}
+
+/* Butoanele pornesc imediat dupa titlu, cu un mic spatiu. */
+.comentarii-tabs {
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  
+  
+}
+
+/* Pastram titlul compact ca sa nu impinga butoanele prea departe. */
+.comentarii-title-group {
+  flex: 0 0 auto;
+}
+
+/* Pe ecrane mai mici permitem din nou impachetarea. */
+@media (max-width: 990px) {
+  .comentarii-top {
+    flex-wrap: wrap;
+    
+  }
+
+  .comentarii-tabs {
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V28 — header controls polish
+   - Anime are aceeași dimensiune ca "Comentarii noi"
+   - butoanele sunt mai curate și mai bine aliniate
+   ============================================================ */
+
+.comentarii-top {
+  
+  
+}
+
+.comentarii-tabs {
+  align-items: center;
+  
+  
+}
+
+/* Aceeași înălțime și același stil vizual pentru toate controalele. */
+.com-tab,
+.com-category-selector {
+  height: 38px;
+  min-height: 38px;
+  border-radius: 11px;
+  font-size: 10px;
+  font-weight: 780;
+  box-shadow:
+    inset 0 1px rgba(255,255,255,.035),
+    0 5px 14px rgba(0,0,0,.10);
+}
+
+/* "Comentarii noi" și "Anime" au exact aceeași lățime. */
+.com-tab.active,
+.com-category-selector {
+  width: 112px;
+  min-width: 112px;
+}
+
+/* Butonul activ rămâne centrat și mai rafinat. */
+.com-tab.active {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 12px;
+}
+
+/* Anime: text centrat, săgeata păstrată curat în dreapta. */
+.com-category-selector {
+  display: grid;
+  
+  align-items: center;
+  justify-content: stretch;
+  
+  
+}
+
+.com-category-selector .com-cat-label {
+  min-width: 0;
+  
+}
+
+.com-category-selector .com-cat-arrow {
+  display: grid;
+  place-items: center;
+  
+  
+  
+  line-height: 1;
+}
+
+/* Al doilea buton rămâne puțin mai lat fiindcă are text mai lung. */
+.comentarii-tabs .com-tab:not(.active) {
+  padding-inline: 15px;
+}
+
+/* Hover mai uniform între cele trei controale. */
+.com-tab:hover,
+.com-category-selector:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 990px) {
+  .comentarii-tabs {
+    gap: 7px;
+  }
+
+  .com-tab.active,
+  .com-category-selector {
+    width: 110px;
+    min-width: 110px;
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V29 — title/subtitle hierarchy + smaller Anime
+   ============================================================ */
+
+/* Mai mult aer între titlu și subtitlu. */
+.comentarii-title-line {
+  
+}
+
+/* Titlul rămâne elementul principal. */
+.comentarii-title-group h2 {
+  
+  
+  
+  
+}
+
+/* Subtitlul devine clar secundar. */
+.comentarii-title-line::after {
+  
+  
+  
+  
+  
+}
+
+/* Anime mai compact decât Comentarii noi. */
+.com-category-selector {
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
+
+.com-category-selector .com-cat-label {
+  
+}
+
+.com-category-selector .com-cat-arrow {
+  
+  
+  
+}
+
+@media (max-width: 990px) {
+  .comentarii-title-line {
+    
+  }
+
+  .com-category-selector {
+    
+    
+  }
+}
+/* ============================================================
+   AniVortex Comentarii V30 — cleaner title area
+   - titlu + subtitlu mai elegant
+   - subtitlul are accent discret, nu pare text aruncat
+   - butonul Anime este compact si echilibrat
+   ============================================================ */
+
+/* Antetul rămâne compact și curat. */
+.comentarii-top {
+  align-items: center;
+  gap: 18px;
+}
+
+/* Titlu + subtitlu: ierarhie mai naturală. */
+.comentarii-title-line {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.comentarii-title-group h2 {
+  position: relative;
+  font-size: 30px;
+  font-weight: 850;
+  line-height: 1;
+  letter-spacing: -0.045em;
+}
+
+/* Subtitlu cu o mică linie-accent în stânga. */
+.comentarii-title-line::after {
+  content: "COMUNITATEA ANIVORTEX";
+  display: flex;
+  align-items: center;
+  min-height: 16px;
+  padding-left: 12px;
+  color: #79cfc5;
+  font-size: 8.1px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border-left: 2px solid rgba(222, 196, 129, 0.72);
+  opacity: 0.92;
+}
+
+/* Grupul de butoane ușor mai aproape de titlu. */
+.comentarii-tabs {
+  gap: 7px;
+  margin-top: 0;
+}
+
+/* Butoanele principale rămân clare. */
+.com-tab {
+  height: 36px;
+  min-height: 36px;
+  border-radius: 10px;
+}
+
+/* Anime devine compact, nu mai concurează vizual cu "Comentarii noi". */
+.com-category-selector {
+  width: 76px;
+  min-width: 76px;
+  height: 32px;
+  min-height: 32px;
+  margin-top: 0;
+  padding: 0 7px 0 10px;
+  border-radius: 9px;
+  grid-template-columns: minmax(0, 1fr) 14px;
+  gap: 2px;
+  background: rgba(2, 14, 18, 0.34);
+  box-shadow: inset 0 1px rgba(255,255,255,.025);
+}
+
+.com-category-selector .com-cat-label {
+  font-size: 8.4px;
+  font-weight: 760;
+  text-align: center;
+}
+
+.com-category-selector .com-cat-arrow {
+  width: 14px;
+  height: 14px;
+  font-size: 14px;
+}
+
+/* Hover discret pentru butonul Anime. */
+.com-category-selector:hover {
+  background: rgba(25, 77, 80, 0.18);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 990px) {
+  .comentarii-top {
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .comentarii-title-line {
+    gap: 6px;
+  }
+
+  .com-category-selector {
+    width: 74px;
+    min-width: 74px;
+  }
+}

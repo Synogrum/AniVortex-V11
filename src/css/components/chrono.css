@@ -1,0 +1,763 @@
+/* ============================================================
+   CHRONOLOGIE ANIVORTEX — component integrat
+   ============================================================ */
+
+.chronologie-container {
+    --chrono-surface: var(--avf-surface-top, #071b21);
+    --chrono-surface-soft: rgba(255, 255, 255, 0.038);
+    --chrono-text: #f7f4ec;
+    --chrono-text-soft: #b9c7c9;
+    --chrono-text-muted: #789092;
+    --chrono-gold: var(--av-gold);
+    --chrono-gold-bright: #efd99f;
+    --chrono-teal: #66d7cb;
+    --chrono-border: rgba(212, 183, 122, 0.22);
+    --chrono-border-soft: rgba(142, 215, 207, 0.13);
+    --chrono-focus: #efd99f;
+    --chrono-radius-lg: 20px;
+    --chrono-radius-md: 14px;
+    --chrono-ease: cubic-bezier(0.22, 1, 0.36, 1);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
+    min-height: 430px;
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 16px clamp(130px, 11vw, 190px) 52px;
+    color: var(--chrono-text);
+    border: 1px solid var(--chrono-border);
+    border-radius: 0;
+    background: var(--chrono-surface);
+    font-family: Inter, "Segoe UI", sans-serif;
+    text-align: center;
+}
+
+.chronologie-container,
+.chronologie-container * {
+    box-sizing: border-box;
+}
+
+.chronologie-container.is-enhanced {
+    min-width: 0;
+    margin-top: 0;
+    clip-path: none;
+    overflow: visible;
+    border: 1px solid var(--chrono-border);
+    border-inline: 0;
+    border-bottom: 0;
+    border-radius: 0;
+    background: var(--chrono-surface);
+    box-shadow: 0 30px 45px rgba(0, 0, 0, 0.38);
+}
+
+.chronologie-container::before,
+.chronologie-container::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.chronologie-container::before {
+    content: none;
+}
+
+.chronologie-container::after {
+    inset: 0;
+    opacity: 0.22;
+    background-image:
+        radial-gradient(circle at 7% 14%, rgba(225, 252, 255, 0.7) 0 1px, transparent 1.7px),
+        radial-gradient(circle at 19% 62%, rgba(180, 244, 255, 0.48) 0 1px, transparent 1.7px),
+        radial-gradient(circle at 34% 29%, rgba(230, 255, 255, 0.62) 0 1px, transparent 1.6px),
+        radial-gradient(circle at 49% 79%, rgba(176, 242, 255, 0.52) 0 1px, transparent 1.7px),
+        radial-gradient(circle at 66% 18%, rgba(235, 255, 255, 0.72) 0 1px, transparent 1.6px),
+        radial-gradient(circle at 81% 58%, rgba(185, 245, 255, 0.55) 0 1px, transparent 1.7px),
+        radial-gradient(circle at 94% 31%, rgba(230, 255, 255, 0.65) 0 1px, transparent 1.6px);
+    background-size: 330px 260px, 390px 310px, 460px 350px, 410px 300px, 370px 280px, 430px 330px, 360px 290px;
+    mask-image: none;
+    animation: avEntStars 22s linear infinite alternate;
+}
+
+.chrono-top-rise {
+    position: absolute;
+    z-index: 0;
+    top: -54px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 55px;
+    overflow: visible;
+    pointer-events: none;
+}
+
+.chronologie-container .titlu {
+    --chrono-title-lift: 0px;
+    max-width: 760px;
+    position: relative;
+    z-index: 2;
+    inset: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: calc(-1 * var(--chrono-title-lift)) var(--chrono-title-lift);
+    margin-inline: 0;
+    padding: 0;
+    color: var(--chrono-text);
+    text-align: center;
+}
+
+@media (min-width: 761px) {
+    .chronologie-container .titlu {
+        --chrono-title-lift: clamp(74px, calc(92px - 0.93vw), 80px);
+    }
+}
+
+.chrono-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--chrono-gold);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.chrono-eyebrow::before,
+.chrono-eyebrow::after {
+    content: "";
+    width: 22px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, currentColor);
+}
+
+.chrono-eyebrow::after {
+    transform: rotate(180deg);
+}
+
+.chrono-title-main {
+    display: block;
+    margin-top: 17px;
+    color: var(--chrono-text);
+    font-family: Outfit, Inter, sans-serif;
+    font-size: clamp(30px, 2.35vw, 42px);
+    font-weight: 750;
+    letter-spacing: -1.1px;
+    line-height: 1.04;
+    text-shadow: 0 12px 32px rgba(0, 0, 0, 0.42);
+}
+
+.chrono-title-subtitle {
+    display: block;
+    margin-top: 6px;
+    color: var(--chrono-text-soft);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.55;
+    text-wrap: balance;
+}
+
+.chronologie-container .slider-container {
+    width: min(100%, 1140px);
+    position: relative;
+    z-index: 2;
+    inset: auto;
+    display: grid;
+    grid-template-columns: 46px minmax(0, 1fr) 46px;
+    align-items: center;
+    gap: 14px;
+    margin: 26px auto 0;
+    padding: 0;
+}
+
+.chronologie-container .buton-left,
+.chronologie-container .buton-right {
+    width: 46px;
+    height: 46px;
+    position: static;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    color: var(--chrono-gold-bright);
+    border: 1px solid rgba(212, 183, 122, 0.32);
+    border-radius: 50%;
+    background: linear-gradient(145deg, rgba(212, 183, 122, 0.11), rgba(255, 255, 255, 0.025));
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07), 0 8px 18px rgba(0, 0, 0, 0.2);
+    -webkit-text-fill-color: currentColor;
+    cursor: pointer;
+    transition: color 150ms ease, border-color 150ms ease, background-color 150ms ease, transform 180ms var(--chrono-ease);
+}
+
+.chronologie-container .buton-left svg,
+.chronologie-container .buton-right svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.8;
+}
+
+.chronologie-container .buton-left:hover:not(:disabled),
+.chronologie-container .buton-right:hover:not(:disabled) {
+    color: #fff4cf;
+    border-color: rgba(239, 217, 159, 0.64);
+    background: rgba(212, 183, 122, 0.15);
+    transform: translateY(-2px);
+}
+
+.chronologie-container .buton-left:active:not(:disabled),
+.chronologie-container .buton-right:active:not(:disabled) {
+    transform: scale(0.96);
+}
+
+.chronologie-container .buton-left:disabled,
+.chronologie-container .buton-right:disabled {
+    opacity: 0.28;
+    cursor: not-allowed;
+}
+
+.chronologie-container .timp {
+    min-width: 0;
+    width: auto;
+    overflow-x: auto;
+    padding: 5px 2px 8px;
+    scrollbar-width: none;
+}
+
+.chronologie-container .timp::-webkit-scrollbar {
+    display: none;
+}
+
+.chronologie-container .ani {
+    min-width: max-content;
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: clamp(64px, 6vw, 80px);
+    justify-content: center;
+    gap: clamp(6px, 0.7vw, 10px);
+}
+
+.chronologie-container .ani::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    right: 2%;
+    left: 2%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(102, 215, 203, 0.22), rgba(212, 183, 122, 0.3), transparent);
+}
+
+.chronologie-container .chrono-year {
+    height: 58px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    padding: 0 8px;
+    color: #dce7e7;
+    border: 1px solid rgba(136, 203, 198, 0.18);
+    border-radius: var(--chrono-radius-md);
+    background:
+        linear-gradient(155deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.015)),
+        rgba(4, 20, 24, 0.86);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.045), 0 8px 18px rgba(0, 0, 0, 0.18);
+    font-family: Outfit, Inter, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.2px;
+    cursor: pointer;
+    transition: color 150ms ease, border-color 160ms ease, background-color 160ms ease, box-shadow 180ms ease, transform 200ms var(--chrono-ease);
+}
+
+.chronologie-container .chrono-year::after {
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    left: 0;
+    margin-inline: auto;
+    border-radius: 50%;
+    background: var(--chrono-teal);
+    box-shadow: 0 0 10px rgba(102, 215, 203, 0.52);
+    opacity: 0;
+    transform: scale(0.6);
+    transition: opacity 160ms ease, transform 180ms var(--chrono-ease);
+}
+
+.chronologie-container .chrono-year:hover {
+    color: #fff;
+    border-color: rgba(102, 215, 203, 0.42);
+    transform: translateY(-3px);
+}
+
+.chronologie-container .chrono-year.is-selected {
+    color: #071918;
+    border-color: rgba(190, 239, 232, 0.9);
+    background:
+        radial-gradient(circle at 30% 10%, rgba(255, 255, 255, 0.58), transparent 40%),
+        linear-gradient(145deg, #a5ddd5, #4d928d);
+    box-shadow:
+        0 11px 26px rgba(54, 139, 132, 0.25),
+        0 0 0 4px rgba(102, 215, 203, 0.075),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    font-weight: 800;
+    transform: translateY(-4px);
+}
+
+.chronologie-container .chrono-year.is-selected::after {
+    background: var(--chrono-gold-bright);
+    box-shadow: 0 0 10px rgba(212, 183, 122, 0.62);
+    opacity: 1;
+    transform: scale(1);
+}
+
+.chrono-range {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(24px, 90px) auto minmax(24px, 90px);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 2px;
+}
+
+.chrono-range span {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(212, 183, 122, 0.32));
+}
+
+.chrono-range span:last-child {
+    transform: rotate(180deg);
+}
+
+.chrono-range output {
+    margin: 0;
+    color: var(--chrono-text-muted);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.25px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.chrono-share-panel {
+    width: min(100%, 1140px);
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(250px, 1fr) auto;
+    align-items: center;
+    gap: 20px;
+    margin-top: 16px;
+    padding: 14px 16px;
+    border: 1px solid var(--chrono-border-soft);
+    border-radius: var(--chrono-radius-lg);
+    background:
+        linear-gradient(100deg, rgba(102, 215, 203, 0.055), transparent 48%, rgba(212, 183, 122, 0.035)),
+        var(--chrono-surface-soft);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.035);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+}
+
+.chronologie-container .share-text {
+    min-width: 0;
+    position: static;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin: 0;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-align: left;
+}
+
+.chrono-share-icon {
+    width: 38px;
+    height: 38px;
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    color: var(--chrono-gold-bright);
+    border: 1px solid rgba(212, 183, 122, 0.27);
+    border-radius: 12px;
+    background: rgba(212, 183, 122, 0.075);
+}
+
+.chrono-share-icon svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.6;
+}
+
+.chrono-share-copy,
+.chrono-share-copy strong,
+.chrono-share-copy span {
+    display: block;
+}
+
+.chrono-share-copy {
+    min-width: 0;
+}
+
+.chrono-share-copy strong {
+    color: #eef4f3;
+    font-size: 12px;
+    font-weight: 750;
+}
+
+.chrono-share-copy span {
+    margin-top: 3px;
+    color: var(--chrono-text-muted);
+    font-size: 9.5px;
+    line-height: 1.4;
+}
+
+.chronologie-container .share-buttons {
+    position: static;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.chrono-socials-label {
+    margin-right: 3px;
+    padding-right: 13px;
+    color: var(--chrono-gold);
+    border-right: 1px solid rgba(212, 183, 122, 0.22);
+    font-size: 8.5px;
+    font-weight: 800;
+    letter-spacing: 1.35px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.chronologie-container .share-buttons a {
+    --social-accent: var(--av-gold);
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    color: #dce6e6;
+    border: 1px solid rgba(212, 183, 122, 0.15);
+    border-radius: 50%;
+    background:
+        linear-gradient(145deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.012)),
+        rgba(2, 12, 15, 0.72);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.045), 0 7px 16px rgba(0, 0, 0, 0.18);
+    text-decoration: none;
+    cursor: pointer;
+    transition: border-color 150ms ease, background-color 150ms ease, box-shadow 180ms ease, transform 180ms var(--chrono-ease);
+}
+
+.chronologie-container .share-buttons .facebook { --social-accent: #5f8fe8; }
+.chronologie-container .share-buttons .twitter { --social-accent: #d9e4e7; }
+.chronologie-container .share-buttons .messenger { --social-accent: #568cff; }
+.chronologie-container .share-buttons .whatsapp { --social-accent: #43d58b; }
+.chronologie-container .share-buttons .tiktok { --social-accent: #7de3d1; }
+.chronologie-container .share-buttons .instagram { --social-accent: #e69aa9; }
+
+.chronologie-container .share-buttons img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.share-label {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.chronologie-container .share-buttons a:hover {
+    border-color: color-mix(in srgb, var(--social-accent) 46%, var(--chrono-gold));
+    background: linear-gradient(145deg, color-mix(in srgb, var(--social-accent) 13%, rgba(255, 255, 255, 0.04)), rgba(2, 12, 15, 0.78));
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07), 0 8px 20px color-mix(in srgb, var(--social-accent) 14%, transparent);
+    transform: translateY(-2px);
+}
+
+.chronologie-container .share-buttons a:active {
+    transform: scale(0.97);
+}
+
+.chronologie-container .buton-left:focus-visible,
+.chronologie-container .buton-right:focus-visible,
+.chronologie-container .chrono-year:focus-visible,
+.chronologie-container .share-buttons a:focus-visible {
+    outline: 2px solid var(--chrono-focus);
+    outline-offset: 3px;
+}
+
+.chronologie-container .personaj {
+    width: clamp(160px, 13vw, 235px);
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    bottom: 18px;
+    inset-block-start: auto;
+    opacity: 0.78;
+    pointer-events: none;
+    user-select: none;
+    filter: saturate(0.82) drop-shadow(0 18px 22px rgba(0, 0, 0, 0.42));
+}
+
+.chronologie-container .personaj-stanga {
+    left: clamp(14px, 3vw, 54px);
+}
+
+.chronologie-container .personaj-dreapta {
+    right: clamp(18px, 4vw, 70px);
+    left: auto;
+    width: clamp(130px, 10vw, 175px);
+}
+
+@media (min-width: 901px) {
+    .chronologie-container .slider-container {
+        width: min(100%, 1020px);
+        gap: 10px;
+        margin-block-start: 12px;
+    }
+
+    .chrono-share-panel {
+        margin-block-start: 42px;
+        margin-block-end: -12px;
+    }
+
+    .chronologie-container .personaj {
+        width: clamp(180px, 14vw, 265px);
+    }
+
+    .chronologie-container .personaj-dreapta {
+        width: clamp(150px, 11vw, 205px);
+    }
+}
+
+@media (max-width: 1180px) {
+    .chronologie-container {
+        padding-inline: 82px;
+    }
+
+    .chronologie-container .personaj {
+        opacity: 0.56;
+    }
+}
+
+@media (max-width: 1050px) {
+    .chronologie-container .ani {
+        gap: 5px;
+    }
+}
+
+@media (max-width: 900px) {
+    .chronologie-container.is-enhanced {
+        overflow: hidden;
+    }
+
+    .chrono-top-rise {
+        display: none;
+    }
+
+    .chronologie-container .timp {
+        direction: rtl;
+    }
+
+    .chronologie-container .ani {
+        direction: ltr;
+    }
+
+    .chrono-share-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .chronologie-container .share-text,
+    .chronologie-container .share-buttons {
+        justify-content: center;
+    }
+
+    .chronologie-container .share-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 760px) {
+    .chronologie-container {
+        min-height: 0;
+        padding: 20px 18px 34px;
+    }
+
+    .chrono-title-main {
+        font-size: clamp(27px, 8vw, 36px);
+    }
+
+    .chrono-title-subtitle {
+        max-width: 520px;
+        font-size: 12px;
+    }
+
+    .chronologie-container .slider-container {
+        grid-template-columns: 40px minmax(0, 1fr) 40px;
+        gap: 8px;
+        margin-top: 22px;
+    }
+
+    .chronologie-container .buton-left,
+    .chronologie-container .buton-right {
+        width: 40px;
+        height: 40px;
+    }
+
+    .chronologie-container .ani {
+        grid-auto-columns: 68px;
+        justify-content: start;
+    }
+
+    .chronologie-container .chrono-year {
+        height: 54px;
+        font-size: 14px;
+    }
+
+    .chrono-share-panel {
+        margin-top: 16px;
+        padding: 14px;
+    }
+
+    .chronologie-container .personaj {
+        bottom: 16px;
+        opacity: 0.13;
+    }
+}
+
+@media (max-width: 520px) {
+    .chrono-eyebrow {
+        font-size: 8.5px;
+        letter-spacing: 1.5px;
+    }
+
+    .chronologie-container .share-buttons {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        width: 100%;
+        gap: 9px;
+    }
+
+    .chrono-socials-label {
+        grid-column: 1 / -1;
+        margin: 0;
+        padding: 0 0 7px;
+        border-right: 0;
+        border-bottom: 1px solid rgba(212, 183, 122, 0.16);
+        text-align: center;
+    }
+
+    .chronologie-container .share-buttons a {
+        width: 44px;
+        height: 44px;
+        min-height: 44px;
+        justify-self: center;
+    }
+
+    .chronologie-container .share-buttons img {
+        width: 19px;
+        height: 19px;
+    }
+
+    .chronologie-container .share-text {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .chronologie-container::after {
+        animation: none;
+    }
+
+    .chronologie-container .buton-left,
+    .chronologie-container .buton-right,
+    .chronologie-container .chrono-year,
+    .chronologie-container .chrono-year::after,
+    .chronologie-container .share-buttons a {
+        transition-duration: 1ms;
+    }
+}
+
+/* ============================================================
+   ÎMBINARE CHRONOLOGIE → UPC
+   Piesă separată, după modelul îmbinării UPC → footer.
+   ============================================================ */
+
+.av-chrono-upc-join {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: clamp(72px, 5.5vw, 88px);
+    margin: -1px auto 0;
+    overflow: visible;
+    pointer-events: none;
+    background: #02090c;
+}
+
+@media (max-width: 700px) {
+    .av-chrono-upc-join {
+        height: 62px;
+    }
+}
+
+@media (max-width: 480px) {
+    .av-chrono-upc-join {
+        height: 52px;
+    }
+}
+
+/* La viewport-uri foarte late, toate cele trei piese de la baza paginii
+   folosesc aceeași lățime: cronologie, îmbinare și UPC. */
+@media (min-width: 2000px) {
+    .chronologie-container,
+    .av-chrono-upc-join {
+        width: calc(100% - 16px);
+        max-width: 1900px;
+    }
+
+    .chronologie-container {
+        margin-inline: auto;
+    }
+}
+
+@media (min-width: 5200px) {
+    .chronologie-container,
+    .av-chrono-upc-join {
+        width: calc(100% - 24px);
+    }
+}

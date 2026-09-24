@@ -1,0 +1,1823 @@
+/* ============================================================
+   AniVortex — Entertainment Carousel V24
+   Live-action • Filme și Seriale • Cărți
+   ============================================================ */
+/* ============================================================
+   CONTAINER MAMĂ
+   ============================================================ */
+.carousel-collection.av-entertainment-shell {
+    position: relative;
+    isolation: isolate;
+    box-sizing: border-box;
+
+    /* V25: aproape aceeași lungime ca panourile mari / HOT */
+    
+    
+
+    /* V25: spațiul vertical exterior nu depășește 25px */
+    margin: 24px auto 24px;
+
+    padding: 16px 20px;
+    overflow: hidden;
+    
+    border-radius: 0;
+    
+}
+
+.carousel-collection.av-entertainment-shell::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    pointer-events: none;
+    opacity: .22;
+    background-image:
+        radial-gradient(circle at 7% 14%, rgba(225,252,255,.7) 0 1px, transparent 1.7px),
+        radial-gradient(circle at 19% 62%, rgba(180,244,255,.48) 0 1px, transparent 1.7px),
+        radial-gradient(circle at 34% 29%, rgba(230,255,255,.62) 0 1px, transparent 1.6px),
+        radial-gradient(circle at 49% 79%, rgba(176,242,255,.52) 0 1px, transparent 1.7px),
+        radial-gradient(circle at 66% 18%, rgba(235,255,255,.72) 0 1px, transparent 1.6px),
+        radial-gradient(circle at 81% 58%, rgba(185,245,255,.55) 0 1px, transparent 1.7px),
+        radial-gradient(circle at 94% 31%, rgba(230,255,255,.65) 0 1px, transparent 1.6px);
+    background-size: 330px 260px, 390px 310px, 460px 350px, 410px 300px, 370px 280px, 430px 330px, 360px 290px;
+    animation: avEntStars 22s linear infinite alternate;
+}
+
+.av-entertainment-ambient {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: .18;
+    background:
+        radial-gradient(circle at 11% 22%, rgba(99,255,208,.10), transparent 13%),
+        radial-gradient(circle at 88% 48%, rgba(121,235,255,.10), transparent 15%),
+        radial-gradient(circle at 45% 90%, rgba(121,235,255,.07), transparent 18%);
+    filter: blur(28px);
+}
+
+@keyframes avEntStars {
+    from { transform: translate3d(-8px, -4px, 0); }
+    to   { transform: translate3d(10px, 7px, 0); }
+}
+
+/* ============================================================
+   CELE 3 RÂNDURI
+   ============================================================ */
+.carousel-collection .carousel-section {
+    position: relative;
+    min-height: 398px;
+    padding: 24px 10px 18px;
+    overflow: visible;
+    background: transparent;
+}
+
+.carousel-collection .carousel-section + .carousel-section {
+    border-top: 1px solid rgba(121, 235, 255, 0.075);
+}
+
+.carousel-collection .carousel-section + .carousel-section::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 16%;
+    right: 16%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(121,235,255,.13), transparent);
+}
+
+/* ============================================================
+   TITLU — semnul are EXACT înălțimea blocului de text
+   ============================================================ */
+.carousel-collection .section-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: min(1700px, calc(100% - 12px));
+    margin: 0 auto 16px;
+}
+
+.carousel-collection .title-with-bar {
+    display: flex;
+    align-items: stretch;
+    gap: 14px;
+}
+
+.carousel-collection .title-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.carousel-collection .section-kicker {
+    margin: 0 0 5px;
+    color: rgba(173, 226, 235, .90);
+    font-family: Inter, sans-serif;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: .27em;
+}
+
+.carousel-collection .section-header h2 {
+    margin: 0;
+    color: var(--av-ent-text);
+    font-family: Inter, sans-serif;
+    font-size: clamp(30px, 2.15vw, 40px);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -.04em;
+    text-shadow: none;
+}
+
+.carousel-collection .vertical-bar {
+    position: relative;
+    align-self: stretch;
+    flex: 0 0 9px;
+    width: 9px;
+    min-height: 100%;
+    background: none;
+    box-shadow: none;
+    animation: none;
+}
+
+.carousel-collection .vertical-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 4px;
+    height: calc(100% - 13px);
+    min-height: 26px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #baf7ff 0%, #63dcff 50%, #155e6e 100%);
+}
+
+.carousel-collection .vertical-bar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--av-ent-mint);
+}
+
+
+
+/* ============================================================
+   STAGE — 8 carduri complete, poziții fixe în scară
+   ============================================================ */
+.carousel-collection .carousel-container {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    overflow: visible;
+    touch-action: pan-y;
+}
+
+.carousel-collection .carousel-track-wrapper {
+    position: relative;
+    width: var(--av-ent-track-w);
+    
+    margin-block: 0;
+    margin-inline: calc((100% - var(--av-ent-track-w)) / 2);
+    overflow: visible;
+    mask-image: none;
+    -webkit-mask-image: none;
+}
+
+.carousel-collection .carousel-track {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  transition: none;
+  will-change: auto;
+}
+
+.carousel-collection .carousel-track:not(#__av_prio_a#__av_prio_b) {
+  transform: none;
+}
+
+.carousel-collection .card {
+    --av-pos-y: 0px;
+    position: absolute;
+    top: var(--av-pos-y);
+    width: var(--av-ent-card-w);
+    height: auto;
+    margin: 0;
+    padding: 0;
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    opacity: 1;
+    transform: none;
+    transition:
+        left var(--av-ent-move),
+        top var(--av-ent-move),
+        opacity .30s ease,
+        transform .36s cubic-bezier(.2,.8,.2,1);
+    will-change: left, top, opacity, transform;
+}
+
+.carousel-collection .card[data-pos="0"] {
+    left: 0;
+    --av-pos-y: 20px;
+}
+.carousel-collection .card[data-pos="1"] {
+    left: calc((var(--av-ent-card-w) + var(--av-ent-gap)) * 1);
+    --av-pos-y: 10px;
+}
+.carousel-collection .card[data-pos="2"] {
+    left: calc((var(--av-ent-card-w) + var(--av-ent-gap)) * 2);
+    --av-pos-y: 0px;
+}
+.carousel-collection .card[data-pos="3"] {
+    left: calc((var(--av-ent-card-w) + var(--av-ent-gap)) * 3);
+    --av-pos-y: 0px;
+}
+.carousel-collection .card[data-pos="4"] {
+    left: calc((var(--av-ent-card-w) + var(--av-ent-gap)) * 4);
+    --av-pos-y: 0px;
+}
+.carousel-collection .card[data-pos="5"] {
+    left: calc((var(--av-ent-card-w) + var(--av-ent-gap)) * 5);
+    --av-pos-y: 0px;
+}
+.carousel-collection .card[data-pos="6"] {
+    left: calc((var(--av-ent-card-w) + var(--av-ent-gap)) * 6);
+    --av-pos-y: 10px;
+}
+.carousel-collection .card[data-pos="7"] {
+    left: calc((var(--av-ent-card-w) + var(--av-ent-gap)) * 7);
+    --av-pos-y: 20px;
+}
+
+/* Cardul care iese merge drept pe orizontală, fără să urce. */
+.carousel-collection .card.av-exit-left {
+  opacity: 0;
+  transform: scale(.96);
+  z-index: 10;
+}
+
+.carousel-collection .card.av-exit-left:not(#__av_prio_a#__av_prio_b) {
+  left: calc(-1 * (var(--av-ent-card-w) + 62px));
+  top: 20px;
+}
+
+.carousel-collection .card.av-exit-right {
+  opacity: 0;
+  transform: scale(.96);
+  z-index: 10;
+}
+
+.carousel-collection .card.av-exit-right:not(#__av_prio_a#__av_prio_b) {
+  left: calc((var(--av-ent-card-w) + var(--av-ent-gap)) * 8 + 62px);
+  top: 20px;
+}
+
+.carousel-collection .card.av-enter-right {
+  opacity: 0;
+  transform: scale(.96);
+}
+
+.carousel-collection .card.av-enter-right:not(#__av_prio_a#__av_prio_b) {
+  left: calc((var(--av-ent-card-w) + var(--av-ent-gap)) * 8 + 62px);
+  top: 20px;
+}
+
+.carousel-collection .card.av-enter-left {
+  opacity: 0;
+  transform: scale(.96);
+}
+
+.carousel-collection .card.av-enter-left:not(#__av_prio_a#__av_prio_b) {
+  left: calc(-1 * (var(--av-ent-card-w) + 62px));
+  top: 20px;
+}
+
+.carousel-collection .card:hover,
+.carousel-collection .card:focus-visible {
+    z-index: 20;
+    transform: translateY(-4px) scale(1.018);
+    outline: none;
+}
+
+/* ============================================================
+   CARD FRONT
+   ============================================================ */
+.carousel-collection .card-inner {
+    
+    width: 100%;
+    height: var(--av-ent-card-h);
+    border-radius: 20px;
+    
+    
+    box-shadow: none;
+}
+
+.carousel-collection .card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.carousel-collection .card-front {
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.carousel-collection .card-front {
+    border: 1px solid rgba(121, 235, 255, .14);
+    background: #102028;
+    box-shadow: none;
+}
+
+.carousel-collection .card-front::before {
+    content: none;
+}
+
+.carousel-collection .card-front::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(180deg, transparent 46%, rgba(5,18,23,.04) 70%, rgba(5,18,23,.23) 100%);
+}
+
+.carousel-collection .card-front img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .42s cubic-bezier(.2,.8,.2,1), filter .28s ease;
+}
+
+.carousel-collection .card:hover .card-front {
+    border-color: rgba(121,235,255,.25);
+    box-shadow: none;
+}
+
+.carousel-collection .card:hover .card-front img {
+    transform: scale(1.025);
+    filter: saturate(1.035);
+}
+
+
+
+.carousel-collection .card-label {
+    width: 100%;
+    min-height: 22px;
+    margin-top: 9px;
+    color: #f7feff;
+    font-family: Inter, sans-serif;
+    
+    
+    
+    letter-spacing: -.025em;
+    text-align: center;
+    transition: color .24s ease;
+}
+
+.carousel-collection .card:hover .card-label {
+    color: var(--av-ent-cyan-soft);
+}
+
+/* ============================================================
+   CARD BACK — adaptăm markup-ul existent la paleta AniVortex
+   ============================================================ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-collection .card-back-btn {
+    position: relative;
+    z-index: 1;
+    
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(121,235,255,.28);
+    
+    
+    
+    font: 800 8px/1 Inter, sans-serif;
+    
+    
+    overflow: hidden;
+}
+.carousel-collection .card-back-btn::before,
+.carousel-collection .card-back-btn::after { display: none; }
+
+
+/* Dezactivăm animațiile aurii vechi care pot rămâne pe markup. */
+.carousel-collection .card.flipped .card-back-btn {
+    animation: none;
+}
+
+
+/* ============================================================
+   V27 — titlu mai mare + an/status pe față + spate cu detalii
+   ============================================================ */
+
+/* Meta sub numele seriei */
+.carousel-collection .av-card-front-meta {
+    width: 100%;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: rgba(190, 227, 233, .74);
+    font-family: Inter, sans-serif;
+    
+    
+    line-height: 1;
+    
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.carousel-collection .av-card-front-meta .av-front-year {
+    color: #92eefe;
+}
+
+.carousel-collection .av-card-front-meta .av-front-dot {
+    
+    
+    flex: 0 0 3px;
+    border-radius: 50%;
+    background: var(--av-ent-mint);
+    box-shadow: 0 0 7px rgba(99, 255, 208, .42);
+}
+
+.carousel-collection .av-card-front-meta .av-front-status {
+    color: #8cf5cf;
+}
+
+/* Refacem spatele: mai apropiat de exemplul trimis, dar în paleta AniVortex */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.carousel-collection .card-back-btn {
+    width: calc(100% - 24px);
+    height: 31px;
+    margin: 8px 12px 11px;
+    border-radius: 9px;
+    background: linear-gradient(110deg, #527ce5, #29b8ad);
+    color: #fff;
+    font-size: 7.6px;
+    letter-spacing: .06em;
+    text-transform: none;
+}
+
+/* Facem loc pentru meta-ul nou de sub titlul cardului fără să lungim secțiunea. */
+.carousel-collection .carousel-track-wrapper {
+    height: 320px;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1400px) {
+.carousel-collection .carousel-section { min-height: 372px; }
+    .carousel-collection .carousel-track-wrapper { height: 304px; }
+}
+
+@media (max-width: 1180px) {
+    .carousel-collection.av-entertainment-shell {
+        width: calc(100% - 24px);
+        max-width: 1900px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .carousel-collection .carousel-track-wrapper {
+        transform: scale(.88);
+        transform-origin: top center;
+        margin-bottom: -36px;
+    }
+}
+
+@media (max-width: 940px) {
+    .carousel-collection .carousel-track-wrapper {
+        transform: scale(.70);
+        margin-bottom: -92px;
+    }
+    .carousel-collection .carousel-section {
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 700px) {
+    .carousel-collection.av-entertainment-shell {
+        margin-top: 24px;
+        
+        border-radius: 0;
+    }
+    .carousel-collection .carousel-section {
+        padding-left: 4px;
+        padding-right: 4px;
+        min-height: 278px;
+    }
+    .carousel-collection .section-header {
+        width: calc(100% - 10px);
+    }
+    .carousel-collection .section-header h2 {
+        font-size: 27px;
+    }
+    .carousel-collection .carousel-track-wrapper {
+        transform: scale(.52);
+        margin-bottom: -155px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .carousel-collection *:not(#__av_prio_a#__av_prio_b), .carousel-collection *:not(#__av_prio_a#__av_prio_b)::before, .carousel-collection *:not(#__av_prio_a#__av_prio_b)::after {
+  animation: none;
+  transition-duration: .01ms;
+}
+}
+
+
+/* ============================================================
+   V28 — statusuri reale de afișare + spate tip "fișă detalii"
+   Statusuri permise: ON-GOING / ÎN TRADUCERE / COMPLET
+   ============================================================ */
+
+.carousel-collection .card-label {
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 1.08;
+}
+
+.carousel-collection .av-card-front-meta {
+    
+    
+    
+}
+
+.carousel-collection .av-front-status[data-status="ON-GOING"] {
+    color: #67f1d0;
+}
+
+.carousel-collection .av-front-status[data-status="ÎN TRADUCERE"] {
+    color: #9ddcff;
+}
+
+.carousel-collection .av-front-status[data-status="COMPLET"] {
+    color: #ffe083;
+}
+
+/* Back face */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Micșorăm puțin detaliile pe ecrane unde cardurile sunt scalate. */
+@media (max-width: 1400px) {
+    .carousel-collection .card-label {
+        font-size: 15px;
+    }
+}
+
+
+/* ============================================================
+   V29 — FIX FLIP CARD
+   Click simplu => față/spate.
+   ============================================================ */
+.carousel-collection .card {
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+}
+
+.carousel-collection .card-inner {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    transition:
+        transform .62s cubic-bezier(.20,.80,.20,1),
+        -webkit-transform .62s cubic-bezier(.20,.80,.20,1);
+}
+
+.carousel-collection .card.flipped .card-inner:not(#__av_prio_a#__av_prio_b) {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.carousel-collection .card-front {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.carousel-collection .card-front:not(#__av_prio_a#__av_prio_b) {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.carousel-collection .card-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    pointer-events: auto;
+}
+
+
+
+
+
+.carousel-collection .card.flipped .card-front {
+    pointer-events: none;
+}
+
+
+
+/* Cât timp cardul este întors nu îl ridicăm la hover,
+   ca rotația să rămână curată. */
+.carousel-collection .card.flipped:hover,
+.carousel-collection .card.flipped:focus-visible {
+    transform: none;
+}
+
+
+/* ============================================================
+   V30 — BACK CARD FIT
+   Tot conținutul încape în card și flip-ul rămâne curat.
+   ============================================================ */
+
+/* Titlul și anul/statusul sunt în afara card-inner.
+   Când cardul este întors le ascundem vizual ca să nu rămână
+   sub spatele cardului. Păstrăm spațiul ca să nu sară layout-ul. */
+.carousel-collection .card.flipped > .card-label,
+.carousel-collection .card.flipped > .av-card-front-meta {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.carousel-collection .card > .card-label,
+.carousel-collection .card > .av-card-front-meta {
+    transition: opacity .18s ease, visibility .18s ease, color .24s ease;
+}
+
+/* Cardul întors trebuie să rămână în interiorul dimensiunii posterului. */
+.carousel-collection .card-inner,
+.carousel-collection .card-front {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* În timpul flipului nu permitem posterului/labelului să depășească zona. */
+.carousel-collection .card.flipped {
+    z-index: 30;
+}
+
+.carousel-collection .card.flipped .card-inner {
+    overflow: visible;
+}
+
+/* La rezoluții unde cardul devine 172x236 compactăm puțin în plus. */
+@media (max-width: 1400px) {
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pe ecrane puțin mai mici menținem informația lizibilă. */
+@media (max-width: 1400px) {
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pe 172x236 păstrăm designul, doar micșorăm proporțional. */
+@media (max-width: 1400px) {
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+}
+
+
+/* ============================================================
+   V33 — SPATE REDESENAT
+   Mai curat, mai aerisit, mai mare și fără cutii greoaie.
+   ============================================================ */
+
+
+
+
+
+/* CATEGORIE + RATING */
+
+
+
+
+
+
+/* TITLU */
+
+
+
+
+/* META — o singură bandă, fără 3 casete mari */
+
+
+
+
+
+
+
+
+
+
+
+
+/* DESCRIERE — zona principală */
+
+
+
+
+
+
+/* BUTON */
+
+
+
+
+/* La 1400px cardul e 172x236: păstrăm proporțiile fără să micșorăm excesiv textul. */
+@media (max-width: 1400px) {
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+}
+
+/* ============================================================
+   V42 FINAL — POPOVER CURĂȚAT / FĂRĂ SUPRAPUNERI
+   Înlocuiește versiunile V34–V41, care se suprascriau între ele.
+   Dimensiunea finală este calculată de UPC.js după poster.
+   ============================================================ */
+
+/* Nu mai folosim flip-ul vechi al cardului. */
+.carousel-collection .card {
+    cursor: pointer;
+}
+
+.carousel-collection .card-inner:not(#__av_prio_a#__av_prio_b), .carousel-collection .card.flipped .card-inner:not(#__av_prio_a#__av_prio_b) {
+  transform: none;
+  -webkit-transform: none;
+}
+
+
+
+/* Wrapper-ul nu blochează pagina; doar panoul primește pointer events. */
+.av-card-popover-wrap[hidden]:not(#__av_prio_a#__av_prio_b) {
+  display: none;
+}
+
+.av-card-popover-wrap {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    pointer-events: none;
+    background: transparent;
+}
+
+.av-card-popover-wrap .av-popup-panel {
+    --av-pop-bg-1: #0d4d5b;
+    --av-pop-bg-2: #0a3b47;
+    --av-pop-cyan: #79ebff;
+    --av-pop-mint: #63ffd0;
+    --av-pop-gold: #ffe083;
+    --av-pop-text: #f7ffff;
+    --av-pop-muted: #9fc2c9;
+
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 0;
+    min-height: 0;
+    max-width: calc(100vw - 16px);
+    max-height: calc(100vh - 16px);
+    max-height: calc(100dvh - 16px);
+    
+    overflow: hidden;
+    pointer-events: auto;
+
+    
+    
+    
+
+    color: var(--av-pop-text);
+    border: 1px solid rgba(121, 235, 255, .30);
+    border-radius: 17px;
+    background:
+        radial-gradient(circle at 100% 0, rgba(255, 224, 131, .10), transparent 34%),
+        radial-gradient(circle at 0 100%, rgba(88, 123, 229, .10), transparent 34%),
+        linear-gradient(158deg, var(--av-pop-bg-1) 0%, #0b5361 47%, var(--av-pop-bg-2) 100%);
+    box-shadow:
+        0 22px 58px rgba(0, 0, 0, .48),
+        inset 0 1px 0 rgba(255, 255, 255, .07),
+        inset 0 0 0 1px rgba(121, 235, 255, .035);
+
+    opacity: 0;
+    transform: translateY(5px) scale(.985);
+    transform-origin: center;
+    transition:
+        opacity .15s ease,
+        transform .20s cubic-bezier(.2, .8, .2, 1);
+}
+
+.av-card-popover-wrap.is-measuring .av-popup-panel:not(#__av_prio_a#__av_prio_b) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.av-card-popover-wrap.is-open .av-popup-panel {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+/* Săgeata către poster. */
+.av-card-popover-wrap .av-popup-panel::before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    top: var(--av-popover-arrow-y, 50%);
+    width: 12px;
+    height: 12px;
+    background: #0c4655;
+    border: 1px solid rgba(121, 235, 255, .25);
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.av-card-popover-wrap .av-popup-panel[data-side="right"]::before {
+    left: -7px;
+    border-top: 0;
+    border-right: 0;
+}
+
+.av-card-popover-wrap .av-popup-panel[data-side="left"]::before {
+    right: -7px;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+/* LIVE-ACTION / FILME / CĂRȚI + rating pe aceeași linie. */
+
+
+.av-card-popover-wrap .av-popup-category {
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+.av-card-popover-wrap .av-popup-rating {
+    
+    
+    
+    
+}
+
+/* Titlu separat, cu spațiu propriu — nu se mai lovește de rating. */
+.av-card-popover-wrap .av-popup-title {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+/* Durată / EP / Calitate — o singură casetă, complet centrată. */
+.av-card-popover-wrap .av-popup-trio {
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    border: 1px solid rgba(121, 235, 255, .18);
+    
+    background: rgba(3, 30, 38, .30);
+}
+
+.av-card-popover-wrap .av-popup-info {
+    min-width: 0;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    
+    text-align: center;
+}
+
+.av-card-popover-wrap .av-popup-info small,
+.av-card-popover-wrap .av-popup-center small {
+    color: #79dfce;
+    font: 900 6px/1 Inter, "Segoe UI", sans-serif;
+    
+    text-transform: uppercase;
+}
+
+.av-card-popover-wrap .av-popup-info strong {
+    max-width: 100%;
+    overflow: hidden;
+    color: #fff4b4;
+    font: 900 12.5px/1.05 Inter, "Segoe UI", sans-serif;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.av-card-popover-wrap .av-popup-center {
+    
+    
+    display: grid;
+    place-items: center;
+    align-content: center;
+    gap: 1px;
+    border: 1px solid rgba(99, 255, 208, .43);
+    border-radius: 999px;
+    background: linear-gradient(180deg, rgba(15, 78, 89, .92), rgba(7, 45, 54, .90));
+    box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, .035),
+        0 0 14px rgba(99, 255, 208, .07);
+}
+
+.av-card-popover-wrap .av-popup-center b {
+    color: #fff;
+    font: 900 26px/.88 Inter, "Segoe UI", sans-serif;
+    letter-spacing: -.06em;
+}
+
+/* Descriere — maximum 3 rânduri, fără să intre în footer. */
+.av-card-popover-wrap .av-popup-desc {
+    
+    
+    
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    overflow: hidden;
+    border: 1px solid rgba(121, 235, 255, .18);
+    
+    background: rgba(3, 29, 37, .27);
+}
+
+.av-card-popover-wrap .av-popup-desc small {
+    flex: 0 0 auto;
+    display: block;
+    
+    color: #7ce3d0;
+    font: 900 6.5px/1 Inter, "Segoe UI", sans-serif;
+    letter-spacing: .09em;
+    
+    text-transform: uppercase;
+}
+
+.av-card-popover-wrap .av-popup-desc p {
+    min-width: 0;
+    margin: 0;
+    overflow: hidden;
+    color: rgba(245, 253, 254, .92);
+    
+    
+    word-break: normal;
+    overflow-wrap: anywhere;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    
+    
+}
+
+/* Footer Postat / Gen — simetric și mai lizibil. */
+.av-card-popover-wrap .av-popup-footer {
+    min-width: 0;
+    
+    
+    
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 1px minmax(0, 1fr);
+    align-items: center;
+    justify-items: stretch;
+    
+    text-align: center;
+}
+
+.av-card-popover-wrap .av-popup-footer > div {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.av-card-popover-wrap .av-popup-footer i {
+    width: 1px;
+    
+    background: rgba(121, 235, 255, .18);
+}
+
+.av-card-popover-wrap .av-popup-footer small {
+    display: block;
+    
+    color: #78dfce;
+    font: 900 5.6px/1 Inter, "Segoe UI", sans-serif;
+    
+    text-transform: uppercase;
+}
+
+.av-card-popover-wrap .av-popup-footer strong {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    color: #fff;
+    font: 900 9px/1 Inter, "Segoe UI", sans-serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.av-card-popover-wrap .av-popup-genre-footer:not(#__av_prio_a#__av_prio_b) {
+  color: var(--av-pop-gold);
+}
+
+.av-card-popover-wrap .av-popup-watch {
+    
+    
+    
+    padding: 0 10px;
+    border: 1px solid rgba(121, 235, 255, .35);
+    
+    background: linear-gradient(105deg, #587be5, #31b9af);
+    color: #fff;
+    font: 900 10px/1 Inter, "Segoe UI", sans-serif;
+    cursor: pointer;
+    transition: filter .16s ease, transform .16s ease;
+}
+
+.av-card-popover-wrap .av-popup-watch:hover {
+    filter: brightness(1.08);
+    
+}
+
+.av-card-popover-wrap .av-popup-watch:focus-visible {
+    outline: 2px solid #bff8ff;
+    outline-offset: 2px;
+}
+
+@media (max-width: 720px) {
+    .av-card-popover-wrap .av-popup-panel {
+        
+        
+        
+    }
+
+    .av-card-popover-wrap .av-popup-category {
+        
+    }
+
+    .av-card-popover-wrap .av-popup-rating {
+        
+    }
+
+    .av-card-popover-wrap .av-popup-title {
+        
+    }
+
+    .av-card-popover-wrap .av-popup-trio {
+        
+        
+        
+    }
+
+    .av-card-popover-wrap .av-popup-center {
+        
+        
+    }
+
+    .av-card-popover-wrap .av-popup-center b {
+        
+    }
+
+    .av-card-popover-wrap .av-popup-info strong {
+        
+    }
+
+    .av-card-popover-wrap .av-popup-desc {
+        min-height: 74px;
+        
+    }
+
+    .av-card-popover-wrap .av-popup-desc p {
+        
+    }
+
+    .av-card-popover-wrap .av-popup-footer {
+        
+    }
+
+    .av-card-popover-wrap .av-popup-footer strong {
+        
+    }
+
+    .av-card-popover-wrap .av-popup-watch {
+        
+        
+        
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .av-card-popover-wrap .av-popup-panel:not(#__av_prio_a#__av_prio_b), .av-card-popover-wrap .av-popup-watch:not(#__av_prio_a#__av_prio_b) {
+  transition-duration: .01ms;
+}
+}
+
+/* ============================================================
+   V45 FINAL — POPOVER RAFINAT
+   - înălțimea popup-ului urmărește ÎNTREG cardul: poster + nume + an/status
+   - categoria și ratingul revin pe aceeași linie, fără rând gol artificial
+   - titlul nu mai este mutat cu translateY
+   - distanțe uniforme de 6px între blocuri
+   - text mai aerisit și mai lizibil
+   - popup-ul este ridicat puțin mai sus
+   - DESCRIEREA SERIEI este mai mare și centrată
+   - DURATĂ / CALITATE / EP / POSTAT / GEN sunt mai mari și mai lizibile
+   - descriere max. 3 rânduri, aliniată la stânga
+   ============================================================ */
+
+.av-card-popover-wrap .av-popup-panel {
+    padding: 10px;
+    display: grid;
+    grid-template-rows:
+        18px
+        24px
+        56px
+        minmax(76px, 1fr)
+        30px
+        32px;
+    gap: 6px;
+    align-content: stretch;
+}
+
+/* Header compact și simetric: categorie stânga, rating dreapta. */
+.av-card-popover-wrap .av-popup-top {
+    min-width: 0;
+    min-height: 0;
+    padding: 0 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.av-card-popover-wrap .av-popup-category {
+    min-width: 0;
+    overflow: hidden;
+    color: #7ce2cf;
+    font: 900 10px/1 Inter, "Segoe UI", sans-serif;
+    letter-spacing: .09em;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.av-card-popover-wrap .av-popup-rating {
+    flex: 0 0 auto;
+    width: auto;
+    padding: 0;
+    color: var(--av-pop-gold);
+    font: 900 13px/1 Inter, "Segoe UI", sans-serif;
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* Titlu curat, fără translate care rupea ritmul vertical. */
+.av-card-popover-wrap .av-popup-title {
+    min-width: 0;
+    margin: 0;
+    padding: 0 3px;
+    align-self: center;
+    overflow: hidden;
+    color: #fff;
+    font: 900 20px/1 Inter, "Segoe UI", sans-serif;
+    letter-spacing: -.035em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transform: none;
+}
+
+/* Durată / EP / Calitate — compact, dar cu valori mai clare. */
+.av-card-popover-wrap .av-popup-trio {
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 0;
+    height: 56px;
+    padding: 5px 7px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 60px minmax(0, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 6px;
+    border-radius: 11px;
+}
+
+.av-card-popover-wrap .av-popup-info {
+    gap: 3px;
+}
+
+.av-card-popover-wrap .av-popup-info small,
+.av-card-popover-wrap .av-popup-center small {
+    font-size: 6.6px;
+    letter-spacing: .085em;
+}
+
+.av-card-popover-wrap .av-popup-info strong {
+    font-size: 13.8px;
+    line-height: 1;
+}
+
+.av-card-popover-wrap .av-popup-center {
+    width: 58px;
+    height: 46px;
+}
+
+.av-card-popover-wrap .av-popup-center b {
+    font-size: 27px;
+}
+
+/* Zona de descriere primește spațiul în plus obținut din înălțimea cardului complet. */
+.av-card-popover-wrap .av-popup-desc {
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 0;
+    height: 100%;
+    padding: 8px 9px 7px;
+    border-radius: 11px;
+}
+
+.av-card-popover-wrap .av-popup-desc small {
+    margin-bottom: 6px;
+    font-size: 7.6px;
+    line-height: 1;
+    text-align: center;
+}
+
+.av-card-popover-wrap .av-popup-desc p {
+    font: 700 9.7px/1.30 Inter, "Segoe UI", sans-serif;
+    text-align: left;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+}
+
+/* Postat / Gen — fără gol mare înainte de buton. */
+.av-card-popover-wrap .av-popup-footer {
+    min-height: 0;
+    height: 30px;
+    padding: 0 4px;
+    gap: 8px;
+}
+
+.av-card-popover-wrap .av-popup-footer i {
+    height: 20px;
+}
+
+.av-card-popover-wrap .av-popup-footer small {
+    margin-bottom: 2px;
+    font-size: 6.2px;
+    letter-spacing: .085em;
+}
+
+.av-card-popover-wrap .av-popup-footer strong {
+    font-size: 9.8px;
+}
+
+.av-card-popover-wrap .av-popup-watch {
+    width: 100%;
+    height: 32px;
+    min-height: 32px;
+    align-self: stretch;
+    border-radius: 9px;
+    font-size: 9.8px;
+    transform: none;
+}
+
+.av-card-popover-wrap .av-popup-watch:hover {
+    transform: translateY(-1px);
+}
+
+/* Numele / anul / statusul cardului rămân vizibile; popup-ul are aceeași
+   înălțime vizuală ca întregul card, deci nu mai pare "tăiat" la poster. */
+.carousel-collection .card > .card-label,
+.carousel-collection .card > .av-card-front-meta {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 720px) {
+    .av-card-popover-wrap .av-popup-panel {
+        padding: 9px;
+        grid-template-rows:
+            16px
+            22px
+            52px
+            minmax(68px, 1fr)
+            28px
+            30px;
+        gap: 5px;
+    }
+
+    .av-card-popover-wrap .av-popup-category {
+        font-size: 9px;
+    }
+
+    .av-card-popover-wrap .av-popup-rating {
+        font-size: 11.5px;
+    }
+
+    .av-card-popover-wrap .av-popup-title {
+        font-size: 17.5px;
+        transform: none;
+    }
+
+    .av-card-popover-wrap .av-popup-trio {
+        height: 52px;
+        grid-template-columns: minmax(0, 1fr) 54px minmax(0, 1fr);
+        padding: 4px 6px;
+    }
+
+    .av-card-popover-wrap .av-popup-center {
+        width: 52px;
+        height: 42px;
+    }
+
+    .av-card-popover-wrap .av-popup-center b {
+        font-size: 24px;
+    }
+
+    .av-card-popover-wrap .av-popup-info strong {
+        font-size: 12px;
+    }
+
+    .av-card-popover-wrap .av-popup-desc {
+        height: 100%;
+        padding: 7px 8px 6px;
+    }
+
+    .av-card-popover-wrap .av-popup-desc p {
+        font-size: 8.8px;
+    }
+
+    .av-card-popover-wrap .av-popup-footer {
+        height: 28px;
+    }
+
+    .av-card-popover-wrap .av-popup-footer strong {
+        font-size: 8px;
+    }
+
+    .av-card-popover-wrap .av-popup-watch {
+        height: 30px;
+        min-height: 30px;
+        font-size: 9.2px;
+        transform: none;
+    }
+}
+
+
+/* V46 — hover strict + meta mai mare */
+.carousel-collection .av-card-front-meta {
+    min-height: 17px;
+    margin-top: 6px;
+    gap: 7px;
+    font-size: 10.5px;
+    font-weight: 900;
+    letter-spacing: .07em;
+}
+
+.carousel-collection .av-card-front-meta .av-front-year,
+.carousel-collection .av-card-front-meta .av-front-status {
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.carousel-collection .av-card-front-meta .av-front-dot {
+    width: 3.5px;
+    height: 3.5px;
+    flex-basis: 3.5px;
+}
+
+@media (max-width: 1400px) {
+    .carousel-collection .av-card-front-meta {
+        font-size: 9.8px;
+    }
+}
+
+
+/* V47 — switch popup card-to-card + titluri 2px mai jos */
+.carousel-collection .section-header {
+    transform: translateY(2px);
+}
+
+
+/* V48 — titlurile secțiunilor coborâte până aproape de punct */
+.carousel-collection .section-header h2 {
+    transform: translateY(5px);
+}
+
+/* ============================================================
+   ANIVORTEX UPC — V57 SEPARATED FOOTER JOIN
+   Forma curbată este desenată de .av-footer-join, între componente.
+   UPC revine la geometria sa normală și păstrează doar spațiul interior.
+   ============================================================ */
+
+.carousel-collection.av-entertainment-shell {
+    width: 100%;
+    max-width: none;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border: 0;
+    margin-bottom: 0;
+    clip-path: none;
+    background: var(--avf-surface-top, #071b21);
+}
+
+/* V65 — pe desktop, primul rând ocupă spațiul liber din îmbinarea Chrono → UPC,
+   păstrând 43px între linia vizibilă a containerului și „ADAPTĂRI”.
+   Titlurile folosesc aceeași axă stângă ca rândurile de carduri. */
+@media (min-width: 1181px) {
+    .carousel-collection.av-entertainment-shell {
+        z-index: 3;
+        overflow: visible;
+        clip-path: inset(calc(0px - var(--av-ent-join-overlap)) 0 0);
+    }
+
+    .carousel-collection .carousel-section.live-action {
+        margin-top: calc(var(--av-ent-live-top-gap) - var(--av-ent-join-overlap));
+    }
+
+    .carousel-collection .section-header {
+        width: min(var(--av-ent-track-w), calc(100% - 12px));
+    }
+}
+
+@media (max-width: 700px) {
+    .carousel-collection.av-entertainment-shell {
+        padding-bottom: 18px;
+        margin-bottom: 0;
+        clip-path: none;
+    }
+}
+
+/* Aceeași tranziție de zoom ca footerul și îmbinarea. */
+@media (min-width: 2000px) {
+    .carousel-collection.av-entertainment-shell {
+        width: calc(100% - 16px);
+        max-width: 1900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 5200px) {
+    .carousel-collection.av-entertainment-shell {
+        width: calc(100% - 24px);
+    }
+}

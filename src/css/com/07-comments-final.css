@@ -1,0 +1,172 @@
+/* ============================================================
+   AniVortex Comentarii V49 — fundalul sectiunii revine,
+   iar zona indicata de sub/spatele cardurilor ramane transparenta
+   ============================================================ */
+
+/* Readucem fundalul mare al sectiunii. */
+.comentarii-section:not(#__av_prio_a#__av_prio_b) {
+  background: var(--avf-surface-top, #071b21);
+  background-color: var(--avf-surface-top, #071b21);
+  background-image: none;
+}
+
+/* Zona din spatele randului de carduri ramane transparenta. */
+
+
+
+
+
+/* ============================================================
+   AniVortex Comentarii V50 — elimina banda/fundalul din spatele cardurilor
+   Cauza era umbra externa a fiecarui card, care se suprapunea intre carduri.
+   ============================================================ */
+
+/* Fundalul wrapperelor ramane complet transparent. */
+.comentarii-content:not(#__av_prio_a#__av_prio_b), .comentarii-track:not(#__av_prio_a#__av_prio_b) {
+  background: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: none;
+  filter: none;
+}
+
+/* Eliminam doar umbra EXTERNA a cardurilor; pastram un inset foarte fin. */
+.av10-card:not(#__av_prio_a#__av_prio_b), .av10-card:hover:not(#__av_prio_a#__av_prio_b) {
+  box-shadow: inset 0 1px rgba(255,255,255,.055);
+}
+
+/* Fara pseudo-elemente de fundal pe randul de carduri. */
+.comentarii-track:not(#__av_prio_a#__av_prio_b)::before, .comentarii-track:not(#__av_prio_a#__av_prio_b)::after, .comentarii-content:not(#__av_prio_a#__av_prio_b)::before, .comentarii-content:not(#__av_prio_a#__av_prio_b)::after {
+  content: none;
+  display: none;
+  background: transparent;
+  box-shadow: none;
+  filter: none;
+}
+
+
+/* ============================================================
+   V5 — COM primește îmbinarea SHARE de sus
+   Nu schimbă cardurile sau personajul; doar creează spațiu pentru V.
+   ============================================================ */
+
+.comentarii-section:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 0;
+  padding-top: 116px;
+}
+
+@media (max-width: 1510px) {
+    .comentarii-section:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 104px;
+}
+}
+
+@media (max-width: 990px) {
+    .comentarii-section:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 86px;
+}
+}
+
+@media (max-width: 620px) {
+    .comentarii-section:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 72px;
+}
+}
+
+/* ============================================================
+   AniVortex COM — stele identice cu CHRONO
+   Doar acest strat de fundal este fortat peste regula din main.css.
+   Valorile sunt copiate 1:1 din .chronologie-container::after.
+   ============================================================ */
+body .comentarii-section::before {
+  mask-image: none;
+  animation: avEntStars 22s linear infinite alternate;
+}
+
+body .comentarii-section:not(#__av_prio_a#__av_prio_b)::before {
+  opacity: 0.22;
+  background-image: radial-gradient(circle at 7% 14%, rgba(225, 252, 255, 0.7) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 19% 62%, rgba(180, 244, 255, 0.48) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 34% 29%, rgba(230, 255, 255, 0.62) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 49% 79%, rgba(176, 242, 255, 0.52) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 66% 18%, rgba(235, 255, 255, 0.72) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 81% 58%, rgba(185, 245, 255, 0.55) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 94% 31%, rgba(230, 255, 255, 0.65) 0 1px, transparent 1.6px);
+  background-size: 330px 260px,
+    390px 310px,
+    460px 350px,
+    410px 300px,
+    370px 280px,
+    430px 330px,
+    360px 290px;
+}
+
+/* ============================================================
+   AniVortex COM V5 — FIX FINAL contur lateral
+   Cauza reală era border-ul complet activat sub 1510px.
+   Nu mai există contur pe stânga/dreapta la nicio rezoluție.
+   ============================================================ */
+.comentarii-section:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  
+  filter: none;
+}
+
+@media (max-width: 1510px) {
+  .comentarii-section:not(#__av_prio_a#__av_prio_b) {
+  border-left: 0;
+  border-right: 0;
+  border-inline: 0;
+}
+}
+
+/* ============================================================
+   AniVortex COM V6 — eliminare REALĂ contur stânga/dreapta
+   Lateralele erau desenate în SVG-ul .comentarii-frame-v7 din HTML,
+   nu de main.css. SVG-ul a fost schimbat să deseneze doar conturul de jos.
+   Acest guard păstrează și border-ele CSS laterale dezactivate.
+   ============================================================ */
+.comentarii-section:not(#__av_prio_a#__av_prio_b) {
+  border-left: 0;
+  border-right: 0;
+  border-inline: 0;
+}
+
+.comentarii-frame-v7:not(#__av_prio_a#__av_prio_b) {
+  border: 0;
+}
+
+
+
+/* V10 performance: comment decoration animates only for the card being explored. */
+.av10-card:not(:hover):not(:focus-within) .av10-glow:not(#__av_prio_a#__av_prio_b),
+.av10-card:not(:hover):not(:focus-within) .av10-ring:not(#__av_prio_a#__av_prio_b),
+.av10-card:not(:hover):not(:focus-within) .av10-line:not(#__av_prio_a#__av_prio_b),
+.av10-card:not(:hover):not(:focus-within) .av10-dot:not(#__av_prio_a#__av_prio_b),
+.av10-card:not(:hover):not(:focus-within) .av10-symbol:not(#__av_prio_a#__av_prio_b),
+.av10-card:not(:hover):not(:focus-within) .av10-symbol-img:not(#__av_prio_a#__av_prio_b),
+.av10-card:not(:hover):not(:focus-within) .av10-message:not(#__av_prio_a#__av_prio_b)::before,
+.av10-card:not(:hover):not(:focus-within) .av10-message:not(#__av_prio_a#__av_prio_b)::after {
+  animation-play-state: paused;
+}
+
+@media (max-width: 768px) {
+  .av10-card .av10-glow:not(#__av_prio_a#__av_prio_b),
+  .av10-card .av10-ring:not(#__av_prio_a#__av_prio_b),
+  .av10-card .av10-line:not(#__av_prio_a#__av_prio_b),
+  .av10-card .av10-dot:not(#__av_prio_a#__av_prio_b),
+  .av10-card .av10-symbol:not(#__av_prio_a#__av_prio_b),
+  .av10-card .av10-symbol-img:not(#__av_prio_a#__av_prio_b),
+  .av10-card .av10-message:not(#__av_prio_a#__av_prio_b)::before,
+  .av10-card .av10-message:not(#__av_prio_a#__av_prio_b)::after {
+    animation: none;
+  }
+
+  .av10-card,
+  .av10-message,
+  .av10-reactions {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}

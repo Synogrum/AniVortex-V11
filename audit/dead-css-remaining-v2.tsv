@@ -1,0 +1,37 @@
+file	rule_selector	dropped_branch	missing_classes	missing_ids	action
+src/css/components/UPC.css	.carousel-collection .av-back-sheet	.carousel-collection .av-back-sheet	av-back-sheet		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-head	.carousel-collection .av-back-head	av-back-head		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-name	.carousel-collection .av-back-name	av-back-name		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-trio	.carousel-collection .av-back-trio	av-back-trio		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-center	.carousel-collection .av-back-center	av-back-center		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-center b	.carousel-collection .av-back-center b	av-back-center		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-description	.carousel-collection .av-back-description	av-back-description		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-watch,     .carousel-collection .av-back-plus	.carousel-collection .av-back-watch	av-back-watch		drop-rule
+src/css/components/UPC.css	.carousel-collection .av-back-watch,     .carousel-collection .av-back-plus	.carousel-collection .av-back-plus	av-back-plus		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-back-head	.carousel-collection .av31-back-head	av31-back-head		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-category	.carousel-collection .av31-category	av31-category		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-rating	.carousel-collection .av31-rating	av31-rating		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-back-head h3	.carousel-collection .av31-back-head h3	av31-back-head		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts > span	.carousel-collection .av31-facts > span	av31-facts		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts b	.carousel-collection .av31-facts b	av31-facts		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts .av31-episode	.carousel-collection .av31-facts .av31-episode	av31-facts,av31-episode		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-description	.carousel-collection .av31-description	av31-description		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-description p	.carousel-collection .av31-description p	av31-description		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-watch	.carousel-collection .av31-watch	av31-watch		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-back	.carousel-collection .av31-back	av31-back		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-back-head	.carousel-collection .av31-back-head	av31-back-head		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-category	.carousel-collection .av31-category	av31-category		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-rating	.carousel-collection .av31-rating	av31-rating		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-back-head h3	.carousel-collection .av31-back-head h3	av31-back-head		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts	.carousel-collection .av31-facts	av31-facts		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts > span,     .carousel-collection .av31-facts .av31-episode	.carousel-collection .av31-facts > span	av31-facts		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts > span,     .carousel-collection .av31-facts .av31-episode	.carousel-collection .av31-facts .av31-episode	av31-facts,av31-episode		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts small,     .carousel-collection .av31-facts .av31-episode small	.carousel-collection .av31-facts small	av31-facts		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts small,     .carousel-collection .av31-facts .av31-episode small	.carousel-collection .av31-facts .av31-episode small	av31-facts,av31-episode		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts b,     .carousel-collection .av31-facts .av31-episode b	.carousel-collection .av31-facts b	av31-facts		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts b,     .carousel-collection .av31-facts .av31-episode b	.carousel-collection .av31-facts .av31-episode b	av31-facts,av31-episode		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-facts .av31-episode b	.carousel-collection .av31-facts .av31-episode b	av31-facts,av31-episode		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-description	.carousel-collection .av31-description	av31-description		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-description > strong	.carousel-collection .av31-description > strong	av31-description		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-description p	.carousel-collection .av31-description p	av31-description		drop-rule
+src/css/components/UPC.css	.carousel-collection .av31-watch	.carousel-collection .av31-watch	av31-watch		drop-rule

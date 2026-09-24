@@ -1,0 +1,3005 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AniVortex — descoperă anime, manga, noutăți, topuri și recomandări într-o experiență modernă pentru comunitatea anime.">
+    <meta name="theme-color" content="#052A2E">
+    <meta name="color-scheme" content="dark">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://animevortex.site/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AniVortex">
+    <meta property="og:description" content="Anime, manga, noutăți, topuri și recomandări pentru comunitatea AniVortex.">
+    <meta property="og:url" content="https://animevortex.site/">
+    <meta property="og:site_name" content="AniVortex">
+    <meta property="og:locale" content="ro_RO">
+    <meta property="og:image" content="https://animevortex.site/public/icons/x/Logo.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AniVortex">
+    <meta name="twitter:description" content="Anime, manga, noutăți, topuri și recomandări pentru comunitatea AniVortex.">
+    <meta name="twitter:image" content="https://animevortex.site/public/icons/x/Logo.webp">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com; style-src-elem 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com; style-src-attr 'unsafe-inline'; font-src 'self' data: https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: blob: https:; connect-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" as="image" href="public/imgs/banner/naruto.webp" imagesrcset="public/imgs/banner/responsive/naruto-600.webp 600w, public/imgs/banner/responsive/naruto-900.webp 900w, public/imgs/banner/naruto.webp 1200w" imagesizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" type="image/webp" fetchpriority="high">
+    <link rel="icon" href="public/icons/x/Logo.webp" type="image/webp">
+    <title>AniVortex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Outfit:wght@700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/tokens.css?v=20260920.10">
+    <link rel="stylesheet" href="assets/css/header.css?v=20260920.10">
+    <link rel="stylesheet" href="assets/css/banner.css?v=20260920.10">
+    <link rel="stylesheet" href="assets/css/body.css?v=20260920.10">
+    <link rel="stylesheet" href="assets/css/trending.css?v=20260920.10">
+    <link rel="stylesheet" href="assets/css/chrono.css?v=20260920.10">
+    <link rel="stylesheet" href="assets/css/footer.css?v=20260920.10">
+    <link rel="stylesheet" href="assets/css/hot-news-new.css?v=20260920.10">
+  <link rel="stylesheet" href="assets/css/com.css?v=20260920.10">
+    <link rel="stylesheet" href="assets/css/main.css?v=20260920.10">
+    <!-- UPC este încărcat ultimul ca regulile componentului să nu fie suprascrise de base/main/com. -->
+    <link rel="stylesheet" href="assets/css/UPC.css?v=20260920.10">
+      <link rel="stylesheet" href="assets/css/hardening.css?v=20260920.10">
+  </head>
+<body>
+  <a class="skip-link" href="#mainContent">Sari la conținutul principal</a>
+  
+
+<div class="backdrop">
+  <div class="nebula n1"></div>
+  <div class="nebula n2"></div>
+  <div class="nebula n3"></div>
+  <div class="nebula n4"></div>
+  <div class="nebula n5"></div>
+  <div class="nebula n6"></div>
+</div>
+
+  <div class="wrapper">
+ 
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <aside class="sidebar" id="sidebar" aria-label="Meniu principal" aria-hidden="true" inert>
+    <div class="sidebar-header">
+      <div class="sidebar-logo">
+        <img src="public/icons/x/AniVortex txt.webp" alt="AniVortex Logo" width="1046" height="201" decoding="async" loading="lazy">
+      </div>
+
+      <button class="sidebar-close" id="sidebarClose" type="button" aria-label="Închide meniul">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="sidebar-nav">
+      <div class="sidebar-label">Acasă</div>
+      <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-house"></i> Acasă</a>
+      <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-play"></i> Listă anime</a>
+      <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-book"></i> Listă manga</a>
+      <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-film"></i> Divertisment</a>
+      <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-bullhorn"></i> Lansări</a>
+      <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-paper-plane"></i> Sugestii</a>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-label">Acțiuni</div>
+     <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-tv"></i> Watch2gether</a>
+     <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-earth-europe"></i> Limbă</a>
+     <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-comments"></i> Forum</a>
+     <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-user-shield"></i> Staff</a>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-label">Filtre avansate</div>
+      <button class="open-filter-btn" id="openFilterBtn" type="button" aria-controls="filterPanel" aria-expanded="false">
+        <span><i class="fa-solid fa-sliders"></i> Caută după preferințe</span>
+        <i class="fa-solid fa-chevron-right open-filter-arrow"></i>
+      </button>
+    </div>
+  </aside>
+
+  <aside class="filter-panel" id="filterPanel" aria-label="Filtre avansate" aria-hidden="true" inert>
+    <div class="filter-panel-header">
+      <div class="filter-panel-title">Filtre &amp; Genuri</div>
+
+      <button class="filter-panel-close" id="closeFilterBtn" type="button" aria-label="Închide filtrele">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="filter-container">
+      <div class="filter-window">
+
+        <div class="filter-title">Caută după preferințe</div>
+
+        <div class="filter-controls">
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Type <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu">
+                <label><input type="checkbox" value="Anime"> <span>Anime</span></label>
+                <label><input type="checkbox" value="Manga"> <span>Manga</span></label>
+                <label><input type="checkbox" value="Hentai"> <span>Hentai</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Country <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu">
+                <label><input type="checkbox" value="China"> <span>China</span></label>
+                <label><input type="checkbox" value="Japan"> <span>Japan</span></label>
+                <label><input type="checkbox" value="Korea"> <span>Korea</span></label>
+                <label><input type="checkbox" value="Taiwanese"> <span>Taiwanese</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Status <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu">
+                <label><input type="checkbox" value="On-going"> <span>On-going</span></label>
+                <label><input type="checkbox" value="În traducere"> <span>În traducere</span></label>
+                <label><input type="checkbox" value="Completed"> <span>Complete</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Rated <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu">
+                <label><input type="checkbox" value="G - All Ages"> <span>G - All Ages</span></label>
+                <label><input type="checkbox" value="PG - Children"> <span>PG - Children</span></label>
+                <label><input type="checkbox" value="PG-13 - Teens 13 and Older"> <span>PG-13 - Teens 13 and Older</span></label>
+                <label><input type="checkbox" value="R - 17+ (Violence & Profanity)"> <span>R - 17+ (Violence &amp; Profanity)</span></label>
+                <label><input type="checkbox" value="R+ - Profanity & Mild Nudity"> <span>R+ - Profanity &amp; Mild Nudity</span></label>
+                <label><input type="checkbox" value="Rx - Hentai"> <span>Rx - Hentai</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Score <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu">
+                <label><input type="checkbox" value="(1) Appalling"> <span>(1) Appalling</span></label>
+                <label><input type="checkbox" value="(2) Horrible"> <span>(2) Horrible</span></label>
+                <label><input type="checkbox" value="(3) Very Bad"> <span>(3) Very Bad</span></label>
+                <label><input type="checkbox" value="(4) Bad"> <span>(4) Bad</span></label>
+                <label><input type="checkbox" value="(5) Average"> <span>(5) Average</span></label>
+                <label><input type="checkbox" value="(6) Fine"> <span>(6) Fine</span></label>
+                <label><input type="checkbox" value="(7) Good"> <span>(7) Good</span></label>
+                <label><input type="checkbox" value="(8) Very Good"> <span>(8) Very Good</span></label>
+                <label><input type="checkbox" value="(9) Great"> <span>(9) Great</span></label>
+                <label><input type="checkbox" value="(10) Masterpiece"> <span>(10) Masterpiece</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Year <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu year-list">
+                <label><input type="checkbox" value="1990"> <span>1990</span></label>
+                <label><input type="checkbox" value="1991"> <span>1991</span></label>
+                <label><input type="checkbox" value="1992"> <span>1992</span></label>
+                <label><input type="checkbox" value="1993"> <span>1993</span></label>
+                <label><input type="checkbox" value="1994"> <span>1994</span></label>
+                <label><input type="checkbox" value="1995"> <span>1995</span></label>
+                <label><input type="checkbox" value="1996"> <span>1996</span></label>
+                <label><input type="checkbox" value="1997"> <span>1997</span></label>
+                <label><input type="checkbox" value="1998"> <span>1998</span></label>
+                <label><input type="checkbox" value="1999"> <span>1999</span></label>
+                <label><input type="checkbox" value="2000"> <span>2000</span></label>
+                <label><input type="checkbox" value="2001"> <span>2001</span></label>
+                <label><input type="checkbox" value="2002"> <span>2002</span></label>
+                <label><input type="checkbox" value="2003"> <span>2003</span></label>
+                <label><input type="checkbox" value="2004"> <span>2004</span></label>
+                <label><input type="checkbox" value="2005"> <span>2005</span></label>
+                <label><input type="checkbox" value="2006"> <span>2006</span></label>
+                <label><input type="checkbox" value="2007"> <span>2007</span></label>
+                <label><input type="checkbox" value="2008"> <span>2008</span></label>
+                <label><input type="checkbox" value="2009"> <span>2009</span></label>
+                <label><input type="checkbox" value="2010"> <span>2010</span></label>
+                <label><input type="checkbox" value="2011"> <span>2011</span></label>
+                <label><input type="checkbox" value="2012"> <span>2012</span></label>
+                <label><input type="checkbox" value="2013"> <span>2013</span></label>
+                <label><input type="checkbox" value="2014"> <span>2014</span></label>
+                <label><input type="checkbox" value="2015"> <span>2015</span></label>
+                <label><input type="checkbox" value="2016"> <span>2016</span></label>
+                <label><input type="checkbox" value="2017"> <span>2017</span></label>
+                <label><input type="checkbox" value="2018"> <span>2018</span></label>
+                <label><input type="checkbox" value="2019"> <span>2019</span></label>
+                <label><input type="checkbox" value="2020"> <span>2020</span></label>
+                <label><input type="checkbox" value="2021"> <span>2021</span></label>
+                <label><input type="checkbox" value="2022"> <span>2022</span></label>
+                <label><input type="checkbox" value="2023"> <span>2023</span></label>
+                <label><input type="checkbox" value="2024"> <span>2024</span></label>
+                <label><input type="checkbox" value="2025"> <span>2025</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Season <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu">
+                <label><input type="checkbox" value="Spring"> <span>Spring</span></label>
+                <label><input type="checkbox" value="Summer"> <span>Summer</span></label>
+                <label><input type="checkbox" value="Fall"> <span>Fall</span></label>
+                <label><input type="checkbox" value="Winter"> <span>Winter</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Most View <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu">
+                <label><input type="checkbox" value="Popular"> <span>Popular</span></label>
+                <label><input type="checkbox" value="Notable"> <span>Notable</span></label>
+                <label><input type="checkbox" value="Niche"> <span>Niche</span></label>
+                <label><input type="checkbox" value="Trending"> <span>Trending</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Episode <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu">
+                <label><input type="checkbox" value="Short Series (12-24 episodes)"> <span>Short Series (12-24 episodes)</span></label>
+                <label><input type="checkbox" value="Medium Series (25-50 episodes)"> <span>Medium Series (25-50 episodes)</span></label>
+                <label><input type="checkbox" value="Long Series (50-100 episodes)"> <span>Long Series (50-100 episodes)</span></label>
+                <label><input type="checkbox" value="Very Long Series (100+ episodes)"> <span>Very Long Series (100+ episodes)</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Language <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu">
+                <label><input type="checkbox" value="Sub"> <span>Sub</span></label>
+                <label><input type="checkbox" value="Dub"> <span>Dub</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section genre-section full-width">
+            <h4>Genuri</h4>
+            <div class="genre-grid">
+              <button class="genre-button" type="button">Action</button>
+              <button class="genre-button" type="button">Adventure</button>
+              <button class="genre-button" type="button">Cars</button>
+              <button class="genre-button" type="button">Comedy</button>
+              <button class="genre-button" type="button">Dementia</button>
+              <button class="genre-button" type="button">Demons</button>
+              <button class="genre-button" type="button">Drama</button>
+              <button class="genre-button" type="button">Ecchi</button>
+              <button class="genre-button" type="button">Fantasy</button>
+              <button class="genre-button" type="button">Game</button>
+              <button class="genre-button" type="button">Harem</button>
+              <button class="genre-button" type="button">Historical</button>
+              <button class="genre-button" type="button">Horror</button>
+              <button class="genre-button" type="button">Josei</button>
+              <button class="genre-button" type="button">Kids</button>
+              <button class="genre-button" type="button">Magic</button>
+              <button class="genre-button" type="button">Martial Arts</button>
+              <button class="genre-button" type="button">Mecha</button>
+              <button class="genre-button" type="button">Military</button>
+              <button class="genre-button" type="button">Music</button>
+              <button class="genre-button" type="button">Mystery</button>
+              <button class="genre-button" type="button">Parody</button>
+              <button class="genre-button" type="button">Police</button>
+              <button class="genre-button" type="button">Psychological</button>
+              <button class="genre-button" type="button">Romance</button>
+              <button class="genre-button" type="button">Samurai</button>
+              <button class="genre-button" type="button">School</button>
+              <button class="genre-button" type="button">Sci-Fi</button>
+              <button class="genre-button" type="button">Seinen</button>
+              <button class="genre-button" type="button">Shoujo</button>
+              <button class="genre-button" type="button">Shoujo Ai</button>
+              <button class="genre-button" type="button">Shounen</button>
+              <button class="genre-button" type="button">Shounen Ai</button>
+              <button class="genre-button" type="button">Slice of Life</button>
+              <button class="genre-button" type="button">Space</button>
+              <button class="genre-button" type="button">Sports</button>
+              <button class="genre-button" type="button">Super Power</button>
+              <button class="genre-button" type="button">Supernatural</button>
+              <button class="genre-button" type="button">Thriller</button>
+              <button class="genre-button" type="button">Vampire</button>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="filter-btn" type="button">Filter</button>
+      </div>
+    </div>
+  </aside>
+
+  <header class="header" id="header">
+    <div class="header-fx">
+      <div class="smoke"></div>
+      <div class="smoke smoke-2"></div>
+      <div class="inner-haze"></div>
+
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <div class="left">
+      <button class="hamburger" id="hamburger" type="button" aria-label="Deschide meniul" aria-controls="sidebar" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="logo">
+        <img src="public/icons/x/Logo.webp" alt="AniVortex Logo" width="965" height="947" decoding="async">
+      </div>
+
+      <div class="dot"></div>
+
+      <nav class="nav">
+        <div class="nav-item">
+          <a href="#" aria-disabled="true" tabindex="-1">Acasă</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="#" aria-disabled="true" tabindex="-1">Listă anime <i class="fa-solid fa-chevron-down arrow"></i></a>
+          <ul class="dropdown">
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-play"></i> On-going</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-language"></i> În traducere</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-check"></i> Complete</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-film"></i> OVA</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-circle-play"></i> ONA</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-clapperboard"></i> Filme</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-masks-theater"></i> Live-action</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item">
+          <a href="#" aria-disabled="true" tabindex="-1">Listă manga <i class="fa-solid fa-chevron-down arrow"></i></a>
+          <ul class="dropdown">
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-play"></i> On-going</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-language"></i> În traducere</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-check"></i> Complete</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-book"></i> Light Novel</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-bolt"></i> One-shot</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item">
+          <a href="#" aria-disabled="true" tabindex="-1">Divertisment <i class="fa-solid fa-chevron-down arrow"></i></a>
+          <ul class="dropdown">
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-book-open"></i> Cărți</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-clapperboard"></i> Filme</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-tv"></i> Seriale</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item">
+          <a href="#" aria-disabled="true" tabindex="-1">Lansări</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="#" aria-disabled="true" tabindex="-1">Sugestii <i class="fa-solid fa-chevron-down arrow"></i></a>
+          <ul class="dropdown">
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-paper-plane"></i> Sugerează</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-magnifying-glass-chart"></i> Verifică</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="right">
+      <div class="action-wrap">
+        <button class="action-btn" type="button" aria-label="Watch2gether">
+          <i class="fa-solid fa-tv"></i>
+        </button>
+        <span class="tooltip">Watch2gether</span>
+      </div>
+
+      <div class="action-wrap">
+        <button class="action-btn" type="button" aria-label="Limbă">
+          <i class="fa-solid fa-globe"></i>
+        </button>
+        <span class="tooltip">Limbă</span>
+      </div>
+
+      <div class="action-wrap">
+        <button class="action-btn" type="button" aria-label="Forum">
+          <i class="fa-regular fa-comments"></i>
+        </button>
+        <span class="tooltip">Forum</span>
+      </div>
+
+      <div class="action-wrap">
+        <button class="action-btn" type="button" aria-label="Staff">
+          <i class="fa-solid fa-shield"></i>
+        </button>
+        <span class="tooltip">Staff</span>
+      </div>
+
+      <div class="right-separator"></div>
+
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Caută anime..." aria-label="Caută anime">
+      </div>
+    </div>
+  </header>
+
+
+ <div class="page">
+    <div class="banner-wrap">
+      <div class="banner-slider">
+ 
+        <!-- Banner 1 - NARUTO -->
+        <section class="banner active">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#1 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">NARUTO</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Aventură</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Fantezie</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big">
+                    <img src="public/icons/icon detalii/smart-tv.png" alt="tv" decoding="async" width="24" height="24">
+                    <span>Series TV</span>
+                  </div>
+                  <div class="meta-item meta-big">
+                    <img src="public/icons/icon detalii/time-left.png" alt="durata" decoding="async" width="24" height="24">
+                    <span>23m</span>
+                  </div>
+                  <div class="meta-item">
+                    <img src="public/icons/icon detalii/schedule.png" alt="data" decoding="async" width="24" height="24">
+                    <span>Oct. 3, 2002</span>
+                  </div>
+                  <div class="meta-item">
+                    <img src="public/icons/icon detalii/sd.png" alt="calitate" decoding="async" width="24" height="24">
+                    <span>SD</span>
+                  </div>
+                  <div class="meta-item">
+                    <img src="public/icons/icon detalii/chapter.png" alt="episoade" decoding="async" width="24" height="24">
+                    <span>220 ep</span>
+                  </div>
+                </div>
+ 
+                <p class="description">
+                  Acum doisprezece ani, o vulpe demonică uriașă a terorizat lumea. În timpul atacului monstrului asupra Satului Frunzei Ascunse, Hokage — liderul satului și cel mai puternic ninja — s-a sacrificat pentru a sigila bestia în interiorul unui nou-născut, salvând civilizația de la distrugere, dar condamnând copilul la o viață solitară.
+
+                  Acum, după ani în care a fost respins și hărțuit, Naruto Uzumaki deranjează satul cu farse elaborate și acte de vandalism. În ciuda acestor năzbâtii, el muncește din greu pentru a-și îndeplini visul: să devină Hokage și să câștige recunoașterea celor care l-au maltratat toată viața. Naruto se alătură Echipei 7, o echipă de ninja formată din doi dintre colegii săi – prodigiosul Sasuke Uchiha și isteața Sakura Haruno.
+
+                  Sub conducerea distantului Kakashi Hatake, Echipa 7 îndeplinește o serie de misiuni dificile, forțându-i pe membri să devină mai puternici și să-și consolideze camaraderia, în ciuda numeroaselor diferențe dintre ei. Naruto se străduiește să iasă în evidență în rivalitatea sa cu Sasuke și să câștige afecțiunea romantică a Sakurei. Dar, pe măsură ce trio-ul se confruntă cu pericolul și moartea, trecuturile lor tragice amenință să-i despartă.
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/naruto.webp" srcset="public/imgs/banner/responsive/naruto-600.webp 600w, public/imgs/banner/responsive/naruto-900.webp 900w, public/imgs/banner/naruto.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="Naruto" class="hero-image" width="1200" height="600" decoding="async" loading="eager" fetchpriority="high">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/naruto.webp" alt="naruto logo" width="2056" height="876" decoding="async">
+                  </div>
+                </div>
+ 
+                <div class="center-text">
+                  <div class="center-text-label">SERIE SHONEN</div>
+                </div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">
+                    O serie Shounen
+                    <span class="tooltip-arrow"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- Banner 2 - BLEACH -->
+        <section class="banner">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#2 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">BLEACH</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Aventură</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Supernatural</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/smart-tv.png" alt="" decoding="async" width="24" height="24"><span>Series TV</span></div>
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/time-left.png" alt="" decoding="async" width="24" height="24"><span>24m</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/schedule.png" alt="" decoding="async" width="24" height="24"><span>Oct. 5, 2004</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/hd.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>HD</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/chapter.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>366 ep</span></div>
+                </div>
+ 
+                <p class="description">
+                  Ichigo Kurosaki este un licean obișnuit – până când familia lui este atacată de un Hollow, un spirit corupt care caută să devoreze sufletele oamenilor. Atunci o întâlnește pe Rukia Kuchiki, o Soul Reaper, care este rănită în timp ce îi apără familia lui Ichigo de atacator. Pentru a-și salva familia, Ichigo acceptă oferta lui Rukia de a-i prelua puterile și, astfel, devine și el un Soul Reaper.
+
+                  Cu toate acestea, întrucât Rukia nu își poate recăpăta puterile, lui Ichigo i se încredințează sarcina dificilă de a vâna Hollow-urile care bântuie orașul lor. Totuși, el nu este singur în lupta sa, fiind însoțit mai târziu de prietenii săi – colegii de clasă Orihime Inoue, Yasutora Sado și Uryuu Ishida – fiecare dintre ei având abilități unice. Pe măsură ce Ichigo și camarazii săi se obișnuiesc cu noile lor îndatoriri și se susțin reciproc pe câmpul de luptă și în afara lui, tânărul Soul Reaper află curând că Hollows nu sunt singura amenințare reală pentru lumea umană.
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/bleach.webp" srcset="public/imgs/banner/responsive/bleach-600.webp 600w, public/imgs/banner/responsive/bleach-900.webp 900w, public/imgs/banner/bleach.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="Bleach" class="hero-image" width="1200" height="600" decoding="async" loading="lazy">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/bleach.webp" alt="bleach logo" width="2400" height="1800" decoding="async" loading="lazy">
+                  </div>
+                </div>
+ 
+                <div class="center-text"><div class="center-text-label">SERIE SHONEN</div></div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">O serie Shounen<span class="tooltip-arrow"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- Banner 3 - D.GRAY-MAN -->
+        <section class="banner">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#3 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">D.GRAY-MAN</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Aventură</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Fantezie</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/smart-tv.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Series TV</span></div>
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/time-left.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>23m</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/schedule.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Oct. 3, 2006</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/fhd.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>FHD</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/chapter.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>103 ep</span></div>
+                </div>
+ 
+                <p class="description">
+                  Pierderea unei persoane dragi este atât de dureroasă încât, uneori, cineva și-ar dori să o poată readuce la viață — o slăbiciune de care profită enigmaticul Contele Mileniului. Pentru a-și crea armele mecanice cunoscute sub numele de „Akuma”, el folosește sufletele morților care sunt readuși la viață. Odată ce un suflet este plasat într-un Akuma, acesta rămâne prins acolo pentru totdeauna, iar singura modalitate de a-l salva este exorcizarea din vasul său folosind arma Anti-Akuma, „Innocence”.
+
+                  După ce a petrecut trei ani ca discipol al generalului Cross, Allen Walker este trimis la Ordinul Negru – o organizație formată din cei dispuși să lupte împotriva Akuma și a Contelui Mileniului – pentru a deveni un exorcist oficial. Cu un braț care îi servește drept Innocence și un ochi blestemat care poate vedea sufletele suferinde din interiorul unui Akuma, depinde de Allen și de colegii săi exorciști să oprească complotul suprem al Contelui Mileniului: unul care poate duce la distrugerea lumii.
+
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/d.gray man.webp" srcset="public/imgs/banner/responsive/d.gray man-600.webp 600w, public/imgs/banner/responsive/d.gray man-900.webp 900w, public/imgs/banner/d.gray man.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="D.Gray-man" class="hero-image" width="1200" height="600" decoding="async" loading="lazy">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/d.gray-man.webp" alt="d.gray-man logo" width="904" height="364" decoding="async" loading="lazy">
+                  </div>
+                </div>
+ 
+                <div class="center-text"><div class="center-text-label">SERIE SHONEN</div></div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">O serie Shounen<span class="tooltip-arrow"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- Banner 4 - DRAGON BALL -->
+        <section class="banner">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#4 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">DRAGON BALL</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Aventură</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Comedie</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/smart-tv.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Series TV</span></div>
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/time-left.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>24m</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/schedule.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Feb. 26, 1986</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/sd.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>SD</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/chapter.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>153 ep</span></div>
+                </div>
+ 
+                <p class="description">
+                  Goku Son este un băiețel care trăiește singur în pădure – cel puțin până când o fată pe nume Bulma dă peste el în căutarea unui set de obiecte magice numite „Bile ale Dragonului”. Deoarece se spune că aceste artefacte îndeplinesc o dorință celui care le adună pe toate șapte, Bulma speră să le strângă și să-și dorească un iubit perfect. Gokuu se întâmplă să fie în posesia unei bile a dragonului, dar, din nefericire pentru Bulma, el refuză să se despartă de ea, așa că ea îi propune o înțelegere: el poate să o însoțească în călătoria ei dacă o lasă să împrumute puterea bilei dragonului. Cu asta, cei doi pornesc în călătoria vieții lor.
+
+Nu pornesc singuri în călătorie. Pe drum, îi întâlnesc pe bătrânul Muten-Roshi și pe aspirantul la ucenicie Kuririn, alături de care Gokuu se antrenează pentru a deveni un luptător mai puternic în vederea viitorului Turneu Mondial de Arte Marțiale. Totuși, nu totul este distracție și jocuri; puterea de a îndeplini orice dorință este una puternică, iar alții ar face lucruri mult mai grave decât simpla dorință de a avea un iubit. Pentru a-i opri pe cei care ar încerca să abuzeze de puterea legendară, ei se antrenează pentru a deveni luptători mai puternici, folosindu-și noua putere pentru a ajuta oamenii din jurul lor pe parcurs.
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/dragon ball.webp" srcset="public/imgs/banner/responsive/dragon ball-600.webp 600w, public/imgs/banner/responsive/dragon ball-900.webp 900w, public/imgs/banner/dragon ball.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="Dragon Ball" class="hero-image" width="1200" height="600" decoding="async" loading="lazy">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/dragon ball.webp" alt="dragon ball logo" width="500" height="280" decoding="async" loading="lazy">
+                  </div>
+                </div>
+ 
+                <div class="center-text"><div class="center-text-label">SERIE SHONEN</div></div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">O serie Shounen<span class="tooltip-arrow"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- Banner 5 - FAIRY TAIL -->
+        <section class="banner">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#5 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">FAIRY TAIL</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Aventură</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Fantezie</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/smart-tv.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Series TV</span></div>
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/time-left.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>23m</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/schedule.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Oct. 12, 2009</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/fhd.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>FHD</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/chapter.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>175 ep</span></div>
+                </div>
+ 
+                <p class="description">
+                 În Regatul fermecat Fiore, plină de viață Lucy Heartfilia are o singură dorință: să se alăture renumitei Fairy Tail — una dintre numeroasele bresle de vrăjitori împrăștiate pe tot continentul. Din fericire, o întâlnire întâmplătoare cu Natsu Dragneel, „Salamandra” din Fairy Tail, o propulsează în legendarul breaslă.
+
+                 De la rivalitatea lui Natsu cu vrăjitorul de gheață Gray Fullbuster până la prezența înfricoșătoare a deasupra tuturor, zeița luptei Erza Scarlet, puternicii magi ai Fairy Tail au o ușoară înclinație spre necazuri. Prin toate slujbele ocazionale profitabile și aventurile pentru a salva lumea de la distrugere se află o încredere absolută și neclintită, mai puternică decât familia, care s-a format între fiecare membru al breslei.
+
+                 Alăturându-se lui Natsu, Gray și Erza, Lucy se trezește în mijlocul celor mai neadaptați vrăjitori ai breslei. Dar, pe măsură ce se află constant în ochiul fiecărui pericol, există un nume care nu încetează să reapară: Zeref, temutul maestru al magiei negre.
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/fairy tail.webp" srcset="public/imgs/banner/responsive/fairy tail-600.webp 600w, public/imgs/banner/responsive/fairy tail-900.webp 900w, public/imgs/banner/fairy tail.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="Fairy Tail" class="hero-image" width="1200" height="600" decoding="async" loading="lazy">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/fairy tail.webp" alt="fairy tail logo" width="1024" height="354" decoding="async" loading="lazy">
+                  </div>
+                </div>
+ 
+                <div class="center-text"><div class="center-text-label">SERIE SHONEN</div></div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">O serie Shounen<span class="tooltip-arrow"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- Banner 6 - GINTAMA -->
+        <section class="banner">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#6 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">GINTAMA</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Sci-Fi</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Comedie</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/smart-tv.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Series TV</span></div>
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/time-left.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>24m</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/schedule.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Apr. 4, 2006</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/4k.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>4K</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/chapter.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>201 ep</span></div>
+                </div>
+ 
+                <p class="description">
+                  Edo este un oraș care a fost leagănul vigoarei și ambiției samurailor din întreaga țară. Cu toate acestea, după capitularea Japoniei feudale în fața unor extratereștri puternici cunoscuți sub numele de „Amanto”, aceste aspirații par acum de neatins. Odată ce shogunatul, odinioară influent, a fost reconstituit ca guvern marionetă, se adoptă o nouă lege care interzice imediat purtarea sabiei în public.
+
+                  Intră în scenă Gintoki Sakata, un bărbat excentric cu părul argintiu, care poartă mereu cu el o sabie de lemn și își păstrează statutul de samurai în ciuda interdicției. Ca fondator al Yorozuya, o mică afacere care se ocupă cu diverse treburi, Gintoki se angajează adesea în misiuni pentru a ajuta alte persoane — deși, de obicei, în moduri destul de ciudate și neprevăzute.
+
+                  Ajutat de Shinpachi Shimura, un băiat cu ochelari care se presupune că învață calea samuraiului; Kagura, o fată băiețoasă cu o forță supraumană și un apetit nesfârșit; și Sadaharu, câinele lor uriaș de companie care adoră să muște oamenii de cap, cei de la Yorozuya se confruntă cu orice, de la membri ai familiei regale extraterestre până la încăierări cu bandele locale, în lumea în continuă schimbare a Edo-ului.
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/gintama.webp" srcset="public/imgs/banner/responsive/gintama-600.webp 600w, public/imgs/banner/responsive/gintama-900.webp 900w, public/imgs/banner/gintama.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="Gintama" class="hero-image" width="1200" height="600" decoding="async" loading="lazy">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/gintama.webp" alt="gintama logo" width="750" height="540" decoding="async" loading="lazy">
+                  </div>
+                </div>
+ 
+                <div class="center-text"><div class="center-text-label">SERIE SHONEN</div></div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">O serie Shounen<span class="tooltip-arrow"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- Banner 7 - HAJIME NO IPPO -->
+        <section class="banner">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#7 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">HAJIME NO IPPO</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Sport</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Dramă</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/smart-tv.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Series TV</span></div>
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/time-left.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>23m</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/schedule.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Oct. 4, 2000</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/sd.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>SD</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/chapter.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>75 ep</span></div>
+                </div>
+ 
+                <p class="description">
+                  În absența tatălui său, adolescentul Ippo Makunouchi muncește din greu pentru a-și ajuta mama să conducă afacerea cu închirierea de bărci de pescuit. Temperamentul timid al lui Ippo, lipsa de somn și mirosul mării îl transformă într-o țintă ușoară pentru niște bătăuși nemiloși, care îl lasă zilnic plin de vânătăi și lovit. Mamoru Takamura, un boxer în ascensiune, îl salvează pe Ippo dintr-un incident violent petrecut după ore și îl duce la sala de box Kamogawa pentru a se reface. Takamura și colegii săi boxeri, Masaru Aoki și Tatsuya Kimura, sunt uimiți de loviturile puternice ale lui Ippo — rezultatul mușchilor puternici dezvoltați de-a lungul anilor în care a lucrat în afacerea familiei, extrem de solicitantă fizic.
+
+                  După un antrenament scurt sub îndrumarea lui Takamura, Ippo îi impresionează pe ceilalți boxeri într-un meci de antrenament împotriva prodigiosului Ichirou Miyata. El câștigă un rival în Miyata și un antrenor în Genji Kamogawa, proprietarul sălii și el însuși un fost boxer. Pe măsură ce Ippo face primii pași în cariera sa oficială de boxer, se confruntă cu o serie de adversari provocatori, fiecare mai puternic decât precedentul. Victorii, înfrângeri și un ciclu de antrenamente dedicate îl așteaptă pe Ippo în călătoria sa spre măreție. Cu corpul său rezistent și spiritul de luptător de neoprit, acest tânăr amabil încearcă să cucerească lumea.
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/hajime no ippo.webp" srcset="public/imgs/banner/responsive/hajime no ippo-600.webp 600w, public/imgs/banner/responsive/hajime no ippo-900.webp 900w, public/imgs/banner/hajime no ippo.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="Hajime no Ippo" class="hero-image" width="1200" height="600" decoding="async" loading="lazy">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/hajime no ippo.webp" alt="hajime no ippo logo" width="1280" height="544" decoding="async" loading="lazy">
+                  </div>
+                </div>
+ 
+                <div class="center-text"><div class="center-text-label">SERIE SHONEN</div></div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">O serie Shounen<span class="tooltip-arrow"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- Banner 8 - INUYASHA -->
+        <section class="banner">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#8 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">INUYASHA</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Aventură</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Romance</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/smart-tv.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Series TV</span></div>
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/time-left.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>24m</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/schedule.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Oct. 16, 2000</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/hd.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>HD</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/chapter.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>167 ep</span></div>
+                </div>
+ 
+                <p class="description">
+                  Ziua de naștere a lui Kagome Higurashi, când împlinește 15 ani, ia o întorsătură neașteptată atunci când este trasă cu forța de un demon în vechea fântână a sanctuarului familiei sale. Transportată în trecut, într-o perioadă în care demonii erau o prezență obișnuită în Japonia feudală, Kagome se trezește vânată fără încetare de aceste creaturi malefice, toate dorind cu ardoare un obiect pe care ea îl poartă fără să știe: Bijuteria Shikon, o mică sferă care deține o putere extraordinară.
+
+                  În mijlocul acestei situații dificile, Kagome îl întâlnește pe Inuyasha, un băiat pe jumătate demon, care o confundă cu Kikyou, o preoteasă pe care pare să o urască. Din cauza asemănării ei cu Kikyou, Inuyasha o disprețuiește violent pe Kagome. Cu toate acestea, după ce își dă seama de circumstanțele cumplite în care se află amândoi, el își pune deoparte ostilitatea și îi dă o mână de ajutor.
+
+                  Din păcate, în timpul unei lupte pentru Bijuteria Shikon, obiectul miraculos sfârșește spulberat în bucăți și împrăștiat pe tot cuprinsul țării. Temându-se de consecințele dezastruoase ale acestui accident, Kagome și Inuyasha pornesc într-o călătorie plină de provocări pentru a recupera cioburile înainte ca acestea să cadă în mâini greșite.
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/inuyasha.webp" srcset="public/imgs/banner/responsive/inuyasha-600.webp 600w, public/imgs/banner/responsive/inuyasha-900.webp 900w, public/imgs/banner/inuyasha.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="Inuyasha" class="hero-image" width="1200" height="600" decoding="async" loading="lazy">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/inuyasha.webp" alt="inuyasha logo" width="688" height="205" decoding="async" loading="lazy">
+                  </div>
+                </div>
+ 
+                <div class="center-text"><div class="center-text-label">SERIE SHONEN</div></div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">O serie Shounen<span class="tooltip-arrow"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- Banner 9 - ONE PIECE -->
+        <section class="banner">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#9 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">ONE PIECE</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Aventură</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Fantezie</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/smart-tv.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Series TV</span></div>
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/time-left.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>24m</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/schedule.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Oct. 20, 1999</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/4k.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>4K</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/chapter.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>1300 ep</span></div>
+                </div>
+ 
+                <p class="description">
+                  Ziua de naștere a lui Kagome Higurashi, când împlinește 15 ani, ia o întorsătură neașteptată atunci când este trasă cu forța de un demon în vechea fântână a sanctuarului familiei sale. Transportată în trecut, într-o perioadă în care demonii erau o prezență obișnuită în Japonia feudală, Kagome se trezește vânată fără încetare de aceste creaturi malefice, toate dorind cu ardoare un obiect pe care ea îl poartă fără să știe: Bijuteria Shikon, o mică sferă care deține o putere extraordinară.
+
+                  În mijlocul acestei situații dificile, Kagome îl întâlnește pe Inuyasha, un băiat pe jumătate demon, care o confundă cu Kikyou, o preoteasă pe care pare să o urască. Din cauza asemănării ei cu Kikyou, Inuyasha o disprețuiește violent pe Kagome. Cu toate acestea, după ce își dă seama de circumstanțele cumplite în care se află amândoi, el își pune deoparte ostilitatea și îi dă o mână de ajutor.
+
+                  Din păcate, în timpul unei lupte pentru Bijuteria Shikon, obiectul miraculos sfârșește spulberat în bucăți și împrăștiat pe tot cuprinsul țării. Temându-se de consecințele dezastruoase ale acestui accident, Kagome și Inuyasha pornesc într-o călătorie plină de provocări pentru a recupera cioburile înainte ca acestea să cadă în mâini greșit
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/one piece.webp" srcset="public/imgs/banner/responsive/one piece-600.webp 600w, public/imgs/banner/responsive/one piece-900.webp 900w, public/imgs/banner/one piece.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="One Piece" class="hero-image" width="1200" height="600" decoding="async" loading="lazy">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/one piece.webp" alt="one piece logo" width="1920" height="677" decoding="async" loading="lazy">
+                  </div>
+                </div>
+ 
+                <div class="center-text"><div class="center-text-label">SERIE SHONEN</div></div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">O serie Shounen<span class="tooltip-arrow"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- Banner 10 - HUNTER X HUNTER -->
+        <section class="banner">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#10 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">HUNTER X HUNTER</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Aventură</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Comedie</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/smart-tv.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Series TV</span></div>
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/time-left.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>23m</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/schedule.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Oct. 2, 2011</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/fhd.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>FHD</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/chapter.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>148 ep</span></div>
+                </div>
+ 
+                <p class="description">
+                 Vânătorii se dedică îndeplinirii unor misiuni periculoase, de la străbăterea teritoriilor neexplorate ale lumii până la găsirea unor obiecte rare și a unor monștri. Înainte de a deveni vânător, trebuie să treci de Examenul de Vânător — un proces de selecție extrem de riscant, în urma căruia majoritatea candidaților rămân cu dizabilități sau, mai rău, își pierd viața.
+
+                 Participanții ambițioși care se înfruntă cu acest examen notoriu au fiecare motivele lor. Ceea ce îl motivează pe Gon Freecss, în vârstă de 12 ani, este găsirea lui Ging, tatăl său și el însuși vânător. Crezând că își va întâlni tatăl devenind vânător, Gon face primul pas pentru a urma aceeași cale.
+
+                 În timpul examenului de vânător, Gon se împrietenește cu studentul la medicină Leorio Paladiknight, cu răzbunătorul Kurapika și cu fostul asasin Killua Zoldyck. Deși motivele lor diferă foarte mult între ele, ei se unesc pentru un scop comun și încep să se aventureze într-o lume periculoasă.
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/hxh.webp" srcset="public/imgs/banner/responsive/hxh-600.webp 600w, public/imgs/banner/responsive/hxh-900.webp 900w, public/imgs/banner/hxh.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="Hunter x Hunter" class="hero-image" width="1200" height="600" decoding="async" loading="lazy">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/hxh.webp" alt="hxh logo" width="1280" height="544" decoding="async" loading="lazy">
+                  </div>
+                </div>
+ 
+                <div class="center-text"><div class="center-text-label">SERIE SHONEN</div></div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">O serie Shounen<span class="tooltip-arrow"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- NAV INSIDE -->
+        <div class="slider-row">
+          <div class="slider-nav">
+            <button type="button" class="nav-arrow prev">‹</button>
+ 
+            <div class="dots">
+              <button class="nav-dot active" type="button" aria-label="Mergi la slide-ul 1"></button>
+              <button class="nav-dot" type="button" aria-label="Mergi la slide-ul 2"></button>
+              <button class="nav-dot" type="button" aria-label="Mergi la slide-ul 3"></button>
+              <button class="nav-dot" type="button" aria-label="Mergi la slide-ul 4"></button>
+              <button class="nav-dot" type="button" aria-label="Mergi la slide-ul 5"></button>
+              <button class="nav-dot" type="button" aria-label="Mergi la slide-ul 6"></button>
+              <button class="nav-dot" type="button" aria-label="Mergi la slide-ul 7"></button>
+              <button class="nav-dot" type="button" aria-label="Mergi la slide-ul 8"></button>
+              <button class="nav-dot" type="button" aria-label="Mergi la slide-ul 9"></button>
+              <button class="nav-dot" type="button" aria-label="Mergi la slide-ul 10"></button>
+            </div>
+ 
+            <button type="button" class="nav-arrow next">›</button>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+
+
+  <div class="banner-trending-join" aria-hidden="true">
+    <svg viewBox="0 0 1200 96" preserveAspectRatio="none" role="presentation" focusable="false">
+      <defs>
+        <linearGradient id="bannerTrendingGold" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#a67634"/>
+          <stop offset="16%" stop-color="#c6954a"/>
+          <stop offset="50%" stop-color="#e0c17e"/>
+          <stop offset="84%" stop-color="#c6954a"/>
+          <stop offset="100%" stop-color="#a67634"/>
+        </linearGradient>
+        <linearGradient id="bannerTrendingTeal" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#0d4652"/>
+          <stop offset="18%" stop-color="#17616f"/>
+          <stop offset="50%" stop-color="#2aa1b1"/>
+          <stop offset="82%" stop-color="#17616f"/>
+          <stop offset="100%" stop-color="#0d4652"/>
+        </linearGradient>
+      </defs>
+
+      <path class="banner-trending-join-bandfill" d="M0 22 C220 22 360 22 470 24 C520 26 555 45 585 66 L600 76 L615 66 C645 45 680 26 730 24 C840 22 980 22 1200 22 L1200 34 C980 34 840 34 730 36 C681 38 648 54 620 74 L600 88 L580 74 C552 54 519 38 470 36 C360 34 220 34 0 34 Z"/>
+      <path class="banner-trending-join-gold" d="M0 22 C220 22 360 22 470 24 C520 26 555 45 585 66 L600 76 L615 66 C645 45 680 26 730 24 C840 22 980 22 1200 22"/>
+      <path class="banner-trending-join-teal" d="M0 34 C220 34 360 34 470 36 C519 38 552 54 580 74 L600 88 L620 74 C648 54 681 38 730 36 C840 34 980 34 1200 34"/>
+    </svg>
+  </div>
+
+  <section class="trending-master-container" id="trendingMaster" aria-labelledby="trendingTitle">
+  <div class="trending-row-meta">
+    <div class="trending-row-meta-left">
+      <div class="pulse-dot"></div>
+      <h2 id="trendingTitle">Trending Now</h2>
+      <button class="cat-btn" id="catBtn" type="button">
+        <span class="cat-btn-label" id="catLabel">Anime</span>
+        <span class="cat-btn-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </span>
+      </button>
+    </div>
+    <div class="trending-row-meta-right">
+      <div class="badge-info">Actualizat săptămânal</div>
+    </div>
+  </div>
+
+  <div class="trending-section">
+    <div class="horizontal-scroll" id="scrollArea">
+      <div class="cards-list" id="cardsContainer"></div>
+    </div>
+  </div>
+  </section>
+
+  <div class="trending-share-join" aria-hidden="true">
+    <svg viewBox="0 0 1200 88" preserveAspectRatio="none" focusable="false">
+      <defs>
+        <linearGradient id="trendingShareGold" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#B8925E" stop-opacity="0"/>
+          <stop offset="0.24" stop-color="#B8925E" stop-opacity="0.48"/>
+          <stop offset="0.5" stop-color="#D4B77A" stop-opacity="0.82"/>
+          <stop offset="0.76" stop-color="#B8925E" stop-opacity="0.48"/>
+          <stop offset="1" stop-color="#B8925E" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="trendingShareTeal" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#55C4BC" stop-opacity="0.12"/>
+          <stop offset="0.5" stop-color="#78D7C9" stop-opacity="0.62"/>
+          <stop offset="1" stop-color="#55C4BC" stop-opacity="0.12"/>
+        </linearGradient>
+      </defs>
+      <path class="trending-share-join-fill" d="M0 0 H260 C390 0 455 8 522 38 C555 53 580 64 600 72 C620 64 645 53 678 38 C745 8 810 0 940 0 H1200 V20 H940 C810 20 745 28 678 58 C645 73 620 82 600 88 C580 82 555 73 522 58 C455 28 390 20 260 20 H0 Z"/>
+      <path class="trending-share-join-gold" d="M0 0 H260 C390 0 455 8 522 38 C555 53 580 64 600 72 C620 64 645 53 678 38 C745 8 810 0 940 0 H1200"/>
+      <path class="trending-share-join-teal" d="M0 20 H260 C390 20 455 28 522 58 C555 73 580 82 600 88 C620 82 645 73 678 58 C745 28 810 20 940 20 H1200"/>
+    </svg>
+  </div>
+
+<!-- share-banner-section corectat, cu dropdown funcțional -->
+<div class="share-banner-container" id="share-banner-preview">
+<section class="share-banner-section" aria-label="Distribuie AniVortex">
+    <!-- Coloana 1: stânga - avatar + text -->
+    <div class="sb-left">
+        <img src="public/icons/Share/Rimuru slime.webp" alt="" aria-hidden="true" class="sb-avatar" width="500" height="500" decoding="async" loading="lazy">
+        <div class="sb-text">
+            <div class="sb-title">Do you love <span class="sb-highlight">AniVortex</span>?</div>
+            <div class="sb-subtitle">Give it a share! <svg class="red-heart" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7.2-4.35-9.45-8.52C.8 9.24 2.1 5.5 5.62 4.55 8 3.9 10.1 5 12 7.12 13.9 5 16 3.9 18.38 4.55c3.52.95 4.82 4.69 3.07 7.93C19.2 16.65 12 21 12 21Z"/></svg></div>
+        </div>
+    </div>
+
+    <!-- Coloana 2: centru - contor 194k -->
+    <div class="sb-count-separate">
+        <div class="sb-count" id="shareCounterDisplay" aria-live="polite">194k</div>
+        <div class="sb-label">Shares</div>
+    </div>
+
+    <!-- Coloana 3: dreapta - butoane sociale -->
+    <div class="sb-right-group">
+        <div class="sb-buttons-group">
+            <button class="sb-btn sb-telegram" type="button" data-platform="Telegram" aria-label="Distribuie pe Telegram">
+                <svg viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.6-1.38-.97-2.23-1.56-.99-.69-.35-1.07.22-1.69.15-.15 2.71-2.48 2.76-2.69.01-.03.02-.13-.05-.19-.07-.05-.17-.03-.25-.01-.11.02-1.93 1.23-5.45 3.61-.52.36-.99.53-1.41.52-.46-.01-1.35-.26-2.01-.48-.81-.27-1.46-.42-1.4-.89.03-.25.38-.51 1.05-.77 4.03-1.75 6.72-2.91 8.07-3.48 3.84-1.63 4.64-1.91 5.16-1.92.12 0 .38.03.55.17.14.12.18.29.2.45-.02.09-.01.16-.01.16z"/></svg>
+            </button>
+            <button class="sb-btn sb-tiktok" type="button" data-platform="TikTok" aria-label="Distribuie pe TikTok">
+                <svg viewBox="0 0 24 24" fill="white"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.87-4.08 2.93 2.93 0 0 1 .92.15V9.61a6.27 6.27 0 0 0-1-.07A6.32 6.32 0 0 0 5.2 15.9a6.32 6.32 0 0 0 8.41 1.87 6.3 6.3 0 0 0 2.84-5.08v-3.8a8.25 8.25 0 0 0 4.14 1.2V6.95a5.12 5.12 0 0 1-1-.26z"/></svg>
+            </button>
+            <button class="sb-btn sb-twitter" type="button" data-platform="X" id="twitterBtn" aria-label="Distribuie pe X">
+                <svg viewBox="0 0 24 24" fill="white"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </button>
+            <button class="sb-btn sb-whatsapp" type="button" data-platform="WhatsApp" aria-label="Distribuie pe WhatsApp">
+                <svg viewBox="0 0 24 24" fill="white"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.8 3.08 1.24 4.74 1.24 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm.03 15.17c-1.35 0-2.67-.36-3.83-1.04l-2.72.71.73-2.62c-.73-1.15-1.12-2.47-1.12-3.84 0-4.04 3.29-7.33 7.33-7.33s7.33 3.29 7.33 7.33-3.29 7.34-7.33 7.34zm4.02-5.48c-.22-.11-1.3-.64-1.5-.71-.2-.07-.35-.11-.5.11-.15.22-.57.71-.7.86-.13.15-.26.17-.48.06-.22-.11-.93-.34-1.77-1.09-.66-.59-1.1-1.32-1.23-1.54-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.64-.18-.43-.36-.37-.5-.38-.13 0-.28-.01-.43-.01-.15 0-.39.06-.59.28-.2.22-.77.75-.77 1.83s.79 2.13.9 2.27c.11.14 1.56 2.38 3.78 3.34.53.23.94.37 1.26.47.53.17 1.01.14 1.39.09.42-.06 1.3-.53 1.48-1.04.18-.51.18-.95.13-1.04-.06-.09-.19-.15-.4-.26z"/></svg>
+            </button>
+
+            <div class="plus-dropdown" id="plusDropdown">
+                <button class="sb-btn sb-plus" type="button" id="plusButton" aria-controls="dropdownMenu" aria-expanded="false" aria-haspopup="true" aria-label="Mai multe opțiuni de distribuire">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                </button>
+                <div class="plus-dropdown-menu" id="dropdownMenu" role="group" aria-label="Mai multe rețele sociale" aria-hidden="true">
+                    <button class="sb-btn" type="button" data-platform="Facebook" aria-label="Distribuie pe Facebook"><svg viewBox="0 0 24 24" fill="white"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg></button>
+                    <button class="sb-btn" type="button" data-platform="Reddit" aria-label="Distribuie pe Reddit"><svg viewBox="0 0 24 24" fill="white"><path d="M22 12.5a3.5 3.5 0 0 0-5.92-2.45c-1.58-.9-3.43-1.45-5.38-1.52l.86-3.88 2.77.65a2.5 2.5 0 1 0 .23-1.1l-3.39-.8a.5.5 0 0 0-.6.38l-1 4.5c-2.1.07-4.08.64-5.77 1.58A3.5 3.5 0 0 0 2 12.5c0 1.2.6 2.26 1.52 2.93-.07.36-.11.72-.11 1.07 0 3.04 3.94 5.5 8.8 5.5s8.8-2.46 8.8-5.5c0-.36-.04-.72-.12-1.07A3.47 3.47 0 0 0 22 12.5zM8.5 14a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm7 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/></svg></button>
+                    <button class="sb-btn" type="button" data-platform="LinkedIn" aria-label="Distribuie pe LinkedIn"><svg viewBox="0 0 24 24" fill="white"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 1 1 8.25 6.5 1.75 1.75 0 0 1 6.5 8.25zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0 0 13 14.19a.7.7 0 0 0 0 .14V19h-3v-9h2.9v1.25a3.11 3.11 0 0 1 2.7-1.41c1.55 0 3.36.86 3.36 3.66z"/></svg></button>
+                    <button class="sb-btn" type="button" data-platform="Pinterest" aria-label="Distribuie pe Pinterest"><svg viewBox="0 0 24 24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.14 2.59 7.66 6.24 9.07-.09-.79-.17-2 .04-2.86.18-.76 1.16-4.91 1.16-4.91s-.3-.6-.3-1.48c0-1.39.81-2.43 1.82-2.43.86 0 1.27.64 1.27 1.42 0 .87-.55 2.16-.84 3.36-.24.99.5 1.81 1.48 1.81 1.77 0 3.13-1.87 3.13-4.57 0-2.39-1.72-4.06-4.17-4.06-2.84 0-4.51 2.13-4.51 4.33 0 .86.33 1.78.74 2.28.08.1.09.18.06.28-.08.31-.24.98-.27 1.12-.04.18-.14.22-.32.13-1.2-.56-1.95-2.31-1.95-3.72 0-3.03 2.2-5.81 6.35-5.81 3.33 0 5.92 2.37 5.92 5.54 0 3.31-2.09 5.98-4.98 5.98-.97 0-1.88-.51-2.19-1.11 0 0-.48 1.83-.6 2.28-.22.84-.8 1.69-1.33 2.35a9.97 9.97 0 0 0 2.93.44c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+<!-- ÎMBINARE SHARE → COM: tranziție fluidă între suprafețele celor două componente -->
+<div class="share-com-v-join" aria-hidden="true">
+  <svg viewBox="0 0 1200 88" preserveAspectRatio="none" focusable="false">
+    <defs>
+      <linearGradient id="shareComJoinGold" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#b8925e" stop-opacity="0"/>
+        <stop offset=".16" stop-color="#b8925e" stop-opacity=".42"/>
+        <stop offset=".5" stop-color="#d4b77a" stop-opacity=".78"/>
+        <stop offset=".84" stop-color="#b8925e" stop-opacity=".42"/>
+        <stop offset="1" stop-color="#b8925e" stop-opacity="0"/>
+      </linearGradient>
+      <linearGradient id="shareComJoinTeal" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#8fe7dc" stop-opacity="0"/>
+        <stop offset=".2" stop-color="#8fe7dc" stop-opacity=".16"/>
+        <stop offset=".5" stop-color="#8fe7dc" stop-opacity=".34"/>
+        <stop offset=".8" stop-color="#8fe7dc" stop-opacity=".16"/>
+        <stop offset="1" stop-color="#8fe7dc" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <path class="share-com-v-fill" d="M0 0 H260 C390 0 455 8 522 38 C555 53 580 64 600 72 C620 64 645 53 678 38 C745 8 810 0 940 0 H1200 V20 H940 C810 20 745 28 678 58 C645 73 620 82 600 88 C580 82 555 73 522 58 C455 28 390 20 260 20 H0 Z"/>
+    <path class="share-com-v-top" d="M0 0 H260 C390 0 455 8 522 38 C555 53 580 64 600 72 C620 64 645 53 678 38 C745 8 810 0 940 0 H1200"/>
+    <path class="share-com-v-bottom" d="M0 20 H260 C390 20 455 28 522 58 C555 73 580 82 600 88 C620 82 645 73 678 58 C745 28 810 20 940 20 H1200"/>
+  </svg>
+</div>
+
+<svg class="comentarii-shape-defs" aria-hidden="true" focusable="false">
+  <defs>
+    <!--
+      V7: partea de sus ramane dreapta; jos colturile exterioare sunt drepte,
+      colturile din interiorul decupajului sunt rotunjite, iar "umerii" golului
+      sunt si ei rotunjiti. Coordonatele sunt normalizate 0..1.
+    -->
+    <clipPath id="comentariiClipV7" clipPathUnits="objectBoundingBox">
+      <path d="M0,0 H1 V1 H0.804375 C0.796875,1 0.7925,0.986963 0.7925,0.967407 V0.944593 C0.7925,0.926667 0.786875,0.912 0.78,0.912 H0.22 C0.213125,0.912 0.2075,0.926667 0.2075,0.944593 V0.967407 C0.2075,0.986963 0.203125,1 0.195625,1 H0 Z" />
+    </clipPath>
+  </defs>
+</svg>
+
+<section class="comentarii-section" aria-labelledby="comentarii-title">
+  <svg class="comentarii-frame-v7" viewBox="0 0 1000 500" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M1000 0 V500 H804.375 C796.875 500 792.5 493.481 792.5 483.704 V472.296 C792.5 463.333 786.875 456 780 456 H220 C213.125 456 207.5 463.333 207.5 472.296 V483.704 C207.5 493.481 203.125 500 195.625 500 H0 V0" />
+  </svg>
+
+  <img class="comentarii-character" src="public/imgs/comm/Rimuru..webp" alt="" aria-hidden="true" width="345" height="397" decoding="async" loading="lazy">
+
+  <div class="comentarii-content">
+    <div class="comentarii-top">
+      <div class="comentarii-title-group">
+        <span class="v-bar" aria-hidden="true"></span>
+        <h2 id="comentarii-title">Comentarii</h2>
+      </div>
+
+      <div class="comentarii-tabs" aria-label="Filtre comentarii">
+        <button type="button" class="com-tab active">Comentarii noi</button>
+        <button type="button" class="com-tab">Comentarii în top</button>
+        <button type="button" class="com-category-selector" id="categorySelector" aria-label="Schimbă categoria">
+          <span class="com-cat-label" id="categoryLabel">Anime</span>
+          <span class="com-cat-arrow" aria-hidden="true">›</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="comentarii-track" aria-label="Lista comentariilor">
+      <article class="cloud-card">
+        <div class="cloud-card-inner">
+          <header class="cloud-header">
+            <img class="cloud-avatar avatar-anne" src="public/icons/avatar/anne.webp" alt="Avatar anime MiraKitsune" width="1024" height="1024" decoding="async" loading="lazy">
+            <div class="cloud-user-info">
+              <div class="cloud-identity-row">
+                <span class="cloud-username">MiraKitsune</span>
+                <span class="cloud-member">membru</span>
+              </div>
+              <time class="cloud-time">acum 28 min</time>
+            </div>
+            <button type="button" class="cloud-more" aria-label="Mai multe opțiuni pentru comentariul Mirei">•••</button>
+          </header>
+
+          <p class="cloud-text" data-watermark="✦">Mulțumesc frumos pentru munca depusă. ✨</p>
+          <button type="button" class="cloud-serie" aria-label="Deschide seria Frieren: Beyond Journey's End">
+            <span><small>SERIE</small><strong>Frieren: Beyond Journey's End</strong></span>
+            <span class="cloud-serie-arrow" aria-hidden="true">›</span>
+          </button>
+
+          <div class="cloud-footer" aria-label="Reacții">
+            <button type="button" class="react-btn like" aria-label="Îmi place" aria-pressed="false" data-action="toggle-react">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10v11H3V10h4Zm4 11H8V10l4-7c1.7.2 2.5 1.3 2.1 3L13.5 9H19a2 2 0 0 1 2 2.3l-1.1 7A3 3 0 0 1 17 21h-6Z"/></svg>
+              <span class="react-count">0</span>
+            </button>
+            <button type="button" class="react-btn love" aria-label="Ador" aria-pressed="false" data-action="toggle-react">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
+              <span class="react-count">0</span>
+            </button>
+            <button type="button" class="react-btn reply" aria-label="Răspunde" aria-pressed="false" data-action="toggle-react">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z"/></svg>
+              <span class="react-count">0</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <article class="cloud-card">
+        <div class="cloud-card-inner">
+          <header class="cloud-header">
+            <img class="cloud-avatar avatar-sung" src="public/user/profil img/sung jin woo.webp" alt="Avatar anime RaduSenpai" width="498" height="280" decoding="async" loading="lazy">
+            <div class="cloud-user-info">
+              <div class="cloud-identity-row"><span class="cloud-username">RaduSenpai</span><span class="cloud-member">membru</span></div>
+              <time class="cloud-time">acum o oră</time>
+            </div>
+            <button type="button" class="cloud-more" aria-label="Mai multe opțiuni pentru comentariul lui Radu">•••</button>
+          </header>
+
+          <p class="cloud-text" data-watermark="◆">Off... iar avem de așteptat. Dar va merita, sunt sigur.</p>
+          <button type="button" class="cloud-serie" aria-label="Deschide seria Solo Leveling">
+            <span><small>SERIE</small><strong>Solo Leveling</strong></span><span class="cloud-serie-arrow" aria-hidden="true">›</span>
+          </button>
+
+          <div class="cloud-footer" aria-label="Reacții">
+            <button type="button" class="react-btn like" aria-label="Îmi place" aria-pressed="false" data-action="toggle-react"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10v11H3V10h4Zm4 11H8V10l4-7c1.7.2 2.5 1.3 2.1 3L13.5 9H19a2 2 0 0 1 2 2.3l-1.1 7A3 3 0 0 1 17 21h-6Z"/></svg><span class="react-count">1</span></button>
+            <button type="button" class="react-btn love" aria-label="Ador" aria-pressed="false" data-action="toggle-react"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg><span class="react-count">0</span></button>
+            <button type="button" class="react-btn reply" aria-label="Răspunde" aria-pressed="false" data-action="toggle-react"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z"/></svg><span class="react-count">0</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="cloud-card">
+        <div class="cloud-card-inner">
+          <header class="cloud-header">
+            <img class="cloud-avatar avatar-card" src="public/imgs/card/4.jpg" alt="Avatar anime YukiMochi" width="225" height="318" decoding="async" loading="lazy">
+            <div class="cloud-user-info">
+              <div class="cloud-identity-row"><span class="cloud-username">YukiMochi</span></div>
+              <time class="cloud-time">acum 4 ore</time>
+            </div>
+            <button type="button" class="cloud-more" aria-label="Mai multe opțiuni pentru comentariul lui Yuki">•••</button>
+          </header>
+
+          <p class="cloud-text" data-watermark="☾">Minunat, abia aștept următorul episod. Mulțumesc! 😊</p>
+          <button type="button" class="cloud-serie" aria-label="Deschide seria The Apothecary Diaries">
+            <span><small>SERIE</small><strong>The Apothecary Diaries</strong></span><span class="cloud-serie-arrow" aria-hidden="true">›</span>
+          </button>
+
+          <div class="cloud-footer" aria-label="Reacții">
+            <button type="button" class="react-btn like" aria-label="Îmi place" aria-pressed="false" data-action="toggle-react"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10v11H3V10h4Zm4 11H8V10l4-7c1.7.2 2.5 1.3 2.1 3L13.5 9H19a2 2 0 0 1 2 2.3l-1.1 7A3 3 0 0 1 17 21h-6Z"/></svg><span class="react-count">4</span></button>
+            <button type="button" class="react-btn love" aria-label="Ador" aria-pressed="false" data-action="toggle-react"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg><span class="react-count">2</span></button>
+            <button type="button" class="react-btn reply" aria-label="Răspunde" aria-pressed="false" data-action="toggle-react"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z"/></svg><span class="react-count">0</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="cloud-card">
+        <div class="cloud-card-inner">
+          <header class="cloud-header">
+            <img class="cloud-avatar avatar-card" src="public/imgs/card/2.jpg" alt="Avatar anime AlexRyu" width="225" height="318" decoding="async" loading="lazy">
+            <div class="cloud-user-info">
+              <div class="cloud-identity-row"><span class="cloud-username">AlexRyu</span><span class="cloud-member">membru</span></div>
+              <time class="cloud-time">acum 4 ore</time>
+            </div>
+            <button type="button" class="cloud-more" aria-label="Mai multe opțiuni pentru comentariul lui Alex">•••</button>
+          </header>
+
+          <p class="cloud-text" data-watermark="❖">În ce belea s-a mai băgat și acum? Sper să iasă cu bine... 😅</p>
+          <button type="button" class="cloud-serie" aria-label="Deschide seria Jujutsu Kaisen">
+            <span><small>SERIE</small><strong>Jujutsu Kaisen</strong></span><span class="cloud-serie-arrow" aria-hidden="true">›</span>
+          </button>
+
+          <div class="cloud-footer" aria-label="Reacții">
+            <button type="button" class="react-btn like" aria-label="Îmi place" aria-pressed="false" data-action="toggle-react"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10v11H3V10h4Zm4 11H8V10l4-7c1.7.2 2.5 1.3 2.1 3L13.5 9H19a2 2 0 0 1 2 2.3l-1.1 7A3 3 0 0 1 17 21h-6Z"/></svg><span class="react-count">5</span></button>
+            <button type="button" class="react-btn love" aria-label="Ador" aria-pressed="false" data-action="toggle-react"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg><span class="react-count">1</span></button>
+            <button type="button" class="react-btn reply" aria-label="Răspunde" aria-pressed="false" data-action="toggle-react"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z"/></svg><span class="react-count">0</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="cloud-card">
+        <div class="cloud-card-inner">
+          <header class="cloud-header">
+            <img class="cloud-avatar avatar-card" src="public/imgs/card/5.jpg" alt="Avatar anime NekoLuna" width="225" height="318" decoding="async" loading="lazy">
+            <div class="cloud-user-info">
+              <div class="cloud-identity-row"><span class="cloud-username">NekoLuna</span></div>
+              <time class="cloud-time">acum 5 ore</time>
+            </div>
+            <button type="button" class="cloud-more" aria-label="Mai multe opțiuni pentru comentariul lui Neko">•••</button>
+          </header>
+
+          <p class="cloud-text" data-watermark="✧">Mi-a plăcut foarte mult, abia aștept episodul 2! 😄</p>
+          <button type="button" class="cloud-serie" aria-label="Deschide seria One Piece">
+            <span><small>SERIE</small><strong>One Piece</strong></span><span class="cloud-serie-arrow" aria-hidden="true">›</span>
+          </button>
+
+          <div class="cloud-footer" aria-label="Reacții">
+            <button type="button" class="react-btn like" aria-label="Îmi place" aria-pressed="false" data-action="toggle-react"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10v11H3V10h4Zm4 11H8V10l4-7c1.7.2 2.5 1.3 2.1 3L13.5 9H19a2 2 0 0 1 2 2.3l-1.1 7A3 3 0 0 1 17 21h-6Z"/></svg><span class="react-count">1</span></button>
+            <button type="button" class="react-btn love" aria-label="Ador" aria-pressed="false" data-action="toggle-react"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg><span class="react-count">3</span></button>
+            <button type="button" class="react-btn reply" aria-label="Răspunde" aria-pressed="false" data-action="toggle-react"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z"/></svg><span class="react-count">0</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="cloud-card">
+        <div class="cloud-card-inner">
+          <header class="cloud-header">
+            <img class="cloud-avatar avatar-card" src="public/imgs/user/n.webp" alt="Avatar anime SoraPixel" width="225" height="338" decoding="async" loading="lazy">
+            <div class="cloud-user-info">
+              <div class="cloud-identity-row"><span class="cloud-username">SoraPixel</span><span class="cloud-member">membru</span></div>
+              <time class="cloud-time">acum 15 ore</time>
+            </div>
+            <button type="button" class="cloud-more" aria-label="Mai multe opțiuni pentru comentariul lui Sora">•••</button>
+          </header>
+
+          <p class="cloud-text" data-watermark="◇">Vai, ce situație! Săracii sunt neputincioși, oare chiar...? 😢</p>
+          <button type="button" class="cloud-serie" aria-label="Deschide seria Demon Slayer">
+            <span><small>SERIE</small><strong>Demon Slayer</strong></span><span class="cloud-serie-arrow" aria-hidden="true">›</span>
+          </button>
+
+          <div class="cloud-footer" aria-label="Reacții">
+            <button type="button" class="react-btn like" aria-label="Îmi place" aria-pressed="false" data-action="toggle-react"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10v11H3V10h4Zm4 11H8V10l4-7c1.7.2 2.5 1.3 2.1 3L13.5 9H19a2 2 0 0 1 2 2.3l-1.1 7A3 3 0 0 1 17 21h-6Z"/></svg><span class="react-count">1</span></button>
+            <button type="button" class="react-btn love" aria-label="Ador" aria-pressed="false" data-action="toggle-react"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg><span class="react-count">0</span></button>
+            <button type="button" class="react-btn reply" aria-label="Răspunde" aria-pressed="false" data-action="toggle-react"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z"/></svg><span class="react-count">0</span></button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<main class="main-container" id="mainContent">  
+
+  <!-- ====== COLOANA STÂNGA ====== -->
+  <div class="left-sidebar">
+  <div class="login-user login-user--profile-v2">
+
+  <!-- Efectul din fundal -->
+  <div class="liquid-bg"></div>
+  <div class="smoke"></div>
+  <div class="smoke smoke-2"></div>
+  <div class="inner-haze"></div>
+
+  <!-- Tot conținutul real -->
+  <div class="login-content login-content--v2">
+
+    <section class="av-profile-v2" aria-label="Profilul utilizatorului Kakashi">
+      <header class="av-profile-header">
+        <div class="av-profile-avatar-shell">
+          <img class="av-profile-avatar" src="public/user/profil img/sung jin woo.webp" alt="Avatarul lui Kakashi" width="498" height="280" decoding="async" loading="lazy">
+          <button class="av-profile-status" id="avProfileStatus" type="button" aria-label="Stare: online" aria-expanded="false" aria-controls="avProfileStatusMenu" title="Schimbă starea"></button>
+          <img class="av-profile-crest" src="public/icons/notification/eye.webp" alt="" width="512" height="512" decoding="async" loading="lazy">
+        </div>
+
+        <div class="av-profile-status-menu" id="avProfileStatusMenu" role="menu" aria-hidden="true">
+          <button type="button" role="menuitem" data-av-status="online"><span class="av-profile-status-icon"></span><span>Online</span></button>
+          <button type="button" role="menuitem" data-av-status="away"><span class="av-profile-status-icon"></span><span>Inactiv</span></button>
+          <button type="button" role="menuitem" data-av-status="dnd"><span class="av-profile-status-icon"></span><span>Nu deranja</span></button>
+          <button type="button" role="menuitem" data-av-status="offline"><span class="av-profile-status-icon"></span><span>Invizibil</span></button>
+        </div>
+
+        <div class="av-profile-copy">
+          <span class="av-profile-eyebrow">PROFILUL TĂU</span>
+          <strong class="av-profile-name">Kakashi</strong>
+          <span class="av-profile-role">Sennin&nbsp;&nbsp;–&nbsp;&nbsp;Ninjutsu</span>
+          <div class="av-profile-level-copy">
+            <span>Nivel 1</span>
+            <span>30%</span>
+          </div>
+          <div class="av-profile-level-track" role="progressbar" aria-label="Progres nivel" aria-valuemin="0" aria-valuemax="100" aria-valuenow="30">
+            <span class="av-progress-w-30"></span>
+          </div>
+        </div>
+
+        <button class="av-profile-notifications" id="avProfileNotifications" type="button" aria-label="Notificări" aria-expanded="false" aria-controls="avProfileNotificationMenu">
+          <img src="public/icons/notification/bell-icon.svg" alt="" decoding="async" loading="lazy" width="512" height="512">
+          <span class="av-profile-notification-badge" aria-label="2 notificări necitite">2</span>
+        </button>
+
+        <div class="av-profile-notification-menu" id="avProfileNotificationMenu" aria-hidden="true">
+          <div class="av-profile-notification-heading"><strong>Notificări</strong><span aria-label="Notificări necitite"></span></div>
+          <a href="https://animevortex.site/anime/slime-taoshite-300-nen-shiranai-uchi-ni-level-max-ni-nattemashita-sono-ni/episod-7">
+            <strong>Episod nou disponibil</strong><small>Slime Taoshite...</small>
+          </a>
+          <a href="#" data-original-href="pagina_ta_aici" aria-disabled="true" tabindex="-1">
+            <strong>Invitație nouă</strong><small>Facțiunea Naruto</small>
+          </a>
+          <a class="av-profile-notification-all" href="#" data-original-href="pagina_ta_aici" aria-disabled="true" tabindex="-1">Vezi toate</a>
+        </div>
+      </header>
+
+      <section class="av-profile-stats" aria-label="Statistici profil">
+        <div class="av-profile-stat"><strong>124</strong><span>SERII</span></div>
+        <div class="av-profile-stat"><strong>Naruto</strong><span>FACȚIUNE</span></div>
+        <div class="av-profile-stat"><strong>986</strong><span>PUNCTE</span></div>
+      </section>
+
+      <div class="av-profile-settings">
+        <button class="av-profile-setting av-profile-setting--profile" type="button" data-av-profile-action="profile-settings" data-av-profile-href="/pagina_ta_aici">Setări profil</button>
+        <button class="av-profile-setting av-profile-setting--faction" type="button" data-av-profile-action="faction-settings" data-av-profile-href="/pagina_ta_aici">Setări facțiune</button>
+      </div>
+
+      <div class="av-profile-divider av-profile-divider--favorites" aria-hidden="true"></div>
+
+      <section class="av-profile-favorites" aria-labelledby="avFavoriteTitle">
+        <h3 id="avFavoriteTitle">Serii favorite</h3>
+        <ol class="av-profile-favorite-list">
+          <li class="av-profile-favorite av-profile-favorite--second">
+            <a href="#" aria-label="Naruto Shippuden, Top 2" data-original-href="link_catre_naruto_shippuden" aria-disabled="true" tabindex="-1">
+              <img src="public/imgs/user/n.webp" alt="Naruto Shippuden" width="225" height="338" decoding="async" loading="lazy">
+            </a>
+            <span class="av-profile-top-label">Top 2</span>
+          </li>
+          <li class="av-profile-favorite av-profile-favorite--first">
+            <a href="#" aria-label="Attack on Titan, Top 1" data-original-href="link_catre_attack_on_titan" aria-disabled="true" tabindex="-1">
+              <img src="public/imgs/user/aot.webp" alt="Attack on Titan" width="225" height="350" decoding="async" loading="lazy">
+            </a>
+            <span class="av-profile-top-label">Top 1</span>
+          </li>
+          <li class="av-profile-favorite av-profile-favorite--third">
+            <a href="#" aria-label="Jujutsu Kaisen, Top 3" data-original-href="link_catre_jujutsu_kaisen" aria-disabled="true" tabindex="-1">
+              <img src="public/imgs/user/jk.webp" alt="Jujutsu Kaisen" width="225" height="319" decoding="async" loading="lazy">
+            </a>
+            <span class="av-profile-top-label">Top 3</span>
+          </li>
+        </ol>
+      </section>
+
+      <div class="av-profile-divider av-profile-divider--activity" aria-hidden="true"></div>
+
+      <section class="av-profile-activity" aria-label="Activitatea contului">
+        <a class="av-profile-activity-card av-profile-activity-card--comments" href="#" data-original-href="pagina_ta_aici" aria-disabled="true" tabindex="-1">
+          <span class="av-profile-activity-copy"><strong>Comentarii</strong><small>Vezi activitatea</small></span>
+          <span class="av-profile-activity-count">25</span>
+        </a>
+        <a class="av-profile-activity-card av-profile-activity-card--invitations" href="#" data-original-href="pagina_ta_aici" aria-disabled="true" tabindex="-1">
+          <span class="av-profile-activity-copy"><strong>Invitații</strong><small>Vezi invitațiile</small></span>
+          <span class="av-profile-activity-count">3</span>
+        </a>
+      </section>
+
+      <a class="av-profile-last-episode" href="https://animevortex.site/anime/slime-taoshite-300-nen-shiranai-uchi-ni-level-max-ni-nattemashita-sono-ni/episod-7">
+        <span class="av-profile-last-label">ULTIMUL EPISOD VIZIONAT</span>
+        <span class="av-profile-last-title">
+          <strong>Slime Taoshite 300-nen, Shiranai Uchi ni</strong>
+          <span>Level MAX ni Nattemashita: Sono ni...</span>
+        </span>
+      </a>
+
+      <button class="av-profile-logout" type="button" data-av-profile-action="logout">Ieși din cont</button>
+      <div class="av-profile-toast" role="status" aria-live="polite"></div>
+    </section>
+
+    <div class="chest-popup" id="chest-popup">
+      <div class="chest-popup-content">
+        <div class="chest-title">Recompensa dumitale!</div>
+        <div class="chest-subtitle">
+          Mulțumim pentru efortul și devotamentul tău! Ca răsplată pentru timpul petrecut aici și pasiunea ta pentru serile anime, primești un cufăr din partea echipei. Bucură-te de el și continuă să fii parte din comunitatea noastră!
+        </div>
+
+        <div class="chest-images">
+          <img src="public/imgs/cufar/close.webp" alt="Cufăr închis"
+               id="popup-chest-closed" class="chest-closed" data-action="open-chest-reward" width="1024" height="1024" decoding="async" loading="lazy">
+
+          <img src="public/imgs/cufar/open.webp" alt="Cufăr deschis"
+               id="popup-chest-opened" class="chest-opened av-initially-hidden" width="1024" height="1024" decoding="async" loading="lazy">
+        </div>
+
+        <div id="reward-message" class="av-initially-hidden">
+          🎉 Ai primit 100 de DragCoin!
+        </div>
+
+        <img id="reward-image" class="reward-image av-initially-hidden" src="public/imgs/cufar/dragcoin.webp" alt="DragCoin" width="1024" height="1024" decoding="async" loading="lazy">
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<div class="membri-user">
+  <!-- Același efect animat folosit în login-user -->
+  <div class="liquid-bg"></div>
+  <div class="smoke"></div>
+  <div class="smoke smoke-2"></div>
+  <div class="inner-haze"></div>
+
+  <!-- Conținutul real -->
+  <div class="container-cautare">
+    <span class="titlu-cautare">Caută membri</span>
+    <input type="text" placeholder="Caută membri..." class="bara-cautare" aria-label="Caută membri" />
+
+    <div class="personaj-anime">
+      <img src="public/icons/avatar/anne.webp" alt="Personaj Anime" class="avatar-anime" width="1024" height="1024" decoding="async" loading="lazy">
+    </div>
+  </div>
+</div>
+
+ <section class="serii-recente recent-posts-refresh" aria-labelledby="recentPostsTitle">
+  <!-- Același efect animat folosit în login-user -->
+  <div class="liquid-bg"></div>
+  <div class="smoke"></div>
+  <div class="smoke smoke-2"></div>
+  <div class="inner-haze"></div>
+
+  <!-- Conținutul real -->
+  <div class="serii-recente-content">
+    <header class="recent-posts-header">
+      <div>
+        <span class="recent-posts-eyebrow">ACTUALIZĂRI ANIVORTEX</span>
+        <h2 class="serii-recente-titlu" id="recentPostsTitle">Postări recente</h2>
+      </div>
+      <span class="recent-posts-count"><i aria-hidden="true"></i>25 noi</span>
+    </header>
+    <div class="serii-lista" aria-live="polite"></div>
+    <footer class="recent-posts-footer"><span aria-hidden="true"></span>Episoade adăugate recent pe site.</footer>
+  </div>
+</section>
+
+<section class="av-news-panel" aria-labelledby="avNewsTitle">
+  <header class="av-news-header">
+    <p>NOUTĂȚI DIN LUMEA ANIVORTEX</p>
+    <h2 id="avNewsTitle">Știrile AniVortex</h2>
+  </header>
+
+  <article class="av-news-featured">
+    <div class="av-news-led-track" aria-hidden="true">
+      <span class="av-news-led-line"></span>
+    </div>
+
+    <div class="av-news-media">
+      <a class="av-news-featured-poster" href="#" aria-label="Citește știrea principală" data-original-href="link-read.html" aria-disabled="true" tabindex="-1">
+        <img src="public/imgs/stiri/Gachea.webp" alt="Gachiakuta" width="225" height="318" decoding="async" loading="lazy">
+        <span>PRINCIPALĂ</span>
+      </a>
+    </div>
+
+    <div class="av-news-featured-copy">
+      <div class="av-news-meta"><span>ANIME</span><time datetime="2026-07-13">ASTĂZI</time></div>
+      <h3>Isekai Mokushiroku Mynoghra va avea sezonul 2</h3>
+      <p>Continuarea a fost confirmată oficial. Noul sezon promite să dezvolte lumea întunecată a seriei, să introducă personaje importante și să ofere mai mult spațiu conflictelor care au rămas nerezolvate.</p>
+    </div>
+
+    <div class="av-news-featured-controls">
+      <a class="av-news-read" href="#" data-original-href="link-read.html" aria-disabled="true" tabindex="-1">Citește știrea <span>›</span></a>
+
+      <div class="av-news-reactions" aria-label="Reacții la articol">
+        <button class="av-news-reaction av-news-heart" type="button" data-news-reaction="favorite" aria-label="Adaugă la favorite" aria-pressed="false" title="Adaugă la favorite">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.6-9.5-9C.2 7.9 2.8 4 6.6 4c2.1 0 3.7 1.2 5.4 3 1.7-1.8 3.3-3 5.4-3 3.8 0 6.4 3.9 4.1 8-2.5 4.4-9.5 9-9.5 9Z"/></svg>
+        </button>
+        <button class="av-news-reaction av-news-like" type="button" data-news-reaction="like" aria-label="Îmi place" aria-pressed="false" title="Îmi place">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10v11H3V10h4Zm3 11H8V10l4-7c1.6.2 2.2 1.2 1.8 3L13 9h5.4c1.8 0 2.9 1.6 2.4 3L18.6 18.6A3.5 3.5 0 0 1 15.3 21H10Z"/></svg>
+        </button>
+        <button class="av-news-reaction av-news-dislike" type="button" data-news-reaction="dislike" aria-label="Nu îmi place" aria-pressed="false" title="Nu îmi place">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 14V3H3v11h4Zm3-11H8v11l4 7c1.6-.2 2.2-1.2 1.8-3L13 15h5.4c1.8 0 2.9-1.6 2.4-3.1l-2.2-6.5A3.5 3.5 0 0 0 15.3 3H10Z"/></svg>
+        </button>
+      </div>
+    </div>
+  </article>
+
+  <div class="av-news-list">
+    <article class="av-news-row">
+      <a class="av-news-row-poster" href="#" data-original-href="link-read.html" aria-disabled="true" tabindex="-1"><img src="public/imgs/serii favorite/poza manga/1v1.jpg" alt="Manga Blue Lock" width="223" height="350" decoding="async" loading="lazy"></a>
+      <div class="av-news-row-copy">
+        <div class="av-news-meta"><span>MANGA</span><time datetime="2026-07-12">IERI</time></div>
+        <h3>Blue Lock intră într-un nou arc decisiv</h3>
+        <p>Rivalități noi și o miză mai mare pentru atacanți.</p>
+      </div>
+      <a class="av-news-row-arrow" href="#" aria-label="Citește știrea manga" data-original-href="link-read.html" aria-disabled="true" tabindex="-1">›</a>
+    </article>
+
+    <article class="av-news-row">
+      <a class="av-news-row-poster" href="#" data-original-href="link-read.html" aria-disabled="true" tabindex="-1"><img src="public/imgs/serii favorite/Desene/1.1.jpg" alt="Desen animat" width="226" height="342" decoding="async" loading="lazy"></a>
+      <div class="av-news-row-copy">
+        <div class="av-news-meta"><span>DESENE</span><time datetime="2026-07-11">11 IUL</time></div>
+        <h3>O nouă aventură animată se pregătește de lansare</h3>
+        <p>Primele imagini dezvăluie lumea și personajele.</p>
+      </div>
+      <a class="av-news-row-arrow" href="#" aria-label="Citește știrea despre desene" data-original-href="link-read.html" aria-disabled="true" tabindex="-1">›</a>
+    </article>
+
+    <article class="av-news-row">
+      <a class="av-news-row-poster" href="#" data-original-href="link-read.html" aria-disabled="true" tabindex="-1"><img src="public/imgs/serii favorite/Filme - Seriale/1.jpg" alt="Film sau serial" width="220" height="330" decoding="async" loading="lazy"></a>
+      <div class="av-news-row-copy">
+        <div class="av-news-meta"><span>FILM / SERIAL</span><time datetime="2026-07-10">10 IUL</time></div>
+        <h3>Un serial fantasy revine cu un sezon spectaculos</h3>
+        <p>Producția a prezentat imagini noi din culise.</p>
+      </div>
+      <a class="av-news-row-arrow" href="#" aria-label="Citește știrea despre filme și seriale" data-original-href="link-read.html" aria-disabled="true" tabindex="-1">›</a>
+    </article>
+
+    <article class="av-news-row">
+      <a class="av-news-row-poster" href="#" data-original-href="link-read.html" aria-disabled="true" tabindex="-1"><img src="public/imgs/serii favorite/Live action/1.jpg" alt="Adaptare live-action" width="189" height="267" decoding="async" loading="lazy"></a>
+      <div class="av-news-row-copy">
+        <div class="av-news-meta"><span>LIVE-ACTION</span><time datetime="2026-07-09">9 IUL</time></div>
+        <h3>Adaptarea live-action își extinde distribuția</h3>
+        <p>Au fost confirmați actorii pentru personaje importante.</p>
+      </div>
+      <a class="av-news-row-arrow" href="#" aria-label="Citește știrea live-action" data-original-href="link-read.html" aria-disabled="true" tabindex="-1">›</a>
+    </article>
+  </div>
+
+  <footer class="av-news-footer"><span></span>Știrile sunt actualizate pe parcursul zilei.</footer>
+</section>
+
+<section class="top-sugestii-panel" id="topSuggestionsPanel" aria-labelledby="tsTitle">
+  <div class="ts-shell">
+    <header class="ts-header">
+      <div class="ts-heading">
+        <div class="ts-kicker">Topul comunității</div>
+        <h2 class="ts-title" id="tsTitle">Top sugestii</h2>
+      </div>
+    </header>
+
+    <div class="ts-category" aria-label="Selectare categorie">
+      <div class="ts-category-track">
+        <button class="ts-cat-arrow" id="tsCatPrev" type="button" aria-label="Categoria anterioară">&#8249;</button>
+        <div class="ts-cat-main">
+          <span class="ts-cat-eyebrow">Categorie</span>
+          <strong id="tsCatLabel">Anime</strong>
+        </div>
+        <button class="ts-cat-arrow" id="tsCatNext" type="button" aria-label="Categoria următoare">&#8250;</button>
+      </div>
+    </div>
+
+    <div class="ts-stage">
+      <article class="ts-feature" id="tsFeature" aria-live="polite"></article>
+    </div>
+
+    <div class="ts-list" id="tsList"></div>
+
+    <footer class="ts-footer">
+      <span class="ts-footer-content">
+        <i class="ts-footer-dot" aria-hidden="true"></i>
+        <span class="ts-footer-text">Clasamentul este stabilit automat de voturile comunității.</span>
+      </span>
+    </footer>
+  </div>
+</section>
+
+<section class="user-activity-panel" aria-labelledby="userActivityTitle">
+  <div class="uap-ambient uap-ambient-one" aria-hidden="true"></div>
+  <div class="uap-ambient uap-ambient-two" aria-hidden="true"></div>
+
+  <div class="uap-content">
+    <header class="uap-header">
+      <div>
+        <p class="uap-eyebrow">COMUNITATE ANIVORTEX</p>
+        <h2 id="userActivityTitle">Activitatea utilizatorilor</h2>
+      </div>
+    </header>
+
+    <div class="uap-bonus" aria-label="Bonusurile active ale săptămânii">
+      <div class="uap-bonus-copy">
+        <span class="uap-bonus-icon" aria-hidden="true"><span>✦</span></span>
+        <div><small>BONUS SĂPTĂMÂNAL</small><strong>Activitatea valorează mult</strong></div>
+      </div>
+      <div class="uap-bonus-rewards">
+        <span class="uap-reward uap-reward-gold"><b>+20%</b> Gold</span>
+        <span class="uap-reward uap-reward-exp"><b>+30%</b> EXP</span>
+      </div>
+    </div>
+
+    <div class="uap-list-heading">CEI MAI ACTIVI UTILIZATORI</div>
+
+    <div class="uap-grid" role="list" aria-label="Utilizatori activi">
+      <article class="uap-user uap-user-first" role="listitem">
+        <span class="uap-rank">01</span>
+        <div class="uap-avatar"><img src="public/imgs/user/n.webp" alt="Avatar SynoGrum" width="225" height="338" decoding="async" loading="lazy"><span aria-hidden="true"></span></div>
+        <div class="uap-identity"><small>CEL MAI ACTIV</small><strong>SynoGrum</strong><div class="uap-progress"><i class="uap-fill-94"></i></div></div>
+        <div class="uap-stat"><b>42</b><small>EP</small></div>
+        <div class="uap-stat"><b>18</b><small>COM</small></div>
+      </article>
+
+      <article class="uap-user" role="listitem">
+        <span class="uap-rank">02</span>
+        <div class="uap-avatar"><img src="public/imgs/user/jk.webp" alt="Avatar DemonulSfant" width="225" height="319" decoding="async" loading="lazy"><span aria-hidden="true"></span></div>
+        <div class="uap-identity"><small>FOARTE ACTIV</small><strong>DemonulSfant</strong><div class="uap-progress"><i class="uap-fill-84"></i></div></div>
+        <div class="uap-stat"><b>36</b><small>EP</small></div>
+        <div class="uap-stat"><b>24</b><small>COM</small></div>
+      </article>
+
+      <article class="uap-user" role="listitem">
+        <span class="uap-rank">03</span>
+        <div class="uap-avatar"><img src="public/imgs/user/aot.webp" alt="Avatar Alucarda" width="225" height="350" decoding="async" loading="lazy"><span aria-hidden="true"></span></div>
+        <div class="uap-identity"><small>FOARTE ACTIV</small><strong>Alucarda</strong><div class="uap-progress"><i class="uap-fill-76"></i></div></div>
+        <div class="uap-stat"><b>31</b><small>EP</small></div>
+        <div class="uap-stat"><b>19</b><small>COM</small></div>
+      </article>
+
+      <article class="uap-user" role="listitem">
+        <span class="uap-rank">04</span>
+        <div class="uap-avatar"><img src="public/icons/avatar/Anne-v1.1.webp" alt="Avatar MangaFan" width="408" height="612" decoding="async" loading="lazy"><span aria-hidden="true"></span></div>
+        <div class="uap-identity"><small>ACTIV</small><strong>MangaFan</strong><div class="uap-progress"><i class="uap-fill-69"></i></div></div>
+        <div class="uap-stat"><b>27</b><small>EP</small></div>
+        <div class="uap-stat"><b>17</b><small>COM</small></div>
+      </article>
+
+      <article class="uap-user" role="listitem">
+        <span class="uap-rank">05</span>
+        <div class="uap-avatar"><img src="public/imgs/user/jk.webp" alt="Avatar Patrick Claudiu" width="225" height="319" decoding="async" loading="lazy"><span aria-hidden="true"></span></div>
+        <div class="uap-identity"><small>ACTIV</small><strong>Patrick Claudiu</strong><div class="uap-progress"><i class="uap-fill-61"></i></div></div>
+        <div class="uap-stat"><b>25</b><small>EP</small></div>
+        <div class="uap-stat"><b>14</b><small>COM</small></div>
+      </article>
+    </div>
+
+    <footer class="uap-footer">
+      <p><span aria-hidden="true"></span>Topul se resetează în fiecare luni.</p>
+    </footer>
+  </div>
+</section>
+  </div>
+
+  <!-- ====== COLOANA CENTRU ====== -->
+<div class="view-video">
+  <section class="hot-news-section">
+    <div class="hot-news-fx" aria-hidden="true">
+      <div class="liquid-bg"></div>
+      <div class="smoke"></div>
+      <div class="smoke smoke-2"></div>
+      <div class="inner-haze"></div>
+    </div>
+    <div class="hot-news-content" aria-live="polite"></div>
+  </section>
+</div>
+  <!-- ====== COLOANA DREAPTA ====== -->
+  <div class="right-sidebar">
+ <section class="suprinde-ma" aria-labelledby="surpriseTitle">
+  <div class="surprise-bg" aria-hidden="true"></div>
+  <div class="surprise-orb surprise-orb-1" aria-hidden="true"></div>
+  <div class="surprise-orb surprise-orb-2" aria-hidden="true"></div>
+
+  <div class="suprinde-ma-content">
+    <header class="surprise-header">
+      <div class="header-copy">
+        <span class="surprise-eyebrow">RECOMANDARE ALEATORIE</span>
+        <h2 id="surpriseTitle" class="titlu-surprinde">Surprinde-mă!</h2>
+      </div>
+
+      <button class="shuffle-icon" id="shuffleTop" type="button" aria-label="Alege altă serie" title="Alege altă serie">
+        <span aria-hidden="true">✦</span>
+      </button>
+    </header>
+
+    <article class="cartonas-serie" id="surpriseCard">
+      <a href="#" id="linkSerie" class="poster-link" target="_blank" rel="noopener noreferrer" data-original-href="public/serii/blue-dragon.html" aria-disabled="true" tabindex="-1">
+        <div class="poster-frame">
+          <img
+            src="public/imgs/suprinde-ma/Blue Dragon.webp"
+            alt="Blue Dragon"
+            id="imgSerie"
+            class="serie-img"
+           width="225" height="321" decoding="async" loading="lazy">
+        </div>
+      </a>
+
+      <div class="surprise-details">
+        <div class="info-serie">
+          <div id="numeSerie" class="nume-serie">Blue Dragon</div>
+          <div id="traducatorSerie" class="traducator">Tradus de SynoGrum</div>
+        </div>
+
+        <div class="surprise-tags" aria-label="Genuri">
+          <span>Aventură</span>
+          <span>Fantezie</span>
+        </div>
+
+        <p class="surprise-copy">
+          Nu știi ce să vezi? Lasă AniVortex să aleagă pentru tine.
+        </p>
+
+        <div class="surprise-actions">
+          <button class="surprise-again" id="shuffleSerie" type="button">
+            <span class="dice" aria-hidden="true">✦</span>
+            Altă serie
+          </button>
+
+          <a href="#" id="butonLink" class="buton-link" target="_blank" rel="noopener noreferrer" data-original-href="public/serii/blue-dragon.html" aria-disabled="true" tabindex="-1">
+            Vezi seria
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </article>
+
+    <div class="surprise-hint">
+      <span class="pulse-dot" aria-hidden="true"></span>
+      Apasă „Altă serie” pentru o recomandare nouă
+    </div>
+  </div>
+ </section>
+
+ <div class="serii-programate">
+  <div class="liquid-bg" aria-hidden="true"></div>
+  <div class="smoke" aria-hidden="true"></div>
+  <div class="smoke smoke-2" aria-hidden="true"></div>
+  <div class="inner-haze" aria-hidden="true"></div>
+
+  <div class="serii-programate-content">
+    <header class="program-header">
+      <span class="program-eyebrow">PROGRAM SĂPTĂMÂNAL</span>
+      <h2 class="titlu-programate">Serii programate</h2>
+    </header>
+
+    <div class="zile-butoane-container" aria-label="Zilele săptămânii">
+      <div class="zile-butoane" id="zileButoane" role="tablist" aria-label="Selectează ziua programării">
+        <button data-zi="luni" role="tab" aria-selected="false" type="button">Luni</button>
+        <button data-zi="marti" role="tab" aria-selected="false" type="button">Marți</button>
+        <button data-zi="miercuri" role="tab" aria-selected="false" type="button">Miercuri</button>
+        <button data-zi="joi" role="tab" aria-selected="false" type="button">Joi</button>
+        <button data-zi="vineri" role="tab" aria-selected="false" type="button">Vineri</button>
+        <button data-zi="sambata" role="tab" aria-selected="false" type="button">Sâmbătă</button>
+        <button data-zi="duminica" role="tab" aria-selected="false" type="button">Duminică</button>
+      </div>
+    </div>
+
+    <section class="program-afisat" id="programAfisat" aria-labelledby="ziSelectata">
+      <div class="program-date-row">
+        <div class="program-date-icon" aria-hidden="true">
+          <i class="fa-regular fa-calendar"></i>
+        </div>
+
+        <div class="program-date-copy">
+          <span id="ziSelectata" class="program-selected-day">Duminică</span>
+          <time id="dataCurenta" class="program-current-date"></time>
+        </div>
+
+        <div class="program-summary" aria-live="polite">
+          <span class="program-live-dot" aria-hidden="true"></span>
+          <span id="programCount">0 episoade</span>
+        </div>
+      </div>
+
+      <div id="listaTitluri" class="program-list" aria-live="polite"></div>
+
+      <div class="wrapper-disclaimer" id="wrapperDisclaimer">
+        <button id="toggleDisclaimer" class="toggle-disclaimer" type="button" aria-expanded="false" aria-controls="disclaimerText">
+          <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+          <span>Informații despre program</span>
+          <i class="fa-solid fa-chevron-down disclaimer-arrow" aria-hidden="true"></i>
+        </button>
+
+        <div class="disclaimer" id="disclaimerText" role="note" hidden>
+          Programările pot fi influențate de fusul orar al Japoniei sau de dificultăți tehnice și pot apărea întârzieri.
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<div class="serii-cerute serii-favorite-refresh">
+  <div class="liquid-bg"></div>
+  <div class="smoke"></div>
+  <div class="smoke smoke-2"></div>
+  <div class="inner-haze"></div>
+
+  <div class="serii-cerute-content fav-content">
+    <header class="fav-header">
+      <div class="fav-eyebrow">Clasamentul comunității</div>
+      <div class="fav-panel-title">Seriile voastre favorite</div>
+    </header>
+
+    <div class="fav-category" aria-label="Categorie">
+      <button type="button" id="favPrevCategory" aria-label="Categoria precedentă">‹</button>
+      <div class="fav-category-name" id="favCategoryName" aria-live="polite">Anime</div>
+      <button type="button" id="favNextCategory" aria-label="Categoria următoare">›</button>
+    </div>
+
+    <div class="fav-periods" role="tablist" aria-label="Perioada clasamentului">
+      <button class="is-active" type="button" role="tab" aria-selected="true" data-range="azi">Azi</button>
+      <button type="button" role="tab" aria-selected="false" data-range="saptamana">Săptămâna</button>
+      <button type="button" role="tab" aria-selected="false" data-range="lunar">Lunar</button>
+    </div>
+
+    <div class="fav-list" id="favoriteTopList">
+      <article class="fav-card fav-top-one" data-rank="1">
+        <div class="fav-poster">
+          <span class="fav-rank">#01</span>
+          <img src="public/imgs/serii favorite/top anime/1.v1.1.jpg" alt="My Hero Academia Final Season cover" width="225" height="300" decoding="async" loading="lazy">
+        </div>
+
+        <div class="fav-info">
+          <div class="fav-name" title="My Hero Academia Final Season">My Hero Academia Final Season</div>
+          <div class="fav-badges" aria-label="Episoade disponibile">
+            <span class="fav-tag fav-sub">SUB 17</span>
+            <span class="fav-tag fav-dub">DUB 27</span>
+          </div>
+          <div class="fav-views fav-fire">1.200 de vizionări</div>
+        </div>
+
+        <button class="fav-action" type="button" aria-label="Adaugă seria My Hero Academia Final Season" title="Adaugă în lista personală">+</button>
+      </article>
+      <article class="fav-card fav-top-two" data-rank="2">
+        <div class="fav-poster">
+          <span class="fav-rank">#02</span>
+          <img src="public/imgs/serii favorite/top anime/1.v1.2.jpg" alt="Digimon Beatbreak cover" width="225" height="317" decoding="async" loading="lazy">
+        </div>
+
+        <div class="fav-info">
+          <div class="fav-name" title="Digimon Beatbreak">Digimon Beatbreak</div>
+          <div class="fav-badges" aria-label="Episoade disponibile">
+            <span class="fav-tag fav-sub">SUB 17</span>
+            <span class="fav-tag fav-dub">DUB 27</span>
+          </div>
+          <div class="fav-views fav-fire">1.200 de vizionări</div>
+        </div>
+
+        <button class="fav-action" type="button" aria-label="Adaugă seria Digimon Beatbreak" title="Adaugă în lista personală">+</button>
+      </article>
+      <article class="fav-card fav-top-three" data-rank="3">
+        <div class="fav-poster">
+          <span class="fav-rank">#03</span>
+          <img src="public/imgs/serii favorite/top anime/1.v1.3.jpg" alt="Kingdom Season 6 cover" width="225" height="318" decoding="async" loading="lazy">
+        </div>
+
+        <div class="fav-info">
+          <div class="fav-name" title="Kingdom Season 6">Kingdom Season 6</div>
+          <div class="fav-badges" aria-label="Episoade disponibile">
+            <span class="fav-tag fav-sub">SUB 17</span>
+            <span class="fav-tag fav-dub">DUB 27</span>
+          </div>
+          <div class="fav-views fav-fire">1.200 de vizionări</div>
+        </div>
+
+        <button class="fav-action" type="button" aria-label="Adaugă seria Kingdom Season 6" title="Adaugă în lista personală">+</button>
+      </article>
+      <article class="fav-card" data-rank="4">
+        <div class="fav-poster">
+          <span class="fav-rank">#04</span>
+          <img src="public/imgs/serii favorite/top anime/1.v1.4.jpg" alt="Ninja vs. Gokudo cover" width="225" height="318" decoding="async" loading="lazy">
+        </div>
+
+        <div class="fav-info">
+          <div class="fav-name" title="Ninja vs. Gokudo">Ninja vs. Gokudo</div>
+          <div class="fav-badges" aria-label="Episoade disponibile">
+            <span class="fav-tag fav-sub">SUB 17</span>
+            <span class="fav-tag fav-dub">DUB 27</span>
+          </div>
+          <div class="fav-views">1.200 de vizionări</div>
+        </div>
+
+        <button class="fav-action" type="button" aria-label="Adaugă seria Ninja vs. Gokudo" title="Adaugă în lista personală">+</button>
+      </article>
+      <article class="fav-card" data-rank="5">
+        <div class="fav-poster">
+          <span class="fav-rank">#05</span>
+          <img src="public/imgs/serii favorite/top anime/1.v1.5.jpg" alt="Tojima Wants to Be a Kamen Rider cover" width="225" height="317" decoding="async" loading="lazy">
+        </div>
+
+        <div class="fav-info">
+          <div class="fav-name" title="Tojima Wants to Be a Kamen Rider">Tojima Wants to Be a Kamen Rider</div>
+          <div class="fav-badges" aria-label="Episoade disponibile">
+            <span class="fav-tag fav-sub">SUB 17</span>
+            <span class="fav-tag fav-dub">DUB 27</span>
+          </div>
+          <div class="fav-views">1.200 de vizionări</div>
+        </div>
+
+        <button class="fav-action" type="button" aria-label="Adaugă seria Tojima Wants to Be a Kamen Rider" title="Adaugă în lista personală">+</button>
+      </article>
+      <article class="fav-card" data-rank="6">
+        <div class="fav-poster">
+          <span class="fav-rank">#06</span>
+          <img src="public/imgs/serii favorite/top anime/1.v1.6.jpg" alt="Dad is a Hero, Mom is a Spirit, I'm a Reincarnator cover" width="225" height="318" decoding="async" loading="lazy">
+        </div>
+
+        <div class="fav-info">
+          <div class="fav-name" title="Dad is a Hero, Mom is a Spirit, I'm a Reincarnator">Dad is a Hero, Mom is a Spirit, I'm a Reincarnator</div>
+          <div class="fav-badges" aria-label="Episoade disponibile">
+            <span class="fav-tag fav-sub">SUB 17</span>
+            <span class="fav-tag fav-dub">DUB 27</span>
+          </div>
+          <div class="fav-views">1.200 de vizionări</div>
+        </div>
+
+        <button class="fav-action" type="button" aria-label="Adaugă seria Dad is a Hero, Mom is a Spirit, I'm a Reincarnator" title="Adaugă în lista personală">+</button>
+      </article>
+      <article class="fav-card" data-rank="7">
+        <div class="fav-poster">
+          <span class="fav-rank">#07</span>
+          <img src="public/imgs/serii favorite/top anime/1.v1.7.jpg" alt="Uma Musume: Cinderella Gray Part 2 cover" width="225" height="318" decoding="async" loading="lazy">
+        </div>
+
+        <div class="fav-info">
+          <div class="fav-name" title="Uma Musume: Cinderella Gray Part 2">Uma Musume: Cinderella Gray Part 2</div>
+          <div class="fav-badges" aria-label="Episoade disponibile">
+            <span class="fav-tag fav-sub">SUB 17</span>
+            <span class="fav-tag fav-dub">DUB 27</span>
+          </div>
+          <div class="fav-views">1.200 de vizionări</div>
+        </div>
+
+        <button class="fav-action" type="button" aria-label="Adaugă seria Uma Musume: Cinderella Gray Part 2" title="Adaugă în lista personală">+</button>
+      </article>
+      <article class="fav-card" data-rank="8">
+        <div class="fav-poster">
+          <span class="fav-rank">#08</span>
+          <img src="public/imgs/serii favorite/top anime/1.v1.8.jpg" alt="My Gift Lvl 9999 Unlimited Gacha: Backstabbed cover" width="225" height="318" decoding="async" loading="lazy">
+        </div>
+
+        <div class="fav-info">
+          <div class="fav-name" title="My Gift Lvl 9999 Unlimited Gacha: Backstabbed">My Gift Lvl 9999 Unlimited Gacha: Backstabbed</div>
+          <div class="fav-badges" aria-label="Episoade disponibile">
+            <span class="fav-tag fav-sub">SUB 17</span>
+            <span class="fav-tag fav-dub">DUB 27</span>
+          </div>
+          <div class="fav-views">1.200 de vizionări</div>
+        </div>
+
+        <button class="fav-action" type="button" aria-label="Adaugă seria My Gift Lvl 9999 Unlimited Gacha: Backstabbed" title="Adaugă în lista personală">+</button>
+      </article>
+      <article class="fav-card" data-rank="9">
+        <div class="fav-poster">
+          <span class="fav-rank">#09</span>
+          <img src="public/imgs/serii favorite/top anime/1.v1.9.jpg" alt="Sanda cover" width="225" height="318" decoding="async" loading="lazy">
+        </div>
+
+        <div class="fav-info">
+          <div class="fav-name" title="Sanda">Sanda</div>
+          <div class="fav-badges" aria-label="Episoade disponibile">
+            <span class="fav-tag fav-sub">SUB 17</span>
+            <span class="fav-tag fav-dub">DUB 27</span>
+          </div>
+          <div class="fav-views">1.200 de vizionări</div>
+        </div>
+
+        <button class="fav-action" type="button" aria-label="Adaugă seria Sanda" title="Adaugă în lista personală">+</button>
+      </article>
+      <article class="fav-card" data-rank="10">
+        <div class="fav-poster">
+          <span class="fav-rank">#10</span>
+          <img src="public/imgs/serii favorite/top anime/1.v1.10.jpg" alt="One-Punch Man Season 3 cover" width="225" height="316" decoding="async" loading="lazy">
+        </div>
+
+        <div class="fav-info">
+          <div class="fav-name" title="One-Punch Man Season 3">One-Punch Man Season 3</div>
+          <div class="fav-badges" aria-label="Episoade disponibile">
+            <span class="fav-tag fav-sub">SUB 17</span>
+            <span class="fav-tag fav-dub">DUB 27</span>
+          </div>
+          <div class="fav-views">1.200 de vizionări</div>
+        </div>
+
+        <button class="fav-action" type="button" aria-label="Adaugă seria One-Punch Man Season 3" title="Adaugă în lista personală">+</button>
+      </article>
+    </div>
+
+    <footer class="fav-footer">
+      <span aria-hidden="true"></span>
+      <p>Topul se actualizează după activitatea utilizatorilor.</p>
+    </footer>
+  </div>
+</div>
+
+<section class="staff-activity-panel" aria-labelledby="staff-activity-title">
+  <div class="staff-content">
+    <p class="staff-eyebrow">ECHIPA ANIVORTEX</p>
+    <h2 id="staff-activity-title" class="staff-header">Activitate staff</h2>
+    <div class="staff-summary"><span>Contribuții în această săptămână</span><span class="staff-total">231 episoade</span></div>
+    <div class="staff-grid">
+      <article class="staff-role-card"><h3 class="staff-role-title"><span class="role-icon">T</span>Traducător</h3><div class="staff-item"><span class="staff-rk staff-gold">1</span><img class="staff-av staff-av-g" src="public/imgs/user/n.webp" alt="SynoGrum" width="225" height="338" decoding="async" loading="lazy"><span class="staff-nm">SynoGrum</span><span class="staff-cnt">48</span></div><div class="staff-item"><span class="staff-rk staff-silver">2</span><img class="staff-av staff-av-s" src="public/imgs/user/jk.webp" alt="DarkKnight" width="225" height="319" decoding="async" loading="lazy"><span class="staff-nm">DarkKnight</span><span class="staff-cnt">35</span></div><div class="staff-item"><span class="staff-rk staff-bronze">3</span><img class="staff-av staff-av-b" src="public/imgs/user/aot.webp" alt="AnimeRo" width="225" height="350" decoding="async" loading="lazy"><span class="staff-nm">AnimeRo</span><span class="staff-cnt">22</span></div></article>
+      <article class="staff-role-card"><h3 class="staff-role-title"><span class="role-icon">V</span>Verificator</h3><div class="staff-item"><span class="staff-rk staff-gold">1</span><img class="staff-av staff-av-g" src="public/icons/avatar/Anne-v1.1.webp" alt="Kakashi" width="408" height="612" decoding="async" loading="lazy"><span class="staff-nm">Kakashi</span><span class="staff-cnt">42</span></div><div class="staff-item"><span class="staff-rk staff-silver">2</span><img class="staff-av staff-av-s" src="public/imgs/user/aot.webp" alt="NaruFan" width="225" height="350" decoding="async" loading="lazy"><span class="staff-nm">NaruFan</span><span class="staff-cnt">30</span></div><div class="staff-item"><span class="staff-rk staff-bronze">3</span><img class="staff-av staff-av-b" src="public/imgs/user/jk.webp" alt="ZeroX" width="225" height="319" decoding="async" loading="lazy"><span class="staff-nm">ZeroX</span><span class="staff-cnt">18</span></div></article>
+      <article class="staff-role-card"><h3 class="staff-role-title"><span class="role-icon">E</span>Encoder</h3><div class="staff-item"><span class="staff-rk staff-gold">1</span><img class="staff-av staff-av-g" src="public/imgs/user/jk.webp" alt="ByteKing" width="225" height="319" decoding="async" loading="lazy"><span class="staff-nm">ByteKing</span><span class="staff-cnt">55</span></div><div class="staff-item"><span class="staff-rk staff-silver">2</span><img class="staff-av staff-av-s" src="public/imgs/user/n.webp" alt="PixelPro" width="225" height="338" decoding="async" loading="lazy"><span class="staff-nm">PixelPro</span><span class="staff-cnt">40</span></div><div class="staff-item"><span class="staff-rk staff-bronze">3</span><img class="staff-av staff-av-b" src="public/icons/avatar/Anne-v1.1.webp" alt="CodeX" width="408" height="612" decoding="async" loading="lazy"><span class="staff-nm">CodeX</span><span class="staff-cnt">25</span></div></article>
+      <article class="staff-role-card"><h3 class="staff-role-title"><span class="role-icon">T</span>Typesetting</h3><div class="staff-item"><span class="staff-rk staff-gold">1</span><img class="staff-av staff-av-g" src="public/imgs/user/aot.webp" alt="FontMstr" width="225" height="350" decoding="async" loading="lazy"><span class="staff-nm">FontMstr</span><span class="staff-cnt">38</span></div><div class="staff-item"><span class="staff-rk staff-silver">2</span><img class="staff-av staff-av-s" src="public/icons/avatar/Anne-v1.1.webp" alt="TypeX" width="408" height="612" decoding="async" loading="lazy"><span class="staff-nm">TypeX</span><span class="staff-cnt">28</span></div><div class="staff-item"><span class="staff-rk staff-bronze">3</span><img class="staff-av staff-av-b" src="public/imgs/user/n.webp" alt="SubPro" width="225" height="338" decoding="async" loading="lazy"><span class="staff-nm">SubPro</span><span class="staff-cnt">15</span></div></article>
+      <article class="staff-role-card"><h3 class="staff-role-title"><span class="role-icon">✦</span>Editare</h3><div class="staff-item"><span class="staff-rk staff-gold">1</span><img class="staff-av staff-av-g" src="public/icons/avatar/Anne-v1.1.webp" alt="EditKing" width="408" height="612" decoding="async" loading="lazy"><span class="staff-nm">EditKing</span><span class="staff-cnt">44</span></div><div class="staff-item"><span class="staff-rk staff-silver">2</span><img class="staff-av staff-av-s" src="public/imgs/user/jk.webp" alt="ClipMstr" width="225" height="319" decoding="async" loading="lazy"><span class="staff-nm">ClipMstr</span><span class="staff-cnt">32</span></div><div class="staff-item"><span class="staff-rk staff-bronze">3</span><img class="staff-av staff-av-b" src="public/imgs/user/aot.webp" alt="CutPro" width="225" height="350" decoding="async" loading="lazy"><span class="staff-nm">CutPro</span><span class="staff-cnt">20</span></div></article>
+      <article class="staff-role-card"><h3 class="staff-role-title"><span class="role-icon">◷</span>Timing</h3><div class="staff-item"><span class="staff-rk staff-gold">1</span><img class="staff-av staff-av-g" src="public/imgs/user/n.webp" alt="TimeLord" width="225" height="338" decoding="async" loading="lazy"><span class="staff-nm">TimeLord</span><span class="staff-cnt">50</span></div><div class="staff-item"><span class="staff-rk staff-silver">2</span><img class="staff-av staff-av-s" src="public/imgs/user/aot.webp" alt="SyncX" width="225" height="350" decoding="async" loading="lazy"><span class="staff-nm">SyncX</span><span class="staff-cnt">36</span></div><div class="staff-item"><span class="staff-rk staff-bronze">3</span><img class="staff-av staff-av-b" src="public/icons/avatar/Anne-v1.1.webp" alt="BeatSync" width="408" height="612" decoding="async" loading="lazy"><span class="staff-nm">BeatSync</span><span class="staff-cnt">24</span></div></article>
+    </div>
+  </div>
+</section>
+
+ <!-- LIGA BAGABONȚILOR -->
+<div class="hof-container">
+  <div class="liquid-bg"></div>
+  <div class="smoke"></div>
+  <div class="smoke smoke-2"></div>
+  <div class="inner-haze"></div>
+
+  <div class="hof-content">
+  <div class="hof-header">
+    <p class="hof-eyebrow">COMUNITATE ANIVORTEX</p>
+    <h1 class="hof-title">Liga Bagabonților</h1>
+    <div class="hof-counter"><span class="dot"></span> 60 Donatori Activi</div>
+  </div>
+
+  <div class="podium-area podium-shell">
+    <div class="podium-glow"></div>
+    <div class="sparkle sparkle-pos-1"></div>
+    <div class="sparkle sparkle-pos-2"></div>
+    <div class="sparkle sparkle-pos-3"></div>
+    <div class="sparkle sparkle-pos-4"></div>
+    <div class="sparkle sparkle-pos-5"></div>
+
+    <div class="podium-person p2 place-2">
+      <div class="avatar-wrap">
+        <img class="avatar" src="public/imgs/user/jk.webp" alt="DemonulSfant — avatar Jujutsu Kaisen" width="225" height="319" decoding="async" loading="lazy">
+        <div class="rank-badge">2</div>
+      </div>
+      <div class="username">DemonulSfant</div>
+      <div class="amount">72.21 €</div>
+      <div class="podium-block">2</div>
+    </div>
+
+    <div class="podium-person p1 place-1">
+      <div class="crown" aria-hidden="true">✦</div>
+      <div class="avatar-wrap">
+        <img class="avatar" src="public/imgs/user/n.webp" alt="Alucarda — avatar Naruto" width="225" height="338" decoding="async" loading="lazy">
+        <div class="rank-badge">1</div>
+      </div>
+      <div class="username">Alucarda</div>
+      <div class="amount">95.40 €</div>
+      <div class="podium-block">1</div>
+    </div>
+
+    <div class="podium-person p3 place-3">
+      <div class="avatar-wrap">
+        <img class="avatar" src="public/imgs/user/aot.webp" alt="Arabau — avatar Attack on Titan" width="225" height="350" decoding="async" loading="lazy">
+        <div class="rank-badge">3</div>
+      </div>
+      <div class="username">Arabau</div>
+      <div class="amount">70.00 €</div>
+      <div class="podium-block">3</div>
+    </div>
+  </div>
+
+  <div class="separator"></div>
+  <div class="donor-heading">
+    <div>
+      <p>CLASAMENT</p>
+      <h2>Donatori activi</h2>
+    </div>
+    <span>Top 60</span>
+  </div>
+  <div class="donor-list" id="donorList"></div>
+  <button class="support-btn" type="button" data-action="open-donate-modal">
+    <span class="support-arrow" aria-hidden="true">&gt;</span>
+    <span>Susține și tu</span>
+    <span class="support-arrow" aria-hidden="true">&lt;</span>
+  </button>
+  </div><!-- /.hof-content -->
+  <p class="hof-note"><span></span>Clasamentul se actualizează automat.</p>
+</div>
+
+<!-- MODAL DONAȚII -->
+<div class="modal-overlay donate-overlay" id="donateModal">
+  <section class="modal donate-modal" role="dialog" aria-modal="true" aria-labelledby="donate-title">
+    <div class="donate-modal-ambient" aria-hidden="true"></div>
+    <button class="close-modal" type="button" aria-label="Închide popup-ul" data-action="close-modal">×</button>
+
+    <header class="donate-modal-header">
+      <div class="donate-brand-mark">
+        <img src="public/icons/x/Logo.webp" alt="" width="965" height="947" decoding="async" loading="lazy">
+      </div>
+      <p class="donate-kicker">SUSȚINE COMUNITATEA</p>
+      <h2 id="donate-title">Ținem AniVortex<br>în mișcare</h2>
+      <p class="donate-copy">Contribuția ta ne ajută să publicăm episoade noi, să susținem traducerile și să păstrăm platforma online.</p>
+    </header>
+
+    <div class="donate-impact" aria-label="Unde ajunge contribuția">
+      <span>Traduceri</span>
+      <span>Episoade</span>
+      <span>Servere</span>
+    </div>
+
+    <div class="donate-payment-list">
+      <button class="donate-payment-option paypal" type="button">
+        <span class="donate-payment-icon"><img src="public/icons/donatii/paypal.png" alt="" width="512" height="512" decoding="async" loading="lazy"></span>
+        <span class="donate-payment-copy"><strong>PayPal</strong><small>Card sau cont PayPal</small></span>
+        <span class="donate-payment-arrow" aria-hidden="true">›</span>
+      </button>
+
+      <button class="donate-payment-option revolut" type="button">
+        <span class="donate-payment-icon"><img src="public/icons/donatii/revolut.webp" alt="" width="50" height="50" decoding="async" loading="lazy"></span>
+        <span class="donate-payment-copy"><strong>Revolut</strong><small>Transfer rapid și sigur</small></span>
+        <span class="donate-payment-arrow" aria-hidden="true">›</span>
+      </button>
+
+      <button class="donate-payment-option coffee" type="button">
+        <span class="donate-payment-icon"><img src="public/icons/donatii/coffee-cup.webp" alt="" width="512" height="512" decoding="async" loading="lazy"></span>
+        <span class="donate-payment-copy"><strong>Buy Me a Coffee</strong><small>O cafea virtuală pentru echipă</small></span>
+        <span class="donate-payment-arrow" aria-hidden="true">›</span>
+      </button>
+    </div>
+
+    <footer class="donate-modal-footer">
+      <p><span></span>Plata se deschide în platforma aleasă</p>
+      <small>Mulțumim că ești parte din vortex.</small>
+    </footer>
+  </section>
+</div>
+
+
+  </div>
+
+</main>
+
+
+
+
+<div class="chronologie-container">
+    <svg class="chrono-top-rise" viewBox="0 0 1600 55" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <defs>
+            <linearGradient id="chronoTopRiseEdge" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#66d7cb" stop-opacity=".14"></stop>
+                <stop offset=".5" stop-color="#d4b77a" stop-opacity=".42"></stop>
+                <stop offset="1" stop-color="#66d7cb" stop-opacity=".12"></stop>
+            </linearGradient>
+        </defs>
+
+        <path d="M0 54H333C345 54 352 46 352 34V20C352 9 361 0 372 0H1228C1239 0 1248 9 1248 20V34C1248 46 1255 54 1267 54H1600V55H0Z" fill="var(--avf-surface-top, #071b21)"></path>
+        <path d="M0 54H333C345 54 352 46 352 34V20C352 9 361 0 372 0H1228C1239 0 1248 9 1248 20V34C1248 46 1255 54 1267 54H1600" fill="none" stroke="url(#chronoTopRiseEdge)" stroke-width="1" vector-effect="non-scaling-stroke"></path>
+    </svg>
+    <div class="titlu">Chronologie Anime</div>
+
+    <!-- Aici adăugăm personajele -->
+    <img src="public/imgs/chronologi/Kirara.webp" alt="Personaj 1" class="personaj personaj-stanga" width="500" height="413" decoding="async" loading="lazy">
+    <img src="public/imgs/chronologi/Menchi.webp" alt="Personaj 2" class="personaj personaj-dreapta" width="260" height="288" decoding="async" loading="lazy">
+
+    <div class="slider-container">
+        <button type="button" class="buton-left" id="left">&lt;</button>
+        
+        <div class="timp">
+            <div class="ani">
+                <!-- Aici se inserează anii -->
+            </div>
+        </div>
+        <button type="button" class="buton-right" id="right">&gt;</button>
+    </div>
+
+    <!-- Nu e container separat, e parte din cronologie -->
+    <p class="share-text">Dacă vă place site-ul, vă rugăm să luați în considerare posibilitatea de a-l partaja cu prietenii dvs. Vă mulțumim!</p>
+
+    <div class="share-buttons">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://animevortex.site" target="_blank" class="facebook" rel="noopener noreferrer">
+            <img src="public/icons/share icon/facebook.webp" alt="Facebook" width="512" height="512" decoding="async" loading="lazy"> Facebook
+        </a>
+        <a href="https://twitter.com/intent/tweet?url=https://animevortex.site&text=Descoperă%20site-ul%20Anivortex!" target="_blank" class="twitter" rel="noopener noreferrer">
+            <img src="public/icons/share icon/twitter.webp" alt="Twitter" width="512" height="512" decoding="async" loading="lazy"> Twitter
+        </a>
+        <a href="fb-messenger://share?link=https://animevortex.site" target="_blank" class="messenger" rel="noopener noreferrer">
+            <img src="public/icons/share icon/messenger.webp" alt="Messenger" width="2048" height="2048" decoding="async" loading="lazy"> Messenger
+        </a>
+        <a href="https://api.whatsapp.com/send?text=Vizitează%20Anivortex%20-%20https://animevortex.site" target="_blank" class="whatsapp" rel="noopener noreferrer">
+            <img src="public/icons/share icon/whatsapp.webp" alt="WhatsApp" width="512" height="512" decoding="async" loading="lazy"> WhatsApp
+        </a>
+        <a href="https://www.tiktok.com" target="_blank" class="tiktok" rel="noopener noreferrer">
+            <img src="public/icons/share icon/tik-tok.webp" alt="TikTok" width="512" height="512" decoding="async" loading="lazy"> TikTok
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="instagram" rel="noopener noreferrer">
+            <img src="public/icons/share icon/instagram.png" alt="Instagram" width="512" height="512" decoding="async" loading="lazy"> Instagram
+        </a>
+    </div>
+</div>
+
+<svg class="av-chrono-upc-join" viewBox="0 0 1600 112" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <defs>
+        <linearGradient id="avChronoJoinStrokeTop" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#66d7cb" stop-opacity=".18"></stop>
+            <stop offset=".5" stop-color="#d4b77a" stop-opacity=".38"></stop>
+            <stop offset="1" stop-color="#66d7cb" stop-opacity=".14"></stop>
+        </linearGradient>
+        <linearGradient id="avChronoJoinStrokeBottom" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#79ebff" stop-opacity="0"></stop>
+            <stop offset=".32" stop-color="#79ebff" stop-opacity=".10"></stop>
+            <stop offset=".5" stop-color="#d4b77a" stop-opacity=".18"></stop>
+            <stop offset=".68" stop-color="#63ffd0" stop-opacity=".10"></stop>
+            <stop offset="1" stop-color="#63ffd0" stop-opacity="0"></stop>
+        </linearGradient>
+    </defs>
+
+    <path d="M0 0H500C620 0 676 12 732 44C758 59 780 70 800 78C820 70 842 59 868 44C924 12 980 0 1100 0H1600Z" fill="var(--avf-surface-top, #071b21)"></path>
+    <path d="M0 0H500C620 0 676 12 732 44C758 59 780 70 800 78C820 70 842 59 868 44C924 12 980 0 1100 0H1600" fill="none" stroke="url(#avChronoJoinStrokeTop)" stroke-width="1"></path>
+    <path d="M0 26H500C620 26 676 38 732 70C758 85 780 96 800 104C820 96 842 85 868 70C924 38 980 26 1100 26H1600V112H0Z" fill="var(--avf-surface-top, #071b21)"></path>
+    <path d="M0 26H500C620 26 676 38 732 70C758 85 780 96 800 104C820 96 842 85 868 70C924 38 980 26 1100 26H1600" fill="none" stroke="url(#avChronoJoinStrokeBottom)" stroke-width="1"></path>
+</svg>
+
+
+<!-- Carusele AniVortex - versiunea integrată -->
+<div class="carousel-collection av-entertainment-shell" id="avEntertainmentCarousels">
+    <div class="av-entertainment-ambient" aria-hidden="true"></div>
+
+    <section class="carousel-section live-action">
+        <div class="section-header">
+            <div class="title-with-bar">
+                <div class="vertical-bar" aria-hidden="true"></div>
+                <div class="title-copy">
+                    <span class="section-kicker">ADAPTĂRI</span>
+                    <h2>Live-action</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-container">
+            <div class="carousel-track-wrapper">
+                <div class="carousel-track" id="live-action-track">
+                    <!-- Cardurile sunt randate lazy din entertainment-data.js -->
+                
+
+                </div> <!-- sfârșit .carousel-track -->
+            </div> <!-- sfârșit .carousel-track-wrapper -->
+        </div> <!-- sfârșit .carousel-container -->
+    </section> <!-- sfârșit .carousel-section live-action -->
+
+    <section class="carousel-section filme-seriale">
+    <div class="section-header">
+        <div class="title-with-bar">
+                <div class="vertical-bar" aria-hidden="true"></div>
+                <div class="title-copy">
+                    <span class="section-kicker">CINEMA & TV</span>
+                    <h2>Filme și Seriale</h2>
+                </div>
+            </div>
+    </div>
+
+    <div class="carousel-container">
+        <div class="carousel-track-wrapper">
+            <div class="carousel-track" id="filme-track">
+                    <!-- Cardurile sunt randate lazy din entertainment-data.js -->
+                
+
+            </div> <!-- sfârșit .carousel-track -->
+        </div> <!-- sfârșit .carousel-track-wrapper -->
+    </div> <!-- sfârșit .carousel-container -->
+</section> <!-- sfârșit .carousel-section filme-seriale -->
+
+    <section class="carousel-section carti">
+    <div class="section-header">
+        <div class="title-with-bar">
+                <div class="vertical-bar" aria-hidden="true"></div>
+                <div class="title-copy">
+                    <span class="section-kicker">LECTURĂ</span>
+                    <h2>Cărți</h2>
+                </div>
+            </div>
+    </div>
+
+    <div class="carousel-container">
+        <div class="carousel-track-wrapper">
+            <div class="carousel-track" id="carti-track">
+                    <!-- Cardurile sunt randate lazy din entertainment-data.js -->
+                
+
+            </div> <!-- sfârșit .carousel-track -->
+        </div> <!-- sfârșit .carousel-track-wrapper -->
+    </div> <!-- sfârșit .carousel-container -->
+</section> <!-- sfârșit .carousel-section carti -->
+</div> <!-- /.av-entertainment-shell -->
+
+</div> <!-- finalul .wrapper -->
+
+<!-- Popup global: în afara .right-sidebar, ca position: fixed să nu fie suprascris -->
+<div class="favorite-status-popup" id="favoriteStatusPopup" role="menu" aria-hidden="true">
+  <div class="favorite-popup-title">Adaugă în lista personală</div>
+  <button type="button" role="menuitem" data-status="watching">Vizionez</button>
+  <button type="button" role="menuitem" data-status="completed">Completat</button>
+  <button type="button" role="menuitem" data-status="waiting">În așteptare</button>
+  <button type="button" role="menuitem" data-status="dropped">Abandonează</button>
+  <button type="button" role="menuitem" data-status="planned">De văzut</button>
+</div>
+
+  <div id="hoverPopup" class="hover-popup"></div>
+
+<svg class="av-footer-join" viewBox="0 0 1600 112" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="avFooterJoinStrokeBottom" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#79ebff" stop-opacity="0"></stop>
+      <stop offset=".32" stop-color="#79ebff" stop-opacity=".08"></stop>
+      <stop offset=".50" stop-color="#d4b77a" stop-opacity=".15"></stop>
+      <stop offset=".68" stop-color="#63ffd0" stop-opacity=".08"></stop>
+      <stop offset="1" stop-color="#63ffd0" stop-opacity="0"></stop>
+    </linearGradient>
+  </defs>
+
+  <path d="M0 0H500C620 0 676 12 732 44C758 59 780 70 800 78C820 70 842 59 868 44C924 12 980 0 1100 0H1600Z" fill="var(--avf-surface-top, #071b21)"></path>
+  <path d="M0 26H500C620 26 676 38 732 70C758 85 780 96 800 104C820 96 842 85 868 70C924 38 980 26 1100 26H1600V112H0Z" fill="var(--avf-surface-top, #071b21)"></path>
+  <path d="M0 26H500C620 26 676 38 732 70C758 85 780 96 800 104C820 96 842 85 868 70C924 38 980 26 1100 26H1600" fill="none" stroke="url(#avFooterJoinStrokeBottom)" stroke-width="1"></path>
+</svg>
+
+<footer class="av-footer" id="avFooter">
+  <div class="avf-accent" aria-hidden="true"></div>
+
+  <!-- Contur animat AniVortex: literele sunt generate de footer.js -->
+  <div class="avf-outline-word" aria-hidden="true"></div>
+
+  <section class="avf-hero">
+    <div class="avf-hero-copy">
+      <div class="avf-brand">
+        <img src="public/icons/x/Logo.webp" alt="AniVortex" class="avf-logo" width="965" height="947" decoding="async" loading="lazy">
+        <div class="avf-brand-copy">
+          <strong>AniVortex</strong>
+          <span>Aici începe aventura care îți rămâne în suflet.</span>
+        </div>
+
+      </div>
+
+      <h2 class="avf-headline">
+        <span class="avf-headline-top">Mai mult decât o poveste.</span>
+        <span class="avf-headline-bottom">Un univers care devine al tău.</span>
+      </h2>
+    </div>
+
+    <div class="avf-character-wrap" aria-hidden="true">
+      <img
+        src="public/imgs/footer/personaj yaoi/1.webp"
+        alt=""
+        class="avf-character"
+       width="573" height="824" decoding="async" loading="lazy">
+    </div>
+  </section>
+
+
+  <!-- A-Z este deasupra celor 4 coloane -->
+  <section class="avf-az-section" aria-label="Listă alfabetică">
+    <div class="avf-az-title">
+      <span aria-hidden="true"></span>
+      A–Z LIST
+    </div>
+
+    <nav class="avf-az">
+      <a href="/series/all">All</a>
+      <a href="/series/symbol">#</a>
+      <a href="/series/numbers">0–9</a>
+      <a href="/series/A">A</a>
+      <a href="/series/B">B</a>
+      <a href="/series/C">C</a>
+      <a href="/series/D">D</a>
+      <a href="/series/E">E</a>
+      <a href="/series/F">F</a>
+      <a href="/series/G">G</a>
+      <a href="/series/H">H</a>
+      <a href="/series/I">I</a>
+      <a href="/series/J">J</a>
+      <a href="/series/K">K</a>
+      <a href="/series/L">L</a>
+      <a href="/series/M">M</a>
+      <a href="/series/N">N</a>
+      <a href="/series/O">O</a>
+      <a href="/series/P">P</a>
+      <a href="/series/Q">Q</a>
+      <a href="/series/R">R</a>
+      <a href="/series/S">S</a>
+      <a href="/series/T">T</a>
+      <a href="/series/U">U</a>
+      <a href="/series/V">V</a>
+      <a href="/series/W">W</a>
+      <a href="/series/X">X</a>
+      <a href="/series/Y">Y</a>
+      <a href="/series/Z">Z</a>
+    </nav>
+  </section>
+
+  <section class="avf-nav-columns" aria-label="Navigare footer">
+    <nav class="avf-nav-column">
+      <strong>Descoperă</strong>
+      <a href="#" aria-disabled="true" tabindex="-1">Serii noi</a>
+      <a href="#" aria-disabled="true" tabindex="-1">Top sugestii</a>
+      <a href="#" aria-disabled="true" tabindex="-1">Surprinde-mă</a>
+    </nav>
+
+    <nav class="avf-nav-column avf-social-column" aria-label="Social Media">
+      <strong>Social Media</strong>
+      <div class="avf-social-stack">
+        <a class="avf-social-item" href="#" aria-label="Facebook" aria-disabled="true" tabindex="-1">
+          <span class="avf-social-item-icon"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></span>
+          <span class="avf-social-item-copy"><b>Facebook</b><small>Noutăți și postări din comunitate</small></span>
+        </a>
+        <a class="avf-social-item" href="#" aria-label="Discord" aria-disabled="true" tabindex="-1">
+          <span class="avf-social-item-icon"><i class="fa-brands fa-discord" aria-hidden="true"></i></span>
+          <span class="avf-social-item-copy"><b>Discord</b><small>Intră pe serverul comunității</small></span>
+        </a>
+        <a class="avf-social-item" href="#" aria-label="Instagram" aria-disabled="true" tabindex="-1">
+          <span class="avf-social-item-icon"><i class="fa-brands fa-instagram" aria-hidden="true"></i></span>
+          <span class="avf-social-item-copy"><b>Instagram</b><small>Reels, imagini și update-uri</small></span>
+        </a>
+        <a class="avf-social-item" href="#" aria-label="X" aria-disabled="true" tabindex="-1">
+          <span class="avf-social-item-icon"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></span>
+          <span class="avf-social-item-copy"><b>X</b><small>Anunțuri rapide și noutăți</small></span>
+        </a>
+      </div>
+    </nav>
+
+    <nav class="avf-nav-column">
+      <strong>Comunitate</strong>
+      <a href="#" aria-disabled="true" tabindex="-1">Server Discord</a>
+      <a href="#" aria-disabled="true" tabindex="-1">Sugerează o serie</a>
+      <a href="#" aria-disabled="true" tabindex="-1">Top contributori</a>
+    </nav>
+
+    <nav class="avf-nav-column">
+      <strong>AniVortex</strong>
+      <a href="#" aria-disabled="true" tabindex="-1">Știri</a>
+      <a href="#" aria-disabled="true" tabindex="-1">Despre noi</a>
+      <a href="#" aria-disabled="true" tabindex="-1">Contact</a>
+    </nav>
+
+    <nav class="avf-nav-column">
+      <strong>Ajutor &amp; Legal</strong>
+      <a href="#" aria-disabled="true" tabindex="-1">FAQ</a>
+      <a href="#" aria-disabled="true" tabindex="-1">Termeni</a>
+      <a href="#" aria-disabled="true" tabindex="-1">DMCA</a>
+      <a href="#" aria-disabled="true" tabindex="-1">Contact legal</a>
+    </nav>
+  </section>
+
+  <div class="avf-bottom">
+    <p>
+      <strong>Disclaimer:</strong> AniVortex nu găzduiește niciun fișier pe serverele sale.
+      Tot conținutul este furnizat de surse terțe neafiliate. Nu ne asumăm responsabilitatea
+      pentru acuratețea, respectarea drepturilor de autor, legalitatea sau caracterul adecvat
+      al conținutului către care duc linkurile. Pentru orice problemă de natură juridică,
+      vă rugăm să contactați direct deținătorii conținutului sau furnizorii de găzduire.
+      <span>© 2026 AniVortex. Toate drepturile rezervate.</span>
+    </p>
+  </div>
+</footer>
+
+  
+  
+ 
+
+
+ 
+
+  
+
+
+      <script src="assets/js/perf.js?v=20260920.10" defer></script>
+      <script src="assets/js/popup-manager.js?v=20260920.10" defer></script>
+      <script src="assets/js/carousel-manager.js?v=20260920.10" defer></script>
+      <script src="assets/js/hot-news-data.js?v=20260920.10" defer></script>
+      <script src="assets/js/hot-news-new.js?v=20260920.10" defer></script>
+      <script src="assets/js/banner.js?v=20260920.10" defer></script> 
+<script src="assets/js/header.js?v=20260920.10" defer></script>
+       <script src="assets/js/trending.js?v=20260920.10" defer></script>
+      <script src="assets/js/footer.js?v=20260920.10" defer></script>
+<script src="assets/js/chrono.js?v=20260920.10" defer></script>
+      <script src="assets/js/main.js?v=20260920.10" defer></script>
+      <script src="assets/js/entertainment-data.js?v=20260920.10" defer></script>
+      <script src="assets/js/UPC.js?v=20260920.10" defer></script>
+      <script src="assets/js/com.js?v=20260920.10" defer></script>
+      <script src="assets/js/hardening.js?v=20260920.10" defer></script>
+</body>
+</html>

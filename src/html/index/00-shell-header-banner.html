@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AniVortex — descoperă anime, manga, noutăți, topuri și recomandări într-o experiență modernă pentru comunitatea anime.">
+    <meta name="theme-color" content="#052A2E">
+    <meta name="color-scheme" content="dark">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="robots" content="index,follow,max-image-preview:large">
+    <link rel="canonical" href="https://animevortex.site/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AniVortex">
+    <meta property="og:description" content="Anime, manga, noutăți, topuri și recomandări pentru comunitatea AniVortex.">
+    <meta property="og:url" content="https://animevortex.site/">
+    <meta property="og:site_name" content="AniVortex">
+    <meta property="og:locale" content="ro_RO">
+    <meta property="og:image" content="https://animevortex.site/public/icons/x/Logo.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AniVortex">
+    <meta name="twitter:description" content="Anime, manga, noutăți, topuri și recomandări pentru comunitatea AniVortex.">
+    <meta name="twitter:image" content="https://animevortex.site/public/icons/x/Logo.webp">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; script-src-attr 'none'; style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com; style-src-elem 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com; style-src-attr 'unsafe-inline'; font-src 'self' data: https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data: blob: https:; connect-src 'self'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" as="image" href="public/imgs/banner/naruto.webp" imagesrcset="public/imgs/banner/responsive/naruto-600.webp 600w, public/imgs/banner/responsive/naruto-900.webp 900w, public/imgs/banner/naruto.webp 1200w" imagesizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" type="image/webp" fetchpriority="high">
+    <link rel="icon" href="public/icons/x/Logo.webp" type="image/webp">
+    <title>AniVortex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Outfit:wght@700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/tokens.css?v={{ASSET_VERSION}}">
+    <link rel="stylesheet" href="assets/css/header.css?v={{ASSET_VERSION}}">
+    <link rel="stylesheet" href="assets/css/banner.css?v={{ASSET_VERSION}}">
+    <link rel="stylesheet" href="assets/css/body.css?v={{ASSET_VERSION}}">
+    <link rel="stylesheet" href="assets/css/trending.css?v={{ASSET_VERSION}}">
+    <link rel="stylesheet" href="assets/css/chrono.css?v={{ASSET_VERSION}}">
+    <link rel="stylesheet" href="assets/css/footer.css?v={{ASSET_VERSION}}">
+    <link rel="stylesheet" href="assets/css/hot-news-new.css?v={{ASSET_VERSION}}">
+  <link rel="stylesheet" href="assets/css/com.css?v={{ASSET_VERSION}}">
+    <link rel="stylesheet" href="assets/css/main.css?v={{ASSET_VERSION}}">
+    <!-- UPC este încărcat ultimul ca regulile componentului să nu fie suprascrise de base/main/com. -->
+    <link rel="stylesheet" href="assets/css/UPC.css?v={{ASSET_VERSION}}">
+      <link rel="stylesheet" href="assets/css/hardening.css?v={{ASSET_VERSION}}">
+  </head>
+<body>
+  <a class="skip-link" href="#mainContent">Sari la conținutul principal</a>
+  
+
+<div class="backdrop">
+  <div class="nebula n1"></div>
+  <div class="nebula n2"></div>
+  <div class="nebula n3"></div>
+  <div class="nebula n4"></div>
+  <div class="nebula n5"></div>
+  <div class="nebula n6"></div>
+</div>
+
+  <div class="wrapper">
+ 
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <aside class="sidebar" id="sidebar" aria-label="Meniu principal" aria-hidden="true" inert>
+    <div class="sidebar-header">
+      <div class="sidebar-logo">
+        <img src="public/icons/x/AniVortex txt.webp" alt="AniVortex Logo" width="1046" height="201" decoding="async" loading="lazy">
+      </div>
+
+      <button class="sidebar-close" id="sidebarClose" type="button" aria-label="Închide meniul">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="sidebar-nav">
+      <div class="sidebar-label">Acasă</div>
+      <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-house"></i> Acasă</a>
+      <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-play"></i> Listă anime</a>
+      <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-book"></i> Listă manga</a>
+      <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-film"></i> Divertisment</a>
+      <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-bullhorn"></i> Lansări</a>
+      <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-paper-plane"></i> Sugestii</a>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-label">Acțiuni</div>
+     <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-tv"></i> Watch2gether</a>
+     <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-earth-europe"></i> Limbă</a>
+     <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-comments"></i> Forum</a>
+     <a href="#" class="sidebar-link" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-user-shield"></i> Staff</a>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-label">Filtre avansate</div>
+      <button class="open-filter-btn" id="openFilterBtn" type="button" aria-controls="filterPanel" aria-expanded="false">
+        <span><i class="fa-solid fa-sliders"></i> Caută după preferințe</span>
+        <i class="fa-solid fa-chevron-right open-filter-arrow"></i>
+      </button>
+    </div>
+  </aside>
+
+  <aside class="filter-panel" id="filterPanel" aria-label="Filtre avansate" aria-hidden="true" inert>
+    <div class="filter-panel-header">
+      <div class="filter-panel-title">Filtre &amp; Genuri</div>
+
+      <button class="filter-panel-close" id="closeFilterBtn" type="button" aria-label="Închide filtrele">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="filter-container">
+      <div class="filter-window">
+
+        <div class="filter-title">Caută după preferințe</div>
+
+        <div class="filter-controls">
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Type <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu">
+                <label><input type="checkbox" value="Anime"> <span>Anime</span></label>
+                <label><input type="checkbox" value="Manga"> <span>Manga</span></label>
+                <label><input type="checkbox" value="Hentai"> <span>Hentai</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Country <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu">
+                <label><input type="checkbox" value="China"> <span>China</span></label>
+                <label><input type="checkbox" value="Japan"> <span>Japan</span></label>
+                <label><input type="checkbox" value="Korea"> <span>Korea</span></label>
+                <label><input type="checkbox" value="Taiwanese"> <span>Taiwanese</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Status <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu">
+                <label><input type="checkbox" value="On-going"> <span>On-going</span></label>
+                <label><input type="checkbox" value="În traducere"> <span>În traducere</span></label>
+                <label><input type="checkbox" value="Completed"> <span>Complete</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Rated <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu">
+                <label><input type="checkbox" value="G - All Ages"> <span>G - All Ages</span></label>
+                <label><input type="checkbox" value="PG - Children"> <span>PG - Children</span></label>
+                <label><input type="checkbox" value="PG-13 - Teens 13 and Older"> <span>PG-13 - Teens 13 and Older</span></label>
+                <label><input type="checkbox" value="R - 17+ (Violence & Profanity)"> <span>R - 17+ (Violence &amp; Profanity)</span></label>
+                <label><input type="checkbox" value="R+ - Profanity & Mild Nudity"> <span>R+ - Profanity &amp; Mild Nudity</span></label>
+                <label><input type="checkbox" value="Rx - Hentai"> <span>Rx - Hentai</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Score <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu">
+                <label><input type="checkbox" value="(1) Appalling"> <span>(1) Appalling</span></label>
+                <label><input type="checkbox" value="(2) Horrible"> <span>(2) Horrible</span></label>
+                <label><input type="checkbox" value="(3) Very Bad"> <span>(3) Very Bad</span></label>
+                <label><input type="checkbox" value="(4) Bad"> <span>(4) Bad</span></label>
+                <label><input type="checkbox" value="(5) Average"> <span>(5) Average</span></label>
+                <label><input type="checkbox" value="(6) Fine"> <span>(6) Fine</span></label>
+                <label><input type="checkbox" value="(7) Good"> <span>(7) Good</span></label>
+                <label><input type="checkbox" value="(8) Very Good"> <span>(8) Very Good</span></label>
+                <label><input type="checkbox" value="(9) Great"> <span>(9) Great</span></label>
+                <label><input type="checkbox" value="(10) Masterpiece"> <span>(10) Masterpiece</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Year <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu year-list">
+                <label><input type="checkbox" value="1990"> <span>1990</span></label>
+                <label><input type="checkbox" value="1991"> <span>1991</span></label>
+                <label><input type="checkbox" value="1992"> <span>1992</span></label>
+                <label><input type="checkbox" value="1993"> <span>1993</span></label>
+                <label><input type="checkbox" value="1994"> <span>1994</span></label>
+                <label><input type="checkbox" value="1995"> <span>1995</span></label>
+                <label><input type="checkbox" value="1996"> <span>1996</span></label>
+                <label><input type="checkbox" value="1997"> <span>1997</span></label>
+                <label><input type="checkbox" value="1998"> <span>1998</span></label>
+                <label><input type="checkbox" value="1999"> <span>1999</span></label>
+                <label><input type="checkbox" value="2000"> <span>2000</span></label>
+                <label><input type="checkbox" value="2001"> <span>2001</span></label>
+                <label><input type="checkbox" value="2002"> <span>2002</span></label>
+                <label><input type="checkbox" value="2003"> <span>2003</span></label>
+                <label><input type="checkbox" value="2004"> <span>2004</span></label>
+                <label><input type="checkbox" value="2005"> <span>2005</span></label>
+                <label><input type="checkbox" value="2006"> <span>2006</span></label>
+                <label><input type="checkbox" value="2007"> <span>2007</span></label>
+                <label><input type="checkbox" value="2008"> <span>2008</span></label>
+                <label><input type="checkbox" value="2009"> <span>2009</span></label>
+                <label><input type="checkbox" value="2010"> <span>2010</span></label>
+                <label><input type="checkbox" value="2011"> <span>2011</span></label>
+                <label><input type="checkbox" value="2012"> <span>2012</span></label>
+                <label><input type="checkbox" value="2013"> <span>2013</span></label>
+                <label><input type="checkbox" value="2014"> <span>2014</span></label>
+                <label><input type="checkbox" value="2015"> <span>2015</span></label>
+                <label><input type="checkbox" value="2016"> <span>2016</span></label>
+                <label><input type="checkbox" value="2017"> <span>2017</span></label>
+                <label><input type="checkbox" value="2018"> <span>2018</span></label>
+                <label><input type="checkbox" value="2019"> <span>2019</span></label>
+                <label><input type="checkbox" value="2020"> <span>2020</span></label>
+                <label><input type="checkbox" value="2021"> <span>2021</span></label>
+                <label><input type="checkbox" value="2022"> <span>2022</span></label>
+                <label><input type="checkbox" value="2023"> <span>2023</span></label>
+                <label><input type="checkbox" value="2024"> <span>2024</span></label>
+                <label><input type="checkbox" value="2025"> <span>2025</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Season <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu">
+                <label><input type="checkbox" value="Spring"> <span>Spring</span></label>
+                <label><input type="checkbox" value="Summer"> <span>Summer</span></label>
+                <label><input type="checkbox" value="Fall"> <span>Fall</span></label>
+                <label><input type="checkbox" value="Winter"> <span>Winter</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Most View <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu">
+                <label><input type="checkbox" value="Popular"> <span>Popular</span></label>
+                <label><input type="checkbox" value="Notable"> <span>Notable</span></label>
+                <label><input type="checkbox" value="Niche"> <span>Niche</span></label>
+                <label><input type="checkbox" value="Trending"> <span>Trending</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Episode <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu">
+                <label><input type="checkbox" value="Short Series (12-24 episodes)"> <span>Short Series (12-24 episodes)</span></label>
+                <label><input type="checkbox" value="Medium Series (25-50 episodes)"> <span>Medium Series (25-50 episodes)</span></label>
+                <label><input type="checkbox" value="Long Series (50-100 episodes)"> <span>Long Series (50-100 episodes)</span></label>
+                <label><input type="checkbox" value="Very Long Series (100+ episodes)"> <span>Very Long Series (100+ episodes)</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <div class="dropdown-container">
+              <button class="dropdown-toggle" type="button">Language <i class="fa-solid fa-chevron-down"></i></button>
+              <div class="dropdown-menu">
+                <label><input type="checkbox" value="Sub"> <span>Sub</span></label>
+                <label><input type="checkbox" value="Dub"> <span>Dub</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-section genre-section full-width">
+            <h4>Genuri</h4>
+            <div class="genre-grid">
+              <button class="genre-button" type="button">Action</button>
+              <button class="genre-button" type="button">Adventure</button>
+              <button class="genre-button" type="button">Cars</button>
+              <button class="genre-button" type="button">Comedy</button>
+              <button class="genre-button" type="button">Dementia</button>
+              <button class="genre-button" type="button">Demons</button>
+              <button class="genre-button" type="button">Drama</button>
+              <button class="genre-button" type="button">Ecchi</button>
+              <button class="genre-button" type="button">Fantasy</button>
+              <button class="genre-button" type="button">Game</button>
+              <button class="genre-button" type="button">Harem</button>
+              <button class="genre-button" type="button">Historical</button>
+              <button class="genre-button" type="button">Horror</button>
+              <button class="genre-button" type="button">Josei</button>
+              <button class="genre-button" type="button">Kids</button>
+              <button class="genre-button" type="button">Magic</button>
+              <button class="genre-button" type="button">Martial Arts</button>
+              <button class="genre-button" type="button">Mecha</button>
+              <button class="genre-button" type="button">Military</button>
+              <button class="genre-button" type="button">Music</button>
+              <button class="genre-button" type="button">Mystery</button>
+              <button class="genre-button" type="button">Parody</button>
+              <button class="genre-button" type="button">Police</button>
+              <button class="genre-button" type="button">Psychological</button>
+              <button class="genre-button" type="button">Romance</button>
+              <button class="genre-button" type="button">Samurai</button>
+              <button class="genre-button" type="button">School</button>
+              <button class="genre-button" type="button">Sci-Fi</button>
+              <button class="genre-button" type="button">Seinen</button>
+              <button class="genre-button" type="button">Shoujo</button>
+              <button class="genre-button" type="button">Shoujo Ai</button>
+              <button class="genre-button" type="button">Shounen</button>
+              <button class="genre-button" type="button">Shounen Ai</button>
+              <button class="genre-button" type="button">Slice of Life</button>
+              <button class="genre-button" type="button">Space</button>
+              <button class="genre-button" type="button">Sports</button>
+              <button class="genre-button" type="button">Super Power</button>
+              <button class="genre-button" type="button">Supernatural</button>
+              <button class="genre-button" type="button">Thriller</button>
+              <button class="genre-button" type="button">Vampire</button>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="filter-btn" type="button">Filter</button>
+      </div>
+    </div>
+  </aside>
+
+  <header class="header" id="header">
+    <div class="header-fx">
+      <div class="smoke"></div>
+      <div class="smoke smoke-2"></div>
+      <div class="inner-haze"></div>
+
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <div class="left">
+      <button class="hamburger" id="hamburger" type="button" aria-label="Deschide meniul" aria-controls="sidebar" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="logo">
+        <img src="public/icons/x/Logo.webp" alt="AniVortex Logo" width="965" height="947" decoding="async">
+      </div>
+
+      <div class="dot"></div>
+
+      <nav class="nav">
+        <div class="nav-item">
+          <a href="#" aria-disabled="true" tabindex="-1">Acasă</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="#" aria-disabled="true" tabindex="-1">Listă anime <i class="fa-solid fa-chevron-down arrow"></i></a>
+          <ul class="dropdown">
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-play"></i> On-going</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-language"></i> În traducere</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-check"></i> Complete</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-film"></i> OVA</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-circle-play"></i> ONA</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-clapperboard"></i> Filme</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-masks-theater"></i> Live-action</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item">
+          <a href="#" aria-disabled="true" tabindex="-1">Listă manga <i class="fa-solid fa-chevron-down arrow"></i></a>
+          <ul class="dropdown">
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-play"></i> On-going</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-language"></i> În traducere</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-check"></i> Complete</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-book"></i> Light Novel</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-bolt"></i> One-shot</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item">
+          <a href="#" aria-disabled="true" tabindex="-1">Divertisment <i class="fa-solid fa-chevron-down arrow"></i></a>
+          <ul class="dropdown">
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-book-open"></i> Cărți</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-clapperboard"></i> Filme</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-tv"></i> Seriale</a></li>
+          </ul>
+        </div>
+
+        <div class="nav-item">
+          <a href="#" aria-disabled="true" tabindex="-1">Lansări</a>
+        </div>
+
+        <div class="nav-item">
+          <a href="#" aria-disabled="true" tabindex="-1">Sugestii <i class="fa-solid fa-chevron-down arrow"></i></a>
+          <ul class="dropdown">
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-paper-plane"></i> Sugerează</a></li>
+            <li><a href="#" aria-disabled="true" tabindex="-1"><i class="fa-solid fa-magnifying-glass-chart"></i> Verifică</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="right">
+      <div class="action-wrap">
+        <button class="action-btn" type="button" aria-label="Watch2gether">
+          <i class="fa-solid fa-tv"></i>
+        </button>
+        <span class="tooltip">Watch2gether</span>
+      </div>
+
+      <div class="action-wrap">
+        <button class="action-btn" type="button" aria-label="Limbă">
+          <i class="fa-solid fa-globe"></i>
+        </button>
+        <span class="tooltip">Limbă</span>
+      </div>
+
+      <div class="action-wrap">
+        <button class="action-btn" type="button" aria-label="Forum">
+          <i class="fa-regular fa-comments"></i>
+        </button>
+        <span class="tooltip">Forum</span>
+      </div>
+
+      <div class="action-wrap">
+        <button class="action-btn" type="button" aria-label="Staff">
+          <i class="fa-solid fa-shield"></i>
+        </button>
+        <span class="tooltip">Staff</span>
+      </div>
+
+      <div class="right-separator"></div>
+
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Caută anime..." aria-label="Caută anime">
+      </div>
+    </div>
+  </header>
+
+
+ <div class="page">
+    <div class="banner-wrap">
+      <div class="banner-slider">
+ 
+        <!-- Banner 1 - NARUTO -->
+        <section class="banner active">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#1 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">NARUTO</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Aventură</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Fantezie</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big">
+                    <img src="public/icons/icon detalii/smart-tv.png" alt="tv" decoding="async" width="24" height="24">
+                    <span>Series TV</span>
+                  </div>
+                  <div class="meta-item meta-big">
+                    <img src="public/icons/icon detalii/time-left.png" alt="durata" decoding="async" width="24" height="24">
+                    <span>23m</span>
+                  </div>
+                  <div class="meta-item">
+                    <img src="public/icons/icon detalii/schedule.png" alt="data" decoding="async" width="24" height="24">
+                    <span>Oct. 3, 2002</span>
+                  </div>
+                  <div class="meta-item">
+                    <img src="public/icons/icon detalii/sd.png" alt="calitate" decoding="async" width="24" height="24">
+                    <span>SD</span>
+                  </div>
+                  <div class="meta-item">
+                    <img src="public/icons/icon detalii/chapter.png" alt="episoade" decoding="async" width="24" height="24">
+                    <span>220 ep</span>
+                  </div>
+                </div>
+ 
+                <p class="description">
+                  Acum doisprezece ani, o vulpe demonică uriașă a terorizat lumea. În timpul atacului monstrului asupra Satului Frunzei Ascunse, Hokage — liderul satului și cel mai puternic ninja — s-a sacrificat pentru a sigila bestia în interiorul unui nou-născut, salvând civilizația de la distrugere, dar condamnând copilul la o viață solitară.
+
+                  Acum, după ani în care a fost respins și hărțuit, Naruto Uzumaki deranjează satul cu farse elaborate și acte de vandalism. În ciuda acestor năzbâtii, el muncește din greu pentru a-și îndeplini visul: să devină Hokage și să câștige recunoașterea celor care l-au maltratat toată viața. Naruto se alătură Echipei 7, o echipă de ninja formată din doi dintre colegii săi – prodigiosul Sasuke Uchiha și isteața Sakura Haruno.
+
+                  Sub conducerea distantului Kakashi Hatake, Echipa 7 îndeplinește o serie de misiuni dificile, forțându-i pe membri să devină mai puternici și să-și consolideze camaraderia, în ciuda numeroaselor diferențe dintre ei. Naruto se străduiește să iasă în evidență în rivalitatea sa cu Sasuke și să câștige afecțiunea romantică a Sakurei. Dar, pe măsură ce trio-ul se confruntă cu pericolul și moartea, trecuturile lor tragice amenință să-i despartă.
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/naruto.webp" srcset="public/imgs/banner/responsive/naruto-600.webp 600w, public/imgs/banner/responsive/naruto-900.webp 900w, public/imgs/banner/naruto.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="Naruto" class="hero-image" width="1200" height="600" decoding="async" loading="eager" fetchpriority="high">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/naruto.webp" alt="naruto logo" width="2056" height="876" decoding="async">
+                  </div>
+                </div>
+ 
+                <div class="center-text">
+                  <div class="center-text-label">SERIE SHONEN</div>
+                </div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">
+                    O serie Shounen
+                    <span class="tooltip-arrow"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- Banner 2 - BLEACH -->
+        <section class="banner">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#2 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">BLEACH</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Aventură</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Supernatural</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/smart-tv.png" alt="" decoding="async" width="24" height="24"><span>Series TV</span></div>
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/time-left.png" alt="" decoding="async" width="24" height="24"><span>24m</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/schedule.png" alt="" decoding="async" width="24" height="24"><span>Oct. 5, 2004</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/hd.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>HD</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/chapter.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>366 ep</span></div>
+                </div>
+ 
+                <p class="description">
+                  Ichigo Kurosaki este un licean obișnuit – până când familia lui este atacată de un Hollow, un spirit corupt care caută să devoreze sufletele oamenilor. Atunci o întâlnește pe Rukia Kuchiki, o Soul Reaper, care este rănită în timp ce îi apără familia lui Ichigo de atacator. Pentru a-și salva familia, Ichigo acceptă oferta lui Rukia de a-i prelua puterile și, astfel, devine și el un Soul Reaper.
+
+                  Cu toate acestea, întrucât Rukia nu își poate recăpăta puterile, lui Ichigo i se încredințează sarcina dificilă de a vâna Hollow-urile care bântuie orașul lor. Totuși, el nu este singur în lupta sa, fiind însoțit mai târziu de prietenii săi – colegii de clasă Orihime Inoue, Yasutora Sado și Uryuu Ishida – fiecare dintre ei având abilități unice. Pe măsură ce Ichigo și camarazii săi se obișnuiesc cu noile lor îndatoriri și se susțin reciproc pe câmpul de luptă și în afara lui, tânărul Soul Reaper află curând că Hollows nu sunt singura amenințare reală pentru lumea umană.
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/bleach.webp" srcset="public/imgs/banner/responsive/bleach-600.webp 600w, public/imgs/banner/responsive/bleach-900.webp 900w, public/imgs/banner/bleach.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="Bleach" class="hero-image" width="1200" height="600" decoding="async" loading="lazy">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/bleach.webp" alt="bleach logo" width="2400" height="1800" decoding="async" loading="lazy">
+                  </div>
+                </div>
+ 
+                <div class="center-text"><div class="center-text-label">SERIE SHONEN</div></div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">O serie Shounen<span class="tooltip-arrow"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- Banner 3 - D.GRAY-MAN -->
+        <section class="banner">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#3 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">D.GRAY-MAN</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Aventură</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Fantezie</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/smart-tv.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Series TV</span></div>
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/time-left.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>23m</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/schedule.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Oct. 3, 2006</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/fhd.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>FHD</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/chapter.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>103 ep</span></div>
+                </div>
+ 
+                <p class="description">
+                  Pierderea unei persoane dragi este atât de dureroasă încât, uneori, cineva și-ar dori să o poată readuce la viață — o slăbiciune de care profită enigmaticul Contele Mileniului. Pentru a-și crea armele mecanice cunoscute sub numele de „Akuma”, el folosește sufletele morților care sunt readuși la viață. Odată ce un suflet este plasat într-un Akuma, acesta rămâne prins acolo pentru totdeauna, iar singura modalitate de a-l salva este exorcizarea din vasul său folosind arma Anti-Akuma, „Innocence”.
+
+                  După ce a petrecut trei ani ca discipol al generalului Cross, Allen Walker este trimis la Ordinul Negru – o organizație formată din cei dispuși să lupte împotriva Akuma și a Contelui Mileniului – pentru a deveni un exorcist oficial. Cu un braț care îi servește drept Innocence și un ochi blestemat care poate vedea sufletele suferinde din interiorul unui Akuma, depinde de Allen și de colegii săi exorciști să oprească complotul suprem al Contelui Mileniului: unul care poate duce la distrugerea lumii.
+
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/d.gray man.webp" srcset="public/imgs/banner/responsive/d.gray man-600.webp 600w, public/imgs/banner/responsive/d.gray man-900.webp 900w, public/imgs/banner/d.gray man.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="D.Gray-man" class="hero-image" width="1200" height="600" decoding="async" loading="lazy">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/d.gray-man.webp" alt="d.gray-man logo" width="904" height="364" decoding="async" loading="lazy">
+                  </div>
+                </div>
+ 
+                <div class="center-text"><div class="center-text-label">SERIE SHONEN</div></div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">O serie Shounen<span class="tooltip-arrow"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- Banner 4 - DRAGON BALL -->
+        <section class="banner">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#4 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">DRAGON BALL</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Aventură</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Comedie</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/smart-tv.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Series TV</span></div>
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/time-left.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>24m</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/schedule.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Feb. 26, 1986</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/sd.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>SD</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/chapter.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>153 ep</span></div>
+                </div>
+ 
+                <p class="description">
+                  Goku Son este un băiețel care trăiește singur în pădure – cel puțin până când o fată pe nume Bulma dă peste el în căutarea unui set de obiecte magice numite „Bile ale Dragonului”. Deoarece se spune că aceste artefacte îndeplinesc o dorință celui care le adună pe toate șapte, Bulma speră să le strângă și să-și dorească un iubit perfect. Gokuu se întâmplă să fie în posesia unei bile a dragonului, dar, din nefericire pentru Bulma, el refuză să se despartă de ea, așa că ea îi propune o înțelegere: el poate să o însoțească în călătoria ei dacă o lasă să împrumute puterea bilei dragonului. Cu asta, cei doi pornesc în călătoria vieții lor.
+
+Nu pornesc singuri în călătorie. Pe drum, îi întâlnesc pe bătrânul Muten-Roshi și pe aspirantul la ucenicie Kuririn, alături de care Gokuu se antrenează pentru a deveni un luptător mai puternic în vederea viitorului Turneu Mondial de Arte Marțiale. Totuși, nu totul este distracție și jocuri; puterea de a îndeplini orice dorință este una puternică, iar alții ar face lucruri mult mai grave decât simpla dorință de a avea un iubit. Pentru a-i opri pe cei care ar încerca să abuzeze de puterea legendară, ei se antrenează pentru a deveni luptători mai puternici, folosindu-și noua putere pentru a ajuta oamenii din jurul lor pe parcurs.
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/dragon ball.webp" srcset="public/imgs/banner/responsive/dragon ball-600.webp 600w, public/imgs/banner/responsive/dragon ball-900.webp 900w, public/imgs/banner/dragon ball.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="Dragon Ball" class="hero-image" width="1200" height="600" decoding="async" loading="lazy">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/dragon ball.webp" alt="dragon ball logo" width="500" height="280" decoding="async" loading="lazy">
+                  </div>
+                </div>
+ 
+                <div class="center-text"><div class="center-text-label">SERIE SHONEN</div></div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">O serie Shounen<span class="tooltip-arrow"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- Banner 5 - FAIRY TAIL -->
+        <section class="banner">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#5 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">FAIRY TAIL</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Aventură</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Fantezie</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/smart-tv.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Series TV</span></div>
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/time-left.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>23m</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/schedule.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Oct. 12, 2009</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/fhd.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>FHD</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/chapter.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>175 ep</span></div>
+                </div>
+ 
+                <p class="description">
+                 În Regatul fermecat Fiore, plină de viață Lucy Heartfilia are o singură dorință: să se alăture renumitei Fairy Tail — una dintre numeroasele bresle de vrăjitori împrăștiate pe tot continentul. Din fericire, o întâlnire întâmplătoare cu Natsu Dragneel, „Salamandra” din Fairy Tail, o propulsează în legendarul breaslă.
+
+                 De la rivalitatea lui Natsu cu vrăjitorul de gheață Gray Fullbuster până la prezența înfricoșătoare a deasupra tuturor, zeița luptei Erza Scarlet, puternicii magi ai Fairy Tail au o ușoară înclinație spre necazuri. Prin toate slujbele ocazionale profitabile și aventurile pentru a salva lumea de la distrugere se află o încredere absolută și neclintită, mai puternică decât familia, care s-a format între fiecare membru al breslei.
+
+                 Alăturându-se lui Natsu, Gray și Erza, Lucy se trezește în mijlocul celor mai neadaptați vrăjitori ai breslei. Dar, pe măsură ce se află constant în ochiul fiecărui pericol, există un nume care nu încetează să reapară: Zeref, temutul maestru al magiei negre.
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/fairy tail.webp" srcset="public/imgs/banner/responsive/fairy tail-600.webp 600w, public/imgs/banner/responsive/fairy tail-900.webp 900w, public/imgs/banner/fairy tail.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="Fairy Tail" class="hero-image" width="1200" height="600" decoding="async" loading="lazy">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/fairy tail.webp" alt="fairy tail logo" width="1024" height="354" decoding="async" loading="lazy">
+                  </div>
+                </div>
+ 
+                <div class="center-text"><div class="center-text-label">SERIE SHONEN</div></div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">O serie Shounen<span class="tooltip-arrow"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- Banner 6 - GINTAMA -->
+        <section class="banner">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#6 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">GINTAMA</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Sci-Fi</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Comedie</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/smart-tv.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Series TV</span></div>
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/time-left.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>24m</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/schedule.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Apr. 4, 2006</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/4k.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>4K</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/chapter.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>201 ep</span></div>
+                </div>
+ 
+                <p class="description">
+                  Edo este un oraș care a fost leagănul vigoarei și ambiției samurailor din întreaga țară. Cu toate acestea, după capitularea Japoniei feudale în fața unor extratereștri puternici cunoscuți sub numele de „Amanto”, aceste aspirații par acum de neatins. Odată ce shogunatul, odinioară influent, a fost reconstituit ca guvern marionetă, se adoptă o nouă lege care interzice imediat purtarea sabiei în public.
+
+                  Intră în scenă Gintoki Sakata, un bărbat excentric cu părul argintiu, care poartă mereu cu el o sabie de lemn și își păstrează statutul de samurai în ciuda interdicției. Ca fondator al Yorozuya, o mică afacere care se ocupă cu diverse treburi, Gintoki se angajează adesea în misiuni pentru a ajuta alte persoane — deși, de obicei, în moduri destul de ciudate și neprevăzute.
+
+                  Ajutat de Shinpachi Shimura, un băiat cu ochelari care se presupune că învață calea samuraiului; Kagura, o fată băiețoasă cu o forță supraumană și un apetit nesfârșit; și Sadaharu, câinele lor uriaș de companie care adoră să muște oamenii de cap, cei de la Yorozuya se confruntă cu orice, de la membri ai familiei regale extraterestre până la încăierări cu bandele locale, în lumea în continuă schimbare a Edo-ului.
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/gintama.webp" srcset="public/imgs/banner/responsive/gintama-600.webp 600w, public/imgs/banner/responsive/gintama-900.webp 900w, public/imgs/banner/gintama.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="Gintama" class="hero-image" width="1200" height="600" decoding="async" loading="lazy">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/gintama.webp" alt="gintama logo" width="750" height="540" decoding="async" loading="lazy">
+                  </div>
+                </div>
+ 
+                <div class="center-text"><div class="center-text-label">SERIE SHONEN</div></div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">O serie Shounen<span class="tooltip-arrow"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- Banner 7 - HAJIME NO IPPO -->
+        <section class="banner">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#7 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">HAJIME NO IPPO</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Sport</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Dramă</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/smart-tv.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Series TV</span></div>
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/time-left.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>23m</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/schedule.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Oct. 4, 2000</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/sd.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>SD</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/chapter.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>75 ep</span></div>
+                </div>
+ 
+                <p class="description">
+                  În absența tatălui său, adolescentul Ippo Makunouchi muncește din greu pentru a-și ajuta mama să conducă afacerea cu închirierea de bărci de pescuit. Temperamentul timid al lui Ippo, lipsa de somn și mirosul mării îl transformă într-o țintă ușoară pentru niște bătăuși nemiloși, care îl lasă zilnic plin de vânătăi și lovit. Mamoru Takamura, un boxer în ascensiune, îl salvează pe Ippo dintr-un incident violent petrecut după ore și îl duce la sala de box Kamogawa pentru a se reface. Takamura și colegii săi boxeri, Masaru Aoki și Tatsuya Kimura, sunt uimiți de loviturile puternice ale lui Ippo — rezultatul mușchilor puternici dezvoltați de-a lungul anilor în care a lucrat în afacerea familiei, extrem de solicitantă fizic.
+
+                  După un antrenament scurt sub îndrumarea lui Takamura, Ippo îi impresionează pe ceilalți boxeri într-un meci de antrenament împotriva prodigiosului Ichirou Miyata. El câștigă un rival în Miyata și un antrenor în Genji Kamogawa, proprietarul sălii și el însuși un fost boxer. Pe măsură ce Ippo face primii pași în cariera sa oficială de boxer, se confruntă cu o serie de adversari provocatori, fiecare mai puternic decât precedentul. Victorii, înfrângeri și un ciclu de antrenamente dedicate îl așteaptă pe Ippo în călătoria sa spre măreție. Cu corpul său rezistent și spiritul de luptător de neoprit, acest tânăr amabil încearcă să cucerească lumea.
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/hajime no ippo.webp" srcset="public/imgs/banner/responsive/hajime no ippo-600.webp 600w, public/imgs/banner/responsive/hajime no ippo-900.webp 900w, public/imgs/banner/hajime no ippo.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="Hajime no Ippo" class="hero-image" width="1200" height="600" decoding="async" loading="lazy">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/hajime no ippo.webp" alt="hajime no ippo logo" width="1280" height="544" decoding="async" loading="lazy">
+                  </div>
+                </div>
+ 
+                <div class="center-text"><div class="center-text-label">SERIE SHONEN</div></div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">O serie Shounen<span class="tooltip-arrow"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- Banner 8 - INUYASHA -->
+        <section class="banner">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#8 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">INUYASHA</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Aventură</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Romance</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/smart-tv.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Series TV</span></div>
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/time-left.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>24m</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/schedule.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Oct. 16, 2000</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/hd.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>HD</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/chapter.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>167 ep</span></div>
+                </div>
+ 
+                <p class="description">
+                  Ziua de naștere a lui Kagome Higurashi, când împlinește 15 ani, ia o întorsătură neașteptată atunci când este trasă cu forța de un demon în vechea fântână a sanctuarului familiei sale. Transportată în trecut, într-o perioadă în care demonii erau o prezență obișnuită în Japonia feudală, Kagome se trezește vânată fără încetare de aceste creaturi malefice, toate dorind cu ardoare un obiect pe care ea îl poartă fără să știe: Bijuteria Shikon, o mică sferă care deține o putere extraordinară.
+
+                  În mijlocul acestei situații dificile, Kagome îl întâlnește pe Inuyasha, un băiat pe jumătate demon, care o confundă cu Kikyou, o preoteasă pe care pare să o urască. Din cauza asemănării ei cu Kikyou, Inuyasha o disprețuiește violent pe Kagome. Cu toate acestea, după ce își dă seama de circumstanțele cumplite în care se află amândoi, el își pune deoparte ostilitatea și îi dă o mână de ajutor.
+
+                  Din păcate, în timpul unei lupte pentru Bijuteria Shikon, obiectul miraculos sfârșește spulberat în bucăți și împrăștiat pe tot cuprinsul țării. Temându-se de consecințele dezastruoase ale acestui accident, Kagome și Inuyasha pornesc într-o călătorie plină de provocări pentru a recupera cioburile înainte ca acestea să cadă în mâini greșite.
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/inuyasha.webp" srcset="public/imgs/banner/responsive/inuyasha-600.webp 600w, public/imgs/banner/responsive/inuyasha-900.webp 900w, public/imgs/banner/inuyasha.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="Inuyasha" class="hero-image" width="1200" height="600" decoding="async" loading="lazy">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/inuyasha.webp" alt="inuyasha logo" width="688" height="205" decoding="async" loading="lazy">
+                  </div>
+                </div>
+ 
+                <div class="center-text"><div class="center-text-label">SERIE SHONEN</div></div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">O serie Shounen<span class="tooltip-arrow"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- Banner 9 - ONE PIECE -->
+        <section class="banner">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#9 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">ONE PIECE</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Aventură</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Fantezie</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/smart-tv.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Series TV</span></div>
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/time-left.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>24m</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/schedule.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Oct. 20, 1999</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/4k.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>4K</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/chapter.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>1300 ep</span></div>
+                </div>
+ 
+                <p class="description">
+                  Ziua de naștere a lui Kagome Higurashi, când împlinește 15 ani, ia o întorsătură neașteptată atunci când este trasă cu forța de un demon în vechea fântână a sanctuarului familiei sale. Transportată în trecut, într-o perioadă în care demonii erau o prezență obișnuită în Japonia feudală, Kagome se trezește vânată fără încetare de aceste creaturi malefice, toate dorind cu ardoare un obiect pe care ea îl poartă fără să știe: Bijuteria Shikon, o mică sferă care deține o putere extraordinară.
+
+                  În mijlocul acestei situații dificile, Kagome îl întâlnește pe Inuyasha, un băiat pe jumătate demon, care o confundă cu Kikyou, o preoteasă pe care pare să o urască. Din cauza asemănării ei cu Kikyou, Inuyasha o disprețuiește violent pe Kagome. Cu toate acestea, după ce își dă seama de circumstanțele cumplite în care se află amândoi, el își pune deoparte ostilitatea și îi dă o mână de ajutor.
+
+                  Din păcate, în timpul unei lupte pentru Bijuteria Shikon, obiectul miraculos sfârșește spulberat în bucăți și împrăștiat pe tot cuprinsul țării. Temându-se de consecințele dezastruoase ale acestui accident, Kagome și Inuyasha pornesc într-o călătorie plină de provocări pentru a recupera cioburile înainte ca acestea să cadă în mâini greșit
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/one piece.webp" srcset="public/imgs/banner/responsive/one piece-600.webp 600w, public/imgs/banner/responsive/one piece-900.webp 900w, public/imgs/banner/one piece.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="One Piece" class="hero-image" width="1200" height="600" decoding="async" loading="lazy">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/one piece.webp" alt="one piece logo" width="1920" height="677" decoding="async" loading="lazy">
+                  </div>
+                </div>
+ 
+                <div class="center-text"><div class="center-text-label">SERIE SHONEN</div></div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">O serie Shounen<span class="tooltip-arrow"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- Banner 10 - HUNTER X HUNTER -->
+        <section class="banner">
+          <div class="bg-gradient"></div>
+          <div class="bg-radial"></div>
+          <div class="bubble bubble-1"></div>
+          <div class="bubble bubble-2"></div>
+          <div class="bubble bubble-3"></div>
+          <div class="bubble bubble-4"></div>
+          <div class="bubble bubble-5"></div>
+          <div class="bubble bubble-6"></div>
+          <div class="bubble bubble-7"></div>
+          <div class="bg-overlay"></div>
+          <div class="top-line"></div>
+ 
+          <div class="banner-grid">
+            <div class="banner-left">
+              <div class="left-inner">
+                <div class="top-badge">
+                  <span class="top-rank">#10 În prim plan</span>
+                  <span class="top-dot"></span>
+                  <span class="top-brand">AniVortex</span>
+                </div>
+ 
+                <div class="title-row">
+                  <div class="title-text">HUNTER X HUNTER</div>
+                </div>
+ 
+                <div class="genre-row">
+                  <div class="genres">
+                    <span>Aventură</span>
+                    <span class="sep">•</span>
+                    <span>Acțiune</span>
+                    <span class="sep">•</span>
+                    <span>Comedie</span>
+                  </div>
+                  <div class="lang-tags">
+                    <span class="tag-sub">Sub</span>
+                    <span class="tag-dub">Dub</span>
+                  </div>
+                </div>
+ 
+                <div class="meta-grid">
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/smart-tv.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Series TV</span></div>
+                  <div class="meta-item meta-big"><img src="public/icons/icon detalii/time-left.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>23m</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/schedule.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>Oct. 2, 2011</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/fhd.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>FHD</span></div>
+                  <div class="meta-item"><img src="public/icons/icon detalii/chapter.png" alt="" decoding="async" loading="lazy" width="24" height="24"><span>148 ep</span></div>
+                </div>
+ 
+                <p class="description">
+                 Vânătorii se dedică îndeplinirii unor misiuni periculoase, de la străbăterea teritoriilor neexplorate ale lumii până la găsirea unor obiecte rare și a unor monștri. Înainte de a deveni vânător, trebuie să treci de Examenul de Vânător — un proces de selecție extrem de riscant, în urma căruia majoritatea candidaților rămân cu dizabilități sau, mai rău, își pierd viața.
+
+                 Participanții ambițioși care se înfruntă cu acest examen notoriu au fiecare motivele lor. Ceea ce îl motivează pe Gon Freecss, în vârstă de 12 ani, este găsirea lui Ging, tatăl său și el însuși vânător. Crezând că își va întâlni tatăl devenind vânător, Gon face primul pas pentru a urma aceeași cale.
+
+                 În timpul examenului de vânător, Gon se împrietenește cu studentul la medicină Leorio Paladiknight, cu răzbunătorul Kurapika și cu fostul asasin Killua Zoldyck. Deși motivele lor diferă foarte mult între ele, ei se unesc pentru un scop comun și încep să se aventureze într-o lume periculoasă.
+                </p>
+ 
+                <div class="button-row">
+                  <button type="button" class="btn btn-view">
+                    <span class="btn-layer btn-gradient"></span>
+                    <span class="btn-layer btn-inner-dark"></span>
+                    <span class="btn-content"><span class="white-icon">▶</span> Vizualizare</span>
+                  </button>
+                  <button type="button" class="btn btn-details">
+                    <span class="btn-layer btn-gradient btn-hidden"></span>
+                    <span class="btn-layer btn-inner-gray"></span>
+                    <span class="btn-content btn-content-light"><span class="light-icon">ⓘ</span> Detalii</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+ 
+            <div class="banner-right">
+              <div class="image-group">
+                <div class="image-card">
+                  <div class="red-glow"></div>
+                  <div class="scan-light"></div>
+                  <img src="public/imgs/banner/hxh.webp" srcset="public/imgs/banner/responsive/hxh-600.webp 600w, public/imgs/banner/responsive/hxh-900.webp 900w, public/imgs/banner/hxh.webp 1200w" sizes="(max-width: 720px) calc(100vw - 62px), (max-width: 1200px) 46vw, 600px" alt="Hunter x Hunter" class="hero-image" width="1200" height="600" decoding="async" loading="lazy">
+                  <div class="image-hover-glow"></div>
+                  <div class="thumb-box">
+                    <img src="public/icons/logo anime/hxh.webp" alt="hxh logo" width="1280" height="544" decoding="async" loading="lazy">
+                  </div>
+                </div>
+ 
+                <div class="center-text"><div class="center-text-label">SERIE SHONEN</div></div>
+ 
+                <div class="info-box">
+                  <div class="gooey-ring"></div>
+                  <button class="info-button" type="button">i</button>
+                  <div class="info-tooltip">O serie Shounen<span class="tooltip-arrow"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+ 
+        <!-- NAV INSIDE -->
+        <div class="slider-row">
+          <div class="slider-nav">
+            <button type="button" class="nav-arrow prev">‹</button>
+ 
+            <div class="dots">
+              <button class="nav-dot active" type="button" aria-label="Mergi la slide-ul 1"></button>
+              <button class="nav-dot" type="button" aria-label="Mergi la slide-ul 2"></button>
+              <button class="nav-dot" type="button" aria-label="Mergi la slide-ul 3"></button>
+              <button class="nav-dot" type="button" aria-label="Mergi la slide-ul 4"></button>
+              <button class="nav-dot" type="button" aria-label="Mergi la slide-ul 5"></button>
+              <button class="nav-dot" type="button" aria-label="Mergi la slide-ul 6"></button>
+              <button class="nav-dot" type="button" aria-label="Mergi la slide-ul 7"></button>
+              <button class="nav-dot" type="button" aria-label="Mergi la slide-ul 8"></button>
+              <button class="nav-dot" type="button" aria-label="Mergi la slide-ul 9"></button>
+              <button class="nav-dot" type="button" aria-label="Mergi la slide-ul 10"></button>
+            </div>
+ 
+            <button type="button" class="nav-arrow next">›</button>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </div>
+
+
+  <div class="banner-trending-join" aria-hidden="true">
+    <svg viewBox="0 0 1200 96" preserveAspectRatio="none" role="presentation" focusable="false">
+      <defs>
+        <linearGradient id="bannerTrendingGold" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#a67634"/>
+          <stop offset="16%" stop-color="#c6954a"/>
+          <stop offset="50%" stop-color="#e0c17e"/>
+          <stop offset="84%" stop-color="#c6954a"/>
+          <stop offset="100%" stop-color="#a67634"/>
+        </linearGradient>
+        <linearGradient id="bannerTrendingTeal" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stop-color="#0d4652"/>
+          <stop offset="18%" stop-color="#17616f"/>
+          <stop offset="50%" stop-color="#2aa1b1"/>
+          <stop offset="82%" stop-color="#17616f"/>
+          <stop offset="100%" stop-color="#0d4652"/>
+        </linearGradient>
+      </defs>
+
+      <path class="banner-trending-join-bandfill" d="M0 22 C220 22 360 22 470 24 C520 26 555 45 585 66 L600 76 L615 66 C645 45 680 26 730 24 C840 22 980 22 1200 22 L1200 34 C980 34 840 34 730 36 C681 38 648 54 620 74 L600 88 L580 74 C552 54 519 38 470 36 C360 34 220 34 0 34 Z"/>
+      <path class="banner-trending-join-gold" d="M0 22 C220 22 360 22 470 24 C520 26 555 45 585 66 L600 76 L615 66 C645 45 680 26 730 24 C840 22 980 22 1200 22"/>
+      <path class="banner-trending-join-teal" d="M0 34 C220 34 360 34 470 36 C519 38 552 54 580 74 L600 88 L620 74 C648 54 681 38 730 36 C840 34 980 34 1200 34"/>
+    </svg>
+  </div>
+

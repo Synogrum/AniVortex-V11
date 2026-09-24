@@ -1,0 +1,301 @@
+*{box-sizing:border-box;}
+html,body{margin:0;min-height:100%;}
+body{padding:32px 0;background:#0d0b0e;color:#fff;font-family:Inter,system-ui,sans-serif;overflow-x:hidden;}
+/* trending.css — variabile locale pentru secțiunea trending */
+/* HEADER */
+.section-header {
+  max-width: 1900px;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+
+
+.pulse-dot {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: linear-gradient(135deg, #00ffa6, #00e6a2, #00c97f);
+  box-shadow:
+    0 0 10px rgba(0, 255, 166, 0.9),
+    0 0 18px rgba(0, 230, 162, 0.6),
+    0 0 28px rgba(0, 201, 127, 0.35);
+  animation: pulseOrb 2.4s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulseOrb {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 12px rgba(65, 105, 225, 0.7); }
+  50% {
+    transform: scale(1.4);
+    box-shadow: 0 0 22px rgba(0, 230, 162, 1), 0 0 40px rgba(65, 105, 225, 0.3);
+  }
+}
+
+
+
+.cat-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  min-width: 102px; min-height: 28px;
+  padding: 3px 3px 3px 12px;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.03)) padding-box,
+    linear-gradient(135deg, rgba(65, 105, 225, 0.22) 0%, rgba(50, 150, 210, 0.14) 45%, rgba(0, 230, 162, 0.12) 100%) border-box;
+  border: 1px solid transparent; border-radius: 999px;
+  cursor: pointer; user-select: none;
+  transition: border-color .25s, background .25s, transform .25s;
+  backdrop-filter: blur(10px);
+}
+
+.cat-btn:hover {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.05)) padding-box,
+    linear-gradient(135deg, rgba(65, 105, 225, 0.45) 0%, rgba(50, 150, 210, 0.28) 45%, rgba(0, 230, 162, 0.24) 100%) border-box;
+  transform: translateY(-1px);
+}
+
+.cat-btn-label { font-size: 0.64rem; font-weight: 700; color: var(--accent-text); min-width: 54px; transition: opacity .15s; }
+.cat-btn-label.swapping { opacity: 0; }
+
+.cat-btn-arrow {
+  width: 20px; height: 20px;
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-green));
+  border-radius: 50%; display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0; box-shadow: 0 6px 14px rgba(65, 105, 225, 0.25);
+}
+
+.cat-btn-arrow svg { width: 8px; height: 8px; }
+
+
+.badge-info {
+  padding: 7px 13px; border-radius: 999px;
+  font-size: .66rem; font-weight: 700; color: var(--accent-text);
+  background: linear-gradient(135deg, rgba(65, 105, 225, .13), rgba(0, 230, 162, .08));
+  border: 1px solid rgba(255, 255, 255, .10);
+  backdrop-filter: blur(12px); white-space: nowrap;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+/* ZONA TRENDING */
+.trending-section { width: 100%; overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; }
+.trending-section::-webkit-scrollbar { display: none; }
+
+.horizontal-scroll {
+  width: 100%;
+  padding: 10px max(16px, calc((100% - 1790px) / 2)) 20px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.horizontal-scroll::-webkit-scrollbar { display: none; }
+
+.cards-list { display: flex; width: 100%; }
+
+.cards-track {
+  display: flex; gap: 28px; align-items: stretch;
+  will-change: transform, opacity, filter;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden; perspective: 1000px;
+}
+
+#trendingMaster .cards-track {
+  justify-content: flex-start;
+}
+
+.cards-track.is-moving { transition: transform 0.95s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.35s ease, filter 0.35s ease; }
+.cards-track.is-resetting { transition: opacity 0.38s ease, transform 0.38s ease, filter 0.38s ease; opacity: 0; transform: scale(0.985); filter: blur(8px); }
+
+.trending-pair {
+  display: flex; align-items: stretch; position: relative;
+  height: 320px; min-height: 320px;
+  flex: 0 0 auto; width: 280px;
+  opacity: 0;
+  animation: cardEntrance .7s cubic-bezier(.22, 1, .36, 1) forwards;
+  transition: transform 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1), box-shadow var(--ease);
+  transform: translateZ(0);
+  background: transparent; overflow: hidden;
+  border-radius: 14px; box-shadow: 0 8px 24px rgba(0, 0, 0, .25);
+}
+
+@keyframes cardEntrance {
+  0% { opacity: 0; transform: translateY(18px) scale(0.985); filter: blur(6px); }
+  100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+}
+
+.cards-track.is-moving .trending-pair { pointer-events: none; }
+
+@media (min-width: 1900px) {
+  .cards-list { width: 100%; justify-content: space-between; }
+  .trending-pair { flex: 1 1 0; max-width: 280px; }
+}
+
+.trending-pair:hover {
+  z-index: 10;
+}
+
+.trending-pair:hover:not(#__av_prio_a#__av_prio_b) {
+  transform: translateY(-6px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CARD STYLES */
+.trending-section .card:not(#__av_prio_a#__av_prio_b) {
+  width: 100%;
+  min-width: 0;
+  height: 320px;
+  min-height: 320px;
+  border-radius: 0 14px 14px 0;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+  border: none;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, .34);
+  cursor: pointer;
+  isolation: isolate;
+  transition: transform .28s cubic-bezier(.22, 1, .36, 1), box-shadow .28s ease, outline-color .28s ease;
+  flex: 1 1 auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.trending-pair:hover .trending-section .card:not(#__av_prio_a#__av_prio_b) {
+  box-shadow: 0 32px 62px rgba(0, 0, 0, .58),
+    0 0 0 1px rgba(255, 255, 255, .04),
+    0 0 28px rgba(93, 228, 197, .12);
+}
+
+.trending-section .card:hover:not(#__av_prio_a#__av_prio_b) {
+  transform: none;
+  margin-top: 0;
+  translate: 0 0;
+}
+
+
+
+
+
+.trending-section .card::before {
+  content: ""; position: absolute; inset: 0; z-index: 3; pointer-events: none;
+  border: 1px solid rgba(93, 228, 197, .16); border-radius: inherit;
+  opacity: .65; transition: border-color .28s ease, opacity .28s ease;
+}
+
+.trending-pair:hover .trending-section .card::before { border-color: rgba(93, 228, 197, .55); opacity: 1; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.trending-section .orb-1 { width: 70px; height: 70px; top: 12%; left: 8%; background: rgba(65, 105, 225, .22); }
+.trending-section .orb-2 { width: 80px; height: 80px; bottom: 10%; right: 6%; background: rgba(0, 230, 162, .18); }
+
+
+
+
+
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   POPUP — DESIGN PRELUAT DIN MAIN.CSS
+   Header: ANIME — TV + titlu + rating
+   Stats: VIZIONĂRI | EPISODUL (panou central) | LOC
+   ══════════════════════════════════════════════════════════════════════════ */
+.hover-popup {
+  position: fixed;
+  width: 266px;
+  padding: 14px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  color: #eef4f3;
+  font-family: Inter, system-ui, sans-serif;
+
+  background:
+    radial-gradient(circle at 16% 8%, rgba(96, 208, 188, .18), transparent 35%),
+    radial-gradient(circle at 88% 82%, rgba(2, 92, 88, .22), transparent 46%),
+    linear-gradient(145deg, rgba(13, 57, 60, .97), rgba(4, 29, 34, .98));
+  border: 1px solid rgba(110, 221, 203, .34);
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, .55),
+    0 0 30px rgba(45, 194, 174, .12),
+    inset 0 1px 0 rgba(230, 255, 251, .14);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-8px) scale(.985);
+  transition: opacity .22s ease, transform .22s ease, visibility .22s ease;
+  z-index: 999;
+  pointer-events: none;
+  overflow: hidden;
+  box-sizing: border-box;
+  max-width: calc(100vw - 16px);
+  max-height: calc(100dvh - 16px);
+  overflow-y: auto;
+}
+
+.hover-popup::before {
+  content: ""; position: absolute; width: 120px; height: 120px;
+  border-radius: 50%; border: 1px solid rgba(65, 105, 225, 0.20);
+  top: 50%; left: 0; transform: translate(-50%, -50%); pointer-events: none;
+}
+
+.hover-popup::after {
+  content: ""; position: absolute; width: 120px; height: 120px;
+  border-radius: 50%; border: 1px solid rgba(0, 230, 162, 0.18);
+  top: 50%; right: 0; transform: translate(50%, -50%); pointer-events: none;
+}
+
+.hover-popup.active {
+  opacity: 1; visibility: visible;
+  transform: translateX(0) scale(1); pointer-events: auto;
+  animation: avTrendingPopupAurora 1.05s cubic-bezier(.22,1,.36,1) both;
+}
+
+.hover-popup.is-popup-left { transform: translateX(8px) scale(.985); transform-origin:right center; }
+.hover-popup.is-popup-left.active { transform:translateX(0) scale(1); }
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+file	rule_selector	dropped_branch	missing_classes	missing_ids	action
+src/css/main/01-foundation.css	.welcome-message	.welcome-message	welcome-message		drop-rule
+src/css/main/01-foundation.css	.profile-section	.profile-section	profile-section		drop-rule
+src/css/main/01-foundation.css	.profile-pic	.profile-pic	profile-pic		drop-rule
+src/css/main/01-foundation.css	.custom-icon	.custom-icon	custom-icon		drop-rule
+src/css/main/01-foundation.css	.horizontal-info	.horizontal-info	horizontal-info		drop-rule
+src/css/main/01-foundation.css	.info-item	.info-item	info-item		drop-rule
+src/css/main/01-foundation.css	.info-dot	.info-dot	info-dot		drop-rule
+src/css/main/01-foundation.css	.info-dot:hover	.info-dot:hover	info-dot		drop-rule
+src/css/main/01-foundation.css	.info-totip	.info-totip	info-totip		drop-rule
+src/css/main/01-foundation.css	.info-totip::after	.info-totip::after	info-totip		drop-rule
+src/css/main/01-foundation.css	.info-dot:hover .info-totip	.info-dot:hover .info-totip	info-dot,info-totip		drop-rule
+src/css/main/01-foundation.css	.info-dot img	.info-dot img	info-dot		drop-rule
+src/css/main/01-foundation.css	.c-1 .info-dot	.c-1 .info-dot	c-1,info-dot		drop-rule
+src/css/main/01-foundation.css	.c-2 .info-dot	.c-2 .info-dot	c-2,info-dot		drop-rule
+src/css/main/01-foundation.css	.c-3 .info-dot	.c-3 .info-dot	c-3,info-dot		drop-rule
+src/css/main/01-foundation.css	.level-container	.level-container	level-container		drop-rule
+src/css/main/01-foundation.css	.level-bar	.level-bar	level-bar		drop-rule
+src/css/main/01-foundation.css	.level-text	.level-text	level-text		drop-rule
+src/css/main/01-foundation.css	.buttons	.buttons	buttons		drop-rule
+src/css/main/01-foundation.css	.buttons button, .logout	.buttons button	buttons		drop-branch
+src/css/main/01-foundation.css	.buttons button::before, .logout::before	.buttons button::before	buttons		drop-branch
+src/css/main/01-foundation.css	.buttons button:hover::before, .logout:hover::before	.buttons button:hover::before	buttons		drop-branch
+src/css/main/01-foundation.css	.buttons button:hover, .logout:hover	.buttons button:hover	buttons		drop-branch
+src/css/main/01-foundation.css	.buttons button, .logout	.buttons button	buttons		drop-branch
+src/css/main/01-foundation.css	.buttons button, .logout	.buttons button	buttons		drop-branch
+src/css/main/01-foundation.css	.buttons button, .logout	.buttons button	buttons		drop-branch
+src/css/main/01-foundation.css	.buttons button::after, .logout::after	.buttons button::after	buttons		drop-branch
+src/css/main/01-foundation.css	.buttons button:hover::after, .logout:hover::after	.buttons button:hover::after	buttons		drop-branch
+src/css/main/01-foundation.css	.buttons button:hover, .logout:hover	.buttons button:hover	buttons		drop-branch
+src/css/main/01-foundation.css	.notification-bell	.notification-bell	notification-bell		drop-rule
+src/css/main/01-foundation.css	.bell-icon-btn	.bell-icon-btn	bell-icon-btn		drop-rule
+src/css/main/01-foundation.css	.favorite-series	.favorite-series	favorite-series		drop-rule
+src/css/main/01-foundation.css	.favorite-title	.favorite-title	favorite-title		drop-rule
+src/css/main/01-foundation.css	.favorite-list	.favorite-list	favorite-list		drop-rule
+src/css/main/01-foundation.css	.favorite-list li	.favorite-list li	favorite-list		drop-rule
+src/css/main/01-foundation.css	.favorite-list img	.favorite-list img	favorite-list		drop-rule
+src/css/main/01-foundation.css	.favorite-list img:hover	.favorite-list img:hover	favorite-list		drop-rule
+src/css/main/01-foundation.css	.favorite-list .top-label	.favorite-list .top-label	favorite-list,top-label		drop-rule
+src/css/main/01-foundation.css	.favorite-list li:nth-child(1)	.favorite-list li:nth-child(1)	favorite-list		drop-rule
+src/css/main/01-foundation.css	.favorite-list li:nth-child(2)	.favorite-list li:nth-child(2)	favorite-list		drop-rule
+src/css/main/01-foundation.css	.favorite-list li:nth-child(3)	.favorite-list li:nth-child(3)	favorite-list		drop-rule
+src/css/main/01-foundation.css	.user-comments-container	.user-comments-container	user-comments-container		drop-rule
+src/css/main/01-foundation.css	.user-comments, .invitations, .last-episode-link	.user-comments	user-comments		drop-rule
+src/css/main/01-foundation.css	.user-comments, .invitations, .last-episode-link	.invitations	invitations		drop-rule
+src/css/main/01-foundation.css	.user-comments, .invitations, .last-episode-link	.last-episode-link	last-episode-link		drop-rule
+src/css/main/01-foundation.css	.user-comments:hover, .invitations:hover, .last-episode-link:hover	.user-comments:hover	user-comments		drop-rule
+src/css/main/01-foundation.css	.user-comments:hover, .invitations:hover, .last-episode-link:hover	.invitations:hover	invitations		drop-rule
+src/css/main/01-foundation.css	.user-comments:hover, .invitations:hover, .last-episode-link:hover	.last-episode-link:hover	last-episode-link		drop-rule
+src/css/main/01-foundation.css	.invitation-count	.invitation-count	invitation-count		drop-rule
+src/css/main/01-foundation.css	.last-episode	.last-episode	last-episode		drop-rule
+src/css/main/01-foundation.css	.last-episode-label	.last-episode-label	last-episode-label		drop-rule
+src/css/main/01-foundation.css	.last-episode-link	.last-episode-link	last-episode-link		drop-rule
+src/css/main/01-foundation.css	.invitations-container	.invitations-container	invitations-container		drop-rule
+src/css/main/01-foundation.css	.logout-container	.logout-container	logout-container		drop-rule
+src/css/main/01-foundation.css	.buttons	.buttons	buttons		drop-rule
+src/css/main/01-foundation.css	.buttons button	.buttons button	buttons		drop-rule
+src/css/main/05-sidebar-effects.css	.login-user .welcome-message	.login-user .welcome-message	welcome-message		drop-rule
+src/css/main/05-sidebar-effects.css	.login-user .profile-section	.login-user .profile-section	profile-section		drop-rule
+src/css/main/05-sidebar-effects.css	.login-user .profile-pic	.login-user .profile-pic	profile-pic		drop-rule
+src/css/main/05-sidebar-effects.css	.login-user .custom-icon	.login-user .custom-icon	custom-icon		drop-rule
+src/css/main/05-sidebar-effects.css	.login-user .horizontal-info	.login-user .horizontal-info	horizontal-info		drop-rule
+src/css/main/05-sidebar-effects.css	.login-user .level-container	.login-user .level-container	level-container		drop-rule
+src/css/main/05-sidebar-effects.css	.login-user .buttons	.login-user .buttons	buttons		drop-rule
+src/css/main/05-sidebar-effects.css	.login-user .favorite-series	.login-user .favorite-series	favorite-series		drop-rule
+src/css/main/05-sidebar-effects.css	.login-user .favorite-list	.login-user .favorite-list	favorite-list		drop-rule
+src/css/main/05-sidebar-effects.css	.login-user .favorite-list .top-label	.login-user .favorite-list .top-label	favorite-list,top-label		drop-rule
+src/css/main/05-sidebar-effects.css	.login-user .user-comments-container	.login-user .user-comments-container	user-comments-container		drop-rule
+src/css/main/05-sidebar-effects.css	.login-user .last-episode	.login-user .last-episode	last-episode		drop-rule
+src/css/main/05-sidebar-effects.css	.login-user .last-episode-label	.login-user .last-episode-label	last-episode-label		drop-rule
+src/css/main/05-sidebar-effects.css	.login-user .invitations-container	.login-user .invitations-container	invitations-container		drop-rule
+src/css/main/05-sidebar-effects.css	.login-user .logout-container	.login-user .logout-container	logout-container		drop-rule

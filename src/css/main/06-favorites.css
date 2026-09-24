@@ -1,0 +1,791 @@
+/* ===== SERIILE VOASTRE FAVORITE — REFRESH FINAL V9 ===== */
+.serii-cerute.serii-favorite-refresh {
+  --fav-blue: #4169e1;
+  --fav-mint: #39d8b0;
+  --fav-gold: var(--av-gold);
+  --fav-text: #f5f7fb;
+  --fav-muted: #9fb2c3;
+
+  width: 100%;
+  
+  position: relative;
+  padding: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 3px solid rgba(255, 255, 255, 0.829);
+  border-radius: 24px;
+  background: rgba(8, 13, 19, 0.94);
+  isolation: isolate;
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.62),
+    0 0 26px rgba(65, 105, 225, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.serii-cerute.serii-favorite-refresh::before {
+  position: absolute;
+  inset: -28%;
+  z-index: -3;
+  border-radius: inherit;
+  background: radial-gradient(circle at 18% 20%, rgba(65, 105, 225, 0.70), transparent 25%),
+    radial-gradient(circle at 82% 20%, rgba(0, 230, 162, 0.40), transparent 24%),
+    radial-gradient(circle at 50% 82%, rgba(58, 160, 215, 0.28), transparent 28%),
+    linear-gradient(145deg, rgba(26, 63, 122, 0.42), rgba(3, 75, 74, 0.34));
+  filter: blur(56px);
+  animation: favPanelFlow 12s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+.serii-cerute.serii-favorite-refresh:not(#__av_prio_a#__av_prio_b)::before {
+  content: "";
+  display: block;
+}
+
+.serii-cerute.serii-favorite-refresh::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background: linear-gradient(180deg, rgba(255,255,255,0.035), transparent 26%, rgba(0,0,0,0.18));
+  pointer-events: none;
+}
+
+@keyframes favPanelFlow {
+  to { transform: translate3d(7%, -4%, 0) scale(1.08); }
+}
+
+.serii-favorite-refresh > .liquid-bg,
+.serii-favorite-refresh > .smoke,
+.serii-favorite-refresh > .inner-haze {
+  opacity: 0.34;
+  pointer-events: none;
+}
+
+.serii-favorite-refresh .fav-content {
+  position: relative;
+  z-index: 30;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  color: var(--fav-text);
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+
+.serii-favorite-refresh .fav-header {
+  flex: 0 0 auto;
+  padding: 2px 8px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+}
+
+.serii-favorite-refresh .fav-eyebrow {
+  margin-bottom: 5px;
+  color: rgba(214, 229, 239, 0.55);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.serii-favorite-refresh .fav-panel-title {
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 900;
+  text-align: center;
+  text-shadow: 0 5px 16px rgba(0, 0, 0, 0.38);
+}
+
+.serii-favorite-refresh .fav-category {
+  flex: 0 0 30px;
+  height: 30px;
+  margin: 8px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.serii-favorite-refresh .fav-category button {
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.66);
+  font: inherit;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.18s ease, transform 0.18s ease;
+}
+
+.serii-favorite-refresh .fav-category button:hover {
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+.serii-favorite-refresh .fav-category-name {
+  min-width: 84px;
+  color: #ffffff;
+  font-size: 11px;
+  line-height: 1;
+  font-weight: 850;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.serii-favorite-refresh .fav-periods {
+  flex: 0 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+  margin-bottom: 9px;
+  padding: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  background: rgba(8, 17, 25, 0.52);
+}
+
+.serii-favorite-refresh .fav-periods button {
+  height: 26px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: rgba(236, 244, 249, 0.58);
+  font: inherit;
+  font-size: 9px;
+  font-weight: 850;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.serii-favorite-refresh .fav-periods button:hover {
+  color: rgba(255,255,255,0.88);
+  background: rgba(255,255,255,0.045);
+}
+
+.serii-favorite-refresh .fav-periods button.is-active {
+  color: #071014;
+  background: linear-gradient(135deg, #8fb8ff, #8affd6);
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.24);
+}
+
+.serii-favorite-refresh .fav-list {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  
+  
+  overflow: hidden;
+}
+
+.serii-favorite-refresh .fav-card {
+  position: relative;
+  width: 100%;
+  
+  flex: 0 0 112px;
+  display: grid;
+  grid-template-columns: 68px minmax(0, 1fr) 26px;
+  
+  gap: 11px;
+  
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  border-radius: 15px;
+  background: linear-gradient(135deg, rgba(11, 31, 45, 0.84), rgba(5, 52, 53, 0.64));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.035),
+    0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: border-color 0.22s ease, background 0.22s ease, opacity 0.25s ease, transform 0.25s ease;
+}
+
+.serii-favorite-refresh .fav-card:hover {
+  border-color: rgba(255, 255, 255, 0.13);
+  background: linear-gradient(135deg, rgba(14, 38, 54, 0.90), rgba(6, 61, 60, 0.70));
+}
+
+.serii-favorite-refresh .fav-card.is-hidden {
+  display: none;
+}
+
+.serii-favorite-refresh .fav-card.is-leaving {
+  opacity: 0;
+  transform: translateY(-7px);
+}
+
+.serii-favorite-refresh .fav-poster {
+  position: relative;
+  
+  
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 10px;
+  background: #111111;
+  box-shadow: 0 9px 20px rgba(0, 0, 0, 0.28);
+}
+
+.serii-favorite-refresh .fav-poster img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.serii-favorite-refresh .fav-rank {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  min-width: 31px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  padding: 0 6px;
+  overflow: hidden;
+  border-right: 1px solid rgba(255,255,255,0.18);
+  border-bottom: 1px solid rgba(255,255,255,0.14);
+  background: rgba(0, 0, 0, 0.42);
+  color: rgba(245,247,251,0.92);
+  font-size: 9px;
+  font-weight: 950;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  clip-path: polygon(0 0, 100% 0, 82% 100%, 0 100%);
+  text-shadow: 0 1px 1px rgba(0,0,0,0.16);
+}
+
+.serii-favorite-refresh .fav-top-one .fav-rank {
+  background: linear-gradient(135deg, #b9fff0 0%, #67e7ca 48%, #31bda8 100%);
+  color: #073a33;
+}
+
+.serii-favorite-refresh .fav-top-two .fav-rank {
+  background: linear-gradient(135deg, #d1e7ff 0%, #8db7ff 50%, #5f84dc 100%);
+  color: #102b55;
+}
+
+.serii-favorite-refresh .fav-top-three .fav-rank {
+  background: linear-gradient(135deg, #e3d9ff 0%, #b39af4 50%, #7962c9 100%);
+  color: #2c1c57;
+}
+
+.serii-favorite-refresh .fav-info {
+  
+  
+  
+  
+}
+
+.serii-favorite-refresh .fav-name {
+  
+  
+  color: #f5f8fb;
+  font-size: 11.2px;
+  
+  font-weight: 900;
+  
+  
+}
+
+.serii-favorite-refresh .fav-badges {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.serii-favorite-refresh .fav-tag {
+  
+  display: inline-flex;
+  align-items: center;
+  
+  
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 5px;
+  background: rgba(2,14,22,0.55);
+  color: #d8e7ee;
+  
+  
+}
+
+.serii-favorite-refresh .fav-tag::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+}
+
+.serii-favorite-refresh .fav-sub::before {
+  background: #46d98c;
+  box-shadow: 0 0 7px rgba(70,217,140,0.45);
+}
+
+.serii-favorite-refresh .fav-dub::before {
+  background: #4aa8ff;
+  box-shadow: 0 0 7px rgba(74,168,255,0.45);
+}
+
+
+
+.serii-favorite-refresh .fav-views {
+  display: flex;
+  align-items: center;
+  
+  color: #e8f0f4;
+  
+  
+}
+
+.serii-favorite-refresh .fav-views::before {
+  content: "▲";
+  color: #55d99c;
+  font-size: 8px;
+  line-height: 1;
+}
+
+.serii-favorite-refresh .fav-views.fav-fire::before {
+  
+  
+  
+  filter: drop-shadow(0 0 4px rgba(255,125,55,0.24));
+}
+
+.serii-favorite-refresh .fav-action {
+  
+  
+  
+  
+  user-select: none;
+  -webkit-user-select: none;
+  width: 25px;
+  height: 25px;
+  align-self: center;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.04);
+  color: rgba(255,255,255,0.58);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+
+
+.serii-favorite-refresh .fav-action:hover {
+  border-color: rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.09);
+  color: #ffffff;
+}
+
+.serii-favorite-refresh .fav-action.is-added {
+  transform: none;
+}
+
+.serii-favorite-refresh .fav-action.status-watching {
+  border-color: rgba(85,217,156,0.34);
+  background: rgba(85,217,156,0.12);
+  color: #8ef0bc;
+}
+
+.serii-favorite-refresh .fav-action.status-completed {
+  border-color: rgba(143,184,255,0.34);
+  background: rgba(143,184,255,0.12);
+  color: #b8d0ff;
+}
+
+.serii-favorite-refresh .fav-action.status-waiting {
+  border-color: rgba(212,183,122,0.40);
+  background: rgba(212,183,122,0.14);
+  color: #eed290;
+}
+
+.serii-favorite-refresh .fav-action.status-dropped {
+  border-color: rgba(223,113,129,0.34);
+  background: rgba(223,113,129,0.12);
+  color: #f1a0ae;
+}
+
+.serii-favorite-refresh .fav-action.status-planned {
+  border-color: rgba(114,215,208,0.34);
+  background: rgba(114,215,208,0.12);
+  color: #93efe7;
+}
+
+.serii-favorite-refresh .fav-footer {
+  
+  
+  
+  
+   /* înainte era 5px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 4px 8px 0;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  color: rgba(232,241,246,0.78);
+  
+  line-height: 1.2;
+  font-weight: 760;
+  text-align: center;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.24);
+}
+
+.serii-favorite-refresh .fav-footer > span {
+  width: 5px;
+  height: 5px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #67e7ca;
+  box-shadow: 0 0 10px rgba(103, 231, 202, 0.65);
+}
+
+.serii-favorite-refresh .fav-footer p {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.favorite-status-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2147483647;
+  width: 174px;
+  padding: 8px;
+  border: 1px solid rgba(143,184,255,0.20);
+  border-radius: 14px;
+  background: linear-gradient(145deg, rgba(10,27,39,0.97), rgba(5,49,49,0.96));
+  box-shadow:
+    0 18px 42px rgba(0,0,0,0.50),
+    0 0 20px rgba(65,105,225,0.10),
+    inset 0 1px 0 rgba(255,255,255,0.06);
+  backdrop-filter: blur(18px) saturate(115%);
+  -webkit-backdrop-filter: blur(18px) saturate(115%);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(5px) scale(0.98);
+  transform-origin: right top;
+  transition: opacity 0.16s ease, transform 0.16s ease;
+}
+
+.favorite-status-popup.is-open {
+  
+  
+  
+  transform: translateY(0) scale(1);
+}
+
+.favorite-status-popup::after {
+  content: "";
+  position: absolute;
+  top: 19px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid rgba(143,184,255,0.20);
+  border-right: 1px solid rgba(143,184,255,0.20);
+  background: rgba(7,38,42,0.98);
+  transform: rotate(45deg);
+}
+
+.favorite-status-popup.is-right {
+  transform-origin: left top;
+}
+
+.favorite-status-popup.is-right::after {
+  right: auto;
+  left: -6px;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid rgba(143,184,255,0.20);
+  border-left: 1px solid rgba(143,184,255,0.20);
+}
+
+.favorite-popup-title {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 4px;
+  padding: 0 8px 6px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  color: rgba(238,246,250,0.88);
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: 0.02em;
+}
+
+.favorite-popup-title::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8fb8ff, #8affd6);
+  box-shadow: 0 0 8px rgba(138,255,214,0.28);
+}
+
+.favorite-status-popup button {
+  width: 100%;
+  min-height: 31px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 9px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: rgba(241,247,250,0.84);
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 780;
+  text-align: left;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+.favorite-status-popup button::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.30);
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.025);
+}
+
+.favorite-status-popup button:hover {
+  transform: translateX(1px);
+  color: #ffffff;
+  background: rgba(255,255,255,0.055);
+  border-color: rgba(255,255,255,0.07);
+}
+
+.favorite-status-popup [data-status="watching"]::before { background: #55d99c; }
+.favorite-status-popup [data-status="completed"]::before { background: #8fb8ff; }
+.favorite-status-popup [data-status="waiting"]::before { background: var(--av-gold); }
+.favorite-status-popup [data-status="dropped"]::before { background: #df7181; }
+.favorite-status-popup [data-status="planned"]::before { background: #72d7d0; }
+.favorite-status-popup [data-status="watching"]:hover { background: rgba(85,217,156,0.08); }
+.favorite-status-popup [data-status="completed"]:hover { background: rgba(143,184,255,0.08); }
+.favorite-status-popup [data-status="waiting"]:hover { background: rgba(212,183,122,0.08); }
+.favorite-status-popup [data-status="dropped"]:hover { background: rgba(223,113,129,0.08); }
+.favorite-status-popup [data-status="planned"]:hover { background: rgba(114,215,208,0.08); }
+
+@media (prefers-reduced-motion: reduce) {
+  .serii-cerute.serii-favorite-refresh::before,
+  .serii-favorite-refresh .fav-card,
+  .favorite-status-popup {
+    animation: none;
+    transition: none;
+  }
+}
+
+.serii-favorite-refresh .fav-list,
+.serii-favorite-refresh .fav-card,
+.serii-favorite-refresh .fav-action {
+  pointer-events: auto;
+}
+
+.serii-favorite-refresh .fav-action:active {
+  transform: scale(0.94);
+}
+
+/* ===== SFÂRȘIT SERIILE VOASTRE FAVORITE — REFRESH FINAL V10 ===== */
+
+
+
+/* ==================================================================
+   SERIILE VOASTRE FAVORITE — AJUSTĂRI FINALE V19
+   Bazat pe preview-ul aprobat V18
+   ================================================================== */
+
+.serii-cerute.serii-favorite-refresh {
+  
+}
+
+.serii-favorite-refresh .fav-list {
+  gap: 8px;
+  min-height: 592px;
+}
+
+.serii-favorite-refresh .fav-card {
+  height: 112px;
+  flex-basis: 112px;
+  align-items: flex-start;
+  padding: 10px 11px;
+}
+
+.serii-favorite-refresh .fav-poster {
+  width: 68px;
+  height: 92px;
+}
+
+.serii-favorite-refresh .fav-info {
+  min-width: 0;
+  display: grid;
+  
+  
+  
+  
+  
+}
+
+.serii-favorite-refresh .fav-name {
+  grid-row: 1;
+  
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+}
+
+.serii-favorite-refresh .fav-badges {
+  grid-row: 2;
+  align-self: start;
+  margin: 0;
+  gap: 6px;
+}
+
+.serii-favorite-refresh .fav-views {
+  grid-row: 3;
+  align-self: start;
+  position: relative;
+  
+  margin: 0;
+  gap: 5px;
+}
+
+
+
+.serii-favorite-refresh .fav-action {
+  position: relative;
+  z-index: 100;
+  top: -1px;
+  touch-action: manipulation;
+  isolation: isolate;
+}
+
+.serii-favorite-refresh .fav-action:not(#__av_prio_a#__av_prio_b) {
+  pointer-events: auto;
+}
+
+.serii-favorite-refresh .fav-card,
+.serii-favorite-refresh .fav-info,
+.serii-favorite-refresh .fav-action {
+  pointer-events: auto;
+}
+
+.serii-favorite-refresh .fav-footer {
+  position: relative;
+  top: 5px;
+  flex: 0 0 32px;
+  height: 32px;
+  margin-top: 13px;
+  padding-top: 1px;
+  font-size: 9.8px;
+}
+
+/* Popup-ul trebuie să rămână deasupra întregului site. */
+.favorite-status-popup:not(#__av_prio_a#__av_prio_b) {
+  z-index: 2147483647;
+}
+
+.favorite-status-popup.is-open {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* ===== SFÂRȘIT AJUSTĂRI FINALE V19 ===== */
+
+
+/* ==================================================================
+   SERIILE VOASTRE FAVORITE — AJUSTĂRI FINALE V21
+   ================================================================== */
+
+/* Fereastra mamă: +25px față de varianta anterioară. */
+.serii-cerute.serii-favorite-refresh {
+  height: 831px;
+}
+
+/* Titlul începe vizual odată cu partea de sus a fotografiei. */
+.serii-favorite-refresh .fav-info {
+  align-self: start;
+  align-content: start;
+  
+  row-gap: 11px;
+  grid-template-rows: 18px 20px 16px;
+}
+
+.serii-favorite-refresh .fav-name {
+  position: relative;
+  top: 4px;
+  align-self: start;
+}
+
+/* SUB și DUB puțin mai mari. */
+.serii-favorite-refresh .fav-tag {
+  height: 20px;
+  gap: 5px;
+  padding: 0 7px;
+  font-size: 8.6px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+/* Vizionările puțin mai mari, păstrate la 3px mai jos. */
+.serii-favorite-refresh .fav-views {
+  top: 3px;
+  font-size: 9.5px;
+  line-height: 1.1;
+  font-weight: 850;
+}
+
+/* ===== SFÂRȘIT AJUSTĂRI FINALE V21 ===== */
+
+
+/* ==================================================================
+   SERIILE VOASTRE FAVORITE — FOOTER ȘI POPUP REPARATE V25
+   Linia footerului rămâne pe poziție, iar conținutul coboară 10px.
+   ================================================================== */
+.serii-cerute.serii-favorite-refresh .fav-footer:not(#__av_prio_a#__av_prio_b) {
+  position: relative;
+  top: 5px;
+  margin-top: 13px;
+}
+
+.serii-cerute.serii-favorite-refresh .fav-footer > span,
+.serii-cerute.serii-favorite-refresh .fav-footer p {
+  position: relative;
+  top: 10px;
+}
+
+/* Protecție suplimentară: popup-ul global își păstrează dimensiunea și poziția. */
+#favoriteStatusPopup.favorite-status-popup:not(#__av_prio_a#__av_prio_b) {
+  position: fixed;
+  width: 174px;
+  max-width: 174px;
+  margin: 0;
+  flex: none;
+}
+/* ===== SFÂRȘIT FOOTER ȘI POPUP REPARATE V25 ===== */

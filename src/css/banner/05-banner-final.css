@@ -1,0 +1,140 @@
+/* ============================================================
+   AniVortex — V31 final
+   - extindere fundal verde sus
+   - spațiu egal: sus/header, header-banner, banner-V
+   ============================================================ */
+
+/* Extindem fundalul verde de sus până la marginea de sus. */
+body .page:not(#__av_prio_a#__av_prio_b) {
+  position: relative;
+  overflow: visible;
+}
+
+body .page:not(#__av_prio_a#__av_prio_b)::after {
+  
+  position: absolute;
+  left: 0;
+  right: 0;
+  
+  
+  background: var(--av-bg-teal);
+  background-image: none;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 1;
+  box-shadow: inset 0 1px 0 rgba(209,180,106,.18);
+}
+
+body .page:not(#__av_prio_a#__av_prio_b)::before {
+  
+}
+
+body .page > *:not(#__av_prio_a#__av_prio_b) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Spațiu egal în toate cele 3 zone */
+body .header:not(#__av_prio_a#__av_prio_b) {
+  top: var(--av-equal-gap);
+}
+
+body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
+  padding-top: calc(var(--av-header-height) + (var(--av-equal-gap) * 2));
+  padding-bottom: var(--av-equal-gap);
+}
+
+body .banner-slider:not(#__av_prio_a#__av_prio_b) {
+  transform: translateY(0);
+  margin-bottom: 0;
+}
+
+body .page:not(#__av_prio_a#__av_prio_b) {
+  padding-bottom: 0;
+}
+
+body .banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 0;
+}
+
+body .page:not(#__av_prio_a#__av_prio_b)::after {
+  
+  
+}
+
+body .page:not(#__av_prio_a#__av_prio_b)::before {
+  
+}
+
+@media (max-width: 1279px) {
+body .page:not(#__av_prio_a#__av_prio_b)::after {
+  top: calc(var(--av-equal-gap) * -1);
+  height: var(--av-equal-gap);
+}
+
+  body .page:not(#__av_prio_a#__av_prio_b)::before {
+  inset: calc(var(--av-equal-gap) * -1) 0 0 0;
+}
+
+  body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
+  padding-top: calc(var(--av-header-height) + (var(--av-equal-gap) * 2));
+  padding-bottom: var(--av-equal-gap);
+}
+}
+
+@media (max-width: 640px) {
+body .page:not(#__av_prio_a#__av_prio_b)::after {
+  top: calc(var(--av-equal-gap) * -1);
+  height: var(--av-equal-gap);
+}
+
+  body .page:not(#__av_prio_a#__av_prio_b)::before {
+  inset: calc(var(--av-equal-gap) * -1) 0 0 0;
+}
+
+  body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
+  padding-top: calc(var(--av-header-height) + (var(--av-equal-gap) * 2));
+  padding-bottom: var(--av-equal-gap);
+}
+}
+
+
+/* ============================================================
+   AniVortex — V32
+   - fundalul verde urcă până sus
+   - păstrăm spațiul egal: sus/header, header-banner, banner-V
+   ============================================================ */
+
+
+body .page:not(#__av_prio_a#__av_prio_b)::after {
+  top: 0;
+  height: 0;
+  content: none;
+}
+
+body .page:not(#__av_prio_a#__av_prio_b)::before {
+  inset: 0 0 0 0;
+}
+
+
+/* ============================================================
+   AniVortex — V35
+   - fundalul bannerului vine până sus
+   - fără să mutăm headerul
+   ============================================================ */
+html:not(#__av_prio_a#__av_prio_b), body:not(#__av_prio_a#__av_prio_b) {
+  margin: 0;
+  padding: 0;
+  background: var(--av-bg-teal);
+  background-image: none;
+}
+
+body .page:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* V4 — gesturi mobile: swipe orizontal pe banner, scroll vertical nativ. */
+.banner-slider {
+  touch-action: pan-y;
+}

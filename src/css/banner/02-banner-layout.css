@@ -1,0 +1,425 @@
+/* =========================================================
+   AniVortex — fundal verde in spatele bannerului
+   Fundalul exterior este drept; bannerul ramane rotunjit.
+   ========================================================= */
+.page:not(#__av_prio_a#__av_prio_b) {
+  
+  
+}
+
+.banner-wrap:not(#__av_prio_a#__av_prio_b), .banner-slider:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 0;
+}
+
+.banner:not(#__av_prio_a#__av_prio_b), .banner.active:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.image-card:not(#__av_prio_a#__av_prio_b) {
+  border-radius: 34px;
+  overflow: hidden;
+}
+
+/* =========================================================
+   V2 — bannerul are latimea Trending + fundal cu stele ca Trending
+   ========================================================= */
+
+.page {
+  isolation: isolate;
+}
+
+.page:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  background: radial-gradient(circle at 16% 12%, rgba(88, 196, 175, 0.14), transparent 26%),
+    radial-gradient(circle at 84% 18%, rgba(212, 183, 122, 0.08), transparent 24%),
+    radial-gradient(circle at 50% 88%, rgba(75, 131, 125, 0.14), transparent 30%),
+    linear-gradient(180deg, rgba(5, 42, 46, 0.98), rgba(3, 29, 34, 0.99));
+}
+
+.page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.34;
+  background-image:
+    radial-gradient(circle at 8% 28%, rgba(225,252,255,.70) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 22% 72%, rgba(180,244,255,.48) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 37% 24%, rgba(230,255,255,.62) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 51% 76%, rgba(176,242,255,.52) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 67% 30%, rgba(235,255,255,.72) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 82% 68%, rgba(185,245,255,.55) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 95% 34%, rgba(230,255,255,.65) 0 1px, transparent 1.6px);
+  background-size: 330px 250px, 390px 310px, 360px 260px, 420px 320px, 350px 250px, 460px 340px, 380px 290px;
+}
+
+.page::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.45;
+  background:
+    radial-gradient(circle at 10% 24%, rgba(255,255,255,.05) 0 110px, transparent 180px),
+    radial-gradient(circle at 72% 70%, rgba(111,183,173,.08) 0 170px, transparent 250px),
+    radial-gradient(circle at 90% 14%, rgba(154,143,116,.06) 0 120px, transparent 190px);
+}
+
+.banner-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-wrap:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  
+  
+}
+
+.banner-slider {
+  position: relative;
+  z-index: 1;
+}
+
+/* =========================================================
+   V3 — banner mai compact, ca lungime/vizual mai aproape de Trending
+   si mai stabil la zoom
+   ========================================================= */
+
+.banner-wrap:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  
+}
+
+
+
+.banner-grid:not(#__av_prio_a#__av_prio_b) {
+  min-height: clamp(500px, 34vw, 620px);
+  align-items: center;
+}
+
+.banner-left:not(#__av_prio_a#__av_prio_b) {
+  padding: 42px 30px 34px;
+}
+
+.left-inner:not(#__av_prio_a#__av_prio_b) {
+  max-width: 600px;
+}
+
+.top-badge:not(#__av_prio_a#__av_prio_b) {
+  bottom: 18px;
+  margin-bottom: 16px;
+}
+
+.title-row:not(#__av_prio_a#__av_prio_b) {
+  margin-bottom: 20px;
+}
+
+.title-text:not(#__av_prio_a#__av_prio_b) {
+  font-size: clamp(34px, 2.5vw, 42px);
+  bottom: 0;
+}
+
+.genre-row:not(#__av_prio_a#__av_prio_b) {
+  margin-bottom: 16px;
+  font-size: 18px;
+  bottom: 0;
+}
+
+.meta-grid:not(#__av_prio_a#__av_prio_b) {
+  margin-bottom: 18px;
+  gap: 9px;
+}
+
+.meta-item:not(#__av_prio_a#__av_prio_b), .meta-item.meta-big:not(#__av_prio_a#__av_prio_b) {
+  min-height: 48px;
+}
+
+.description:not(#__av_prio_a#__av_prio_b) {
+  max-width: 560px;
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+}
+
+.button-row:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 24px;
+}
+
+.btn:not(#__av_prio_a#__av_prio_b) {
+  padding: 13px 24px;
+  font-size: 17px;
+}
+
+.banner-right:not(#__av_prio_a#__av_prio_b) {
+  padding: 26px 30px 78px;
+}
+
+.image-group:not(#__av_prio_a#__av_prio_b) {
+  max-width: 930px;
+  left: 0;
+  bottom: 0;
+}
+
+.image-card:not(#__av_prio_a#__av_prio_b) {
+  height: clamp(330px, 25vw, 430px);
+  min-height: clamp(330px, 25vw, 430px);
+}
+
+.hero-image:not(#__av_prio_a#__av_prio_b) {
+  height: clamp(330px, 25vw, 430px);
+}
+
+.thumb-box:not(#__av_prio_a#__av_prio_b) {
+  bottom: 10px;
+  left: 14px;
+}
+
+.thumb-box img:not(#__av_prio_a#__av_prio_b) {
+  width: 94px;
+  height: 94px;
+}
+
+.slider-row:not(#__av_prio_a#__av_prio_b) {
+  bottom: 14px;
+}
+
+@media (max-width: 1279px) {
+  .banner-grid:not(#__av_prio_a#__av_prio_b) {
+  min-height: 0;
+}
+
+  .banner-left:not(#__av_prio_a#__av_prio_b), .banner-right:not(#__av_prio_a#__av_prio_b) {
+  padding: 24px;
+}
+
+  .banner-right:not(#__av_prio_a#__av_prio_b) {
+  padding-bottom: 72px;
+}
+
+  .image-group:not(#__av_prio_a#__av_prio_b), .image-card:not(#__av_prio_a#__av_prio_b), .hero-image:not(#__av_prio_a#__av_prio_b) {
+  height: auto;
+  min-height: 0;
+}
+
+  .hero-image:not(#__av_prio_a#__av_prio_b) {
+  width: 100%;
+  height: 420px;
+}
+}
+
+@media (max-width: 640px) {
+  .banner-wrap:not(#__av_prio_a#__av_prio_b) {
+  width: min(100%, calc(100% - 18px));
+  padding: 14px 0 14px;
+}
+
+  .banner-left:not(#__av_prio_a#__av_prio_b), .banner-right:not(#__av_prio_a#__av_prio_b) {
+  padding: 18px;
+}
+
+  .hero-image:not(#__av_prio_a#__av_prio_b) {
+  height: 300px;
+}
+
+  .description:not(#__av_prio_a#__av_prio_b) {
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+  .button-row:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 18px;
+}
+}
+
+/* =========================================================
+   V4 — FIX REAL: fundalul bannerului are EXACT lățimea secțiunii Trending
+   Problema era că .page rămânea full-width la zoom.
+   ========================================================= */
+.page:not(#__av_prio_a#__av_prio_b) {
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  max-width: 1920px;
+  min-width: 1808px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+/* Păstrăm bannerul în interiorul aceleiași lățimi, fără să întindem fundalul în viewport. */
+.banner-wrap:not(#__av_prio_a#__av_prio_b) {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  padding: 20px 18px 18px;
+}
+
+/* Stelele rămân limitate strict în .page, exact ca la Trending. */
+.page:not(#__av_prio_a#__av_prio_b)::before, .page:not(#__av_prio_a#__av_prio_b)::after {
+  border-radius: 0;
+}
+
+@media (min-width: 2000px) {
+  .page:not(#__av_prio_a#__av_prio_b) {
+  width: calc(100% - 16px);
+  max-width: 1900px;
+}
+}
+
+@media (max-width: 760px) {
+  .page:not(#__av_prio_a#__av_prio_b) {
+  width: 100%;
+  min-width: 0;
+}
+
+  .banner-wrap:not(#__av_prio_a#__av_prio_b) {
+  width: 100%;
+  padding-inline: 12px;
+}
+}
+
+/* =========================================================
+   V5 — Imbinare Banner -> Trending, exact in stilul exemplului
+   ========================================================= */
+
+
+.banner-trending-join {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1920px;
+  min-width: 1808px;
+  height: clamp(52px, 3.75vw, 72px);
+  margin: -1px auto 0;
+  overflow: hidden;
+  pointer-events: none;
+  background: #071b21;
+  isolation: isolate;
+}
+
+.banner-trending-join::before {
+  
+  
+  inset: 0;
+  z-index: 2;
+  opacity: .20;
+  
+  
+}
+
+.banner-trending-join svg {
+  
+  z-index: 1;
+  
+  
+  
+  overflow: visible;
+  filter: none;
+}
+
+
+
+
+
+.banner-trending-join-gold {
+  
+  stroke-width: 1.2;
+}
+
+
+
+body .banner-trending-join + #trendingMaster:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 0;
+}
+
+@media (max-width: 760px) {
+  .banner-trending-join {
+    min-width: 0;
+    width: 100%;
+    height: 46px;
+  }
+}
+
+/* =========================================================
+   V6 — rafinare îmbinare Banner -> Trending
+   Elimină banda neagră groasă și dubla linie; îmbinarea intră natural
+   între cele două secțiuni, ca în model.
+   ========================================================= */
+
+body .page:not(#__av_prio_a#__av_prio_b) {
+  
+  z-index: 1;
+  
+  margin-bottom: 0;
+}
+
+body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
+  padding-bottom: 8px;
+}
+
+.banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  z-index: 3;
+  
+  
+  
+  height: clamp(44px, 3.2vw, 60px);
+  margin: -14px auto -2px;
+  background: transparent;
+  overflow: visible;
+}
+
+.banner-trending-join:not(#__av_prio_a#__av_prio_b)::before {
+  inset: 8px 0 0 0;
+  opacity: .17;
+}
+
+
+
+
+
+.banner-trending-join-gold:not(#__av_prio_a#__av_prio_b) {
+  stroke-width: 1.15;
+}
+
+.banner-trending-join-teal:not(#__av_prio_a#__av_prio_b) {
+  
+  opacity: .92;
+}
+
+/* Facem secțiunea Trending să primească îmbinarea fără a dubla conturul de sus. */
+#trendingMaster:not(#__av_prio_a#__av_prio_b) {
+  
+  padding-top: 18px;
+  
+  box-shadow: 0 18px 42px rgba(0, 0, 0, .28),
+    inset 0 1px 0 rgba(212, 183, 122, .05);
+}
+
+/* Păstrăm fundalul și stelele, dar fără o tăietură dură chiar sub îmbinare. */
+#trendingMaster:not(#__av_prio_a#__av_prio_b)::before {
+  inset: 8px 10px 7px 8px;
+}
+
+@media (max-width: 760px) {
+  .banner-trending-join:not(#__av_prio_a#__av_prio_b) {
+  
+  height: 40px;
+  margin: -10px auto -2px;
+}
+
+  #trendingMaster:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 14px;
+}
+}
+

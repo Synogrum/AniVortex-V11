@@ -1,0 +1,86 @@
+/* AniVortex design tokens — variabile globale centralizate. */
+:root {
+  /* Brand */
+  --av-gold: #d4b77a;
+  --av-gold-dark: #b8925e;
+  --av-bg-teal: #052a2e;
+  --av-green-final: var(--av-bg-teal);
+  --avf-surface-top: #071b21;
+
+  /* Header / glass */
+  --glass-bg: rgba(255,255,255,0.05);
+  --glass-border: rgba(255,255,255,0.10);
+  --accent: #4169E1;
+  --accent2: #00E6A2;
+  --text-dim: rgba(255,255,255,0.62);
+  --text-mid: rgba(255,255,255,0.82);
+
+  /* Main */
+  --bg-1: #050505;
+  --bg-2: #0d0d0d;
+  --panel-dark: rgba(18, 18, 18, 0.72);
+  --panel-dark-2: rgba(28, 28, 28, 0.48);
+  --white: #f7f7f7;
+  --text-soft: rgba(240, 240, 240, 0.78);
+  --dark-main: #272727;
+  --dark-2: #313131;
+  --dark-3: #3a3a3a;
+  --dark-4: #1f1f1f;
+  --gold-1: var(--av-gold-dark);
+  --gold-2: var(--av-gold);
+  --stroke: rgba(212,183,122,0.45);
+  --shadow-dark: rgba(39,39,39,0.32);
+
+  /* Trending */
+  --radius: 15px;
+  --shadow: 0 20px 50px rgba(0, 0, 0, 0.48);
+  --ease: 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  --accent-blue: #4169E1;
+  --accent-blue-soft: #5ab4ff;
+  --accent-green: #00E6A2;
+  --accent-text: #dbe7ff;
+  --accent-text-2: #b9fff0;
+
+  /* Banner / layout */
+  --av-equal-gap: 16px;
+  --av-header-height: 68px;
+
+  /* Entertainment / UPC */
+  --av-ent-bg-1: #08171d;
+  --av-ent-bg-2: #0a2027;
+  --av-ent-bg-3: #071319;
+  --av-ent-cyan: #79ebff;
+  --av-ent-cyan-soft: #bff8ff;
+  --av-ent-mint: #63ffd0;
+  --av-ent-text: #f5feff;
+  --av-ent-muted: #9bc3cc;
+  --av-ent-card-w: 184px;
+  --av-ent-card-h: 248px;
+  --av-ent-gap: 18px;
+  --av-ent-track-w: calc((var(--av-ent-card-w) * 8) + (var(--av-ent-gap) * 7));
+  --av-ent-join-overlap: clamp(72px, 5.5vw, 88px);
+  --av-ent-live-top-gap: 27px;
+  --av-ent-move: 620ms cubic-bezier(.20,.74,.18,1);
+}
+
+/* Responsive token overrides kept with the global token source. */
+@media (max-width: 1400px) {
+  :root {
+    --av-ent-card-w: 172px;
+    --av-ent-card-h: 236px;
+    --av-ent-gap: 18px;
+  }
+}
+
+@media (max-width: 1279px) {
+  :root {
+    --av-equal-gap: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --av-equal-gap: 10px;
+    --av-header-height: 60px;
+  }
+}

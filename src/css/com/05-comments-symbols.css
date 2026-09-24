@@ -1,0 +1,145 @@
+/* ============================================================
+   AniVortex Comentarii — selector categorie + simboluri finale
+   Curățat din versiunile V31–V34: fără emoji/Base64 legacy.
+   ============================================================ */
+
+/* Selectorul de categorie. */
+.com-category-selector {
+  width: 84px;
+  min-width: 84px;
+  height: 34px;
+  min-height: 34px;
+  padding: 0 8px 0 11px;
+  grid-template-columns: minmax(0, 1fr) 15px;
+  gap: 3px;
+}
+
+.com-category-selector .com-cat-label {
+  font-size: 11px;
+  font-weight: 780;
+}
+
+.com-category-selector .com-cat-arrow {
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+}
+
+/* Numărul decorativ din dreapta-sus. */
+.av10-number {
+  right: 12px;
+  top: 18px;
+  min-width: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1px;
+  font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  opacity: 0.34;
+  transform: none;
+}
+
+/* Simbolurile actuale sunt imagini WebP reale, nu data-uri în CSS. */
+.av10-symbol:not(#__av_prio_a#__av_prio_b) {
+  right: 9px;
+  bottom: 5px;
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  overflow: visible;
+  color: transparent;
+  font-size: 0;
+  line-height: 0;
+  opacity: 1;
+  background: transparent;
+  text-shadow: none;
+  animation: comImageSymbolFloat 5.5s ease-in-out var(--motion-delay, 0s) infinite;
+}
+
+.av10-symbol-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  object-position: center;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.16;
+  filter:
+    brightness(0)
+    invert(1)
+    drop-shadow(0 0 8px color-mix(in srgb, var(--accent) 24%, transparent));
+  transform: translateZ(0);
+}
+
+/* Formele late primesc puțin mai mult spațiu. */
+.av10-symbol[data-symbol="Dragon"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Fluture"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Val"]:not(#__av_prio_a#__av_prio_b) {
+  width: 56px;
+  height: 56px;
+  right: 7px;
+  bottom: 3px;
+}
+
+.av10-symbol[data-symbol="Fulger"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Foc"]:not(#__av_prio_a#__av_prio_b) {
+  width: 48px;
+  height: 48px;
+  right: 10px;
+  bottom: 7px;
+}
+
+@keyframes comImageSymbolFloat {
+  0%, 100% { transform: translate3d(0, 0, 0) rotate(-2deg) scale(.98); }
+  50% { transform: translate3d(-4px, -4px, 0) rotate(2.5deg) scale(1.03); }
+}
+
+@media (max-width: 1510px) {
+  .com-category-selector {
+    width: 82px;
+    min-width: 82px;
+  }
+
+  .av10-number {
+    right: 10px;
+    top: 17px;
+    min-width: 50px;
+    font-size: 39px;
+    letter-spacing: 0.015em;
+  }
+
+  .av10-symbol:not(#__av_prio_a#__av_prio_b) {
+    width: 48px;
+    height: 48px;
+    right: 8px;
+    bottom: 5px;
+  }
+
+  .av10-symbol-img { opacity: 0.15; }
+}
+
+@media (max-width: 620px) {
+  .av10-number {
+    min-width: 46px;
+    font-size: 37px;
+  }
+
+  .av10-symbol:not(#__av_prio_a#__av_prio_b) {
+    width: 46px;
+    height: 46px;
+    right: 8px;
+    bottom: 6px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .av10-symbol:not(#__av_prio_a#__av_prio_b) { animation: none; }
+}

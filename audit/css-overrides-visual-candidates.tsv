@@ -1,0 +1,82 @@
+file	context	selector	property	old_value	final_value	old_rule	final_rule
+src/css/banner/04-banner-color-merge.css		body .banner-slider:not(#__av_prio_a#__av_prio_b)	transform	translateY(-24px)	translateY(-10px)	1	9
+src/css/banner/04-banner-color-merge.css	@media (max-width: 640px)	body .banner-slider:not(#__av_prio_a#__av_prio_b)	transform	translateY(-10px)	translateY(-4px)	6	12
+src/css/banner/04-banner-color-merge.css		body .image-group:not(#__av_prio_a#__av_prio_b)	transform	translateY(26px)	translateY(54px)	15	21
+src/css/banner/04-banner-color-merge.css	@media (max-width: 1279px)	body .image-group:not(#__av_prio_a#__av_prio_b)	transform	translateY(18px)	translateY(34px)	17	23
+src/css/banner/04-banner-color-merge.css	@media (max-width: 640px)	body .image-group:not(#__av_prio_a#__av_prio_b)	transform	translateY(10px)	translateY(18px)	19	25
+src/css/com/02-comments-layout.css		.av10-reactions	border	0	1px solid rgba(145, 210, 204, 0.10)	39	75
+src/css/com/02-comments-layout.css		.av10-reactions	box-shadow	none	inset 0 1px rgba(255,255,255,.025)	39	75
+src/css/com/03-comments-refinement.css		.av10-identity	transform	none	translateY(-13px)	9	110
+src/css/com/06-comments-art.css		.av10-series-meta:not(#__av_prio_a#__av_prio_b)	color	color-mix(in srgb, var(--accent) 42%, #cfe8e6)	color-mix(in srgb, var(--accent) 58%, #d9efeb)	30	43
+src/css/com/06-comments-art.css		.av10-series-meta:not(#__av_prio_a#__av_prio_b)	opacity	0.96	0.98	30	43
+src/css/components/UPC.css		.carousel-collection .card-title	color	#f1feff	#ffffff	57	79
+src/css/components/UPC.css		.carousel-collection .card-back-meta-label	color	rgba(191,248,255,.48)	rgba(170, 226, 233, .58)	65	85
+src/css/components/UPC.css		.carousel-collection .card-back-meta-value	color	rgba(238,254,255,.86)	#f7ffff	66	86
+src/css/components/UPC.css		.carousel-collection .card-desc	color	rgba(225,247,250,.70)	rgba(230, 248, 250, .76)	67	89
+src/css/components/UPC.css		.carousel-collection .card-back-btn	color	#aefcff	#fff	68	91
+src/css/components/UPC.css		.carousel-collection .card-back-btn	text-transform	uppercase	none	68	91
+src/css/components/footer.css		.avf-brand-copy span	color	#62868e	#739aa2	13	133
+src/css/components/footer.css		.avf-bottom p	color	#6c8c93	#6e9097	33	73
+src/css/components/footer.css		.avf-bottom strong	color	#8eb7be	#c9eef2	34	74
+src/css/components/footer.css		.avf-social-item	transition	transform .2s ease,     border-color .2s ease,     background .2s ease,     box-shadow .2s ease	color .18s ease, transform .18s ease	63	98
+src/css/components/footer.css		.avf-social-item:hover:not(#__av_prio_a#__av_prio_b)	transform	translateY(-2px)	translateX(3px)	66	100
+src/css/components/footer.css		.avf-social-item-icon	transition	transform .2s ease, filter .2s ease	color .18s ease, border-color .18s ease, background .18s ease	67	101
+src/css/main/01-foundation.css		.buttons button, .logout	animation	buttonIdle 6s ease-in-out infinite	softBreath 5s ease-in-out infinite	47	49
+src/css/main/01-foundation.css		.buttons button, .logout	animation	buttonIdle 6s ease-in-out infinite,     subtleFloat 6s ease-in-out infinite	softBreath 5s ease-in-out infinite	48	49
+src/css/main/03-navigation.css		.top-sugestii-panel .ts-category-track	border	1px solid rgba(255, 255, 255, 0.12)	0	19	74
+src/css/main/03-navigation.css		.top-sugestii-panel .ts-category-track	box-shadow	0 10px 22px rgba(0, 0, 0, 0.18),     inset 0 1px 0 rgba(255, 255, 255, 0.055)	none	19	74
+src/css/main/03-navigation.css		.top-sugestii-panel .ts-cat-arrow	color	#ead29d	rgba(255, 255, 255, 0.52)	20	75
+src/css/main/03-navigation.css		.top-sugestii-panel .ts-cat-arrow	transition	background 0.2s ease, color 0.2s ease, transform 0.2s ease	color 0.2s ease,     background 0.2s ease,     transform 0.2s ease	20	75
+src/css/main/03-navigation.css		.top-sugestii-panel .ts-cat-arrow:active	transform	scale(0.92)	scale(0.94)	24	78
+src/css/main/03-navigation.css		.top-sugestii-panel .ts-cat-arrow:focus-visible	outline	2px solid rgba(143, 255, 224, 0.72)	1px solid rgba(255, 255, 255, 0.32)	25	79
+src/css/main/03-navigation.css		.top-sugestii-panel .ts-cat-main strong	color	#f8fafc	rgba(255, 255, 255, 0.90)	28	83
+src/css/main/03-navigation.css		.top-sugestii-panel .ts-score	border	1px solid rgba(255, 255, 255, 0.08)	0	47	85
+src/css/main/08-news-and-effects.css		.av-news-led-line	box-shadow	0 0 6px rgba(102, 255, 225, .58),     0 0 13px rgba(39, 187, 255, .28)	0 0 10px 3px rgba(102, 255, 225, .42),     0 0 24px 7px rgba(39, 187, 255, .20)	25	30
+src/css/main/08-news-and-effects.css		.av-news-led-line	animation	avNewsLedLineRun 6s linear infinite	avNewsLedLineRun 12s linear infinite	25	39
+src/css/main/08-news-and-effects.css		.av-news-led-line	animation	avNewsFogDrift 11s ease-in-out infinite alternate	avNewsLedLineRun 12s linear infinite	36	39
+src/css/main/08-news-and-effects.css		.av-news-led-line	opacity	.82	.94	36	39
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair::before	box-shadow	inset 0 0 0 1px rgba(255,255,255,.035), inset 0 1px 0 rgba(255,255,255,.045)	inset 0 0 0 1px rgba(255,255,255,.04), inset 0 1px 0 rgba(255,255,255,.05), inset 0 -12px 22px rgba(0,0,0,.08)	15	65
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair::before	opacity	.75	.92	15	65
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover::before, #trendingMaster .trending-pair:focus-within::before	box-shadow	inset 0 0 0 1px color-mix(in srgb, var(--avt-rank-color) 34%, rgba(255,255,255,.06)),     inset 0 1px 0 rgba(255,255,255,.09),     inset 0 -12px 24px color-mix(in srgb, var(--avt-rank-color) 5%, transparent)	inset 0 0 0 1px color-mix(in srgb, var(--avt-rank-color) 24%, rgba(255,255,255,.05)),     inset 0 1px 0 rgba(255,255,255,.08),     inset 0 -14px 26px rgba(0,0,0,.10),     0 0 0 1px color-mix(in srgb, var(--avt-rank-color) 10%, transparent)	17	69
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover::before, #trendingMaster .trending-pair:focus-within::before	box-shadow	inset 0 0 0 1px color-mix(in srgb, var(--avt-rank-color) 24%, rgba(255,255,255,.04)),     inset 0 1px 0 rgba(255,255,255,.08),     inset 0 -12px 22px rgba(0,0,0,.10),     0 14px 26px rgba(0,0,0,.16),     0 0 18px color-mix(in srgb, var(--avt-rank-color) 8%, transparent)	inset 0 0 0 1px color-mix(in srgb, var(--avt-rank-color) 24%, rgba(255,255,255,.05)),     inset 0 1px 0 rgba(255,255,255,.08),     inset 0 -14px 26px rgba(0,0,0,.10),     0 0 0 1px color-mix(in srgb, var(--avt-rank-color) 10%, transparent)	59	69
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:not(#__av_prio_a#__av_prio_b)::after	opacity	0	.54	18	91
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:not(#__av_prio_a#__av_prio_b)::after	opacity	.72	.54	44	91
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:not(#__av_prio_a#__av_prio_b)::after	opacity	.78	.54	49	91
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:not(#__av_prio_a#__av_prio_b)::after	opacity	.82	.54	55	91
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:not(#__av_prio_a#__av_prio_b)::after	opacity	.88	.54	64	91
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:not(#__av_prio_a#__av_prio_b)::after	opacity	.18	.54	73	91
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:not(#__av_prio_a#__av_prio_b)::after	opacity	.36	.54	83	91
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover:not(#__av_prio_a#__av_prio_b), #trendingMaster .trending-pair:focus-within:not(#__av_prio_a#__av_prio_b)	border-color	color-mix(in srgb, var(--avt-rank-color) 42%, rgba(255,255,255,.05))	color-mix(in srgb, var(--avt-rank-color) 22%, rgba(255,255,255,.045))	19	96
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover:not(#__av_prio_a#__av_prio_b), #trendingMaster .trending-pair:focus-within:not(#__av_prio_a#__av_prio_b)	border-color	color-mix(in srgb, var(--avt-rank-color) 26%, rgba(255,255,255,.05))	color-mix(in srgb, var(--avt-rank-color) 22%, rgba(255,255,255,.045))	60	96
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover:not(#__av_prio_a#__av_prio_b), #trendingMaster .trending-pair:focus-within:not(#__av_prio_a#__av_prio_b)	border-color	color-mix(in srgb, var(--avt-rank-color) 24%, rgba(255,255,255,.05))	color-mix(in srgb, var(--avt-rank-color) 22%, rgba(255,255,255,.045))	70	96
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover:not(#__av_prio_a#__av_prio_b), #trendingMaster .trending-pair:focus-within:not(#__av_prio_a#__av_prio_b)	border-color	rgba(255,255,255,.035)	color-mix(in srgb, var(--avt-rank-color) 22%, rgba(255,255,255,.045))	77	96
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover:not(#__av_prio_a#__av_prio_b), #trendingMaster .trending-pair:focus-within:not(#__av_prio_a#__av_prio_b)	border-color	rgba(255,255,255,.055)	color-mix(in srgb, var(--avt-rank-color) 22%, rgba(255,255,255,.045))	86	96
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover:not(#__av_prio_a#__av_prio_b), #trendingMaster .trending-pair:focus-within:not(#__av_prio_a#__av_prio_b)	box-shadow	0 12px 28px rgba(0,0,0,.34), 0 0 0 1px color-mix(in srgb, var(--avt-rank-color) 10%, transparent)	0 13px 28px rgba(0,0,0,.28), 0 0 18px color-mix(in srgb, var(--avt-rank-color) 7%, transparent)	19	96
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover:not(#__av_prio_a#__av_prio_b), #trendingMaster .trending-pair:focus-within:not(#__av_prio_a#__av_prio_b)	box-shadow	0 12px 24px rgba(0,0,0,.28), 0 0 0 1px color-mix(in srgb, var(--avt-rank-color) 7%, transparent)	0 13px 28px rgba(0,0,0,.28), 0 0 18px color-mix(in srgb, var(--avt-rank-color) 7%, transparent)	60	96
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover:not(#__av_prio_a#__av_prio_b), #trendingMaster .trending-pair:focus-within:not(#__av_prio_a#__av_prio_b)	box-shadow	0 12px 24px rgba(0,0,0,.24)	0 13px 28px rgba(0,0,0,.28), 0 0 18px color-mix(in srgb, var(--avt-rank-color) 7%, transparent)	70	96
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover:not(#__av_prio_a#__av_prio_b), #trendingMaster .trending-pair:focus-within:not(#__av_prio_a#__av_prio_b)	box-shadow	0 12px 26px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.035)	0 13px 28px rgba(0,0,0,.28), 0 0 18px color-mix(in srgb, var(--avt-rank-color) 7%, transparent)	77	96
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover:not(#__av_prio_a#__av_prio_b), #trendingMaster .trending-pair:focus-within:not(#__av_prio_a#__av_prio_b)	box-shadow	0 14px 30px rgba(0,0,0,.30), 0 0 18px color-mix(in srgb, var(--avt-rank-color) 10%, transparent)	0 13px 28px rgba(0,0,0,.28), 0 0 18px color-mix(in srgb, var(--avt-rank-color) 7%, transparent)	86	96
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover:not(#__av_prio_a#__av_prio_b)::after, #trendingMaster .trending-pair:focus-within:not(#__av_prio_a#__av_prio_b)::after	opacity	.92	.82	47	94
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover:not(#__av_prio_a#__av_prio_b)::after, #trendingMaster .trending-pair:focus-within:not(#__av_prio_a#__av_prio_b)::after	opacity	.94	.82	52	94
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover:not(#__av_prio_a#__av_prio_b)::after, #trendingMaster .trending-pair:focus-within:not(#__av_prio_a#__av_prio_b)::after	opacity	.98	.82	58	94
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover:not(#__av_prio_a#__av_prio_b)::after, #trendingMaster .trending-pair:focus-within:not(#__av_prio_a#__av_prio_b)::after	opacity	1	.82	68	94
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover:not(#__av_prio_a#__av_prio_b)::after, #trendingMaster .trending-pair:focus-within:not(#__av_prio_a#__av_prio_b)::after	opacity	.38	.82	76	94
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover:not(#__av_prio_a#__av_prio_b)::after, #trendingMaster .trending-pair:focus-within:not(#__av_prio_a#__av_prio_b)::after	opacity	.55	.82	85	94
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover::after, #trendingMaster .trending-pair:focus-within::after	box-shadow	inset 0 0 0 1px color-mix(in srgb, var(--avt-rank-color) 18%, rgba(255,255,255,.03)),     inset 0 14px 24px rgba(255,255,255,.025),     inset 0 -18px 28px rgba(0,0,0,.13)	inset 0 -26px 40px color-mix(in srgb, var(--avt-rank-color) 8%, transparent), 0 18px 30px rgba(0,0,0,.12)	51	67
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair::after	transition	opacity .28s ease, filter .28s ease, box-shadow .28s ease	opacity .3s ease, filter .3s ease	54	72
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:hover::before, #trendingMaster .trending-pair:focus-within::before	opacity	1	.78	59	74
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:not(#__av_prio_a#__av_prio_b)::after	animation	none	avtParticlesRise 7.5s linear infinite	73	91
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:not(#__av_prio_a#__av_prio_b)::after	animation	avtGlowSlide 3.8s ease-in-out infinite alternate	avtParticlesRise 7.5s linear infinite	83	91
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:not(#__av_prio_a#__av_prio_b)::before	opacity	.78	.72	81	93
+src/css/trending/04-trending-refinements.css		#trendingMaster .trending-pair:not(#__av_prio_a#__av_prio_b)::before	animation	avtEdgeRunner 4.2s linear infinite	avtCornerPulse 3.4s ease-in-out infinite alternate	81	93
+src/css/trending/04-trending-refinements.css		#trendingMaster .avt-title:not(#__av_prio_a#__av_prio_b)	transform	rotate(180deg)	none	108	111
+src/css/trending/05-trending-effects.css		#trendingMaster .avt-v31-fx::after	opacity	.42	.38	6	52
+src/css/trending/05-trending-effects.css		#trendingMaster .trending-pair:hover:not(#__av_prio_a#__av_prio_b), #trendingMaster .trending-pair:focus-within:not(#__av_prio_a#__av_prio_b)	border-color	color-mix(in srgb, var(--avt-rank-color) 30%, rgba(255,255,255,.05))	color-mix(in srgb, var(--avt-rank-color) 28%, rgba(255,255,255,.05))	17	59
+src/css/trending/05-trending-effects.css		#trendingMaster .trending-pair:hover:not(#__av_prio_a#__av_prio_b), #trendingMaster .trending-pair:focus-within:not(#__av_prio_a#__av_prio_b)	box-shadow	0 14px 30px rgba(0,0,0,.30), 0 0 0 1px color-mix(in srgb, var(--avt-rank-color) 8%, transparent), 0 0 22px color-mix(in srgb, var(--avt-rank-color) 7%, transparent)	0 14px 30px rgba(0,0,0,.30), 0 0 0 1px color-mix(in srgb, var(--avt-rank-color) 7%, transparent), 0 0 18px color-mix(in srgb, var(--avt-rank-color) 5%, transparent)	17	59
+src/css/trending/05-trending-effects.css		#trendingMaster .avt-v31-shard.s2:not(#__av_prio_a#__av_prio_b)	animation-duration	10.6s	13.4s	23	44
+src/css/trending/05-trending-effects.css		#trendingMaster .avt-v31-shard.s3:not(#__av_prio_a#__av_prio_b)	animation-duration	9.7s	12.6s	24	45
+src/css/trending/05-trending-effects.css		#trendingMaster .avt-v31-shard.s4:not(#__av_prio_a#__av_prio_b)	animation-duration	11.8s	14.2s	25	46
+src/css/trending/05-trending-effects.css		#trendingMaster .trending-pair:hover .avt-v31-shard.s1:not(#__av_prio_a#__av_prio_b), #trendingMaster .trending-pair:focus-within .avt-v31-shard.s1:not(#__av_prio_a#__av_prio_b)	animation-duration	7.2s	9.8s	26	47
+src/css/trending/05-trending-effects.css		#trendingMaster .trending-pair:hover .avt-v31-shard.s2:not(#__av_prio_a#__av_prio_b), #trendingMaster .trending-pair:focus-within .avt-v31-shard.s2:not(#__av_prio_a#__av_prio_b)	animation-duration	8.6s	11.4s	27	48
+src/css/trending/05-trending-effects.css		#trendingMaster .trending-pair:hover .avt-v31-shard.s3:not(#__av_prio_a#__av_prio_b), #trendingMaster .trending-pair:focus-within .avt-v31-shard.s3:not(#__av_prio_a#__av_prio_b)	animation-duration	7.9s	10.7s	28	49
+src/css/trending/05-trending-effects.css		#trendingMaster .trending-pair:hover .avt-v31-shard.s4:not(#__av_prio_a#__av_prio_b), #trendingMaster .trending-pair:focus-within .avt-v31-shard.s4:not(#__av_prio_a#__av_prio_b)	animation-duration	9.4s	12.2s	29	50

@@ -1,0 +1,515 @@
+/* ============================================================
+   AniVortex Comentarii V35 — ajustări pentru simbolurile suplimentare
+   Selectori pe data-symbol: independenți de extensia imaginii.
+   ============================================================ */
+
+.av10-symbol[data-symbol="Phoenix"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Corb"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Vant"]:not(#__av_prio_a#__av_prio_b) {
+  width: 56px;
+  height: 56px;
+  right: 7px;
+  bottom: 3px;
+}
+
+.av10-symbol[data-symbol="Coroana"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Stea"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Cristal"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Soare"]:not(#__av_prio_a#__av_prio_b) {
+  width: 50px;
+  height: 50px;
+  right: 9px;
+  bottom: 6px;
+}
+
+.av10-symbol[data-symbol="Oni"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Tigru"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Lup"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Sarpe"]:not(#__av_prio_a#__av_prio_b),
+.av10-symbol[data-symbol="Lotus"]:not(#__av_prio_a#__av_prio_b) {
+  width: 52px;
+  height: 52px;
+  right: 8px;
+  bottom: 5px;
+}
+
+/* ============================================================
+   AniVortex Comentarii V38 — brush / pensula background polish
+   - adauga urme fine de pensula in spatele cardului
+   - introduce linii decorative subtile si glow mai bogat
+   - fara sa modifice structura HTML sau JS
+   ============================================================ */
+
+.av10-card {
+  isolation: isolate;
+}
+
+/* Strat nou in spatele continutului: urme de pensula + linii fine. */
+.av10-card::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0.88;
+  
+  filter: blur(.15px) saturate(112%);
+}
+
+/* Zona de mesaj primește o textură de pensulă mai vizibilă, dar subtilă. */
+.av10-body {
+  position: relative;
+  overflow: hidden;
+}
+
+.av10-body::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.36;
+  background:
+    radial-gradient(circle at 18% 82%, color-mix(in srgb, var(--accent) 10%, transparent) 0 20px, transparent 48px),
+    linear-gradient(118deg, transparent 0 16%, color-mix(in srgb, var(--accent) 10%, transparent) 16.4% 18.5%, transparent 19% 100%),
+    linear-gradient(133deg, transparent 0 44%, rgba(255,255,255,.038) 44.2% 45.3%, transparent 45.7% 100%),
+    repeating-linear-gradient(-18deg,
+      transparent 0 24px,
+      color-mix(in srgb, var(--accent) 4.2%, transparent) 24px 26px,
+      transparent 26px 58px);
+  mask-image: linear-gradient(180deg, rgba(0,0,0,.12), rgba(0,0,0,.92) 22%, rgba(0,0,0,.96));
+}
+
+/* Păstrăm textul și simbolul deasupra efectului. */
+.av10-text {
+  position: relative;
+  z-index: 2;
+}
+
+.av10-symbol:not(#__av_prio_a#__av_prio_b) {
+  z-index: 1;
+}
+
+/* Geometria existentă devine puțin mai vizibilă pentru un fundal mai bogat. */
+.av10-geometry {
+  opacity: 0.82;
+}
+
+.av10-line,
+.av10-ring,
+.av10-dot {
+  filter: drop-shadow(0 0 8px color-mix(in srgb, var(--accent) 9%, transparent));
+}
+
+/* O ușoară pată artistică în colțul stânga-jos al cardului. */
+.av10-glow {
+  opacity: 0.14;
+}
+
+@media (max-width: 1510px) {
+  .av10-card::after {
+    opacity: 0.8;
+  }
+
+  .av10-body::before {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: 620px) {
+  .av10-card::after {
+    background:
+      linear-gradient(118deg, transparent 0 18%, color-mix(in srgb, var(--accent) 7%, transparent) 18.3% 19.2%, transparent 19.5% 100%),
+      repeating-linear-gradient(-18deg,
+        transparent 0 20px,
+        color-mix(in srgb, var(--accent) 4%, transparent) 20px 21px,
+        transparent 21px 48px);
+    opacity: 0.66;
+  }
+
+  .av10-body::before {
+    opacity: 0.24;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .av10-card:not(#__av_prio_a#__av_prio_b)::after, .av10-body:not(#__av_prio_a#__av_prio_b)::before {
+  transition: none;
+}
+}
+
+
+/* ============================================================
+   AniVortex Comentarii V39 — accent stanga-jos + numar mai vizibil
+   ============================================================ */
+
+/* Pată de culoare / pensulă în zona stânga-jos indicată. */
+.av10-card::after {
+  background:
+    radial-gradient(ellipse at 7% 81%,
+      color-mix(in srgb, var(--accent) 20%, transparent) 0 14px,
+      color-mix(in srgb, var(--accent) 10%, transparent) 30px,
+      transparent 68px),
+    linear-gradient(154deg,
+      transparent 0 67%,
+      color-mix(in srgb, var(--accent) 9%, transparent) 67.3% 68.2%,
+      transparent 68.7% 100%),
+    radial-gradient(circle at 84% 18%, color-mix(in srgb, var(--accent) 10%, transparent) 0 0, color-mix(in srgb, var(--accent) 18%, transparent) 0 54px, transparent 96px),
+    linear-gradient(112deg, transparent 0 13%, color-mix(in srgb, var(--accent) 8%, transparent) 13.3% 14.1%, transparent 14.5% 100%),
+    linear-gradient(126deg, transparent 0 26%, rgba(255,255,255,.03) 26.3% 27.1%, transparent 27.5% 100%),
+    linear-gradient(142deg, transparent 0 58%, color-mix(in srgb, var(--accent) 6%, transparent) 58.4% 59%, transparent 59.4% 100%),
+    repeating-linear-gradient(-21deg,
+      transparent 0 22px,
+      color-mix(in srgb, var(--accent) 3.8%, transparent) 22px 24px,
+      transparent 24px 62px),
+    repeating-linear-gradient(94deg,
+      transparent 0 68px,
+      rgba(255,255,255,.018) 68px 69px,
+      transparent 69px 128px);
+}
+
+/* Numărul decorativ din dreapta-sus devine mai clar, fără să domine numele. */
+.av10-number {
+  z-index: 1;
+  font-weight: 850;
+  text-shadow: 0 0 10px color-mix(in srgb, var(--accent) 14%, transparent),
+    0 1px 0 rgba(255,255,255,.025);
+  -webkit-text-stroke: .25px color-mix(in srgb, var(--accent) 18%, transparent);
+}
+
+.av10-number:not(#__av_prio_a#__av_prio_b) {
+  color: color-mix(in srgb, var(--accent) 30%, transparent);
+  opacity: 0.82;
+}
+
+/* Un mic plus de culoare și în corpul comentariului, jos-stânga. */
+.av10-body {
+  background:
+    radial-gradient(ellipse at 5% 96%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 42%),
+    linear-gradient(180deg, transparent, rgba(0,7,10,.12));
+}
+
+@media (max-width: 1510px) {
+  .av10-number:not(#__av_prio_a#__av_prio_b) {
+  color: color-mix(in srgb, var(--accent) 27%, transparent);
+  opacity: 0.78;
+}
+}
+
+@media (max-width: 620px) {
+  .av10-number:not(#__av_prio_a#__av_prio_b) {
+  opacity: 0.74;
+}
+}
+
+
+/* ============================================================
+   AniVortex Comentarii V42 — buton categorie auto-size dupa text
+   ============================================================ */
+
+.com-category-selector:not(#__av_prio_a#__av_prio_b) {
+  width: max-content;
+  min-width: 84px;
+  max-width: none;
+  flex: 0 0 auto;
+  padding-left: 12px;
+  padding-right: 9px;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.com-category-selector .com-cat-label:not(#__av_prio_a#__av_prio_b) {
+  width: auto;
+  min-width: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 990px) {
+  .com-category-selector:not(#__av_prio_a#__av_prio_b) {
+  width: max-content;
+  min-width: 82px;
+}
+}
+
+
+/* ============================================================
+   AniVortex Comentarii V43 — sublinie sezon + episod la serie
+   - adauga linia "Sezonul 1 Episodul 2111" sub numele seriei
+   - mareste usor caseta seriei pentru 3 randuri curate
+   ============================================================ */
+
+.av10-card:not(#__av_prio_a#__av_prio_b) {
+  
+}
+
+.av10-series:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  
+  
+}
+
+
+
+.av10-series-copy small:not(#__av_prio_a#__av_prio_b), .av10-series-copy strong:not(#__av_prio_a#__av_prio_b), .av10-series-copy .av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  display: block;
+}
+
+.av10-series-copy strong:not(#__av_prio_a#__av_prio_b) {
+  
+  max-width: 100%;
+  
+  
+  
+}
+
+.av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+}
+
+.av10-body:not(#__av_prio_a#__av_prio_b) {
+  padding-top: 13px;
+}
+
+@media (max-width: 1510px) {
+  .av10-card:not(#__av_prio_a#__av_prio_b) {
+  
+}
+
+  .av10-series:not(#__av_prio_a#__av_prio_b) {
+  
+  
+}
+
+  .av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  
+}
+}
+
+@media (max-width: 620px) {
+  .av10-card:not(#__av_prio_a#__av_prio_b) {
+  
+}
+
+  .av10-series:not(#__av_prio_a#__av_prio_b) {
+  
+  
+}
+
+  .av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  
+}
+}
+
+
+/* ============================================================
+   AniVortex Comentarii V44 — meta compacta si diferita pe fiecare card
+   - format scurt: S1 Ep. 123
+   - fiecare comentariu are alt sezon/episod
+   - fereastra seriei este mai compacta
+   - textele mici sunt marite pentru lizibilitate mai buna
+   ============================================================ */
+
+.av10-card:not(#__av_prio_a#__av_prio_b) {
+  height: 404px;
+}
+
+.av10-series:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  
+  align-items: center;
+}
+
+.av10-series-copy:not(#__av_prio_a#__av_prio_b) {
+  
+  min-width: 0;
+  overflow: hidden;
+}
+
+.av10-series-copy small:not(#__av_prio_a#__av_prio_b) {
+  display: block;
+  font-size: 7.5px;
+  line-height: 1.08;
+  letter-spacing: 0.11em;
+}
+
+.av10-series-copy strong:not(#__av_prio_a#__av_prio_b) {
+  display: block;
+  
+  font-size: 13.5px;
+  line-height: 1.08;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  display: block;
+  
+  color: color-mix(in srgb, var(--accent) 58%, #d9efeb);
+  font-size: 9.5px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.98;
+}
+
+.av10-series-arrow:not(#__av_prio_a#__av_prio_b) {
+  align-self: center;
+}
+
+@media (max-width: 1510px) {
+  .av10-card:not(#__av_prio_a#__av_prio_b) {
+  height: 352px;
+}
+
+  .av10-series:not(#__av_prio_a#__av_prio_b) {
+  
+  
+}
+
+  .av10-series-copy small:not(#__av_prio_a#__av_prio_b) {
+  font-size: 7px;
+}
+
+  .av10-series-copy strong:not(#__av_prio_a#__av_prio_b) {
+  font-size: 10.8px;
+}
+
+  .av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  font-size: 8.2px;
+}
+}
+
+@media (max-width: 620px) {
+  .av10-card:not(#__av_prio_a#__av_prio_b) {
+  height: 362px;
+}
+
+  .av10-series:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  padding-left: 11px;
+}
+
+  .av10-series-copy small:not(#__av_prio_a#__av_prio_b) {
+  font-size: 6.9px;
+}
+
+  .av10-series-copy strong:not(#__av_prio_a#__av_prio_b) {
+  font-size: 10.6px;
+}
+
+  .av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  font-size: 8px;
+}
+}
+
+
+/* ============================================================
+   AniVortex Comentarii V45 — fereastra serie mai compacta
+   - pastreaza textele mari din V44
+   - reduce doar inaltimea si spatiile casetei seriei
+   ============================================================ */
+
+.av10-series:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  
+}
+
+.av10-series-copy strong:not(#__av_prio_a#__av_prio_b) {
+  
+}
+
+.av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  
+}
+
+@media (max-width: 1510px) {
+  .av10-series:not(#__av_prio_a#__av_prio_b) {
+  
+  
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+}
+
+@media (max-width: 620px) {
+  .av10-series:not(#__av_prio_a#__av_prio_b) {
+  
+  
+}
+}
+
+
+/* ============================================================
+   AniVortex Comentarii V46 — 1px intre cele 3 randuri din serie
+   ============================================================ */
+
+.av10-series-copy strong:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 1px;
+}
+
+.av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 1px;
+}
+
+
+/* ============================================================
+   AniVortex Comentarii V47 — spatiu mai aerisit intre cele 3 randuri
+   ============================================================ */
+
+.av10-series:not(#__av_prio_a#__av_prio_b) {
+  flex: 0 0 54px;
+  height: 54px;
+  padding: 5px 8px 5px 12px;
+}
+
+.av10-series-copy:not(#__av_prio_a#__av_prio_b) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+
+.av10-series-copy small:not(#__av_prio_a#__av_prio_b), .av10-series-copy strong:not(#__av_prio_a#__av_prio_b), .av10-series-meta:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1510px) {
+  .av10-series:not(#__av_prio_a#__av_prio_b) {
+  flex-basis: 53px;
+  height: 53px;
+}
+
+  .av10-series-copy:not(#__av_prio_a#__av_prio_b) {
+  gap: 3px;
+}
+}
+
+@media (max-width: 620px) {
+  .av10-series:not(#__av_prio_a#__av_prio_b) {
+  flex-basis: 53px;
+  height: 53px;
+}
+}
+
+

@@ -1,0 +1,49 @@
+file	rule_selector	dropped_branch	missing_classes	missing_ids	action
+src/css/components/hardening.css	body .comentarii-section::before,   body .hot-news-fx *,   body .trending-master-container .trending-bg-orb,   body .trending-master-container .trending-bg-particle,   body .main-container .bubble,   body .main-container .smoke,   body .main-container .inner-haze	body .trending-master-container .trending-bg-orb	trending-bg-orb		drop-branch
+src/css/components/hardening.css	body .comentarii-section::before,   body .hot-news-fx *,   body .trending-master-container .trending-bg-orb,   body .trending-master-container .trending-bg-particle,   body .main-container .bubble,   body .main-container .smoke,   body .main-container .inner-haze	body .trending-master-container .trending-bg-particle	trending-bg-particle		drop-branch
+src/css/main/02-hall-of-fame.css	.hot-title-name	.hot-title-name	hot-title-name		drop-rule
+src/css/main/02-hall-of-fame.css	.desene-tt-clasa	.desene-tt-clasa	desene-tt-clasa		drop-rule
+src/css/main/02-hall-of-fame.css	.desene-tt-clasa span	.desene-tt-clasa span	desene-tt-clasa		drop-rule
+src/css/main/02-hall-of-fame.css	.desene-tt-clasa span::before	.desene-tt-clasa span::before	desene-tt-clasa		drop-rule
+src/css/main/02-hall-of-fame.css	.desene-tt-clasa::before	.desene-tt-clasa::before	desene-tt-clasa		drop-rule
+src/css/main/02-hall-of-fame.css	.desene-tt-clasa::after	.desene-tt-clasa::after	desene-tt-clasa		drop-rule
+src/css/main/02-hall-of-fame.css	.anime-wrap .a-card > .a-poster	.anime-wrap .a-card > .a-poster	a-poster		drop-rule
+src/css/main/02-hall-of-fame.css	.anime-wrap .a-card > .a-poster > img	.anime-wrap .a-card > .a-poster > img	a-poster		drop-rule
+src/css/main/02-hall-of-fame.css	.anime-wrap .a-card > .a-poster .a-bottom	.anime-wrap .a-card > .a-poster .a-bottom	a-poster,a-bottom		drop-rule
+src/css/main/02-hall-of-fame.css	.anime-wrap .a-card > .a-poster .a-bottom::before	.anime-wrap .a-card > .a-poster .a-bottom::before	a-poster,a-bottom		drop-rule
+src/css/main/02-hall-of-fame.css	.anime-wrap .a-card > .a-poster .a-status	.anime-wrap .a-card > .a-poster .a-status	a-poster,a-status		drop-rule
+src/css/main/02-hall-of-fame.css	.anime-wrap .a-card > .a-poster .a-meta	.anime-wrap .a-card > .a-poster .a-meta	a-poster,a-meta		drop-rule
+src/css/main/02-hall-of-fame.css	.anime-wrap .a-card > .a-poster .a-pill	.anime-wrap .a-card > .a-poster .a-pill	a-poster		drop-rule
+src/css/main/02-hall-of-fame.css	.anime-wrap .a-card > .a-poster .a-pill.ep-green	.anime-wrap .a-card > .a-poster .a-pill.ep-green	a-poster		drop-rule
+src/css/main/02-hall-of-fame.css	.manga-wrap .a-card-manga > .a-poster	.manga-wrap .a-card-manga > .a-poster	a-poster		drop-rule
+src/css/main/02-hall-of-fame.css	.manga-wrap .a-card-manga > .a-poster > img	.manga-wrap .a-card-manga > .a-poster > img	a-poster		drop-rule
+src/css/main/02-hall-of-fame.css	.manga-wrap .a-card-manga > .a-poster .a-bottom-manga	.manga-wrap .a-card-manga > .a-poster .a-bottom-manga	a-poster,a-bottom-manga		drop-rule
+src/css/main/02-hall-of-fame.css	.manga-wrap .a-card-manga > .a-poster .a-bottom-manga::before	.manga-wrap .a-card-manga > .a-poster .a-bottom-manga::before	a-poster,a-bottom-manga		drop-rule
+src/css/main/02-hall-of-fame.css	.manga-wrap .a-card-manga > .a-poster .a-status-manga	.manga-wrap .a-card-manga > .a-poster .a-status-manga	a-poster,a-status-manga		drop-rule
+src/css/main/02-hall-of-fame.css	.manga-wrap .a-card-manga > .a-poster .a-meta-manga	.manga-wrap .a-card-manga > .a-poster .a-meta-manga	a-poster,a-meta-manga		drop-rule
+src/css/main/02-hall-of-fame.css	.manga-wrap .a-card-manga > .a-poster .a-pill	.manga-wrap .a-card-manga > .a-poster .a-pill	a-poster		drop-rule
+src/css/main/02-hall-of-fame.css	.manga-wrap .a-pill.manga.chap .lbl1	.manga-wrap .a-pill.manga.chap .lbl1	lbl1		drop-rule
+src/css/main/02-hall-of-fame.css	.manga-wrap .a-pill.manga.chap .val1	.manga-wrap .a-pill.manga.chap .val1	val1		drop-rule
+src/css/main/02-hall-of-fame.css	.desene-wrap .a-card > .a-poster	.desene-wrap .a-card > .a-poster	a-poster		drop-rule
+src/css/main/02-hall-of-fame.css	.desene-wrap .a-card > .a-poster > img	.desene-wrap .a-card > .a-poster > img	a-poster		drop-rule
+src/css/main/02-hall-of-fame.css	.desene-wrap .a-card > .a-poster .a-bottom	.desene-wrap .a-card > .a-poster .a-bottom	a-poster,a-bottom		drop-rule
+src/css/main/02-hall-of-fame.css	.desene-wrap .a-card > .a-poster .a-bottom::before	.desene-wrap .a-card > .a-poster .a-bottom::before	a-poster,a-bottom		drop-rule
+src/css/main/02-hall-of-fame.css	.desene-wrap .a-card > .a-poster .a-status	.desene-wrap .a-card > .a-poster .a-status	a-poster,a-status		drop-rule
+src/css/main/02-hall-of-fame.css	.desene-wrap .a-card > .a-poster .a-meta	.desene-wrap .a-card > .a-poster .a-meta	a-poster,a-meta		drop-rule
+src/css/main/02-hall-of-fame.css	.desene-wrap .a-card > .a-poster .a-pill	.desene-wrap .a-card > .a-poster .a-pill	a-poster		drop-rule
+src/css/main/02-hall-of-fame.css	.desene-wrap .a-card > .a-poster .a-pill.ep-green	.desene-wrap .a-card > .a-poster .a-pill.ep-green	a-poster		drop-rule
+src/css/main/02-hall-of-fame.css	.popup-buttons	.popup-buttons	popup-buttons		drop-rule
+src/css/main/02-hall-of-fame.css	.desene-vezi-tot	.desene-vezi-tot	desene-vezi-tot		drop-rule
+src/css/main/02-hall-of-fame.css	.desene-vezi-tot:hover	.desene-vezi-tot:hover	desene-vezi-tot		drop-rule
+src/css/main/03-navigation.css	.desene-nav	.desene-nav	desene-nav		drop-rule
+src/css/main/03-navigation.css	.desene-nav:hover	.desene-nav:hover	desene-nav		drop-rule
+src/css/main/04-sidebar-layout.css	.hot-title-name	.hot-title-name	hot-title-name		drop-rule
+src/css/main/05-sidebar-effects.css	.hot-news-content .anime-wrap, .hot-news-content .manga-wrap, .hot-news-content .desene-wrap, .hot-news-content .anime-tt-clasa, .hot-news-content .manga-tt-clasa, .hot-news-content .desene-tt-clasa, .hot-news-content .desene-controls, .hot-news-content .hot-title-name	.hot-news-content .desene-tt-clasa	desene-tt-clasa		drop-branch
+src/css/main/05-sidebar-effects.css	.hot-news-content .anime-wrap, .hot-news-content .manga-wrap, .hot-news-content .desene-wrap, .hot-news-content .anime-tt-clasa, .hot-news-content .manga-tt-clasa, .hot-news-content .desene-tt-clasa, .hot-news-content .desene-controls, .hot-news-content .hot-title-name	.hot-news-content .hot-title-name	hot-title-name		drop-branch
+src/css/main/09-top-suggestions.css	:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-ep-current .popup-ep-label	:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-ep-current .popup-ep-label	popup-ep-current		drop-rule
+src/css/main/09-top-suggestions.css	:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-ep-current .popup-ep-value	:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-ep-current .popup-ep-value	popup-ep-current		drop-rule
+src/css/main/09-top-suggestions.css	:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-ep-total	:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-ep-total	popup-ep-total		drop-rule
+src/css/main/09-top-suggestions.css	:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-ep-total .popup-ep-label, :is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-ep-total .popup-ep-value	:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-ep-total .popup-ep-label	popup-ep-total		drop-rule
+src/css/main/09-top-suggestions.css	:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-ep-total .popup-ep-label, :is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-ep-total .popup-ep-value	:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-ep-total .popup-ep-value	popup-ep-total		drop-rule
+src/css/main/09-top-suggestions.css	:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-buttons	:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-buttons	popup-buttons		drop-rule
+src/css/main/09-top-suggestions.css	:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-ep-current .popup-ep-value	:is(.anime-wrap, .manga-wrap, .desene-wrap) .av-series-popup .popup-ep-current .popup-ep-value	popup-ep-current		drop-rule

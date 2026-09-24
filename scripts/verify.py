@@ -1,0 +1,67 @@
+#!/usr/bin/env python3
+from pathlib import Path
+import subprocess, sys
+root=Path(__file__).resolve().parents[1]
+commands=[
+    [sys.executable,str(root/'scripts/build.py'),'--check'],
+    [sys.executable,str(root/'tests/site_checks.py'),'--root',str(root/'site')],
+    [sys.executable,str(root/'tests/security_checks.py'),str(root/'site')],
+    [sys.executable,str(root/'tests/assets_checks.py'),str(root/'site')],
+    [sys.executable,str(root/'tests/accessibility_checks.py'),str(root/'site')],
+    [sys.executable,str(root/'tests/native_filter_controls_checks.py')],
+    [sys.executable,str(root/'tests/skip_link_checks.py')],
+    [sys.executable,str(root/'tests/cross_browser_gate_checks.py')],
+    [sys.executable,str(root/'tests/performance_checks.py'),str(root/'site')],
+    [sys.executable,str(root/'tests/performance_budget_checks.py')],
+    [sys.executable,str(root/'tests/source_checks.py')],
+    [sys.executable,str(root/'tests/migration_checks.py')],
+    [sys.executable,str(root/'tests/refinement_checks.py')],
+    [sys.executable,str(root/'tests/css_duplicate_checks.py')],
+    [sys.executable,str(root/'tests/runtime_refinement_checks.py')],
+    [sys.executable,str(root/'tests/popup_manager_checks.py')],
+    [sys.executable,str(root/'tests/carousel_manager_checks.py')],
+    [sys.executable,str(root/'tests/upc_runtime_quality_checks.py')],
+    [sys.executable,str(root/'tests/swipe_manager_checks.py')],
+    [sys.executable,str(root/'tests/html_cleanliness_checks.py')],
+    [sys.executable,str(root/'tests/responsive_refinement_checks.py')],
+    [sys.executable,str(root/'tests/auto_motion_checks.py')],
+    [sys.executable,str(root/'tests/cache_version_checks.py')],
+    [sys.executable,str(root/'tests/heavy_asset_checks.py')],
+    [sys.executable,str(root/'tests/theme_token_checks.py')],
+    [sys.executable,str(root/'tests/token_centralization_checks.py')],
+    [sys.executable,str(root/'tests/transition_checks.py')],
+    [sys.executable,str(root/'tests/dead_code_checks.py')],
+    [sys.executable,str(root/'tests/chrono_scroll_checks.py')],
+    [sys.executable,str(root/'tests/schedule_scroll_stability_checks.py')],
+    [sys.executable,str(root/'tests/responsive_images_checks.py')],
+    [sys.executable,str(root/'tests/upc_popup_a11y_checks.py')],
+    [sys.executable,str(root/'tests/favorites_menu_a11y_checks.py')],
+    [sys.executable,str(root/'tests/ci_checks.py')],
+    [sys.executable,str(root/'tests/lighthouse_ci_checks.py')],
+    [sys.executable,str(root/'tests/banner_stability_checks.py')],
+    [sys.executable,str(root/'tests/entertainment_lazy_data_checks.py')],
+    [sys.executable,str(root/'tests/header_startup_performance_checks.py')],
+    [sys.executable,str(root/'tests/mobile_trending_performance_checks.py')],
+    [sys.executable,str(root/'tests/news_text_performance_checks.py')],
+    [sys.executable,str(root/'tests/news_title_performance_checks.py')],
+    [sys.executable,str(root/'tests/schedule_startup_performance_checks.py')],
+    [sys.executable,str(root/'tests/profile_legacy_cleanup_checks.py')],
+    [sys.executable,str(root/'tests/startup_motion_budget_checks.py')],
+    [sys.executable,str(root/'tests/comments_motion_budget_checks.py')],
+    [sys.executable,str(root/'tests/chrono_performance_checks.py')],
+    [sys.executable,str(root/'tests/main_mobile_performance_checks.py')],
+    [sys.executable,str(root/'tests/top_motion_lifecycle_checks.py')],
+    [sys.executable,str(root/'tests/mobile_compositing_budget_checks.py')],
+    [sys.executable,str(root/'scripts/code_quality.py')],
+    ['node',str(root/'tests/manager_behavior_checks.js')],
+    ['node',str(root/'tests/perf_helper_checks.js')],
+    ['node',str(root/'tests/news_reaction_checks.js')],
+    [sys.executable,str(root/'scripts/validate_files.py'),str(root/'site'),str(root/'audit/validation-final.tsv')],
+    [sys.executable,str(root/'scripts/browser_smoke.py'),'--site',str(root/'site'),'--report',str(root/'audit/browser-smoke.json')],
+]
+for command in commands:
+    print('>', ' '.join(command))
+    result=subprocess.run(command)
+    if result.returncode:
+        raise SystemExit(result.returncode)
+print('ALL CHECKS PASS')

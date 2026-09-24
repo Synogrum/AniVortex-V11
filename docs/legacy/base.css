@@ -1,0 +1,217 @@
+/* ============================================
+   BASE.CSS – Font definitions for Project-Anivortex
+   Paths assume this file is in /assets/css/
+   Fonts are located in /assets/fonts/
+   ============================================ */
+
+/* -------------------- IMPORTANTE -------------------- */
+/* Inter */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/importante/Inter/Inter-Regular.woff2') format('woff2'),
+       url('../fonts/importante/Inter/Inter-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/importante/Inter/Inter-Bold.woff2') format('woff2'),
+       url('../fonts/importante/Inter/Inter-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* Manrope */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/importante/Manrope/Manrope-Regular.woff2') format('woff2'),
+       url('../fonts/importante/Manrope/Manrope-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/importante/Manrope/Manrope-Bold.woff2') format('woff2'),
+       url('../fonts/importante/Manrope/Manrope-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* Outfit */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/importante/Outfit/Outfit-Regular.woff2') format('woff2'),
+       url('../fonts/importante/Outfit/Outfit-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/importante/Outfit/Outfit-Bold.woff2') format('woff2'),
+       url('../fonts/importante/Outfit/Outfit-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* Poppins */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/importante/Poppins/Poppins-Regular.woff2') format('woff2'),
+       url('../fonts/importante/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/importante/Poppins/Poppins-Bold.woff2') format('woff2'),
+       url('../fonts/importante/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* -------------------- UZUALE -------------------- */
+/* Bebas Neue */
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/uzuale/Bebas_Neue/BebasNeue-Regular.woff2') format('woff2'),
+       url('../fonts/uzuale/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* Cinzel */
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/uzuale/Cinzel/Cinzel-Regular.woff2') format('woff2'),
+       url('../fonts/uzuale/Cinzel/Cinzel-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/uzuale/Cinzel/Cinzel-Bold.woff2') format('woff2'),
+       url('../fonts/uzuale/Cinzel/Cinzel-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* Orbitron */
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/uzuale/Orbitron/Orbitron-Regular.woff2') format('woff2'),
+       url('../fonts/uzuale/Orbitron/Orbitron-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/uzuale/Orbitron/Orbitron-Bold.woff2') format('woff2'),
+       url('../fonts/uzuale/Orbitron/Orbitron-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* Rajdhani */
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/uzuale/Rajdhani/Rajdhani-Regular.woff2') format('woff2'),
+       url('../fonts/uzuale/Rajdhani/Rajdhani-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/uzuale/Rajdhani/Rajdhani-Bold.woff2') format('woff2'),
+       url('../fonts/uzuale/Rajdhani/Rajdhani-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* -------------------- NEIMPORTANTE -------------------- */
+/* Audiowide */
+@font-face {
+  font-family: 'Audiowide';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/neimportante/Audiowide/Audiowide-Regular.woff2') format('woff2'),
+       url('../fonts/neimportante/Audiowide/Audiowide-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* Cormorant Garamond */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/neimportante/Cormorant_Garamond/CormorantGaramond-Regular.woff2') format('woff2'),
+       url('../fonts/neimportante/Cormorant_Garamond/CormorantGaramond-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/neimportante/Cormorant_Garamond/CormorantGaramond-Bold.woff2') format('woff2'),
+       url('../fonts/neimportante/Cormorant_Garamond/CormorantGaramond-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* Marcellus */
+@font-face {
+  font-family: 'Marcellus';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/neimportante/Marcellus/Marcellus-Regular.woff2') format('woff2'),
+       url('../fonts/neimportante/Marcellus/Marcellus-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* Plus Jakarta Sans */
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/neimportante/Plus_Jakarta_Sans/PlusJakartaSans-Regular.woff2') format('woff2'),
+       url('../fonts/neimportante/Plus_Jakarta_Sans/PlusJakartaSans-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/neimportante/Plus_Jakarta_Sans/PlusJakartaSans-Bold.woff2') format('woff2'),
+       url('../fonts/neimportante/Plus_Jakarta_Sans/PlusJakartaSans-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* --- SETĂRI GLOBALE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0e0e0e;
+    color: #ffffff;
+}
+
+h1, h2, h3 {
+    font-family: 'Outfit', sans-serif;
+}

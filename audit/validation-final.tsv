@@ -1,0 +1,413 @@
+path	ext	status	detail	bytes
+.nojekyll		OK	binary/text readable	0
+404.html	.html	OK	HTML parsed	559
+CNAME		OK	binary/text readable	17
+assets/css/UPC.css	.css	OK	CSS parsed	36016
+assets/css/banner.css	.css	OK	CSS parsed	49245
+assets/css/body.css	.css	OK	CSS parsed	4305
+assets/css/chrono.css	.css	OK	CSS parsed	19290
+assets/css/com.css	.css	OK	CSS parsed	74313
+assets/css/footer.css	.css	OK	CSS parsed	30315
+assets/css/hardening.css	.css	OK	CSS parsed	8698
+assets/css/header.css	.css	OK	CSS parsed	23913
+assets/css/hot-news-new.css	.css	OK	CSS parsed	16223
+assets/css/main.css	.css	OK	CSS parsed	276523
+assets/css/tokens.css	.css	OK	CSS parsed	2116
+assets/css/trending.css	.css	OK	CSS parsed	80077
+assets/js/UPC.js	.js	OK	JS syntax OK	26506
+assets/js/banner.js	.js	OK	JS syntax OK	2932
+assets/js/carousel-manager.js	.js	OK	JS syntax OK	5662
+assets/js/chrono.js	.js	OK	JS syntax OK	9761
+assets/js/com.js	.js	OK	JS syntax OK	16961
+assets/js/entertainment-data.js	.js	OK	JS syntax OK	24904
+assets/js/footer.js	.js	OK	JS syntax OK	8211
+assets/js/hardening.js	.js	OK	JS syntax OK	1909
+assets/js/header.js	.js	OK	JS syntax OK	6141
+assets/js/hot-news-data.js	.js	OK	JS syntax OK	31394
+assets/js/hot-news-new.js	.js	OK	JS syntax OK	9183
+assets/js/main.js	.js	OK	JS syntax OK	91659
+assets/js/perf.js	.js	OK	JS syntax OK	3599
+assets/js/popup-manager.js	.js	OK	JS syntax OK	5340
+assets/js/trending.js	.js	OK	JS syntax OK	53566
+index.html	.html	OK	HTML parsed	181174
+public/icons/Share/Rimuru slime.webp	.webp	OK	image verified WEBP	25262
+public/icons/avatar/Anne-v1.1.webp	.webp	OK	image verified WEBP	38472
+public/icons/avatar/anne.webp	.webp	OK	image verified WEBP	409210
+public/icons/comm/dislike.svg	.svg	OK	SVG/XML parsed	2052
+public/icons/comm/link.svg	.svg	OK	SVG/XML parsed	2047
+public/icons/comm/love.svg	.svg	OK	SVG/XML parsed	961
+public/icons/donatii/coffee-cup.webp	.webp	OK	image verified WEBP	8612
+public/icons/donatii/paypal.png	.png	OK	image verified PNG	19755
+public/icons/donatii/revolut.webp	.webp	OK	image verified WEBP	628
+public/icons/faction/coin.svg	.svg	OK	SVG/XML parsed	1522
+public/icons/faction/favorites.svg	.svg	OK	SVG/XML parsed	71602
+public/icons/faction/series.svg	.svg	OK	SVG/XML parsed	7273
+public/icons/icon detalii/4k.png	.png	OK	image verified PNG	454
+public/icons/icon detalii/chapter.png	.png	OK	image verified PNG	588
+public/icons/icon detalii/fhd.png	.png	OK	image verified PNG	427
+public/icons/icon detalii/hd.png	.png	OK	image verified PNG	424
+public/icons/icon detalii/schedule.png	.png	OK	image verified PNG	781
+public/icons/icon detalii/sd.png	.png	OK	image verified PNG	560
+public/icons/icon detalii/smart-tv.png	.png	OK	image verified PNG	348
+public/icons/icon detalii/time-left.png	.png	OK	image verified PNG	669
+public/icons/info icon/info.png	.png	OK	image verified PNG	7391
+public/icons/logo anime/bleach.webp	.webp	OK	image verified WEBP	195280
+public/icons/logo anime/d.gray-man.webp	.webp	OK	image verified WEBP	71992
+public/icons/logo anime/dragon ball.webp	.webp	OK	image verified WEBP	41136
+public/icons/logo anime/fairy tail.webp	.webp	OK	image verified WEBP	42992
+public/icons/logo anime/gintama.webp	.webp	OK	image verified WEBP	98282
+public/icons/logo anime/hajime no ippo.webp	.webp	OK	image verified WEBP	87960
+public/icons/logo anime/hxh.webp	.webp	OK	image verified WEBP	75086
+public/icons/logo anime/inuyasha.webp	.webp	OK	image verified WEBP	44920
+public/icons/logo anime/naruto.webp	.webp	OK	image verified WEBP	157916
+public/icons/logo anime/one piece.webp	.webp	OK	image verified WEBP	126996
+public/icons/logo site/anivortex.webp	.webp	OK	image verified WEBP	94044
+public/icons/media/discord.webp	.webp	OK	image verified WEBP	20052
+public/icons/media/facebook.webp	.webp	OK	image verified WEBP	15906
+public/icons/media/instagram.webp	.webp	OK	image verified WEBP	27030
+public/icons/media/tik-tok.webp	.webp	OK	image verified WEBP	13012
+public/icons/media/twitter.webp	.webp	OK	image verified WEBP	10814
+public/icons/media/youtube.png	.png	OK	image verified PNG	15464
+public/icons/notification/bell-icon.svg	.svg	OK	SVG/XML parsed	468
+public/icons/notification/eye.webp	.webp	OK	image verified WEBP	47950
+public/icons/search icon/search.webp	.webp	OK	image verified WEBP	19492
+public/icons/share icon/facebook.webp	.webp	OK	image verified WEBP	13346
+public/icons/share icon/instagram.png	.png	OK	image verified PNG	16180
+public/icons/share icon/messenger.webp	.webp	OK	image verified WEBP	116506
+public/icons/share icon/tik-tok.webp	.webp	OK	image verified WEBP	20836
+public/icons/share icon/twitter.webp	.webp	OK	image verified WEBP	10814
+public/icons/share icon/whatsapp.webp	.webp	OK	image verified WEBP	26468
+public/icons/social-media/discord.webp	.webp	OK	image verified WEBP	21224
+public/icons/social-media/facebook.webp	.webp	OK	image verified WEBP	15906
+public/icons/social-media/instagram.webp	.webp	OK	image verified WEBP	22392
+public/icons/social-media/tiktok.webp	.webp	OK	image verified WEBP	9374
+public/icons/social-media/x.webp	.webp	OK	image verified WEBP	706
+public/icons/social-media/youtube.png	.png	OK	image verified PNG	13626
+public/icons/user profil/user.png	.png	OK	image verified PNG	664
+public/icons/x/Aka.webp	.webp	OK	image verified WEBP	304672
+public/icons/x/AniVortex txt.webp	.webp	OK	image verified WEBP	99860
+public/icons/x/ChatGPT Image Mar 28, 2026, 08_22_05 AM.webp	.webp	OK	image verified WEBP	180950
+public/icons/x/ChatGPT Image Mar 28, 2026, 10_22_00 AM.webp	.webp	OK	image verified WEBP	233574
+public/icons/x/ChatGPT Image Mar 28, 2026, 10_41_45 AM.webp	.webp	OK	image verified WEBP	99820
+public/icons/x/ChatGPT Image Mar 28, 2026, 11_23_59 AM.webp	.webp	OK	image verified WEBP	188520
+public/icons/x/ChatGPT_Image_Mar_28__2026__11_29_28_AM-removebg-preview.webp	.webp	OK	image verified WEBP	40876
+public/icons/x/Gemini_Generated_Image_ek37qyek37qyek37-removebg-preview.webp	.webp	OK	image verified WEBP	72156
+public/icons/x/Logo-txt.webp	.webp	OK	image verified WEBP	258874
+public/icons/x/Logo.webp	.webp	OK	image verified WEBP	200246
+public/icons/x/ff.webp	.webp	OK	image verified WEBP	282974
+public/icons/x/gg.webp	.webp	OK	image verified WEBP	315430
+public/icons/x/image_1774687287942-removebg-preview.webp	.webp	OK	image verified WEBP	6820
+public/icons/x/kk.webp	.webp	OK	image verified WEBP	338170
+public/icons/x/kl.webp	.webp	OK	image verified WEBP	305650
+public/icons/x/logo-traced.svg	.svg	OK	SVG/XML parsed	8610
+public/icons/x/op.webp	.webp	OK	image verified WEBP	294002
+public/icons/x/pp.webp	.webp	OK	image verified WEBP	275676
+public/icons/x/x.webp	.webp	OK	image verified WEBP	114428
+public/imgs/banner/bleach.webp	.webp	OK	image verified WEBP	166562
+public/imgs/banner/d.gray man.webp	.webp	OK	image verified WEBP	150912
+public/imgs/banner/dragon ball.webp	.webp	OK	image verified WEBP	244262
+public/imgs/banner/fairy tail.webp	.webp	OK	image verified WEBP	223798
+public/imgs/banner/gintama.webp	.webp	OK	image verified WEBP	194656
+public/imgs/banner/hajime no ippo.webp	.webp	OK	image verified WEBP	172284
+public/imgs/banner/hxh.webp	.webp	OK	image verified WEBP	193760
+public/imgs/banner/inuyasha.webp	.webp	OK	image verified WEBP	204702
+public/imgs/banner/naruto.webp	.webp	OK	image verified WEBP	215870
+public/imgs/banner/one piece.webp	.webp	OK	image verified WEBP	239486
+public/imgs/banner/responsive/bleach-600.webp	.webp	OK	image verified WEBP	36518
+public/imgs/banner/responsive/bleach-900.webp	.webp	OK	image verified WEBP	67894
+public/imgs/banner/responsive/d.gray man-600.webp	.webp	OK	image verified WEBP	26132
+public/imgs/banner/responsive/d.gray man-900.webp	.webp	OK	image verified WEBP	48670
+public/imgs/banner/responsive/dragon ball-600.webp	.webp	OK	image verified WEBP	62974
+public/imgs/banner/responsive/dragon ball-900.webp	.webp	OK	image verified WEBP	109860
+public/imgs/banner/responsive/fairy tail-600.webp	.webp	OK	image verified WEBP	54140
+public/imgs/banner/responsive/fairy tail-900.webp	.webp	OK	image verified WEBP	97372
+public/imgs/banner/responsive/gintama-600.webp	.webp	OK	image verified WEBP	46706
+public/imgs/banner/responsive/gintama-900.webp	.webp	OK	image verified WEBP	83106
+public/imgs/banner/responsive/hajime no ippo-600.webp	.webp	OK	image verified WEBP	41330
+public/imgs/banner/responsive/hajime no ippo-900.webp	.webp	OK	image verified WEBP	69450
+public/imgs/banner/responsive/hxh-600.webp	.webp	OK	image verified WEBP	48342
+public/imgs/banner/responsive/hxh-900.webp	.webp	OK	image verified WEBP	86078
+public/imgs/banner/responsive/inuyasha-600.webp	.webp	OK	image verified WEBP	51108
+public/imgs/banner/responsive/inuyasha-900.webp	.webp	OK	image verified WEBP	87012
+public/imgs/banner/responsive/naruto-600.webp	.webp	OK	image verified WEBP	50448
+public/imgs/banner/responsive/naruto-900.webp	.webp	OK	image verified WEBP	84400
+public/imgs/banner/responsive/one piece-600.webp	.webp	OK	image verified WEBP	65976
+public/imgs/banner/responsive/one piece-900.webp	.webp	OK	image verified WEBP	119394
+public/imgs/card/1.jpg	.jpg	OK	image verified JPEG	40432
+public/imgs/card/10.jpg	.jpg	OK	image verified JPEG	33241
+public/imgs/card/11.jpg	.jpg	OK	image verified JPEG	42488
+public/imgs/card/12.jpg	.jpg	OK	image verified JPEG	28496
+public/imgs/card/13.jpg	.jpg	OK	image verified JPEG	38197
+public/imgs/card/14.jpg	.jpg	OK	image verified JPEG	34623
+public/imgs/card/15.jpg	.jpg	OK	image verified JPEG	38875
+public/imgs/card/16.jpg	.jpg	OK	image verified JPEG	35191
+public/imgs/card/2.jpg	.jpg	OK	image verified JPEG	30720
+public/imgs/card/3.webp	.webp	OK	image verified WEBP	18374
+public/imgs/card/4.jpg	.jpg	OK	image verified JPEG	39721
+public/imgs/card/5.jpg	.jpg	OK	image verified JPEG	38591
+public/imgs/card/6.jpg	.jpg	OK	image verified JPEG	32351
+public/imgs/card/7.jpg	.jpg	OK	image verified JPEG	30598
+public/imgs/card/8.jpg	.jpg	OK	image verified JPEG	34157
+public/imgs/card/9.jpg	.jpg	OK	image verified JPEG	37754
+public/imgs/chronologi/Kirara.webp	.webp	OK	image verified WEBP	32906
+public/imgs/chronologi/Menchi.webp	.webp	OK	image verified WEBP	22546
+public/imgs/comm/Rimuru..webp	.webp	OK	image verified WEBP	29198
+public/imgs/cufar/close.webp	.webp	OK	image verified WEBP	209822
+public/imgs/cufar/dragcoin.webp	.webp	OK	image verified WEBP	296758
+public/imgs/cufar/open.webp	.webp	OK	image verified WEBP	395682
+public/imgs/footer/cires.webp	.webp	OK	image verified WEBP	10280
+public/imgs/footer/personaj yaoi/1.webp	.webp	OK	image verified WEBP	169592
+public/imgs/serii favorite/Carti/1.jpg	.jpg	OK	image verified JPEG	140931
+public/imgs/serii favorite/Carti/10.jpg	.jpg	OK	image verified JPEG	21283
+public/imgs/serii favorite/Carti/11.jpg	.jpg	OK	image verified JPEG	25145
+public/imgs/serii favorite/Carti/12.jpg	.jpg	OK	image verified JPEG	23719
+public/imgs/serii favorite/Carti/13.jpg	.jpg	OK	image verified JPEG	25082
+public/imgs/serii favorite/Carti/14.jpg	.jpg	OK	image verified JPEG	23785
+public/imgs/serii favorite/Carti/15.jpg	.jpg	OK	image verified JPEG	32868
+public/imgs/serii favorite/Carti/16.jpg	.jpg	OK	image verified JPEG	28986
+public/imgs/serii favorite/Carti/17.jpg	.jpg	OK	image verified JPEG	51051
+public/imgs/serii favorite/Carti/18.jpg	.jpg	OK	image verified JPEG	32888
+public/imgs/serii favorite/Carti/19.jpg	.jpg	OK	image verified JPEG	34568
+public/imgs/serii favorite/Carti/2.jpg	.jpg	OK	image verified JPEG	60949
+public/imgs/serii favorite/Carti/20.jpg	.jpg	OK	image verified JPEG	25760
+public/imgs/serii favorite/Carti/21.jpg	.jpg	OK	image verified JPEG	29849
+public/imgs/serii favorite/Carti/22.jpg	.jpg	OK	image verified JPEG	26232
+public/imgs/serii favorite/Carti/23.jpg	.jpg	OK	image verified JPEG	34145
+public/imgs/serii favorite/Carti/24.jpg	.jpg	OK	image verified JPEG	41278
+public/imgs/serii favorite/Carti/25.jpg	.jpg	OK	image verified JPEG	22836
+public/imgs/serii favorite/Carti/26.jpg	.jpg	OK	image verified JPEG	32723
+public/imgs/serii favorite/Carti/27.jpg	.jpg	OK	image verified JPEG	35746
+public/imgs/serii favorite/Carti/28.jpg	.jpg	OK	image verified JPEG	29010
+public/imgs/serii favorite/Carti/29.jpg	.jpg	OK	image verified JPEG	29478
+public/imgs/serii favorite/Carti/3.jpg	.jpg	OK	image verified JPEG	72782
+public/imgs/serii favorite/Carti/30.jpg	.jpg	OK	image verified JPEG	30461
+public/imgs/serii favorite/Carti/4.webp	.webp	OK	image verified WEBP	56648
+public/imgs/serii favorite/Carti/5.jpg	.jpg	OK	image verified JPEG	29490
+public/imgs/serii favorite/Carti/6.jpg	.jpg	OK	image verified JPEG	27062
+public/imgs/serii favorite/Carti/7.jpg	.jpg	OK	image verified JPEG	32194
+public/imgs/serii favorite/Carti/8.jpg	.jpg	OK	image verified JPEG	35833
+public/imgs/serii favorite/Carti/9.jpg	.jpg	OK	image verified JPEG	41480
+public/imgs/serii favorite/Desene/1.1.jpg	.jpg	OK	image verified JPEG	18911
+public/imgs/serii favorite/Desene/1.10.jpg	.jpg	OK	image verified JPEG	24216
+public/imgs/serii favorite/Desene/1.11.jpg	.jpg	OK	image verified JPEG	24926
+public/imgs/serii favorite/Desene/1.12.jpg	.jpg	OK	image verified JPEG	32267
+public/imgs/serii favorite/Desene/1.13.jpg	.jpg	OK	image verified JPEG	27413
+public/imgs/serii favorite/Desene/1.14.jpg	.jpg	OK	image verified JPEG	36212
+public/imgs/serii favorite/Desene/1.15.jpg	.jpg	OK	image verified JPEG	30961
+public/imgs/serii favorite/Desene/1.16.jpg	.jpg	OK	image verified JPEG	25487
+public/imgs/serii favorite/Desene/1.17.jpg	.jpg	OK	image verified JPEG	21444
+public/imgs/serii favorite/Desene/1.18.jpg	.jpg	OK	image verified JPEG	20298
+public/imgs/serii favorite/Desene/1.19.jpg	.jpg	OK	image verified JPEG	14749
+public/imgs/serii favorite/Desene/1.2.jpg	.jpg	OK	image verified JPEG	28003
+public/imgs/serii favorite/Desene/1.20.jpg	.jpg	OK	image verified JPEG	23405
+public/imgs/serii favorite/Desene/1.21.jpg	.jpg	OK	image verified JPEG	17309
+public/imgs/serii favorite/Desene/1.22.jpg	.jpg	OK	image verified JPEG	26002
+public/imgs/serii favorite/Desene/1.23.jpg	.jpg	OK	image verified JPEG	20416
+public/imgs/serii favorite/Desene/1.24.jpg	.jpg	OK	image verified JPEG	18076
+public/imgs/serii favorite/Desene/1.25.jpg	.jpg	OK	image verified JPEG	21122
+public/imgs/serii favorite/Desene/1.26.jpg	.jpg	OK	image verified JPEG	30990
+public/imgs/serii favorite/Desene/1.27.webp	.webp	OK	image verified WEBP	22638
+public/imgs/serii favorite/Desene/1.28.jpg	.jpg	OK	image verified JPEG	23442
+public/imgs/serii favorite/Desene/1.29.jpg	.jpg	OK	image verified JPEG	26237
+public/imgs/serii favorite/Desene/1.3.jpg	.jpg	OK	image verified JPEG	21174
+public/imgs/serii favorite/Desene/1.30.jpg	.jpg	OK	image verified JPEG	19331
+public/imgs/serii favorite/Desene/1.4.jpg	.jpg	OK	image verified JPEG	32498
+public/imgs/serii favorite/Desene/1.5.jpg	.jpg	OK	image verified JPEG	21219
+public/imgs/serii favorite/Desene/1.6.jpg	.jpg	OK	image verified JPEG	28773
+public/imgs/serii favorite/Desene/1.7.jpg	.jpg	OK	image verified JPEG	31343
+public/imgs/serii favorite/Desene/1.8.jpg	.jpg	OK	image verified JPEG	31195
+public/imgs/serii favorite/Desene/1.9.jpg	.jpg	OK	image verified JPEG	33242
+public/imgs/serii favorite/Filme - Seriale/1.jpg	.jpg	OK	image verified JPEG	18629
+public/imgs/serii favorite/Filme - Seriale/10.jpg	.jpg	OK	image verified JPEG	21289
+public/imgs/serii favorite/Filme - Seriale/11.jpg	.jpg	OK	image verified JPEG	22895
+public/imgs/serii favorite/Filme - Seriale/12.jpg	.jpg	OK	image verified JPEG	13064
+public/imgs/serii favorite/Filme - Seriale/13.jpg	.jpg	OK	image verified JPEG	13435
+public/imgs/serii favorite/Filme - Seriale/14.jpg	.jpg	OK	image verified JPEG	28298
+public/imgs/serii favorite/Filme - Seriale/15.jpg	.jpg	OK	image verified JPEG	23588
+public/imgs/serii favorite/Filme - Seriale/16.jpg	.jpg	OK	image verified JPEG	22006
+public/imgs/serii favorite/Filme - Seriale/17.jpg	.jpg	OK	image verified JPEG	35206
+public/imgs/serii favorite/Filme - Seriale/18.jpg	.jpg	OK	image verified JPEG	25415
+public/imgs/serii favorite/Filme - Seriale/19.jpg	.jpg	OK	image verified JPEG	29428
+public/imgs/serii favorite/Filme - Seriale/2.jpg	.jpg	OK	image verified JPEG	23399
+public/imgs/serii favorite/Filme - Seriale/20.jpg	.jpg	OK	image verified JPEG	19019
+public/imgs/serii favorite/Filme - Seriale/21.jpg	.jpg	OK	image verified JPEG	25653
+public/imgs/serii favorite/Filme - Seriale/22.jpg	.jpg	OK	image verified JPEG	22697
+public/imgs/serii favorite/Filme - Seriale/23.jpg	.jpg	OK	image verified JPEG	27128
+public/imgs/serii favorite/Filme - Seriale/24.jpg	.jpg	OK	image verified JPEG	23941
+public/imgs/serii favorite/Filme - Seriale/25.jpg	.jpg	OK	image verified JPEG	28054
+public/imgs/serii favorite/Filme - Seriale/26.jpg	.jpg	OK	image verified JPEG	29698
+public/imgs/serii favorite/Filme - Seriale/27.jpg	.jpg	OK	image verified JPEG	26323
+public/imgs/serii favorite/Filme - Seriale/28.jpg	.jpg	OK	image verified JPEG	21206
+public/imgs/serii favorite/Filme - Seriale/29.jpg	.jpg	OK	image verified JPEG	18906
+public/imgs/serii favorite/Filme - Seriale/3.jpg	.jpg	OK	image verified JPEG	16878
+public/imgs/serii favorite/Filme - Seriale/30.jpg	.jpg	OK	image verified JPEG	24735
+public/imgs/serii favorite/Filme - Seriale/4.jpg	.jpg	OK	image verified JPEG	22773
+public/imgs/serii favorite/Filme - Seriale/5.jpg	.jpg	OK	image verified JPEG	18156
+public/imgs/serii favorite/Filme - Seriale/6.jpg	.jpg	OK	image verified JPEG	16316
+public/imgs/serii favorite/Filme - Seriale/7.jpg	.jpg	OK	image verified JPEG	18914
+public/imgs/serii favorite/Filme - Seriale/8.jpg	.jpg	OK	image verified JPEG	22732
+public/imgs/serii favorite/Filme - Seriale/9.jpg	.jpg	OK	image verified JPEG	20544
+public/imgs/serii favorite/Live action/1.jpg	.jpg	OK	image verified JPEG	15700
+public/imgs/serii favorite/Live action/10.jpg	.jpg	OK	image verified JPEG	20152
+public/imgs/serii favorite/Live action/11.jpg	.jpg	OK	image verified JPEG	14259
+public/imgs/serii favorite/Live action/12.jpg	.jpg	OK	image verified JPEG	22702
+public/imgs/serii favorite/Live action/13.jpg	.jpg	OK	image verified JPEG	20948
+public/imgs/serii favorite/Live action/14.jpg	.jpg	OK	image verified JPEG	18177
+public/imgs/serii favorite/Live action/15.jpg	.jpg	OK	image verified JPEG	16255
+public/imgs/serii favorite/Live action/16.jpg	.jpg	OK	image verified JPEG	12483
+public/imgs/serii favorite/Live action/17.jpg	.jpg	OK	image verified JPEG	13888
+public/imgs/serii favorite/Live action/18.jpg	.jpg	OK	image verified JPEG	26315
+public/imgs/serii favorite/Live action/19.jpg	.jpg	OK	image verified JPEG	17996
+public/imgs/serii favorite/Live action/2.jpg	.jpg	OK	image verified JPEG	15014
+public/imgs/serii favorite/Live action/20.jpg	.jpg	OK	image verified JPEG	11958
+public/imgs/serii favorite/Live action/21.jpg	.jpg	OK	image verified JPEG	17269
+public/imgs/serii favorite/Live action/22.jpg	.jpg	OK	image verified JPEG	34252
+public/imgs/serii favorite/Live action/23.jpg	.jpg	OK	image verified JPEG	21465
+public/imgs/serii favorite/Live action/24.jpg	.jpg	OK	image verified JPEG	18725
+public/imgs/serii favorite/Live action/25.jpg	.jpg	OK	image verified JPEG	18725
+public/imgs/serii favorite/Live action/26.jpg	.jpg	OK	image verified JPEG	19821
+public/imgs/serii favorite/Live action/27.jpg	.jpg	OK	image verified JPEG	13983
+public/imgs/serii favorite/Live action/28.jpg	.jpg	OK	image verified JPEG	21093
+public/imgs/serii favorite/Live action/29.jpg	.jpg	OK	image verified JPEG	22358
+public/imgs/serii favorite/Live action/3.jpg	.jpg	OK	image verified JPEG	14915
+public/imgs/serii favorite/Live action/30.jpg	.jpg	OK	image verified JPEG	14217
+public/imgs/serii favorite/Live action/4.jpg	.jpg	OK	image verified JPEG	13510
+public/imgs/serii favorite/Live action/5.jpg	.jpg	OK	image verified JPEG	25326
+public/imgs/serii favorite/Live action/6.jpg	.jpg	OK	image verified JPEG	19537
+public/imgs/serii favorite/Live action/7.jpg	.jpg	OK	image verified JPEG	13885
+public/imgs/serii favorite/Live action/8.jpg	.jpg	OK	image verified JPEG	11848
+public/imgs/serii favorite/Live action/9.jpg	.jpg	OK	image verified JPEG	20717
+public/imgs/serii favorite/icon ep/cc 1.1.webp	.webp	OK	image verified WEBP	11916
+public/imgs/serii favorite/icon ep/cc.webp	.webp	OK	image verified WEBP	2132
+public/imgs/serii favorite/icon ep/eye 1.1.webp	.webp	OK	image verified WEBP	12230
+public/imgs/serii favorite/icon ep/eye.webp	.webp	OK	image verified WEBP	11946
+public/imgs/serii favorite/icon ep/fire.webp	.webp	OK	image verified WEBP	15578
+public/imgs/serii favorite/icon ep/microfon 1.1.webp	.webp	OK	image verified WEBP	12496
+public/imgs/serii favorite/icon ep/microphone.webp	.webp	OK	image verified WEBP	9412
+public/imgs/serii favorite/icon pop/Anime end.webp	.webp	OK	image verified WEBP	4646
+public/imgs/serii favorite/icon pop/chapter.webp	.webp	OK	image verified WEBP	4284
+public/imgs/serii favorite/numar 1-10/1.webp	.webp	OK	image verified WEBP	134602
+public/imgs/serii favorite/numar 1-10/10.webp	.webp	OK	image verified WEBP	128450
+public/imgs/serii favorite/numar 1-10/2.webp	.webp	OK	image verified WEBP	111064
+public/imgs/serii favorite/numar 1-10/3.webp	.webp	OK	image verified WEBP	176136
+public/imgs/serii favorite/numar 1-10/4.webp	.webp	OK	image verified WEBP	122458
+public/imgs/serii favorite/numar 1-10/5.webp	.webp	OK	image verified WEBP	149418
+public/imgs/serii favorite/numar 1-10/6.webp	.webp	OK	image verified WEBP	17686
+public/imgs/serii favorite/numar 1-10/7.webp	.webp	OK	image verified WEBP	132916
+public/imgs/serii favorite/numar 1-10/8.webp	.webp	OK	image verified WEBP	148450
+public/imgs/serii favorite/numar 1-10/9.webp	.webp	OK	image verified WEBP	147260
+public/imgs/serii favorite/numar 1-10/Class 1.webp	.webp	OK	image verified WEBP	117266
+public/imgs/serii favorite/numar 1-10/Class 10.webp	.webp	OK	image verified WEBP	122596
+public/imgs/serii favorite/numar 1-10/Class 2.webp	.webp	OK	image verified WEBP	136148
+public/imgs/serii favorite/numar 1-10/Class 3.webp	.webp	OK	image verified WEBP	139510
+public/imgs/serii favorite/numar 1-10/Class 4.webp	.webp	OK	image verified WEBP	111864
+public/imgs/serii favorite/numar 1-10/Class 5.webp	.webp	OK	image verified WEBP	131424
+public/imgs/serii favorite/numar 1-10/Class 6.webp	.webp	OK	image verified WEBP	138776
+public/imgs/serii favorite/numar 1-10/Class 7.webp	.webp	OK	image verified WEBP	118678
+public/imgs/serii favorite/numar 1-10/Class 8.webp	.webp	OK	image verified WEBP	143662
+public/imgs/serii favorite/numar 1-10/Class 9.webp	.webp	OK	image verified WEBP	138624
+public/imgs/serii favorite/poza manga/1v1.jpg	.jpg	OK	image verified JPEG	37863
+public/imgs/serii favorite/poza manga/1v10.jpg	.jpg	OK	image verified JPEG	45274
+public/imgs/serii favorite/poza manga/1v11.webp	.webp	OK	image verified WEBP	30318
+public/imgs/serii favorite/poza manga/1v12.jpg	.jpg	OK	image verified JPEG	32751
+public/imgs/serii favorite/poza manga/1v13.webp	.webp	OK	image verified WEBP	34326
+public/imgs/serii favorite/poza manga/1v14.jpg	.jpg	OK	image verified JPEG	35146
+public/imgs/serii favorite/poza manga/1v15.jpg	.jpg	OK	image verified JPEG	37952
+public/imgs/serii favorite/poza manga/1v16.jpg	.jpg	OK	image verified JPEG	50451
+public/imgs/serii favorite/poza manga/1v17.jpg	.jpg	OK	image verified JPEG	41977
+public/imgs/serii favorite/poza manga/1v18.jpg	.jpg	OK	image verified JPEG	36716
+public/imgs/serii favorite/poza manga/1v19.jpg	.jpg	OK	image verified JPEG	37837
+public/imgs/serii favorite/poza manga/1v2.webp	.webp	OK	image verified WEBP	29942
+public/imgs/serii favorite/poza manga/1v20.jpg	.jpg	OK	image verified JPEG	41056
+public/imgs/serii favorite/poza manga/1v21.jpg	.jpg	OK	image verified JPEG	41892
+public/imgs/serii favorite/poza manga/1v22.jpg	.jpg	OK	image verified JPEG	38148
+public/imgs/serii favorite/poza manga/1v23.jpg	.jpg	OK	image verified JPEG	35328
+public/imgs/serii favorite/poza manga/1v24.jpg	.jpg	OK	image verified JPEG	36014
+public/imgs/serii favorite/poza manga/1v25.jpg	.jpg	OK	image verified JPEG	38772
+public/imgs/serii favorite/poza manga/1v26.jpg	.jpg	OK	image verified JPEG	40556
+public/imgs/serii favorite/poza manga/1v27.webp	.webp	OK	image verified WEBP	33298
+public/imgs/serii favorite/poza manga/1v28.jpg	.jpg	OK	image verified JPEG	39337
+public/imgs/serii favorite/poza manga/1v29.jpg	.jpg	OK	image verified JPEG	37900
+public/imgs/serii favorite/poza manga/1v3.webp	.webp	OK	image verified WEBP	43244
+public/imgs/serii favorite/poza manga/1v30.jpg	.jpg	OK	image verified JPEG	38049
+public/imgs/serii favorite/poza manga/1v4.jpg	.jpg	OK	image verified JPEG	47341
+public/imgs/serii favorite/poza manga/1v5.webp	.webp	OK	image verified WEBP	40674
+public/imgs/serii favorite/poza manga/1v6.jpg	.jpg	OK	image verified JPEG	29941
+public/imgs/serii favorite/poza manga/1v7.jpg	.jpg	OK	image verified JPEG	39588
+public/imgs/serii favorite/poza manga/1v8.webp	.webp	OK	image verified WEBP	40386
+public/imgs/serii favorite/poza manga/1v9.jpg	.jpg	OK	image verified JPEG	45261
+public/imgs/serii favorite/poze anime/1.webp	.webp	OK	image verified WEBP	35186
+public/imgs/serii favorite/poze anime/10.webp	.webp	OK	image verified WEBP	21486
+public/imgs/serii favorite/poze anime/11.jpg	.jpg	OK	image verified JPEG	23008
+public/imgs/serii favorite/poze anime/12.jpg	.jpg	OK	image verified JPEG	38890
+public/imgs/serii favorite/poze anime/13.jpg	.jpg	OK	image verified JPEG	39364
+public/imgs/serii favorite/poze anime/14.jpg	.jpg	OK	image verified JPEG	40458
+public/imgs/serii favorite/poze anime/15.jpg	.jpg	OK	image verified JPEG	39610
+public/imgs/serii favorite/poze anime/16.jpg	.jpg	OK	image verified JPEG	32316
+public/imgs/serii favorite/poze anime/17.jpg	.jpg	OK	image verified JPEG	33435
+public/imgs/serii favorite/poze anime/18.jpg	.jpg	OK	image verified JPEG	35570
+public/imgs/serii favorite/poze anime/19.jpg	.jpg	OK	image verified JPEG	37524
+public/imgs/serii favorite/poze anime/2.webp	.webp	OK	image verified WEBP	38320
+public/imgs/serii favorite/poze anime/20.jpg	.jpg	OK	image verified JPEG	34310
+public/imgs/serii favorite/poze anime/21.jpg	.jpg	OK	image verified JPEG	38058
+public/imgs/serii favorite/poze anime/22.jpg	.jpg	OK	image verified JPEG	43366
+public/imgs/serii favorite/poze anime/23.jpg	.jpg	OK	image verified JPEG	38489
+public/imgs/serii favorite/poze anime/24.jpg	.jpg	OK	image verified JPEG	36230
+public/imgs/serii favorite/poze anime/25.jpg	.jpg	OK	image verified JPEG	36374
+public/imgs/serii favorite/poze anime/26.jpg	.jpg	OK	image verified JPEG	33841
+public/imgs/serii favorite/poze anime/27.jpg	.jpg	OK	image verified JPEG	34348
+public/imgs/serii favorite/poze anime/28.jpg	.jpg	OK	image verified JPEG	37550
+public/imgs/serii favorite/poze anime/29.jpg	.jpg	OK	image verified JPEG	28097
+public/imgs/serii favorite/poze anime/3.webp	.webp	OK	image verified WEBP	38270
+public/imgs/serii favorite/poze anime/30.jpg	.jpg	OK	image verified JPEG	37881
+public/imgs/serii favorite/poze anime/4.webp	.webp	OK	image verified WEBP	39732
+public/imgs/serii favorite/poze anime/5.webp	.webp	OK	image verified WEBP	42122
+public/imgs/serii favorite/poze anime/6.webp	.webp	OK	image verified WEBP	28328
+public/imgs/serii favorite/poze anime/7.webp	.webp	OK	image verified WEBP	35226
+public/imgs/serii favorite/poze anime/8.webp	.webp	OK	image verified WEBP	40426
+public/imgs/serii favorite/poze anime/9.webp	.webp	OK	image verified WEBP	23560
+public/imgs/serii favorite/style/watercolor-painted(1).webp	.webp	OK	image verified WEBP	16578
+public/imgs/serii favorite/style/watercolor-painted-1.webp	.webp	OK	image verified WEBP	19038
+public/imgs/serii favorite/style/watercolor-painted-2.webp	.webp	OK	image verified WEBP	64976
+public/imgs/serii favorite/style/watercolor-painted.webp	.webp	OK	image verified WEBP	18752
+public/imgs/serii favorite/top anime/1.v1.1.jpg	.jpg	OK	image verified JPEG	39467
+public/imgs/serii favorite/top anime/1.v1.10.jpg	.jpg	OK	image verified JPEG	34423
+public/imgs/serii favorite/top anime/1.v1.2.jpg	.jpg	OK	image verified JPEG	30673
+public/imgs/serii favorite/top anime/1.v1.3.jpg	.jpg	OK	image verified JPEG	31742
+public/imgs/serii favorite/top anime/1.v1.4.jpg	.jpg	OK	image verified JPEG	42030
+public/imgs/serii favorite/top anime/1.v1.5.jpg	.jpg	OK	image verified JPEG	37299
+public/imgs/serii favorite/top anime/1.v1.6.jpg	.jpg	OK	image verified JPEG	36837
+public/imgs/serii favorite/top anime/1.v1.7.jpg	.jpg	OK	image verified JPEG	41306
+public/imgs/serii favorite/top anime/1.v1.8.jpg	.jpg	OK	image verified JPEG	40664
+public/imgs/serii favorite/top anime/1.v1.9.jpg	.jpg	OK	image verified JPEG	45090
+public/imgs/simboluri/Corb.webp	.webp	OK	image verified WEBP	20282
+public/imgs/simboluri/Coroana.webp	.webp	OK	image verified WEBP	19274
+public/imgs/simboluri/Cristal.webp	.webp	OK	image verified WEBP	21192
+public/imgs/simboluri/Dragon.webp	.webp	OK	image verified WEBP	19924
+public/imgs/simboluri/Fluture.webp	.webp	OK	image verified WEBP	25578
+public/imgs/simboluri/Foc.webp	.webp	OK	image verified WEBP	12880
+public/imgs/simboluri/Fulger.webp	.webp	OK	image verified WEBP	7846
+public/imgs/simboluri/Lotus.webp	.webp	OK	image verified WEBP	23086
+public/imgs/simboluri/Luna.webp	.webp	OK	image verified WEBP	14242
+public/imgs/simboluri/Lup.webp	.webp	OK	image verified WEBP	21698
+public/imgs/simboluri/Oni.webp	.webp	OK	image verified WEBP	25808
+public/imgs/simboluri/Phoenix.webp	.webp	OK	image verified WEBP	26502
+public/imgs/simboluri/Sakura.webp	.webp	OK	image verified WEBP	29088
+public/imgs/simboluri/Sarpe.webp	.webp	OK	image verified WEBP	21002
+public/imgs/simboluri/Soare.webp	.webp	OK	image verified WEBP	18490
+public/imgs/simboluri/Stea.webp	.webp	OK	image verified WEBP	20442
+public/imgs/simboluri/Tigru.webp	.webp	OK	image verified WEBP	25894
+public/imgs/simboluri/Val.webp	.webp	OK	image verified WEBP	32120
+public/imgs/simboluri/Vant.webp	.webp	OK	image verified WEBP	28886
+public/imgs/simboluri/Vulpe.webp	.webp	OK	image verified WEBP	19888
+public/imgs/stiri/33.webp	.webp	OK	image verified WEBP	13796
+public/imgs/stiri/Gachea.webp	.webp	OK	image verified WEBP	22510
+public/imgs/stiri/ooppp.webp	.webp	OK	image verified WEBP	262236
+public/imgs/suprinde-ma/Ayakashi Triangle.webp	.webp	OK	image verified WEBP	37618
+public/imgs/suprinde-ma/Blue Dragon.webp	.webp	OK	image verified WEBP	34946
+public/imgs/user/aot.webp	.webp	OK	image verified WEBP	41830
+public/imgs/user/jk.webp	.webp	OK	image verified WEBP	39048
+public/imgs/user/n.webp	.webp	OK	image verified WEBP	29218
+public/user/profil img/sung jin woo.webp	.webp	OK	image verified WEBP	324984
+robots.txt	.txt	OK	binary/text readable	70
+sitemap.xml	.xml	OK	XML parsed	204

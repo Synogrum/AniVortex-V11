@@ -1,0 +1,33 @@
+file	rule_selector	dropped_branch	missing_classes	missing_ids	action
+src/css/main/01-foundation.css	.stiri-anime	.stiri-anime	stiri-anime		drop-rule
+src/css/main/01-foundation.css	.stiri-anime::before	.stiri-anime::before	stiri-anime		drop-rule
+src/css/main/01-foundation.css	.stiri-titlu	.stiri-titlu	stiri-titlu		drop-rule
+src/css/main/01-foundation.css	.stiri-grid	.stiri-grid	stiri-grid		drop-rule
+src/css/main/01-foundation.css	.stire-content	.stire-content	stire-content		drop-rule
+src/css/main/01-foundation.css	.stire-title	.stire-title	stire-title		drop-rule
+src/css/main/01-foundation.css	.stire-text	.stire-text	stire-text		drop-rule
+src/css/main/01-foundation.css	.stire-text:hover	.stire-text:hover	stire-text		drop-rule
+src/css/main/01-foundation.css	.stire-text.text-mic	.stire-text.text-mic	stire-text		drop-rule
+src/css/main/01-foundation.css	.stire-text.text-mediu	.stire-text.text-mediu	stire-text		drop-rule
+src/css/main/01-foundation.css	.stire-text.text-mare	.stire-text.text-mare	stire-text		drop-rule
+src/css/main/01-foundation.css	.stire-actions	.stire-actions	stire-actions		drop-rule
+src/css/main/01-foundation.css	.stire-actions .icon	.stire-actions .icon	stire-actions		drop-rule
+src/css/main/01-foundation.css	.stire-actions .icon svg	.stire-actions .icon svg	stire-actions		drop-rule
+src/css/main/01-foundation.css	.stire-actions .icon.dislike:hover svg	.stire-actions .icon.dislike:hover svg	stire-actions		drop-rule
+src/css/main/01-foundation.css	.stire-actions .icon.up:hover svg	.stire-actions .icon.up:hover svg	stire-actions		drop-rule
+src/css/main/01-foundation.css	.stire-actions .icon.like:hover svg	.stire-actions .icon.like:hover svg	stire-actions		drop-rule
+src/css/main/01-foundation.css	.stire-actions .icon.read:hover svg	.stire-actions .icon.read:hover svg	stire-actions		drop-rule
+src/css/main/01-foundation.css	.stire-actions .icon	.stire-actions .icon	stire-actions		drop-rule
+src/css/main/01-foundation.css	.stire-actions .counter	.stire-actions .counter	stire-actions		drop-rule
+src/css/main/01-foundation.css	.stire-actions .icon.dislike .counter	.stire-actions .icon.dislike .counter	stire-actions		drop-rule
+src/css/main/01-foundation.css	.stire-actions .icon.like .counter	.stire-actions .icon.like .counter	stire-actions		drop-rule
+src/css/main/04-sidebar-layout.css	.left-sidebar > *, .right-sidebar > :not(.modal-overlay):not(.favorite-status-popup), .login-user, .membri-user, .serii-recente, .stiri-anime, .top-sugestii-panel, .suprinde-ma, .serii-programate, .serii-cerute, .staff-activity-panel, .hof-container, .view-video	.stiri-anime	stiri-anime		drop-branch
+src/css/main/05-sidebar-effects.css	.stiri-anime	.stiri-anime	stiri-anime		drop-rule
+src/css/main/05-sidebar-effects.css	.stiri-anime:not(#__av_prio_a#__av_prio_b)::before	.stiri-anime:not(#__av_prio_a#__av_prio_b)::before	stiri-anime		drop-rule
+src/css/main/05-sidebar-effects.css	.stiri-anime > .liquid-bg	.stiri-anime > .liquid-bg	stiri-anime		drop-rule
+src/css/main/05-sidebar-effects.css	.stiri-anime > .smoke	.stiri-anime > .smoke	stiri-anime		drop-rule
+src/css/main/05-sidebar-effects.css	.stiri-anime > .smoke.smoke-2	.stiri-anime > .smoke.smoke-2	stiri-anime		drop-rule
+src/css/main/05-sidebar-effects.css	.stiri-anime > .inner-haze	.stiri-anime > .inner-haze	stiri-anime		drop-rule
+src/css/main/05-sidebar-effects.css	.stiri-anime > .stiri-anime-content	.stiri-anime > .stiri-anime-content	stiri-anime,stiri-anime-content		drop-rule
+src/css/main/05-sidebar-effects.css	.stiri-anime-content > .stiri-titlu, .stiri-anime-content > .stiri-grid	.stiri-anime-content > .stiri-titlu	stiri-anime-content,stiri-titlu		drop-rule
+src/css/main/05-sidebar-effects.css	.stiri-anime-content > .stiri-titlu, .stiri-anime-content > .stiri-grid	.stiri-anime-content > .stiri-grid	stiri-anime-content,stiri-grid		drop-rule

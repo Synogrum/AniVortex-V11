@@ -1,0 +1,87 @@
+[
+  {
+    "viewport": [
+      360,
+      800
+    ],
+    "initial_scroll_y": 0,
+    "scroll_width": 360,
+    "console_errors": [],
+    "errors": []
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "initial_scroll_y": 0,
+    "scroll_width": 390,
+    "console_errors": [],
+    "upc_expanded": "true",
+    "upc_popup_rect": {
+      "x": 2.80499267578125,
+      "y": 6.9575042724609375,
+      "width": 368.3900146484375,
+      "height": 257.08497619628906
+    },
+    "upc_focus_restored": true,
+    "errors": []
+  },
+  {
+    "viewport": [
+      430,
+      932
+    ],
+    "initial_scroll_y": 0,
+    "scroll_width": 430,
+    "console_errors": [],
+    "errors": []
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "initial_scroll_y": 0,
+    "scroll_width": 768,
+    "console_errors": [],
+    "errors": []
+  },
+  {
+    "viewport": [
+      1366,
+      768
+    ],
+    "initial_scroll_y": 0,
+    "scroll_width": 1366,
+    "console_errors": [],
+    "favorite_menu_open": true,
+    "favorite_menu_focus_role": null,
+    "favorite_focus_restored": true,
+    "upc_expanded": "true",
+    "upc_focus_restored": true,
+    "errors": [
+      "favorite keyboard menu did not focus a menuitem"
+    ]
+  },
+  {
+    "viewport": [
+      1920,
+      1080
+    ],
+    "initial_scroll_y": 0,
+    "scroll_width": 1920,
+    "console_errors": [],
+    "errors": []
+  },
+  {
+    "viewport": [
+      2560,
+      1440
+    ],
+    "initial_scroll_y": 0,
+    "scroll_width": 2560,
+    "console_errors": [],
+    "errors": []
+  }
+]
