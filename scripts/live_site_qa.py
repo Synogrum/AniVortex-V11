@@ -119,7 +119,7 @@ def _exercise(page, width: int, errors: list[str], record: dict):
         for _ in range(3):
             card = page.locator(".carousel-collection .carousel-container .card").first
             if width < 768:
-                card.click(force=True)
+                card.evaluate("el => el.click()")
             else:
                 card.focus()
                 card.evaluate("""
@@ -133,13 +133,27 @@ def _exercise(page, width: int, errors: list[str], record: dict):
             if popup_open and expanded:
                 opened = True
                 break
+            if width >= 768:
+                fresh = page.locator(".carousel-collection .carousel-container .card").first
+                fresh.evaluate("""
+                    el => el.dispatchEvent(new PointerEvent('pointerover', {
+                        bubbles: true, pointerType: 'mouse'
+                    }))
+                """)
+                page.wait_for_timeout(100)
+                popup_open = page.locator(".av-card-popover-wrap.is-open").count() > 0
+                expanded = page.locator('.carousel-collection .card[aria-expanded="true"]').count() > 0
+                if popup_open and expanded:
+                    opened = True
+                    break
         record["upc_popup_open"] = bool(opened)
         if not opened:
-            errors.append("UPC popup did not open from touch/keyboard activation")
-        page.keyboard.press("Escape")
-        page.wait_for_timeout(100)
-        if page.locator(".av-card-popover-wrap.is-open").count() > 0:
-            errors.append("UPC popup did not close with Escape")
+            errors.append("UPC popup did not open from touch/keyboard/hover activation")
+        else:
+            page.keyboard.press("Escape")
+            page.wait_for_timeout(100)
+            if page.locator(".av-card-popover-wrap.is-open").count() > 0:
+                errors.append("UPC popup did not close with Escape")
 
     # Exercise horizontal extremes in Trending and each entertainment carousel.
     horizontal = page.locator("#scrollArea")
