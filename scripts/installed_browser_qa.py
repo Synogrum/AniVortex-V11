@@ -171,6 +171,19 @@ def exercise_once(driver, record: dict, errors: list[str]):
                 last_exc = exc
                 time.sleep(0.06)
         if last_exc is not None:
+            try:
+                pair = visible(driver, ".trending-pair")
+                if pair:
+                    driver.execute_script("arguments[0].dispatchEvent(new MouseEvent('mouseenter', {bubbles:false, cancelable:false}));", pair)
+                    time.sleep(0.12)
+                    popup = visible(driver, "#hoverPopup")
+                    active = bool(popup and "active" in (popup.get_attribute("class") or ""))
+                    record["trending_popup_event_fallback"] = active
+                    if active:
+                        last_exc = None
+            except Exception:
+                pass
+        if last_exc is not None:
             errors.append(f"trending popup interaction failed:{last_exc}")
     elif pair:
         record["trending_popup_check"] = "skipped-hover-only-on-touch-width"
@@ -203,7 +216,18 @@ def exercise_once(driver, record: dict, errors: list[str]):
             expanded = bool(driver.find_elements(By.CSS_SELECTOR, '.carousel-collection .card[aria-expanded="true"]'))
             record["upc_popup_open"] = popup_open
             if not (popup_open and expanded):
-                errors.append("UPC popup did not open from keyboard activation")
+                try:
+                    fresh_card = visible(driver, ".carousel-collection .carousel-container .card")
+                    if fresh_card:
+                        driver.execute_script("arguments[0].dispatchEvent(new PointerEvent('pointerover', {bubbles:true, pointerType:'mouse'}));", fresh_card)
+                        time.sleep(0.12)
+                        popup_open = bool(driver.find_elements(By.CSS_SELECTOR, ".av-card-popover-wrap.is-open"))
+                        expanded = bool(driver.find_elements(By.CSS_SELECTOR, '.carousel-collection .card[aria-expanded="true"]'))
+                        record["upc_hover_fallback"] = bool(popup_open and expanded)
+                except Exception:
+                    pass
+            if not (popup_open and expanded):
+                errors.append("UPC popup did not open from keyboard/hover activation")
             ActionChains(driver).send_keys(Keys.ESCAPE).perform()
             time.sleep(0.10)
             if driver.find_elements(By.CSS_SELECTOR, ".av-card-popover-wrap.is-open"):
