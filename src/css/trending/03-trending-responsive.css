@@ -32,7 +32,7 @@
 #trendingMaster {
   position: relative; isolation: isolate;
   box-sizing: border-box; width: 100%;
-  max-width: 1920px; min-width: 1808px; margin: 0 auto;
+  max-width: 1920px; min-width: min(1808px, 100%); margin: 0 auto;
   padding-block: 18px 6px;
   border: 1px solid rgba(184, 146, 94, .24); border-radius: 0;
   border-bottom: 0;
