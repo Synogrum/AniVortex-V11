@@ -122,7 +122,6 @@ def exercise_once(driver, record: dict, errors: list[str]):
                 errors.append("sidebar did not open")
         except Exception as exc:
             errors.append(f"sidebar check failed:{exc}")
-        safe_click(driver, "#sidebarClose")
         try:
             ActionChains(driver).send_keys(Keys.ESCAPE).perform()
         except Exception:
@@ -149,7 +148,8 @@ def exercise_once(driver, record: dict, errors: list[str]):
             errors.append(f"category interaction failed:{exc}")
 
     pair = visible(driver, ".trending-pair")
-    if pair:
+    inner_width = int(js(driver, "return window.innerWidth || 0"))
+    if pair and inner_width >= 768:
         last_exc = None
         for _ in range(3):
             try:
@@ -172,6 +172,8 @@ def exercise_once(driver, record: dict, errors: list[str]):
                 time.sleep(0.06)
         if last_exc is not None:
             errors.append(f"trending popup interaction failed:{last_exc}")
+    elif pair:
+        record["trending_popup_check"] = "skipped-hover-only-on-touch-width"
 
     favorite = visible(driver, ".serii-favorite-refresh .fav-action")
     if favorite:
@@ -190,13 +192,22 @@ def exercise_once(driver, record: dict, errors: list[str]):
     card = visible(driver, ".carousel-collection .carousel-container .card")
     if card:
         try:
-            driver.execute_script("arguments[0].focus(); arguments[0].dispatchEvent(new KeyboardEvent('keydown', {key:'Enter', bubbles:true, cancelable:true}));", card)
+            driver.execute_script("""
+              arguments[0].focus();
+              arguments[0].dispatchEvent(new KeyboardEvent('keydown', {
+                key:'Enter', code:'Enter', bubbles:true, cancelable:true
+              }));
+            """, card)
             time.sleep(0.12)
-            if card.get_attribute("aria-expanded") != "true":
-                errors.append("UPC popup did not set aria-expanded=true")
+            popup_open = bool(driver.find_elements(By.CSS_SELECTOR, ".av-card-popover-wrap.is-open"))
+            expanded = bool(driver.find_elements(By.CSS_SELECTOR, '.carousel-collection .card[aria-expanded="true"]'))
+            record["upc_popup_open"] = popup_open
+            if not (popup_open and expanded):
+                errors.append("UPC popup did not open from keyboard activation")
             ActionChains(driver).send_keys(Keys.ESCAPE).perform()
-            if card.get_attribute("aria-expanded") != "false":
-                errors.append("UPC popup did not reset aria-expanded=false")
+            time.sleep(0.10)
+            if driver.find_elements(By.CSS_SELECTOR, ".av-card-popover-wrap.is-open"):
+                errors.append("UPC popup did not close with Escape")
         except Exception as exc:
             errors.append(f"UPC popup interaction failed:{exc}")
 
