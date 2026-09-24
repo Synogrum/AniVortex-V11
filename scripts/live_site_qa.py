@@ -173,6 +173,33 @@ def _exercise(page, width: int, errors: list[str], record: dict):
         car.evaluate("el => { el.scrollLeft = 0; }")
 
 
+
+def _overflow_elements(page, viewport_width: int) -> list[dict]:
+    return page.evaluate(
+        """(viewportWidth) => Array.from(document.querySelectorAll('body *'))
+          .map((el) => {
+            const r = el.getBoundingClientRect();
+            const cs = getComputedStyle(el);
+            return {
+              tag: el.tagName.toLowerCase(),
+              id: el.id || '',
+              cls: typeof el.className === 'string' ? el.className.trim().replace(/\\s+/g, '.') : '',
+              left: Math.round(r.left * 10) / 10,
+              right: Math.round(r.right * 10) / 10,
+              width: Math.round(r.width * 10) / 10,
+              cssWidth: cs.width,
+              minWidth: cs.minWidth,
+              maxWidth: cs.maxWidth,
+              position: cs.position,
+              overflowX: cs.overflowX
+            };
+          })
+          .filter((x) => x.width > 0 && (x.right > viewportWidth + 2 || x.left < -2))
+          .sort((a,b) => Math.max(b.right-viewportWidth, -b.left) - Math.max(a.right-viewportWidth, -a.left))
+          .slice(0, 12)""",
+        viewport_width,
+    )
+
 def run(url: str, engines: tuple[str, ...], screenshot_dir: Path | None = None) -> list[dict]:
     results: list[dict] = []
     if screenshot_dir:
@@ -206,7 +233,9 @@ def run(url: str, engines: tuple[str, ...], screenshot_dir: Path | None = None) 
                     scroll_width = page.evaluate("document.documentElement.scrollWidth")
                     record["scroll_width"] = scroll_width
                     if scroll_width > width + 2:
-                        errors.append(f"horizontal document overflow: scrollWidth={scroll_width}, viewport={width}")
+                        offenders = _overflow_elements(page, width)
+                        record["overflow_elements"] = offenders
+                        errors.append(f"horizontal document overflow: scrollWidth={scroll_width}, viewport={width}, offenders={offenders[:6]}")
                     _exercise(page, width, errors, record)
                     # Let carousels/timers run for a little while, then scroll through the page.
                     page.wait_for_timeout(1200)
@@ -239,7 +268,8 @@ def run(url: str, engines: tuple[str, ...], screenshot_dir: Path | None = None) 
                     page.wait_for_timeout(500)
                     scroll_width = page.evaluate("document.documentElement.scrollWidth")
                     if scroll_width > width + 2:
-                        errors.append(f"horizontal overflow at zoom-equivalent {zoom}%: {scroll_width}>{width}")
+                        offenders = _overflow_elements(page, width)
+                        errors.append(f"horizontal overflow at zoom-equivalent {zoom}%: {scroll_width}>{width}, offenders={offenders[:6]}")
                 except Exception as exc:
                     errors.append(f"runtime:{type(exc).__name__}:{exc}")
                 results.append({
