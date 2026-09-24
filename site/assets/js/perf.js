@@ -5,6 +5,20 @@
 
   const raf = window.requestAnimationFrame.bind(window);
 
+  function enableDeferredStyles() {
+    const links = document.querySelectorAll('link[data-av-deferred-style]');
+    for (const link of links) {
+      link.media = 'all';
+      link.removeAttribute('data-av-deferred-style');
+    }
+  }
+
+  function scheduleDeferredStyles() {
+    // Allow the critical header/hero CSS to paint before below-fold/theme extras
+    // become render-active. The stylesheets still download while the HTML parses.
+    raf(() => raf(enableDeferredStyles));
+  }
+
   function rafThrottle(callback) {
     if (typeof callback !== 'function') {
       throw new TypeError('rafThrottle requires a function');
@@ -100,6 +114,7 @@
   }
 
   if (typeof document !== 'undefined') {
+    scheduleDeferredStyles();
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => { manageTopMotion(); pauseOffscreenMotion(); }, { once: true });
     else { manageTopMotion(); pauseOffscreenMotion(); }
   }
