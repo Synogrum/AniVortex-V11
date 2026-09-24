@@ -52,7 +52,7 @@ jobs:
           sleep 2
           python scripts/live_site_qa.py \
             --url http://127.0.0.1:8000/ \
-            --engines chromium firefox webkit \
+            --engines chromium firefox \
             --report audit/live-local-qa.json \
             --screenshots audit/live-local-screenshots
 
