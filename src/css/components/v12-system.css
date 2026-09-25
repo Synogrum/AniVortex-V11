@@ -18,7 +18,7 @@
   --v12-radius-panel: 24px;
 
   --v12-surface-0: #04181c;
-  --v12-surface-1: #052a2e;
+  --v12-surface-1: var(--av-bg-teal);
   --v12-surface-2: rgba(8, 31, 36, .82);
   --v12-surface-3: rgba(10, 27, 32, .96);
 
@@ -140,7 +140,7 @@
   background:
     radial-gradient(ellipse at 0% 0%, rgba(212,183,122,.08), transparent 48%),
     radial-gradient(ellipse at 100% 100%, rgba(31,93,96,.15), transparent 56%),
-    linear-gradient(180deg, #052a2e, #041d22);
+    linear-gradient(180deg, var(--av-bg-teal), #041d22);
 }
 
 .av-v12 #trendingMaster .trending-row-meta {
