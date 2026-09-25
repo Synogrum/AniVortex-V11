@@ -46,24 +46,11 @@ body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
 
 
 
-.banner-trending-join-gold,
-.banner-trending-join-teal {
-  fill: none;
-  vector-effect: non-scaling-stroke;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 
-.banner-trending-join-gold {
-  stroke: url(#bannerTrendingGold);
-  stroke-width: 1.35;
-}
 
-.banner-trending-join-teal {
-  stroke: url(#bannerTrendingTeal);
-  stroke-width: 1.2;
-  opacity: .95;
-}
+
+
+
 
 #trendingMaster:not(#__av_prio_a#__av_prio_b) {
   margin-top: 0;
@@ -142,23 +129,11 @@ body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
 
 
 
-.banner-trending-join-gold:not(#__av_prio_a#__av_prio_b), .banner-trending-join-teal:not(#__av_prio_a#__av_prio_b) {
-  display: block;
-  fill: none;
-  vector-effect: non-scaling-stroke;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 
-.banner-trending-join-gold:not(#__av_prio_a#__av_prio_b) {
-  stroke: rgba(209,180,106,.52);
-  stroke-width: 1.25;
-}
 
-.banner-trending-join-teal:not(#__av_prio_a#__av_prio_b) {
-  stroke: rgba(118,223,211,.46);
-  stroke-width: 1.05;
-}
+
+
+
 
 /* IMPORTANT: nu urca peste banner. Doar 1px pentru a ascunde cusatura. */
 body .page:not(#__av_prio_a#__av_prio_b), body .banner-wrap:not(#__av_prio_a#__av_prio_b) {

@@ -332,10 +332,7 @@
 
 
 
-.banner-trending-join-gold {
-  
-  stroke-width: 1.2;
-}
+
 
 
 
@@ -388,14 +385,9 @@ body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
 
 
 
-.banner-trending-join-gold:not(#__av_prio_a#__av_prio_b) {
-  stroke-width: 1.15;
-}
 
-.banner-trending-join-teal:not(#__av_prio_a#__av_prio_b) {
-  
-  opacity: .92;
-}
+
+
 
 /* Facem secțiunea Trending să primească îmbinarea fără a dubla conturul de sus. */
 #trendingMaster:not(#__av_prio_a#__av_prio_b) {

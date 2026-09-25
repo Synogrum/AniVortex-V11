@@ -11699,27 +11699,13 @@ main video
     mask-image: none;
 }
 
-.share-com-v-fill {
-    fill: var(--share-join-surface);
-}
 
-.share-com-v-top,
-.share-com-v-bottom {
-    fill: none;
-    vector-effect: non-scaling-stroke;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
 
-.share-com-v-top {
-    stroke: url(#shareComJoinGold);
-    stroke-width: 1.35;
-}
 
-.share-com-v-bottom {
-    stroke: url(#shareComJoinTeal);
-    stroke-width: 1;
-}
+
+
+
+
 
 @media (max-width: 990px) {
     .share-com-v-join {
@@ -11788,10 +11774,7 @@ main video
 }
 
 /* scoatem complet liniile decorative din îmbinare */
-.share-com-v-top:not(#__av_prio_a#__av_prio_b), .share-com-v-bottom:not(#__av_prio_a#__av_prio_b) {
-  
-  stroke: none;
-}
+
 
 .share-com-v-join svg:not(#__av_prio_a#__av_prio_b) {
   
@@ -11930,27 +11913,13 @@ main video
       drop-shadow(0 0 12px rgba(212,183,122,.045));
 }
 
-.share-com-v-fill:not(#__av_prio_a#__av_prio_b) {
-  fill: #000000;
-}
 
-.share-com-v-top:not(#__av_prio_a#__av_prio_b), .share-com-v-bottom:not(#__av_prio_a#__av_prio_b) {
-  display: block;
-  fill: none;
-  vector-effect: non-scaling-stroke;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 
-.share-com-v-top:not(#__av_prio_a#__av_prio_b) {
-  stroke: rgba(209,180,106,.52);
-  stroke-width: 1.25;
-}
 
-.share-com-v-bottom:not(#__av_prio_a#__av_prio_b) {
-  stroke: rgba(118,223,211,.46);
-  stroke-width: 1.05;
-}
+
+
+
+
 
 /* COM cu stele răspândite pe toată suprafața */
 .comentarii-section:not(#__av_prio_a#__av_prio_b) {

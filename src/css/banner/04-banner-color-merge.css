@@ -212,18 +212,11 @@ body .page:not(#__av_prio_a#__av_prio_b)::after, body #trendingMaster:not(#__av_
 
 
 /* TOT interiorul V-ului devine negru până la capăt */
-body .banner-trending-join-bandfill:not(#__av_prio_a#__av_prio_b) {
-  fill: #000000;
-  opacity: 1;
-}
 
-body .banner-trending-join-gold:not(#__av_prio_a#__av_prio_b) {
-  stroke: rgba(209,180,106,.52);
-}
 
-body .banner-trending-join-teal:not(#__av_prio_a#__av_prio_b) {
-  stroke: rgba(118,223,211,.46);
-}
+
+
+
 
 /* Stelele din COM */
 body .page:not(#__av_prio_a#__av_prio_b)::before, body #trendingMaster:not(#__av_prio_a#__av_prio_b)::before, body .banner-trending-join:not(#__av_prio_a#__av_prio_b)::before {

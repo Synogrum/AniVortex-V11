@@ -356,18 +356,12 @@
   filter: none;
 }
 
-.trending-share-join-fill { fill: #000; }
 
-.trending-share-join-gold,
-.trending-share-join-teal {
-  fill: none;
-  vector-effect: non-scaling-stroke;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 
-.trending-share-join-gold { stroke: url(#trendingShareGold); stroke-width: 1.2; }
-.trending-share-join-teal { display: none; }
+
+
+
+
 
 #trendingMaster .avt-v31-fx:not(#__av_prio_a#__av_prio_b)::before, #trendingMaster .avt-v31-fx:not(#__av_prio_a#__av_prio_b)::after {
   content: none;
@@ -477,7 +471,8 @@ body .trending-share-join + .share-banner-container .share-banner-section:not(#_
 }
 
 /* 3. V-ul — SVG COMPLET ASCUNS (nu se mai vede absolut nimic) */
-.trending-share-join svg:not(#__av_prio_a#__av_prio_b), .trending-share-join path:not(#__av_prio_a#__av_prio_b), .trending-share-join-fill:not(#__av_prio_a#__av_prio_b), .trending-share-join-gold:not(#__av_prio_a#__av_prio_b), .trending-share-join-teal:not(#__av_prio_a#__av_prio_b) {
+.trending-share-join svg:not(#__av_prio_a#__av_prio_b),
+.trending-share-join path:not(#__av_prio_a#__av_prio_b) {
   display: none;
   visibility: hidden;
   opacity: 0;
