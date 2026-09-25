@@ -2,7 +2,7 @@ name: Deploy AniVortex V11 to GitHub Pages
 
 on:
   push:
-    branches: ["main", "v12-design-system"]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
