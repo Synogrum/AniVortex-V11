@@ -208,10 +208,12 @@ body:not(.av-top-motion-active) .banner-trending-join:not(#__av_prio_a#__av_prio
 body.av-theme-c:not(#__av_prio_a#__av_prio_b) {
   color: #f4fbf8;
   background:
-    radial-gradient(circle at 14% 12%, rgba(32, 176, 132, 0.15), transparent 28%),
-    radial-gradient(circle at 86% 18%, rgba(26, 122, 103, 0.12), transparent 26%),
-    radial-gradient(circle at 52% 100%, rgba(50, 214, 166, 0.07), transparent 34%),
-    linear-gradient(145deg, #010806 0%, #03110d 46%, #010705 100%);
+    radial-gradient(circle at 12% 10%, rgba(57, 233, 174, .20), transparent 24%),
+    radial-gradient(circle at 88% 15%, rgba(38, 196, 150, .16), transparent 22%),
+    radial-gradient(circle at 25% 58%, rgba(29, 158, 118, .10), transparent 27%),
+    radial-gradient(circle at 74% 72%, rgba(63, 226, 175, .10), transparent 30%),
+    radial-gradient(circle at 50% 100%, rgba(48, 214, 163, .12), transparent 32%),
+    linear-gradient(145deg, #010705 0%, #03130e 44%, #010604 100%);
 }
 
 body.av-theme-c :where(a, button, input, select, textarea, [tabindex]):focus-visible {
@@ -532,5 +534,191 @@ body.av-theme-c .av-footer-join.av-flat-join:not(#__av_prio_a#__av_prio_b) {
   inset: auto;
   transform: none;
   fill: none;
+}
+
+/* ============================================================
+   AniVortex V12.2-C INTENSE — cinematic emerald ambience
+   ============================================================ */
+body.av-theme-c .av-bg-shapes,
+body.av-theme-c .av-bg-vignette,
+body.av-theme-c .av-bg-noise {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+body.av-theme-c .av-bg-shapes {
+  overflow: hidden;
+  opacity: .98;
+  mix-blend-mode: screen;
+}
+
+body.av-theme-c .av-bg-shapes span {
+  --shape-r: -24deg;
+  --shape-x: 10px;
+  --shape-y: -16px;
+  position: absolute;
+  display: block;
+  width: clamp(96px, 9vw, 176px);
+  height: clamp(38px, 4vw, 72px);
+  border-radius: 72% 28% 68% 32% / 62% 38% 62% 38%;
+  transform: rotate(var(--shape-r));
+  background:
+    radial-gradient(ellipse at 32% 32%, rgba(204, 255, 238, .42), rgba(75, 244, 191, .26) 28%, rgba(23, 162, 119, .13) 58%, transparent 78%),
+    linear-gradient(132deg, rgba(107, 255, 209, .22), rgba(20, 139, 103, .08));
+  filter: blur(9px) saturate(1.28);
+  opacity: .82;
+  box-shadow:
+    0 0 34px rgba(59, 238, 179, .20),
+    0 0 72px rgba(35, 180, 136, .10),
+    inset 0 0 20px rgba(221, 255, 245, .12);
+  animation: avEmeraldShapeFloat 17s var(--av-ease-ui) infinite alternate;
+  will-change: transform;
+}
+
+body.av-theme-c .av-bg-shapes span::after {
+  content: "";
+  position: absolute;
+  inset: 14% 20% 18% 14%;
+  border-radius: inherit;
+  background: linear-gradient(145deg, rgba(236, 255, 249, .22), rgba(73, 238, 186, .06) 55%, transparent);
+  filter: blur(5px);
+}
+
+body.av-theme-c .av-bg-shapes span:nth-child(1) {
+  top: 6%;
+  left: 7%;
+  --shape-r: -32deg;
+  --shape-x: 18px;
+  --shape-y: -14px;
+  animation-duration: 18s;
+}
+
+body.av-theme-c .av-bg-shapes span:nth-child(2) {
+  top: 14%;
+  right: 8%;
+  width: clamp(126px, 11vw, 214px);
+  height: clamp(48px, 4.7vw, 86px);
+  --shape-r: 24deg;
+  --shape-x: -16px;
+  --shape-y: 20px;
+  opacity: .76;
+  animation-duration: 21s;
+  animation-delay: -5s;
+}
+
+body.av-theme-c .av-bg-shapes span:nth-child(3) {
+  top: 34%;
+  left: 3%;
+  width: clamp(80px, 7vw, 138px);
+  --shape-r: 16deg;
+  --shape-x: 14px;
+  --shape-y: 18px;
+  opacity: .66;
+  animation-duration: 19s;
+  animation-delay: -8s;
+}
+
+body.av-theme-c .av-bg-shapes span:nth-child(4) {
+  top: 47%;
+  right: 5%;
+  width: clamp(140px, 12vw, 238px);
+  height: clamp(52px, 5vw, 94px);
+  --shape-r: -18deg;
+  --shape-x: -20px;
+  --shape-y: -14px;
+  opacity: .78;
+  animation-duration: 23s;
+  animation-delay: -3s;
+}
+
+body.av-theme-c .av-bg-shapes span:nth-child(5) {
+  top: 67%;
+  left: 17%;
+  width: clamp(104px, 9vw, 182px);
+  --shape-r: 28deg;
+  --shape-x: 16px;
+  --shape-y: -18px;
+  opacity: .62;
+  animation-duration: 20s;
+  animation-delay: -11s;
+}
+
+body.av-theme-c .av-bg-shapes span:nth-child(6) {
+  bottom: 11%;
+  right: 20%;
+  width: clamp(116px, 10vw, 198px);
+  --shape-r: -38deg;
+  --shape-x: -14px;
+  --shape-y: 16px;
+  opacity: .70;
+  animation-duration: 22s;
+  animation-delay: -7s;
+}
+
+body.av-theme-c .av-bg-shapes span:nth-child(7) {
+  bottom: 4%;
+  left: 46%;
+  width: clamp(78px, 6vw, 124px);
+  height: clamp(32px, 3vw, 54px);
+  --shape-r: 12deg;
+  --shape-x: 12px;
+  --shape-y: -14px;
+  opacity: .50;
+  animation-duration: 16s;
+  animation-delay: -4s;
+}
+
+body.av-theme-c .av-bg-vignette {
+  background:
+    radial-gradient(circle at 50% 38%, transparent 32%, rgba(0, 8, 5, .12) 66%, rgba(0, 4, 3, .50) 100%),
+    linear-gradient(90deg, rgba(0, 8, 5, .18), transparent 14%, transparent 86%, rgba(0, 8, 5, .18));
+}
+
+body.av-theme-c .av-bg-noise {
+  opacity: .055;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(225, 255, 246, .035) 0, rgba(225, 255, 246, .035) 1px, transparent 1px, transparent 4px),
+    repeating-linear-gradient(90deg, rgba(110, 229, 194, .025) 0, rgba(110, 229, 194, .025) 1px, transparent 1px, transparent 5px);
+  mix-blend-mode: soft-light;
+}
+
+@keyframes avEmeraldShapeFloat {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(var(--shape-r)) scale(1);
+  }
+  100% {
+    transform: translate3d(var(--shape-x), var(--shape-y), 0) rotate(calc(var(--shape-r) + 6deg)) scale(1.08);
+  }
+}
+
+@media (max-width: 760px) {
+  body.av-theme-c .av-bg-shapes {
+    opacity: .82;
+  }
+
+  body.av-theme-c .av-bg-shapes span {
+    filter: blur(11px) saturate(1.18);
+    opacity: .60;
+  }
+
+  body.av-theme-c .av-bg-shapes span:nth-child(n+6) {
+    display: none;
+  }
+
+  body.av-theme-c .av-bg-vignette {
+    background: radial-gradient(circle at 50% 40%, transparent 40%, rgba(0, 5, 3, .36) 100%);
+  }
+
+  body.av-theme-c .av-bg-noise {
+    opacity: .035;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.av-theme-c .av-bg-shapes span {
+    animation: none;
+  }
 }
 
