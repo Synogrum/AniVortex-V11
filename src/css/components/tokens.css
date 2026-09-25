@@ -7,6 +7,43 @@
   --av-green-final: var(--av-bg-teal);
   --avf-surface-top: #071b21;
 
+
+  /* V12 — Design system foundation */
+  --av-page-max: 1920px;
+  --av-content-max: 1900px;
+
+  --av-space-1: 4px;
+  --av-space-2: 8px;
+  --av-space-3: 12px;
+  --av-space-4: 16px;
+  --av-space-5: 24px;
+  --av-space-6: 32px;
+  --av-space-7: 48px;
+
+  --av-radius-sm: 12px;
+  --av-radius-md: 16px;
+  --av-radius-lg: 20px;
+  --av-radius-xl: 24px;
+  --av-radius-pill: 999px;
+
+  --av-surface-0: #02090b;
+  --av-surface-1: rgba(7, 27, 33, 0.94);
+  --av-surface-2: rgba(9, 34, 41, 0.80);
+  --av-surface-3: rgba(8, 30, 36, 0.97);
+
+  --av-border-subtle: rgba(255, 255, 255, 0.09);
+  --av-border-active: rgba(121, 235, 255, 0.24);
+  --av-border-premium: rgba(212, 183, 122, 0.38);
+
+  --av-shadow-card: 0 12px 30px rgba(0, 0, 0, 0.24);
+  --av-shadow-hover: 0 20px 44px rgba(0, 0, 0, 0.34);
+  --av-shadow-popup: 0 28px 72px rgba(0, 0, 0, 0.54);
+
+  --av-motion-fast: 160ms;
+  --av-motion-ui: 240ms;
+  --av-motion-popup: 380ms;
+  --av-ease-ui: cubic-bezier(.2, .8, .2, 1);
+
   /* Header / glass */
   --glass-bg: rgba(255,255,255,0.05);
   --glass-border: rgba(255,255,255,0.10);
