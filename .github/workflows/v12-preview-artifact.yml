@@ -1,0 +1,27 @@
+name: V12 Preview Artifact
+
+on:
+  push:
+    branches: ["v12-design-system"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: v12-preview-artifact
+  cancel-in-progress: true
+
+jobs:
+  package-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout V12
+        uses: actions/checkout@v4
+
+      - name: Package static preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: anivortex-v12-preview-site
+          path: site/
+          if-no-files-found: error
