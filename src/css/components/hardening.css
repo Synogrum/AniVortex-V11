@@ -626,3 +626,145 @@ body.av-theme-c > .wrapper {
   }
 }
 
+/* AniVortex V12.3 — unified dark emerald starfield */
+body.av-theme-c .wrapper:not(#__av_unified_starfield) {
+  position: relative;
+  isolation: isolate;
+  background-color: #03140f;
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(68, 232, 181, .09), transparent 22%),
+    radial-gradient(circle at 88% 24%, rgba(40, 175, 139, .07), transparent 20%),
+    radial-gradient(circle at 38% 56%, rgba(45, 203, 158, .045), transparent 26%),
+    radial-gradient(circle at 72% 82%, rgba(57, 220, 171, .05), transparent 24%),
+
+    radial-gradient(circle, rgba(205, 255, 240, .72) 0 1px, transparent 1.45px),
+    radial-gradient(circle, rgba(86, 235, 193, .52) 0 1.1px, transparent 1.6px),
+    radial-gradient(circle, rgba(227, 255, 247, .42) 0 .75px, transparent 1.25px),
+    radial-gradient(circle, rgba(70, 205, 164, .35) 0 .9px, transparent 1.35px),
+
+    linear-gradient(180deg, #03150f 0%, #02110d 46%, #03170f 100%);
+  background-size:
+    auto,
+    auto,
+    auto,
+    auto,
+    137px 137px,
+    211px 211px,
+    89px 89px,
+    293px 293px,
+    auto;
+  background-position:
+    0 0,
+    0 0,
+    0 0,
+    0 0,
+    17px 23px,
+    74px 91px,
+    42px 11px,
+    131px 57px,
+    0 0;
+}
+
+/* All large page sections share the same continuous canvas instead of
+   carrying their own unrelated background blocks. */
+body.av-theme-c :where(
+  .page,
+  .banner-wrap,
+  #trendingMaster,
+  .trending-master-container,
+  .share-banner-container,
+  .comentarii-section,
+  .main-container,
+  .chronologie-container,
+  .av-entertainment-shell
+):not(#__av_unified_sections) {
+  background-color: transparent;
+  background-image: none;
+}
+
+/* Keep large sections readable while allowing the common starfield through. */
+body.av-theme-c :where(
+  #trendingMaster,
+  .share-banner-container,
+  .comentarii-section,
+  .main-container,
+  .chronologie-container,
+  .av-entertainment-shell
+):not(#__av_unified_sections) {
+  box-shadow:
+    inset 0 1px 0 rgba(112, 235, 200, .035),
+    inset 0 -1px 0 rgba(112, 235, 200, .025);
+}
+
+/* A subtle shared veil stops bright stars competing with cards/text. */
+body.av-theme-c :where(
+  #trendingMaster,
+  .comentarii-section,
+  .main-container,
+  .chronologie-container,
+  .av-entertainment-shell
+):not(#__av_unified_sections)::before {
+  background-image:
+    linear-gradient(180deg, rgba(2, 18, 13, .22), rgba(2, 18, 13, .08) 45%, rgba(2, 18, 13, .20));
+}
+
+/* Footer continues exactly the same dark-green night instead of switching
+   to a visibly separate block. */
+body.av-theme-c .av-footer:not(#__av_unified_footer) {
+  background-color: #03140f;
+  background-image:
+    radial-gradient(circle, rgba(205, 255, 240, .60) 0 1px, transparent 1.45px),
+    radial-gradient(circle, rgba(86, 235, 193, .42) 0 1.05px, transparent 1.55px),
+    radial-gradient(circle, rgba(227, 255, 247, .32) 0 .75px, transparent 1.2px),
+    linear-gradient(180deg, #03170f 0%, #02110d 100%);
+  background-size:
+    137px 137px,
+    211px 211px,
+    89px 89px,
+    auto;
+  background-position:
+    17px 23px,
+    74px 91px,
+    42px 11px,
+    0 0;
+}
+
+/* Flat separators become almost invisible so the page reads as one canvas. */
+body.av-theme-c .av-flat-join:not(#__av_unified_join) {
+  background: transparent;
+}
+
+body.av-theme-c .av-flat-join:not(#__av_unified_join)::before {
+  opacity: .42;
+}
+
+body.av-theme-c .av-flat-join:not(#__av_unified_join)::after {
+  opacity: .34;
+}
+
+@media (max-width: 760px) {
+  body.av-theme-c .wrapper:not(#__av_unified_starfield) {
+    background-image:
+      radial-gradient(circle at 18% 10%, rgba(60, 218, 170, .07), transparent 20%),
+      radial-gradient(circle at 82% 72%, rgba(35, 170, 132, .05), transparent 24%),
+      radial-gradient(circle, rgba(205, 255, 240, .58) 0 .85px, transparent 1.25px),
+      radial-gradient(circle, rgba(79, 224, 181, .38) 0 .9px, transparent 1.35px),
+      radial-gradient(circle, rgba(227, 255, 247, .28) 0 .65px, transparent 1.05px),
+      linear-gradient(180deg, #03150f 0%, #02110d 48%, #03170f 100%);
+    background-size:
+      auto,
+      auto,
+      121px 121px,
+      187px 187px,
+      83px 83px,
+      auto;
+    background-position:
+      0 0,
+      0 0,
+      11px 17px,
+      62px 79px,
+      37px 9px,
+      0 0;
+  }
+}
+
