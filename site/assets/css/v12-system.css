@@ -1,0 +1,245 @@
+/* ============================================================
+   AniVortex V12.1 — Design System Foundation
+   Scope: visual consistency only. V11 structure/content preserved.
+   ============================================================ */
+
+.av-v12 {
+  --v12-space-1: 4px;
+  --v12-space-2: 8px;
+  --v12-space-3: 12px;
+  --v12-space-4: 16px;
+  --v12-space-5: 24px;
+  --v12-space-6: 32px;
+  --v12-space-7: 48px;
+
+  --v12-radius-sm: 12px;
+  --v12-radius-md: 16px;
+  --v12-radius-card: 20px;
+  --v12-radius-panel: 24px;
+
+  --v12-surface-0: #04181c;
+  --v12-surface-1: #052a2e;
+  --v12-surface-2: rgba(8, 31, 36, .82);
+  --v12-surface-3: rgba(10, 27, 32, .96);
+
+  --v12-border-subtle: rgba(212, 183, 122, .12);
+  --v12-border-active: rgba(212, 183, 122, .24);
+  --v12-border-focus: rgba(212, 183, 122, .42);
+
+  --v12-shadow-card: 0 12px 28px rgba(0,0,0,.22);
+  --v12-shadow-hover: 0 18px 40px rgba(0,0,0,.30);
+  --v12-shadow-popup: 0 26px 72px rgba(0,0,0,.46);
+
+  --v12-ease-ui: cubic-bezier(.2,.8,.2,1);
+  --v12-fast: 160ms;
+  --v12-ui: 240ms;
+  --v12-popup: 380ms;
+
+  --v12-content-max: 1900px;
+  --v12-header-max: 1500px;
+}
+
+/* Global rhythm */
+.av-v12 .wrapper {
+  width: 100%;
+}
+
+.av-v12 :where(button, a, [role="button"]) {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.av-v12 :where(button, a, [role="button"]):focus-visible {
+  outline: 2px solid rgba(212,183,122,.92);
+  outline-offset: 3px;
+}
+
+/* ============================================================
+   HEADER — same concept, more disciplined visual hierarchy
+   ============================================================ */
+.av-v12 .header {
+  max-width: var(--v12-header-max);
+  border-radius: var(--v12-radius-card);
+  border: 1px solid rgba(255,255,255,.10);
+  background:
+    radial-gradient(circle at 16% 18%, rgba(65,105,225,.28), transparent 28%),
+    radial-gradient(circle at 84% 24%, rgba(0,230,162,.20), transparent 26%),
+    linear-gradient(135deg, rgba(5,42,46,.86), rgba(5,28,33,.82));
+  box-shadow:
+    0 14px 34px rgba(0,0,0,.28),
+    inset 0 1px 0 rgba(255,255,255,.07);
+  backdrop-filter: blur(22px) saturate(1.16);
+  -webkit-backdrop-filter: blur(22px) saturate(1.16);
+}
+
+.av-v12 .header::after {
+  border-radius: inherit;
+  background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.012) 45%, transparent);
+}
+
+.av-v12 .header.scrolled {
+  border-color: rgba(212,183,122,.12);
+  background:
+    radial-gradient(circle at 18% 20%, rgba(65,105,225,.12), transparent 28%),
+    radial-gradient(circle at 82% 25%, rgba(0,230,162,.10), transparent 26%),
+    linear-gradient(135deg, rgba(5,42,46,.92), rgba(4,24,29,.90));
+  box-shadow: 0 10px 28px rgba(0,0,0,.24), inset 0 1px 0 rgba(255,255,255,.045);
+}
+
+.av-v12 .header :where(button, a) {
+  transition:
+    transform var(--v12-ui) var(--v12-ease-ui),
+    background-color var(--v12-ui) ease,
+    border-color var(--v12-ui) ease,
+    color var(--v12-ui) ease,
+    box-shadow var(--v12-ui) ease;
+}
+
+/* ============================================================
+   BANNER — preserve composition, improve clarity and spacing
+   ============================================================ */
+.av-v12 .page {
+  max-width: 1920px;
+}
+
+.av-v12 .banner-wrap {
+  padding-inline: clamp(12px, 1.2vw, 22px);
+}
+
+.av-v12 .banner {
+  border-color: var(--v12-border-subtle);
+}
+
+.av-v12 .banner .description {
+  max-width: 62ch;
+  color: rgba(241,248,249,.80);
+}
+
+.av-v12 .banner .button-row {
+  gap: var(--v12-space-3);
+}
+
+.av-v12 .banner .button-row :where(a, button) {
+  min-height: 44px;
+  border-radius: var(--v12-radius-md);
+  transition:
+    transform var(--v12-ui) var(--v12-ease-ui),
+    border-color var(--v12-ui) ease,
+    background var(--v12-ui) ease,
+    box-shadow var(--v12-ui) ease;
+}
+
+.av-v12 .banner .button-row :where(a, button):hover {
+  transform: translateY(-2px);
+}
+
+/* ============================================================
+   TRENDING — same layout, same cards, cleaner shared language
+   ============================================================ */
+.av-v12 #trendingMaster {
+  border-color: var(--v12-border-subtle);
+  background:
+    radial-gradient(ellipse at 0% 0%, rgba(212,183,122,.08), transparent 48%),
+    radial-gradient(ellipse at 100% 100%, rgba(31,93,96,.15), transparent 56%),
+    linear-gradient(180deg, #052a2e, #041d22);
+}
+
+.av-v12 #trendingMaster .trending-row-meta {
+  gap: var(--v12-space-3);
+}
+
+.av-v12 #trendingMaster .trending-pair {
+  border-radius: var(--v12-radius-card);
+  border-color: rgba(255,255,255,.08);
+  box-shadow: var(--v12-shadow-card);
+  transition:
+    transform var(--v12-ui) var(--v12-ease-ui),
+    border-color var(--v12-ui) ease,
+    box-shadow var(--v12-ui) ease;
+}
+
+.av-v12 #trendingMaster .trending-pair:hover,
+.av-v12 #trendingMaster .trending-pair:focus-within {
+  border-color: rgba(212,183,122,.22);
+  box-shadow: var(--v12-shadow-hover);
+}
+
+.av-v12 #trendingMaster .cat-btn {
+  min-height: 44px;
+  border-radius: var(--v12-radius-md);
+}
+
+.av-v12 .hover-popup {
+  border-radius: var(--v12-radius-panel);
+  border-color: var(--v12-border-active);
+  box-shadow: var(--v12-shadow-popup);
+  background:
+    radial-gradient(circle at 80% 10%, rgba(212,183,122,.08), transparent 28%),
+    linear-gradient(145deg, rgba(8,34,39,.98), rgba(6,23,28,.98));
+}
+
+/* ============================================================
+   Shared UI language — panels, controls, micro-interactions
+   ============================================================ */
+.av-v12 :where(
+  .filter-window,
+  .login-user,
+  .membri-user,
+  .serii-recente,
+  .top-sugestii-panel,
+  .suprinde-ma,
+  .serii-programate,
+  .serii-cerute,
+  .staff-activity-panel,
+  .hof-container
+) {
+  border-radius: var(--v12-radius-panel);
+}
+
+.av-v12 :where(
+  .sidebar-link,
+  .open-filter-btn,
+  .dropdown-toggle,
+  .sb-btn,
+  .fav-action
+) {
+  transition:
+    transform var(--v12-fast) var(--v12-ease-ui),
+    background-color var(--v12-ui) ease,
+    border-color var(--v12-ui) ease,
+    color var(--v12-ui) ease,
+    box-shadow var(--v12-ui) ease;
+}
+
+/* Mobile: keep V11 content, improve touch discipline */
+@media (max-width: 760px) {
+  .av-v12 {
+    --v12-radius-card: 18px;
+    --v12-radius-panel: 20px;
+  }
+
+  .av-v12 .header {
+    border-radius: 18px;
+  }
+
+  .av-v12 :where(
+    .sidebar-link,
+    .open-filter-btn,
+    .dropdown-toggle,
+    .cat-btn,
+    .fav-action
+  ) {
+    min-height: 44px;
+  }
+
+  .av-v12 #trendingMaster .trending-pair {
+    border-radius: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .av-v12 *,
+  .av-v12 *::before,
+  .av-v12 *::after {
+    scroll-behavior: auto !important;
+  }
+}
