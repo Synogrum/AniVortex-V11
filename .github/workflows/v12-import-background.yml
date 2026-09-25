@@ -28,6 +28,11 @@ jobs:
           test "$(stat -c%s src/public/imgs/backgrounds/v12-emerald-leaf-background.png)" -gt 1000000
           file src/public/imgs/backgrounds/v12-emerald-leaf-background.png
 
+      - name: Copy background into built site
+        run: |
+          mkdir -p site/public/imgs/backgrounds
+          cp src/public/imgs/backgrounds/v12-emerald-leaf-background.png site/public/imgs/backgrounds/v12-emerald-leaf-background.png
+
       - name: Rebuild site
         run: python scripts/build.py
 
