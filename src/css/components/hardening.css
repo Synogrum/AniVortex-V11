@@ -768,3 +768,97 @@ body.av-theme-c .av-flat-join:not(#__av_unified_join)::after {
   }
 }
 
+/* AniVortex V12.4 — starfield only behind the central site canvas */
+body.av-theme-c .wrapper:not(#__av_v124_wrapper) {
+  position: relative;
+  isolation: isolate;
+  background: transparent;
+}
+
+body.av-theme-c .wrapper:not(#__av_v124_wrapper)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: min(100%, 1900px);
+  transform: translateX(-50%);
+  z-index: -1;
+  pointer-events: none;
+  background-color: rgba(3, 20, 15, .86);
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(68, 232, 181, .08), transparent 22%),
+    radial-gradient(circle at 88% 24%, rgba(40, 175, 139, .06), transparent 20%),
+    radial-gradient(circle, rgba(205, 255, 240, .68) 0 1px, transparent 1.45px),
+    radial-gradient(circle, rgba(86, 235, 193, .44) 0 1.05px, transparent 1.55px),
+    radial-gradient(circle, rgba(227, 255, 247, .30) 0 .75px, transparent 1.2px),
+    linear-gradient(180deg, rgba(3, 21, 15, .88) 0%, rgba(2, 17, 13, .84) 46%, rgba(3, 23, 15, .88) 100%);
+  background-size:
+    auto,
+    auto,
+    137px 137px,
+    211px 211px,
+    89px 89px,
+    auto;
+  background-position:
+    0 0,
+    0 0,
+    17px 23px,
+    74px 91px,
+    42px 11px,
+    0 0;
+  box-shadow:
+    0 0 0 1px rgba(104, 234, 198, .055),
+    0 28px 86px rgba(0, 0, 0, .20);
+}
+
+/* The big generated leaf artwork stays visible outside the content canvas. */
+body.av-theme-c .av-bg-image:not(#__av_v124_bg) {
+  opacity: .96;
+  filter: saturate(1.14) contrast(1.04) brightness(.80);
+}
+
+/* Main section shells no longer repaint the whole viewport. */
+body.av-theme-c :where(
+  .page,
+  .banner-wrap,
+  #trendingMaster,
+  .trending-master-container,
+  .share-banner-container,
+  .comentarii-section,
+  .main-container,
+  .chronologie-container,
+  .av-entertainment-shell
+):not(#__av_v124_sections) {
+  background-color: transparent;
+  background-image: none;
+}
+
+/* Footer stays aligned to the same central visual width. */
+body.av-theme-c .av-footer:not(#__av_v124_footer) {
+  position: relative;
+  width: min(100%, 1900px);
+  margin-inline: auto;
+  background-color: rgba(3, 20, 15, .90);
+  background-image:
+    radial-gradient(circle, rgba(205,255,240,.58) 0 1px, transparent 1.4px),
+    radial-gradient(circle, rgba(86,235,193,.38) 0 1px, transparent 1.5px),
+    linear-gradient(180deg, rgba(3,23,15,.90), rgba(2,17,13,.94));
+  background-size: 137px 137px, 211px 211px, auto;
+  background-position: 17px 23px, 74px 91px, 0 0;
+}
+
+@media (max-width: 760px) {
+  body.av-theme-c .wrapper:not(#__av_v124_wrapper)::before {
+    width: 100%;
+    background-image:
+      radial-gradient(circle at 18% 10%, rgba(60, 218, 170, .06), transparent 20%),
+      radial-gradient(circle at 82% 72%, rgba(35, 170, 132, .045), transparent 24%),
+      radial-gradient(circle, rgba(205,255,240,.50) 0 .8px, transparent 1.2px),
+      radial-gradient(circle, rgba(79,224,181,.32) 0 .85px, transparent 1.3px),
+      linear-gradient(180deg, rgba(3,21,15,.90), rgba(2,17,13,.88), rgba(3,23,15,.90));
+    background-size: auto, auto, 121px 121px, 187px 187px, auto;
+    background-position: 0 0, 0 0, 11px 17px, 62px 79px, 0 0;
+  }
+}
+
