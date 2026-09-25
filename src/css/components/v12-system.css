@@ -240,6 +240,6 @@
   .av-v12 *,
   .av-v12 *::before,
   .av-v12 *::after {
-    scroll-behavior: auto !important;
+    scroll-behavior: auto;
   }
 }
