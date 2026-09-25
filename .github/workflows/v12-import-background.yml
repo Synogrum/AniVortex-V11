@@ -21,7 +21,7 @@ jobs:
 
       - name: Download generated background
         env:
-          BG_URL: 'https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-f0c0-8210-a19b-b7d918e1820e/raw?se=2026-09-25T16%3A39%3A13Z&sp=r&sv=2026-02-06&sr=b&scid=785b9f62-513e-5de3-96f5-c9d507b8852c&skoid=9b41a688-1b44-4731-856e-b0efcf3660ed&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-25T16%3A27%3A16Z&ske=2026-09-26T16%3A27%3A16Z&sks=b&skv=2026-02-06&sig=ImPO6xa9QbCzLEcURF4cnTBsen9dLEWAVI2jHJi/dkY%3D'
+          BG_URL: 'https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-4ce4-8210-9813-7194563fa60a/raw?se=2026-09-25T16%3A41%3A30Z&sp=r&sv=2026-02-06&sr=b&scid=dad6832f-c3a3-5243-bd4e-6337060efbd6&skoid=9b41a688-1b44-4731-856e-b0efcf3660ed&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-09-25T14%3A51%3A16Z&ske=2026-09-26T14%3A51%3A16Z&sks=b&skv=2026-02-06&sig=PdfMnL275FZqECYs2cPk4kvFoKIF7R8lWKzIBQXV1Ow%3D'
         run: |
           mkdir -p src/public/imgs/backgrounds
           curl -fL "$BG_URL" -o src/public/imgs/backgrounds/v12-emerald-leaf-background.png
