@@ -45,7 +45,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 24px 0 14px;
-  border-radius: 20px;
+  border-radius: var(--av-radius-lg);
   background:
     radial-gradient(circle at 20% 25%, rgba(65, 105, 225, 0.75), transparent 26%),
     radial-gradient(circle at 82% 28%, rgba(0, 230, 162, 0.58), transparent 22%),
@@ -59,18 +59,18 @@
     );
   backdrop-filter: blur(30px) saturate(1.3);
   -webkit-backdrop-filter: blur(30px) saturate(1.3);
-  border: 2.5px solid rgba(255,255,255,0.08);
+  border: 1px solid var(--av-border-subtle);
   z-index: 2000;
   transition:
-    top 0.35s cubic-bezier(0.4,0,0.2,1),
-    width 0.35s cubic-bezier(0.4,0,0.2,1),
-    height 0.35s cubic-bezier(0.4,0,0.2,1),
-    background 0.35s cubic-bezier(0.4,0,0.2,1),
-    border-color 0.35s cubic-bezier(0.4,0,0.2,1),
-    box-shadow 0.35s cubic-bezier(0.4,0,0.2,1);
+    top var(--av-motion-ui) var(--av-ease-ui),
+    width var(--av-motion-ui) var(--av-ease-ui),
+    height var(--av-motion-ui) var(--av-ease-ui),
+    background var(--av-motion-ui) var(--av-ease-ui),
+    border-color var(--av-motion-ui) var(--av-ease-ui),
+    box-shadow var(--av-motion-ui) var(--av-ease-ui);
   box-shadow:
-    0 8px 32px rgba(0,0,0,0.35),
-    inset 0 1px 0 rgba(255,255,255,0.08);
+    var(--av-shadow-card),
+    inset 0 1px 0 rgba(255,255,255,.07);
   overflow: visible;
 }
 
@@ -89,17 +89,17 @@
       rgba(50, 150, 210, 0.05) 45%,
       rgba(0, 230, 162, 0.04) 100%
     );
-  border-color: rgba(255,255,255,0.05);
+  border-color: rgba(255,255,255,.07);
   box-shadow:
-    0 6px 18px rgba(0,0,0,0.18),
-    inset 0 1px 0 rgba(255,255,255,0.03);
+    0 10px 28px rgba(0,0,0,.22),
+    inset 0 1px 0 rgba(255,255,255,.035);
 }
 
 .header::after {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 20px;
+  border-radius: inherit;
   background:
     linear-gradient(
       180deg,
@@ -1178,33 +1178,6 @@
    AniVortex V12 — Header refinement foundation
    Păstrează identitatea V11, dar standardizează radius/shadow/motion.
    ============================================================ */
-.header {
-  border-radius: var(--av-radius-lg);
-  border-width: 1px;
-  border-color: var(--av-border-subtle);
-  box-shadow:
-    var(--av-shadow-card),
-    inset 0 1px 0 rgba(255,255,255,.07);
-  transition:
-    top var(--av-motion-ui) var(--av-ease-ui),
-    width var(--av-motion-ui) var(--av-ease-ui),
-    height var(--av-motion-ui) var(--av-ease-ui),
-    background var(--av-motion-ui) var(--av-ease-ui),
-    border-color var(--av-motion-ui) var(--av-ease-ui),
-    box-shadow var(--av-motion-ui) var(--av-ease-ui);
-}
-
-.header::after {
-  border-radius: inherit;
-}
-
-.header.scrolled {
-  border-color: rgba(255,255,255,.07);
-  box-shadow:
-    0 10px 28px rgba(0,0,0,.22),
-    inset 0 1px 0 rgba(255,255,255,.035);
-}
-
 .hamburger,
 .header .nav-item > a {
   border-radius: var(--av-radius-sm);
