@@ -1079,3 +1079,125 @@ body.av-theme-c .av-bg-image:not(#__av_v126_leafbg) {
   }
 }
 
+/* AniVortex V12.7 — real full-height background behind all site elements */
+body.av-theme-c:not(#__av_v127_body) {
+  position: relative;
+  min-height: 100%;
+  isolation: isolate;
+  background: transparent;
+}
+
+/* Disable all previous experimental central star layers. */
+body.av-theme-c:not(#__av_v127_body)::before,
+body.av-theme-c .wrapper:not(#__av_v127_wrapper)::before {
+  content: none;
+}
+
+/* Real HTML layer: same width as the full content system, top to footer. */
+body.av-theme-c .av-site-column-bg:not(#__av_v127_column) {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: min(calc(100% - 32px), 1900px);
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 22px 22px 0 0;
+  background-color: #031712;
+  background-image:
+    radial-gradient(circle at 14% 6%, rgba(64, 224, 175, .07), transparent 24%),
+    radial-gradient(circle at 84% 22%, rgba(39, 176, 139, .055), transparent 22%),
+    radial-gradient(circle at 36% 58%, rgba(43, 197, 153, .035), transparent 26%),
+    radial-gradient(circle at 72% 84%, rgba(55, 215, 169, .04), transparent 25%),
+    radial-gradient(circle, rgba(205, 255, 240, .34) 0 .8px, transparent 1.2px),
+    radial-gradient(circle, rgba(84, 225, 183, .25) 0 .85px, transparent 1.3px),
+    linear-gradient(180deg, #031812 0%, #02120e 48%, #031711 100%);
+  background-size:
+    auto,
+    auto,
+    auto,
+    auto,
+    151px 151px,
+    233px 233px,
+    auto;
+  background-position:
+    0 0,
+    0 0,
+    0 0,
+    0 0,
+    19px 27px,
+    83px 101px,
+    0 0;
+  box-shadow:
+    0 0 0 1px rgba(106, 232, 197, .055),
+    0 0 54px rgba(0, 0, 0, .24);
+}
+
+/* Keep the generated leaf artwork visible only around the content column. */
+body.av-theme-c .av-bg-image:not(#__av_v127_leafbg) {
+  z-index: 0;
+  opacity: .97;
+  filter: saturate(1.15) contrast(1.04) brightness(.82);
+}
+
+/* Every real interface element sits above the common green canvas. */
+body.av-theme-c > :not(.av-bg-image):not(.av-bg-vignette):not(.av-bg-noise):not(.backdrop):not(.av-site-column-bg) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Remove large-section paint so there is no interruption in the green column. */
+body.av-theme-c :where(
+  .wrapper,
+  .page,
+  .banner-wrap,
+  #trendingMaster,
+  .trending-master-container,
+  .share-banner-container,
+  .comentarii-section,
+  .main-container,
+  .chronologie-container,
+  .av-entertainment-shell,
+  .av-footer
+):not(#__av_v127_sections) {
+  background-color: transparent;
+  background-image: none;
+}
+
+/* Keep individual cards/panels intact, only the large section shells are transparent. */
+body.av-theme-c :where(
+  #trendingMaster,
+  .comentarii-section,
+  .main-container,
+  .chronologie-container,
+  .av-entertainment-shell
+):not(#__av_v127_sections)::before {
+  background: transparent;
+}
+
+/* Footer continues on the same exact canvas. */
+body.av-theme-c .av-footer:not(#__av_v127_footer) {
+  width: min(calc(100% - 32px), 1900px);
+  margin-inline: auto;
+  background: transparent;
+}
+
+@media (max-width: 760px) {
+  body.av-theme-c .av-site-column-bg:not(#__av_v127_column) {
+    width: calc(100% - 16px);
+    border-radius: 16px 16px 0 0;
+    background-image:
+      radial-gradient(circle at 18% 8%, rgba(62, 218, 171, .05), transparent 22%),
+      radial-gradient(circle, rgba(205,255,240,.25) 0 .7px, transparent 1.1px),
+      radial-gradient(circle, rgba(80,220,178,.18) 0 .75px, transparent 1.2px),
+      linear-gradient(180deg, #031812 0%, #02120e 50%, #031711 100%);
+    background-size: auto, 139px 139px, 211px 211px, auto;
+    background-position: 0 0, 17px 23px, 64px 83px, 0 0;
+  }
+
+  body.av-theme-c .av-footer:not(#__av_v127_footer) {
+    width: calc(100% - 16px);
+  }
+}
+
