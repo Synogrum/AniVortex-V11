@@ -76,7 +76,8 @@
     "footer.css",
     "hardening.css",
     "header.css",
-    "hot-news-new.css"
+    "hot-news-new.css",
+    "v12-system.css"
   ],
   "js_files": [
     "perf.js",
@@ -94,5 +95,5 @@
     "hot-news-new.js",
     "trending.js"
   ],
-  "asset_version": "20260920.10"
+  "asset_version": "20260925.v12.1"
 }
