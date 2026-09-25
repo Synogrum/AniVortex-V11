@@ -962,3 +962,120 @@ body.av-theme-c :where(
   }
 }
 
+/* AniVortex V12.6 — one continuous dark-green content column */
+body.av-theme-c:not(#__av_v126_body) {
+  position: relative;
+  min-height: 100%;
+  isolation: isolate;
+}
+
+/* One single background from the header zone to the bottom of the footer. */
+body.av-theme-c:not(#__av_v126_body)::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  bottom: 0;
+  left: 50%;
+  width: min(calc(100% - 32px), 1900px);
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 22px 22px 0 0;
+  background:
+    radial-gradient(circle at 18% 7%, rgba(67, 222, 175, .055), transparent 24%),
+    radial-gradient(circle at 83% 28%, rgba(38, 169, 132, .045), transparent 22%),
+    radial-gradient(circle, rgba(205,255,240,.34) 0 .8px, transparent 1.2px),
+    radial-gradient(circle, rgba(84,225,183,.25) 0 .85px, transparent 1.3px),
+    linear-gradient(180deg, rgba(3, 24, 18, .97) 0%, rgba(2, 18, 14, .97) 48%, rgba(3, 23, 17, .98) 100%);
+  background-size:
+    auto,
+    auto,
+    151px 151px,
+    233px 233px,
+    auto;
+  background-position:
+    0 0,
+    0 0,
+    19px 27px,
+    83px 101px,
+    0 0;
+  box-shadow:
+    0 0 0 1px rgba(110, 232, 198, .06),
+    0 0 42px rgba(0, 0, 0, .24);
+}
+
+/* Disable the previous wrapper starfield. V12.6 uses only the single body canvas. */
+body.av-theme-c .wrapper:not(#__av_v126_wrapper),
+body.av-theme-c .wrapper:not(#__av_v126_wrapper)::before {
+  background: transparent;
+}
+
+body.av-theme-c .wrapper:not(#__av_v126_wrapper)::before {
+  content: none;
+}
+
+/* Every large section sits on the same continuous dark-green background. */
+body.av-theme-c :where(
+  .page,
+  .banner-wrap,
+  #trendingMaster,
+  .trending-master-container,
+  .share-banner-container,
+  .comentarii-section,
+  .main-container,
+  .chronologie-container,
+  .av-entertainment-shell,
+  .av-footer
+):not(#__av_v126_sections) {
+  background-color: transparent;
+  background-image: none;
+}
+
+/* Avoid section-specific full-width paint layers breaking the continuity. */
+body.av-theme-c :where(
+  #trendingMaster,
+  .comentarii-section,
+  .main-container,
+  .chronologie-container,
+  .av-entertainment-shell
+):not(#__av_v126_sections)::before {
+  background: transparent;
+}
+
+/* Footer is part of the same column, not a separate background block. */
+body.av-theme-c .av-footer:not(#__av_v126_footer) {
+  width: min(calc(100% - 32px), 1900px);
+  margin-inline: auto;
+  background: transparent;
+}
+
+/* Keep actual site content above the continuous central canvas. */
+body.av-theme-c > :not(.av-bg-image):not(.av-bg-vignette):not(.av-bg-noise):not(.backdrop) {
+  position: relative;
+  z-index: 1;
+}
+
+/* The generated leaf artwork remains visible only outside the central column. */
+body.av-theme-c .av-bg-image:not(#__av_v126_leafbg) {
+  opacity: .97;
+  filter: saturate(1.15) contrast(1.04) brightness(.82);
+}
+
+@media (max-width: 760px) {
+  body.av-theme-c:not(#__av_v126_body)::before {
+    top: 8px;
+    width: calc(100% - 16px);
+    border-radius: 16px 16px 0 0;
+    background:
+      radial-gradient(circle at 18% 8%, rgba(62, 218, 171, .045), transparent 22%),
+      radial-gradient(circle, rgba(205,255,240,.25) 0 .7px, transparent 1.1px),
+      linear-gradient(180deg, rgba(3,24,18,.98), rgba(2,18,14,.98) 50%, rgba(3,23,17,.98));
+    background-size: auto, 139px 139px, auto;
+    background-position: 0 0, 17px 23px, 0 0;
+  }
+
+  body.av-theme-c .av-footer:not(#__av_v126_footer) {
+    width: calc(100% - 16px);
+  }
+}
+
