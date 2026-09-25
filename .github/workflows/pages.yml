@@ -2,7 +2,7 @@ name: Deploy AniVortex V11 to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "v12-design-system"]
   workflow_dispatch:
 
 permissions:
@@ -23,8 +23,25 @@ jobs:
     outputs:
       page_url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout
+      - name: Checkout V11 stable site
         uses: actions/checkout@v6
+        with:
+          ref: main
+          path: main-tree
+
+      - name: Checkout V12 preview
+        uses: actions/checkout@v6
+        with:
+          ref: v12-design-system
+          path: v12-tree
+
+      - name: Compose V11 + V12 preview
+        shell: bash
+        run: |
+          rm -rf publish
+          mkdir -p publish/v12-preview
+          cp -a main-tree/site/. publish/
+          cp -a v12-tree/site/. publish/v12-preview/
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -34,7 +51,7 @@ jobs:
       - name: Upload static site
         uses: actions/upload-pages-artifact@v4
         with:
-          path: site
+          path: publish
 
       - name: Deploy
         id: deployment
@@ -48,6 +65,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
