@@ -35,11 +35,7 @@
   color: var(--avf-text);
   font-family: Inter, "Segoe UI", Arial, sans-serif;
 
-  background-color: var(--av-section-bg);
-  background-image: var(--av-section-stars);
-  background-size: var(--av-section-star-size);
-  background-position: var(--av-section-star-position);
-  background-repeat: repeat;
+  background: transparent;
 }
 
 .av-footer::before {
@@ -1405,11 +1401,7 @@
   margin: -1px auto 0;
   overflow: visible;
   pointer-events: none;
-  background-color: var(--av-section-bg);
-  background-image: var(--av-section-stars);
-  background-size: var(--av-section-star-size);
-  background-position: var(--av-section-star-position);
-  background-repeat: repeat;
+  background: transparent;
 }
 
 .av-footer {
