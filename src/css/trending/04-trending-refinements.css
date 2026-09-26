@@ -122,11 +122,7 @@
   --avt-card-ink: #eef4f3;
   --avt-card-muted: #97afb2;
   --avt-card-accent: #71d1c3;
-  background-color: var(--av-section-bg);
-  background-image: var(--av-section-stars);
-  background-size: var(--av-section-star-size);
-  background-position: var(--av-section-star-position);
-  background-repeat: repeat;
+  background: transparent;
   border-color: rgba(107, 177, 178, .22);
   box-shadow:
     0 18px 42px rgba(0, 0, 0, .28),
