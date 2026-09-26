@@ -276,11 +276,7 @@
   margin: -1px auto 0;
   overflow: hidden;
   pointer-events: none;
-  background-color: var(--av-section-bg);
-  background-image: var(--av-section-stars);
-  background-size: var(--av-section-star-size);
-  background-position: var(--av-section-star-position);
-  background-repeat: repeat;
+  background: transparent;
   isolation: isolate;
 }
 
