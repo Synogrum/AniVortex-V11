@@ -1424,3 +1424,153 @@ body.av-theme-c .av-site-column-bg:not(#__av_v129_canvas)::after {
   }
 }
 
+/* AniVortex V12.10 — identical background on every major section */
+body.av-theme-c {
+  --av-v1210-bg: #031711;
+  --av-v1210-stars:
+    radial-gradient(circle, rgba(220,255,245,.20) 0 .75px, transparent 1.15px),
+    radial-gradient(circle, rgba(94,226,187,.12) 0 .8px, transparent 1.2px);
+}
+
+/* Same exact background on every major section. */
+body.av-theme-c :where(
+  .av-site-column-bg,
+  .banner,
+  .banner.active,
+  #trendingMaster,
+  .trending-master-container,
+  .share-banner-container,
+  .comentarii-section,
+  .main-container,
+  .chronologie-container,
+  .carousel-collection,
+  .av-entertainment-shell,
+  .av-footer
+):not(#__av_v1210_samebg) {
+  background-color: var(--av-v1210-bg);
+  background-image: var(--av-v1210-stars);
+  background-size: 154px 154px, 236px 236px;
+  background-position: 22px 30px, 88px 106px;
+  background-repeat: repeat;
+}
+
+/* Outer wrappers remain transparent, so they cannot add another shade. */
+body.av-theme-c :where(
+  .wrapper,
+  .page,
+  .banner-wrap
+):not(#__av_v1210_outer) {
+  background: transparent;
+}
+
+/* Banner: remove the large overlays that were making it grey/brown. */
+body.av-theme-c .banner > :where(
+  .bg-gradient,
+  .bg-radial,
+  .bg-overlay,
+  .top-line,
+  .bubble,
+  .red-glow,
+  .scan-light,
+  .image-hover-glow,
+  .gooey-ring
+):not(#__av_v1210_bannerfx) {
+  opacity: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Trending: remove ambient blobs / large section paint. */
+body.av-theme-c #trendingMaster::before,
+body.av-theme-c #trendingMaster::after,
+body.av-theme-c .trending-master-container::before,
+body.av-theme-c .trending-master-container::after,
+body.av-theme-c .trending-section > :where(.orb, .orb-1, .orb-2, .ambient, .ambient-glow) {
+  background: transparent;
+  box-shadow: none;
+  opacity: 0;
+}
+
+/* Comments / main / chronology / entertainment / footer:
+   kill only section-level paint, not cards/panels. */
+body.av-theme-c :where(
+  .comentarii-section,
+  .main-container,
+  .chronologie-container,
+  .carousel-collection,
+  .av-entertainment-shell,
+  .av-footer
+)::before,
+body.av-theme-c :where(
+  .comentarii-section,
+  .main-container,
+  .chronologie-container,
+  .carousel-collection,
+  .av-entertainment-shell,
+  .av-footer
+)::after {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Chronology shape and entertainment ambient previously created another tone. */
+body.av-theme-c .chrono-top-rise,
+body.av-theme-c .av-entertainment-ambient {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Share section gets the same surface, without its old radial wash. */
+body.av-theme-c .share-banner-container::before,
+body.av-theme-c .share-banner-container::after {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Flat joins no longer create visible bands between equal-background sections. */
+body.av-theme-c .av-flat-join:not(#__av_v1210_join) {
+  background-color: var(--av-v1210-bg);
+  background-image: var(--av-v1210-stars);
+  background-size: 154px 154px, 236px 236px;
+  background-position: 22px 30px, 88px 106px;
+  box-shadow: none;
+}
+
+body.av-theme-c .av-flat-join:not(#__av_v1210_join)::before,
+body.av-theme-c .av-flat-join:not(#__av_v1210_join)::after {
+  opacity: 0;
+}
+
+/* Keep the big leaf artwork only on the outer page sides. */
+body.av-theme-c .av-bg-image:not(#__av_v1210_leaf) {
+  opacity: .97;
+  filter: saturate(1.14) contrast(1.04) brightness(.82);
+}
+
+@media (max-width: 760px) {
+  body.av-theme-c {
+    --av-v1210-stars:
+      radial-gradient(circle, rgba(220,255,245,.16) 0 .7px, transparent 1.05px),
+      radial-gradient(circle, rgba(94,226,187,.09) 0 .75px, transparent 1.15px);
+  }
+
+  body.av-theme-c :where(
+    .av-site-column-bg,
+    .banner,
+    .banner.active,
+    #trendingMaster,
+    .trending-master-container,
+    .share-banner-container,
+    .comentarii-section,
+    .main-container,
+    .chronologie-container,
+    .carousel-collection,
+    .av-entertainment-shell,
+    .av-footer,
+    .av-flat-join
+  ):not(#__av_v1210_mobile) {
+    background-size: 142px 142px, 218px 218px;
+    background-position: 18px 24px, 72px 92px;
+  }
+}
+
