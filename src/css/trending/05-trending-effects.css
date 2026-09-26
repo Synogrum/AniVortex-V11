@@ -466,8 +466,16 @@ body .trending-share-join + .share-banner-container .share-banner-section:not(#_
 }
 
 /* 2. Fundal uniform Trending → V → Share */
-.trending-share-join:not(#__av_prio_a#__av_prio_b), .trending-share-join + .share-banner-container:not(#__av_prio_a#__av_prio_b), .trending-share-join + .share-banner-container .share-banner-section:not(#__av_prio_a#__av_prio_b) {
-  background: #071b21;
+.trending-share-join:not(#__av_prio_a#__av_prio_b),
+.trending-share-join + .share-banner-container .share-banner-section:not(#__av_prio_a#__av_prio_b) {
+  background: transparent;
+}
+.trending-share-join + .share-banner-container:not(#__av_prio_a#__av_prio_b) {
+  background-color: var(--av-section-bg);
+  background-image: var(--av-section-stars);
+  background-size: var(--av-section-star-size);
+  background-position: var(--av-section-star-position);
+  background-repeat: repeat;
 }
 .trending-share-join + .share-banner-container .share-banner-section:not(#__av_prio_a#__av_prio_b) {
   border-top: none;
