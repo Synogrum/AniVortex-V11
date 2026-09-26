@@ -203,3 +203,43 @@ body > .av-footer {
 
 /* Scripturile nu participă vizual la layout; popup-urile globale
    rămân în afara .wrapper exact cum erau concepute. */
+
+
+/* ============================================================
+   V12.12 canonical central canvas
+   One dark-emerald/star surface fills the site column; the generated
+   leaf artwork remains visible only outside this column.
+   ============================================================ */
+body.av-theme-c {
+  position: relative;
+  isolation: isolate;
+  background: #010805;
+}
+
+body.av-theme-c .av-site-column-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: min(calc(100% - 32px), var(--av-content-max));
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
+  background-color: var(--av-section-bg);
+  background-image: var(--av-section-stars);
+  background-size: var(--av-section-star-size);
+  background-position: var(--av-section-star-position);
+  background-repeat: repeat;
+}
+
+body.av-theme-c > .wrapper,
+body.av-theme-c > .av-footer {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 760px) {
+  body.av-theme-c .av-site-column-bg {
+    width: calc(100% - 16px);
+  }
+}
