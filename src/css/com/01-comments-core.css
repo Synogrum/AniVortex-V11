@@ -21,11 +21,7 @@
   min-height: 555px;
   padding: 42px 26px 78px;
   overflow: hidden;
-  background-color: var(--av-section-bg);
-  background-image: var(--av-section-stars);
-  background-size: var(--av-section-star-size);
-  background-position: var(--av-section-star-position);
-  background-repeat: repeat;
+  background: transparent;
   border: 0;
   border-radius: 0;
   -webkit-clip-path: url(#comentariiClipV7);
