@@ -1574,3 +1574,144 @@ body.av-theme-c .av-bg-image:not(#__av_v1210_leaf) {
   }
 }
 
+/* AniVortex V12.11 — force the SAME background on every major section.
+   Uses stronger specificity than legacy :not(#id#id) selectors. */
+body.av-theme-c {
+  --av-v1211-bg: #031711;
+  --av-v1211-stars:
+    radial-gradient(circle, rgba(220,255,245,.18) 0 .72px, transparent 1.12px),
+    radial-gradient(circle, rgba(94,226,187,.10) 0 .78px, transparent 1.18px);
+  --av-v1211-star-size-a: 154px 154px;
+  --av-v1211-star-size-b: 236px 236px;
+  --av-v1211-star-pos-a: 22px 30px;
+  --av-v1211-star-pos-b: 88px 106px;
+}
+
+/* Outer wrappers must never paint another colour. */
+body.av-theme-c .wrapper:not(#__av1211a#__av1211b#__av1211c#__av1211d),
+body.av-theme-c .page:not(#__av1211a#__av1211b#__av1211c#__av1211d),
+body.av-theme-c .banner-wrap:not(#__av1211a#__av1211b#__av1211c#__av1211d) {
+  background: transparent;
+  background-image: none;
+}
+
+/* Exact same background on each real section. */
+body.av-theme-c .banner:not(#__av1211a#__av1211b#__av1211c#__av1211d),
+body.av-theme-c .banner.active:not(#__av1211a#__av1211b#__av1211c#__av1211d),
+body.av-theme-c #trendingMaster:not(#__av1211a#__av1211b#__av1211c#__av1211d),
+body.av-theme-c .share-banner-container:not(#__av1211a#__av1211b#__av1211c#__av1211d),
+body.av-theme-c .comentarii-section:not(#__av1211a#__av1211b#__av1211c#__av1211d),
+body.av-theme-c .main-container:not(#__av1211a#__av1211b#__av1211c#__av1211d),
+body.av-theme-c .chronologie-container:not(#__av1211a#__av1211b#__av1211c#__av1211d),
+body.av-theme-c .av-entertainment-shell:not(#__av1211a#__av1211b#__av1211c#__av1211d),
+body.av-theme-c .carousel-section:not(#__av1211a#__av1211b#__av1211c#__av1211d),
+body.av-theme-c .av-footer:not(#__av1211a#__av1211b#__av1211c#__av1211d),
+body.av-theme-c .av-site-column-bg:not(#__av1211a#__av1211b#__av1211c#__av1211d) {
+  background-color: var(--av-v1211-bg);
+  background-image: var(--av-v1211-stars);
+  background-size:
+    var(--av-v1211-star-size-a),
+    var(--av-v1211-star-size-b);
+  background-position:
+    var(--av-v1211-star-pos-a),
+    var(--av-v1211-star-pos-b);
+  background-repeat: repeat;
+  filter: none;
+}
+
+/* Remove section-level overlays only. Individual cards/panels keep their own surfaces. */
+body.av-theme-c .page:not(#__av1211a#__av1211b#__av1211c#__av1211d)::before,
+body.av-theme-c .page:not(#__av1211a#__av1211b#__av1211c#__av1211d)::after,
+body.av-theme-c #trendingMaster:not(#__av1211a#__av1211b#__av1211c#__av1211d)::before,
+body.av-theme-c #trendingMaster:not(#__av1211a#__av1211b#__av1211c#__av1211d)::after,
+body.av-theme-c .share-banner-container:not(#__av1211a#__av1211b#__av1211c#__av1211d)::before,
+body.av-theme-c .share-banner-container:not(#__av1211a#__av1211b#__av1211c#__av1211d)::after,
+body.av-theme-c .comentarii-section:not(#__av1211a#__av1211b#__av1211c#__av1211d)::before,
+body.av-theme-c .comentarii-section:not(#__av1211a#__av1211b#__av1211c#__av1211d)::after,
+body.av-theme-c .main-container:not(#__av1211a#__av1211b#__av1211c#__av1211d)::before,
+body.av-theme-c .main-container:not(#__av1211a#__av1211c#__av1211d#__av1211e)::after,
+body.av-theme-c .chronologie-container:not(#__av1211a#__av1211b#__av1211c#__av1211d)::before,
+body.av-theme-c .chronologie-container:not(#__av1211a#__av1211b#__av1211c#__av1211d)::after,
+body.av-theme-c .av-entertainment-shell:not(#__av1211a#__av1211b#__av1211c#__av1211d)::before,
+body.av-theme-c .av-entertainment-shell:not(#__av1211a#__av1211b#__av1211c#__av1211d)::after,
+body.av-theme-c .av-footer:not(#__av1211a#__av1211b#__av1211c#__av1211d)::before,
+body.av-theme-c .av-footer:not(#__av1211a#__av1211b#__av1211c#__av1211d)::after {
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+}
+
+/* Banner had several internal full-size paint layers. */
+body.av-theme-c .banner:not(#__av1211a#__av1211b#__av1211c#__av1211d) > .bg-gradient,
+body.av-theme-c .banner:not(#__av1211a#__av1211b#__av1211c#__av1211d) > .bg-radial,
+body.av-theme-c .banner:not(#__av1211a#__av1211b#__av1211c#__av1211d) > .bg-overlay,
+body.av-theme-c .banner:not(#__av1211a#__av1211b#__av1211c#__av1211d) > .top-line,
+body.av-theme-c .banner:not(#__av1211a#__av1211b#__av1211c#__av1211d) > .bubble,
+body.av-theme-c .banner:not(#__av1211a#__av1211b#__av1211c#__av1211d) .red-glow,
+body.av-theme-c .banner:not(#__av1211a#__av1211b#__av1211c#__av1211d) .scan-light {
+  opacity: 0;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+}
+
+/* Comments section keeps the frame but not its separate colour/glow layer. */
+body.av-theme-c .comentarii-frame-v7:not(#__av1211a#__av1211b#__av1211c#__av1211d) path {
+  fill: transparent;
+}
+
+/* Chronology SVG was literally filled with another surface colour. */
+body.av-theme-c .chrono-top-rise:not(#__av1211a#__av1211b#__av1211c#__av1211d) path:first-of-type {
+  fill: var(--av-v1211-bg);
+}
+
+/* Entertainment ambient created yet another green shade. */
+body.av-theme-c .av-entertainment-ambient:not(#__av1211a#__av1211b#__av1211c#__av1211d) {
+  opacity: 0;
+  background: transparent;
+  background-image: none;
+}
+
+/* Footer decorative background layers must not recolour the section. */
+body.av-theme-c .avf-accent:not(#__av1211a#__av1211b#__av1211c#__av1211d),
+body.av-theme-c .avf-outline-word:not(#__av1211a#__av1211b#__av1211c#__av1211d) {
+  background-color: transparent;
+}
+
+/* Joins inherit the exact same surface, removing visible colour bands. */
+body.av-theme-c .av-flat-join:not(#__av1211a#__av1211b#__av1211c#__av1211d) {
+  background-color: var(--av-v1211-bg);
+  background-image: var(--av-v1211-stars);
+  background-size:
+    var(--av-v1211-star-size-a),
+    var(--av-v1211-star-size-b);
+  background-position:
+    var(--av-v1211-star-pos-a),
+    var(--av-v1211-star-pos-b);
+  box-shadow: none;
+}
+
+body.av-theme-c .av-flat-join:not(#__av1211a#__av1211b#__av1211c#__av1211d)::before,
+body.av-theme-c .av-flat-join:not(#__av1211a#__av1211b#__av1211c#__av1211d)::after {
+  opacity: 0;
+  background: transparent;
+}
+
+/* Main top-level side/center columns remain content surfaces, while the section
+   underneath them is the exact common green. */
+body.av-theme-c .main-container:not(#__av1211a#__av1211b#__av1211c#__av1211d) {
+  box-shadow: none;
+}
+
+@media (max-width: 760px) {
+  body.av-theme-c {
+    --av-v1211-stars:
+      radial-gradient(circle, rgba(220,255,245,.14) 0 .68px, transparent 1.04px),
+      radial-gradient(circle, rgba(94,226,187,.08) 0 .72px, transparent 1.10px);
+    --av-v1211-star-size-a: 142px 142px;
+    --av-v1211-star-size-b: 218px 218px;
+    --av-v1211-star-pos-a: 18px 24px;
+    --av-v1211-star-pos-b: 72px 92px;
+  }
+}
+
