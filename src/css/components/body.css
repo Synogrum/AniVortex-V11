@@ -221,7 +221,7 @@ body.av-theme-c .av-site-column-bg {
   top: 0;
   bottom: 0;
   left: 50%;
-  width: min(calc(100% - 32px), var(--av-content-max));
+  width: min(100%, var(--av-content-max));
   transform: translateX(-50%);
   z-index: 0;
   pointer-events: none;
@@ -238,8 +238,17 @@ body.av-theme-c > .av-footer {
   z-index: 1;
 }
 
+/* La zoom normal / viewport standard, fundalul central ajunge până în marginile ecranului.
+   La zoom-out (viewport CSS mai lat de 2000px), revine limita de 1900px ca frunzele
+   să rămână vizibile doar în exteriorul coloanei centrale. */
+@media (max-width: 2000px) {
+  body.av-theme-c .av-site-column-bg {
+    width: 100%;
+  }
+}
+
 @media (max-width: 760px) {
   body.av-theme-c .av-site-column-bg {
-    width: calc(100% - 16px);
+    width: 100%;
   }
 }
