@@ -122,11 +122,9 @@ body .page:not(#__av_prio_a#__av_prio_b)::before {
    - fundalul bannerului vine până sus
    - fără să mutăm headerul
    ============================================================ */
-html:not(#__av_prio_a#__av_prio_b), body:not(#__av_prio_a#__av_prio_b) {
+html, body {
   margin: 0;
   padding: 0;
-  background: var(--av-bg-teal);
-  background-image: none;
 }
 
 body .page:not(#__av_prio_a#__av_prio_b) {
