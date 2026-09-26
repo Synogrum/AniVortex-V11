@@ -1,11 +1,6 @@
 /* ======================== main.css complet ======================== */
 .main-container {
-    
-    background-color: var(--av-section-bg);
-    background-image: var(--av-section-stars);
-    background-size: var(--av-section-star-size);
-    background-position: var(--av-section-star-position);
-    background-repeat: repeat;
+    background: transparent;
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
@@ -11801,11 +11796,7 @@ main video
   padding: 0;
   border: 0;
   border-radius: 0;
-  background-color: var(--av-section-bg);
-  background-image: var(--av-section-stars);
-  background-size: var(--av-section-star-size);
-  background-position: var(--av-section-star-position);
-  background-repeat: repeat;
+  background: transparent;
   
   box-shadow: none;
 }
@@ -11890,11 +11881,7 @@ main video
 
 /* COM cu stele răspândite pe toată suprafața */
 .comentarii-section:not(#__av_prio_a#__av_prio_b) {
-  background-color: var(--av-section-bg);
-  background-image: var(--av-section-stars);
-  background-size: var(--av-section-star-size);
-  background-position: var(--av-section-star-position);
-  background-repeat: repeat;
+  background: transparent;
   width: 100%;
   max-width: none;
   min-width: 0;
