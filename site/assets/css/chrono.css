@@ -33,7 +33,11 @@
     color: var(--chrono-text);
     border: 1px solid var(--chrono-border);
     border-radius: 0;
-    background: var(--chrono-surface);
+    background-color: var(--av-section-bg);
+    background-image: var(--av-section-stars);
+    background-size: var(--av-section-star-size);
+    background-position: var(--av-section-star-position);
+    background-repeat: repeat;
     font-family: Inter, "Segoe UI", sans-serif;
     text-align: center;
 }
@@ -58,10 +62,7 @@
 
 .chronologie-container::before,
 .chronologie-container::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    pointer-events: none;
+    content: none;
 }
 
 .chronologie-container::before {
