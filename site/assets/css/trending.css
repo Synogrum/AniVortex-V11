@@ -764,28 +764,12 @@ body{padding:32px 0;background:#0d0b0e;color:#fff;font-family:Inter,system-ui,sa
   padding-block: 18px 6px;
   border: 1px solid rgba(184, 146, 94, .24); border-radius: 0;
   border-bottom: 0;
-  background:
-    radial-gradient(ellipse at 0% 0%, rgba(184, 146, 94, .16), transparent 52%),
-    radial-gradient(ellipse at 100% 100%, rgba(73, 39, 43, .46), transparent 58%),
-    linear-gradient(125deg, #20191b, #100e12 55%, #1b1216);
-  box-shadow:
-    0 18px 42px rgba(0, 0, 0, .28),
-    inset 0 1px 0 rgba(212, 183, 122, .07);
+  background: transparent;
+  box-shadow: none;
 }
 
 #trendingMaster::before {
-  content: ""; position: absolute; z-index: 0;
-  inset: 4px 10px 7px 8px; pointer-events: none; opacity: .22;
-  background-image:
-    radial-gradient(circle at 7% 14%, rgba(225, 252, 255, .7) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 19% 62%, rgba(180, 244, 255, .48) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 34% 29%, rgba(230, 255, 255, .62) 0 1px, transparent 1.6px),
-    radial-gradient(circle at 49% 79%, rgba(176, 242, 255, .52) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 66% 18%, rgba(235, 255, 255, .72) 0 1px, transparent 1.6px),
-    radial-gradient(circle at 81% 58%, rgba(185, 245, 255, .55) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 94% 31%, rgba(230, 255, 255, .65) 0 1px, transparent 1.6px);
-  background-size: 330px 260px, 390px 310px, 460px 350px, 410px 300px, 370px 280px, 430px 330px, 360px 290px;
-  animation: avEntStars 22s linear infinite alternate;
+  content: none;
 }
 
 #trendingMaster > * { position: relative; z-index: 1; }
@@ -1174,16 +1158,9 @@ body{padding:32px 0;background:#0d0b0e;color:#fff;font-family:Inter,system-ui,sa
   --avt-card-ink: #eef4f3;
   --avt-card-muted: #97afb2;
   --avt-card-accent: #71d1c3;
-  background:
-    radial-gradient(circle at 16% 10%, rgba(50, 84, 142, .22), transparent 28%),
-    radial-gradient(circle at 82% 18%, rgba(111, 183, 173, .10), transparent 24%),
-    radial-gradient(circle at 50% 100%, rgba(144, 116, 100, .12), transparent 30%),
-    linear-gradient(135deg, #061c22 0%, #08262d 46%, #031419 100%);
+  background: transparent;
   border-color: rgba(107, 177, 178, .22);
-  box-shadow:
-    0 18px 42px rgba(0, 0, 0, .28),
-    inset 0 1px 0 rgba(220, 221, 219, .05),
-    inset 0 0 0 1px rgba(111, 183, 173, .04);
+  box-shadow: none;
 }
 
 
@@ -2176,25 +2153,12 @@ body{padding:32px 0;background:#0d0b0e;color:#fff;font-family:Inter,system-ui,sa
   margin: -1px auto 0;
   overflow: hidden;
   pointer-events: none;
-  background: #071b21;
+  background: transparent;
   isolation: isolate;
 }
 
 .trending-share-join::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  opacity: .2;
-  background-image:
-    radial-gradient(circle at 8% 28%, rgba(225,252,255,.70) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 22% 72%, rgba(180,244,255,.48) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 37% 24%, rgba(230,255,255,.62) 0 1px, transparent 1.6px),
-    radial-gradient(circle at 51% 76%, rgba(176,242,255,.52) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 67% 30%, rgba(235,255,255,.72) 0 1px, transparent 1.6px),
-    radial-gradient(circle at 82% 68%, rgba(185,245,255,.55) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 95% 34%, rgba(230,255,255,.65) 0 1px, transparent 1.6px);
-  background-repeat: no-repeat;
+  content: none;
 }
 
 .trending-share-join svg {
@@ -2207,18 +2171,12 @@ body{padding:32px 0;background:#0d0b0e;color:#fff;font-family:Inter,system-ui,sa
   filter: none;
 }
 
-.trending-share-join-fill { fill: #000; }
 
-.trending-share-join-gold,
-.trending-share-join-teal {
-  fill: none;
-  vector-effect: non-scaling-stroke;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
 
-.trending-share-join-gold { stroke: url(#trendingShareGold); stroke-width: 1.2; }
-.trending-share-join-teal { display: none; }
+
+
+
+
 
 #trendingMaster .avt-v31-fx:not(#__av_prio_a#__av_prio_b)::before, #trendingMaster .avt-v31-fx:not(#__av_prio_a#__av_prio_b)::after {
   content: none;
@@ -2297,7 +2255,7 @@ body .trending-share-join + .share-banner-container .share-banner-section:not(#_
 /* 1. Spațiu între carduri și Share */
 #trendingMaster:not(#__av_prio_a#__av_prio_b) {
   padding-block: 18px 6px;
-  background: #071b21;
+  background: transparent;
   border-color: rgba(107, 177, 178, .22);
 }
 #trendingMaster .horizontal-scroll:not(#__av_prio_a#__av_prio_b) {
@@ -2319,8 +2277,12 @@ body .trending-share-join + .share-banner-container .share-banner-section:not(#_
 }
 
 /* 2. Fundal uniform Trending → V → Share */
-.trending-share-join:not(#__av_prio_a#__av_prio_b), .trending-share-join + .share-banner-container:not(#__av_prio_a#__av_prio_b), .trending-share-join + .share-banner-container .share-banner-section:not(#__av_prio_a#__av_prio_b) {
-  background: #071b21;
+.trending-share-join:not(#__av_prio_a#__av_prio_b),
+.trending-share-join + .share-banner-container .share-banner-section:not(#__av_prio_a#__av_prio_b) {
+  background: transparent;
+}
+.trending-share-join + .share-banner-container:not(#__av_prio_a#__av_prio_b) {
+  background: transparent;
 }
 .trending-share-join + .share-banner-container .share-banner-section:not(#__av_prio_a#__av_prio_b) {
   border-top: none;
@@ -2328,7 +2290,8 @@ body .trending-share-join + .share-banner-container .share-banner-section:not(#_
 }
 
 /* 3. V-ul — SVG COMPLET ASCUNS (nu se mai vede absolut nimic) */
-.trending-share-join svg:not(#__av_prio_a#__av_prio_b), .trending-share-join path:not(#__av_prio_a#__av_prio_b), .trending-share-join-fill:not(#__av_prio_a#__av_prio_b), .trending-share-join-gold:not(#__av_prio_a#__av_prio_b), .trending-share-join-teal:not(#__av_prio_a#__av_prio_b) {
+.trending-share-join svg:not(#__av_prio_a#__av_prio_b),
+.trending-share-join path:not(#__av_prio_a#__av_prio_b) {
   display: none;
   visibility: hidden;
   opacity: 0;
@@ -2470,4 +2433,86 @@ body .trending-share-join + .share-banner-container .share-banner-section:not(#_
     #trendingMaster:not(#__av_prio_a#__av_prio_b) {
   padding-top: 72px;
 }
+}
+
+
+/* ============================================================
+   AniVortex V12 — Trending refinement foundation
+   Unifică cardurile și popup-ul cu noul design system.
+   ============================================================ */
+#trendingMaster .trending-pair {
+  border-radius: var(--av-radius-xl);
+  border-color: var(--av-border-subtle);
+  box-shadow: var(--av-shadow-card);
+  transition:
+    transform var(--av-motion-ui) var(--av-ease-ui),
+    border-color var(--av-motion-ui) var(--av-ease-ui),
+    box-shadow var(--av-motion-ui) var(--av-ease-ui);
+}
+
+#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within {
+  border-color: var(--av-border-active);
+  box-shadow: var(--av-shadow-hover);
+}
+
+#trendingMaster .trending-section .card {
+  border-radius: inherit;
+}
+
+#trendingMaster .cat-btn,
+#trendingMaster .badge-info {
+  border-color: var(--av-border-subtle);
+  transition:
+    transform var(--av-motion-fast) var(--av-ease-ui),
+    background var(--av-motion-ui) var(--av-ease-ui),
+    border-color var(--av-motion-ui) var(--av-ease-ui),
+    box-shadow var(--av-motion-ui) var(--av-ease-ui);
+}
+
+#trendingMaster .cat-btn:hover {
+  border-color: var(--av-border-active);
+  box-shadow: 0 8px 20px rgba(0,0,0,.20);
+}
+
+.hover-popup {
+  border-radius: var(--av-radius-xl);
+  border-color: var(--av-border-active);
+  box-shadow:
+    var(--av-shadow-popup),
+    0 0 30px rgba(45,194,174,.10),
+    inset 0 1px 0 rgba(230,255,251,.10);
+  transition:
+    opacity var(--av-motion-ui) var(--av-ease-ui),
+    transform var(--av-motion-ui) var(--av-ease-ui),
+    visibility var(--av-motion-ui) var(--av-ease-ui);
+}
+
+.trending-popup-top,
+.trending-popup-stats,
+.trending-popup-desc,
+.trending-watch-btn {
+  border-radius: var(--av-radius-md);
+}
+
+.trending-watch-btn {
+  min-height: 44px;
+  transition:
+    transform var(--av-motion-fast) var(--av-ease-ui),
+    box-shadow var(--av-motion-ui) var(--av-ease-ui),
+    filter var(--av-motion-ui) var(--av-ease-ui);
+}
+
+.trending-watch-btn:hover {
+  filter: brightness(1.06);
+}
+
+@media (max-width: 760px) {
+  #trendingMaster .cat-btn {
+    min-height: 44px;
+  }
+
+  #trendingMaster .trending-pair {
+    border-radius: var(--av-radius-lg);
+  }
 }

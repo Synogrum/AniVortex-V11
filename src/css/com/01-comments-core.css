@@ -21,7 +21,7 @@
   min-height: 555px;
   padding: 42px 26px 78px;
   overflow: hidden;
-  background: var(--avf-surface-top, #071b21);
+  background: transparent;
   border: 0;
   border-radius: 0;
   -webkit-clip-path: url(#comentariiClipV7);
@@ -33,39 +33,11 @@
 }
 
 .comentarii-section::before {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: 0;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.22;
-  background-image:
-    radial-gradient(circle at 7% 14%, rgba(225, 252, 255, 0.7) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 19% 62%, rgba(180, 244, 255, 0.48) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 34% 29%, rgba(230, 255, 255, 0.62) 0 1px, transparent 1.6px),
-    radial-gradient(circle at 49% 79%, rgba(176, 242, 255, 0.52) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 66% 18%, rgba(235, 255, 255, 0.72) 0 1px, transparent 1.6px),
-    radial-gradient(circle at 81% 58%, rgba(185, 245, 255, 0.55) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 94% 31%, rgba(230, 255, 255, 0.65) 0 1px, transparent 1.6px);
-  background-size: 330px 260px, 390px 310px, 460px 350px, 410px 300px, 370px 280px, 430px 330px, 360px 290px;
-  mask-image: none;
-  animation: avEntStars 22s linear infinite alternate;
+  content: none;
 }
 
 .comentarii-section::after {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: 0;
-  left: -90px;
-  bottom: -170px;
-  width: 390px;
-  height: 390px;
-  border-radius: 50%;
-  background: rgba(37, 154, 150, 0.13);
-  filter: blur(100px);
-  pointer-events: none;
+  content: none;
 }
 
 .comentarii-frame-v7 {

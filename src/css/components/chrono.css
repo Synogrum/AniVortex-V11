@@ -33,7 +33,7 @@
     color: var(--chrono-text);
     border: 1px solid var(--chrono-border);
     border-radius: 0;
-    background: var(--chrono-surface);
+    background: transparent;
     font-family: Inter, "Segoe UI", sans-serif;
     text-align: center;
 }
@@ -52,16 +52,13 @@
     border-inline: 0;
     border-bottom: 0;
     border-radius: 0;
-    background: var(--chrono-surface);
-    box-shadow: 0 30px 45px rgba(0, 0, 0, 0.38);
+    background: transparent;
+    box-shadow: none;
 }
 
 .chronologie-container::before,
 .chronologie-container::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    pointer-events: none;
+    content: none;
 }
 
 .chronologie-container::before {
@@ -69,19 +66,7 @@
 }
 
 .chronologie-container::after {
-    inset: 0;
-    opacity: 0.22;
-    background-image:
-        radial-gradient(circle at 7% 14%, rgba(225, 252, 255, 0.7) 0 1px, transparent 1.7px),
-        radial-gradient(circle at 19% 62%, rgba(180, 244, 255, 0.48) 0 1px, transparent 1.7px),
-        radial-gradient(circle at 34% 29%, rgba(230, 255, 255, 0.62) 0 1px, transparent 1.6px),
-        radial-gradient(circle at 49% 79%, rgba(176, 242, 255, 0.52) 0 1px, transparent 1.7px),
-        radial-gradient(circle at 66% 18%, rgba(235, 255, 255, 0.72) 0 1px, transparent 1.6px),
-        radial-gradient(circle at 81% 58%, rgba(185, 245, 255, 0.55) 0 1px, transparent 1.7px),
-        radial-gradient(circle at 94% 31%, rgba(230, 255, 255, 0.65) 0 1px, transparent 1.6px);
-    background-size: 330px 260px, 390px 310px, 460px 350px, 410px 300px, 370px 280px, 430px 330px, 360px 290px;
-    mask-image: none;
-    animation: avEntStars 22s linear infinite alternate;
+    content: none;
 }
 
 .chrono-top-rise {
@@ -726,7 +711,7 @@
     margin: -1px auto 0;
     overflow: visible;
     pointer-events: none;
-    background: #02090c;
+    background: transparent;
 }
 
 @media (max-width: 700px) {

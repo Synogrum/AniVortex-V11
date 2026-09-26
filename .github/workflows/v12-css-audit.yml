@@ -1,0 +1,38 @@
+name: V12 CSS Audit
+
+on:
+  push:
+    branches: ["v12-design-system"]
+    paths:
+      - "src/css/**"
+      - ".github/workflows/v12-css-audit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: v12-css-audit
+  cancel-in-progress: true
+
+jobs:
+  css-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements-dev.txt
+      - name: Generate conflict reports
+        continue-on-error: true
+        run: |
+          python scripts/code_quality.py || true
+          python scripts/prune_css_overrides.py --report audit/v12-overrides.tsv || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v12-css-audit
+          path: |
+            audit/css-conflicts.tsv
+            audit/v12-overrides.tsv
+          if-no-files-found: error
