@@ -1343,3 +1343,84 @@ body.av-theme-c .av-bg-image:not(#__av_v128_leafbg) {
   }
 }
 
+/* AniVortex V12.9 — one uniform dark-green canvas */
+body.av-theme-c .av-site-column-bg:not(#__av_v129_canvas) {
+  background-color: #031711;
+  background-image:
+    radial-gradient(circle, rgba(220,255,245,.22) 0 .75px, transparent 1.15px),
+    radial-gradient(circle, rgba(94,226,187,.14) 0 .8px, transparent 1.2px);
+  background-size:
+    154px 154px,
+    236px 236px;
+  background-position:
+    22px 30px,
+    88px 106px;
+  box-shadow: 0 0 0 1px rgba(104,230,196,.035);
+  filter: none;
+}
+
+/* No large section may paint another background over the common canvas. */
+body.av-theme-c :where(
+  .wrapper,
+  .page,
+  .banner-wrap,
+  .trending-master-container,
+  #trendingMaster,
+  .share-banner-container,
+  .comentarii-section,
+  .main-container,
+  .chronologie-container,
+  .carousel-collection,
+  .av-entertainment-shell,
+  .av-footer
+):not(#__av_v129_sections) {
+  background-color: transparent;
+  background-image: none;
+}
+
+/* Remove broad decorative overlays from structural sections only. */
+body.av-theme-c :where(
+  .page,
+  .banner-wrap,
+  .trending-master-container,
+  #trendingMaster,
+  .comentarii-section,
+  .main-container,
+  .chronologie-container,
+  .carousel-collection,
+  .av-entertainment-shell,
+  .av-footer
+):not(#__av_v129_sections)::before,
+body.av-theme-c :where(
+  .page,
+  .banner-wrap,
+  .trending-master-container,
+  #trendingMaster,
+  .comentarii-section,
+  .main-container,
+  .chronologie-container,
+  .carousel-collection,
+  .av-entertainment-shell,
+  .av-footer
+):not(#__av_v129_sections)::after {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* Keep only the subtle star pattern: no glow bands, no green gradients. */
+body.av-theme-c .av-site-column-bg:not(#__av_v129_canvas)::before,
+body.av-theme-c .av-site-column-bg:not(#__av_v129_canvas)::after {
+  content: none;
+}
+
+@media (max-width: 760px) {
+  body.av-theme-c .av-site-column-bg:not(#__av_v129_canvas) {
+    background-color: #031711;
+    background-image:
+      radial-gradient(circle, rgba(220,255,245,.18) 0 .7px, transparent 1.05px),
+      radial-gradient(circle, rgba(94,226,187,.10) 0 .75px, transparent 1.15px);
+    background-size: 142px 142px, 218px 218px;
+    background-position: 18px 24px, 72px 92px;
+  }
+}
+
