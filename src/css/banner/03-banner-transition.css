@@ -92,7 +92,7 @@ body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
   
   overflow: hidden;
   pointer-events: none;
-  background: var(--avf-surface-top, #071b21);
+  background: transparent;
   isolation: isolate;
 }
 
