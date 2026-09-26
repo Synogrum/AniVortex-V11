@@ -1201,3 +1201,145 @@ body.av-theme-c .av-footer:not(#__av_v127_footer) {
   }
 }
 
+/* AniVortex V12.8 — single starfield canvas, no stacked section backgrounds */
+body.av-theme-c .av-site-column-bg:not(#__av_v128_canvas) {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: min(calc(100% - 32px), 1900px);
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 22px 22px 0 0;
+  background-color: #031711;
+  background-image:
+    radial-gradient(circle at 14% 7%, rgba(58, 214, 165, .055), transparent 24%),
+    radial-gradient(circle at 84% 26%, rgba(35, 161, 126, .045), transparent 22%),
+    radial-gradient(circle, rgba(210, 255, 242, .32) 0 .8px, transparent 1.18px),
+    radial-gradient(circle, rgba(86, 226, 184, .23) 0 .85px, transparent 1.26px),
+    radial-gradient(circle, rgba(229, 255, 248, .18) 0 .65px, transparent 1.05px),
+    linear-gradient(180deg, #031812 0%, #02130f 46%, #031711 100%);
+  background-size:
+    auto,
+    auto,
+    151px 151px,
+    233px 233px,
+    97px 97px,
+    auto;
+  background-position:
+    0 0,
+    0 0,
+    19px 27px,
+    83px 101px,
+    41px 13px,
+    0 0;
+  box-shadow:
+    0 0 0 1px rgba(104, 230, 196, .045),
+    0 0 46px rgba(0, 0, 0, .20);
+}
+
+/* Disable every previous page/section background experiment. */
+body.av-theme-c:not(#__av_v128_body)::before,
+body.av-theme-c .wrapper:not(#__av_v128_wrapper)::before {
+  content: none;
+}
+
+body.av-theme-c .wrapper:not(#__av_v128_wrapper) {
+  background: transparent;
+}
+
+/* These are structural shells only: one shared background sits behind all of them. */
+body.av-theme-c :where(
+  .page,
+  .banner-wrap,
+  .trending-master-container,
+  #trendingMaster,
+  .comentarii-section,
+  .main-container,
+  .chronologie-container,
+  .carousel-collection,
+  .av-entertainment-shell,
+  .av-footer
+):not(#__av_v128_sections) {
+  background-color: transparent;
+  background-image: none;
+}
+
+/* Remove decorative large-area overlays that make sections look like separate backgrounds. */
+body.av-theme-c :where(
+  .page,
+  .banner-wrap,
+  .trending-master-container,
+  #trendingMaster,
+  .comentarii-section,
+  .main-container,
+  .chronologie-container,
+  .carousel-collection,
+  .av-entertainment-shell,
+  .av-footer
+):not(#__av_v128_sections)::before,
+body.av-theme-c :where(
+  .page,
+  .banner-wrap,
+  .trending-master-container,
+  #trendingMaster,
+  .comentarii-section,
+  .main-container,
+  .chronologie-container,
+  .carousel-collection,
+  .av-entertainment-shell,
+  .av-footer
+):not(#__av_v128_sections)::after {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* No separate strip/panel backgrounds between the major sections. */
+body.av-theme-c .av-flat-join:not(#__av_v128_join) {
+  background: transparent;
+  box-shadow: none;
+}
+
+body.av-theme-c .av-flat-join:not(#__av_v128_join)::before,
+body.av-theme-c .av-flat-join:not(#__av_v128_join)::after {
+  opacity: .18;
+}
+
+/* Footer is part of the same continuous canvas. */
+body.av-theme-c .av-footer:not(#__av_v128_footer) {
+  width: min(calc(100% - 32px), 1900px);
+  margin-inline: auto;
+  background: transparent;
+}
+
+/* Keep individual UI cards/panels intact above the common background. */
+body.av-theme-c > :not(.av-bg-image):not(.av-bg-vignette):not(.av-bg-noise):not(.backdrop):not(.av-site-column-bg) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Leaf artwork remains visible only outside the central site column. */
+body.av-theme-c .av-bg-image:not(#__av_v128_leafbg) {
+  opacity: .97;
+  filter: saturate(1.14) contrast(1.04) brightness(.82);
+}
+
+@media (max-width: 760px) {
+  body.av-theme-c .av-site-column-bg:not(#__av_v128_canvas) {
+    width: calc(100% - 16px);
+    border-radius: 16px 16px 0 0;
+    background-image:
+      radial-gradient(circle at 18% 8%, rgba(59, 212, 166, .045), transparent 22%),
+      radial-gradient(circle, rgba(210,255,242,.24) 0 .7px, transparent 1.05px),
+      radial-gradient(circle, rgba(82,218,177,.17) 0 .74px, transparent 1.16px),
+      linear-gradient(180deg, #031812 0%, #02130f 50%, #031711 100%);
+    background-size: auto, 139px 139px, 211px 211px, auto;
+    background-position: 0 0, 17px 23px, 64px 83px, 0 0;
+  }
+
+  body.av-theme-c .av-footer:not(#__av_v128_footer) {
+    width: calc(100% - 16px);
+  }
+}
+
