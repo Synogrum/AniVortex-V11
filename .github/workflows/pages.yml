@@ -2,7 +2,7 @@ name: Deploy AniVortex V11 to GitHub Pages
 
 on:
   push:
-    branches: ["v12-design-system"]
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -58,7 +58,6 @@ jobs:
         uses: actions/deploy-pages@v4
 
   live-qa:
-    if: github.ref == 'refs/heads/main'
     needs: deploy
     runs-on: ubuntu-latest
     permissions:
