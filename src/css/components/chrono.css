@@ -33,11 +33,7 @@
     color: var(--chrono-text);
     border: 1px solid var(--chrono-border);
     border-radius: 0;
-    background-color: var(--av-section-bg);
-    background-image: var(--av-section-stars);
-    background-size: var(--av-section-star-size);
-    background-position: var(--av-section-star-position);
-    background-repeat: repeat;
+    background: transparent;
     font-family: Inter, "Segoe UI", sans-serif;
     text-align: center;
 }
@@ -56,7 +52,7 @@
     border-inline: 0;
     border-bottom: 0;
     border-radius: 0;
-    background: var(--chrono-surface);
+    background: transparent;
     box-shadow: 0 30px 45px rgba(0, 0, 0, 0.38);
 }
 
