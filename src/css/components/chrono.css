@@ -727,7 +727,7 @@
     margin: -1px auto 0;
     overflow: visible;
     pointer-events: none;
-    background: #02090c;
+    background: transparent;
 }
 
 @media (max-width: 700px) {
