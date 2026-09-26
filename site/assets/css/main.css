@@ -4755,10 +4755,7 @@ main video
     padding: 10px;
     border-radius: 30px;
     border: 2px solid rgba(212, 183, 122, 0.42);
-    background:
-        radial-gradient(circle at 10% 50%, rgba(184, 146, 94, 0.10), transparent 34%),
-        radial-gradient(circle at 90% 50%, rgba(212, 183, 122, 0.08), transparent 30%),
-        linear-gradient(145deg, rgba(15, 15, 15, 0.94), rgba(26, 21, 19, 0.90));
+    background: transparent;
     box-shadow:
         0 22px 55px rgba(0, 0, 0, 0.42),
         inset 0 1px 0 rgba(255, 255, 255, 0.05),
@@ -4769,13 +4766,7 @@ main video
 }
 
 .share-banner-container::before {
-    content: "";
-    position: absolute;
-    inset: 7px;
-    border-radius: 22px;
-    border: 1px solid rgba(255, 255, 255, 0.045);
-    pointer-events: none;
-    z-index: 0;
+    content: none;
 }
 
 .share-banner-section {
