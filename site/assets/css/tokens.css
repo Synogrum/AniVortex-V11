@@ -3,11 +3,11 @@
   /* Brand */
   --av-gold: #d4b77a;
   --av-gold-dark: #b8925e;
-  --av-bg-teal: #031713;
-  --av-green-final: var(--av-bg-teal);
-  --avf-surface-top: #061d18;
-  /* V12.12 canonical large-section canvas */
   --av-section-bg: #031711;
+  --av-bg-teal: var(--av-section-bg);
+  --av-green-final: var(--av-section-bg);
+  --avf-surface-top: var(--av-section-bg);
+  /* V12.12 canonical large-section canvas */
   --av-section-stars:
     radial-gradient(circle, rgba(220,255,245,.18) 0 .72px, transparent 1.12px),
     radial-gradient(circle, rgba(94,226,187,.10) 0 .78px, transparent 1.18px);
