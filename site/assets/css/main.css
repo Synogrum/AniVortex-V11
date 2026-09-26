@@ -11860,28 +11860,13 @@ main video
   margin: -1px auto -82px;
   overflow: hidden;
   pointer-events: none;
-  background: var(--avf-surface-top, #071b21);
+  background: transparent;
   isolation: isolate;
 }
 
 /* Îmbinare SHARE → COM: doar câteva stele, răspândite, fără repetare */
 .share-com-v-join:not(#__av_prio_a#__av_prio_b)::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  pointer-events: none;
-  opacity: 0.22;
-  background-image: radial-gradient(circle at 7% 34%, rgba(225,252,255,.70) 0 1px, transparent 1.7px),
-      radial-gradient(circle at 21% 68%, rgba(180,244,255,.48) 0 1px, transparent 1.7px),
-      radial-gradient(circle at 36% 24%, rgba(230,255,255,.62) 0 1px, transparent 1.6px),
-      radial-gradient(circle at 51% 70%, rgba(176,242,255,.52) 0 1px, transparent 1.7px),
-      radial-gradient(circle at 66% 28%, rgba(235,255,255,.72) 0 1px, transparent 1.6px),
-      radial-gradient(circle at 81% 64%, rgba(185,245,255,.55) 0 1px, transparent 1.7px),
-      radial-gradient(circle at 94% 38%, rgba(230,255,255,.65) 0 1px, transparent 1.6px);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  animation: none;
+  content: none;
 }
 
 .share-com-v-join svg:not(#__av_prio_a#__av_prio_b) {
