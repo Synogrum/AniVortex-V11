@@ -26,15 +26,12 @@
   overflow: hidden;
   border-radius: 20px;
   outline: 1px solid transparent;
-  background:
-    linear-gradient(#09111b, #09111b) padding-box,
-    linear-gradient(
-      135deg,
-      rgba(184,146,94,0.22),
-      rgba(170,120,70,0.14),
-      rgba(212,183,122,0.12)
-    ) border-box;
-  border: 1.5px solid transparent;
+  background-color: var(--av-section-bg);
+  background-image: var(--av-section-stars);
+  background-size: var(--av-section-star-size);
+  background-position: var(--av-section-star-position);
+  background-repeat: repeat;
+  border: 1px solid rgba(96, 230, 193, 0.18);
   box-shadow: 0 24px 80px rgba(0,0,0,0.45);
   display: none;
 }
@@ -46,29 +43,22 @@
 .bg-gradient {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(184,146,94,0.22) 0%,
-    rgba(170,120,70,0.14) 45%,
-    rgba(212,183,122,0.12) 100%
-  );
+  background: transparent;
+  opacity: 0;
 }
 
 .bg-radial {
   position: absolute;
   inset: 0;
-  opacity: 0.70;
-  background:
-    radial-gradient(circle at 20% 25%, rgba(184,146,94,0.55), transparent 26%),
-    radial-gradient(circle at 82% 28%, rgba(212,183,122,0.42), transparent 22%),
-    radial-gradient(circle at 45% 78%, rgba(212,183,122,0.28), transparent 28%),
-    radial-gradient(circle at 76% 74%, rgba(212,183,122,0.18), transparent 20%);
+  background: transparent;
+  opacity: 0;
 }
 
 .bg-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(7,16,26,0.78), rgba(8,17,28,0.52), rgba(7,16,25,0.28));
+  background: transparent;
+  opacity: 0;
 }
 
 .top-line {
