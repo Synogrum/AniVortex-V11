@@ -11890,37 +11890,19 @@ main video
 
 /* COM cu stele răspândite pe toată suprafața */
 .comentarii-section:not(#__av_prio_a#__av_prio_b) {
-  background: var(--avf-surface-top, #071b21);
-  background-color: var(--avf-surface-top, #071b21);
+  background-color: var(--av-section-bg);
+  background-image: var(--av-section-stars);
+  background-size: var(--av-section-star-size);
+  background-position: var(--av-section-star-position);
+  background-repeat: repeat;
   width: 100%;
   max-width: none;
   min-width: 0;
 }
 
 .comentarii-section::before {
-  background-image: radial-gradient(circle at 3% 10%, rgba(225,252,255,.84) 0 1px, transparent 1.8px),
-      radial-gradient(circle at 6% 26%, rgba(180,244,255,.64) 0 1px, transparent 1.8px),
-      radial-gradient(circle at 10% 44%, rgba(230,255,255,.78) 0 1px, transparent 1.7px),
-      radial-gradient(circle at 14% 62%, rgba(176,242,255,.60) 0 1px, transparent 1.8px),
-      radial-gradient(circle at 18% 80%, rgba(235,255,255,.84) 0 1px, transparent 1.7px),
-      radial-gradient(circle at 24% 18%, rgba(185,245,255,.62) 0 1px, transparent 1.8px),
-      radial-gradient(circle at 28% 36%, rgba(230,255,255,.78) 0 1px, transparent 1.7px),
-      radial-gradient(circle at 32% 54%, rgba(176,242,255,.60) 0 1px, transparent 1.8px),
-      radial-gradient(circle at 36% 72%, rgba(235,255,255,.84) 0 1px, transparent 1.7px),
-      radial-gradient(circle at 41% 90%, rgba(185,245,255,.62) 0 1px, transparent 1.8px),
-      radial-gradient(circle at 46% 12%, rgba(230,255,255,.80) 0 1px, transparent 1.7px),
-      radial-gradient(circle at 50% 30%, rgba(180,244,255,.62) 0 1px, transparent 1.8px),
-      radial-gradient(circle at 54% 48%, rgba(225,252,255,.84) 0 1px, transparent 1.8px),
-      radial-gradient(circle at 58% 66%, rgba(235,255,255,.86) 0 1px, transparent 1.7px),
-      radial-gradient(circle at 62% 84%, rgba(185,245,255,.62) 0 1px, transparent 1.8px),
-      radial-gradient(circle at 67% 20%, rgba(230,255,255,.78) 0 1px, transparent 1.7px),
-      radial-gradient(circle at 72% 38%, rgba(176,242,255,.60) 0 1px, transparent 1.8px),
-      radial-gradient(circle at 77% 56%, rgba(235,255,255,.84) 0 1px, transparent 1.7px),
-      radial-gradient(circle at 82% 74%, rgba(185,245,255,.62) 0 1px, transparent 1.8px),
-      radial-gradient(circle at 87% 92%, rgba(230,255,255,.76) 0 1px, transparent 1.7px),
-      radial-gradient(circle at 91% 24%, rgba(180,244,255,.60) 0 1px, transparent 1.8px),
-      radial-gradient(circle at 95% 46%, rgba(225,252,255,.82) 0 1px, transparent 1.8px),
-      radial-gradient(circle at 98% 68%, rgba(235,255,255,.86) 0 1px, transparent 1.7px);
+  content: none;
+  background: transparent;
 }
 
 .comentarii-section:not(#__av_prio_a#__av_prio_b)::before {
