@@ -325,7 +325,7 @@
   margin: -1px auto 0;
   overflow: hidden;
   pointer-events: none;
-  background: #071b21;
+  background: transparent;
   isolation: isolate;
 }
 
@@ -440,11 +440,7 @@ body .trending-share-join + .share-banner-container .share-banner-section:not(#_
 /* 1. Spațiu între carduri și Share */
 #trendingMaster:not(#__av_prio_a#__av_prio_b) {
   padding-block: 18px 6px;
-  background-color: var(--av-section-bg);
-  background-image: var(--av-section-stars);
-  background-size: var(--av-section-star-size);
-  background-position: var(--av-section-star-position);
-  background-repeat: repeat;
+  background: transparent;
   border-color: rgba(107, 177, 178, .22);
 }
 #trendingMaster .horizontal-scroll:not(#__av_prio_a#__av_prio_b) {
@@ -471,11 +467,7 @@ body .trending-share-join + .share-banner-container .share-banner-section:not(#_
   background: transparent;
 }
 .trending-share-join + .share-banner-container:not(#__av_prio_a#__av_prio_b) {
-  background-color: var(--av-section-bg);
-  background-image: var(--av-section-stars);
-  background-size: var(--av-section-star-size);
-  background-position: var(--av-section-star-position);
-  background-repeat: repeat;
+  background: transparent;
 }
 .trending-share-join + .share-banner-container .share-banner-section:not(#__av_prio_a#__av_prio_b) {
   border-top: none;
