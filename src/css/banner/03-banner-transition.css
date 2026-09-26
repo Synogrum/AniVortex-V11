@@ -20,20 +20,7 @@ body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
 }
 
 .banner-trending-join::before {
-  content: "";
-  position: absolute;
-  inset: 28px 0 0 0;
-  z-index: 1;
-  opacity: .18;
-  background-image:
-    radial-gradient(circle at 8% 28%, rgba(225,252,255,.70) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 22% 72%, rgba(180,244,255,.48) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 37% 24%, rgba(230,255,255,.62) 0 1px, transparent 1.6px),
-    radial-gradient(circle at 51% 76%, rgba(176,242,255,.52) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 67% 30%, rgba(235,255,255,.72) 0 1px, transparent 1.6px),
-    radial-gradient(circle at 82% 68%, rgba(185,245,255,.55) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 95% 34%, rgba(230,255,255,.65) 0 1px, transparent 1.6px);
-  background-repeat: no-repeat;
+  content: none;
 }
 
 .banner-trending-join svg {
@@ -69,7 +56,7 @@ body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
 }
 
   .banner-trending-join:not(#__av_prio_a#__av_prio_b)::before {
-  inset: 18px 0 0 0;
+  content: none;
 }
 }
 
@@ -98,22 +85,7 @@ body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
 
 /* Stele copiate din îmbinarea SHARE → COM */
 .banner-trending-join:not(#__av_prio_a#__av_prio_b)::before {
-  content: "";
-  position: absolute;
-  
-  z-index: 2;
-  pointer-events: none;
-  opacity: 0.22;
-  background-image: radial-gradient(circle at 7% 34%, rgba(225,252,255,.70) 0 1px, transparent 1.7px),
-      radial-gradient(circle at 21% 68%, rgba(180,244,255,.48) 0 1px, transparent 1.7px),
-      radial-gradient(circle at 36% 24%, rgba(230,255,255,.62) 0 1px, transparent 1.6px),
-      radial-gradient(circle at 51% 70%, rgba(176,242,255,.52) 0 1px, transparent 1.7px),
-      radial-gradient(circle at 66% 28%, rgba(235,255,255,.72) 0 1px, transparent 1.6px),
-      radial-gradient(circle at 81% 64%, rgba(185,245,255,.55) 0 1px, transparent 1.7px),
-      radial-gradient(circle at 94% 38%, rgba(230,255,255,.65) 0 1px, transparent 1.6px);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  animation: none;
+  content: none;
 }
 
 .banner-trending-join svg:not(#__av_prio_a#__av_prio_b) {
@@ -181,7 +153,7 @@ body .page:not(#__av_prio_a#__av_prio_b), body .banner-wrap:not(#__av_prio_a#__a
 }
 
 .banner-trending-join:not(#__av_prio_a#__av_prio_b)::before {
-  inset: 6px 0 0 0;
+  content: none;
 }
 
 @media (max-width: 990px) {
