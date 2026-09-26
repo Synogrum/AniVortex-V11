@@ -264,11 +264,7 @@
 }
 
 .comentarii-section:not(#__av_prio_a#__av_prio_b)::before {
-  opacity: 0.30;
-  background-size: 220px 170px, 235px 180px, 250px 190px, 220px 170px, 235px 180px, 250px 190px,
-      220px 170px, 235px 180px, 250px 190px, 220px 170px, 235px 180px, 250px 190px,
-      220px 170px, 235px 180px, 250px 190px, 220px 170px, 235px 180px, 250px 190px,
-      220px 170px, 235px 180px, 250px 190px, 220px 170px, 235px 180px;
+  content: none;
 }
 
 /* comportament mai bun la zoom / ecran îngust */
