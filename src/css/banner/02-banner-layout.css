@@ -30,43 +30,15 @@
 }
 
 .page:not(#__av_prio_a#__av_prio_b) {
-  
-  
-  background: radial-gradient(circle at 16% 12%, rgba(88, 196, 175, 0.14), transparent 26%),
-    radial-gradient(circle at 84% 18%, rgba(212, 183, 122, 0.08), transparent 24%),
-    radial-gradient(circle at 50% 88%, rgba(75, 131, 125, 0.14), transparent 30%),
-    linear-gradient(180deg, rgba(5, 42, 46, 0.98), rgba(3, 29, 34, 0.99));
+  background: transparent;
 }
 
 .page::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.34;
-  background-image:
-    radial-gradient(circle at 8% 28%, rgba(225,252,255,.70) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 22% 72%, rgba(180,244,255,.48) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 37% 24%, rgba(230,255,255,.62) 0 1px, transparent 1.6px),
-    radial-gradient(circle at 51% 76%, rgba(176,242,255,.52) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 67% 30%, rgba(235,255,255,.72) 0 1px, transparent 1.6px),
-    radial-gradient(circle at 82% 68%, rgba(185,245,255,.55) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 95% 34%, rgba(230,255,255,.65) 0 1px, transparent 1.6px);
-  background-size: 330px 250px, 390px 310px, 360px 260px, 420px 320px, 350px 250px, 460px 340px, 380px 290px;
+  content: none;
 }
 
 .page::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.45;
-  background:
-    radial-gradient(circle at 10% 24%, rgba(255,255,255,.05) 0 110px, transparent 180px),
-    radial-gradient(circle at 72% 70%, rgba(111,183,173,.08) 0 170px, transparent 250px),
-    radial-gradient(circle at 90% 14%, rgba(154,143,116,.06) 0 120px, transparent 190px);
+  content: none;
 }
 
 .banner-wrap {
@@ -304,7 +276,11 @@
   margin: -1px auto 0;
   overflow: hidden;
   pointer-events: none;
-  background: #071b21;
+  background-color: var(--av-section-bg);
+  background-image: var(--av-section-stars);
+  background-size: var(--av-section-star-size);
+  background-position: var(--av-section-star-position);
+  background-repeat: repeat;
   isolation: isolate;
 }
 
