@@ -26,11 +26,7 @@
   overflow: hidden;
   border-radius: 20px;
   outline: 1px solid transparent;
-  background-color: var(--av-section-bg);
-  background-image: var(--av-section-stars);
-  background-size: var(--av-section-star-size);
-  background-position: var(--av-section-star-position);
-  background-repeat: repeat;
+  background: transparent;
   border: 1px solid rgba(96, 230, 193, 0.18);
   box-shadow: 0 24px 80px rgba(0,0,0,0.45);
   display: none;
@@ -1344,11 +1340,7 @@
   margin: -1px auto 0;
   overflow: hidden;
   pointer-events: none;
-  background-color: var(--av-section-bg);
-  background-image: var(--av-section-stars);
-  background-size: var(--av-section-star-size);
-  background-position: var(--av-section-star-position);
-  background-repeat: repeat;
+  background: transparent;
   isolation: isolate;
 }
 
@@ -1553,7 +1545,7 @@ body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
   
   overflow: hidden;
   pointer-events: none;
-  background: var(--avf-surface-top, #071b21);
+  background: transparent;
   isolation: isolate;
 }
 
@@ -2134,11 +2126,9 @@ body .page:not(#__av_prio_a#__av_prio_b)::before {
    - fundalul bannerului vine până sus
    - fără să mutăm headerul
    ============================================================ */
-html:not(#__av_prio_a#__av_prio_b), body:not(#__av_prio_a#__av_prio_b) {
+html, body {
   margin: 0;
   padding: 0;
-  background: var(--av-bg-teal);
-  background-image: none;
 }
 
 body .page:not(#__av_prio_a#__av_prio_b) {
