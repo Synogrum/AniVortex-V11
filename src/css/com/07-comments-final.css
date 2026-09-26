@@ -81,7 +81,8 @@
    Valorile sunt copiate 1:1 din .chronologie-container::after.
    ============================================================ */
 body .comentarii-section::before {
-  content: none;
+  mask-image: none;
+  animation: avEntStars 22s linear infinite alternate;
 }
 
 body .comentarii-section:not(#__av_prio_a#__av_prio_b)::before {
