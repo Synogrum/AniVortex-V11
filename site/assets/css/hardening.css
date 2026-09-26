@@ -480,26 +480,11 @@ body.av-theme-c .av-flat-join:not(#__av_prio_a#__av_prio_b) {
 }
 
 body.av-theme-c .av-flat-join:not(#__av_prio_a#__av_prio_b)::before {
-  content: "";
-  position: absolute;
-  left: clamp(18px, 4vw, 72px);
-  right: clamp(18px, 4vw, 72px);
-  top: 50%;
-  height: 1px;
-  transform: translateY(-50%);
-  background: linear-gradient(90deg, transparent, rgba(61, 198, 156, 0.28) 18%, rgba(190, 231, 219, 0.38) 50%, rgba(61, 198, 156, 0.28) 82%, transparent);
-  box-shadow: 0 0 16px rgba(68, 226, 178, 0.11);
+  content: none;
 }
 
 body.av-theme-c .av-flat-join:not(#__av_prio_a#__av_prio_b)::after {
-  content: "";
-  position: absolute;
-  left: 18%;
-  right: 18%;
-  top: 50%;
-  height: 14px;
-  transform: translateY(-50%);
-  background: radial-gradient(ellipse at center, rgba(55, 215, 169, 0.07), transparent 70%);
+  content: none;
 }
 
 body.av-theme-c .banner-trending-join.av-flat-join:not(#__av_prio_a#__av_prio_b),
