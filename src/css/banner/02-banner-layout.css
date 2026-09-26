@@ -281,13 +281,7 @@
 }
 
 .banner-trending-join::before {
-  
-  
-  inset: 0;
-  z-index: 2;
-  opacity: .20;
-  
-  
+  content: none;
 }
 
 .banner-trending-join svg {
@@ -349,8 +343,7 @@ body .banner-wrap:not(#__av_prio_a#__av_prio_b) {
 }
 
 .banner-trending-join:not(#__av_prio_a#__av_prio_b)::before {
-  inset: 8px 0 0 0;
-  opacity: .17;
+  content: none;
 }
 
 
