@@ -1758,11 +1758,7 @@
     border: 0;
     margin-bottom: 0;
     clip-path: none;
-    background-color: var(--av-section-bg);
-    background-image: var(--av-section-stars);
-    background-size: var(--av-section-star-size);
-    background-position: var(--av-section-star-position);
-    background-repeat: repeat;
+    background: transparent;
 }
 
 /* V65 — pe desktop, primul rând ocupă spațiul liber din îmbinarea Chrono → UPC,
