@@ -35,10 +35,7 @@
 }
 
 .share-banner-container::before {
-    inset-inline: 0;
-    border-inline: 0;
-    border-bottom: 0;
-    border-radius: 0;
+    content: none;
 }
 
 .share-banner-section {
