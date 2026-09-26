@@ -26,11 +26,7 @@
   overflow: hidden;
   border-radius: 20px;
   outline: 1px solid transparent;
-  background-color: var(--av-section-bg);
-  background-image: var(--av-section-stars);
-  background-size: var(--av-section-star-size);
-  background-position: var(--av-section-star-position);
-  background-repeat: repeat;
+  background: transparent;
   border: 1px solid rgba(96, 230, 193, 0.18);
   box-shadow: 0 24px 80px rgba(0,0,0,0.45);
   display: none;
