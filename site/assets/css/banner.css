@@ -1284,10 +1284,14 @@
 }
 
 .slider-row:not(#__av_prio_a#__av_prio_b) {
-  bottom: 14px;
+  bottom: 52px;
 }
 
 @media (max-width: 1279px) {
+  .slider-row:not(#__av_prio_a#__av_prio_b) {
+  bottom: 18px;
+}
+
   .banner-grid:not(#__av_prio_a#__av_prio_b) {
   min-height: 0;
 }
