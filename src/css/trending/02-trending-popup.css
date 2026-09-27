@@ -169,10 +169,7 @@
   padding: 4px 6px 3px;
   border: 1px solid rgba(151, 223, 205, 0.18);
   border-radius: 10px;
-  background:
-    radial-gradient(circle at 50% 0, rgba(151, 223, 205, 0.10), transparent 34%),
-    radial-gradient(circle at 100% 100%, rgba(99, 215, 184, 0.07), transparent 37%),
-    rgba(11, 63, 54, 0.74);
+  background: #07312A;
   position: relative;
   z-index: 2;
 }
@@ -187,7 +184,7 @@
   align-content: center;
   gap: 6px;
   text-align: center;
-  background: #07312A;
+  background: transparent;
   border-radius: 10px;
 }
 
@@ -252,7 +249,7 @@
   padding: 5px 4px 4px;
   border: 1px solid rgba(111, 161, 176, 0.55);
   border-radius: 16px;
-  background: #07312A;
+  background: transparent;
   box-shadow:
     0 0 0 3px rgba(111, 161, 176, 0.052),
     inset 0 1px 0 rgba(255, 255, 255, 0.08),
