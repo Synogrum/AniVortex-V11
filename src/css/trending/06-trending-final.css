@@ -89,25 +89,25 @@
    ============================================================ */
 #trendingMaster:not(#__av_prio_a#__av_prio_b) {
   margin-top: 0;
-  padding-top: 116px;
+  padding-top: 88px;
   border-top: 0;
 }
 
 @media (max-width: 1510px) {
     #trendingMaster:not(#__av_prio_a#__av_prio_b) {
-  padding-top: 104px;
+  padding-top: 80px;
 }
 }
 
 @media (max-width: 990px) {
     #trendingMaster:not(#__av_prio_a#__av_prio_b) {
-  padding-top: 86px;
+  padding-top: 68px;
 }
 }
 
 @media (max-width: 620px) {
     #trendingMaster:not(#__av_prio_a#__av_prio_b) {
-  padding-top: 72px;
+  padding-top: 56px;
 }
 }
 
