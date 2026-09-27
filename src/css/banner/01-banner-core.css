@@ -227,7 +227,7 @@
   font-weight:600;
   text-transform:uppercase;
   letter-spacing:.2em;
-  color:#AFCFD7;
+  color:#B9DDE6;
 }
 
 .title-row {
@@ -240,7 +240,7 @@
 
 .title-text {
   font-family:var(--hb-font-display);
-  background:linear-gradient(90deg,#EAF7F3 0%,#B9E4D8 52%,#8ED2C0 100%);
+  background:linear-gradient(90deg,#F4FBFF 0%,#CFEAF4 50%,#9FD6E5 100%);
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
@@ -286,7 +286,8 @@
 }
 
 .sep {
-  color: var(--av-gold);
+  color:#63D7B8;
+  text-shadow:0 0 7px rgba(99,215,184,.30);
 }
 
 /* SUB + DUB */
