@@ -24,7 +24,7 @@
   content: ""; position: absolute; inset: 0;
   background:
     radial-gradient(circle at 12% 90%, color-mix(in srgb, var(--avt-rank-color) 17%, transparent), transparent 34%),
-    radial-gradient(circle at 88% 86%, rgba(72, 150, 165, .12), transparent 31%);
+    radial-gradient(circle at 88% 86%, rgba(99, 215, 184, .12), transparent 31%);
   opacity: .72;
   animation: avtV31AmbientPulse 4.2s ease-in-out infinite;
 }
@@ -47,7 +47,7 @@
 #trendingMaster .avt-v31-shard::before {
   content: ""; position: absolute; inset: 0;
   border-radius: inherit;
-  background: linear-gradient(180deg, transparent 0%, rgba(255,255,255,.025) 18%, color-mix(in srgb, var(--avt-rank-color) 26%, rgba(255,255,255,.10)) 46%, rgba(115,215,201,.12) 62%, transparent 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(255,255,255,.025) 18%, color-mix(in srgb, var(--avt-rank-color) 26%, rgba(255,255,255,.10)) 46%, rgba(151,223,205,.12) 62%, transparent 100%);
   box-shadow: 0 0 12px color-mix(in srgb, var(--avt-rank-color) 10%, transparent);
 }
 
@@ -64,7 +64,7 @@
 #trendingMaster .avt-v31-title-glint::before {
   content: ""; position: absolute;
   top: 0; left: -35%; width: 34%; height: 100%;
-  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--avt-rank-color) 65%, #dffffa), transparent);
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--avt-rank-color) 65%, #DFFBF3), transparent);
   filter: drop-shadow(0 0 4px color-mix(in srgb, var(--avt-rank-color) 30%, transparent));
   animation: avtV31Glint 3.8s ease-in-out infinite;
 }
@@ -140,7 +140,7 @@
 #trendingMaster .avt-v32-ring {
   position: absolute; bottom: -18px; width: 84px; height: 84px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--avt-rank-color) 36%, rgba(120, 215, 201, .18));
+  border: 1px solid color-mix(in srgb, var(--avt-rank-color) 36%, rgba(151, 223, 205, .18));
   opacity: 0;
   filter: drop-shadow(0 0 5px color-mix(in srgb, var(--avt-rank-color) 20%, transparent));
   pointer-events: none;
@@ -154,7 +154,7 @@
 #trendingMaster .avt-v32-corner-glow {
   position: absolute; bottom: -8px; width: 64px; height: 64px;
   border-radius: 50%;
-  background: radial-gradient(circle, color-mix(in srgb, var(--avt-rank-color) 18%, rgba(101, 194, 181, .08)), transparent 68%);
+  background: radial-gradient(circle, color-mix(in srgb, var(--avt-rank-color) 18%, rgba(99, 215, 184, .08)), transparent 68%);
   filter: blur(8px); opacity: .36;
   animation: avtV32CornerBreath 4.4s ease-in-out infinite;
   pointer-events: none;
@@ -163,7 +163,7 @@
 #trendingMaster .avt-v32-corner-glow.right { right: -18px; animation-delay: -2.2s; }
 
 #trendingMaster .trending-pair:hover .avt-v32-ring,
-#trendingMaster .trending-pair:focus-within .avt-v32-ring { border-color: color-mix(in srgb, var(--avt-rank-color) 52%, rgba(135,225,211,.22)); }
+#trendingMaster .trending-pair:focus-within .avt-v32-ring { border-color: color-mix(in srgb, var(--avt-rank-color) 52%, rgba(151,223,205,.22)); }
 #trendingMaster .trending-pair:hover .avt-v32-corner-glow,
 #trendingMaster .trending-pair:focus-within .avt-v32-corner-glow { opacity: .52; }
 
@@ -428,7 +428,7 @@ body .trending-share-join + .share-banner-container .share-banner-section:not(#_
 #trendingMaster:not(#__av_prio_a#__av_prio_b) {
   padding-block: 18px 6px;
   background: transparent;
-  border-color: rgba(107, 177, 178, .22);
+  border-color: rgba(99, 215, 184, .22);
 }
 #trendingMaster .horizontal-scroll:not(#__av_prio_a#__av_prio_b) {
   padding: 10px 32px 20px;
@@ -484,13 +484,13 @@ body .trending-share-join + .share-banner-container .share-banner-section:not(#_
 
 /* 5. Titlu + pulsatoriu în nuanțe verzi */
 #trendingMaster .trending-row-meta-left h2:not(#__av_prio_a#__av_prio_b) {
-  background: linear-gradient(135deg, #f3f1e8 0%, #d7d0af 24%, #9fd9d1 62%, #74cec0 100%);
+  background: linear-gradient(135deg, #EDF7F4 0%, #DFFBF3 24%, #97DFCD 62%, #63D7B8 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 #trendingMaster .pulse-dot:not(#__av_prio_a#__av_prio_b) {
-  background: linear-gradient(135deg, #d7d0af, #8fd4ca, #62c7b7);
-  box-shadow: 0 0 10px rgba(111, 183, 173, .55),
-    0 0 22px rgba(80, 105, 148, .30);
+  background: linear-gradient(135deg, #DFFBF3, #97DFCD, #63D7B8);
+  box-shadow: 0 0 10px rgba(99, 215, 184, .55),
+    0 0 22px rgba(99, 215, 184, .30);
 }

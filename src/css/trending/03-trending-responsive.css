@@ -34,7 +34,7 @@
   box-sizing: border-box; width: 100%;
   max-width: 1920px; min-width: min(1808px, 100%); margin: 0 auto;
   padding-block: 18px 6px;
-  border: 1px solid rgba(184, 146, 94, .24); border-radius: 0;
+  border: 1px solid rgba(151, 223, 205, .24); border-radius: 0;
   border-bottom: 0;
   background: transparent;
   box-shadow: none;
@@ -56,17 +56,17 @@
 
 /* V4 */
 #trendingMaster {
-  --avt-card-surface: #17191d;
-  --avt-card-ink: #f5f4f0;
-  --avt-card-muted: #b6b8bf;
-  --avt-card-accent: #87c7bd;
+  --avt-card-surface: #052A2E;
+  --avt-card-ink: #EDF7F4;
+  --avt-card-muted: #A8C7BE;
+  --avt-card-accent: #63D7B8;
   --avt-gap: 22px;
 }
 
 #trendingMaster .cards-track { gap: var(--avt-gap); }
 
 #trendingMaster .trending-pair {
-  --avt-rank-color: #87c7bd;
+  --avt-rank-color: #63D7B8;
   box-sizing: border-box; display: block; position: relative;
   flex: 0 0 auto; width: 266px; max-width: none;
   height: auto; min-height: 0; padding: 7px 7px 0;
@@ -82,9 +82,9 @@
   
 }
 
-#trendingMaster .trending-pair.pair-1 { --avt-rank-color: #e9c882; }
-#trendingMaster .trending-pair.pair-2 { --avt-rank-color: #c9d5df; }
-#trendingMaster .trending-pair.pair-3 { --avt-rank-color: #dba183; }
+#trendingMaster .trending-pair.pair-1 { --avt-rank-color: #DFFBF3; }
+#trendingMaster .trending-pair.pair-2 { --avt-rank-color: #97DFCD; }
+#trendingMaster .trending-pair.pair-3 { --avt-rank-color: #63D7B8; }
 
 #trendingMaster .trending-pair:hover,
 #trendingMaster .trending-pair:focus-within {
@@ -101,7 +101,7 @@
 
 #trendingMaster .avt-artwork {
   position: absolute; inset: 0; overflow: hidden;
-  background: #242930; border-radius: 18px;
+  background: #07342C; border-radius: 18px;
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 324' preserveAspectRatio='none'%3E%3Cpath d='M20 0H240Q260 0 260 20V304Q260 324 240 324H88Q74 324 74 310V286Q74 272 60 272H20Q0 272 0 252V20Q0 0 20 0Z' fill='white'/%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 260 324' preserveAspectRatio='none'%3E%3Cpath d='M20 0H240Q260 0 260 20V304Q260 324 240 324H88Q74 324 74 310V286Q74 272 60 272H20Q0 272 0 252V20Q0 0 20 0Z' fill='white'/%3E%3C/svg%3E");
   -webkit-mask-size: 100% 100%; mask-size: 100% 100%;
@@ -181,7 +181,7 @@
 #trendingMaster .avt-image-missing {
   position: absolute; inset: 20% 15% 30%;
   display: grid; place-items: center;
-  text-align: center; color: #d4d7df;
+  text-align: center; color: #D6ECE6;
   font-size: 1.125rem; line-height: 1.4;
 }
 
@@ -232,7 +232,7 @@
 #trendingMaster .trending-pair::after {
      z-index: 2;
    
-  background: radial-gradient(circle at var(--avt-light-x) var(--avt-light-y), rgba(255, 255, 255, .27), rgba(239, 205, 143, .11) 23%, rgba(135, 199, 189, .04) 43%, transparent 67%);
+  background: radial-gradient(circle at var(--avt-light-x) var(--avt-light-y), rgba(255, 255, 255, .27), rgba(151, 223, 205, .11) 23%, rgba(135, 199, 189, .04) 43%, transparent 67%);
    transition: opacity .32s ease;
 }
 
@@ -282,8 +282,8 @@
   content: ""; position: absolute;
   right: 0px; bottom: 3px; width: 11px; height: 15px;
   box-sizing: border-box;
-  border-left: 2.5px solid #ef5b3e;
-  border-bottom: 2.5px solid #ef5b3e;
+  border-left: 2.5px solid #63D7B8;
+  border-bottom: 2.5px solid #63D7B8;
   border-radius: 0 0 0 6px;
   transform: translateX(2px) skewX(-3deg);
   pointer-events: none; opacity: .96;

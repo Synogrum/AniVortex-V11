@@ -1,6 +1,6 @@
 *{box-sizing:border-box;}
 html,body{margin:0;min-height:100%;}
-body{padding:32px 0;background:#0d0b0e;color:#fff;font-family:Inter,system-ui,sans-serif;overflow-x:hidden;}
+body{padding:32px 0;background:#031D22;color:#fff;font-family:Inter,system-ui,sans-serif;overflow-x:hidden;}
 /* trending.css — variabile locale pentru secțiunea trending */
 /* HEADER */
 .section-header {
@@ -16,20 +16,20 @@ body{padding:32px 0;background:#0d0b0e;color:#fff;font-family:Inter,system-ui,sa
 
 .pulse-dot {
   width: 9px; height: 9px; border-radius: 50%;
-  background: linear-gradient(135deg, #00ffa6, #00e6a2, #00c97f);
+  background: linear-gradient(135deg, #DFFBF3, #97DFCD, #63D7B8);
   box-shadow:
-    0 0 10px rgba(0, 255, 166, 0.9),
-    0 0 18px rgba(0, 230, 162, 0.6),
-    0 0 28px rgba(0, 201, 127, 0.35);
+    0 0 10px rgba(99, 215, 184, 0.9),
+    0 0 18px rgba(151, 223, 205, 0.6),
+    0 0 28px rgba(99, 215, 184, 0.35);
   animation: pulseOrb 2.4s ease-in-out infinite;
   flex-shrink: 0;
 }
 
 @keyframes pulseOrb {
-  0%, 100% { transform: scale(1); box-shadow: 0 0 12px rgba(65, 105, 225, 0.7); }
+  0%, 100% { transform: scale(1); box-shadow: 0 0 12px rgba(99, 215, 184, 0.7); }
   50% {
     transform: scale(1.4);
-    box-shadow: 0 0 22px rgba(0, 230, 162, 1), 0 0 40px rgba(65, 105, 225, 0.3);
+    box-shadow: 0 0 22px rgba(151, 223, 205, 1), 0 0 40px rgba(99, 215, 184, 0.3);
   }
 }
 
@@ -41,7 +41,7 @@ body{padding:32px 0;background:#0d0b0e;color:#fff;font-family:Inter,system-ui,sa
   padding: 3px 3px 3px 12px;
   background:
     linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.03)) padding-box,
-    linear-gradient(135deg, rgba(65, 105, 225, 0.22) 0%, rgba(50, 150, 210, 0.14) 45%, rgba(0, 230, 162, 0.12) 100%) border-box;
+    linear-gradient(135deg, rgba(99, 215, 184, 0.22) 0%, rgba(151, 223, 205, 0.14) 45%, rgba(151, 223, 205, 0.12) 100%) border-box;
   border: 1px solid transparent; border-radius: 999px;
   cursor: pointer; user-select: none;
   transition: border-color .25s, background .25s, transform .25s;
@@ -51,7 +51,7 @@ body{padding:32px 0;background:#0d0b0e;color:#fff;font-family:Inter,system-ui,sa
 .cat-btn:hover {
   background:
     linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.05)) padding-box,
-    linear-gradient(135deg, rgba(65, 105, 225, 0.45) 0%, rgba(50, 150, 210, 0.28) 45%, rgba(0, 230, 162, 0.24) 100%) border-box;
+    linear-gradient(135deg, rgba(99, 215, 184, 0.45) 0%, rgba(151, 223, 205, 0.28) 45%, rgba(151, 223, 205, 0.24) 100%) border-box;
   transform: translateY(-1px);
 }
 
@@ -60,9 +60,9 @@ body{padding:32px 0;background:#0d0b0e;color:#fff;font-family:Inter,system-ui,sa
 
 .cat-btn-arrow {
   width: 20px; height: 20px;
-  background: linear-gradient(135deg, var(--accent-blue), var(--accent-green));
+  background: linear-gradient(135deg, #0A4A3F, #63D7B8);
   border-radius: 50%; display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0; box-shadow: 0 6px 14px rgba(65, 105, 225, 0.25);
+  flex-shrink: 0; box-shadow: 0 6px 14px rgba(99, 215, 184, 0.25);
 }
 
 .cat-btn-arrow svg { width: 8px; height: 8px; }
@@ -71,7 +71,7 @@ body{padding:32px 0;background:#0d0b0e;color:#fff;font-family:Inter,system-ui,sa
 .badge-info {
   padding: 7px 13px; border-radius: 999px;
   font-size: .66rem; font-weight: 700; color: var(--accent-text);
-  background: linear-gradient(135deg, rgba(65, 105, 225, .13), rgba(0, 230, 162, .08));
+  background: linear-gradient(135deg, rgba(99, 215, 184, .13), rgba(151, 223, 205, .08));
   border: 1px solid rgba(255, 255, 255, .10);
   backdrop-filter: blur(12px); white-space: nowrap;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
@@ -226,8 +226,8 @@ body{padding:32px 0;background:#0d0b0e;color:#fff;font-family:Inter,system-ui,sa
 
 
 
-.trending-section .orb-1 { width: 70px; height: 70px; top: 12%; left: 8%; background: rgba(65, 105, 225, .22); }
-.trending-section .orb-2 { width: 80px; height: 80px; bottom: 10%; right: 6%; background: rgba(0, 230, 162, .18); }
+.trending-section .orb-1 { width: 70px; height: 70px; top: 12%; left: 8%; background: rgba(99, 215, 184, .22); }
+.trending-section .orb-2 { width: 80px; height: 80px; bottom: 10%; right: 6%; background: rgba(151, 223, 205, .18); }
 
 
 
@@ -275,13 +275,13 @@ body{padding:32px 0;background:#0d0b0e;color:#fff;font-family:Inter,system-ui,sa
 
 .hover-popup::before {
   content: ""; position: absolute; width: 120px; height: 120px;
-  border-radius: 50%; border: 1px solid rgba(65, 105, 225, 0.20);
+  border-radius: 50%; border: 1px solid rgba(99, 215, 184, 0.20);
   top: 50%; left: 0; transform: translate(-50%, -50%); pointer-events: none;
 }
 
 .hover-popup::after {
   content: ""; position: absolute; width: 120px; height: 120px;
-  border-radius: 50%; border: 1px solid rgba(0, 230, 162, 0.18);
+  border-radius: 50%; border: 1px solid rgba(151, 223, 205, 0.18);
   top: 50%; right: 0; transform: translate(50%, -50%); pointer-events: none;
 }
 
