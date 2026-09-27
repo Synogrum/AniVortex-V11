@@ -1,6 +1,6 @@
 # AniVortex V12 — Header + Banner Style Template
 
-Status: **HB-01 applied as V12.17 canonical preview** — this file is now the working decision sheet for Header + Banner.  
+Status: **HB-01 applied as V12.18 canonical preview** — this file is now the working decision sheet for Header + Banner.  
 Scope: **Header + Banner only**.  
 Branch: `v12-design-system`.  
 Important: no visual CSS change is implied by this document until the values below are approved.
@@ -12,27 +12,27 @@ Current problem: the page background is dark emerald (`#031711`) and the foregro
 Current preview variant: **HB-01 — Obsidian + Champagne**.
 
 Recommended direction for Header + Banner:
-- base surfaces: **obsidian / graphite / midnight**, not green;
+- base surfaces: **deep petrol / blue-teal / midnight teal**, not green;
 - premium accent: **champagne gold**;
 - optional secondary accent: **cool ice/cyan**, used sparingly;
 - primary text: warm off-white;
 - secondary text: cool neutral gray;
 - green remains mostly in the page background, not in major foreground surfaces.
 
-### Applied preview palette HB-01 — V12.17
+### Applied preview palette HB-01 — V12.18
 
 | Role | Proposed value | Decision |
 |---|---|---|
-| Header base | `#0B1016` / `rgba(11,16,22,.95)` | APPLIED V12.17 |
-| Header elevated glass | `#111923` | APPLIED V12.17 |
-| Banner control surface | `#10151D` / `#121923` | APPLIED V12.17 |
+| Header base | `#0C2D32` | APPLIED V12.18 |
+| Header elevated glass | `#123940` | APPLIED V12.18 |
+| Banner control surface | `#0F3036` / `#123940` | APPLIED V12.18 |
 | Banner secondary surface | `#171E28` | TBD |
-| Primary text | `#F7F4EC` | APPLIED V12.17 |
-| Secondary text | `#C1C9D2` | APPLIED V12.17 |
-| Muted text | `#8792A0` | APPLIED V12.17 |
-| Premium accent | `#D4B77A` | APPLIED V12.17 |
-| Premium dark | `#B8925E` | APPLIED V12.17 |
-| Optional cool accent | `#72CFE8` | APPLIED V12.17 |
+| Primary text | `#F7F4EC` | APPLIED V12.18 |
+| Secondary text | `#C1C9D2` | APPLIED V12.18 |
+| Muted text | `#8792A0` | APPLIED V12.18 |
+| Premium accent | `#D4B77A` | APPLIED V12.18 |
+| Premium dark | `#B8925E` | APPLIED V12.18 |
+| Optional cool accent | `#72CFE8` | APPLIED V12.18 |
 | Border neutral | `rgba(255,255,255,.10)` | TBD |
 | Border premium | `rgba(212,183,122,.28)` | TBD |
 
@@ -161,3 +161,19 @@ Example:
 `Anime title → CUSTOM: Outfit 900, 50px, #F7F4EC`
 
 Once approved, the chosen values should be moved into dedicated Header/Banner design tokens and applied in the original Header/Banner CSS, while the corresponding Header/Banner theme overrides are removed from `hardening.css`.
+
+
+## V12.18 — Language availability control
+
+The old separate `Sub` and `Dub` pills next to genres were removed.
+
+Language availability now uses **one metadata control** inside the same grid as Series TV, duration, date, quality and episodes:
+
+- `is-sub` → displays **Sub**
+- `is-dub` → displays **Dub**
+- `is-both` → displays **Sub/Dub**
+
+Current demo data uses `is-both` / **Sub/Dub** for all ten banner slides because the previous markup showed both Sub and Dub on every slide.
+
+Desktop/tablet metadata layout: **3 columns × 2 rows**.  
+Mobile metadata layout: **2 columns**.
