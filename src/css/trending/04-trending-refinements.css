@@ -118,7 +118,7 @@
 
 /* V13 */
 #trendingMaster {
-  --avt-card-surface: linear-gradient(180deg, rgba(10, 74, 63, .96), rgba(3, 29, 34, .98));
+  --avt-card-surface: linear-gradient(180deg, rgba(10, 74, 63, .98), rgba(8, 61, 53, .99));
   --avt-card-ink: #EDF7F4;
   --avt-card-muted: #A8C7BE;
   --avt-card-accent: #63D7B8;
@@ -176,25 +176,25 @@
 }
 
 #trendingMaster .trending-pair:nth-child(6n/**/+1) {
-  background: radial-gradient(circle at 12% 12%, rgba(99, 215, 184, .20), transparent 34%), radial-gradient(circle at 88% 86%, rgba(99, 215, 184, .07), transparent 28%), linear-gradient(180deg, rgba(7, 52, 44, .95), rgba(3, 29, 34, .98));
+  background: radial-gradient(circle at 12% 12%, rgba(151,223,205,.14), transparent 34%), radial-gradient(circle at 88% 86%, rgba(99,215,184,.06), transparent 28%), linear-gradient(180deg, #0A4A3F, #083D35);
 }
 #trendingMaster .trending-pair:nth-child(6n/**/+2) {
-  background: radial-gradient(circle at 18% 14%, rgba(99, 215, 184, .18), transparent 34%), radial-gradient(circle at 86% 82%, rgba(99, 215, 184, .08), transparent 28%), linear-gradient(180deg, rgba(20, 50, 48, .95), rgba(3, 29, 34, .98));
+  background: radial-gradient(circle at 18% 14%, rgba(151,223,205,.12), transparent 34%), radial-gradient(circle at 86% 82%, rgba(99,215,184,.06), transparent 28%), linear-gradient(180deg, #0B3F36, #083D35);
 }
 #trendingMaster .trending-pair:nth-child(6n/**/+3) {
-  background: radial-gradient(circle at 16% 12%, rgba(151, 223, 205, .18), transparent 34%), radial-gradient(circle at 86% 80%, rgba(99, 215, 184, .07), transparent 28%), linear-gradient(180deg, rgba(18, 46, 56, .95), rgba(3, 29, 34, .98));
+  background: radial-gradient(circle at 16% 12%, rgba(151,223,205,.14), transparent 34%), radial-gradient(circle at 86% 80%, rgba(99,215,184,.05), transparent 28%), linear-gradient(180deg, #0D493E, #083D35);
 }
 #trendingMaster .trending-pair:nth-child(6n/**/+4) {
-  background: radial-gradient(circle at 20% 14%, rgba(151, 223, 205, .22), transparent 34%), radial-gradient(circle at 88% 82%, rgba(99, 215, 184, .06), transparent 28%), linear-gradient(180deg, rgba(10, 74, 63, .92), rgba(12, 24, 26, .98));
+  background: radial-gradient(circle at 20% 14%, rgba(151,223,205,.16), transparent 34%), radial-gradient(circle at 88% 82%, rgba(99,215,184,.05), transparent 28%), linear-gradient(180deg, #11584B, #0A4A3F);
 }
 #trendingMaster .trending-pair:nth-child(6n/**/+5) {
-  background: radial-gradient(circle at 18% 14%, rgba(99, 215, 184, .18), transparent 34%), radial-gradient(circle at 84% 80%, rgba(99, 215, 184, .08), transparent 28%), linear-gradient(180deg, rgba(8, 61, 53, .92), rgba(11, 22, 28, .98));
+  background: radial-gradient(circle at 18% 14%, rgba(151,223,205,.12), transparent 34%), radial-gradient(circle at 84% 80%, rgba(99,215,184,.05), transparent 28%), linear-gradient(180deg, #0D493E, #0B3F36);
 }
 #trendingMaster .trending-pair:nth-child(6n/**/+6) {
-  background: radial-gradient(circle at 18% 14%, rgba(151, 223, 205, .18), transparent 34%), radial-gradient(circle at 84% 82%, rgba(99, 215, 184, .06), transparent 28%), linear-gradient(180deg, rgba(7, 52, 44, .93), rgba(11, 23, 26, .98));
+  background: radial-gradient(circle at 18% 14%, rgba(151,223,205,.13), transparent 34%), radial-gradient(circle at 84% 82%, rgba(99,215,184,.05), transparent 28%), linear-gradient(180deg, #0B3F36, #083D35);
 }
 
-#trendingMaster .avt-artwork { background: #07342C; }
+#trendingMaster .avt-artwork { background: #0B3F36; }
 #trendingMaster .avt-artwork::after {
   background: linear-gradient(180deg, rgba(4, 9, 13, .22), transparent 30%, transparent 64%, rgba(4, 9, 13, .78));
 }

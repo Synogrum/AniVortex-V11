@@ -252,10 +252,10 @@ body{padding:32px 0;background:#031D22;color:#fff;font-family:Inter,system-ui,sa
   font-family: Inter, system-ui, sans-serif;
 
   background:
-    radial-gradient(circle at 16% 8%, rgba(96, 208, 188, .18), transparent 35%),
-    radial-gradient(circle at 88% 82%, rgba(2, 92, 88, .22), transparent 46%),
-    linear-gradient(145deg, rgba(13, 57, 60, .97), rgba(4, 29, 34, .98));
-  border: 1px solid rgba(110, 221, 203, .34);
+    radial-gradient(circle at 16% 8%, rgba(151, 223, 205, .16), transparent 35%),
+    radial-gradient(circle at 88% 82%, rgba(99, 215, 184, .10), transparent 46%),
+    linear-gradient(145deg, rgba(10, 74, 63, .985), rgba(8, 61, 53, .99));
+  border: 1px solid rgba(151, 223, 205, .28);
   box-shadow:
     0 24px 60px rgba(0, 0, 0, .55),
     0 0 30px rgba(45, 194, 174, .12),
