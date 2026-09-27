@@ -35,7 +35,7 @@
   bottom: -60px;
   width: 174px;
   height: 104px;
-  border: 1px solid rgba(127, 184, 200, 0.20);
+  border: 1px solid rgba(111, 161, 176, 0.21);
 }
 
 .trending-popup-top::after {
@@ -43,7 +43,7 @@
   right: -18px;
   width: 142px;
   height: 126px;
-  border: 1px solid rgba(181, 215, 225, 0.17);
+  border: 1px solid rgba(158, 196, 207, 0.17);
 }
 
 .trending-popup-meta {
@@ -105,7 +105,7 @@
   padding-left: 12px;
   min-width: 52px;
   color: #DFFBF3;
-  border-left: 1px solid rgba(127, 184, 200, 0.36);
+  border-left: 1px solid rgba(111, 161, 176, 0.37);
   font-family: Outfit, Inter, "Segoe UI", sans-serif;
   font-size: 11px;
   font-weight: 850;
@@ -251,13 +251,13 @@
   align-content: center;
   gap: 0;
   padding: 5px 4px 4px;
-  border: 1px solid rgba(127, 184, 200, 0.58);
+  border: 1px solid rgba(111, 161, 176, 0.55);
   border-radius: 16px;
   background:
-    radial-gradient(circle at 50% 22%, rgba(127, 184, 200, 0.16), transparent 45%),
+    radial-gradient(circle at 50% 22%, rgba(111, 161, 176, 0.15), transparent 45%),
     linear-gradient(180deg, rgba(17, 88, 75, 0.98), rgba(8, 61, 53, 0.99));
   box-shadow:
-    0 0 0 3px rgba(127, 184, 200, 0.055),
+    0 0 0 3px rgba(111, 161, 176, 0.052),
     inset 0 1px 0 rgba(255, 255, 255, 0.08),
     0 10px 24px rgba(0, 16, 23, 0.24);
 }
@@ -265,7 +265,7 @@
 .trending-stat-ep-label {
   align-self: start;
   justify-self: center;
-  color: #7FB8C8;
+  color: #6FA1B0;
   font-size: 8.5px;
   font-weight: 900;
   letter-spacing: 0.9px;
@@ -281,7 +281,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #B5D7E0;
+  color: #9FC4CE;
   font-family: Outfit, Inter, sans-serif;
   font-size: 24px;
   font-weight: 900;
@@ -289,8 +289,8 @@
   letter-spacing: -1px;
   font-variant-numeric: tabular-nums;
   text-shadow:
-    2px 2px 0 rgba(127, 184, 200, 0.22),
-    0 0 12px rgba(91, 174, 195, 0.17);
+    2px 2px 0 rgba(111, 161, 176, 0.21),
+    0 0 12px rgba(78, 151, 170, 0.16);
   margin-top: 1px;
 }
 
@@ -328,7 +328,7 @@
 .trending-popup-desc {
   padding: 12px;
   border-radius: 11px;
-  border: 1px solid rgba(127, 184, 200, .22);
+  border: 1px solid rgba(111, 161, 176, .22);
   background: rgba(11, 63, 54, .72);
   color: #d6f3ee;
   font-size: .82rem;
@@ -345,7 +345,7 @@
 .trending-popup-desc-label {
   display: block;
   margin-bottom: 7px;
-  color: #7FB8C8;
+  color: #6FA1B0;
   font-size: .55rem;
   font-weight: 900;
   letter-spacing: .09em;
@@ -371,15 +371,15 @@
 
 /* Buton */
 .trending-watch-btn {
-  border: 1px solid rgba(127, 184, 200, .36);
+  border: 1px solid rgba(111, 161, 176, .37);
   border-radius: 10px;
   padding: 12px 14px;
   width: 100%;
   font-size: .84rem;
   font-weight: 800;
   letter-spacing: .02em;
-  color: #E4F1F4;
-  background: linear-gradient(135deg, #0E5B4D 0%, #0A4A3F 55%, #094751 100%);
+  color: #D5E6EA;
+  background: linear-gradient(135deg, #0E5B4D 0%, #0A4A3F 55%, #083C45 100%);
   cursor: pointer;
   box-shadow: inset 0 1px 0 rgba(255,255,255,.22);
   transition: transform .22s ease, box-shadow .22s ease;
