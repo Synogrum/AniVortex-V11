@@ -94,13 +94,13 @@
 }
 
 .title-text:not(#__av_prio_a#__av_prio_b) {
-  font-size: clamp(34px, 2.5vw, 42px);
+  font-size: var(--hb-banner-title-size);
   bottom: 0;
 }
 
 .genre-row:not(#__av_prio_a#__av_prio_b) {
   margin-bottom: 16px;
-  font-size: 18px;
+  font-size: var(--hb-banner-genre-size);
   bottom: 0;
 }
 
@@ -115,7 +115,7 @@
 
 .description:not(#__av_prio_a#__av_prio_b) {
   max-width: 560px;
-  font-size: 16px;
+  font-size: var(--hb-banner-body-size);
   line-height: 1.65;
   -webkit-line-clamp: 4;
   line-clamp: 4;
@@ -127,7 +127,7 @@
 
 .btn:not(#__av_prio_a#__av_prio_b) {
   padding: 13px 24px;
-  font-size: 17px;
+  font-size: var(--hb-banner-button-size);
 }
 
 .banner-right:not(#__av_prio_a#__av_prio_b) {
