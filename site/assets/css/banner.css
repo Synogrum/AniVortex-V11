@@ -210,14 +210,15 @@
   font-weight:700;
   text-transform:uppercase;
   letter-spacing:.18em;
-  color:var(--hb-gold);
+  color:#FFD37A;
 }
 
 .top-dot {
   width: 6px;
   height: 6px;
   border-radius: 999px;
-  background: rgba(255,255,255,0.3);
+  background:#FF8B5C;
+  box-shadow:0 0 8px rgba(255,139,92,.34);
 }
 
 .top-brand {
@@ -226,7 +227,7 @@
   font-weight:600;
   text-transform:uppercase;
   letter-spacing:.2em;
-  color:var(--hb-text-muted);
+  color:#9BE0D2;
 }
 
 .title-row {
@@ -239,7 +240,7 @@
 
 .title-text {
   font-family:var(--hb-font-display);
-  background:linear-gradient(90deg,#fffaf0 0%,#f4e7c8 36%,var(--hb-gold) 72%,#f7f4ec 100%);
+  background:linear-gradient(90deg,#FFE2A8 0%,#F6C77F 46%,#F0A76C 100%);
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
