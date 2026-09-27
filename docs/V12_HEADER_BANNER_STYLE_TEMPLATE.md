@@ -177,3 +177,14 @@ Current demo data uses `is-both` / **Sub/Dub** for all ten banner slides because
 
 Desktop/tablet metadata layout: **3 columns × 2 rows**.  
 Mobile metadata layout: **2 columns**.
+
+
+## V12.20 — #0A4A3F + champagne outline
+
+Approved base color for Header and Banner:
+- Base: `#0A4A3F`
+- Scrolled Header: `#083D35`
+- Inner surfaces: `#0B3F36`, `#0D493E`, `#11584B`
+- Outline/accent: `#C9A96A` (champagne gold)
+
+The outline is rendered softly from the champagne token so it stays visible without becoming harsh.
