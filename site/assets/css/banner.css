@@ -195,7 +195,7 @@
   align-items:center;
   gap:12px;
   border-radius:10px;
-  border:1px solid var(--hb-border);
+  border:1px solid rgba(151, 211, 197, 0.28);
   background:var(--hb-surface-1);
   padding:8px 16px;
   backdrop-filter:none;
@@ -210,15 +210,15 @@
   font-weight:700;
   text-transform:uppercase;
   letter-spacing:.18em;
-  color:#FFD37A;
+  color:#DDF5EE;
 }
 
 .top-dot {
   width: 6px;
   height: 6px;
   border-radius: 999px;
-  background:#FF8B5C;
-  box-shadow:0 0 8px rgba(255,139,92,.34);
+  background:#63D7B8;
+  box-shadow:0 0 8px rgba(99,215,184,.34);
 }
 
 .top-brand {
@@ -227,7 +227,7 @@
   font-weight:600;
   text-transform:uppercase;
   letter-spacing:.2em;
-  color:#9BE0D2;
+  color:#AFCFD7;
 }
 
 .title-row {
@@ -240,7 +240,7 @@
 
 .title-text {
   font-family:var(--hb-font-display);
-  background:linear-gradient(90deg,#FFE2A8 0%,#F6C77F 46%,#F0A76C 100%);
+  background:linear-gradient(90deg,#EAF7F3 0%,#B9E4D8 52%,#8ED2C0 100%);
   -webkit-background-clip:text;
   background-clip:text;
   color:transparent;
