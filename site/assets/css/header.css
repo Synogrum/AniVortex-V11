@@ -474,20 +474,21 @@
   pointer-events: none;
 }
 
+/* V12.28 — hover emerald/mint pentru acțiunile din Header */
 .action-wrap:hover .action-btn,
 .action-wrap:focus-within .action-btn {
   transform: translateY(-2px);
-  border-color: rgba(255,255,255,0.18);
-  background: linear-gradient(145deg, #402832, #322027);
+  border-color: rgba(99,215,184,0.58);
+  background: linear-gradient(145deg, #126052 0%, #0A4A3F 56%, #083D35 100%);
   box-shadow:
-    0 0 10px rgba(184,146,94,0.12),
-    0 0 18px rgba(212,183,122,0.08),
-    0 14px 28px rgba(0,0,0,0.36);
+    0 0 0 1px rgba(99,215,184,0.08),
+    0 0 18px rgba(99,215,184,0.16),
+    0 14px 28px rgba(0,0,0,0.30);
 }
 
 .action-wrap:hover .action-btn i,
 .action-wrap:focus-within .action-btn i {
-  color:#fff;
+  color:#f1fff9;
   transform:scale(1.06);
 }
 
@@ -585,7 +586,7 @@
   background:var(--hb-surface-2);
   backdrop-filter:none;
   -webkit-backdrop-filter:none;
-  border:1px solid var(--hb-border);
+  border:1px solid rgba(99,215,184,.46);
   box-shadow:0 10px 22px rgba(0,0,0,.30), inset 0 1px 0 rgba(255,255,255,.05);
   transition:width, color, -webkit-text-fill-color, background, border-color, box-shadow 0.4s ease;
 }
@@ -595,13 +596,20 @@
   font-weight:500;
 }
 
+.search-box input:hover {
+  border-color: rgba(99,215,184,.62);
+}
+
 .search-box input:focus {
   width:280px;
   color:var(--hb-text);
   -webkit-text-fill-color:var(--hb-text);
   background:var(--hb-surface-3);
-  border-color:rgba(212,183,122,.34);
-  box-shadow:0 0 0 1px rgba(212,183,122,.06), 0 14px 30px rgba(0,0,0,.42);
+  border-color:rgba(99,215,184,.82);
+  box-shadow:
+    0 0 0 1px rgba(99,215,184,.12),
+    0 0 16px rgba(99,215,184,.10),
+    0 14px 30px rgba(0,0,0,.38);
   text-shadow:none;
 }
 
