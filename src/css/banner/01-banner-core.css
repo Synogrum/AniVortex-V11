@@ -303,12 +303,12 @@
 
 .meta-grid {
   margin-bottom: 24px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
   align-items: stretch;
-  gap: 10px;
+  flex-wrap: nowrap;
+  gap: 9px;
   width: 100%;
-  max-width: none;
+  max-width: 720px;
 }
 
 /* .meta-item — fără duplicate */
@@ -317,11 +317,12 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  flex: 1;
+  flex: 1 1 0;
   width: auto;
+  min-width: 0;
   white-space: nowrap;
-  min-height: 54px;
-  padding: 0 14px;
+  min-height: 52px;
+  padding: 0 10px;
   border-radius: 18px;
   border: 1px solid rgba(255,255,255,0.10);
   backdrop-filter: blur(20px);
@@ -349,25 +350,25 @@
 }
 
 .meta-language.is-sub {
-  color: #dff7ff;
-  background: rgba(75, 160, 178, 0.18);
-  border-color: rgba(114, 207, 232, 0.32);
+  color: #d9eef0;
+  background: var(--hb-surface-2);
+  border-color: rgba(130, 196, 197, 0.34);
 }
 
 .meta-language.is-dub {
-  color: #fff0cf;
-  background: rgba(212, 183, 122, 0.16);
+  color: #f2dfb5;
+  background: var(--hb-surface-2);
   border-color: rgba(212, 183, 122, 0.34);
 }
 
 .meta-language.is-both {
-  color: #f4f5ef;
-  background: linear-gradient(135deg, rgba(75,160,178,.18), rgba(212,183,122,.16));
-  border-color: rgba(168, 205, 199, 0.30);
+  color: #f4e8d3;
+  background: var(--hb-surface-2);
+  border-color: rgba(212, 183, 122, 0.30);
 }
 
 .meta-language.is-sub > i {
-  color: var(--hb-cool);
+  color: #8fc8c9;
 }
 
 .meta-language.is-dub > i {
@@ -375,7 +376,7 @@
 }
 
 .meta-language.is-both > i {
-  color: #c9ded7;
+  color: var(--hb-gold);
 }
 
 .meta-item:hover {
@@ -385,7 +386,7 @@
 .meta-big {
   background:var(--hb-surface-2);
   font-family:var(--hb-font-ui);
-  font-size:14px;
+  font-size:13px;
   font-weight:700;
   color:#e7ebf0;
   border:1px solid var(--hb-border);
@@ -398,7 +399,7 @@
 .meta-item:not(.meta-big) {
   background:var(--hb-surface-2);
   font-family:var(--hb-font-ui);
-  font-size:13px;
+  font-size:12.5px;
   font-weight:600;
   color:#e7ebf0;
   border:1px solid var(--hb-border);
@@ -936,7 +937,9 @@
   }
 
   .meta-grid {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 100%;
   }
 }
 
