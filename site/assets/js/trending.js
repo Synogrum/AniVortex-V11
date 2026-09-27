@@ -477,22 +477,21 @@ function stopSlideTimer() {
 
 // ── Hover Popup ───────────────────────────────────────────────
 function getBarGradient(pct) {
-  const yellow  = [255, 214,   0];
-  const orange  = [255, 120,   0];
-  const red     = [220,  30,  30];
-  const purple  = [ 55,  30, 180];
+  const deep    = [ 10,  74,  63];
+  const emerald = [ 31, 170, 140];
+  const mint    = [ 99, 215, 184];
+  const pale    = [223, 251, 243];
 
   function lerp(a, b, t) {
     return a.map((v, i) => Math.round(v + (b[i] - v) * t));
   }
   function rgb(c) { return `rgb(${c[0]},${c[1]},${c[2]})`; }
   function colorAt(p) {
-    if (p <= 30)  return lerp(yellow, yellow, 0);
-    if (p <= 55)  return lerp(yellow, orange, (p - 30) / 25);
-    if (p <= 75)  return lerp(orange, red,    (p - 55) / 20);
-    return              lerp(red,    purple,  (p - 75) / 25);
+    if (p <= 35) return lerp(deep, emerald, p / 35);
+    if (p <= 72) return lerp(emerald, mint, (p - 35) / 37);
+    return             lerp(mint, pale, (p - 72) / 28);
   }
-  const startColor = colorAt(Math.max(0, pct - 40));
+  const startColor = colorAt(Math.max(0, pct - 42));
   const endColor   = colorAt(pct);
   return `linear-gradient(90deg, ${rgb(startColor)}, ${rgb(endColor)})`;
 }

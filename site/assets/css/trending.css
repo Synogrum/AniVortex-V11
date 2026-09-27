@@ -16,11 +16,11 @@ body{padding:32px 0;background:#031D22;color:#fff;font-family:Inter,system-ui,sa
 
 .pulse-dot {
   width: 9px; height: 9px; border-radius: 50%;
-  background: linear-gradient(135deg, #DFFBF3, #97DFCD, #63D7B8);
+  background: radial-gradient(circle at 35% 30%, #F7FFFC 0%, #DFFBF3 26%, #97DFCD 58%, #63D7B8 100%);
   box-shadow:
-    0 0 10px rgba(99, 215, 184, 0.9),
-    0 0 18px rgba(151, 223, 205, 0.6),
-    0 0 28px rgba(99, 215, 184, 0.35);
+    0 0 10px rgba(223, 251, 243, 0.78),
+    0 0 20px rgba(151, 223, 205, 0.58),
+    0 0 34px rgba(99, 215, 184, 0.34);
   animation: pulseOrb 2.4s ease-in-out infinite;
   flex-shrink: 0;
 }
@@ -40,8 +40,8 @@ body{padding:32px 0;background:#031D22;color:#fff;font-family:Inter,system-ui,sa
   min-width: 102px; min-height: 28px;
   padding: 3px 3px 3px 12px;
   background:
-    linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.03)) padding-box,
-    linear-gradient(135deg, rgba(99, 215, 184, 0.22) 0%, rgba(151, 223, 205, 0.14) 45%, rgba(151, 223, 205, 0.12) 100%) border-box;
+    linear-gradient(135deg, rgba(17, 88, 75, .98), rgba(10, 74, 63, .96)) padding-box,
+    linear-gradient(135deg, rgba(223, 251, 243, .54), rgba(99, 215, 184, .32)) border-box;
   border: 1px solid transparent; border-radius: 999px;
   cursor: pointer; user-select: none;
   transition: border-color .25s, background .25s, transform .25s;
@@ -50,22 +50,22 @@ body{padding:32px 0;background:#031D22;color:#fff;font-family:Inter,system-ui,sa
 
 .cat-btn:hover {
   background:
-    linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.05)) padding-box,
-    linear-gradient(135deg, rgba(99, 215, 184, 0.45) 0%, rgba(151, 223, 205, 0.28) 45%, rgba(151, 223, 205, 0.24) 100%) border-box;
+    linear-gradient(135deg, rgba(18, 96, 82, .99), rgba(10, 74, 63, .98)) padding-box,
+    linear-gradient(135deg, rgba(223, 251, 243, .78), rgba(99, 215, 184, .52)) border-box;
   transform: translateY(-1px);
 }
 
-.cat-btn-label { font-size: 0.64rem; font-weight: 700; color: var(--accent-text); min-width: 54px; transition: opacity .15s; }
+.cat-btn-label { font-size: 0.64rem; font-weight: 700; color: #EDF7F4; min-width: 54px; transition: opacity .15s; }
 .cat-btn-label.swapping { opacity: 0; }
 
 .cat-btn-arrow {
   width: 20px; height: 20px;
-  background: linear-gradient(135deg, #0A4A3F, #63D7B8);
+  background: linear-gradient(135deg, #DFFBF3, #63D7B8);
   border-radius: 50%; display: flex; align-items: center; justify-content: center;
   flex-shrink: 0; box-shadow: 0 6px 14px rgba(99, 215, 184, 0.25);
 }
 
-.cat-btn-arrow svg { width: 8px; height: 8px; }
+.cat-btn-arrow svg { width: 8px; height: 8px; stroke: #052A2E; }
 
 
 .badge-info {
@@ -445,9 +445,10 @@ body{padding:32px 0;background:#031D22;color:#fff;font-family:Inter,system-ui,sa
   width: 100%;
   height: 8px;
   border-radius: 999px;
-  background: rgba(1,17,20,.58);
+  background: rgba(3,29,34,.78);
   overflow: hidden;
-  border: 1px solid rgba(108,220,202,.20);
+  border: 1px solid rgba(151,223,205,.28);
+  box-shadow: inset 0 1px 3px rgba(0,0,0,.28);
 }
 
 .trending-popup-fire-bar {
@@ -651,13 +652,13 @@ body{padding:32px 0;background:#031D22;color:#fff;font-family:Inter,system-ui,sa
   text-align: center;
 }
 
-/* ─── MODIFICARE: descriere 5 rânduri, font 10px ─── */
+/* V12.42 — descriere maximum 4 rânduri, cu ellipsis la finalul rândului 4 */
 .trending-popup-desc p {
   margin: 0;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
-  line-clamp: 5;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -715,9 +716,10 @@ body{padding:32px 0;background:#031D22;color:#fff;font-family:Inter,system-ui,sa
 .trending-row-meta-left h2 {
   margin: 0 3px 0 0; padding-block: .04em .1em;
   font-size: 22px; font-weight: 900; letter-spacing: -0.045em;
-  background: linear-gradient(135deg, #ffffff 0%, #EDF7F4 42%, #97DFCD 72%, #63D7B8 100%);
+  background: linear-gradient(135deg, #F7FFFC 0%, #DFFBF3 34%, #97DFCD 68%, #63D7B8 100%);
   -webkit-background-clip: text; background-clip: text;
   color: transparent; line-height: 1.08;
+  text-shadow: 0 0 14px rgba(151,223,205,.13);
 }
 
 .trending-row-meta-right { display: flex; align-items: center; gap: 10px; }
