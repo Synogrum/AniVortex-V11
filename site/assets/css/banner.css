@@ -511,7 +511,7 @@
 }
 
 .btn-inner-gray {
-  background: rgba(10,16,24,0.9);
+  background:linear-gradient(135deg,#0B342D 0%,#082A25 100%);
 }
 
 .btn-content {
