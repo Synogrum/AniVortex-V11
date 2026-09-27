@@ -29,6 +29,8 @@ jobs:
         run: |
           python scripts/code_quality.py || true
           python scripts/prune_css_overrides.py --report audit/v12-overrides.tsv || true
+      - name: Enforce Header Banner CSS ownership
+        run: python scripts/header_banner_css_guard.py
       - uses: actions/upload-artifact@v4
         with:
           name: v12-css-audit
