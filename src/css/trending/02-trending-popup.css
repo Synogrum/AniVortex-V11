@@ -347,20 +347,24 @@
   text-align: center;
 }
 
-/* V12.42 — descriere maximum 4 rânduri, cu ellipsis la finalul rândului 4 */
+/* V12.56 — descriere fix pe maximum 4 rânduri, cu ... la finalul rândului 4 */
 .trending-popup-desc p {
   margin: 0;
+  width: 100%;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   line-clamp: 4;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 
 .trending-popup-desc p:not(#__av_prio_a#__av_prio_b) {
-  font-size: 10px;
-  line-height: 1.55;
+  font-size: 11px;
+  line-height: 1.5;
+  max-height: 6em;
 }
 
 /* Buton */
