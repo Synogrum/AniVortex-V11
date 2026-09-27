@@ -118,6 +118,13 @@
   --hb-border-premium: rgba(212, 183, 122, 0.26);
   --hb-shadow: 0 18px 46px rgba(0, 0, 0, 0.36);
   --hb-shadow-deep: 0 28px 72px rgba(0, 0, 0, 0.48);
+  --hb-header-solid: #0a0e14;
+  --hb-header-solid-scrolled: #080c11;
+  --hb-banner-solid: #0b1017;
+  --hb-banner-title-size: clamp(46px, 3.2vw, 54px);
+  --hb-banner-genre-size: 17px;
+  --hb-banner-body-size: 16px;
+  --hb-banner-button-size: 15px;
   --av-ent-muted: #9cc9bc;
   --av-ent-card-w: 184px;
   --av-ent-card-h: 248px;
