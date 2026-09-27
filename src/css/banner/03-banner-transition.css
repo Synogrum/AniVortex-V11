@@ -224,7 +224,7 @@ body .page:not(#__av_prio_a#__av_prio_b), body .banner-wrap:not(#__av_prio_a#__a
 }
 
 .banner-grid:not(#__av_prio_a#__av_prio_b) {
-  min-height: clamp(560px, 36vw, 680px);
+  min-height: clamp(540px, 35vw, 660px);
   align-items: start;
   transform: translateY(26px);
 }

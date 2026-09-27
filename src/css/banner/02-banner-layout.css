@@ -165,7 +165,7 @@
 }
 
 .slider-row:not(#__av_prio_a#__av_prio_b) {
-  bottom: 66px;
+  bottom: 46px;
 }
 
 @media (max-width: 1279px) {
