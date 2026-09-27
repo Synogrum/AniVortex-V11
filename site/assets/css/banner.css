@@ -369,16 +369,10 @@
   border-color: rgba(212, 183, 122, 0.30);
 }
 
-.meta-language.is-sub > i {
-  color: #8fc8c9;
-}
-
-.meta-language.is-dub > i {
-  color: var(--hb-gold);
-}
-
+.meta-language.is-sub > i,
+.meta-language.is-dub > i,
 .meta-language.is-both > i {
-  color: var(--hb-gold);
+  color:#FFFFFF;
 }
 
 .meta-item:hover {
@@ -416,15 +410,17 @@
 }
 
 .description {
-  max-width:610px;
-  font-family:var(--hb-font-ui);
+  max-width:650px;
+  min-height:calc(1.62em * 5);
+  max-height:calc(1.62em * 5);
+  font-family:"Space Grotesk", sans-serif;
   font-size:var(--hb-banner-body-size);
   font-weight:500;
-  line-height:1.65;
-  color:#b8c1cc;
+  line-height:1.62;
+  color:#EDF7F4;
   display:-webkit-box;
-  -webkit-line-clamp:4;
-  line-clamp:4;
+  -webkit-line-clamp:5;
+  line-clamp:5;
   -webkit-box-orient:vertical;
   overflow:hidden;
   text-overflow:ellipsis;
@@ -1183,11 +1179,16 @@
 }
 
 .description:not(#__av_prio_a#__av_prio_b) {
-  max-width: 650px;
-  font-size: var(--hb-banner-body-size);
-  line-height: 1.65;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
+  max-width:650px;
+  min-height:calc(1.62em * 5);
+  max-height:calc(1.62em * 5);
+  font-family:"Space Grotesk", sans-serif;
+  font-size:var(--hb-banner-body-size);
+  font-weight:500;
+  line-height:1.62;
+  color:#EDF7F4;
+  -webkit-line-clamp:5;
+  line-clamp:5;
 }
 
 .button-row:not(#__av_prio_a#__av_prio_b) {
