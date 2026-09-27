@@ -1,6 +1,6 @@
 # AniVortex V12 — Header + Banner Style Template
 
-Status: **decision sheet only** — this file documents the current effective styles and a proposed non-green direction.  
+Status: **HB-01 applied as V12.16 preview** — this file is now the working decision sheet for Header + Banner.  
 Scope: **Header + Banner only**.  
 Branch: `v12-design-system`.  
 Important: no visual CSS change is implied by this document until the values below are approved.
@@ -8,6 +8,8 @@ Important: no visual CSS change is implied by this document until the values bel
 ## 1. Direction
 
 Current problem: the page background is dark emerald (`#031711`) and the foreground Header/Banner controls also use emerald/teal surfaces, so the foreground does not separate strongly enough from the page.
+
+Current preview variant: **HB-01 — Obsidian + Champagne**.
 
 Recommended direction for Header + Banner:
 - base surfaces: **obsidian / graphite / midnight**, not green;
@@ -17,20 +19,20 @@ Recommended direction for Header + Banner:
 - secondary text: cool neutral gray;
 - green remains mostly in the page background, not in major foreground surfaces.
 
-### Proposed palette HB-01 — not applied yet
+### Applied preview palette HB-01 — V12.16
 
 | Role | Proposed value | Decision |
 |---|---|---|
-| Header base | `#0B1016` / `rgba(11,16,22,.92)` | TBD |
-| Header elevated glass | `#111923` | TBD |
-| Banner control surface | `#10151D` | TBD |
+| Header base | `#0B1016` / `rgba(11,16,22,.95)` | APPLIED V12.16 |
+| Header elevated glass | `#111923` | APPLIED V12.16 |
+| Banner control surface | `#10151D` / `#121923` | APPLIED V12.16 |
 | Banner secondary surface | `#171E28` | TBD |
-| Primary text | `#F7F4EC` | TBD |
-| Secondary text | `#AEB8C5` | TBD |
-| Muted text | `#7F8A98` | TBD |
-| Premium accent | `#D4B77A` | TBD |
-| Premium dark | `#B8925E` | TBD |
-| Optional cool accent | `#72CFE8` | TBD |
+| Primary text | `#F7F4EC` | APPLIED V12.16 |
+| Secondary text | `#C1C9D2` | APPLIED V12.16 |
+| Muted text | `#8792A0` | APPLIED V12.16 |
+| Premium accent | `#D4B77A` | APPLIED V12.16 |
+| Premium dark | `#B8925E` | APPLIED V12.16 |
+| Optional cool accent | `#72CFE8` | APPLIED V12.16 |
 | Border neutral | `rgba(255,255,255,.10)` | TBD |
 | Border premium | `rgba(212,183,122,.28)` | TBD |
 
