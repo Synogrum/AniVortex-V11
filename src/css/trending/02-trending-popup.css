@@ -114,9 +114,11 @@
 }
 
 .trending-popup-score i {
-  color: #97DFCD;
+  color: #FFD166;
   font-size: 8px;
-  filter: drop-shadow(0 0 6px rgba(255, 225, 93, 0.22));
+  filter:
+    drop-shadow(0 0 5px rgba(255, 209, 102, .46))
+    drop-shadow(0 0 10px rgba(255, 184, 72, .18));
 }
 
 .trending-popup-sep {

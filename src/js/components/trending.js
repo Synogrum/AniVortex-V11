@@ -477,20 +477,20 @@ function stopSlideTimer() {
 
 // ── Hover Popup ───────────────────────────────────────────────
 function getBarGradient(pct) {
-  // V12.45 — ocean teal discret: distinct de verdele principal, dar în aceeași atmosferă.
-  const deepSea = [34, 83, 88];
-  const teal    = [52, 126, 124];
-  const aqua    = [91, 176, 162];
-  const frost   = [180, 225, 214];
+  // V12.46 — popularitate pe tonuri calde, ca să se distingă clar de interfața emerald.
+  const coral   = [187, 79, 65];
+  const ember   = [215, 105, 67];
+  const amber   = [230, 146, 77];
+  const peach   = [242, 190, 112];
 
   function lerp(a, b, t) {
     return a.map((v, i) => Math.round(v + (b[i] - v) * t));
   }
   function rgb(c) { return `rgb(${c[0]},${c[1]},${c[2]})`; }
   function colorAt(p) {
-    if (p <= 34) return lerp(deepSea, teal, p / 34);
-    if (p <= 72) return lerp(teal, aqua, (p - 34) / 38);
-    return             lerp(aqua, frost, (p - 72) / 28);
+    if (p <= 34) return lerp(coral, ember, p / 34);
+    if (p <= 72) return lerp(ember, amber, (p - 34) / 38);
+    return             lerp(amber, peach, (p - 72) / 28);
   }
   const startColor = colorAt(Math.max(0, pct - 42));
   const endColor   = colorAt(pct);
