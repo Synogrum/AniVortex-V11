@@ -196,8 +196,9 @@ body .banner-trending-join:not(#__av_prio_a#__av_prio_b) {
   background-image: none;
 }
 
-body .banner:not(#__av_prio_a#__av_prio_b), body .banner.active:not(#__av_prio_a#__av_prio_b) {
-  box-shadow: none;
+body .banner:not(#__av_prio_a#__av_prio_b),
+body .banner.active:not(#__av_prio_a#__av_prio_b) {
+  box-shadow: var(--hb-shadow-deep), inset 0 1px 0 rgba(255,255,255,.035);
 }
 
 body .banner-trending-join svg:not(#__av_prio_a#__av_prio_b) {
