@@ -20,7 +20,9 @@ HB_SELECTOR = re.compile(
     r"(?:\.header\b|\.nav-item\b|\.action-btn\b|\.search-box\b|"
     r"\.banner\b|\.title-text\b|\.genre-row\b|\.tag-sub\b|\.tag-dub\b|"
     r"\.meta-big\b|\.meta-item\b|\.description\b|\.btn-view\b|\.btn-details\b|"
-    r"\.image-card\b|\.info-button\b|\.info-tooltip\b)"
+    r"\.image-card\b|\.info-button\b|\.info-tooltip\b|"
+    r"\.slider-nav\b|\.nav-arrow\b|\.nav-dot\b|\.btn-gradient\b|"
+    r"\.btn-content\b|\.white-icon\b|\.light-icon\b)"
 )
 
 def blocks(text: str):
@@ -73,6 +75,26 @@ for selector, token in required.items():
     body = banner[brace:end]
     if token not in body:
         errors.append(f"{selector} does not use {token}")
+
+# Prevent the old brown/gold control palette from returning in Banner navigation/buttons.
+LEGACY_CONTROL_COLORS = (
+    "rgba(34,24,20",
+    "rgba(34, 24, 20",
+    "#f3e6c8",
+    "var(--av-gold)",
+    "var(--hb-gold-dark)",
+    "#efdba8",
+)
+CONTROL_SELECTOR = re.compile(
+    r"(?:\.slider-nav\b|\.nav-arrow\b|\.nav-dot\b|"
+    r"\.btn-view\b|\.btn-details\b|\.btn-gradient\b|\.btn-content\b)"
+)
+for selector, body in blocks(banner):
+    if CONTROL_SELECTOR.search(selector):
+        lower = body.lower()
+        for legacy in LEGACY_CONTROL_COLORS:
+            if legacy.lower() in lower:
+                errors.append(f"legacy brown/gold control color in {selector[:120]}: {legacy}")
 
 header = (CSS / "header.css").read_text(encoding="utf-8")
 if "V12.16 — HEADER HB-01" in header:
