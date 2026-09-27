@@ -187,6 +187,8 @@
   align-content: center;
   gap: 6px;
   text-align: center;
+  background: #07312A;
+  border-radius: 10px;
 }
 
 .trending-stat-vizionari { grid-column: 1; }
@@ -340,7 +342,7 @@
 .trending-popup-desc-label {
   display: block;
   margin-bottom: 7px;
-  color: #6FA1B0;
+  color: #d4f7ef;
   font-size: .55rem;
   font-weight: 900;
   letter-spacing: .09em;
