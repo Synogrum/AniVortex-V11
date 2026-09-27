@@ -369,8 +369,9 @@
   transform:rotate(45deg);
 }
 
-.nav-item:hover .dropdown,
-.nav-item:focus-within .dropdown {
+/* V12.30 — dropdown-urile desktop se deschid strict la hover.
+   Eliminăm focus-within ca un click să nu le lase blocate deschise după mouseleave. */
+.nav-item:hover .dropdown {
   opacity:1;
   visibility:visible;
   transform:translateY(0);
