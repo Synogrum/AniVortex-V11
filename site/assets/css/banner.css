@@ -28,7 +28,7 @@
   outline: 1px solid transparent;
   font-family: var(--hb-font-ui);
   background: var(--hb-banner-solid);
-  border: 1px solid color-mix(in srgb, var(--hb-border-premium) 62%, transparent);
+  border: 1px solid rgba(201, 169, 106, 0.62);
   box-shadow: var(--hb-shadow-deep), inset 0 1px 0 rgba(255,255,255,.035);
   display: none;
 }
