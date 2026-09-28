@@ -10,7 +10,7 @@
       series: 'Bleach: Thousand-Year Blood War',
       seriesUrl: '/anime/bleach-thousand-year-blood-war/',
       seriesMeta: 'S1 Ep. 211',
-      reactions: [7, 4, 1], accent: '#d8b872', symbol: 'Dragon.webp'
+      reactions: [7, 4, 1], accent: '#63D7B8', symbol: 'Dragon.webp'
     },
     {
       username: 'DariusOtaku',
@@ -20,7 +20,7 @@
       series: 'Attack on Titan',
       seriesUrl: '/anime/attack-on-titan/',
       seriesMeta: 'S4 Ep. 87',
-      reactions: [12, 3, 2], accent: '#ff9b7c', symbol: 'Fulger.webp'
+      reactions: [12, 3, 2], accent: '#97DFCD', symbol: 'Fulger.webp'
     },
     {
       username: 'HanaBloom',
@@ -30,7 +30,7 @@
       series: 'Naruto Shippuden',
       seriesUrl: '/anime/naruto-shippuden/',
       seriesMeta: 'S2 Ep. 123',
-      reactions: [9, 6, 0], accent: '#f09ac1', symbol: 'Sakura.webp'
+      reactions: [9, 6, 0], accent: '#63D7B8', symbol: 'Sakura.webp'
     },
     {
       username: 'ZenitsuRo',
@@ -40,7 +40,7 @@
       series: 'Chainsaw Man',
       seriesUrl: '/anime/chainsaw-man/',
       seriesMeta: 'S1 Ep. 45',
-      reactions: [15, 5, 1], accent: '#f2cf65', symbol: 'Foc.webp'
+      reactions: [15, 5, 1], accent: '#97DFCD', symbol: 'Foc.webp'
     },
     {
       username: 'MomoChan',
@@ -50,7 +50,7 @@
       series: 'My Hero Academia',
       seriesUrl: '/anime/my-hero-academia/',
       seriesMeta: 'S6 Ep. 18',
-      reactions: [6, 8, 0], accent: '#9fe27b', symbol: 'Luna.webp'
+      reactions: [6, 8, 0], accent: '#63D7B8', symbol: 'Luna.webp'
     },
     {
       username: 'LeviFan',
@@ -60,7 +60,7 @@
       series: 'Spy x Family',
       seriesUrl: '/anime/spy-x-family/',
       seriesMeta: 'S2 Ep. 29',
-      reactions: [11, 9, 0], accent: '#bf9bff', symbol: 'Vulpe.webp'
+      reactions: [11, 9, 0], accent: '#97DFCD', symbol: 'Vulpe.webp'
     },
     {
       username: 'AkiNoir',
@@ -70,7 +70,7 @@
       series: 'Blue Lock',
       seriesUrl: '/anime/blue-lock/',
       seriesMeta: 'S1 Ep. 201',
-      reactions: [8, 2, 1], accent: '#79b8ff', symbol: 'Fluture.webp'
+      reactions: [8, 2, 1], accent: '#63D7B8', symbol: 'Fluture.webp'
     },
     {
       username: 'RinaSakura',
@@ -80,7 +80,7 @@
       series: 'Kaiju No. 8',
       seriesUrl: '/anime/kaiju-no-8/',
       seriesMeta: 'S1 Ep. 11',
-      reactions: [10, 5, 0], accent: '#76e4d0', symbol: 'Val.webp'
+      reactions: [10, 5, 0], accent: '#97DFCD', symbol: 'Val.webp'
     },
     {
       username: 'TobiWave',
@@ -90,7 +90,7 @@
       series: 'Dan Da Dan',
       seriesUrl: '/anime/dan-da-dan/',
       seriesMeta: 'S3 Ep. 64',
-      reactions: [13, 7, 2], accent: '#f4a261', symbol: 'Corb.webp'
+      reactions: [13, 7, 2], accent: '#63D7B8', symbol: 'Corb.webp'
     },
     {
       username: 'MeiHikari',
@@ -100,7 +100,7 @@
       series: "Hell's Paradise",
       seriesUrl: '/anime/hells-paradise/',
       seriesMeta: 'S1 Ep. 9',
-      reactions: [7, 3, 1], accent: '#8fd3ff', symbol: 'Phoenix.webp'
+      reactions: [7, 3, 1], accent: '#97DFCD', symbol: 'Phoenix.webp'
     },
     {
       username: 'KuroNeko',
@@ -110,7 +110,7 @@
       series: 'Vinland Saga',
       seriesUrl: '/anime/vinland-saga/',
       seriesMeta: 'S2 Ep. 47',
-      reactions: [16, 10, 0], accent: '#d7aa72', symbol: 'Lup.webp'
+      reactions: [16, 10, 0], accent: '#63D7B8', symbol: 'Lup.webp'
     },
     {
       username: 'EmiStar',
@@ -120,7 +120,7 @@
       series: 'Black Clover',
       seriesUrl: '/anime/black-clover/',
       seriesMeta: 'S5 Ep. 102',
-      reactions: [14, 6, 1], accent: '#c9a5ff', symbol: 'Tigru.webp'
+      reactions: [14, 6, 1], accent: '#97DFCD', symbol: 'Tigru.webp'
     },
     {
       username: 'SoraYume',
@@ -130,7 +130,7 @@
       series: 'Jujutsu Kaisen',
       seriesUrl: '/anime/jujutsu-kaisen/',
       seriesMeta: 'S2 Ep. 24',
-      reactions: [18, 8, 2], accent: '#8db4ff', symbol: 'Sarpe.webp'
+      reactions: [18, 8, 2], accent: '#63D7B8', symbol: 'Sarpe.webp'
     },
     {
       username: 'NekoPulse',
@@ -140,7 +140,7 @@
       series: 'Frieren',
       seriesUrl: '/anime/frieren/',
       seriesMeta: 'S1 Ep. 28',
-      reactions: [12, 9, 1], accent: '#93e6b7', symbol: 'Lotus.webp'
+      reactions: [12, 9, 1], accent: '#97DFCD', symbol: 'Lotus.webp'
     },
     {
       username: 'AkiraStorm',
@@ -150,7 +150,7 @@
       series: 'Solo Leveling',
       seriesUrl: '/anime/solo-leveling/',
       seriesMeta: 'S2 Ep. 13',
-      reactions: [20, 7, 2], accent: '#7de0ff', symbol: 'Cristal.webp'
+      reactions: [20, 7, 2], accent: '#63D7B8', symbol: 'Cristal.webp'
     },
     {
       username: 'YukiZen',
@@ -160,7 +160,7 @@
       series: 'Dr. Stone',
       seriesUrl: '/anime/dr-stone/',
       seriesMeta: 'S3 Ep. 56',
-      reactions: [11, 4, 1], accent: '#f4c27a', symbol: 'Coroana.webp'
+      reactions: [11, 4, 1], accent: '#97DFCD', symbol: 'Coroana.webp'
     },
     {
       username: 'ReiNova',
@@ -170,7 +170,7 @@
       series: 'Demon Slayer',
       seriesUrl: '/anime/demon-slayer/',
       seriesMeta: 'S4 Ep. 19',
-      reactions: [19, 11, 3], accent: '#ffa6b7', symbol: 'Stea.webp'
+      reactions: [19, 11, 3], accent: '#63D7B8', symbol: 'Stea.webp'
     },
     {
       username: 'HoshiKitsune',
@@ -180,7 +180,7 @@
       series: 'One Piece',
       seriesUrl: '/anime/one-piece/',
       seriesMeta: 'S20 Ep. 109',
-      reactions: [24, 13, 4], accent: '#ffce72', symbol: 'Soare.webp'
+      reactions: [24, 13, 4], accent: '#97DFCD', symbol: 'Soare.webp'
     },
     {
       username: 'MikaTora',
@@ -190,7 +190,7 @@
       series: 'Fire Force',
       seriesUrl: '/anime/fire-force/',
       seriesMeta: 'S1 Ep. 33',
-      reactions: [13, 5, 1], accent: '#ff8d6d', symbol: 'Oni.webp'
+      reactions: [13, 5, 1], accent: '#63D7B8', symbol: 'Oni.webp'
     },
     {
       username: 'ShinRaven',
@@ -200,7 +200,7 @@
       series: 'Tokyo Revengers',
       seriesUrl: '/anime/tokyo-revengers/',
       seriesMeta: 'S2 Ep. 15',
-      reactions: [10, 6, 2], accent: '#8ac8ff', symbol: 'Vant.webp'
+      reactions: [10, 6, 2], accent: '#97DFCD', symbol: 'Vant.webp'
     }
   ];
 

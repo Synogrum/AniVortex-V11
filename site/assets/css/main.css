@@ -4829,7 +4829,7 @@ main video
     margin-top: 4px;
 }
 .red-heart {
-    color: #FF7A78;
+    color: #FF8A78;
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -4852,7 +4852,7 @@ main video
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.04);
+    background: linear-gradient(145deg, rgba(8, 61, 53, 0.88), rgba(7, 49, 42, 0.96));
     backdrop-filter: blur(2px);
     padding: 6px 18px;
     border-radius: 60px;

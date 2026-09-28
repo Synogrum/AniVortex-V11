@@ -154,3 +154,193 @@ body .comentarii-section:not(#__av_prio_a#__av_prio_b)::before {
     backdrop-filter: none;
   }
 }
+
+
+/* ============================================================
+   AniVortex V12.64 — Comentarii: V12 emerald color pass
+   Color-only refinement: layout, spacing, typography, icons and motion stay unchanged.
+   ============================================================ */
+.comentarii-section {
+  --com-blue: #0A4A3F;
+  --com-cyan: #083D35;
+  --com-teal: #0A4A3F;
+  --com-cream: #EDF7F4;
+  --com-ink: #07312A;
+  --com-gold: #63D7B8;
+}
+
+.comentarii-frame-v7 path {
+  stroke: rgba(151, 223, 205, 0.62);
+}
+
+.comentarii-title-group h2 {
+  color: #EDF7F4;
+}
+
+.comentarii-title-line::after {
+  color: #97DFCD;
+  border-left-color: rgba(99, 215, 184, 0.72);
+}
+
+.com-tab,
+.com-category-selector {
+  color: #97DFCD;
+  border-color: rgba(151, 223, 205, 0.16);
+  background: rgba(7, 49, 42, 0.42);
+  box-shadow: inset 0 1px rgba(237, 247, 244, 0.04);
+}
+
+.com-tab:hover,
+.com-category-selector:hover {
+  color: #EDF7F4;
+  border-color: rgba(99, 215, 184, 0.36);
+  background: rgba(10, 74, 63, 0.30);
+}
+
+.com-tab.active {
+  color: #07312A;
+  border-color: transparent;
+  background: linear-gradient(135deg, #97DFCD, #63D7B8);
+  box-shadow:
+    0 9px 22px rgba(0, 0, 0, 0.23),
+    inset 0 1px rgba(237, 247, 244, 0.22);
+}
+
+.com-category-selector .com-cat-arrow {
+  color: #63D7B8;
+}
+
+.av10-card {
+  --accent: #63D7B8;
+  background:
+    linear-gradient(150deg, rgba(8, 61, 53, 0.86), rgba(7, 49, 42, 0.95)) padding-box,
+    linear-gradient(
+      145deg,
+      color-mix(in srgb, var(--accent) 44%, rgba(237, 247, 244, 0.10)),
+      rgba(151, 223, 205, 0.05) 44%,
+      rgba(99, 215, 184, 0.16)
+    ) border-box;
+}
+
+.av10-online {
+  border-color: #07312A;
+  background: #63D7B8;
+  box-shadow: 0 0 12px rgba(99, 215, 184, 0.38);
+}
+
+.av10-name {
+  color: #EDF7F4;
+}
+
+.av10-time {
+  color: #97DFCD;
+}
+
+.av10-message {
+  background:
+    linear-gradient(150deg, rgba(7, 49, 42, 0.80), rgba(8, 61, 53, 0.56)) padding-box,
+    linear-gradient(
+      145deg,
+      color-mix(in srgb, var(--accent) 38%, rgba(237, 247, 244, 0.08)),
+      rgba(151, 223, 205, 0.08) 46%,
+      color-mix(in srgb, var(--accent) 14%, transparent)
+    ) border-box;
+}
+
+.av10-series {
+  color: #EDF7F4;
+  border-color: color-mix(in srgb, var(--accent) 24%, rgba(151, 223, 205, 0.12));
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--accent) 10%, rgba(7, 49, 42, 0.90)),
+      rgba(7, 49, 42, 0.78)
+    ) border-box;
+}
+
+.av10-series:hover {
+  border-color: color-mix(in srgb, var(--accent) 36%, rgba(151, 223, 205, 0.18));
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--accent) 14%, rgba(8, 61, 53, 0.92)),
+      rgba(7, 49, 42, 0.84)
+    ) border-box;
+}
+
+.av10-series-copy small {
+  color: #97DFCD;
+}
+
+.av10-series-copy strong,
+.av10-text {
+  color: #EDF7F4;
+}
+
+.av10-series-arrow {
+  color: #63D7B8;
+  border-color: rgba(99, 215, 184, 0.18);
+  background: rgba(99, 215, 184, 0.08);
+}
+
+.av10-series:hover .av10-series-arrow,
+.av10-series:focus-visible .av10-series-arrow {
+  border-color: rgba(151, 223, 205, 0.34);
+  background: rgba(99, 215, 184, 0.14);
+}
+
+.av10-reactions {
+  border-color: rgba(151, 223, 205, 0.12);
+  background: rgba(7, 49, 42, 0.40);
+  box-shadow: inset 0 1px rgba(237, 247, 244, 0.03);
+}
+
+.av10-reaction {
+  color: #97DFCD;
+  border-color: rgba(151, 223, 205, 0.14);
+  background: linear-gradient(145deg, rgba(10, 74, 63, 0.24), rgba(7, 49, 42, 0.16));
+  box-shadow:
+    inset 0 1px rgba(237, 247, 244, 0.035),
+    0 4px 11px rgba(0, 0, 0, 0.10);
+}
+
+.av10-reaction svg {
+  background: rgba(99, 215, 184, 0.07);
+}
+
+.av10-reaction:hover {
+  color: #EDF7F4;
+  border-color: rgba(151, 223, 205, 0.28);
+  background: rgba(10, 74, 63, 0.28);
+}
+
+.av10-reaction.like:hover {
+  color: #63D7B8;
+  border-color: rgba(99, 215, 184, 0.30);
+}
+
+.av10-reaction.love:hover,
+.av10-reaction.love.is-active {
+  color: #FF8A78;
+  border-color: rgba(255, 138, 120, 0.30);
+  background: rgba(255, 138, 120, 0.08);
+}
+
+.av10-reaction.reply:hover,
+.av10-reaction.reply.is-active {
+  color: #97DFCD;
+  border-color: rgba(151, 223, 205, 0.30);
+  background: rgba(151, 223, 205, 0.08);
+}
+
+.av10-reaction.is-active {
+  border-color: color-mix(in srgb, var(--accent) 34%, transparent);
+  background: color-mix(in srgb, var(--accent) 10%, rgba(7, 49, 42, 0.86));
+}
+
+.com-tab:focus-visible,
+.com-category-selector:focus-visible,
+.av10-series:focus-visible,
+.av10-reaction:focus-visible {
+  outline-color: #63D7B8;
+}
