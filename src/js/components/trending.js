@@ -531,7 +531,6 @@ function fitPopupDescriptionToFourLines(popup) {
 
   const style = window.getComputedStyle(desc);
   const lineHeight = Number.parseFloat(style.lineHeight) || 16.5;
-  const targetHeight = lineHeight * 4 + 0.5;
   const width = desc.getBoundingClientRect().width;
   if (!width) return;
 
@@ -553,31 +552,51 @@ function fitPopupDescriptionToFourLines(popup) {
   probe.style.whiteSpace = "normal";
   document.body.appendChild(probe);
 
-  const fits = (count) => {
-    probe.textContent = words.slice(0, count).join(" ") + "...";
-    return probe.scrollHeight <= targetHeight;
+  const makeCandidate = (count) => {
+    const clean = cleanPopupDescriptionEnding(words.slice(0, count).join(" "));
+    return clean ? clean + "..." : "";
   };
 
-  let low = 1;
-  let high = words.length;
-  let best = 1;
+  const lineCountFor = (text) => {
+    probe.textContent = text;
+    return Math.max(1, Math.round(probe.scrollHeight / lineHeight));
+  };
 
-  while (low <= high) {
-    const mid = Math.floor((low + high) / 2);
-    if (fits(mid)) {
-      best = mid;
-      low = mid + 1;
-    } else {
-      high = mid - 1;
+  let exactFourLineText = "";
+
+  // Alegem cel mai lung final curat care ocupă EXACT 4 rânduri.
+  // Important: verificarea se face DUPĂ eliminarea unui final de tip „și”, „sau” sau virgulă,
+  // ca să nu cădem accidental înapoi la 3 rânduri.
+  for (let count = words.length; count >= 1; count -= 1) {
+    const candidate = makeCandidate(count);
+    if (!candidate) continue;
+
+    const lines = lineCountFor(candidate);
+    if (lines === 4) {
+      exactFourLineText = candidate;
+      break;
+    }
+  }
+
+  // Fallback rar: alegem cel mai lung text care nu depășește 4 rânduri.
+  if (!exactFourLineText) {
+    for (let count = words.length; count >= 1; count -= 1) {
+      const candidate = makeCandidate(count);
+      if (!candidate) continue;
+      if (lineCountFor(candidate) <= 4) {
+        exactFourLineText = candidate;
+        break;
+      }
     }
   }
 
   probe.remove();
 
-  let finalText = cleanPopupDescriptionEnding(words.slice(0, best).join(" "));
-  if (!finalText) finalText = words[0];
+  if (!exactFourLineText) {
+    exactFourLineText = cleanPopupDescriptionEnding(fullText) + "...";
+  }
 
-  desc.textContent = finalText + "...";
+  desc.textContent = exactFourLineText;
 }
 
 /* ═══════════════════════════════════════════════════════════════
