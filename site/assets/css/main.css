@@ -4754,12 +4754,12 @@ main video
     margin: 28px auto;
     padding: 10px;
     border-radius: 30px;
-    border: 2px solid rgba(212, 183, 122, 0.42);
+    border: 2px solid rgba(99, 215, 184, 0.34);
     background: transparent;
     box-shadow:
         0 22px 55px rgba(0, 0, 0, 0.42),
         inset 0 1px 0 rgba(255, 255, 255, 0.05),
-        0 0 24px rgba(184, 146, 94, 0.06);
+        0 0 24px rgba(99, 215, 184, 0.06);
     isolation: isolate;
     overflow: visible;
     box-sizing: border-box;
@@ -4813,11 +4813,11 @@ main video
 .sb-title {
     font-size: 1.45rem;
     font-weight: 800;
-    color: white;
+    color: #EDF7F4;
     letter-spacing: -0.3px;
 }
 .sb-highlight {
-    color: #f7e7a1;
+    color: #97DFCD;
     background: none;
     -webkit-background-clip: unset;
     background-clip: unset;
@@ -4825,11 +4825,11 @@ main video
 .sb-subtitle {
     font-size: 1rem;
     font-weight: 500;
-    color: white;
+    color: #EDF7F4;
     margin-top: 4px;
 }
 .red-heart {
-    color: #ff3366;
+    color: #FF7A78;
     display: inline-block;
     width: 16px;
     height: 16px;
@@ -4862,14 +4862,14 @@ main video
 .sb-count {
     font-size: 34px;
     font-weight: 800;
-    color: white;
+    color: #EDF7F4;
     line-height: 1;
     letter-spacing: -0.5px;
 }
 .sb-label {
     font-size: 0.7rem;
     font-weight: 600;
-    color: #f7e7a1;
+    color: #97DFCD;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -4879,7 +4879,7 @@ main video
     align-items: center;
     gap: 12px;
     flex-wrap: wrap;
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(7, 49, 42, 0.72);
     backdrop-filter: blur(2px);
     padding: 6px 16px;
     border-radius: 80px;
@@ -4908,7 +4908,7 @@ main video
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 .sb-btn:focus-visible {
-    outline: 2px solid #efd99f;
+    outline: 2px solid #63D7B8;
     outline-offset: 3px;
 }
 .sb-telegram { background: #0088cc; }
@@ -4916,8 +4916,8 @@ main video
 .sb-twitter { background: #000000; }
 .sb-whatsapp { background: #25D366; }
 .sb-plus {
-    background: linear-gradient(135deg, rgba(65, 105, 225, 0.75), rgba(0, 230, 162, 0.58), rgba(255, 255, 255, 0.4));
-    border: 1px solid white;
+    background: linear-gradient(135deg, #97DFCD 0%, #63D7B8 46%, #0A4A3F 100%);
+    border: 1px solid rgba(237, 247, 244, 0.72);
 }
 .sb-plus svg {
     stroke: white;
@@ -4930,8 +4930,8 @@ main video
 }
 
 .sb-twitter.click-effect:not(#__av_prio_a#__av_prio_b) {
-  background: linear-gradient(135deg, rgba(65, 105, 225, 0.75), rgba(0, 230, 162, 0.58), rgba(255, 255, 255, 0.4));
-  border: 1px solid white;
+  background: linear-gradient(135deg, #97DFCD 0%, #63D7B8 46%, #0A4A3F 100%);
+  border: 1px solid rgba(237, 247, 244, 0.72);
 }
 
 /* DROPDOWN PLUS — COMPACT, ALINIAT ȘI ANIMAT */
@@ -11937,15 +11937,15 @@ main video
   min-width: 104px;
   min-height: 72px;
   padding: 11px 20px 10px;
-  border: 1px solid rgba(143, 231, 220, 0.16);
+  border: 1px solid rgba(99, 215, 184, 0.34);
   border-radius: 52% 48% 50% 50% / 58% 58% 44% 44%;
   background:
-    radial-gradient(circle at 35% 24%, rgba(255,255,255,.075), transparent 28%),
-    linear-gradient(155deg, rgba(16, 48, 53, .96), rgba(7, 28, 34, .96));
+    radial-gradient(circle at 35% 24%, rgba(151,223,205,.12), transparent 30%),
+    linear-gradient(155deg, rgba(8, 62, 70, .98), rgba(5, 40, 48, .985));
   box-shadow:
     0 10px 22px rgba(0,0,0,.20),
-    inset 0 1px rgba(255,255,255,.055),
-    0 0 18px rgba(102, 215, 203, .035);
+    inset 0 1px rgba(237,247,244,.07),
+    0 0 20px rgba(99,215,184,.075);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   transform-origin: 50% 82%;
@@ -11961,9 +11961,9 @@ main video
   bottom: -6px;
   width: 10px;
   height: 10px;
-  border-right: 1px solid rgba(143, 231, 220, 0.13);
-  border-bottom: 1px solid rgba(143, 231, 220, 0.13);
-  background: #0a252b;
+  border-right: 1px solid rgba(99, 215, 184, 0.28);
+  border-bottom: 1px solid rgba(99, 215, 184, 0.28);
+  background: #052830;
   transform: translateX(-50%) rotate(45deg);
   border-radius: 2px;
   z-index: -1;
@@ -11977,7 +11977,7 @@ main video
   top: calc(100% + 5px);
   width: 1px;
   height: 13px;
-  background: linear-gradient(to bottom, rgba(143,231,220,.22), transparent);
+  background: linear-gradient(to bottom, rgba(99,215,184,.34), transparent);
   transform: translateX(-50%);
   pointer-events: none;
 }
