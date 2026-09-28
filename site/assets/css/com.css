@@ -3393,3 +3393,72 @@ body .comentarii-section:not(#__av_prio_a#__av_prio_b)::before {
 .av10-reaction:focus-visible {
   outline-color: #63D7B8;
 }
+
+
+/* ============================================================
+   AniVortex V12.65 — Comentarii: label + reaction colors
+   Color-only adjustment. Layout, sizes, positions, icons and motion stay unchanged.
+   ============================================================ */
+
+/* Ambele taburi de comentarii au text alb, inclusiv starea activă. */
+.com-tab,
+.com-tab.active {
+  color: #EDF7F4;
+}
+
+/* Refolosește exact gradientul titlului Trending Now. */
+.comentarii-title-line::after {
+  background: linear-gradient(135deg, #EDF7F4 0%, #DFFBF3 24%, #97DFCD 62%, #63D7B8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Reacțiile au identitate cromatică distinctă și permanentă. */
+.av10-reaction.like {
+  color: #63D7B8;
+  border-color: rgba(99, 215, 184, 0.24);
+  background: rgba(99, 215, 184, 0.07);
+}
+.av10-reaction.like svg {
+  background: rgba(99, 215, 184, 0.10);
+}
+
+.av10-reaction.love {
+  color: #FF6F7D;
+  border-color: rgba(255, 111, 125, 0.24);
+  background: rgba(255, 111, 125, 0.07);
+}
+.av10-reaction.love svg {
+  background: rgba(255, 111, 125, 0.10);
+}
+
+.av10-reaction.reply {
+  color: #8DB4FF;
+  border-color: rgba(141, 180, 255, 0.24);
+  background: rgba(141, 180, 255, 0.07);
+}
+.av10-reaction.reply svg {
+  background: rgba(141, 180, 255, 0.10);
+}
+
+.av10-reaction.like:hover,
+.av10-reaction.like.is-active {
+  color: #63D7B8;
+  border-color: rgba(99, 215, 184, 0.40);
+  background: rgba(99, 215, 184, 0.12);
+}
+
+.av10-reaction.love:hover,
+.av10-reaction.love.is-active {
+  color: #FF6F7D;
+  border-color: rgba(255, 111, 125, 0.40);
+  background: rgba(255, 111, 125, 0.12);
+}
+
+.av10-reaction.reply:hover,
+.av10-reaction.reply.is-active {
+  color: #8DB4FF;
+  border-color: rgba(141, 180, 255, 0.40);
+  background: rgba(141, 180, 255, 0.12);
+}
