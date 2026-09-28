@@ -499,10 +499,85 @@ function getBarGradient(pct) {
 
 function getPopupDescription(item) {
   const base = String(item?.desc || "").trim();
-  if (base.length >= 165) return base;
+  if (base.length >= 210) return base;
 
-  const continuation = " Povestea dezvoltă treptat conflictele, relațiile dintre personaje și momentele importante care schimbă direcția acțiunii.";
+  const continuation = " Povestea dezvoltă treptat conflictele, relațiile dintre personaje și momentele importante care schimbă direcția acțiunii. În același timp, miza crește și fiecare alegere influențează evoluția poveștii.";
   return base + continuation;
+}
+
+function cleanPopupDescriptionEnding(text) {
+  let clean = String(text || "").trim();
+
+  // Nu lăsăm punctele de suspensie după virgulă, punct și virgulă sau două puncte.
+  clean = clean.replace(/[,:;]+$/u, "").trim();
+
+  // Evităm finaluri slabe de tip „și...” / „sau...”.
+  const words = clean.split(/\s+/u);
+  while (words.length > 1 && /^(și|sau)$/iu.test(words[words.length - 1])) {
+    words.pop();
+  }
+
+  clean = words.join(" ").replace(/[,:;]+$/u, "").trim();
+  return clean;
+}
+
+function fitPopupDescriptionToFourLines(popup) {
+  const desc = popup?.querySelector(".trending-popup-desc p");
+  if (!desc) return;
+
+  const fullText = String(desc.textContent || "").trim();
+  const words = fullText.split(/\s+/u).filter(Boolean);
+  if (!words.length) return;
+
+  const style = window.getComputedStyle(desc);
+  const lineHeight = Number.parseFloat(style.lineHeight) || 16.5;
+  const targetHeight = lineHeight * 4 + 0.5;
+  const width = desc.getBoundingClientRect().width;
+  if (!width) return;
+
+  const probe = desc.cloneNode(false);
+  probe.setAttribute("aria-hidden", "true");
+  probe.style.position = "fixed";
+  probe.style.left = "-10000px";
+  probe.style.top = "0";
+  probe.style.visibility = "hidden";
+  probe.style.pointerEvents = "none";
+  probe.style.width = width + "px";
+  probe.style.height = "auto";
+  probe.style.minHeight = "0";
+  probe.style.maxHeight = "none";
+  probe.style.display = "block";
+  probe.style.overflow = "visible";
+  probe.style.webkitLineClamp = "unset";
+  probe.style.webkitBoxOrient = "initial";
+  probe.style.whiteSpace = "normal";
+  document.body.appendChild(probe);
+
+  const fits = (count) => {
+    probe.textContent = words.slice(0, count).join(" ") + "...";
+    return probe.scrollHeight <= targetHeight;
+  };
+
+  let low = 1;
+  let high = words.length;
+  let best = 1;
+
+  while (low <= high) {
+    const mid = Math.floor((low + high) / 2);
+    if (fits(mid)) {
+      best = mid;
+      low = mid + 1;
+    } else {
+      high = mid - 1;
+    }
+  }
+
+  probe.remove();
+
+  let finalText = cleanPopupDescriptionEnding(words.slice(0, best).join(" "));
+  if (!finalText) finalText = words[0];
+
+  desc.textContent = finalText + "...";
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -585,6 +660,8 @@ function showPopup(item, pair) {
       bar.style.background = getBarGradient(pct);
       bar.style.width = pct + "%";
     }
+
+    fitPopupDescriptionToFourLines(popup);
   });
 
   positionPopup(popup, pair);
