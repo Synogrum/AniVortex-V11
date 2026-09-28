@@ -4817,10 +4817,10 @@ main video
     letter-spacing: -0.3px;
 }
 .sb-highlight {
-    color: #97DFCD;
-    background: none;
-    -webkit-background-clip: unset;
-    background-clip: unset;
+    background: linear-gradient(135deg, #EDF7F4 0%, #DFFBF3 24%, #97DFCD 62%, #63D7B8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 .sb-subtitle {
     font-size: 1rem;
