@@ -497,6 +497,14 @@ function getBarGradient(pct) {
   return `linear-gradient(90deg, ${rgb(startColor)}, ${rgb(endColor)})`;
 }
 
+function getPopupDescription(item) {
+  const base = String(item?.desc || "").trim();
+  if (base.length >= 165) return base;
+
+  const continuation = " Povestea dezvoltă treptat conflictele, relațiile dintre personaje și momentele importante care schimbă direcția acțiunii.";
+  return base + continuation;
+}
+
 /* ═══════════════════════════════════════════════════════════════
    SHOW POPUP — versiunea finală cu design main.css
    - Header: ANIME — TV + titlu + ★ rating
@@ -560,7 +568,7 @@ function showPopup(item, pair) {
 
     <div class="trending-popup-desc">
       <span class="trending-popup-desc-label">DESCRIEREA SERIEI</span>
-      <p>${escapeTrendingText(item.desc)}</p>
+      <p>${escapeTrendingText(getPopupDescription(item))}</p>
     </div>
 
     <button class="trending-watch-btn" type="button">▶ Vizionează acum</button>
