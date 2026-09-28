@@ -542,6 +542,18 @@ function fitPopupDescriptionToFourLines(popup) {
   probe.style.visibility = "hidden";
   probe.style.pointerEvents = "none";
   probe.style.width = width + "px";
+
+  // Probe-ul este mutat în <body>, deci selectorul ".trending-popup-desc p"
+  // nu i se mai aplică. Copiem explicit tipografia reală a descrierii.
+  probe.style.fontFamily = style.fontFamily;
+  probe.style.fontSize = style.fontSize;
+  probe.style.fontWeight = style.fontWeight;
+  probe.style.fontStyle = style.fontStyle;
+  probe.style.letterSpacing = style.letterSpacing;
+  probe.style.wordSpacing = style.wordSpacing;
+  probe.style.lineHeight = style.lineHeight;
+  probe.style.textTransform = style.textTransform;
+
   probe.style.height = "auto";
   probe.style.minHeight = "0";
   probe.style.maxHeight = "none";
@@ -550,6 +562,8 @@ function fitPopupDescriptionToFourLines(popup) {
   probe.style.webkitLineClamp = "unset";
   probe.style.webkitBoxOrient = "initial";
   probe.style.whiteSpace = "normal";
+  probe.style.overflowWrap = style.overflowWrap || "break-word";
+  probe.style.wordBreak = style.wordBreak;
   document.body.appendChild(probe);
 
   const makeCandidate = (count) => {
@@ -559,7 +573,7 @@ function fitPopupDescriptionToFourLines(popup) {
 
   const lineCountFor = (text) => {
     probe.textContent = text;
-    return Math.max(1, Math.round(probe.scrollHeight / lineHeight));
+    return Math.max(1, Math.ceil((probe.scrollHeight - 0.75) / lineHeight));
   };
 
   let exactFourLineText = "";
