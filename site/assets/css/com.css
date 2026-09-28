@@ -3396,69 +3396,90 @@ body .comentarii-section:not(#__av_prio_a#__av_prio_b)::before {
 
 
 /* ============================================================
-   AniVortex V12.65 — Comentarii: label + reaction colors
+   AniVortex V12.66 — Comentarii: Trending title + active-only reactions
    Color-only adjustment. Layout, sizes, positions, icons and motion stay unchanged.
    ============================================================ */
 
-/* Ambele taburi de comentarii au text alb, inclusiv starea activă. */
-.com-tab,
-.com-tab.active {
-  color: #EDF7F4;
-}
-
-/* Refolosește exact gradientul titlului Trending Now. */
-.comentarii-title-line::after {
+/* Titlul Comentarii folosește exact gradientul real de la Trending Now. */
+.comentarii-title-group h2 {
   background: linear-gradient(135deg, #EDF7F4 0%, #DFFBF3 24%, #97DFCD 62%, #63D7B8 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  text-shadow: 0 0 14px rgba(151, 223, 205, 0.13);
 }
 
-/* Reacțiile au identitate cromatică distinctă și permanentă. */
-.av10-reaction.like {
-  color: #63D7B8;
-  border-color: rgba(99, 215, 184, 0.24);
+/* Comunitatea AniVortex revine la stilul V12.64. */
+.comentarii-title-line::after {
+  background: none;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  color: #97DFCD;
+  border-left-color: rgba(99, 215, 184, 0.72);
+}
+
+/* Taburile revin la culorile anterioare. */
+.com-tab {
+  color: #97DFCD;
+}
+
+.com-tab.active {
+  color: #07312A;
+}
+
+/* Toate reacțiile sunt neutre în repaus și la hover. */
+.av10-reaction,
+.av10-reaction.like,
+.av10-reaction.love,
+.av10-reaction.reply {
+  color: #97DFCD;
+  border-color: rgba(151, 223, 205, 0.14);
+  background: linear-gradient(145deg, rgba(10, 74, 63, 0.24), rgba(7, 49, 42, 0.16));
+}
+
+.av10-reaction svg,
+.av10-reaction.like svg,
+.av10-reaction.love svg,
+.av10-reaction.reply svg {
   background: rgba(99, 215, 184, 0.07);
 }
-.av10-reaction.like svg {
-  background: rgba(99, 215, 184, 0.10);
-}
 
-.av10-reaction.love {
-  color: #FF6F7D;
-  border-color: rgba(255, 111, 125, 0.24);
-  background: rgba(255, 111, 125, 0.07);
-}
-.av10-reaction.love svg {
-  background: rgba(255, 111, 125, 0.10);
-}
-
-.av10-reaction.reply {
-  color: #8DB4FF;
-  border-color: rgba(141, 180, 255, 0.24);
-  background: rgba(141, 180, 255, 0.07);
-}
-.av10-reaction.reply svg {
-  background: rgba(141, 180, 255, 0.10);
-}
-
+.av10-reaction:hover,
 .av10-reaction.like:hover,
+.av10-reaction.love:hover,
+.av10-reaction.reply:hover {
+  color: #EDF7F4;
+  border-color: rgba(151, 223, 205, 0.28);
+  background: rgba(10, 74, 63, 0.28);
+}
+
+/* Culorile distincte apar doar după apăsare. */
 .av10-reaction.like.is-active {
   color: #63D7B8;
-  border-color: rgba(99, 215, 184, 0.40);
-  background: rgba(99, 215, 184, 0.12);
+  border-color: rgba(99, 215, 184, 0.42);
+  background: rgba(99, 215, 184, 0.13);
 }
 
-.av10-reaction.love:hover,
+.av10-reaction.like.is-active svg {
+  background: rgba(99, 215, 184, 0.15);
+}
+
 .av10-reaction.love.is-active {
   color: #FF6F7D;
-  border-color: rgba(255, 111, 125, 0.40);
-  background: rgba(255, 111, 125, 0.12);
+  border-color: rgba(255, 111, 125, 0.42);
+  background: rgba(255, 111, 125, 0.13);
 }
 
-.av10-reaction.reply:hover,
+.av10-reaction.love.is-active svg {
+  background: rgba(255, 111, 125, 0.15);
+}
+
 .av10-reaction.reply.is-active {
   color: #8DB4FF;
-  border-color: rgba(141, 180, 255, 0.40);
-  background: rgba(141, 180, 255, 0.12);
+  border-color: rgba(141, 180, 255, 0.42);
+  background: rgba(141, 180, 255, 0.13);
+}
+
+.av10-reaction.reply.is-active svg {
+  background: rgba(141, 180, 255, 0.15);
 }
