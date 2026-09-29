@@ -503,3 +503,73 @@ body .comentarii-section:not(#__av_prio_a#__av_prio_b)::before {
 .av10-reaction.reply.is-active svg {
   background: rgba(242, 166, 90, 0.16);
 }
+
+
+/* ============================================================
+   AniVortex V12.68 — Comentarii: vivid series accent + readable active tab
+   ============================================================ */
+
+/* Caseta seriei primește un accent cald care contrastează cu emerald-ul V12. */
+.av10-series {
+  border-color: rgba(242, 198, 109, 0.30);
+  background:
+    linear-gradient(135deg, rgba(10, 74, 63, 0.96), rgba(7, 49, 42, 0.92)) padding-box,
+    linear-gradient(135deg, rgba(242, 198, 109, 0.34), rgba(99, 215, 184, 0.18)) border-box;
+  box-shadow:
+    inset 0 1px rgba(237, 247, 244, 0.045),
+    0 6px 16px rgba(0, 0, 0, 0.16);
+}
+
+.av10-series::before {
+  background: linear-gradient(180deg, #FFD98A, #F2C66D);
+  box-shadow: 0 0 11px rgba(242, 198, 109, 0.34);
+}
+
+.av10-series:hover {
+  border-color: rgba(255, 217, 138, 0.48);
+  background:
+    linear-gradient(135deg, rgba(12, 87, 73, 0.98), rgba(7, 49, 42, 0.94)) padding-box,
+    linear-gradient(135deg, rgba(255, 217, 138, 0.48), rgba(99, 215, 184, 0.24)) border-box;
+}
+
+.av10-series-copy small {
+  color: #F2C66D;
+}
+
+.av10-series-meta {
+  color: #7DD3FC;
+  text-shadow: 0 0 10px rgba(125, 211, 252, 0.12);
+}
+
+/* Butonul săgeții: accent auriu și centrare optică perfectă. */
+.av10-series-arrow {
+  color: transparent;
+  border-color: rgba(242, 198, 109, 0.38);
+  background: linear-gradient(145deg, rgba(242, 198, 109, 0.18), rgba(242, 198, 109, 0.08));
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.06),
+    0 0 12px rgba(242, 198, 109, 0.08);
+}
+
+.av10-series-arrow::before {
+  color: #FFD98A;
+  transform: translate(0, 0);
+  line-height: 1;
+}
+
+.av10-series:hover .av10-series-arrow,
+.av10-series:focus-visible .av10-series-arrow {
+  border-color: rgba(255, 217, 138, 0.58);
+  background: linear-gradient(145deg, rgba(242, 198, 109, 0.26), rgba(242, 198, 109, 0.12));
+}
+
+/* Tabul activ este mai închis ca textul alb să rămână clar. */
+.com-tab.active {
+  color: #EDF7F4;
+  border-color: rgba(151, 223, 205, 0.34);
+  background: linear-gradient(135deg, #0F766E 0%, #0A4A3F 58%, #083D35 100%);
+  box-shadow:
+    0 9px 22px rgba(0, 0, 0, 0.24),
+    inset 0 1px rgba(237, 247, 244, 0.10),
+    0 0 16px rgba(99, 215, 184, 0.10);
+}
