@@ -576,12 +576,12 @@ body .comentarii-section:not(#__av_prio_a#__av_prio_b)::before {
 
 
 /* ============================================================
-   AniVortex V12.69 — Comentarii: series label separation + arrow optical lift
+   AniVortex V12.70 — Comentarii: lavender series label + arrow optical lift
    ============================================================ */
 
 .av10-series-copy small {
-  color: #FF9A8B;
-  text-shadow: 0 0 9px rgba(255, 154, 139, 0.12);
+  color: #C8B6FF;
+  text-shadow: 0 0 9px rgba(200, 182, 255, 0.14);
 }
 
 .av10-series-arrow::before {
