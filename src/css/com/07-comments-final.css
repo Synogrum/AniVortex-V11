@@ -576,12 +576,12 @@ body .comentarii-section:not(#__av_prio_a#__av_prio_b)::before {
 
 
 /* ============================================================
-   AniVortex V12.71 — Comentarii: aqua series label + arrow optical lift
+   AniVortex V12.72 — Comentarii: warm ivory series label + arrow optical lift
    ============================================================ */
 
 .av10-series-copy small {
-  color: #9FE7D2;
-  text-shadow: 0 0 9px rgba(159, 231, 210, 0.14);
+  color: #F3E7C1;
+  text-shadow: 0 0 9px rgba(243, 231, 193, 0.12);
 }
 
 .av10-series-arrow::before {
