@@ -3622,3 +3622,17 @@ body .comentarii-section:not(#__av_prio_a#__av_prio_b)::before {
     inset 0 1px rgba(237, 247, 244, 0.10),
     0 0 16px rgba(99, 215, 184, 0.10);
 }
+
+
+/* ============================================================
+   AniVortex V12.69 — Comentarii: series label separation + arrow optical lift
+   ============================================================ */
+
+.av10-series-copy small {
+  color: #FF9A8B;
+  text-shadow: 0 0 9px rgba(255, 154, 139, 0.12);
+}
+
+.av10-series-arrow::before {
+  transform: translate(0, -1px);
+}
