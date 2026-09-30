@@ -1780,7 +1780,7 @@
 
 
 /* ============================================================
-   AniVortex V12.91 — Profil: statistici + setări premium ridicate
+   AniVortex V12.92 — Profil: controale ridicate + font setări premium
    Etichete mai lizibile, sticlă emerald discretă și butoane cu profunzime.
    Paleta rămâne strict V12, fără schimbarea layout-ului general.
    ============================================================ */
@@ -1794,7 +1794,7 @@
 
 .av-profile-stats {
   left: 22px;
-  top: 161px;
+  top: 158px;
   width: 320px;
   height: 54px;
   overflow: hidden;
@@ -1900,7 +1900,7 @@
 
 .av-profile-settings {
   left: 22px;
-  top: 227px;
+  top: 224px;
   width: 320px;
   height: 39px;
   gap: 8px;
@@ -1912,9 +1912,11 @@
   overflow: hidden;
   border-radius: 10px;
   color: #EDF7F4;
+  font-family: "Space Grotesk", "Inter", sans-serif;
   font-size: 13.5px;
-  font-weight: 750;
-  letter-spacing: -0.006em;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.006em;
   filter: none;
   text-shadow: 0 1px 0 rgba(7, 49, 42, 0.88);
   box-shadow:
