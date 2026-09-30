@@ -10483,11 +10483,11 @@ main video
 
 
 /* ============================================================
-   AniVortex V12.81 — Profil: header compact, premium și aliniat
+   AniVortex V12.82 — Profil: avatar aliniat spre dreapta
    Micșorează doar zona superioară din profil; restul cardului rămâne neschimbat.
    ============================================================ */
 .av-profile-avatar-shell {
-  left: 10px;
+  left: 14px;
   top: 24px;
   width: 96px;
   height: 96px;
@@ -10522,7 +10522,7 @@ main video
 }
 
 .av-profile-status-menu {
-  left: 10px;
+  left: 14px;
   top: 55px;
   width: 132px;
   padding: 6px;
