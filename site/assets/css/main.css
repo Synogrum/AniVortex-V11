@@ -10620,7 +10620,7 @@ main video
 
 
 /* ============================================================
-   AniVortex V12.90 — Profil: statistici + setări premium rafinate
+   AniVortex V12.91 — Profil: statistici + setări premium ridicate
    Etichete mai lizibile, sticlă emerald discretă și butoane cu profunzime.
    Paleta rămâne strict V12, fără schimbarea layout-ului general.
    ============================================================ */
@@ -10634,7 +10634,7 @@ main video
 
 .av-profile-stats {
   left: 22px;
-  top: 166px;
+  top: 161px;
   width: 320px;
   height: 54px;
   overflow: hidden;
@@ -10740,7 +10740,7 @@ main video
 
 .av-profile-settings {
   left: 22px;
-  top: 232px;
+  top: 227px;
   width: 320px;
   height: 39px;
   gap: 8px;
