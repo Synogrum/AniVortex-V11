@@ -1640,3 +1640,140 @@
   border-color: rgba(151, 223, 205, 0.28);
   background: rgba(7, 49, 42, 0.98);
 }
+
+
+/* ============================================================
+   AniVortex V12.81 — Profil: header compact, premium și aliniat
+   Micșorează doar zona superioară din profil; restul cardului rămâne neschimbat.
+   ============================================================ */
+.av-profile-avatar-shell {
+  left: 10px;
+  top: 24px;
+  width: 96px;
+  height: 96px;
+  border-width: 1.5px;
+}
+
+.av-profile-avatar {
+  left: 5px;
+  top: 5px;
+  width: 84px;
+  height: 84px;
+}
+
+.av-profile-status {
+  left: -3px;
+  top: 7px;
+  width: 17px;
+  height: 17px;
+  border-width: 3px;
+}
+
+.av-profile-status[data-status="away"]::after {
+  left: 6px;
+  top: 1px;
+  width: 9px;
+  height: 9px;
+}
+
+.av-profile-status[data-status="dnd"]::after {
+  width: 7px;
+  height: 2px;
+}
+
+.av-profile-status-menu {
+  left: 10px;
+  top: 55px;
+  width: 132px;
+  padding: 6px;
+  border-radius: 11px;
+}
+
+.av-profile-status-menu button {
+  height: 24px;
+  gap: 8px;
+  padding: 0 7px;
+  font-size: 10px;
+}
+
+.av-profile-status-icon {
+  flex-basis: 11px;
+  width: 11px;
+  height: 11px;
+}
+
+.av-profile-crest {
+  left: 65px;
+  top: -6px;
+  width: 35px;
+  height: 35px;
+}
+
+.av-profile-copy {
+  left: 116px;
+  top: 29px;
+  width: 176px;
+}
+
+.av-profile-eyebrow {
+  height: 11px;
+  font-size: 8px;
+  line-height: 11px;
+  letter-spacing: 0.055em;
+}
+
+.av-profile-name {
+  height: 23px;
+  margin-top: 3px;
+  font-size: 19px;
+  line-height: 23px;
+  letter-spacing: -0.01em;
+}
+
+.av-profile-role {
+  height: 15px;
+  margin-top: 2px;
+  font-size: 11.5px;
+  line-height: 15px;
+}
+
+.av-profile-level-copy {
+  height: 15px;
+  margin-top: 2px;
+  font-size: 10.5px;
+  line-height: 15px;
+}
+
+.av-profile-level-track {
+  height: 7px;
+  margin-top: 3px;
+}
+
+.av-profile-notifications {
+  right: 14px;
+  top: 24px;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+}
+
+.av-profile-notifications img {
+  width: 17px;
+  height: 17px;
+}
+
+.av-profile-notification-badge {
+  right: -4px;
+  top: -5px;
+  min-width: 15px;
+  height: 15px;
+  padding: 0 3px;
+  border-width: 2px;
+  font-size: 8px;
+}
+
+.av-profile-notification-menu {
+  right: 14px;
+  top: 62px;
+  width: 168px;
+}
