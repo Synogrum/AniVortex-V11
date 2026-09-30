@@ -1643,11 +1643,11 @@
 
 
 /* ============================================================
-   AniVortex V12.83 — Profil: grup superior mutat spre dreapta
+   AniVortex V12.84 — Profil: aliniere și tipografie rafinate
    Micșorează doar zona superioară din profil; restul cardului rămâne neschimbat.
    ============================================================ */
 .av-profile-avatar-shell {
-  left: 20px;
+  left: 24px;
   top: 24px;
   width: 96px;
   height: 96px;
@@ -1682,7 +1682,7 @@
 }
 
 .av-profile-status-menu {
-  left: 20px;
+  left: 24px;
   top: 55px;
   width: 132px;
   padding: 6px;
@@ -1710,43 +1710,43 @@
 }
 
 .av-profile-copy {
-  left: 122px;
+  left: 126px;
   top: 29px;
-  width: 176px;
+  width: 180px;
 }
 
 .av-profile-eyebrow {
-  height: 11px;
-  font-size: 8px;
-  line-height: 11px;
+  height: 13px;
+  font-size: 10px;
+  line-height: 13px;
   letter-spacing: 0.055em;
 }
 
 .av-profile-name {
-  height: 23px;
+  height: 25px;
   margin-top: 3px;
-  font-size: 19px;
-  line-height: 23px;
+  font-size: 21px;
+  line-height: 25px;
   letter-spacing: -0.01em;
 }
 
 .av-profile-role {
-  height: 15px;
+  height: 17px;
   margin-top: 2px;
-  font-size: 11.5px;
-  line-height: 15px;
+  font-size: 13px;
+  line-height: 17px;
 }
 
 .av-profile-level-copy {
-  height: 15px;
+  height: 17px;
   margin-top: 2px;
-  font-size: 10.5px;
-  line-height: 15px;
+  font-size: 12px;
+  line-height: 17px;
 }
 
 .av-profile-level-track {
-  height: 7px;
-  margin-top: 3px;
+  height: 9px;
+  margin-top: 4px;
 }
 
 .av-profile-notifications {
