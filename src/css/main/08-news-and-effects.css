@@ -1643,11 +1643,11 @@
 
 
 /* ============================================================
-   AniVortex V12.84 — Profil: aliniere și tipografie rafinate
+   AniVortex V12.85 — Profil: grup superior mutat suplimentar spre dreapta
    Micșorează doar zona superioară din profil; restul cardului rămâne neschimbat.
    ============================================================ */
 .av-profile-avatar-shell {
-  left: 24px;
+  left: 32px;
   top: 24px;
   width: 96px;
   height: 96px;
@@ -1682,7 +1682,7 @@
 }
 
 .av-profile-status-menu {
-  left: 24px;
+  left: 32px;
   top: 55px;
   width: 132px;
   padding: 6px;
@@ -1710,7 +1710,7 @@
 }
 
 .av-profile-copy {
-  left: 126px;
+  left: 134px;
   top: 29px;
   width: 180px;
 }
