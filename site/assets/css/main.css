@@ -10620,7 +10620,7 @@ main video
 
 
 /* ============================================================
-   AniVortex V12.92 — Profil: controale ridicate + font setări premium
+   AniVortex V12.93 — Profil: controale ridicate vizibil + font Outfit
    Etichete mai lizibile, sticlă emerald discretă și butoane cu profunzime.
    Paleta rămâne strict V12, fără schimbarea layout-ului general.
    ============================================================ */
@@ -10634,7 +10634,7 @@ main video
 
 .av-profile-stats {
   left: 22px;
-  top: 158px;
+  top: 153px;
   width: 320px;
   height: 54px;
   overflow: hidden;
@@ -10740,7 +10740,7 @@ main video
 
 .av-profile-settings {
   left: 22px;
-  top: 224px;
+  top: 219px;
   width: 320px;
   height: 39px;
   gap: 8px;
@@ -10752,11 +10752,11 @@ main video
   overflow: hidden;
   border-radius: 10px;
   color: #EDF7F4;
-  font-family: "Space Grotesk", "Inter", sans-serif;
-  font-size: 13.5px;
-  font-weight: 600;
+  font-family: "Outfit", "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
   line-height: 1;
-  letter-spacing: 0.006em;
+  letter-spacing: 0.012em;
   filter: none;
   text-shadow: 0 1px 0 rgba(7, 49, 42, 0.88);
   box-shadow:
