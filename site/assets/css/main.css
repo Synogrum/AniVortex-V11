@@ -12332,12 +12332,3 @@ main video
 
 
 
-/* ============================================================
-   AniVortex V12.76 — SHARE centrat vizual între Trending și Comentarii
-   Mută doar bara SHARE pe verticală; nu schimbă layout-ul secțiunilor.
-   ============================================================ */
-@media (min-width: 1201px) {
-  .share-banner-container:not(#__av_prio_a#__av_prio_b) {
-    transform: translateY(56px);
-  }
-}
