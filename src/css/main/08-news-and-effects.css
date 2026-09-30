@@ -1496,11 +1496,11 @@
 }
 
 .av-profile-level-track {
-  background: rgba(237, 247, 244, 0.08);
+  background: rgba(3, 29, 34, 0.78);
 }
 
 .av-profile-level-track span {
-  background: linear-gradient(90deg, #97DFCD 0%, #63D7B8 56%, #0A4A3F 100%);
+  background: linear-gradient(90deg, rgb(187, 79, 65), rgb(212, 102, 67));
 }
 
 .av-profile-notifications {
