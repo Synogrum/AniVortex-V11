@@ -10719,6 +10719,53 @@ main video
     inset 0 1px 0 rgba(237, 247, 244, 0.06),
     0 8px 18px rgba(0, 0, 0, 0.12);
 }
+
+
+/* ============================================================
+   AniVortex V12.87 — Profil: etichete statistici sus, valori jos
+   Stil premium discret, în paleta V12 aprobată.
+   ============================================================ */
+.av-profile-stat {
+  justify-content: center;
+  gap: 3px;
+}
+
+.av-profile-stat span {
+  order: -1;
+  color: #97DFCD;
+  font-size: 8.5px;
+  font-weight: 800;
+  line-height: 11px;
+  letter-spacing: 0.085em;
+  text-transform: uppercase;
+  opacity: 0.92;
+}
+
+.av-profile-stat strong {
+  color: transparent;
+  background: linear-gradient(90deg, #EDF7F4 0%, #EDF7F4 58%, #97DFCD 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 17px;
+  font-weight: 850;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+  text-shadow: 0 0 12px rgba(151, 223, 205, 0.08);
+}
+
+.av-profile-stat:nth-child(2) strong {
+  font-size: 15px;
+}
+
+.av-profile-stat::after {
+  content: "";
+  width: 22px;
+  height: 1px;
+  margin-top: 1px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, rgba(99, 215, 184, 0.55), transparent);
+  opacity: 0.72;
+}
 /* TOP SUGESTII: tipografie mai clara si echilibrata pe mobil. */
 .top-sugestii-panel .ts-kicker {
   font-size: 8.5px;
