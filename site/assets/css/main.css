@@ -10620,7 +10620,7 @@ main video
 
 
 /* ============================================================
-   AniVortex V12.88 — Profil: controale compacte premium
+   AniVortex V12.89 — Profil: controale compacte premium
    Clopoțel discret spre stânga; statistici și setări rafinate.
    Paleta rămâne strict V12, fără schimbarea layout-ului general.
    ============================================================ */
@@ -10766,7 +10766,6 @@ main video
 .av-profile-setting--faction:hover {
   background: linear-gradient(135deg, #0A4A3F 0%, #07312A 100%);
 }
-
 
 /* TOP SUGESTII: tipografie mai clara si echilibrata pe mobil. */
 .top-sugestii-panel .ts-kicker {
