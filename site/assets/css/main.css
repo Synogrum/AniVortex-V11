@@ -9813,7 +9813,7 @@ main video
 }
 
 .av-profile-divider--favorites { top: 278px; opacity: 0.42; }
-.av-profile-divider--activity { top: 558px; }
+.av-profile-divider--activity { top: 548px; }
 
 .av-profile-favorites {
   position: absolute;
@@ -9913,7 +9913,7 @@ main video
 .av-profile-activity {
   position: absolute;
   left: 12px;
-  top: 590px;
+  top: 580px;
   width: 340px;
   height: 52px;
   display: grid;
@@ -10080,7 +10080,7 @@ main video
 .av-profile-last-episode {
   position: absolute;
   left: 12px;
-  top: 655px;
+  top: 645px;
   width: 340px;
   height: 80px;
   display: flex;
@@ -10146,12 +10146,12 @@ main video
 }
 
 /* ============================================================
-   AniVortex V12.100 — Logout: premium minimalist, text perfect centrat
+   AniVortex V12.101 — Logout premium + bloc inferior ridicat
    ============================================================ */
 .av-profile-logout {
   position: absolute;
   left: 12px;
-  top: 748px;
+  top: 738px;
   width: 340px;
   height: 48px;
   display: flex;
