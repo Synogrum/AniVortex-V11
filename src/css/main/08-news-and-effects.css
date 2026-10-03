@@ -2082,110 +2082,152 @@
   opacity: 0.78;
 }
 
+/* ============================================================
+   AniVortex V12.105 — Setări profil / facțiune: icon cards premium
+   ============================================================ */
 .av-profile-settings {
   left: 22px;
   top: 219px;
   width: 320px;
-  height: 39px;
+  height: 42px;
   gap: 8px;
 }
 
 .av-profile-setting {
   position: relative;
-  height: 39px;
+  height: 42px;
+  display: grid;
+  grid-template-columns: 27px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
   overflow: hidden;
-  border-radius: 10px;
+  border: 1px solid rgba(151, 223, 205, 0.18);
+  border-radius: 12px;
   color: #EDF7F4;
+  background:
+    linear-gradient(180deg, rgba(237, 247, 244, 0.025), transparent 48%),
+    linear-gradient(135deg, rgba(8, 61, 53, 0.86), rgba(7, 49, 42, 0.92));
   font-family: "Outfit", "Inter", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.012em;
   filter: none;
-  text-shadow: 0 1px 0 rgba(7, 49, 42, 0.88);
+  text-shadow: none;
   box-shadow:
-    inset 0 1px 0 rgba(237, 247, 244, 0.065),
-    inset 0 -1px 0 rgba(99, 215, 184, 0.035),
-    0 7px 16px rgba(7, 49, 42, 0.22);
+    inset 0 1px 0 rgba(237, 247, 244, 0.035),
+    0 5px 14px rgba(0, 0, 0, 0.10);
+  cursor: pointer;
   transition:
-    transform 160ms ease,
+    transform 180ms ease,
+    border-color 180ms ease,
     background 180ms ease,
-    border-color 160ms ease,
     box-shadow 180ms ease;
 }
 
 .av-profile-setting::before {
   content: "";
   position: absolute;
-  left: 14px;
-  right: 14px;
+  left: 10px;
+  right: 10px;
   top: 0;
   height: 1px;
-  border-radius: 999px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(151, 223, 205, 0.30),
-    rgba(99, 215, 184, 0.48),
-    rgba(151, 223, 205, 0.30),
-    transparent
-  );
+  background: linear-gradient(90deg, transparent, rgba(99, 215, 184, 0.38), transparent);
+  opacity: 0.68;
   pointer-events: none;
 }
 
 .av-profile-setting::after {
-  content: "";
-  position: absolute;
-  right: -24px;
-  top: -26px;
-  width: 62px;
-  height: 62px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(99, 215, 184, 0.10), transparent 68%);
-  pointer-events: none;
-  opacity: 0.75;
-  transition: opacity 180ms ease, transform 180ms ease;
+  content: none;
+}
+
+.av-profile-setting-icon {
+  width: 27px;
+  height: 27px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(99, 215, 184, 0.20);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(237, 247, 244, 0.03), transparent),
+    rgba(10, 74, 63, 0.28);
+}
+
+.av-profile-setting-icon svg {
+  width: 13px;
+  height: 13px;
+  fill: none;
+  stroke: #63D7B8;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.av-profile-setting-copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+}
+
+.av-profile-setting-copy strong {
+  color: #EDF7F4;
+  font-size: 10.6px;
+  font-weight: 800;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+
+.av-profile-setting-copy small {
+  margin-top: 3px;
+  color: #97DFCD;
+  font-size: 6.8px;
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0.78;
+  white-space: nowrap;
 }
 
 .av-profile-setting--profile {
-  border-color: rgba(151, 223, 205, 0.25);
+  border-color: rgba(151, 223, 205, 0.18);
   background:
-    linear-gradient(180deg, rgba(237, 247, 244, 0.022), transparent 44%),
-    linear-gradient(135deg, #083D35 0%, #07312A 100%);
+    linear-gradient(180deg, rgba(237, 247, 244, 0.025), transparent 48%),
+    linear-gradient(135deg, rgba(8, 61, 53, 0.86), rgba(7, 49, 42, 0.92));
 }
 
 .av-profile-setting--faction {
-  border-color: rgba(99, 215, 184, 0.30);
+  border-color: rgba(151, 223, 205, 0.18);
   background:
-    linear-gradient(180deg, rgba(237, 247, 244, 0.025), transparent 44%),
-    linear-gradient(135deg, #0A4A3F 0%, #083D35 58%, #07312A 100%);
+    linear-gradient(180deg, rgba(237, 247, 244, 0.025), transparent 48%),
+    linear-gradient(135deg, rgba(7, 49, 42, 0.92), rgba(8, 61, 53, 0.86));
+}
+
+.av-profile-setting--faction .av-profile-setting-icon {
+  border-color: rgba(151, 223, 205, 0.18);
+  background:
+    linear-gradient(180deg, rgba(237, 247, 244, 0.03), transparent),
+    rgba(8, 61, 53, 0.38);
+}
+
+.av-profile-setting--faction .av-profile-setting-icon svg {
+  stroke: #97DFCD;
 }
 
 .av-profile-setting:hover {
   transform: translateY(-1px);
   filter: none;
-  border-color: rgba(151, 223, 205, 0.44);
-  box-shadow:
-    inset 0 1px 0 rgba(237, 247, 244, 0.085),
-    inset 0 -1px 0 rgba(99, 215, 184, 0.055),
-    0 9px 20px rgba(7, 49, 42, 0.26),
-    0 0 14px rgba(99, 215, 184, 0.065);
-}
-
-.av-profile-setting:hover::after {
-  opacity: 1;
-  transform: translate(-4px, 4px) scale(1.08);
-}
-
-.av-profile-setting--profile:hover {
+  border-color: rgba(151, 223, 205, 0.34);
   background:
-    linear-gradient(180deg, rgba(237, 247, 244, 0.03), transparent 46%),
-    linear-gradient(135deg, #0A4A3F 0%, #083D35 62%, #07312A 100%);
+    linear-gradient(180deg, rgba(237, 247, 244, 0.035), transparent 48%),
+    linear-gradient(135deg, rgba(10, 74, 63, 0.92), rgba(8, 61, 53, 0.90));
+  box-shadow:
+    inset 0 1px 0 rgba(237, 247, 244, 0.05),
+    0 8px 18px rgba(0, 0, 0, 0.14);
 }
 
+.av-profile-setting--profile:hover,
 .av-profile-setting--faction:hover {
   background:
-    linear-gradient(180deg, rgba(237, 247, 244, 0.035), transparent 46%),
-    linear-gradient(135deg, #0A4A3F 0%, #083D35 46%, #07312A 100%);
+    linear-gradient(180deg, rgba(237, 247, 244, 0.035), transparent 48%),
+    linear-gradient(135deg, rgba(10, 74, 63, 0.92), rgba(8, 61, 53, 0.90));
 }
 

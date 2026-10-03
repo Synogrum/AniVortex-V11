@@ -29,21 +29,21 @@
     <title>AniVortex</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" data-av-deferred-style>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Outfit:wght@700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" media="print" data-av-deferred-style>
-    <link rel="stylesheet" href="assets/css/tokens.css?v=20261003.v12.104-profile-divider-2px-lower">
-    <link rel="stylesheet" href="assets/css/header.css?v=20261003.v12.104-profile-divider-2px-lower">
-    <link rel="stylesheet" href="assets/css/banner.css?v=20261003.v12.104-profile-divider-2px-lower">
-    <link rel="stylesheet" href="assets/css/body.css?v=20261003.v12.104-profile-divider-2px-lower">
-    <link rel="stylesheet" href="assets/css/trending.css?v=20261003.v12.104-profile-divider-2px-lower" media="print" data-av-deferred-style>
-    <link rel="stylesheet" href="assets/css/chrono.css?v=20261003.v12.104-profile-divider-2px-lower" media="print" data-av-deferred-style>
-    <link rel="stylesheet" href="assets/css/footer.css?v=20261003.v12.104-profile-divider-2px-lower" media="print" data-av-deferred-style>
-    <link rel="stylesheet" href="assets/css/hot-news-new.css?v=20261003.v12.104-profile-divider-2px-lower" media="print" data-av-deferred-style>
-  <link rel="stylesheet" href="assets/css/com.css?v=20261003.v12.104-profile-divider-2px-lower" media="print" data-av-deferred-style>
-    <link rel="stylesheet" href="assets/css/main.css?v=20261003.v12.104-profile-divider-2px-lower" media="print" data-av-deferred-style>
+    <link rel="stylesheet" href="assets/css/tokens.css?v=20261003.v12.105-profile-settings-icon-cards">
+    <link rel="stylesheet" href="assets/css/header.css?v=20261003.v12.105-profile-settings-icon-cards">
+    <link rel="stylesheet" href="assets/css/banner.css?v=20261003.v12.105-profile-settings-icon-cards">
+    <link rel="stylesheet" href="assets/css/body.css?v=20261003.v12.105-profile-settings-icon-cards">
+    <link rel="stylesheet" href="assets/css/trending.css?v=20261003.v12.105-profile-settings-icon-cards" media="print" data-av-deferred-style>
+    <link rel="stylesheet" href="assets/css/chrono.css?v=20261003.v12.105-profile-settings-icon-cards" media="print" data-av-deferred-style>
+    <link rel="stylesheet" href="assets/css/footer.css?v=20261003.v12.105-profile-settings-icon-cards" media="print" data-av-deferred-style>
+    <link rel="stylesheet" href="assets/css/hot-news-new.css?v=20261003.v12.105-profile-settings-icon-cards" media="print" data-av-deferred-style>
+  <link rel="stylesheet" href="assets/css/com.css?v=20261003.v12.105-profile-settings-icon-cards" media="print" data-av-deferred-style>
+    <link rel="stylesheet" href="assets/css/main.css?v=20261003.v12.105-profile-settings-icon-cards" media="print" data-av-deferred-style>
     <!-- UPC este încărcat ultimul ca regulile componentului să nu fie suprascrise de base/main/com. -->
-    <link rel="stylesheet" href="assets/css/UPC.css?v=20261003.v12.104-profile-divider-2px-lower" media="print" data-av-deferred-style>
-      <link rel="stylesheet" href="assets/css/hardening.css?v=20261003.v12.104-profile-divider-2px-lower">
+    <link rel="stylesheet" href="assets/css/UPC.css?v=20261003.v12.105-profile-settings-icon-cards" media="print" data-av-deferred-style>
+      <link rel="stylesheet" href="assets/css/hardening.css?v=20261003.v12.105-profile-settings-icon-cards">
   </head>
-<body class="av-theme-c" data-av-version="V12.104">
+<body class="av-theme-c" data-av-version="V12.105">
   <a class="skip-link" href="#mainContent">Sari la conținutul principal</a>
   
 
@@ -1798,8 +1798,29 @@ Nu pornesc singuri în călătorie. Pe drum, îi întâlnesc pe bătrânul Muten
       </section>
 
       <div class="av-profile-settings">
-        <button class="av-profile-setting av-profile-setting--profile" type="button" data-av-profile-action="profile-settings" data-av-profile-href="/pagina_ta_aici">Setări profil</button>
-        <button class="av-profile-setting av-profile-setting--faction" type="button" data-av-profile-action="faction-settings" data-av-profile-href="/pagina_ta_aici">Setări facțiune</button>
+        <button class="av-profile-setting av-profile-setting--profile" type="button" data-av-profile-action="profile-settings" data-av-profile-href="/pagina_ta_aici">
+          <span class="av-profile-setting-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <circle cx="12" cy="8" r="3"></circle>
+              <path d="M5.5 19c.7-3.4 3-5 6.5-5s5.8 1.6 6.5 5"></path>
+            </svg>
+          </span>
+          <span class="av-profile-setting-copy">
+            <strong>Setări profil</strong>
+            <small>Personalizare</small>
+          </span>
+        </button>
+        <button class="av-profile-setting av-profile-setting--faction" type="button" data-av-profile-action="faction-settings" data-av-profile-href="/pagina_ta_aici">
+          <span class="av-profile-setting-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M12 3l2.3 4.7L19.5 9l-3.8 3.7.9 5.3-4.6-2.4L7.4 18l.9-5.3L4.5 9l5.2-1.3L12 3Z"></path>
+            </svg>
+          </span>
+          <span class="av-profile-setting-copy">
+            <strong>Setări facțiune</strong>
+            <small>Administrare</small>
+          </span>
+        </button>
       </div>
 
       <div class="av-profile-divider av-profile-divider--favorites" aria-hidden="true"></div>
@@ -2920,20 +2941,20 @@ Nu pornesc singuri în călătorie. Pe drum, îi întâlnesc pe bătrânul Muten
   
 
 
-      <script src="assets/js/perf.js?v=20261003.v12.104-profile-divider-2px-lower" defer></script>
-      <script src="assets/js/popup-manager.js?v=20261003.v12.104-profile-divider-2px-lower" defer></script>
-      <script src="assets/js/carousel-manager.js?v=20261003.v12.104-profile-divider-2px-lower" defer></script>
-      <script src="assets/js/hot-news-data.js?v=20261003.v12.104-profile-divider-2px-lower" defer></script>
-      <script src="assets/js/hot-news-new.js?v=20261003.v12.104-profile-divider-2px-lower" defer></script>
-      <script src="assets/js/banner.js?v=20261003.v12.104-profile-divider-2px-lower" defer></script> 
-<script src="assets/js/header.js?v=20261003.v12.104-profile-divider-2px-lower" defer></script>
-       <script src="assets/js/trending.js?v=20261003.v12.104-profile-divider-2px-lower" defer></script>
-      <script src="assets/js/footer.js?v=20261003.v12.104-profile-divider-2px-lower" defer></script>
-<script src="assets/js/chrono.js?v=20261003.v12.104-profile-divider-2px-lower" defer></script>
-      <script src="assets/js/main.js?v=20261003.v12.104-profile-divider-2px-lower" defer></script>
-      <script src="assets/js/entertainment-data.js?v=20261003.v12.104-profile-divider-2px-lower" defer></script>
-      <script src="assets/js/UPC.js?v=20261003.v12.104-profile-divider-2px-lower" defer></script>
-      <script src="assets/js/com.js?v=20261003.v12.104-profile-divider-2px-lower" defer></script>
-      <script src="assets/js/hardening.js?v=20261003.v12.104-profile-divider-2px-lower" defer></script>
+      <script src="assets/js/perf.js?v=20261003.v12.105-profile-settings-icon-cards" defer></script>
+      <script src="assets/js/popup-manager.js?v=20261003.v12.105-profile-settings-icon-cards" defer></script>
+      <script src="assets/js/carousel-manager.js?v=20261003.v12.105-profile-settings-icon-cards" defer></script>
+      <script src="assets/js/hot-news-data.js?v=20261003.v12.105-profile-settings-icon-cards" defer></script>
+      <script src="assets/js/hot-news-new.js?v=20261003.v12.105-profile-settings-icon-cards" defer></script>
+      <script src="assets/js/banner.js?v=20261003.v12.105-profile-settings-icon-cards" defer></script> 
+<script src="assets/js/header.js?v=20261003.v12.105-profile-settings-icon-cards" defer></script>
+       <script src="assets/js/trending.js?v=20261003.v12.105-profile-settings-icon-cards" defer></script>
+      <script src="assets/js/footer.js?v=20261003.v12.105-profile-settings-icon-cards" defer></script>
+<script src="assets/js/chrono.js?v=20261003.v12.105-profile-settings-icon-cards" defer></script>
+      <script src="assets/js/main.js?v=20261003.v12.105-profile-settings-icon-cards" defer></script>
+      <script src="assets/js/entertainment-data.js?v=20261003.v12.105-profile-settings-icon-cards" defer></script>
+      <script src="assets/js/UPC.js?v=20261003.v12.105-profile-settings-icon-cards" defer></script>
+      <script src="assets/js/com.js?v=20261003.v12.105-profile-settings-icon-cards" defer></script>
+      <script src="assets/js/hardening.js?v=20261003.v12.105-profile-settings-icon-cards" defer></script>
 </body>
 </html>
