@@ -1206,9 +1206,9 @@
   margin-top: 4px;
   overflow: hidden;
   color: #97DFCD;
-  font-size: 7.8px;
+  font-size: 8.4px;
   font-weight: 700;
-  line-height: 1.08;
+  line-height: 1.10;
   text-overflow: ellipsis;
   white-space: nowrap;
   opacity: 0.90;
@@ -2180,9 +2180,9 @@
 .av-profile-setting-copy small {
   margin-top: 3px;
   color: #97DFCD;
-  font-size: 7.6px;
+  font-size: 8.2px;
   font-weight: 700;
-  line-height: 1.05;
+  line-height: 1.08;
   opacity: 0.88;
   white-space: nowrap;
 }
