@@ -9812,8 +9812,8 @@ main video
   background: rgba(255, 255, 255, 0.19);
 }
 
-.av-profile-divider--favorites { top: 282px; opacity: 0.42; }
-.av-profile-divider--activity { top: 562px; }
+.av-profile-divider--favorites { top: 278px; opacity: 0.42; }
+.av-profile-divider--activity { top: 558px; }
 
 .av-profile-favorites {
   position: absolute;
@@ -9828,7 +9828,7 @@ main video
 .av-profile-favorites h3 {
   position: absolute;
   left: 12px;
-  top: 288px;
+  top: 284px;
   width: 340px;
   height: 34px;
   margin: 0;
@@ -9846,18 +9846,18 @@ main video
 }
 
 /* ============================================================
-   AniVortex V12.96 — Serii favorite: spațiere și separatoare corectate
+   AniVortex V12.97 — Serii favorite: secțiune ridicată fin
    Păstrează imaginile clare și centrate, fără schimbarea structurii profilului.
    ============================================================ */
 .av-profile-favorite {
   position: absolute;
-  top: 340px;
+  top: 336px;
   width: 100px;
   height: 214px;
 }
 
 .av-profile-favorite--second { left: 16px; }
-.av-profile-favorite--first { left: 132px; top: 328px; }
+.av-profile-favorite--first { left: 132px; top: 324px; }
 .av-profile-favorite--third { left: 248px; }
 
 .av-profile-favorite a {
