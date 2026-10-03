@@ -1067,13 +1067,13 @@
 .av-profile-favorite--first .av-profile-top-label { top: 189px; }
 
 /* ============================================================
-   AniVortex V12.98 — Activitate profil: premium simplu și rafinat
+   AniVortex V12.99 — Activitate profil: premium și ridicată
    Comentarii / Invitații folosesc iconițe line, separare fină și efecte discrete.
    ============================================================ */
 .av-profile-activity {
   position: absolute;
   left: 12px;
-  top: 600px;
+  top: 590px;
   width: 340px;
   height: 52px;
   display: grid;
@@ -1240,7 +1240,7 @@
 .av-profile-last-episode {
   position: absolute;
   left: 12px;
-  top: 665px;
+  top: 655px;
   width: 340px;
   height: 80px;
   display: flex;
@@ -1308,7 +1308,7 @@
 .av-profile-logout {
   position: absolute;
   left: 12px;
-  top: 758px;
+  top: 748px;
   width: 340px;
   height: 48px;
   border: 1px solid rgba(75, 165, 181, 0.38);
