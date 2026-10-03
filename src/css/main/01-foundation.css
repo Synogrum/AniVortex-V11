@@ -1,7 +1,6 @@
 /* ======================== main.css complet ======================== */
 .main-container {
-    
-    background-color: #0e0e0e;
+    background: transparent;
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;

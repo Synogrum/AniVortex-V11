@@ -59,14 +59,35 @@
       </header>
 
       <section class="av-profile-stats" aria-label="Statistici profil">
-        <div class="av-profile-stat"><strong>124</strong><span>SERII</span></div>
-        <div class="av-profile-stat"><strong>Naruto</strong><span>FACȚIUNE</span></div>
-        <div class="av-profile-stat"><strong>986</strong><span>PUNCTE</span></div>
+        <div class="av-profile-stat"><span>SERII</span><strong>124</strong></div>
+        <div class="av-profile-stat"><span>FACȚIUNE</span><strong>Naruto</strong></div>
+        <div class="av-profile-stat"><span>PUNCTE</span><strong>986</strong></div>
       </section>
 
       <div class="av-profile-settings">
-        <button class="av-profile-setting av-profile-setting--profile" type="button" data-av-profile-action="profile-settings" data-av-profile-href="/pagina_ta_aici">Setări profil</button>
-        <button class="av-profile-setting av-profile-setting--faction" type="button" data-av-profile-action="faction-settings" data-av-profile-href="/pagina_ta_aici">Setări facțiune</button>
+        <button class="av-profile-setting av-profile-setting--profile" type="button" data-av-profile-action="profile-settings" data-av-profile-href="/pagina_ta_aici">
+          <span class="av-profile-setting-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <circle cx="12" cy="8" r="3"></circle>
+              <path d="M5.5 19c.7-3.4 3-5 6.5-5s5.8 1.6 6.5 5"></path>
+            </svg>
+          </span>
+          <span class="av-profile-setting-copy">
+            <strong>Setări profil</strong>
+            <small>Personalizare</small>
+          </span>
+        </button>
+        <button class="av-profile-setting av-profile-setting--faction" type="button" data-av-profile-action="faction-settings" data-av-profile-href="/pagina_ta_aici">
+          <span class="av-profile-setting-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M12 3l2.3 4.7L19.5 9l-3.8 3.7.9 5.3-4.6-2.4L7.4 18l.9-5.3L4.5 9l5.2-1.3L12 3Z"></path>
+            </svg>
+          </span>
+          <span class="av-profile-setting-copy">
+            <strong>Setări facțiune</strong>
+            <small>Administrare</small>
+          </span>
+        </button>
       </div>
 
       <div class="av-profile-divider av-profile-divider--favorites" aria-hidden="true"></div>
@@ -99,12 +120,36 @@
 
       <section class="av-profile-activity" aria-label="Activitatea contului">
         <a class="av-profile-activity-card av-profile-activity-card--comments" href="#" data-original-href="pagina_ta_aici" aria-disabled="true" tabindex="-1">
-          <span class="av-profile-activity-copy"><strong>Comentarii</strong><small>Vezi activitatea</small></span>
-          <span class="av-profile-activity-count">25</span>
+          <span class="av-profile-activity-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M5 5h14v10H9l-4 4V5Z"></path>
+              <path d="M8 9h8M8 12h5"></path>
+            </svg>
+          </span>
+          <span class="av-profile-activity-copy">
+            <strong>Comentarii</strong>
+            <small>Vezi activitatea</small>
+          </span>
+          <span class="av-profile-activity-value" aria-label="25 comentarii">
+            <span class="av-profile-activity-count">25</span>
+          </span>
         </a>
         <a class="av-profile-activity-card av-profile-activity-card--invitations" href="#" data-original-href="pagina_ta_aici" aria-disabled="true" tabindex="-1">
-          <span class="av-profile-activity-copy"><strong>Invitații</strong><small>Vezi invitațiile</small></span>
-          <span class="av-profile-activity-count">3</span>
+          <span class="av-profile-activity-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"></path>
+              <path d="M15.5 10a2.5 2.5 0 1 0 0-5"></path>
+              <path d="M4 19c0-3 2-5 5-5s5 2 5 5"></path>
+              <path d="M15 14c2.6 0 4.5 1.7 4.5 4"></path>
+            </svg>
+          </span>
+          <span class="av-profile-activity-copy">
+            <strong>Invitații</strong>
+            <small>Vezi invitațiile</small>
+          </span>
+          <span class="av-profile-activity-value" aria-label="3 invitații">
+            <span class="av-profile-activity-count">3</span>
+          </span>
         </a>
       </section>
 
@@ -116,7 +161,11 @@
         </span>
       </a>
 
-      <button class="av-profile-logout" type="button" data-av-profile-action="logout">Ieși din cont</button>
+      <button class="av-profile-logout" type="button" data-av-profile-action="logout">
+        <span class="av-profile-logout-side av-profile-logout-side--left" aria-hidden="true"></span>
+        <span class="av-profile-logout-label">Ieși din cont</span>
+        <span class="av-profile-logout-side av-profile-logout-side--right" aria-hidden="true"></span>
+      </button>
       <div class="av-profile-toast" role="status" aria-live="polite"></div>
     </section>
 

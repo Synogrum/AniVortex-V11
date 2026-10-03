@@ -201,3 +201,178 @@ body:not(.av-top-motion-active) .banner-trending-join:not(#__av_prio_a#__av_prio
     box-shadow: none;
   }
 }
+
+
+/* AniVortex V12.2-C — Emerald / Teal visual direction */
+
+body.av-theme-c:not(#__av_prio_a#__av_prio_b) {
+  color: #f4fbf8;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(57, 233, 174, .20), transparent 24%),
+    radial-gradient(circle at 88% 15%, rgba(38, 196, 150, .16), transparent 22%),
+    radial-gradient(circle at 25% 58%, rgba(29, 158, 118, .10), transparent 27%),
+    radial-gradient(circle at 74% 72%, rgba(63, 226, 175, .10), transparent 30%),
+    radial-gradient(circle at 50% 100%, rgba(48, 214, 163, .12), transparent 32%),
+    linear-gradient(145deg, #010705 0%, #03130e 44%, #010604 100%);
+}
+
+body.av-theme-c :where(a, button, input, select, textarea, [tabindex]):focus-visible {
+  outline-color: #56e9bc;
+}
+
+/* Ambient background */
+body.av-theme-c .nebula.n1 {
+  background: radial-gradient(circle at 35% 35%, rgba(36, 207, 151, 0.30), rgba(21, 133, 102, 0.14) 44%, transparent 74%);
+}
+body.av-theme-c .nebula.n2 {
+  background: radial-gradient(circle at 42% 42%, rgba(58, 223, 181, 0.22), rgba(15, 118, 92, 0.12) 46%, transparent 74%);
+}
+body.av-theme-c .nebula.n3 {
+  background: radial-gradient(circle at 50% 50%, rgba(83, 234, 193, 0.17), rgba(23, 129, 101, 0.08) 44%, transparent 74%);
+}
+body.av-theme-c .nebula.n4 {
+  background: radial-gradient(circle at 45% 45%, rgba(28, 171, 128, 0.18), rgba(13, 93, 73, 0.08) 46%, transparent 74%);
+}
+body.av-theme-c .nebula.n5 {
+  background: radial-gradient(circle at 50% 50%, rgba(83, 234, 193, 0.14), rgba(18, 111, 87, 0.07) 45%, transparent 74%);
+}
+body.av-theme-c .nebula.n6 {
+  background: radial-gradient(circle at 50% 50%, rgba(39, 202, 151, 0.17), rgba(15, 105, 80, 0.09) 44%, transparent 74%);
+}
+
+/* Header + Banner theme moved to their owning CSS in V12.16. */
+body.av-theme-c .sidebar,
+body.av-theme-c .filter-panel,
+body.av-theme-c .filter-panel-header {
+  background: rgba(3, 24, 19, 0.97);
+  border-color: rgba(111, 235, 200, 0.11);
+}
+
+/* V12.2-C: all former V-shaped joins are now flat separators */
+body.av-theme-c .av-flat-join:not(#__av_prio_a#__av_prio_b) {
+  position: relative;
+  display: block;
+  width: min(calc(100% - 32px), 1900px);
+  max-width: 1900px;
+  min-width: 0;
+  height: 28px;
+  margin: 0 auto;
+  overflow: hidden;
+  pointer-events: none;
+  background: transparent;
+  isolation: isolate;
+}
+
+body.av-theme-c .av-flat-join:not(#__av_prio_a#__av_prio_b)::before {
+  content: none;
+}
+
+body.av-theme-c .av-flat-join:not(#__av_prio_a#__av_prio_b)::after {
+  content: none;
+}
+
+body.av-theme-c .banner-trending-join.av-flat-join:not(#__av_prio_a#__av_prio_b),
+body.av-theme-c .trending-share-join.av-flat-join:not(#__av_prio_a#__av_prio_b),
+body.av-theme-c .share-com-v-join.av-flat-join:not(#__av_prio_a#__av_prio_b),
+body.av-theme-c .av-chrono-upc-join.av-flat-join:not(#__av_prio_a#__av_prio_b),
+body.av-theme-c .av-footer-join.av-flat-join:not(#__av_prio_a#__av_prio_b) {
+  height: 28px;
+  margin: 4px auto;
+  padding: 0;
+  inset: auto;
+  transform: none;
+  fill: none;
+}
+
+/* ============================================================
+   AniVortex V12.2-C LEAF BACKGROUND — generated artwork
+   ============================================================ */
+body.av-theme-c .av-bg-image,
+body.av-theme-c .av-bg-vignette,
+body.av-theme-c .av-bg-noise {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+body.av-theme-c .av-bg-image {
+  inset: -2.5%;
+  background-image:
+    linear-gradient(180deg, rgba(0, 8, 6, .18), rgba(0, 8, 6, .06) 38%, rgba(0, 8, 6, .16)),
+    url("../../public/imgs/backgrounds/v12-emerald-leaf-background.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: saturate(1.12) contrast(1.05) brightness(.78);
+  opacity: .94;
+  transform: translateZ(0) scale(1.015);
+  will-change: transform;
+}
+
+body.av-theme-c .backdrop {
+  opacity: .20;
+}
+
+body.av-theme-c .av-bg-vignette {
+  background:
+    radial-gradient(circle at 50% 42%, transparent 27%, rgba(0, 8, 5, .08) 60%, rgba(0, 4, 3, .48) 100%),
+    linear-gradient(90deg, rgba(0, 7, 5, .18), transparent 14%, transparent 86%, rgba(0, 7, 5, .18));
+}
+
+body.av-theme-c .av-bg-noise {
+  opacity: .042;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(225, 255, 246, .03) 0, rgba(225, 255, 246, .03) 1px, transparent 1px, transparent 4px),
+    repeating-linear-gradient(90deg, rgba(101, 225, 189, .022) 0, rgba(101, 225, 189, .022) 1px, transparent 1px, transparent 5px);
+  mix-blend-mode: soft-light;
+}
+
+body.av-theme-c > .wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 760px) {
+  body.av-theme-c .av-bg-image {
+    inset: 0;
+    background-image:
+      linear-gradient(180deg, rgba(0, 8, 6, .16), rgba(0, 8, 6, .10), rgba(0, 8, 6, .22)),
+      url("../../public/imgs/backgrounds/v12-emerald-leaf-background.png"),
+      url("../../public/imgs/backgrounds/v12-emerald-leaf-background.png");
+    background-size:
+      100% 100%,
+      auto 58vh,
+      auto 58vh;
+    background-position:
+      center,
+      center top,
+      center bottom;
+    background-repeat: no-repeat;
+    filter: saturate(1.08) contrast(1.03) brightness(.72);
+    opacity: .88;
+    transform: none;
+  }
+
+  body.av-theme-c .backdrop {
+    opacity: .10;
+  }
+
+  body.av-theme-c .av-bg-vignette {
+    background:
+      radial-gradient(circle at 50% 42%, transparent 34%, rgba(0, 5, 3, .40) 100%);
+  }
+
+  body.av-theme-c .av-bg-noise {
+    opacity: .03;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.av-theme-c .av-bg-image {
+    will-change: auto;
+  }
+}
+
+/* V12.12: section backgrounds now live in their owning CSS files.
+   hardening.css intentionally contains no large-section background system. */

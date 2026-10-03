@@ -5,9 +5,7 @@
 
 /* Readucem fundalul mare al sectiunii. */
 .comentarii-section:not(#__av_prio_a#__av_prio_b) {
-  background: var(--avf-surface-top, #071b21);
-  background-color: var(--avf-surface-top, #071b21);
-  background-image: none;
+  background: transparent;
 }
 
 /* Zona din spatele randului de carduri ramane transparenta. */
@@ -84,21 +82,7 @@ body .comentarii-section::before {
 }
 
 body .comentarii-section:not(#__av_prio_a#__av_prio_b)::before {
-  opacity: 0.22;
-  background-image: radial-gradient(circle at 7% 14%, rgba(225, 252, 255, 0.7) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 19% 62%, rgba(180, 244, 255, 0.48) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 34% 29%, rgba(230, 255, 255, 0.62) 0 1px, transparent 1.6px),
-    radial-gradient(circle at 49% 79%, rgba(176, 242, 255, 0.52) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 66% 18%, rgba(235, 255, 255, 0.72) 0 1px, transparent 1.6px),
-    radial-gradient(circle at 81% 58%, rgba(185, 245, 255, 0.55) 0 1px, transparent 1.7px),
-    radial-gradient(circle at 94% 31%, rgba(230, 255, 255, 0.65) 0 1px, transparent 1.6px);
-  background-size: 330px 260px,
-    390px 310px,
-    460px 350px,
-    410px 300px,
-    370px 280px,
-    430px 330px,
-    360px 290px;
+  content: none;
 }
 
 /* ============================================================
@@ -169,4 +153,437 @@ body .comentarii-section:not(#__av_prio_a#__av_prio_b)::before {
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
   }
+}
+
+
+/* ============================================================
+   AniVortex V12.64 — Comentarii: V12 emerald color pass
+   Color-only refinement: layout, spacing, typography, icons and motion stay unchanged.
+   ============================================================ */
+.comentarii-section {
+  --com-blue: #0A4A3F;
+  --com-cyan: #083D35;
+  --com-teal: #0A4A3F;
+  --com-cream: #EDF7F4;
+  --com-ink: #07312A;
+  --com-gold: #63D7B8;
+}
+
+.comentarii-frame-v7 path {
+  stroke: rgba(151, 223, 205, 0.62);
+}
+
+.comentarii-title-group h2 {
+  color: #EDF7F4;
+}
+
+.comentarii-title-line::after {
+  color: #97DFCD;
+  border-left-color: rgba(99, 215, 184, 0.72);
+}
+
+.com-tab,
+.com-category-selector {
+  color: #97DFCD;
+  border-color: rgba(151, 223, 205, 0.16);
+  background: rgba(7, 49, 42, 0.42);
+  box-shadow: inset 0 1px rgba(237, 247, 244, 0.04);
+}
+
+.com-tab:hover,
+.com-category-selector:hover {
+  color: #EDF7F4;
+  border-color: rgba(99, 215, 184, 0.36);
+  background: rgba(10, 74, 63, 0.30);
+}
+
+.com-tab.active {
+  color: #07312A;
+  border-color: transparent;
+  background: linear-gradient(135deg, #97DFCD, #63D7B8);
+  box-shadow:
+    0 9px 22px rgba(0, 0, 0, 0.23),
+    inset 0 1px rgba(237, 247, 244, 0.22);
+}
+
+.com-category-selector .com-cat-arrow {
+  color: #63D7B8;
+}
+
+.av10-card {
+  --accent: #63D7B8;
+  background:
+    linear-gradient(150deg, rgba(8, 61, 53, 0.86), rgba(7, 49, 42, 0.95)) padding-box,
+    linear-gradient(
+      145deg,
+      color-mix(in srgb, var(--accent) 44%, rgba(237, 247, 244, 0.10)),
+      rgba(151, 223, 205, 0.05) 44%,
+      rgba(99, 215, 184, 0.16)
+    ) border-box;
+}
+
+.av10-online {
+  border-color: #07312A;
+  background: #63D7B8;
+  box-shadow: 0 0 12px rgba(99, 215, 184, 0.38);
+}
+
+.av10-name {
+  color: #EDF7F4;
+}
+
+.av10-time {
+  color: #97DFCD;
+}
+
+.av10-message {
+  background:
+    linear-gradient(150deg, rgba(7, 49, 42, 0.80), rgba(8, 61, 53, 0.56)) padding-box,
+    linear-gradient(
+      145deg,
+      color-mix(in srgb, var(--accent) 38%, rgba(237, 247, 244, 0.08)),
+      rgba(151, 223, 205, 0.08) 46%,
+      color-mix(in srgb, var(--accent) 14%, transparent)
+    ) border-box;
+}
+
+.av10-series {
+  color: #EDF7F4;
+  border-color: color-mix(in srgb, var(--accent) 24%, rgba(151, 223, 205, 0.12));
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--accent) 10%, rgba(7, 49, 42, 0.90)),
+      rgba(7, 49, 42, 0.78)
+    ) border-box;
+}
+
+.av10-series:hover {
+  border-color: color-mix(in srgb, var(--accent) 36%, rgba(151, 223, 205, 0.18));
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--accent) 14%, rgba(8, 61, 53, 0.92)),
+      rgba(7, 49, 42, 0.84)
+    ) border-box;
+}
+
+.av10-series-copy small {
+  color: #97DFCD;
+}
+
+.av10-series-copy strong,
+.av10-text {
+  color: #EDF7F4;
+}
+
+.av10-series-arrow {
+  color: #63D7B8;
+  border-color: rgba(99, 215, 184, 0.18);
+  background: rgba(99, 215, 184, 0.08);
+}
+
+.av10-series:hover .av10-series-arrow,
+.av10-series:focus-visible .av10-series-arrow {
+  border-color: rgba(151, 223, 205, 0.34);
+  background: rgba(99, 215, 184, 0.14);
+}
+
+.av10-reactions {
+  border-color: rgba(151, 223, 205, 0.12);
+  background: rgba(7, 49, 42, 0.40);
+  box-shadow: inset 0 1px rgba(237, 247, 244, 0.03);
+}
+
+.av10-reaction {
+  color: #97DFCD;
+  border-color: rgba(151, 223, 205, 0.14);
+  background: linear-gradient(145deg, rgba(10, 74, 63, 0.24), rgba(7, 49, 42, 0.16));
+  box-shadow:
+    inset 0 1px rgba(237, 247, 244, 0.035),
+    0 4px 11px rgba(0, 0, 0, 0.10);
+}
+
+.av10-reaction svg {
+  background: rgba(99, 215, 184, 0.07);
+}
+
+.av10-reaction:hover {
+  color: #EDF7F4;
+  border-color: rgba(151, 223, 205, 0.28);
+  background: rgba(10, 74, 63, 0.28);
+}
+
+.av10-reaction.like:hover {
+  color: #63D7B8;
+  border-color: rgba(99, 215, 184, 0.30);
+}
+
+.av10-reaction.love:hover,
+.av10-reaction.love.is-active {
+  color: #FF8A78;
+  border-color: rgba(255, 138, 120, 0.30);
+  background: rgba(255, 138, 120, 0.08);
+}
+
+.av10-reaction.reply:hover,
+.av10-reaction.reply.is-active {
+  color: #97DFCD;
+  border-color: rgba(151, 223, 205, 0.30);
+  background: rgba(151, 223, 205, 0.08);
+}
+
+.av10-reaction.is-active {
+  border-color: color-mix(in srgb, var(--accent) 34%, transparent);
+  background: color-mix(in srgb, var(--accent) 10%, rgba(7, 49, 42, 0.86));
+}
+
+.com-tab:focus-visible,
+.com-category-selector:focus-visible,
+.av10-series:focus-visible,
+.av10-reaction:focus-visible {
+  outline-color: #63D7B8;
+}
+
+
+/* ============================================================
+   AniVortex V12.66 — Comentarii: Trending title + active-only reactions
+   Color-only adjustment. Layout, sizes, positions, icons and motion stay unchanged.
+   ============================================================ */
+
+/* Titlul Comentarii folosește exact gradientul real de la Trending Now. */
+.comentarii-title-group h2 {
+  background: linear-gradient(135deg, #EDF7F4 0%, #DFFBF3 24%, #97DFCD 62%, #63D7B8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 14px rgba(151, 223, 205, 0.13);
+}
+
+/* Comunitatea AniVortex revine la stilul V12.64. */
+.comentarii-title-line::after {
+  background: none;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  color: #97DFCD;
+  border-left-color: rgba(99, 215, 184, 0.72);
+}
+
+/* Taburile revin la culorile anterioare. */
+.com-tab {
+  color: #97DFCD;
+}
+
+.com-tab.active {
+  color: #07312A;
+}
+
+/* Toate reacțiile sunt neutre în repaus și la hover. */
+.av10-reaction,
+.av10-reaction.like,
+.av10-reaction.love,
+.av10-reaction.reply {
+  color: #97DFCD;
+  border-color: rgba(151, 223, 205, 0.14);
+  background: linear-gradient(145deg, rgba(10, 74, 63, 0.24), rgba(7, 49, 42, 0.16));
+}
+
+.av10-reaction svg,
+.av10-reaction.like svg,
+.av10-reaction.love svg,
+.av10-reaction.reply svg {
+  background: rgba(99, 215, 184, 0.07);
+}
+
+.av10-reaction:hover,
+.av10-reaction.like:hover,
+.av10-reaction.love:hover,
+.av10-reaction.reply:hover {
+  color: #EDF7F4;
+  border-color: rgba(151, 223, 205, 0.28);
+  background: rgba(10, 74, 63, 0.28);
+}
+
+/* Culorile distincte apar doar după apăsare. */
+.av10-reaction.like.is-active {
+  color: #63D7B8;
+  border-color: rgba(99, 215, 184, 0.42);
+  background: rgba(99, 215, 184, 0.13);
+}
+
+.av10-reaction.like.is-active svg {
+  background: rgba(99, 215, 184, 0.15);
+}
+
+.av10-reaction.love.is-active {
+  color: #FF6F7D;
+  border-color: rgba(255, 111, 125, 0.42);
+  background: rgba(255, 111, 125, 0.13);
+}
+
+.av10-reaction.love.is-active svg {
+  background: rgba(255, 111, 125, 0.15);
+}
+
+.av10-reaction.reply.is-active {
+  color: #8DB4FF;
+  border-color: rgba(141, 180, 255, 0.42);
+  background: rgba(141, 180, 255, 0.13);
+}
+
+.av10-reaction.reply.is-active svg {
+  background: rgba(141, 180, 255, 0.15);
+}
+
+
+/* ============================================================
+   AniVortex V12.67 — Comentarii: white controls + active reaction colors
+   Color-only adjustment. Layout, sizes, positions, icons and motion stay unchanged.
+   ============================================================ */
+
+.comentarii-title-line::after {
+  color: #EDF7F4;
+}
+
+.com-tab,
+.com-tab.active,
+.com-category-selector,
+.com-category-selector .com-cat-label {
+  color: #EDF7F4;
+}
+
+.av10-reaction,
+.av10-reaction.like,
+.av10-reaction.love,
+.av10-reaction.reply {
+  color: #97DFCD;
+  border-color: rgba(151, 223, 205, 0.14);
+  background: linear-gradient(145deg, rgba(10, 74, 63, 0.24), rgba(7, 49, 42, 0.16));
+}
+
+.av10-reaction svg,
+.av10-reaction.like svg,
+.av10-reaction.love svg,
+.av10-reaction.reply svg {
+  background: rgba(99, 215, 184, 0.07);
+}
+
+.av10-reaction:hover,
+.av10-reaction.like:hover,
+.av10-reaction.love:hover,
+.av10-reaction.reply:hover {
+  color: #EDF7F4;
+  border-color: rgba(151, 223, 205, 0.28);
+  background: rgba(10, 74, 63, 0.28);
+}
+
+.av10-reaction.like.is-active {
+  color: #5EA8FF;
+  border-color: rgba(94, 168, 255, 0.44);
+  background: rgba(94, 168, 255, 0.13);
+}
+.av10-reaction.like.is-active svg {
+  background: rgba(94, 168, 255, 0.16);
+}
+
+.av10-reaction.love.is-active {
+  color: #FF6F7D;
+  border-color: rgba(255, 111, 125, 0.44);
+  background: rgba(255, 111, 125, 0.13);
+}
+.av10-reaction.love.is-active svg {
+  background: rgba(255, 111, 125, 0.16);
+}
+
+.av10-reaction.reply.is-active {
+  color: #F2A65A;
+  border-color: rgba(242, 166, 90, 0.44);
+  background: rgba(242, 166, 90, 0.13);
+}
+.av10-reaction.reply.is-active svg {
+  background: rgba(242, 166, 90, 0.16);
+}
+
+
+/* ============================================================
+   AniVortex V12.68 — Comentarii: vivid series accent + readable active tab
+   ============================================================ */
+
+/* Caseta seriei primește un accent cald care contrastează cu emerald-ul V12. */
+.av10-series {
+  border-color: rgba(242, 198, 109, 0.30);
+  background:
+    linear-gradient(135deg, rgba(10, 74, 63, 0.96), rgba(7, 49, 42, 0.92)) padding-box,
+    linear-gradient(135deg, rgba(242, 198, 109, 0.34), rgba(99, 215, 184, 0.18)) border-box;
+  box-shadow:
+    inset 0 1px rgba(237, 247, 244, 0.045),
+    0 6px 16px rgba(0, 0, 0, 0.16);
+}
+
+.av10-series::before {
+  background: linear-gradient(180deg, #FFD98A, #F2C66D);
+  box-shadow: 0 0 11px rgba(242, 198, 109, 0.34);
+}
+
+.av10-series:hover {
+  border-color: rgba(255, 217, 138, 0.48);
+  background:
+    linear-gradient(135deg, rgba(12, 87, 73, 0.98), rgba(7, 49, 42, 0.94)) padding-box,
+    linear-gradient(135deg, rgba(255, 217, 138, 0.48), rgba(99, 215, 184, 0.24)) border-box;
+}
+
+.av10-series-copy small {
+  color: #F2C66D;
+}
+
+.av10-series-meta {
+  color: #7DD3FC;
+  text-shadow: 0 0 10px rgba(125, 211, 252, 0.12);
+}
+
+/* Butonul săgeții: accent auriu și centrare optică perfectă. */
+.av10-series-arrow {
+  color: transparent;
+  border-color: rgba(242, 198, 109, 0.38);
+  background: linear-gradient(145deg, rgba(242, 198, 109, 0.18), rgba(242, 198, 109, 0.08));
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.06),
+    0 0 12px rgba(242, 198, 109, 0.08);
+}
+
+.av10-series-arrow::before {
+  color: #FFD98A;
+  transform: translate(0, 0);
+  line-height: 1;
+}
+
+.av10-series:hover .av10-series-arrow,
+.av10-series:focus-visible .av10-series-arrow {
+  border-color: rgba(255, 217, 138, 0.58);
+  background: linear-gradient(145deg, rgba(242, 198, 109, 0.26), rgba(242, 198, 109, 0.12));
+}
+
+/* Tabul activ este mai închis ca textul alb să rămână clar. */
+.com-tab.active {
+  color: #EDF7F4;
+  border-color: rgba(151, 223, 205, 0.34);
+  background: linear-gradient(135deg, #0F766E 0%, #0A4A3F 58%, #083D35 100%);
+  box-shadow:
+    0 9px 22px rgba(0, 0, 0, 0.24),
+    inset 0 1px rgba(237, 247, 244, 0.10),
+    0 0 16px rgba(99, 215, 184, 0.10);
+}
+
+
+/* ============================================================
+   AniVortex V12.72 — Comentarii: warm ivory series label + arrow optical lift
+   ============================================================ */
+
+.av10-series-copy small {
+  color: #F3E7C1;
+  text-shadow: 0 0 9px rgba(243, 231, 193, 0.12);
+}
+
+.av10-series-arrow::before {
+  transform: translate(0, -1px);
 }
