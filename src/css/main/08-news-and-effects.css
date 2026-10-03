@@ -1005,21 +1005,25 @@
   list-style: none;
 }
 
+/* ============================================================
+   AniVortex V12.94 — Serii favorite: postere ușor mai compacte și ridicate
+   Păstrează imaginile clare și centrate, fără schimbarea structurii profilului.
+   ============================================================ */
 .av-profile-favorite {
   position: absolute;
-  top: 359px;
-  width: 108px;
-  height: 230px;
+  top: 352px;
+  width: 104px;
+  height: 222px;
 }
 
-.av-profile-favorite--second { left: 12px; }
-.av-profile-favorite--first { left: 128px; top: 347px; }
-.av-profile-favorite--third { left: 244px; }
+.av-profile-favorite--second { left: 14px; }
+.av-profile-favorite--first { left: 130px; top: 340px; }
+.av-profile-favorite--third { left: 246px; }
 
 .av-profile-favorite a {
   display: block;
-  width: 108px;
-  height: 182px;
+  width: 104px;
+  height: 176px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 13px;
@@ -1027,7 +1031,7 @@
 }
 
 .av-profile-favorite--first a {
-  height: 194px;
+  height: 188px;
   border-color: rgba(138, 255, 214, 0.48);
 }
 
@@ -1041,12 +1045,13 @@
   height: 100%;
   display: block;
   object-fit: cover;
+  object-position: center center;
 }
 
 .av-profile-top-label {
   position: absolute;
-  left: 29px;
-  top: 189px;
+  left: 27px;
+  top: 183px;
   width: 50px;
   height: 26px;
   display: grid;
@@ -1059,7 +1064,7 @@
   font-weight: 700;
 }
 
-.av-profile-favorite--first .av-profile-top-label { top: 201px; }
+.av-profile-favorite--first .av-profile-top-label { top: 195px; }
 
 .av-profile-activity {
   position: absolute;
