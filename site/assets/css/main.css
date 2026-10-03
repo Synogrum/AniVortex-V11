@@ -10046,9 +10046,9 @@ main video
   margin-top: 4px;
   overflow: hidden;
   color: #97DFCD;
-  font-size: 8.4px;
+  font-size: 9px;
   font-weight: 700;
-  line-height: 1.10;
+  line-height: 1.12;
   text-overflow: ellipsis;
   white-space: nowrap;
   opacity: 0.90;
@@ -11020,9 +11020,9 @@ main video
 .av-profile-setting-copy small {
   margin-top: 3px;
   color: #97DFCD;
-  font-size: 8.2px;
+  font-size: 8.8px;
   font-weight: 700;
-  line-height: 1.08;
+  line-height: 1.10;
   opacity: 0.88;
   white-space: nowrap;
 }
