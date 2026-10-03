@@ -9559,7 +9559,7 @@ main video
   font-weight: 700;
 }
 
-.av-profile-level-copy span:last-child { color: var(--av-profile-mint); }
+.av-profile-level-copy span:last-child { color: #EDF7F4; }
 
 .av-profile-level-track {
   height: 9px;
@@ -10592,21 +10592,24 @@ main video
 }
 
 .av-profile-favorite--first .av-profile-top-label {
-  border-color: rgba(237, 247, 244, 0.28);
-  background: rgba(237, 247, 244, 0.08);
-  color: #EDF7F4;
+  border-color: rgba(212, 183, 122, 0.52);
+  background: linear-gradient(180deg, rgba(212, 183, 122, 0.18), rgba(86, 66, 31, 0.18));
+  color: #F2D48E;
+  box-shadow: inset 0 1px 0 rgba(255, 239, 196, 0.08);
 }
 
 .av-profile-favorite--second .av-profile-top-label {
-  border-color: rgba(151, 223, 205, 0.28);
-  background: rgba(151, 223, 205, 0.09);
-  color: #97DFCD;
+  border-color: rgba(200, 214, 210, 0.40);
+  background: linear-gradient(180deg, rgba(200, 214, 210, 0.13), rgba(69, 88, 84, 0.16));
+  color: #D7E3E0;
+  box-shadow: inset 0 1px 0 rgba(237, 247, 244, 0.06);
 }
 
 .av-profile-favorite--third .av-profile-top-label {
-  border-color: rgba(99, 215, 184, 0.28);
-  background: rgba(99, 215, 184, 0.09);
-  color: #63D7B8;
+  border-color: rgba(201, 138, 98, 0.44);
+  background: linear-gradient(180deg, rgba(201, 138, 98, 0.15), rgba(88, 49, 32, 0.16));
+  color: #D9A07A;
+  box-shadow: inset 0 1px 0 rgba(247, 206, 176, 0.06);
 }
 
 .av-profile-activity-card--comments,
