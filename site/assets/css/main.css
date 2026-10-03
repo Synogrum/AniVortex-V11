@@ -10034,9 +10034,9 @@ main video
 
 .av-profile-activity-copy strong {
   color: var(--av-profile-white);
-  font-size: 11.6px;
+  font-size: 12.6px;
   font-weight: 800;
-  line-height: 1.05;
+  line-height: 1.08;
   letter-spacing: -0.012em;
   white-space: nowrap;
 }
@@ -10046,12 +10046,12 @@ main video
   margin-top: 4px;
   overflow: hidden;
   color: #97DFCD;
-  font-size: 7px;
+  font-size: 7.8px;
   font-weight: 700;
-  line-height: 1.05;
+  line-height: 1.08;
   text-overflow: ellipsis;
   white-space: nowrap;
-  opacity: 0.84;
+  opacity: 0.90;
 }
 
 .av-profile-activity-card--invitations small {
