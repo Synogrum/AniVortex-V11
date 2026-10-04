@@ -1202,7 +1202,7 @@
    ========================================================= */
 .suprinde-ma {
   width: 100%;
-  min-height: 675px;
+  min-height: 640px;
   position: relative;
   overflow: hidden;
   isolation: isolate;
@@ -1279,7 +1279,7 @@
 
 .suprinde-ma .header-copy {
   width: 100%;
-  padding: 0 42px;
+  padding: 0;
 }
 
 .suprinde-ma .surprise-eyebrow {
@@ -1304,35 +1304,6 @@
   letter-spacing: -0.04em;
   text-align: center;
   text-shadow: 0 8px 24px rgba(0, 0, 0, 0.30);
-}
-
-.suprinde-ma .shuffle-icon {
-  width: 44px;
-  height: 44px;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  display: grid;
-  place-items: center;
-  padding: 0;
-  border: 1px solid rgba(151, 223, 205, 0.22);
-  border-radius: 14px;
-  color: #EDF7F4;
-  font: inherit;
-  font-size: 21px;
-  cursor: pointer;
-  background: linear-gradient(145deg, rgba(10, 74, 63, 0.96), rgba(8, 61, 53, 0.96));
-  box-shadow:
-    0 10px 22px rgba(0, 0, 0, 0.24),
-    inset 0 1px 0 rgba(237, 247, 244, 0.05);
-  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
-}
-
-.suprinde-ma .shuffle-icon:hover {
-  transform: translateY(calc(-50% - 2px)) rotate(12deg);
-  border-color: rgba(151, 223, 205, 0.38);
-  background: linear-gradient(145deg, #0A4A3F, #083D35);
 }
 
 .suprinde-ma .cartonas-serie {
@@ -1549,29 +1520,6 @@
   box-shadow: 0 14px 24px rgba(99, 215, 184, 0.16);
 }
 
-.suprinde-ma .surprise-hint {
-  min-height: 23px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
-  margin-top: 10px;
-  color: rgba(151, 223, 205, 0.78);
-  font-size: 9px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.suprinde-ma .pulse-dot {
-  width: 6px;
-  height: 6px;
-  flex: 0 0 6px;
-  border-radius: 50%;
-  background: #63D7B8;
-  box-shadow: 0 0 0 0 rgba(99, 215, 184, 0.45);
-  animation: surprisePulseDot 1.8s infinite;
-}
-
 @keyframes surpriseFlow {
   0% { transform: translate(-2%, -2%) scale(1); }
   100% { transform: translate(3%, 4%) scale(1.08); }
@@ -1583,12 +1531,6 @@
   100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-@keyframes surprisePulseDot {
-  0% { box-shadow: 0 0 0 0 rgba(99, 215, 184, 0.45); }
-  70% { box-shadow: 0 0 0 7px rgba(99, 215, 184, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(99, 215, 184, 0); }
-}
-
 @media (max-width: 390px) {
   .suprinde-ma {
     padding: 15px;
@@ -1596,12 +1538,6 @@
 
   .suprinde-ma .titlu-surprinde {
     font-size: 26px;
-  }
-
-  .suprinde-ma .shuffle-icon {
-    width: 40px;
-    height: 40px;
-    font-size: 19px;
   }
 
   .suprinde-ma .poster-link {
