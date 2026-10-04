@@ -1198,7 +1198,7 @@
 
 
 /* =========================================================
-   AniVortex V12.124 — SURPRINDE-MĂ CTA unic
+   AniVortex V12.125 — SURPRINDE-MĂ CTA unic
    Paletă: #0A4A3F #083D35 #07312A #63D7B8 #97DFCD #EDF7F4
    ========================================================= */
 .suprinde-ma {
@@ -1209,7 +1209,7 @@
   isolation: isolate;
   box-sizing: border-box;
   padding: 0;
-  border: 3px solid rgba(255, 255, 255, 0.829);
+  border: 3px solid rgba(151, 223, 205, 0.62);
   border-radius: 22px;
   background: rgba(7, 49, 42, 0.56);
   background-clip: padding-box;
