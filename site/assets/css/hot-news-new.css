@@ -696,10 +696,8 @@
   box-shadow: 0 8px 18px rgba(0, 19, 37, 0.35);
 }
 
-/* Coloana dreaptă — panouri puțin mai lungi, distribuite uniform. */
-.right-sidebar > .suprinde-ma {
-  min-height: 699px;
-}
+/* Surprinde-mă își calculează înălțimea din componenta proprie.
+   Nu forțăm aici o înălțime minimă care lasă spațiu gol sub card. */
 
 .right-sidebar > .serii-programate:not(#__av_prio_a#__av_prio_b), .right-sidebar > .serii-programate.is-empty:not(#__av_prio_a#__av_prio_b), .right-sidebar > .serii-programate.has-program:not(#__av_prio_a#__av_prio_b) {
   height: 554px;
