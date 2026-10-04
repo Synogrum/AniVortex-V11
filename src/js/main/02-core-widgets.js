@@ -62,12 +62,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const linkImagine = document.getElementById("linkSerie");
     const linkButon = document.getElementById("butonLink");
     const tags = document.querySelector(".suprinde-ma .surprise-tags");
-    const butoaneShuffle = [
-      document.getElementById("shuffleTop"),
-      document.getElementById("shuffleSerie")
-    ].filter(Boolean);
+    const shuffleButton = document.getElementById("shuffleSerie");
 
-    if (!card || !imagine || !nume || !traducator || !linkImagine || !linkButon || !tags) {
+    if (!card || !imagine || !nume || !traducator || !linkImagine || !linkButon || !tags || !shuffleButton) {
       return;
     }
 
@@ -97,9 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 180);
     }
 
-    butoaneShuffle.forEach(buton => {
-      buton.addEventListener("click", schimbaSeria);
-    });
+    shuffleButton.addEventListener("click", schimbaSeria);
 
     // Ca în varianta veche: click pe imagine afișează următoarea serie.
     // Linkul „Vezi seria” rămâne singurul care deschide pagina seriei.
