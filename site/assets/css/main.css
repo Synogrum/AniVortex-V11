@@ -6483,6 +6483,11 @@ main video
   margin: 0;
 }
 
+/* Când informațiile sunt deschise, păstrăm un spațiu clar față de ultimul episod. */
+.serii-programate .program-afisat.is-disclaimer-open .wrapper-disclaimer:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 12px;
+}
+
 /* Când se deschid informațiile, lista se micșorează și rămâne scrollabilă. */
 .serii-programate .disclaimer:not([hidden]) {
   max-height: 94px;
