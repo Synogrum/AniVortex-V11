@@ -890,11 +890,20 @@
 }
 
 .bara-cautare:focus {
-  border-color: #63D7B8;
-  background: rgba(7, 49, 42, 0.94);
+  border-color: #97DFCD;
+  background: rgba(8, 61, 53, 0.96);
   box-shadow:
-    0 0 0 2px rgba(99, 215, 184, 0.10),
-    inset 0 1px 0 rgba(237, 247, 244, 0.05);
+    inset 0 0 0 1px rgba(99, 215, 184, 0.16),
+    inset 0 1px 0 rgba(237, 247, 244, 0.05),
+    0 6px 14px rgba(7, 49, 42, 0.28);
+}
+
+.bara-cautare:focus-visible {
+  outline: none;
+}
+
+.bara-cautare {
+  caret-color: #63D7B8;
 }
 
 /* Anne*/
