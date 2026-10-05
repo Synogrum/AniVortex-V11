@@ -5915,17 +5915,19 @@ main video
 }
 
 .zile-butoane {
-  width: max-content;
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 21px) / 4);
   gap: 7px;
-  padding: 0 1px;
+  padding: 0;
 }
 
 .zile-butoane button {
-  min-width: 70px;
+  width: 100%;
+  min-width: 0;
   height: 34px;
-  flex: 0 0 auto;
-  padding: 0 12px;
+  padding: 0 8px;
   border: 1px solid rgba(151, 223, 205, 0.18);
   border-radius: 11px;
   color: #EDF7F4;
@@ -6463,7 +6465,8 @@ main video
   pointer-events: auto;
   touch-action: pan-x;
   cursor: default;
-  scroll-snap-type: x proximity;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 0;
   overscroll-behavior-x: contain;
 }
 
@@ -6479,7 +6482,8 @@ main video
   touch-action: manipulation;
   user-select: none;
   -webkit-user-select: none;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .serii-programate .zile-butoane button:not(#__av_prio_a#__av_prio_b) {
