@@ -949,12 +949,12 @@
   scroll-padding-block: 0;
 }
 
-/* Când informațiile se deschid, reducem lista la 4 carduri complete.
-   Astfel ultimul episod vizibil dispare și nu intră sub textul explicativ. */
+/* Când informațiile se deschid, lăsăm 3 carduri complete.
+   Spațiul eliberat separă clar episoadele de zona explicativă. */
 .serii-programate .program-afisat.is-disclaimer-open .program-list:not(#__av_prio_a#__av_prio_b) {
-  min-height: 201px;
-  height: 201px;
-  max-height: 201px;
+  min-height: 149px;
+  height: 149px;
+  max-height: 149px;
 }
 
 .serii-programate .program-empty,
@@ -984,9 +984,9 @@
 
 /* Când informațiile sunt deschise, separăm clar zona explicativă de ultimul episod. */
 .serii-programate .program-afisat.is-disclaimer-open .wrapper-disclaimer:not(#__av_prio_a#__av_prio_b) {
-  margin-top: 20px;
-  border-top-color: transparent;
-  padding-top: 0;
+  margin-top: 18px;
+  border-top-color: rgba(151, 223, 205, 0.12);
+  padding-top: 4px;
 }
 
 /* Când se deschid informațiile, lista se micșorează și rămâne scrollabilă. */
