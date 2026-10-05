@@ -846,6 +846,15 @@
   color: #EDF7F4;
 }
 
+.serii-programate .toggle-disclaimer[aria-expanded="true"] > i:first-child,
+.serii-programate .toggle-disclaimer[aria-expanded="true"] .disclaimer-arrow {
+  color: #EDF7F4;
+}
+
+.serii-programate .toggle-disclaimer[aria-expanded="true"] + .disclaimer:not([hidden]) {
+  color: #EDF7F4;
+}
+
 .serii-programate .disclaimer {
   padding: 10px 6px 6px 23px;
   color: rgba(151, 223, 205, 0.72);
@@ -856,6 +865,7 @@
 
 .serii-programate .wrapper-disclaimer {
   flex: 0 0 auto;
+  padding-top: 4px;
 }
 
 @media (max-width: 390px) {
