@@ -678,7 +678,7 @@
   padding: 8px 2px 3px;
   border: 0;
   border-radius: 0;
-  color: #97DFCD;
+  color: #EDF7F4;
   background: transparent;
   box-shadow: none;
   font-family: inherit;
@@ -693,12 +693,12 @@
 }
 
 .toggle-disclaimer > i:first-child {
-  color: rgba(151, 223, 205, 0.58);
+  color: #EDF7F4;
   text-align: center;
 }
 
 .disclaimer-arrow {
-  color: rgba(151, 223, 205, 0.58);
+  color: #EDF7F4;
   transition: transform 0.25s ease;
 }
 
@@ -836,23 +836,26 @@
 .serii-programate .toggle-disclaimer {
   min-height: 39px;
   padding: 10px 3px 6px;
-  color: #97DFCD;
+  color: #EDF7F4;
   font-size: 10.5px;
   line-height: 1.35;
 }
 
-.serii-programate .toggle-disclaimer:hover,
-.serii-programate .toggle-disclaimer[aria-expanded="true"] {
+.serii-programate .toggle-disclaimer:hover {
   color: #EDF7F4;
+}
+
+.serii-programate .toggle-disclaimer[aria-expanded="true"] {
+  color: #97DFCD;
 }
 
 .serii-programate .toggle-disclaimer[aria-expanded="true"] > i:first-child,
 .serii-programate .toggle-disclaimer[aria-expanded="true"] .disclaimer-arrow {
-  color: #EDF7F4;
+  color: #97DFCD;
 }
 
 .serii-programate .toggle-disclaimer[aria-expanded="true"] + .disclaimer:not([hidden]) {
-  color: #EDF7F4;
+  color: #97DFCD;
 }
 
 .serii-programate .disclaimer {
