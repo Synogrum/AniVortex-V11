@@ -6450,6 +6450,14 @@ main video
   scroll-padding-block: 0;
 }
 
+/* Când informațiile se deschid, reducem lista la 4 carduri complete.
+   Astfel ultimul episod vizibil dispare și nu intră sub textul explicativ. */
+.serii-programate .program-afisat.is-disclaimer-open .program-list:not(#__av_prio_a#__av_prio_b) {
+  min-height: 201px;
+  height: 201px;
+  max-height: 201px;
+}
+
 .serii-programate .program-empty,
 .serii-programate .program-afisat.is-empty .program-empty {
   width: 100%;

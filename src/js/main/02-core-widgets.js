@@ -301,8 +301,13 @@ globalThis.addEventListener("DOMContentLoaded", () => {
   if (toggleDisclaimer && disclaimerText) {
     toggleDisclaimer.addEventListener("click", () => {
       const deschis = toggleDisclaimer.getAttribute("aria-expanded") === "true";
-      toggleDisclaimer.setAttribute("aria-expanded", String(!deschis));
+      const seDeschide = !deschis;
+      toggleDisclaimer.setAttribute("aria-expanded", String(seDeschide));
       disclaimerText.hidden = deschis;
+
+      if (programAfisat) {
+        programAfisat.classList.toggle("is-disclaimer-open", seDeschide);
+      }
     });
   }
 
