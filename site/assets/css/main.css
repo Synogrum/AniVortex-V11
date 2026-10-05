@@ -6417,11 +6417,13 @@ main video
 }
 
 .serii-programate .program-list:not(#__av_prio_a#__av_prio_b), .serii-programate .program-afisat.is-empty .program-list:not(#__av_prio_a#__av_prio_b), .serii-programate .program-afisat.has-program .program-list:not(#__av_prio_a#__av_prio_b) {
-  min-height: 0;
-  height: auto;
-  max-height: none;
+  min-height: 271px;
+  height: 271px;
+  max-height: 271px;
   flex: none;
   overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-padding-top: 10px;
 }
 
 .serii-programate .program-empty,
@@ -6456,9 +6458,13 @@ main video
   padding-bottom: 8px;
 }
 
-/* Cinci episoade vizibile în starea normală; restul se văd prin scroll. */
+/* Exact cinci episoade complete sunt vizibile; restul se văd prin scroll. */
 .serii-programate .program-item {
+  height: 45px;
   min-height: 45px;
+  flex: 0 0 45px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 @media (max-width: 390px) {
