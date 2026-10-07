@@ -996,7 +996,7 @@
 }
 
 .serii-programate .program-afisat.is-disclaimer-open .disclaimer:not([hidden]) {
-  padding: 6px 6px 2px 23px;
+  padding: 2px 6px 2px 23px;
 }
 
 /* Când se deschid informațiile, lista se micșorează și rămâne scrollabilă. */
