@@ -6498,6 +6498,7 @@ main video
 
 .serii-programate .program-afisat.is-disclaimer-open .disclaimer:not([hidden]) {
   padding: 2px 6px 2px 23px;
+  transform: translateY(-8px);
 }
 
 /* Când se deschid informațiile, lista se micșorează și rămâne scrollabilă. */
