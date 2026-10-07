@@ -949,12 +949,13 @@
   scroll-padding-block: 0;
 }
 
-/* Când informațiile se deschid, lăsăm 3 carduri complete.
-   Spațiul eliberat separă clar episoadele de zona explicativă. */
+/* Când informațiile se deschid, păstrăm exact 4 carduri complete.
+   4 × 45px + 3 × 7px gap = 201px; doar episodul 5 iese din viewport. */
 .serii-programate .program-afisat.is-disclaimer-open .program-list:not(#__av_prio_a#__av_prio_b) {
-  min-height: 142px;
-  height: 142px;
-  max-height: 142px;
+  min-height: 201px;
+  height: 201px;
+  max-height: 201px;
+  margin: 8px 0 4px;
 }
 
 .serii-programate .program-empty,
@@ -982,11 +983,20 @@
   margin: 0;
 }
 
-/* Când informațiile sunt deschise, separăm clar zona explicativă de ultimul episod. */
+/* În starea deschisă, zona explicativă începe după al patrulea card.
+   Spațiile verticale sunt compactate doar aici ca episodul 4 să rămână complet vizibil. */
 .serii-programate .program-afisat.is-disclaimer-open .wrapper-disclaimer:not(#__av_prio_a#__av_prio_b) {
-  margin-top: 28px;
+  margin-top: 0;
   border-top-color: rgba(151, 223, 205, 0.12);
-  padding-top: 6px;
+  padding-top: 0;
+}
+
+.serii-programate .program-afisat.is-disclaimer-open {
+  padding-bottom: 2px;
+}
+
+.serii-programate .program-afisat.is-disclaimer-open .disclaimer:not([hidden]) {
+  padding: 6px 6px 2px 23px;
 }
 
 /* Când se deschid informațiile, lista se micșorează și rămâne scrollabilă. */
