@@ -395,8 +395,8 @@
    ===================================================================== */
 .login-user--profile-v2 {
   width: 100%;
-  height: 825px;
-  min-height: 825px;
+  height: 800px;
+  min-height: 800px;
   padding: 0;
   box-sizing: border-box;
   border: 3px solid rgba(255, 255, 255, 0.84);
@@ -719,7 +719,7 @@
   font-weight: 700;
 }
 
-.av-profile-level-copy span:last-child { color: var(--av-profile-mint); }
+.av-profile-level-copy span:last-child { color: #EDF7F4; }
 
 .av-profile-level-track {
   height: 9px;
@@ -972,8 +972,8 @@
   background: rgba(255, 255, 255, 0.19);
 }
 
-.av-profile-divider--favorites { top: 298px; opacity: 0.42; }
-.av-profile-divider--activity { top: 587px; }
+.av-profile-divider--favorites { top: 278px; opacity: 0.42; }
+.av-profile-divider--activity { top: 552px; }
 
 .av-profile-favorites {
   position: absolute;
@@ -988,7 +988,7 @@
 .av-profile-favorites h3 {
   position: absolute;
   left: 12px;
-  top: 300px;
+  top: 284px;
   width: 340px;
   height: 34px;
   margin: 0;
@@ -1005,21 +1005,25 @@
   list-style: none;
 }
 
+/* ============================================================
+   AniVortex V12.97 — Serii favorite: secțiune ridicată fin
+   Păstrează imaginile clare și centrate, fără schimbarea structurii profilului.
+   ============================================================ */
 .av-profile-favorite {
   position: absolute;
-  top: 359px;
-  width: 108px;
-  height: 230px;
+  top: 336px;
+  width: 100px;
+  height: 214px;
 }
 
-.av-profile-favorite--second { left: 12px; }
-.av-profile-favorite--first { left: 128px; top: 347px; }
-.av-profile-favorite--third { left: 244px; }
+.av-profile-favorite--second { left: 16px; }
+.av-profile-favorite--first { left: 132px; top: 324px; }
+.av-profile-favorite--third { left: 248px; }
 
 .av-profile-favorite a {
   display: block;
-  width: 108px;
-  height: 182px;
+  width: 100px;
+  height: 170px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 13px;
@@ -1027,7 +1031,7 @@
 }
 
 .av-profile-favorite--first a {
-  height: 194px;
+  height: 182px;
   border-color: rgba(138, 255, 214, 0.48);
 }
 
@@ -1041,12 +1045,13 @@
   height: 100%;
   display: block;
   object-fit: cover;
+  object-position: center center;
 }
 
 .av-profile-top-label {
   position: absolute;
-  left: 29px;
-  top: 189px;
+  left: 25px;
+  top: 177px;
   width: 50px;
   height: 26px;
   display: grid;
@@ -1059,12 +1064,16 @@
   font-weight: 700;
 }
 
-.av-profile-favorite--first .av-profile-top-label { top: 201px; }
+.av-profile-favorite--first .av-profile-top-label { top: 189px; }
 
+/* ============================================================
+   AniVortex V12.99 — Activitate profil: premium și ridicată
+   Comentarii / Invitații folosesc iconițe line, separare fină și efecte discrete.
+   ============================================================ */
 .av-profile-activity {
   position: absolute;
   left: 12px;
-  top: 600px;
+  top: 570px;
   width: 340px;
   height: 52px;
   display: grid;
@@ -1073,80 +1082,165 @@
 }
 
 .av-profile-activity-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  position: relative;
   height: 52px;
-  padding: 0 11px 0 12px;
-  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 31px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 9px;
+  overflow: hidden;
+  border: 1px solid rgba(151, 223, 205, 0.18);
+  border-radius: 13px;
   color: var(--av-profile-white);
+  background:
+    linear-gradient(180deg, rgba(237, 247, 244, 0.025), rgba(237, 247, 244, 0) 45%),
+    linear-gradient(135deg, rgba(7, 49, 42, 0.82), rgba(8, 61, 53, 0.74));
   text-decoration: none;
-  transition: transform 160ms ease, filter 160ms ease;
+  box-shadow:
+    inset 0 1px 0 rgba(237, 247, 244, 0.035),
+    0 5px 14px rgba(0, 0, 0, 0.10);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.av-profile-activity-card::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(99, 215, 184, 0.35), transparent);
+  opacity: 0.72;
+}
+
+.av-profile-activity-card::after {
+  content: "";
+  position: absolute;
+  right: -14px;
+  top: -16px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(99, 215, 184, 0.08), transparent 70%);
+  pointer-events: none;
 }
 
 .av-profile-activity-card:hover {
   transform: translateY(-1px);
-  filter: brightness(1.1);
+  border-color: rgba(151, 223, 205, 0.32);
+  box-shadow:
+    inset 0 1px 0 rgba(237, 247, 244, 0.05),
+    0 8px 18px rgba(0, 0, 0, 0.14),
+    0 0 11px rgba(99, 215, 184, 0.035);
 }
 
 .av-profile-activity-card--comments {
-  border: 1px solid rgba(126, 163, 245, 0.26);
-  background: linear-gradient(102deg, rgba(18, 39, 66, 0.96), rgba(13, 57, 65, 0.96));
+  background:
+    linear-gradient(180deg, rgba(237, 247, 244, 0.025), rgba(237, 247, 244, 0) 45%),
+    linear-gradient(135deg, rgba(7, 49, 42, 0.82), rgba(8, 61, 53, 0.74));
 }
 
 .av-profile-activity-card--invitations {
-  border: 1px solid rgba(104, 240, 207, 0.26);
-  background: linear-gradient(102deg, rgba(13, 43, 54, 0.96), rgba(6, 68, 59, 0.96));
+  background:
+    linear-gradient(180deg, rgba(237, 247, 244, 0.025), rgba(237, 247, 244, 0) 45%),
+    linear-gradient(135deg, rgba(8, 61, 53, 0.86), rgba(7, 49, 42, 0.78));
+}
+
+.av-profile-activity-icon {
+  width: 31px;
+  height: 31px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(99, 215, 184, 0.22);
+  border-radius: 9px;
+  background:
+    linear-gradient(180deg, rgba(237, 247, 244, 0.035), transparent),
+    rgba(10, 74, 63, 0.32);
+  box-shadow: inset 0 1px 0 rgba(237, 247, 244, 0.025);
+}
+
+.av-profile-activity-icon svg {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: #63D7B8;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.av-profile-activity-card--invitations .av-profile-activity-icon {
+  border-color: rgba(151, 223, 205, 0.20);
+  background:
+    linear-gradient(180deg, rgba(237, 247, 244, 0.035), transparent),
+    rgba(8, 61, 53, 0.44);
+}
+
+.av-profile-activity-card--invitations .av-profile-activity-icon svg {
+  stroke: #97DFCD;
 }
 
 .av-profile-activity-copy {
   min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  transform: translateY(-0.5px);
 }
 
 .av-profile-activity-copy strong {
   color: var(--av-profile-white);
-  font-size: 13px;
-  line-height: 19px;
-}
-
-.av-profile-activity-copy small {
-  overflow: hidden;
-  color: var(--av-profile-blue);
-  font-size: 9px;
-  font-weight: 700;
-  line-height: 15px;
-  text-overflow: ellipsis;
+  font-size: 12.6px;
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.012em;
   white-space: nowrap;
 }
 
-.av-profile-activity-card--invitations small { color: var(--av-profile-mint); }
-
-.av-profile-activity-count {
-  flex: 0 0 34px;
-  width: 34px;
-  height: 34px;
-  display: grid;
-  place-items: center;
-  border: 1px solid rgba(143, 184, 255, 0.32);
-  border-radius: 9px;
-  background: rgba(77, 113, 198, 0.48);
-  color: var(--av-profile-white);
-  font-size: 18px;
-  font-weight: 800;
+.av-profile-activity-copy small {
+  display: block;
+  margin-top: 4px;
+  overflow: hidden;
+  color: #97DFCD;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1.12;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 0.90;
 }
 
-.av-profile-activity-card--invitations .av-profile-activity-count {
-  border-color: rgba(112, 239, 209, 0.32);
-  background: rgba(28, 151, 127, 0.48);
+.av-profile-activity-card--invitations small {
+  color: #97DFCD;
+}
+
+.av-profile-activity-value {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  border-left: 1px solid rgba(151, 223, 205, 0.10);
+}
+
+.av-profile-activity-count {
+  min-width: 25px;
+  color: #EDF7F4;
+  font-size: 16px;
+  font-weight: 850;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(151, 223, 205, 0.08);
 }
 
 .av-profile-last-episode {
   position: absolute;
   left: 12px;
-  top: 665px;
+  top: 635px;
   width: 340px;
   height: 80px;
   display: flex;
@@ -1211,25 +1305,123 @@
   background-clip: text;
 }
 
+/* ============================================================
+   AniVortex V12.102 — Bloc inferior ridicat suplimentar
+   ============================================================ */
 .av-profile-logout {
   position: absolute;
   left: 12px;
-  top: 758px;
+  top: 728px;
   width: 340px;
   height: 48px;
-  border: 1px solid rgba(75, 165, 181, 0.38);
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.055);
-  color: var(--av-profile-white);
-  font-size: 16px;
-  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 52px;
+  border: 1px solid rgba(151, 223, 205, 0.20);
+  border-radius: 14px;
+  color: #EDF7F4;
+  background:
+    linear-gradient(180deg, rgba(237, 247, 244, 0.025), transparent 48%),
+    linear-gradient(135deg, rgba(8, 61, 53, 0.88), rgba(7, 49, 42, 0.94));
+  box-shadow:
+    inset 0 1px 0 rgba(237, 247, 244, 0.04),
+    0 6px 16px rgba(0, 0, 0, 0.11);
   cursor: pointer;
-  transition: background 160ms ease, transform 160ms ease;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.av-profile-logout::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 132px;
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, #63D7B8, transparent);
+  opacity: 0.62;
+  transition: width 180ms ease, opacity 180ms ease;
+}
+
+.av-profile-logout::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border: 1px solid rgba(237, 247, 244, 0.025);
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+.av-profile-logout-label {
+  position: relative;
+  z-index: 2;
+  color: #EDF7F4;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.005em;
+  text-align: center;
+  text-shadow: 0 0 12px rgba(151, 223, 205, 0.06);
+}
+
+.av-profile-logout-side {
+  position: absolute;
+  top: 50%;
+  width: 26px;
+  height: 1px;
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, transparent, rgba(151, 223, 205, 0.28));
+  opacity: 0.65;
+  transition: opacity 180ms ease;
+}
+
+.av-profile-logout-side::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #63D7B8;
+  box-shadow: 0 0 7px rgba(99, 215, 184, 0.35);
+  transform: translate(50%, -50%);
+}
+
+.av-profile-logout-side--left {
+  left: 20px;
+}
+
+.av-profile-logout-side--right {
+  right: 20px;
+  transform: translateY(-50%) scaleX(-1);
 }
 
 .av-profile-logout:hover {
   transform: translateY(-1px);
-  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(151, 223, 205, 0.34);
+  background:
+    linear-gradient(180deg, rgba(237, 247, 244, 0.035), transparent 48%),
+    linear-gradient(135deg, rgba(10, 74, 63, 0.94), rgba(8, 61, 53, 0.92));
+  box-shadow:
+    inset 0 1px 0 rgba(237, 247, 244, 0.055),
+    0 9px 20px rgba(0, 0, 0, 0.15),
+    0 0 12px rgba(99, 215, 184, 0.035);
+}
+
+.av-profile-logout:hover::before {
+  width: 190px;
+  opacity: 0.88;
+}
+
+.av-profile-logout:hover .av-profile-logout-side {
+  opacity: 1;
 }
 
 .av-profile-toast {
@@ -1427,5 +1619,618 @@
     min-width: 25px;
     margin-left: 1px;
   }
+}
+
+
+
+/* ============================================================
+   AniVortex V12.78 — Profil utilizator: paleta V12 aprobată
+   Culori aliniate cu Banner / Trending / Comentarii.
+   Layout-ul, dimensiunile și interacțiunile rămân neschimbate.
+   ============================================================ */
+
+.login-user--profile-v2 {
+  border-color: rgba(151, 223, 205, 0.62);
+  background:
+    radial-gradient(circle at 5% 6%, rgba(99, 215, 184, 0.12), transparent 34%),
+    radial-gradient(circle at 95% 8%, rgba(151, 223, 205, 0.10), transparent 40%),
+    linear-gradient(145deg, #0A4A3F 0%, #083D35 48%, #07312A 100%);
+  box-shadow:
+    0 24px 70px rgba(0, 0, 0, 0.50),
+    inset 0 1px 0 rgba(237, 247, 244, 0.07),
+    0 0 24px rgba(99, 215, 184, 0.06);
+}
+
+.login-content--v2 {
+  --av-profile-white: #EDF7F4;
+  --av-profile-soft: #EDF7F4;
+  --av-profile-muted: #97DFCD;
+  --av-profile-blue: #97DFCD;
+  --av-profile-mint: #63D7B8;
+}
+
+.login-content--v2::before {
+  border-color: rgba(151, 223, 205, 0.12);
+  background:
+    radial-gradient(circle at 88% 8%, rgba(99, 215, 184, 0.07), transparent 30%),
+    linear-gradient(118deg, rgba(8, 61, 53, 0.985), rgba(7, 49, 42, 0.985));
+}
+
+.av-profile-avatar-shell {
+  border-color: rgba(99, 215, 184, 0.52);
+  box-shadow:
+    0 0 0 1px rgba(151, 223, 205, 0.10),
+    0 0 16px rgba(99, 215, 184, 0.08);
+}
+
+.av-profile-avatar {
+  border-color: rgba(237, 247, 244, 0.44);
+}
+
+.av-profile-status {
+  border-color: #07312A;
+}
+
+.av-profile-status-menu {
+  border-color: rgba(151, 223, 205, 0.26);
+  background: linear-gradient(120deg, rgba(8, 61, 53, 0.995), rgba(7, 49, 42, 0.995));
+}
+
+.av-profile-status-menu button:hover,
+.av-profile-status-menu button.is-selected {
+  background: rgba(99, 215, 184, 0.10);
+}
+
+.av-profile-name {
+  background: linear-gradient(90deg, #EDF7F4 0%, #97DFCD 55%, #63D7B8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.av-profile-level-track {
+  background: rgba(3, 29, 34, 0.78);
+}
+
+.av-profile-level-track span {
+  background: linear-gradient(90deg, rgb(187, 79, 65), rgb(212, 102, 67));
+}
+
+.av-profile-notifications {
+  border-color: rgba(151, 223, 205, 0.22);
+  background: rgba(8, 61, 53, 0.86);
+}
+
+.av-profile-notifications:hover {
+  background: rgba(10, 74, 63, 0.96);
+}
+
+.av-profile-notification-badge {
+  border-color: #07312A;
+}
+
+.av-profile-notification-menu {
+  border-color: rgba(151, 223, 205, 0.28);
+  background: linear-gradient(120deg, rgba(8, 61, 53, 0.995), rgba(7, 49, 42, 0.995));
+}
+
+.av-profile-stats {
+  border-color: rgba(151, 223, 205, 0.18);
+  background: linear-gradient(120deg, rgba(8, 61, 53, 0.78), rgba(7, 49, 42, 0.72));
+  box-shadow: inset 0 1px 0 rgba(237, 247, 244, 0.03);
+}
+
+.av-profile-stat + .av-profile-stat::before {
+  background: rgba(151, 223, 205, 0.12);
+}
+
+.av-profile-setting--profile {
+  border-color: rgba(151, 223, 205, 0.28);
+  background: linear-gradient(120deg, #083D35 0%, #07312A 100%);
+}
+
+.av-profile-setting--faction {
+  border-color: rgba(99, 215, 184, 0.30);
+  background: linear-gradient(120deg, #0A4A3F 0%, #083D35 100%);
+}
+
+.av-profile-divider {
+  background: rgba(151, 223, 205, 0.18);
+}
+
+.av-profile-favorites h3 {
+  color: #EDF7F4;
+  text-shadow: 0 0 10px rgba(151, 223, 205, 0.10);
+}
+
+.av-profile-favorite a {
+  border-color: rgba(151, 223, 205, 0.24);
+}
+
+.av-profile-favorite--first a {
+  border-color: rgba(99, 215, 184, 0.46);
+  box-shadow: 0 0 14px rgba(99, 215, 184, 0.07);
+}
+
+.av-profile-favorite--first .av-profile-top-label {
+  border-color: rgba(212, 183, 122, 0.52);
+  background: linear-gradient(180deg, rgba(212, 183, 122, 0.18), rgba(86, 66, 31, 0.18));
+  color: #F2D48E;
+  box-shadow: inset 0 1px 0 rgba(255, 239, 196, 0.08);
+}
+
+.av-profile-favorite--second .av-profile-top-label {
+  border-color: rgba(200, 214, 210, 0.40);
+  background: linear-gradient(180deg, rgba(200, 214, 210, 0.13), rgba(69, 88, 84, 0.16));
+  color: #D7E3E0;
+  box-shadow: inset 0 1px 0 rgba(237, 247, 244, 0.06);
+}
+
+.av-profile-favorite--third .av-profile-top-label {
+  border-color: rgba(201, 138, 98, 0.44);
+  background: linear-gradient(180deg, rgba(201, 138, 98, 0.15), rgba(88, 49, 32, 0.16));
+  color: #D9A07A;
+  box-shadow: inset 0 1px 0 rgba(247, 206, 176, 0.06);
+}
+
+.av-profile-activity-card--comments,
+.av-profile-activity-card--invitations {
+  border-color: rgba(151, 223, 205, 0.18);
+}
+
+.av-profile-activity-copy small,
+.av-profile-activity-card--invitations small {
+  color: #97DFCD;
+}
+
+.av-profile-activity-count,
+.av-profile-activity-card--invitations .av-profile-activity-count {
+  color: #EDF7F4;
+}
+
+.av-profile-last-episode {
+  border-color: rgba(151, 223, 205, 0.20);
+  background: linear-gradient(112deg, #083D35 0%, #07312A 100%);
+}
+
+.av-profile-last-episode::before {
+  background: linear-gradient(90deg, #97DFCD 0%, #63D7B8 54%, #0A4A3F 100%);
+}
+
+.av-profile-last-label {
+  background: linear-gradient(90deg, #EDF7F4, #97DFCD, #63D7B8);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.av-profile-last-title:hover strong,
+.av-profile-last-title:hover > span {
+  background: linear-gradient(90deg, #EDF7F4, #97DFCD);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.av-profile-logout {
+  border-color: rgba(151, 223, 205, 0.20);
+  background:
+    linear-gradient(180deg, rgba(237, 247, 244, 0.025), transparent 48%),
+    linear-gradient(135deg, rgba(8, 61, 53, 0.88), rgba(7, 49, 42, 0.94));
+}
+
+.av-profile-logout:hover {
+  border-color: rgba(151, 223, 205, 0.34);
+  background:
+    linear-gradient(180deg, rgba(237, 247, 244, 0.035), transparent 48%),
+    linear-gradient(135deg, rgba(10, 74, 63, 0.94), rgba(8, 61, 53, 0.92));
+}
+
+.av-profile-toast {
+  border-color: rgba(151, 223, 205, 0.28);
+  background: rgba(7, 49, 42, 0.98);
+}
+
+
+/* ============================================================
+   AniVortex V12.85 — Profil: grup superior mutat suplimentar spre dreapta
+   Micșorează doar zona superioară din profil; restul cardului rămâne neschimbat.
+   ============================================================ */
+.av-profile-avatar-shell {
+  left: 32px;
+  top: 24px;
+  width: 96px;
+  height: 96px;
+  border-width: 1.5px;
+}
+
+.av-profile-avatar {
+  left: 5px;
+  top: 5px;
+  width: 84px;
+  height: 84px;
+}
+
+.av-profile-status {
+  left: -3px;
+  top: 7px;
+  width: 17px;
+  height: 17px;
+  border-width: 3px;
+}
+
+.av-profile-status[data-status="away"]::after {
+  left: 6px;
+  top: 1px;
+  width: 9px;
+  height: 9px;
+}
+
+.av-profile-status[data-status="dnd"]::after {
+  width: 7px;
+  height: 2px;
+}
+
+.av-profile-status-menu {
+  left: 32px;
+  top: 55px;
+  width: 132px;
+  padding: 6px;
+  border-radius: 11px;
+}
+
+.av-profile-status-menu button {
+  height: 24px;
+  gap: 8px;
+  padding: 0 7px;
+  font-size: 10px;
+}
+
+.av-profile-status-icon {
+  flex-basis: 11px;
+  width: 11px;
+  height: 11px;
+}
+
+.av-profile-crest {
+  left: 65px;
+  top: -6px;
+  width: 35px;
+  height: 35px;
+}
+
+.av-profile-copy {
+  left: 134px;
+  top: 29px;
+  width: 180px;
+}
+
+.av-profile-eyebrow {
+  height: 13px;
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: 0.055em;
+}
+
+.av-profile-name {
+  height: 25px;
+  margin-top: 3px;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: -0.01em;
+}
+
+.av-profile-role {
+  height: 17px;
+  margin-top: 2px;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.av-profile-level-copy {
+  height: 17px;
+  margin-top: 2px;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.av-profile-level-track {
+  height: 9px;
+  margin-top: 4px;
+}
+
+.av-profile-notifications {
+  right: 14px;
+  top: 24px;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+}
+
+.av-profile-notifications img {
+  width: 17px;
+  height: 17px;
+}
+
+.av-profile-notification-badge {
+  right: -4px;
+  top: -5px;
+  min-width: 15px;
+  height: 15px;
+  padding: 0 3px;
+  border-width: 2px;
+  font-size: 8px;
+}
+
+.av-profile-notification-menu {
+  right: 14px;
+  top: 62px;
+  width: 168px;
+}
+
+
+/* ============================================================
+   AniVortex V12.93 — Profil: controale ridicate vizibil + font Outfit
+   Etichete mai lizibile, sticlă emerald discretă și butoane cu profunzime.
+   Paleta rămâne strict V12, fără schimbarea layout-ului general.
+   ============================================================ */
+.av-profile-notifications {
+  right: 28px;
+}
+
+.av-profile-notification-menu {
+  right: 28px;
+}
+
+.av-profile-stats {
+  left: 22px;
+  top: 153px;
+  width: 320px;
+  height: 54px;
+  overflow: hidden;
+  border-color: rgba(151, 223, 205, 0.24);
+  border-radius: 13px;
+  background:
+    radial-gradient(circle at 50% -18%, rgba(99, 215, 184, 0.12), transparent 48%),
+    linear-gradient(145deg, rgba(10, 74, 63, 0.94) 0%, rgba(8, 61, 53, 0.96) 48%, rgba(7, 49, 42, 0.985) 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(237, 247, 244, 0.07),
+    inset 0 -1px 0 rgba(99, 215, 184, 0.045),
+    0 8px 20px rgba(7, 49, 42, 0.24);
+}
+
+.av-profile-stats::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(151, 223, 205, 0.18) 16%,
+    rgba(99, 215, 184, 0.44) 50%,
+    rgba(151, 223, 205, 0.18) 84%,
+    transparent
+  );
+  pointer-events: none;
+}
+
+.av-profile-stat {
+  justify-content: center;
+  gap: 2px;
+  margin: 4px 0;
+  border-radius: 9px;
+  background: linear-gradient(
+    180deg,
+    rgba(237, 247, 244, 0.028) 0%,
+    rgba(99, 215, 184, 0.018) 52%,
+    transparent 100%
+  );
+}
+
+.av-profile-stat + .av-profile-stat::before {
+  top: 7px;
+  bottom: 7px;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(151, 223, 205, 0.20) 24%,
+    rgba(99, 215, 184, 0.24) 50%,
+    rgba(151, 223, 205, 0.20) 76%,
+    transparent
+  );
+}
+
+.av-profile-stat span {
+  color: #97DFCD;
+  font-size: 9.5px;
+  font-weight: 850;
+  line-height: 11px;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  opacity: 0.98;
+  text-shadow: 0 0 8px rgba(99, 215, 184, 0.08);
+}
+
+.av-profile-stat strong {
+  color: #EDF7F4;
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  font-size: 17px;
+  font-weight: 850;
+  line-height: 19px;
+  letter-spacing: -0.01em;
+  text-shadow:
+    0 1px 0 rgba(7, 49, 42, 0.90),
+    0 0 10px rgba(151, 223, 205, 0.10);
+}
+
+.av-profile-stat:nth-child(2) strong {
+  font-size: 15.5px;
+}
+
+.av-profile-stat::after {
+  content: "";
+  width: 20px;
+  height: 1px;
+  margin-top: 1px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(99, 215, 184, 0.62),
+    transparent
+  );
+  box-shadow: 0 0 7px rgba(99, 215, 184, 0.10);
+  opacity: 0.78;
+}
+
+/* ============================================================
+   AniVortex V12.105 — Setări profil / facțiune: icon cards premium
+   ============================================================ */
+.av-profile-settings {
+  left: 22px;
+  top: 219px;
+  width: 320px;
+  height: 42px;
+  gap: 8px;
+}
+
+.av-profile-setting {
+  position: relative;
+  height: 42px;
+  display: grid;
+  grid-template-columns: 27px minmax(0, 1fr);
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+  overflow: hidden;
+  border: 1px solid rgba(151, 223, 205, 0.18);
+  border-radius: 12px;
+  color: #EDF7F4;
+  background:
+    linear-gradient(180deg, rgba(237, 247, 244, 0.025), transparent 48%),
+    linear-gradient(135deg, rgba(8, 61, 53, 0.86), rgba(7, 49, 42, 0.92));
+  font-family: "Outfit", "Inter", sans-serif;
+  filter: none;
+  text-shadow: none;
+  box-shadow:
+    inset 0 1px 0 rgba(237, 247, 244, 0.035),
+    0 5px 14px rgba(0, 0, 0, 0.10);
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.av-profile-setting::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(99, 215, 184, 0.38), transparent);
+  opacity: 0.68;
+  pointer-events: none;
+}
+
+.av-profile-setting::after {
+  content: none;
+}
+
+.av-profile-setting-icon {
+  width: 27px;
+  height: 27px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(99, 215, 184, 0.20);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(237, 247, 244, 0.03), transparent),
+    rgba(10, 74, 63, 0.28);
+}
+
+.av-profile-setting-icon svg {
+  width: 13px;
+  height: 13px;
+  fill: none;
+  stroke: #63D7B8;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.av-profile-setting-copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+}
+
+.av-profile-setting-copy strong {
+  color: #EDF7F4;
+  font-size: 11.6px;
+  font-weight: 800;
+  line-height: 1.08;
+  white-space: nowrap;
+}
+
+.av-profile-setting-copy small {
+  margin-top: 3px;
+  color: #97DFCD;
+  font-size: 8.8px;
+  font-weight: 700;
+  line-height: 1.10;
+  opacity: 0.88;
+  white-space: nowrap;
+}
+
+.av-profile-setting--profile {
+  border-color: rgba(151, 223, 205, 0.18);
+  background:
+    linear-gradient(180deg, rgba(237, 247, 244, 0.025), transparent 48%),
+    linear-gradient(135deg, rgba(8, 61, 53, 0.86), rgba(7, 49, 42, 0.92));
+}
+
+.av-profile-setting--faction {
+  border-color: rgba(151, 223, 205, 0.18);
+  background:
+    linear-gradient(180deg, rgba(237, 247, 244, 0.025), transparent 48%),
+    linear-gradient(135deg, rgba(7, 49, 42, 0.92), rgba(8, 61, 53, 0.86));
+}
+
+.av-profile-setting--faction .av-profile-setting-icon {
+  border-color: rgba(151, 223, 205, 0.18);
+  background:
+    linear-gradient(180deg, rgba(237, 247, 244, 0.03), transparent),
+    rgba(8, 61, 53, 0.38);
+}
+
+.av-profile-setting--faction .av-profile-setting-icon svg {
+  stroke: #97DFCD;
+}
+
+.av-profile-setting:hover {
+  transform: translateY(-1px);
+  filter: none;
+  border-color: rgba(151, 223, 205, 0.34);
+  background:
+    linear-gradient(180deg, rgba(237, 247, 244, 0.035), transparent 48%),
+    linear-gradient(135deg, rgba(10, 74, 63, 0.92), rgba(8, 61, 53, 0.90));
+  box-shadow:
+    inset 0 1px 0 rgba(237, 247, 244, 0.05),
+    0 8px 18px rgba(0, 0, 0, 0.14);
+}
+
+.av-profile-setting--profile:hover,
+.av-profile-setting--faction:hover {
+  background:
+    linear-gradient(180deg, rgba(237, 247, 244, 0.035), transparent 48%),
+    linear-gradient(135deg, rgba(10, 74, 63, 0.92), rgba(8, 61, 53, 0.90));
 }
 

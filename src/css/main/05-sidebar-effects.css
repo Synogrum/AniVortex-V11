@@ -269,15 +269,18 @@
   isolation: isolate;
   box-sizing: border-box;
   padding: 16px;
-  border: 3px solid rgba(255, 255, 255, 0.78);
+  border: 3px solid rgba(151, 223, 205, 0.62);
   border-radius: 24px;
-  background: rgba(8, 13, 22, 0.78);
-  color: #ffffff;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(99, 215, 184, 0.12), transparent 30%),
+    radial-gradient(circle at 88% 16%, rgba(151, 223, 205, 0.10), transparent 34%),
+    linear-gradient(145deg, #0A4A3F 0%, #083D35 52%, #07312A 100%);
+  color: #EDF7F4;
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   box-shadow:
-    0 26px 70px rgba(0, 0, 0, 0.48),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    0 0 28px rgba(0, 230, 162, 0.08);
+    0 26px 70px rgba(7, 49, 42, 0.52),
+    inset 0 1px 0 rgba(237, 247, 244, 0.07),
+    0 0 26px rgba(99, 215, 184, 0.06);
 }
 
 .serii-programate:not(#__av_prio_a#__av_prio_b)::before {
@@ -291,10 +294,10 @@
   z-index: 0;
   pointer-events: none;
   background:
-    radial-gradient(circle at 16% 20%, rgba(65, 105, 225, 0.86), transparent 30%),
-    radial-gradient(circle at 84% 28%, rgba(0, 230, 162, 0.50), transparent 26%),
-    radial-gradient(circle at 50% 94%, rgba(60, 160, 255, 0.24), transparent 35%),
-    linear-gradient(135deg, #07111f, #071722 48%, #06231f);
+    radial-gradient(circle at 16% 20%, rgba(10, 74, 63, 0.70), transparent 30%),
+    radial-gradient(circle at 84% 28%, rgba(99, 215, 184, 0.28), transparent 26%),
+    radial-gradient(circle at 50% 94%, rgba(151, 223, 205, 0.12), transparent 35%),
+    linear-gradient(135deg, #07312A, #083D35 48%, #0A4A3F);
   filter: blur(30px) saturate(115%);
   animation: programBackgroundFlow 13s ease-in-out infinite alternate;
 }
@@ -345,7 +348,7 @@
 .program-eyebrow {
   display: block;
   margin-bottom: 5px;
-  color: rgba(218, 232, 255, 0.62);
+  color: rgba(151, 223, 205, 0.76);
   font-size: 9px;
   line-height: 1;
   font-weight: 800;
@@ -354,7 +357,7 @@
 
 .titlu-programate {
   margin: 0;
-  color: #ffffff;
+  color: #EDF7F4;
   font-size: 24px;
   line-height: 1;
   font-weight: 800;
@@ -374,10 +377,10 @@
   align-items: center;
   gap: 6px;
   padding: 0 10px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(151, 223, 205, 0.18);
   border-radius: 12px;
-  color: rgba(235, 245, 255, 0.82);
-  background: rgba(255, 255, 255, 0.055);
+  color: #EDF7F4;
+  background: rgba(10, 74, 63, 0.45);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   font-size: 9px;
@@ -389,8 +392,8 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #8affd6;
-  box-shadow: 0 0 0 0 rgba(138, 255, 214, 0.42);
+  background: #63D7B8;
+  box-shadow: 0 0 0 0 rgba(99, 215, 184, 0.42);
   animation: programPulse 1.8s infinite;
 }
 
@@ -420,22 +423,24 @@
 }
 
 .zile-butoane {
-  width: max-content;
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 21px) / 4);
   gap: 7px;
-  padding: 0 1px;
+  padding: 0;
 }
 
 .zile-butoane button {
-  min-width: 70px;
+  width: 100%;
+  min-width: 0;
   height: 34px;
-  flex: 0 0 auto;
-  padding: 0 12px;
-  border: 1px solid rgba(255, 255, 255, 0.10);
+  padding: 0 8px;
+  border: 1px solid rgba(151, 223, 205, 0.18);
   border-radius: 11px;
-  color: rgba(235, 243, 255, 0.72);
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  color: #EDF7F4;
+  background: rgba(8, 61, 53, 0.72);
+  box-shadow: inset 0 1px 0 rgba(237, 247, 244, 0.04);
   font-family: inherit;
   font-size: 11px;
   font-weight: 700;
@@ -453,19 +458,38 @@
 
 .zile-butoane button:hover {
   transform: translateY(-1px);
-  color: #ffffff;
-  border-color: rgba(143, 184, 255, 0.28);
-  background: rgba(65, 105, 225, 0.12);
+  color: #EDF7F4;
+  border-color: rgba(151, 223, 205, 0.34);
+  background: linear-gradient(180deg, #0A4A3F, #083D35);
+  box-shadow:
+    inset 0 1px 0 rgba(237, 247, 244, 0.08),
+    0 6px 14px rgba(7, 49, 42, 0.28),
+    0 0 12px rgba(99, 215, 184, 0.08);
 }
 
 .zile-butoane button.is-active,
 .zile-butoane button[aria-selected="true"] {
-  color: #07140f;
-  border-color: rgba(138, 255, 214, 0.38);
-  background: linear-gradient(100deg, #8fb8ff, #8affd6);
+  color: #EDF7F4;
+  border-color: #97DFCD;
+  background:
+    linear-gradient(180deg, rgba(99, 215, 184, 0.24), rgba(10, 74, 63, 0.98));
   box-shadow:
-    0 8px 18px rgba(0, 230, 162, 0.13),
-    inset 0 1px 0 rgba(255, 255, 255, 0.38);
+    0 8px 18px rgba(7, 49, 42, 0.34),
+    inset 0 1px 0 rgba(237, 247, 244, 0.12),
+    inset 0 -1px 0 rgba(151, 223, 205, 0.16),
+    0 0 16px rgba(99, 215, 184, 0.18);
+  transform: translateY(-1px);
+}
+
+.zile-butoane button.is-active:hover,
+.zile-butoane button[aria-selected="true"]:hover {
+  border-color: #EDF7F4;
+  background:
+    linear-gradient(180deg, rgba(151, 223, 205, 0.28), rgba(10, 74, 63, 0.98));
+  box-shadow:
+    0 10px 22px rgba(7, 49, 42, 0.38),
+    inset 0 1px 0 rgba(237, 247, 244, 0.16),
+    0 0 20px rgba(99, 215, 184, 0.24);
 }
 
 .program-afisat {
@@ -481,15 +505,15 @@
   display: flex;
   flex-direction: column;
   padding: 13px;
-  border: 1px solid rgba(255, 255, 255, 0.11);
+  border: 1px solid rgba(151, 223, 205, 0.18);
   border-radius: 18px;
-  color: #ffffff;
-  background: linear-gradient(145deg, rgba(18, 28, 42, 0.80), rgba(11, 20, 29, 0.68));
+  color: #EDF7F4;
+  background: linear-gradient(145deg, rgba(8, 61, 53, 0.92), rgba(7, 49, 42, 0.88));
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   box-shadow:
-    0 18px 34px rgba(0, 0, 0, 0.30),
-    inset 0 1px 0 rgba(255, 255, 255, 0.065);
+    0 18px 34px rgba(7, 49, 42, 0.32),
+    inset 0 1px 0 rgba(237, 247, 244, 0.045);
   font-size: 13px;
   line-height: 1.4;
   text-align: left;
@@ -501,7 +525,7 @@
   align-items: center;
   gap: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.075);
+  border-bottom: 1px solid rgba(151, 223, 205, 0.12);
 }
 
 .program-date-icon {
@@ -510,10 +534,10 @@
   flex: 0 0 36px;
   display: grid;
   place-items: center;
-  border: 1px solid rgba(143, 184, 255, 0.18);
+  border: 1px solid rgba(151, 223, 205, 0.20);
   border-radius: 11px;
-  color: #cfe3ff;
-  background: rgba(65, 105, 225, 0.11);
+  color: #97DFCD;
+  background: rgba(10, 74, 63, 0.72);
   font-size: 14px;
 }
 
@@ -525,14 +549,14 @@
 }
 
 .program-selected-day {
-  color: #ffffff;
+  color: #EDF7F4;
   font-size: 13px;
   line-height: 1.2;
   font-weight: 800;
 }
 
 .program-current-date {
-  color: rgba(223, 235, 249, 0.56);
+  color: rgba(151, 223, 205, 0.62);
   font-size: 10px;
   line-height: 1.2;
   font-weight: 600;
@@ -562,16 +586,16 @@
   align-items: center;
   gap: 9px;
   padding: 7px 9px;
-  border: 1px solid rgba(255, 255, 255, 0.075);
+  border: 1px solid rgba(151, 223, 205, 0.12);
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.035);
+  background: rgba(10, 74, 63, 0.28);
   transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease;
 }
 
 .program-item:hover {
   transform: translateX(2px);
-  border-color: rgba(138, 255, 214, 0.18);
-  background: rgba(255, 255, 255, 0.055);
+  border-color: rgba(99, 215, 184, 0.24);
+  background: rgba(10, 74, 63, 0.38);
 }
 
 .program-index {
@@ -580,8 +604,8 @@
   display: grid;
   place-items: center;
   border-radius: 9px;
-  color: #dceaff;
-  background: rgba(65, 105, 225, 0.13);
+  color: #97DFCD;
+  background: rgba(10, 74, 63, 0.72);
   font-size: 10px;
   font-weight: 800;
 }
@@ -592,7 +616,7 @@
 
 .program-title {
   overflow: hidden;
-  color: #ffffff;
+  color: #EDF7F4;
   font-size: 11px;
   line-height: 1.25;
   font-weight: 750;
@@ -603,7 +627,7 @@
 .program-episode {
   display: block;
   margin-top: 3px;
-  color: rgba(220, 234, 249, 0.52);
+  color: rgba(151, 223, 205, 0.58);
   font-size: 9px;
   line-height: 1.2;
   font-weight: 600;
@@ -612,10 +636,10 @@
 .program-time {
   min-width: 47px;
   padding: 6px 7px;
-  border: 1px solid rgba(138, 255, 214, 0.17);
+  border: 1px solid rgba(99, 215, 184, 0.30);
   border-radius: 9px;
-  color: #bfffe8;
-  background: rgba(0, 230, 162, 0.08);
+  color: #EDF7F4;
+  background: rgba(10, 74, 63, 0.78);
   font-size: 10px;
   line-height: 1;
   font-weight: 800;
@@ -629,17 +653,17 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  color: rgba(225, 236, 249, 0.58);
+  color: rgba(151, 223, 205, 0.58);
   text-align: center;
 }
 
 .program-empty i {
-  color: rgba(143, 184, 255, 0.62);
+  color: rgba(99, 215, 184, 0.62);
   font-size: 22px;
 }
 
 .program-empty strong {
-  color: rgba(241, 247, 255, 0.83);
+  color: rgba(237, 247, 244, 0.83);
   font-size: 12px;
 }
 
@@ -654,7 +678,7 @@
   position: relative;
   padding: 0;
   margin: 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.075);
+  border-top: 1px solid rgba(151, 223, 205, 0.12);
 }
 
 .toggle-disclaimer {
@@ -668,7 +692,7 @@
   padding: 8px 2px 3px;
   border: 0;
   border-radius: 0;
-  color: rgba(225, 236, 249, 0.58);
+  color: #EDF7F4;
   background: transparent;
   box-shadow: none;
   font-family: inherit;
@@ -679,15 +703,16 @@
 }
 
 .toggle-disclaimer:hover {
-  color: rgba(241, 247, 255, 0.86);
+  color: #EDF7F4;
 }
 
 .toggle-disclaimer > i:first-child {
-  color: var(--av-gold);
+  color: #EDF7F4;
   text-align: center;
 }
 
 .disclaimer-arrow {
+  color: #EDF7F4;
   transition: transform 0.25s ease;
 }
 
@@ -703,7 +728,7 @@
   padding: 7px 2px 2px 23px;
   border: 0;
   border-radius: 0;
-  color: rgba(220, 232, 247, 0.54);
+  color: rgba(151, 223, 205, 0.62);
   background: transparent;
   font-size: 8px;
   line-height: 1.45;
@@ -720,9 +745,9 @@
 }
 
 @keyframes programPulse {
-  0% { box-shadow: 0 0 0 0 rgba(138, 255, 214, 0.42); }
-  70% { box-shadow: 0 0 0 7px rgba(138, 255, 214, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(138, 255, 214, 0); }
+  0% { box-shadow: 0 0 0 0 rgba(99, 215, 184, 0.42); }
+  70% { box-shadow: 0 0 0 7px rgba(99, 215, 184, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(99, 215, 184, 0); }
 }
 
 @media (max-width: 390px) {
@@ -791,7 +816,7 @@
   min-height: 268px;
   padding-right: 4px;
   scrollbar-width: thin;
-  scrollbar-color: rgba(138, 255, 214, 0.34) transparent;
+  scrollbar-color: rgba(99, 215, 184, 0.42) transparent;
 }
 
 .serii-programate .program-list::-webkit-scrollbar {
@@ -805,7 +830,7 @@
 
 .serii-programate .program-list::-webkit-scrollbar-thumb {
   border-radius: 999px;
-  background: linear-gradient(180deg, rgba(143, 184, 255, 0.45), rgba(138, 255, 214, 0.45));
+  background: linear-gradient(180deg, rgba(151, 223, 205, 0.48), rgba(99, 215, 184, 0.48));
 }
 
 .serii-programate .program-empty {
@@ -825,19 +850,31 @@
 .serii-programate .toggle-disclaimer {
   min-height: 39px;
   padding: 10px 3px 6px;
-  color: rgba(235, 243, 255, 0.74);
+  color: #EDF7F4;
   font-size: 10.5px;
   line-height: 1.35;
 }
 
-.serii-programate .toggle-disclaimer:hover,
+.serii-programate .toggle-disclaimer:hover {
+  color: #EDF7F4;
+}
+
 .serii-programate .toggle-disclaimer[aria-expanded="true"] {
-  color: rgba(248, 251, 255, 0.95);
+  color: #97DFCD;
+}
+
+.serii-programate .toggle-disclaimer[aria-expanded="true"] > i:first-child,
+.serii-programate .toggle-disclaimer[aria-expanded="true"] .disclaimer-arrow {
+  color: #97DFCD;
+}
+
+.serii-programate .toggle-disclaimer[aria-expanded="true"] + .disclaimer:not([hidden]) {
+  color: #EDF7F4;
 }
 
 .serii-programate .disclaimer {
   padding: 10px 6px 6px 23px;
-  color: rgba(231, 240, 250, 0.78);
+  color: rgba(151, 223, 205, 0.72);
   font-size: 11px;
   line-height: 1.65;
   text-wrap: pretty;
@@ -845,6 +882,7 @@
 
 .serii-programate .wrapper-disclaimer {
   flex: 0 0 auto;
+  padding-top: 4px;
 }
 
 @media (max-width: 390px) {
@@ -897,15 +935,27 @@
 .serii-programate .program-afisat.has-program .program-list {
   grid-row: 2;
   overflow-x: hidden;
-  padding: 10px 4px 8px 1px;
+  padding: 0 4px 0 1px;
+  margin: 10px 0 8px;
 }
 
 .serii-programate .program-list:not(#__av_prio_a#__av_prio_b), .serii-programate .program-afisat.is-empty .program-list:not(#__av_prio_a#__av_prio_b), .serii-programate .program-afisat.has-program .program-list:not(#__av_prio_a#__av_prio_b) {
-  min-height: 0;
-  height: auto;
-  max-height: none;
+  min-height: 253px;
+  height: 253px;
+  max-height: 253px;
   flex: none;
   overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-padding-block: 0;
+}
+
+/* Când informațiile se deschid, păstrăm exact 4 carduri complete.
+   4 × 45px + 3 × 7px gap = 201px; doar episodul 5 iese din viewport. */
+.serii-programate .program-afisat.is-disclaimer-open .program-list:not(#__av_prio_a#__av_prio_b) {
+  min-height: 201px;
+  height: 201px;
+  max-height: 201px;
+  margin: 8px 0 4px;
 }
 
 .serii-programate .program-empty,
@@ -933,6 +983,23 @@
   margin: 0;
 }
 
+/* În starea deschisă, zona explicativă începe după al patrulea card.
+   Spațiile verticale sunt compactate doar aici ca episodul 4 să rămână complet vizibil. */
+.serii-programate .program-afisat.is-disclaimer-open .wrapper-disclaimer:not(#__av_prio_a#__av_prio_b) {
+  margin-top: 0;
+  border-top-color: rgba(151, 223, 205, 0.12);
+  padding-top: 0;
+}
+
+.serii-programate .program-afisat.is-disclaimer-open {
+  padding-bottom: 2px;
+}
+
+.serii-programate .program-afisat.is-disclaimer-open .disclaimer:not([hidden]) {
+  padding: 2px 6px 2px 23px;
+  transform: translateY(-6px);
+}
+
 /* Când se deschid informațiile, lista se micșorează și rămâne scrollabilă. */
 .serii-programate .disclaimer:not([hidden]) {
   max-height: 94px;
@@ -940,9 +1007,13 @@
   padding-bottom: 8px;
 }
 
-/* Cinci episoade vizibile în starea normală; restul se văd prin scroll. */
+/* 5 × 45px + 4 × 7px gap = 253px: fără fragmente din cardul anterior/următor. */
 .serii-programate .program-item {
+  height: 45px;
   min-height: 45px;
+  flex: 0 0 45px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 @media (max-width: 390px) {
@@ -962,7 +1033,8 @@
   pointer-events: auto;
   touch-action: pan-x;
   cursor: default;
-  scroll-snap-type: x proximity;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: 0;
   overscroll-behavior-x: contain;
 }
 
@@ -978,7 +1050,8 @@
   touch-action: manipulation;
   user-select: none;
   -webkit-user-select: none;
-  scroll-snap-align: center;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .serii-programate .zile-butoane button:not(#__av_prio_a#__av_prio_b) {

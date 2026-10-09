@@ -571,8 +571,8 @@
 .av10-text {
   
   
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
 }
 
 .av10-symbol {
@@ -596,8 +596,8 @@
 
   .av10-text {
     
-    -webkit-line-clamp: 4;
-    line-clamp: 4;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
   }
 }
 

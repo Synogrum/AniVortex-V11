@@ -22,14 +22,17 @@
 
 
 #trendingMaster .cat-btn:not(#__av_prio_a#__av_prio_b) {
-  min-width: 122px;
+  width: max-content;
+  min-width: 0;
   min-height: 36px;
   padding: 4px 4px 4px 14px;
+  flex: 0 0 auto;
 }
 
 #trendingMaster .cat-btn-label:not(#__av_prio_a#__av_prio_b) {
   font-size: 0.76rem;
-  min-width: 62px;
+  min-width: 0;
+  white-space: nowrap;
 }
 
 #trendingMaster .cat-btn-arrow:not(#__av_prio_a#__av_prio_b) {
@@ -89,24 +92,106 @@
    ============================================================ */
 #trendingMaster:not(#__av_prio_a#__av_prio_b) {
   margin-top: 0;
-  padding-top: 116px;
+  padding-top: 88px;
   border-top: 0;
 }
 
 @media (max-width: 1510px) {
     #trendingMaster:not(#__av_prio_a#__av_prio_b) {
-  padding-top: 104px;
+  padding-top: 80px;
 }
 }
 
 @media (max-width: 990px) {
     #trendingMaster:not(#__av_prio_a#__av_prio_b) {
-  padding-top: 86px;
+  padding-top: 68px;
 }
 }
 
 @media (max-width: 620px) {
     #trendingMaster:not(#__av_prio_a#__av_prio_b) {
-  padding-top: 72px;
+  padding-top: 56px;
 }
+}
+
+
+/* ============================================================
+   AniVortex V12 — Trending refinement foundation
+   Unifică cardurile și popup-ul cu noul design system.
+   ============================================================ */
+#trendingMaster .trending-pair {
+  border-radius: var(--av-radius-xl);
+  border-color: var(--av-border-subtle);
+  box-shadow: var(--av-shadow-card);
+  transition:
+    transform var(--av-motion-ui) var(--av-ease-ui),
+    border-color var(--av-motion-ui) var(--av-ease-ui),
+    box-shadow var(--av-motion-ui) var(--av-ease-ui);
+}
+
+#trendingMaster .trending-pair:hover,
+#trendingMaster .trending-pair:focus-within {
+  border-color: var(--av-border-active);
+  box-shadow: var(--av-shadow-hover);
+}
+
+#trendingMaster .trending-section .card {
+  border-radius: inherit;
+}
+
+#trendingMaster .cat-btn,
+#trendingMaster .badge-info {
+  border-color: var(--av-border-subtle);
+  transition:
+    transform var(--av-motion-fast) var(--av-ease-ui),
+    background var(--av-motion-ui) var(--av-ease-ui),
+    border-color var(--av-motion-ui) var(--av-ease-ui),
+    box-shadow var(--av-motion-ui) var(--av-ease-ui);
+}
+
+#trendingMaster .cat-btn:hover {
+  border-color: var(--av-border-active);
+  box-shadow: 0 8px 20px rgba(0,0,0,.20);
+}
+
+.hover-popup {
+  border-radius: var(--av-radius-xl);
+  border-color: var(--av-border-active);
+  box-shadow:
+    var(--av-shadow-popup),
+    0 0 30px rgba(45,194,174,.10),
+    inset 0 1px 0 rgba(230,255,251,.10);
+  transition:
+    opacity var(--av-motion-ui) var(--av-ease-ui),
+    transform var(--av-motion-ui) var(--av-ease-ui),
+    visibility var(--av-motion-ui) var(--av-ease-ui);
+}
+
+.trending-popup-top,
+.trending-popup-stats,
+.trending-popup-desc,
+.trending-watch-btn {
+  border-radius: var(--av-radius-md);
+}
+
+.trending-watch-btn {
+  min-height: 44px;
+  transition:
+    transform var(--av-motion-fast) var(--av-ease-ui),
+    box-shadow var(--av-motion-ui) var(--av-ease-ui),
+    filter var(--av-motion-ui) var(--av-ease-ui);
+}
+
+.trending-watch-btn:hover {
+  filter: brightness(1.06);
+}
+
+@media (max-width: 760px) {
+  #trendingMaster .cat-btn {
+    min-height: 44px;
+  }
+
+  #trendingMaster .trending-pair {
+    border-radius: var(--av-radius-lg);
+  }
 }

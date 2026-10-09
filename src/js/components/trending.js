@@ -477,24 +477,140 @@ function stopSlideTimer() {
 
 // ── Hover Popup ───────────────────────────────────────────────
 function getBarGradient(pct) {
-  const yellow  = [255, 214,   0];
-  const orange  = [255, 120,   0];
-  const red     = [220,  30,  30];
-  const purple  = [ 55,  30, 180];
+  // V12.46 — popularitate pe tonuri calde, ca să se distingă clar de interfața emerald.
+  const coral   = [187, 79, 65];
+  const ember   = [215, 105, 67];
+  const amber   = [230, 146, 77];
+  const peach   = [242, 190, 112];
 
   function lerp(a, b, t) {
     return a.map((v, i) => Math.round(v + (b[i] - v) * t));
   }
   function rgb(c) { return `rgb(${c[0]},${c[1]},${c[2]})`; }
   function colorAt(p) {
-    if (p <= 30)  return lerp(yellow, yellow, 0);
-    if (p <= 55)  return lerp(yellow, orange, (p - 30) / 25);
-    if (p <= 75)  return lerp(orange, red,    (p - 55) / 20);
-    return              lerp(red,    purple,  (p - 75) / 25);
+    if (p <= 34) return lerp(coral, ember, p / 34);
+    if (p <= 72) return lerp(ember, amber, (p - 34) / 38);
+    return             lerp(amber, peach, (p - 72) / 28);
   }
-  const startColor = colorAt(Math.max(0, pct - 40));
+  const startColor = colorAt(Math.max(0, pct - 42));
   const endColor   = colorAt(pct);
   return `linear-gradient(90deg, ${rgb(startColor)}, ${rgb(endColor)})`;
+}
+
+function getPopupDescription(item) {
+  const base = String(item?.desc || "").trim();
+  if (base.length >= 210) return base;
+
+  const continuation = " Povestea dezvoltă treptat conflictele, relațiile dintre personaje și momentele importante care schimbă direcția acțiunii. În același timp, miza crește și fiecare alegere influențează evoluția poveștii.";
+  return base + continuation;
+}
+
+function cleanPopupDescriptionEnding(text) {
+  let clean = String(text || "").trim();
+
+  // Nu lăsăm punctele de suspensie după virgulă, punct și virgulă sau două puncte.
+  clean = clean.replace(/[,:;]+$/u, "").trim();
+
+  // Evităm finaluri slabe de tip „și...” / „sau...”.
+  const words = clean.split(/\s+/u);
+  while (words.length > 1 && /^(și|sau)$/iu.test(words[words.length - 1])) {
+    words.pop();
+  }
+
+  clean = words.join(" ").replace(/[,:;]+$/u, "").trim();
+  return clean;
+}
+
+function fitPopupDescriptionToFourLines(popup) {
+  const desc = popup?.querySelector(".trending-popup-desc p");
+  if (!desc) return;
+
+  const fullText = String(desc.textContent || "").trim();
+  const words = fullText.split(/\s+/u).filter(Boolean);
+  if (!words.length) return;
+
+  const style = window.getComputedStyle(desc);
+  const lineHeight = Number.parseFloat(style.lineHeight) || 16.5;
+  const width = desc.getBoundingClientRect().width;
+  if (!width) return;
+
+  const probe = desc.cloneNode(false);
+  probe.setAttribute("aria-hidden", "true");
+  probe.style.position = "fixed";
+  probe.style.left = "-10000px";
+  probe.style.top = "0";
+  probe.style.visibility = "hidden";
+  probe.style.pointerEvents = "none";
+  probe.style.width = width + "px";
+
+  // Probe-ul este mutat în <body>, deci selectorul ".trending-popup-desc p"
+  // nu i se mai aplică. Copiem explicit tipografia reală a descrierii.
+  probe.style.fontFamily = style.fontFamily;
+  probe.style.fontSize = style.fontSize;
+  probe.style.fontWeight = style.fontWeight;
+  probe.style.fontStyle = style.fontStyle;
+  probe.style.letterSpacing = style.letterSpacing;
+  probe.style.wordSpacing = style.wordSpacing;
+  probe.style.lineHeight = style.lineHeight;
+  probe.style.textTransform = style.textTransform;
+
+  probe.style.height = "auto";
+  probe.style.minHeight = "0";
+  probe.style.maxHeight = "none";
+  probe.style.display = "block";
+  probe.style.overflow = "visible";
+  probe.style.webkitLineClamp = "unset";
+  probe.style.webkitBoxOrient = "initial";
+  probe.style.whiteSpace = "normal";
+  probe.style.overflowWrap = style.overflowWrap || "break-word";
+  probe.style.wordBreak = style.wordBreak;
+  document.body.appendChild(probe);
+
+  const makeCandidate = (count) => {
+    const clean = cleanPopupDescriptionEnding(words.slice(0, count).join(" "));
+    return clean ? clean + "..." : "";
+  };
+
+  const lineCountFor = (text) => {
+    probe.textContent = text;
+    return Math.max(1, Math.ceil((probe.scrollHeight - 0.75) / lineHeight));
+  };
+
+  let exactFourLineText = "";
+
+  // Alegem cel mai lung final curat care ocupă EXACT 4 rânduri.
+  // Important: verificarea se face DUPĂ eliminarea unui final de tip „și”, „sau” sau virgulă,
+  // ca să nu cădem accidental înapoi la 3 rânduri.
+  for (let count = words.length; count >= 1; count -= 1) {
+    const candidate = makeCandidate(count);
+    if (!candidate) continue;
+
+    const lines = lineCountFor(candidate);
+    if (lines === 4) {
+      exactFourLineText = candidate;
+      break;
+    }
+  }
+
+  // Fallback rar: alegem cel mai lung text care nu depășește 4 rânduri.
+  if (!exactFourLineText) {
+    for (let count = words.length; count >= 1; count -= 1) {
+      const candidate = makeCandidate(count);
+      if (!candidate) continue;
+      if (lineCountFor(candidate) <= 4) {
+        exactFourLineText = candidate;
+        break;
+      }
+    }
+  }
+
+  probe.remove();
+
+  if (!exactFourLineText) {
+    exactFourLineText = cleanPopupDescriptionEnding(fullText) + "...";
+  }
+
+  desc.textContent = exactFourLineText;
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -560,7 +676,7 @@ function showPopup(item, pair) {
 
     <div class="trending-popup-desc">
       <span class="trending-popup-desc-label">DESCRIEREA SERIEI</span>
-      <p>${escapeTrendingText(item.desc)}</p>
+      <p>${escapeTrendingText(getPopupDescription(item))}</p>
     </div>
 
     <button class="trending-watch-btn" type="button">▶ Vizionează acum</button>
@@ -577,6 +693,8 @@ function showPopup(item, pair) {
       bar.style.background = getBarGradient(pct);
       bar.style.width = pct + "%";
     }
+
+    fitPopupDescriptionToFourLines(popup);
   });
 
   positionPopup(popup, pair);

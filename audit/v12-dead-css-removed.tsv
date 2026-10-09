@@ -1,0 +1,35 @@
+file	rule_selector	dropped_branch	missing_classes	missing_ids	action
+src/css/banner/02-banner-layout.css	.banner-trending-join-gold	.banner-trending-join-gold	banner-trending-join-gold		drop-rule
+src/css/banner/02-banner-layout.css	.banner-trending-join-gold:not(#__av_prio_a#__av_prio_b)	.banner-trending-join-gold:not(#__av_prio_a#__av_prio_b)	banner-trending-join-gold		drop-rule
+src/css/banner/02-banner-layout.css	.banner-trending-join-teal:not(#__av_prio_a#__av_prio_b)	.banner-trending-join-teal:not(#__av_prio_a#__av_prio_b)	banner-trending-join-teal		drop-rule
+src/css/banner/03-banner-transition.css	.banner-trending-join-gold, .banner-trending-join-teal	.banner-trending-join-gold	banner-trending-join-gold		drop-rule
+src/css/banner/03-banner-transition.css	.banner-trending-join-gold, .banner-trending-join-teal	.banner-trending-join-teal	banner-trending-join-teal		drop-rule
+src/css/banner/03-banner-transition.css	.banner-trending-join-gold	.banner-trending-join-gold	banner-trending-join-gold		drop-rule
+src/css/banner/03-banner-transition.css	.banner-trending-join-teal	.banner-trending-join-teal	banner-trending-join-teal		drop-rule
+src/css/banner/03-banner-transition.css	.banner-trending-join-gold:not(#__av_prio_a#__av_prio_b), .banner-trending-join-teal:not(#__av_prio_a#__av_prio_b)	.banner-trending-join-gold:not(#__av_prio_a#__av_prio_b)	banner-trending-join-gold		drop-rule
+src/css/banner/03-banner-transition.css	.banner-trending-join-gold:not(#__av_prio_a#__av_prio_b), .banner-trending-join-teal:not(#__av_prio_a#__av_prio_b)	.banner-trending-join-teal:not(#__av_prio_a#__av_prio_b)	banner-trending-join-teal		drop-rule
+src/css/banner/03-banner-transition.css	.banner-trending-join-gold:not(#__av_prio_a#__av_prio_b)	.banner-trending-join-gold:not(#__av_prio_a#__av_prio_b)	banner-trending-join-gold		drop-rule
+src/css/banner/03-banner-transition.css	.banner-trending-join-teal:not(#__av_prio_a#__av_prio_b)	.banner-trending-join-teal:not(#__av_prio_a#__av_prio_b)	banner-trending-join-teal		drop-rule
+src/css/banner/04-banner-color-merge.css	body .banner-trending-join-bandfill:not(#__av_prio_a#__av_prio_b)	body .banner-trending-join-bandfill:not(#__av_prio_a#__av_prio_b)	banner-trending-join-bandfill		drop-rule
+src/css/banner/04-banner-color-merge.css	body .banner-trending-join-gold:not(#__av_prio_a#__av_prio_b)	body .banner-trending-join-gold:not(#__av_prio_a#__av_prio_b)	banner-trending-join-gold		drop-rule
+src/css/banner/04-banner-color-merge.css	body .banner-trending-join-teal:not(#__av_prio_a#__av_prio_b)	body .banner-trending-join-teal:not(#__av_prio_a#__av_prio_b)	banner-trending-join-teal		drop-rule
+src/css/main/10-responsive-final.css	.share-com-v-fill	.share-com-v-fill	share-com-v-fill		drop-rule
+src/css/main/10-responsive-final.css	.share-com-v-top, .share-com-v-bottom	.share-com-v-top	share-com-v-top		drop-rule
+src/css/main/10-responsive-final.css	.share-com-v-top, .share-com-v-bottom	.share-com-v-bottom	share-com-v-bottom		drop-rule
+src/css/main/10-responsive-final.css	.share-com-v-top	.share-com-v-top	share-com-v-top		drop-rule
+src/css/main/10-responsive-final.css	.share-com-v-bottom	.share-com-v-bottom	share-com-v-bottom		drop-rule
+src/css/main/10-responsive-final.css	.share-com-v-top:not(#__av_prio_a#__av_prio_b), .share-com-v-bottom:not(#__av_prio_a#__av_prio_b)	.share-com-v-top:not(#__av_prio_a#__av_prio_b)	share-com-v-top		drop-rule
+src/css/main/10-responsive-final.css	.share-com-v-top:not(#__av_prio_a#__av_prio_b), .share-com-v-bottom:not(#__av_prio_a#__av_prio_b)	.share-com-v-bottom:not(#__av_prio_a#__av_prio_b)	share-com-v-bottom		drop-rule
+src/css/main/10-responsive-final.css	.share-com-v-fill:not(#__av_prio_a#__av_prio_b)	.share-com-v-fill:not(#__av_prio_a#__av_prio_b)	share-com-v-fill		drop-rule
+src/css/main/10-responsive-final.css	.share-com-v-top:not(#__av_prio_a#__av_prio_b), .share-com-v-bottom:not(#__av_prio_a#__av_prio_b)	.share-com-v-top:not(#__av_prio_a#__av_prio_b)	share-com-v-top		drop-rule
+src/css/main/10-responsive-final.css	.share-com-v-top:not(#__av_prio_a#__av_prio_b), .share-com-v-bottom:not(#__av_prio_a#__av_prio_b)	.share-com-v-bottom:not(#__av_prio_a#__av_prio_b)	share-com-v-bottom		drop-rule
+src/css/main/10-responsive-final.css	.share-com-v-top:not(#__av_prio_a#__av_prio_b)	.share-com-v-top:not(#__av_prio_a#__av_prio_b)	share-com-v-top		drop-rule
+src/css/main/10-responsive-final.css	.share-com-v-bottom:not(#__av_prio_a#__av_prio_b)	.share-com-v-bottom:not(#__av_prio_a#__av_prio_b)	share-com-v-bottom		drop-rule
+src/css/trending/05-trending-effects.css	.trending-share-join-fill	.trending-share-join-fill	trending-share-join-fill		drop-rule
+src/css/trending/05-trending-effects.css	.trending-share-join-gold, .trending-share-join-teal	.trending-share-join-gold	trending-share-join-gold		drop-rule
+src/css/trending/05-trending-effects.css	.trending-share-join-gold, .trending-share-join-teal	.trending-share-join-teal	trending-share-join-teal		drop-rule
+src/css/trending/05-trending-effects.css	.trending-share-join-gold	.trending-share-join-gold	trending-share-join-gold		drop-rule
+src/css/trending/05-trending-effects.css	.trending-share-join-teal	.trending-share-join-teal	trending-share-join-teal		drop-rule
+src/css/trending/05-trending-effects.css	.trending-share-join svg:not(#__av_prio_a#__av_prio_b), .trending-share-join path:not(#__av_prio_a#__av_prio_b), .trending-share-join-fill:not(#__av_prio_a#__av_prio_b), .trending-share-join-gold:not(#__av_prio_a#__av_prio_b), .trending-share-join-teal:not(#__av_prio_a#__av_prio_b)	.trending-share-join-fill:not(#__av_prio_a#__av_prio_b)	trending-share-join-fill		drop-branch
+src/css/trending/05-trending-effects.css	.trending-share-join svg:not(#__av_prio_a#__av_prio_b), .trending-share-join path:not(#__av_prio_a#__av_prio_b), .trending-share-join-fill:not(#__av_prio_a#__av_prio_b), .trending-share-join-gold:not(#__av_prio_a#__av_prio_b), .trending-share-join-teal:not(#__av_prio_a#__av_prio_b)	.trending-share-join-gold:not(#__av_prio_a#__av_prio_b)	trending-share-join-gold		drop-branch
+src/css/trending/05-trending-effects.css	.trending-share-join svg:not(#__av_prio_a#__av_prio_b), .trending-share-join path:not(#__av_prio_a#__av_prio_b), .trending-share-join-fill:not(#__av_prio_a#__av_prio_b), .trending-share-join-gold:not(#__av_prio_a#__av_prio_b), .trending-share-join-teal:not(#__av_prio_a#__av_prio_b)	.trending-share-join-teal:not(#__av_prio_a#__av_prio_b)	trending-share-join-teal		drop-branch

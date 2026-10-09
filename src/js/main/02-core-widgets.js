@@ -62,10 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const linkImagine = document.getElementById("linkSerie");
     const linkButon = document.getElementById("butonLink");
     const tags = document.querySelector(".suprinde-ma .surprise-tags");
-    const butoaneShuffle = [
-      document.getElementById("shuffleTop"),
-      document.getElementById("shuffleSerie")
-    ].filter(Boolean);
 
     if (!card || !imagine || !nume || !traducator || !linkImagine || !linkButon || !tags) {
       return;
@@ -96,10 +92,6 @@ document.addEventListener("DOMContentLoaded", function () {
         aplicaSerie(surpriseSeries[surpriseIndex]);
       }, 180);
     }
-
-    butoaneShuffle.forEach(buton => {
-      buton.addEventListener("click", schimbaSeria);
-    });
 
     // Ca în varianta veche: click pe imagine afișează următoarea serie.
     // Linkul „Vezi seria” rămâne singurul care deschide pagina seriei.
@@ -309,8 +301,13 @@ globalThis.addEventListener("DOMContentLoaded", () => {
   if (toggleDisclaimer && disclaimerText) {
     toggleDisclaimer.addEventListener("click", () => {
       const deschis = toggleDisclaimer.getAttribute("aria-expanded") === "true";
-      toggleDisclaimer.setAttribute("aria-expanded", String(!deschis));
+      const seDeschide = !deschis;
+      toggleDisclaimer.setAttribute("aria-expanded", String(seDeschide));
       disclaimerText.hidden = deschis;
+
+      if (programAfisat) {
+        programAfisat.classList.toggle("is-disclaimer-open", seDeschide);
+      }
     });
   }
 
@@ -493,16 +490,15 @@ document.addEventListener("DOMContentLoaded", function () {
     articol.innerHTML = `
       <a class="recent-post-poster" href="${serie.link}" aria-label="Deschide ${serie.nume}">
         <img src="${serie.imagine}" alt="Poster ${serie.nume}" loading="lazy" decoding="async">
-        ${index === 0 ? '<span aria-hidden="true">NOU</span>' : ""}
       </a>
       <div class="recent-post-copy">
         <a class="recent-post-title" href="${serie.link}" title="${serie.nume}">${serie.nume}</a>
         <div class="recent-post-details">
           <span class="recent-post-episode">Episodul ${Number(serie.episod.replace(/\D/g, ""))}</span>
-          <i class="recent-post-separator" aria-hidden="true"></i>
-          <time>postat ${serie.ora}</time>
+          <time class="recent-post-time"><span class="recent-post-clock" aria-hidden="true"></span>${serie.ora}</time>
         </div>
       </div>
+      <span class="recent-post-go" aria-hidden="true">›</span>
     `;
 
     container.appendChild(articol);
